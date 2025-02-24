@@ -1,4 +1,3 @@
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Comment out to use biblatex instead of bibtex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -19,18 +18,20 @@
 % A modified usepackge command that checks for style files in the
 % styles/ subdirectory.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\newcommand{\UsePackage}[1]{%
-  \IfFileExists{styles/#1.sty}{%
-      \usepackage{styles/#1}%
-   }{%
-      \IfFileExists{../styles/#1.sty}{%
-         \usepackage{../styles/#1}%
-      }{%
-         \usepackage{#1}%
-      }%
-   }%
-}
-
+% \newcommand{\UsePackage}[1]{%
+%   \IfFileExists{styles/#1.sty}{%
+%       \usepackage{styles/#1}%
+%    }{%
+%       \IfFileExists{../styles/#1.sty}{%
+%          \usepackage{../styles/#1}%
+%       }{%
+%          \usepackage{#1}%
+%       }%
+%    }%
+% }
+\usepackage{evan}
+% \usepackage{styles/format}
+% \usepackage{styles/my_biblatex}
 
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -44,10 +45,11 @@
 \usepackage{todonotes}
 \usepackage[in]{fullpage}%
 
-\usepackage[amsmath,thmmarks]{ntheorem}%
-\theoremseparator{.}%
-
-\usepackage{titlesec}%
+% \usepackage[amsmath,thmmarks]{ntheorem}%
+\usepackage{amsmath}
+% % \usepackage{thmmarks}
+% \theoremseparator{.}
+\usepackage{titlesec}
 \titlelabel{\thetitle. }%
 \usepackage{xcolor}%
 \usepackage{mleftright}%
@@ -74,46 +76,46 @@
 % Defining theorem like environments
 %
 
-\theoremseparator{.}%
+% \theoremseparator{.}%
 
-\theoremstyle{plain}%
-\newtheorem{theorem}{Theorem}[section]
+% \theoremstyle{plain}%
+% \newtheorem{theorem}{Theorem}[section]
 
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{conjecture}[theorem]{Conjecture}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{claim}[theorem]{Claim}%
-\newtheorem{fact}[theorem]{Fact}
-\newtheorem{observation}[theorem]{Observation}
-\newtheorem{invariant}[theorem]{Invariant}
-\newtheorem{question}[theorem]{Question}
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{prop}[theorem]{Proposition}
-\newtheorem{openproblem}[theorem]{Open Problem}
+% \newtheorem{lemma}[theorem]{Lemma}
+% \newtheorem{conjecture}[theorem]{Conjecture}
+% \newtheorem{corollary}[theorem]{Corollary}
+% \newtheorem{claim}[theorem]{Claim}%
+% \newtheorem{fact}[theorem]{Fact}
+% \newtheorem{observation}[theorem]{Observation}
+% \newtheorem{invariant}[theorem]{Invariant}
+% \newtheorem{question}[theorem]{Question}
+% \newtheorem{proposition}[theorem]{Proposition}
+% \newtheorem{prop}[theorem]{Proposition}
+% \newtheorem{openproblem}[theorem]{Open Problem}
 
-\theoremstyle{plain}%
-\theoremheaderfont{\sf} \theorembodyfont{\upshape}%
-\newtheorem*{remark:unnumbered}[theorem]{Remark}%
-\newtheorem*{remarks}[theorem]{Remarks}%
-\newtheorem{remark}[theorem]{Remark}%
-\newtheorem{definition}[theorem]{Definition}
-\newtheorem{defn}[theorem]{Definition}
-\newtheorem{example}[theorem]{Example}
-\newtheorem{exercise}[theorem]{Exercise}
-\newtheorem{problem}[theorem]{Problem}
-\newtheorem{xca}[theorem]{Exercise}
-\newtheorem{exercise_h}[theorem]{Exercise}
-\newtheorem{assumption}[theorem]{Assumption}%
+% \theoremstyle{plain}%
+% \theoremheaderfont{\sf} \theorembodyfont{\upshape}%
+% \newtheorem*{remark:unnumbered}[theorem]{Remark}%
+% \newtheorem*{remarks}[theorem]{Remarks}%
+% \newtheorem{remark}[theorem]{Remark}%
+% \newtheorem{definition}[theorem]{Definition}
+% \newtheorem{defn}[theorem]{Definition}
+% \newtheorem{example}[theorem]{Example}
+% \newtheorem{exercise}[theorem]{Exercise}
+% \newtheorem{problem}[theorem]{Problem}
+% \newtheorem{xca}[theorem]{Exercise}
+% \newtheorem{exercise_h}[theorem]{Exercise}
+% \newtheorem{assumption}[theorem]{Assumption}%
 
 % Proof environment
 \newcommand{\myqedsymbol}{\rule{2mm}{2mm}}
 
-\theoremheaderfont{\em}%
-\theorembodyfont{\upshape}%
-\theoremstyle{nonumberplain}%
-\theoremseparator{}%
-\theoremsymbol{\myqedsymbol}%
-\newtheorem{proof}{Proof:}%
+% \theoremheaderfont{\em}%
+% \theorembodyfont{\upshape}%
+% \theoremstyle{nonumberplain}%
+% \theoremseparator{}%
+% \theoremsymbol{\myqedsymbol}%
+% \newtheorem{proof}{Proof:}%
 
 \newtheorem{proofof}{Proof of\!}%
 
@@ -151,17 +153,17 @@
 % Authors thanks
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\JamesThanks}[1]{%
-   \thanks{%
-      Department of Computer Science; %
-      University of Moochi; %
-      102 S. Bad St; %
-      Blackstone, SF, 12345, USA; %
-      \href{mailto:spam@spam.edu}{spam@spam.edu}; %
-      \url{http://spammer.org/}. %
-   #1%
-   }%
-}
+% \newcommand{\JamesThanks}[1]{%
+%    \thanks{%
+%       Department of Computer Science; %
+%       University of Moochi; %
+%       102 S. Bad St; %
+%       Blackstone, SF, 12345, USA; %
+%       \href{mailto:spam@spam.edu}{spam@spam.edu}; %
+%       \url{http://spammer.org/}. %
+%    #1%
+%    }%
+% }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\james}[1]{%   
@@ -217,7 +219,7 @@
 
 
 \newcommand{\ceil}[1]{\mleft\lceil {#1} \mright\rceil}
-\newcommand{\floor}[1]{\mleft\lfloor {#1} \mright\rfloor}
+% \newcommand{\floor}[1]{\mleft\lfloor {#1} \mright\rfloor}
 
 \newcommand{\brc}[1]{\left\{ {#1} \right\}}
 \newcommand{\set}[1]{\brc{#1}}%
@@ -276,7 +278,7 @@
 % Bib latex stuff
 \BibLatexMode{%
    \usepackage[bibencoding=utf8,style=alphabetic,backend=biber]{biblatex}%
-   \UsePackage{my_biblatex}%
+   \usepackage{my_biblatex}%
 }
 
 %

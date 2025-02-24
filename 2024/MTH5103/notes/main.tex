@@ -3,7 +3,100 @@
 %%
 %%--------------------------------------------------------
 \documentclass[12pt]{article}
-\input{prefix}%
+% \input{prefix}%
+\usepackage[sexy]{styles/evan}
+
+\providecommand{\BibLatexMode}[1]{}
+\providecommand{\BibTexMode}[1]{}
+
+\ifx\UseBibLatex\undefined%
+  \renewcommand{\BibLatexMode}[1]{}
+  \renewcommand{\BibTexMode}[1]{#1}
+\else
+  \renewcommand{\BibLatexMode}[1]{#1}
+  \renewcommand{\BibTexMode}[1]{}
+\fi
+
+%%%
+
+\BibLatexMode{%
+   \usepackage[bibencoding=utf8,style=alphabetic,backend=biber]{biblatex}%
+   \usepackage{my_biblatex}%
+}
+
+%%%
+
+% \newtheorem{theorem}{Theorem}[section]
+
+
+%%
+
+\providecommand{\emphind}[1]{}%
+\renewcommand{\emphind}[1]{\emph{#1}\index{#1}}
+
+\definecolor{blue25emph}{rgb}{0, 0, 11}
+
+\providecommand{\emphic}[2]{}
+\renewcommand{\emphic}[2]{\textcolor{blue25emph}{%
+      \textbf{\emph{#1}}}\index{#2}}
+
+\providecommand{\emphi}[1]{}%
+\renewcommand{\emphi}[1]{\emphic{#1}{#1}}
+
+\definecolor{almostblack}{rgb}{0, 0, 0.3}
+
+\providecommand{\emphw}[1]{}%
+\renewcommand{\emphw}[1]{{\textcolor{almostblack}{\emph{#1}}}}%
+
+\providecommand{\emphOnly}[1]{}%
+\renewcommand{\emphOnly}[1]{\emph{\textcolor{blue25}{\textbf{#1}}}}
+%%
+
+\newcommand{\HLink}[2]{\hyperref[#2]{#1~\ref*{#2}}}
+\newcommand{\HLinkSuffix}[3]{\hyperref[#2]{#1\ref*{#2}{#3}}}
+
+\newcommand{\figlab}[1]{\label{fig:#1}}
+\newcommand{\figref}[1]{\HLink{Figure}{fig:#1}}
+
+\newcommand{\thmlab}[1]{{\label{theo:#1}}}
+\newcommand{\thmref}[1]{\HLink{Theorem}{theo:#1}}
+
+\newcommand{\remlab}[1]{\label{rem:#1}}
+\newcommand{\remref}[1]{\HLink{Remark}{rem:#1}}%
+
+\newcommand{\corlab}[1]{\label{cor:#1}}
+\newcommand{\corref}[1]{\HLink{Corollary}{cor:#1}}%
+
+\providecommand{\deflab}[1]{}
+\renewcommand{\deflab}[1]{\label{def:#1}}
+\newcommand{\defref}[1]{\HLink{Definition}{def:#1}}
+
+\newcommand{\lemlab}[1]{\label{lemma:#1}}
+\newcommand{\lemref}[1]{\HLink{Lemma}{lemma:#1}}%
+
+\providecommand{\eqlab}[1]{}%
+\renewcommand{\eqlab}[1]{\label{equation:#1}}
+\newcommand{\Eqref}[1]{\HLinkSuffix{Eq.~(}{equation:#1}{)}}
+
+
+\newcommand{\MiraThanks}[1]{%
+   \thanks{%
+      School of Mathematical Sciences; %
+      Queen Mary, University of London; %
+      Mile End Road; %
+      London, E14NS, UK; %
+      \href{m.shamis@qmul.ac.uk}{m.shamis@qmul.ac.uk}; %
+      \url{https://www.qmul.ac.uk/maths/profiles/shamiss.html}. %
+   #1%
+   }%
+}
+
+
+% Bib latex stuff
+\BibLatexMode{%
+   \usepackage[bibencoding=utf8,style=alphabetic,backend=biber]{biblatex}%
+   \usepackage{my_biblatex}%
+}
 
 \BibLatexMode{%
    \bibliography{template}
@@ -11,16 +104,15 @@
 
 \begin{document}
 
-\title{Title of Paper}
+\title{Notes on Complex Variables MTH 5103 2024-2025}
 
 \author{%
-   James Bond%
-   \JamesThanks{Bla bla.}%
+   Emomalijon Murodzoda%
    %
    \and%
    %
-   Ford Perfect%
-   \thanks{Bla bla.}%
+   Dr Mira Shamis%
+   \MiraThanks{\emph{ASK HER IF YOU HAVE ANY QUESTIONS!!!}}
 }
 
 \date{\today}
@@ -63,9 +155,9 @@ All the \LaTeX{} definitions/macros/etc are in the \texttt{prefix.tex} file. Thi
     \]
 \end{proof}
 
-\james{It is extremely useful to leave comments in the text for your coauthors.}
-\ford{And the other author might reply...}
-\james{But one can still have the last word. }
+% \james{It is extremely useful to leave comments in the text for your coauthors.}
+% \ford{And the other author might reply...}
+% \james{But one can still have the last word. }
 
 See \thmref{first}.
 \begin{lemma}
@@ -100,19 +192,19 @@ Do not forget to cite some irrelevant papers \cite{k-spda-10}.
 
 \section{More stuff}
 Some math:
-\begin{equation*}
-    \Var{X}%
-    =%
-    \Ex{(X - \Ex{X})^2}.
-\end{equation*}
+% \begin{equation*}
+%     \Var{X}%
+%     =%
+%     \Ex{(X - \Ex{X})^2}.
+% \end{equation*}
 
 Some definitions.
-\begin{defn}
+\begin{definition}
     \deflab{prime}%
     %
     An integer number $p > 1$ is \emphi{prime} if it is divisible
     only by $1$ or itself.
-\end{defn}
+\end{definition}
 
 A theorem:
 \begin{theorem}
@@ -134,19 +226,19 @@ to some of the Greeks.
 \bigskip
 
 I prefer to use \texttt{enumitem} for creating lists:
-\begin{compactenumI}
-    \smallskip%
-    \item One can create more compact lists.
+% \begin{compactenumI}
+%     \smallskip%
+%     \item One can create more compact lists.
 
-    \smallskip%
-    \item There is more control over labels.
-\end{compactenumI}
-\smallskip%
-And another good reason is because:
-\begin{compactenumI}[resume]
-    \smallskip%
-    \item One can resume the numbering.
-\end{compactenumI}
+%     \smallskip%
+%     \item There is more control over labels.
+% \end{compactenumI}
+% \smallskip%
+% And another good reason is because:
+% \begin{compactenumI}[resume]
+%     \smallskip%
+%     \item One can resume the numbering.
+% \end{compactenumI}
 
 \bigskip%
 
