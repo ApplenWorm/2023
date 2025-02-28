@@ -1,0 +1,313 @@
+%%--------------------------------------------------------
+%% example.tex
+%%
+%%--------------------------------------------------------
+\documentclass[12pt]{article}
+% \input{prefix}%
+\usepackage[sexy]{styles/evan}
+
+\providecommand{\BibLatexMode}[1]{}
+\providecommand{\BibTexMode}[1]{}
+
+\ifx\UseBibLatex\undefined%
+  \renewcommand{\BibLatexMode}[1]{}
+  \renewcommand{\BibTexMode}[1]{#1}
+\else
+  \renewcommand{\BibLatexMode}[1]{#1}
+  \renewcommand{\BibTexMode}[1]{}
+\fi
+
+%%%
+
+\BibLatexMode{%
+   \usepackage[bibencoding=utf8,style=alphabetic,backend=biber]{biblatex}%
+   \usepackage{my_biblatex}%
+}
+
+%%%
+
+
+%%%%
+
+\newcommand{\checkthis}[1]{\vspace{5pt}
+\noindent\textcolor{blue}{\textbf{Check:}} #1\vspace{5pt}}
+
+\newcommand{\week}[1]{\section*{Week #1}}
+\newcommand{\lecture}[2]{\subsection*{Lecture #1: #2}}
+%%%%
+
+% \newtheorem{theorem}{Theorem}[section]
+
+
+%%
+
+\providecommand{\emphind}[1]{}%
+\renewcommand{\emphind}[1]{\emph{#1}\index{#1}}
+
+\definecolor{blue25emph}{rgb}{0, 0, 11}
+
+\providecommand{\emphic}[2]{}
+\renewcommand{\emphic}[2]{\textcolor{blue25emph}{%
+      \textbf{\emph{#1}}}\index{#2}}
+
+\providecommand{\emphi}[1]{}%
+\renewcommand{\emphi}[1]{\emphic{#1}{#1}}
+
+\definecolor{almostblack}{rgb}{0, 0, 0.3}
+
+\providecommand{\emphw}[1]{}%
+\renewcommand{\emphw}[1]{{\textcolor{almostblack}{\emph{#1}}}}%
+
+\providecommand{\emphOnly}[1]{}%
+\renewcommand{\emphOnly}[1]{\emph{\textcolor{blue25}{\textbf{#1}}}}
+%%
+
+\newcommand{\HLink}[2]{\hyperref[#2]{#1~\ref*{#2}}}
+\newcommand{\HLinkSuffix}[3]{\hyperref[#2]{#1\ref*{#2}{#3}}}
+
+\newcommand{\figlab}[1]{\label{fig:#1}}
+\newcommand{\figref}[1]{\HLink{Figure}{fig:#1}}
+
+\newcommand{\thmlab}[1]{{\label{theo:#1}}}
+\newcommand{\thmref}[1]{\HLink{Theorem}{theo:#1}}
+
+\newcommand{\remlab}[1]{\label{rem:#1}}
+\newcommand{\remref}[1]{\HLink{Remark}{rem:#1}}%
+
+\newcommand{\corlab}[1]{\label{cor:#1}}
+\newcommand{\corref}[1]{\HLink{Corollary}{cor:#1}}%
+
+\providecommand{\deflab}[1]{}
+\renewcommand{\deflab}[1]{\label{def:#1}}
+\newcommand{\defref}[1]{\HLink{Definition}{def:#1}}
+
+\newcommand{\lemlab}[1]{\label{lemma:#1}}
+\newcommand{\lemref}[1]{\HLink{Lemma}{lemma:#1}}%
+
+\providecommand{\eqlab}[1]{}%
+\renewcommand{\eqlab}[1]{\label{equation:#1}}
+\newcommand{\Eqref}[1]{\HLinkSuffix{Eq.~(}{equation:#1}{)}}
+
+
+\newcommand{\MiraThanks}[1]{%
+   \thanks{%
+      School of Mathematical Sciences; %
+      Queen Mary, University of London; %
+      Mile End Road; %
+      London, E14NS, UK; %
+      \href{m.shamis@qmul.ac.uk}{m.shamis@qmul.ac.uk}; %
+      \url{https://www.qmul.ac.uk/maths/profiles/shamiss.html}. %
+   #1%
+   }%
+}
+
+
+% Bib latex stuff
+\BibLatexMode{%
+   \usepackage[bibencoding=utf8,style=alphabetic,backend=biber]{biblatex}%
+   \usepackage{my_biblatex}%
+}
+
+\BibLatexMode{%
+   \bibliography{template}
+}
+
+\begin{document}
+
+\title{Notes on Complex Variables MTH 5103 2024-2025}
+
+\author{%
+   Emomalijon Murodzoda%
+   %
+   \and%
+   %
+   Dr Mira Shamis%
+   \MiraThanks{\emph{ASK HER IF YOU HAVE ANY QUESTIONS!!!}}
+}
+
+\date{\today}
+
+\maketitle
+\week{1}
+\lecture{1}{Date}
+\begin{abstract}
+    %%% DELETE START
+    What is the use of complex functions and complex variables? One of many things, foe example, to compute the actual value of real convergent series. We know, for example, that the series $\sum_{n=1}^\infty\frac 1{n^2}<\infty$ convergent. The question is $\sum_{n=1}^\infty\frac 1{n^2}=?$ 
+    Towards the end of this module we will be able to compute the answer. 
+    We will see 
+    \begin{align*}
+        & 1+\frac 1{2^2}+\frac 1{3^2}+\dots = \frac{\pi^2}{6} \\
+        & 1+\frac 1{2^4}+\frac 1{3^4}+\dots = \frac{\pi^4}{90} \\
+        & 1+\frac 1{2^6}+\frac 1{3^6}+\dots = \frac{\pi^6}{245}
+    \end{align*}
+    Using complex functions we will be able to compute quite complicated (\emph{real!}) integrals, which may be very hard to compute otherwise and a lot of other things.
+    
+    \checkthis{\emph{Compute:} $\int_{-\infty}^{+\infty}\frac{dx}{1+x^4}$}
+
+    We start with the basic definitions, properties, and the geometry of complex numbers.
+    
+    One of the most annoying things about \LaTeX, and there are a lot,
+    is how hard it is to just start writing math papers. This is an
+    empty template intended to enable one to just start writing a
+    paper. It uses my personal style, but might be useful for other people. It uses BibLatex by default. Search \texttt{DELETE} in the file to know which portion to delete when you start writing.
+    %%% DELETE END
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{The Field of Complex Numbers}
+
+%%% DELETE START 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% TO USE TEMPLATE DELETE EVERYTHING FROM HERE...
+
+\begin{definition}\deflab{one-one}
+    A complex number is an ordered pair of real numbers: $(x,y)$. If $y=0$ we get the pair $(x,0)=x$ \{we denote it by \emphi{$x$}\}
+\end{definition}
+
+Since real numbers are a part of complex numbers, the algebraic actions (sum, subtraction, multiplication, division) on complex numbers need to be such that they agree with corresponding algebraic actions on real numbers. 
+We denote:
+\emphw{$\mathbb{C}$ - the set of all complex numbers}
+
+We define the operations of addition and multiplication as follows.
+\begin{definition}
+    Two complex numbers $z_1=(x_1,y_1)$, $z_2=(x_2,y_2)$,$z_1,z_2\in \mathbb{C}$ are equal if and only if $x_1=x_2$ and $y_1=y_2$.
+\end{definition}
+
+\begin{definition}\deflab{onetwo}
+    Sum of two complex numbers $z_1=(x_1,y_1)$, $z_2=(x_2,y_2)$ is a complex number $z_1+z_2 = (x_1+x_2,y_1+y_2)=z_3\in\mathbb{C}$
+\end{definition}
+ \begin{definition}\deflab{one-four}
+   Product of two complex numbers $z_1 = (x_1,y_1)$, $z_2= (x_2,y_2)$ is a complex number $z_1\cdot z_2=(x_1\cdot x_2-y_1\cdot y_2,x_1\cdot y_2 + x_2 \cdot y_1) = z_3 \in \mathbb{C}$
+ \end{definition}
+ 
+ It is easy to see that if we apply this rule to real numbers, we et the usual product.
+ \begin{remark}
+   For $x_1,x_2\in \mathbb{R}$: $x_1 = (x_1,0)$, $x_2 = (x_2,0)$.
+
+   $(x_1,0)\cdot (x_2,0)= (x_1x_2-0\cdot 0, x_1\cdot 0 + 0\cdot x_1)= (x_1x_2,0) = x_1\cdot x_2$.
+ \end{remark}
+
+ Usually we will write:
+ For $z\in \mathbb{C}$: $z=x+iy$, $i=(0,1)$ \{\emphi{i is an ordered pair (0,1)}\}
+
+ Let us compute $i^2$ using \defref{one-four}:
+$i² = (0,1)(0,1) = (0\cdot 0-1\cdot 1,0\cdot 1+1\cdot 0)=(-1,0)=-1$.
+
+It is easy to check the usual rules for arithmetic, namely te axioms of a field.
+
+\begin{proposition}
+   If $z_1$, $z_2$, $z_3$, $z\in \mathbb{C}$, then
+
+   \begin{enumerate}
+      \ii Closure: $z_1+z_2$, $z_1\cdot z_2 \in\mathbb{C}$
+      \ii Commutativity: $z_1+z_2 = z_2+z_1$, $z_1\cdot z_2 = z_2\cdot z_1$
+      \ii Associativity: $z_1+(z_2+z_3) = (z_1+z_2)+z_3$; $z_1\cdot (z_2z_3)=(z_1z_2)\cdot z_3$
+      \ii Distributivity: $z_1(z_2+z_3)=z_1\cdot z_2+z_1z_3$
+      \ii Zero and identity: $z+0 = z$; $z\cdot 1 = z$
+      \ii Negative and inverse: $z+(-z)=0$, where for $z=x+iy$, and $-z=-x-iy$; if $z\neq 0$, then $z\cdot z^{-1} = 1$, where $z^{-1} = \frac 1z=\frac {1}{x^2+y^2}-i\frac y{x^2+y^2}$
+   \end{enumerate}
+\end{proposition}
+\begin{proof}
+   Let us prove the Inverse. As for the rest: check at home (all parts follow fro mthe analagous properties of real numbers)
+   \begin{align*} 
+      z\cdot z^{-1} &= (x+iy)\left(\frac x{x^2+y^2}-i\frac y{x^2+y^2}\right) = \frac {x^2}{x^2+y^2}-i^2\frac {y^2}{x^2+y^2} + i\left(\frac {yx}{x^2+y^2}-\frac {xy}{x^2+y^2}\right) \\ 
+      &=\frac {x^2}{x^2+y^2}+\frac {y^2}{x^2+y^2}+i\cdot 0 = 1
+   \end{align*}
+\end{proof}
+
+We will see why the inverse is defined in exactly this way.
+\begin{definition}
+   Let $z=x+iy \in \mathbb{C}$. $x$ is called the \emphw{Real} part of $z$ and denoted by $x = \Re{z} = \mathfrak{Re} z = Re(z)$; $y$ is called the \emphw{Imaginary} part of $z$, denoted by $y=\Im z = \mathfrak{Im}z = Im(z)$.
+\end{definition}
+
+The algebraic form $x+iy$ to write complex numbers allow to add and to multiply comple numbers as polynomials, but remember that $y^2=-1$. For example:
+\begin{example}
+   $(x_1+iy_1)(x_2+iy_2) = x_1x_2+ix_1y_2+iy_1x_2+i^2y_1y_2 = (x_1x_2-y_1y_2) + i(x_1y_2 + y_1x_2)$
+   
+   $i^2 = -1$ - replaced.
+\end{example}
+
+\begin{example}
+Let $z_1 = 1+i$,$z_2 = 2-i$. Compute $z_1+z_2$, $z_1z_2$, $z_2^{-1}$ 
+\begin{soln}
+
+   $z_1+z_2 = (1+i) + (2-i) = (1+2) + i(1+(-1)) = 3$
+   
+   $z_1\cdot z_2 = (1+i)(2-i) = (1\cdot 2+i(-i)) + i(1(-1)+1\cdot 2) = 3+i$
+   
+   $z_2^{-1}$: $\Re z_2 = x = 2$. $\Im z_2 = y = -1 \implies z_2^{-1} = \frac{2}{2^2 +(-1)^2} - i\frac {-1}{2^2+(-1)^2} = \frac 25 + i \frac 15$
+\end{soln}
+\end{example}
+
+\begin{definition}
+   The complex conjugate of the complex number $z=x+iy$ is the complex number given by $\overline{z}=x-iy$ \{\emph{bar denotes the operation of complex conjugation}\}
+\end{definition}
+\checkthis{Some problems.}
+\begin{enumerate}
+   \item $\overline{(\bar{z})} = z$
+   \item $\overline{z_1+z_2} = \bar z_1 + \bar z_2$
+   \item $\overline{z_1\cdot z_2} = \bar z_1 \cdot \bar z_2$
+   \item $\Re z = \frac 12 (z+\bar z) = \frac 12 (x+iy + x-iy) = x$
+   \item $\Im z = \frac{1}{2i}(z-\bar z) = \frac{1}{2i} (x+iy - x +iy) = y$
+\end{enumerate}
+
+Using addition and multiplication we can define subtraction and division.
+
+\begin{definition}{Subtraction:}
+   $z_1-z_2$ is a complex number $z_3$ such that $z_1 = z_2+z_3$.
+\end{definition}
+
+Using this definition we obtain: $z_3 = (x_1-x_2) + i(y_1-y_2)$
+\begin{definition}{Division:}\deflab{divCNum}
+   Let $z_2\neq 0$. $\frac{z_1}{z_2}$ is a complex number $z_3$ such that $z_3\cdot z_2 = z_1$
+\end{definition}
+
+Let us calculate $z_3$. From \defref{divCNum} for $z_1 = x_1+iy_1$, $z_2 = x_2+iy_2$, $z_3  =x_3+iy_3$ we get:
+$z_1=x_1+iy_1 = (x_2+iy_2)(x_3+iy_3)=(x_2x_3-y_2y_3)+i(y_2x_3-x_2y_3)=z_2z_3$.
+
+Using \defref{onetwo} we have the following system of equations:
+\begin{equation}
+   \begin{cases}
+     \Re z_1 = x_1 = x_2x_3-y_2y_3 = \Re (z_2\cdot z_3) \\
+     \Im z_1 = y_1 = y_2x_3 = x_2y_3 = \Im (z_2\cdot z_3)
+   \end{cases}\,,
+\end{equation}
+Let us solve this system: the unknowns are $x_3$, $y_3$:
+Solve and get (\checkthis{I checked this is correct, but do it on your own.}) $x_3 = \frac{x_1x_2+y_1y_2}{x_2^2 + y_2^2}$; $y_3 = \frac{x_2y_1-x_1y_2}{x_2^2+y_2^2}$.
+
+\[\implies z_3 = \frac{z_1}{z_2} = \frac{x_1x_2+y_1y_2}{x_2^2 + y_2^2} + i\frac{x_2y_1-x_1y_2}{x_2^2+y_2^2}.\]
+In particular, we obtain for $\frac 1z$: $x_1 = 1$, $y_1 = 0$, $x_2 = x$, $y_2=y$, which \[\implies \frac 1z = \frac{1\cdot x+0\cdot y}{x^2+y^2}+i\frac{x\cdot 0-1\cdot y}{x^2+y^2} = \frac x{x^2+y^2}+i\frac{-y}{x^2+y^2}.\]
+
+Note that in denominator we have $z_2\cdot \overline{z_2} = (x_2+iy_2)(x_2-iy_2) = x_2^2+y_2^2$. Therefore, the recipe for division is: multiply the numerator and the denominator by the complex conjugate of the denominator and separate the real and imaginary parts.
+\begin{example}
+   Calculate $z=\frac{3+4i}{1-i}$.
+   \begin{soln}
+      $\overline{1-i} = 1+i$
+   \end{soln}
+\end{example}
+\section*{Acknowledgments}
+
+%%% DELETE START
+Thank everyone.
+%%% DELETE END
+
+%-------------------------------------------------------------------------
+
+\BibTexMode{%
+   \bibliographystyle{alpha}
+   \bibliography{template}
+}%
+\BibLatexMode{\printbibliography}
+
+\end{document}
+
+
+%--------------------------------------------------------
+%
+% x.tex - end of file
+%--------------------------------------------------------
+
