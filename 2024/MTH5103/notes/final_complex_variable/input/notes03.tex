@@ -1,0 +1,321 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+
+\section*{Week 3 Lecture 7}
+We have proved:
+$$ \lim_{z \to z_0} f(z) = u_0 + iv_0 \iff \lim_{(x,y) \to (x_0, y_0)} u(x,y) = u_0 \text{ and } \lim_{(x,y) \to (x_0, y_0)} v(x,y) = v_0 $$
+
+\textbf{Cor 3.1.} If $\lim_{z \to z_0} f(z) = w_0$, then $\lim_{z \to z_0} |f(z)| = |w_0|$. In addition, if $w_0 \neq 0$ and $\arg w_0$ is chosen in the interval $[-\pi, \pi]$, then $\lim_{z \to z_0} \arg f(z) = \arg w_0$.
+
+We extend the definition of limit to include the point at $\infty$:
+
+\textbf{Def 3.2:} We say that $\lim_{z \to \infty} f(z) = w_0$ if for any (given) $\epsilon > 0$ there exists $R = R(\epsilon) > 0$ such that for any $|z| > R$, $|f(z) - w_0| < \epsilon$.
+
+\textbf{Def 3.3:} We say that $\lim_{z \to z_0} f(z) = \infty$ if for any (given) $R > 0$ there exists $\delta = \delta(R) > 0$ such that if $0 < |z - z_0| < \delta$, then $|f(z)| > R$.
+
+\textbf{Def 3.4:} We say that $\lim_{z \to \infty} f(z) = \infty$ if for any $R > 0$ there exists $S = S(R) > 0$ such that if $|z| > S$, then $|f(z)| > R$.
+
+\textbf{Ex 5.5:} Prove that a) $\lim_{z \to i} z - i = \infty$ b) $\lim_{z \to \infty} \frac{1}{z} = 0$.
+
+Sol: a) By Def 3.3 we need to find $\delta = \delta(R) > 0$ for a given $R > 0$: If $\left|\frac{1}{z-i}\right| > R$, then $|z - i| < \frac{1}{R}$, thus the choice $\delta = \frac{1}{R}$ finishes the proof.
+
+b) By Def 3.2 we need to find $R > 0$ for a given $\epsilon > 0$. If $\left|\frac{1}{z} - 0\right| = \frac{1}{|z|} < \epsilon$, then $|z| > \frac{1}{\epsilon}$, choose $R = \frac{1}{\epsilon}$ and finish.
+
+\textbf{Ex 5.6:} Prove that $\lim_{z \to \infty} \frac{z^2 + 1}{z + 2i} = \infty$.
+
+Sol: By Def 3.4 we need to find $S = S(R) > 0$ for a given $R > 0$. If $\left|\frac{z^2 + 1}{z + 2i}\right| > R$, then
+$$ \left|\frac{z^2 + 1}{z + 2i}\right| = \left|\frac{z^2(1 + \frac{1}{z^2})}{z(1 + \frac{2i}{z})}\right| = |z| \left|\frac{1 + \frac{1}{z^2}}{1 + \frac{2i}{z}}\right| > R $$
+Let us show that $\left|\frac{1 + \frac{1}{z^2}}{1 + \frac{2i}{z}}\right| < 2$, then
+$$ \left|1 + \frac{2i}{z}\right| \geq \left|1 - \left|\frac{2i}{z}\right|\right| = \left|1 - \frac{2}{|z|}\right| \geq \left|1 - 2\right| = 1 $$
+Since $z \to \infty$ we can assume that $|z| > 1$. Thus (1) $\left|1 + \frac{2i}{z}\right| \geq \frac{1}{2}$.
+$$ \left|1 + \frac{1}{z^2}\right| \leq 1 + \left|\frac{1}{z^2}\right| \leq 1 + 1 = 2 $$
+triangle inequality.
+
+\section*{Week 3 Lecture 7}
+We have proved:
+$$ \lim_{z\to z_0} f(z) = u_0 + iv_0 \iff \lim_{(x,y)\to(x_0, y_0)} u(x,y) = u_0 \text{ and } \lim_{(x,y)\to(x_0,y_0)}v(x,y)=v_0 $$
+
+\textbf{Cor 3.1.} If $\lim_{z\to z_0} f(z) = w_0$, then $\lim_{z\to z_0} |f(z)| = |w_0|$. In addition, if $w_0 \neq 0$ and $\arg w_0$ is chosen in the interval $[-\pi, \pi]$, then $\lim_{z\to z_0} \arg f(z) = \arg w_0$.
+
+We extend the definition of limit to include the point at $\infty$:
+
+\textbf{Def 3.2:} We say that $\lim_{z\to\infty} f(z) = w_0$ if for any (given) $\epsilon > 0$ there exists $R = R(\epsilon) > 0$ such that for any $|z|>R, |f(z)-w_0|<\epsilon$.
+
+\textbf{Def 3.3:} We say that $\lim_{z\to z_0} f(z) = \infty$ if for any (given) $R>0$ there exists $\delta = \delta(R) > 0$ such that if $0<|z-z_0|<\delta$, then $|f(z)|>R$.
+
+\textbf{Def 3.4:} We say that $\lim_{z\to\infty}f(z)=\infty$ if for any $R>0$ there exists $S=S(R)>0$ such that if $|z|>S$, then $|f(z)|>R$.
+
+\textbf{Ex 5.5:} Prove that a) $\lim_{z\to i} z-i = \infty$ b) $\lim_{z\to\infty} \frac{1}{z} = 0$.
+
+Sol: a) By Def 3.3 we need to find $\delta = \delta(R) > 0$ for a given $R>0$: If $|\frac{1}{z-i}|>R$, then $|z-i|<\frac{1}{R}$, thus the choice $\delta = \frac{1}{R}$ finishes the proof.
+
+b) By Def 3.2 we need to find $R>0$ for a given $\epsilon > 0$. If $|\frac{1}{z} - 0| = \frac{1}{|z|} < \epsilon$, then $|z|>\frac{1}{\epsilon}$, choose $R=\frac{1}{\epsilon}$ and finish.
+
+\textbf{Ex 5.6:} Prove that $\lim_{z\to\infty} \frac{z^2+1}{z+2i} = \infty$.
+
+Sol: By Def 3.4 we need to find $S=S(R)>0$ for a given $R>0$. If $|\frac{z^2+1}{z+2i}|>R$, then
+$$ |\frac{z^2+1}{z+2i}| = |\frac{z^2(1+\frac{1}{z^2})}{z(1+\frac{2i}{z})}| = |z||\frac{1+\frac{1}{z^2}}{1+\frac{2i}{z}}| > R $$
+Let us show that $|\frac{1+\frac{1}{z^2}}{1+\frac{2i}{z}}|<2$, then $|1+\frac{2i}{z}| \geq |1-|\frac{2i}{z}|| = |1-\frac{2}{|z|}| \geq |1-2| = 1$. Since $z\to\infty$ we can assume that $|z|>1$. Thus (1) $|1+\frac{2i}{z}|\geq \frac{1}{2}$.
+$$ |1+\frac{1}{z^2}| \leq 1 + |\frac{1}{z^2}| \leq 1+1 = 2 $$
+triangle inequality.
+Thus (2) $\left|1 + \frac{1}{z^2}\right| < 1$ and we get
+$$ \left|\frac{1 + \frac{1}{z^2}}{1 + \frac{2i}{z}}\right| = \frac{\left|1 + \frac{1}{z^2}\right|}{\left|1 + \frac{2i}{z}\right|} < \frac{2}{1} = 2 $$
+Alternatively: By Prop 3.1 2)
+$$ \lim_{z \to \infty} \left|\frac{z^2 + 1}{z + 2i}\right| = \lim_{z \to \infty} |z| \left|1 + \frac{1}{z^2}\right| \left|\frac{1}{1 + \frac{2i}{z}}\right| = \lim_{z \to \infty} |z| \lim_{z \to \infty} \left|1 + \frac{1}{z^2}\right| \lim_{z \to \infty} \left|\frac{1}{1 + \frac{2i}{z}}\right| $$
+By Ex 5.5 b): $\lim_{z \to \infty} \frac{1}{z} = 0 \implies \lim_{z \to \infty} 1 + \frac{1}{z^2} = 1, \lim_{z \to \infty} \frac{1}{1 + \frac{2i}{z}} = 1 \implies \lim_{z \to \infty} \frac{z^2 + 1}{z + 2i} = \infty$.
+
+Our next subject is continuity of complex functions. First, we need several definitions of sets in the complex plane.
+
+\section{Sets in $\mathbb{C}$}
+
+\textbf{Def 4.1:} A subset $S \subseteq \mathbb{C}$ is open if for each $z_0 \in S$ there exists $r > 0$ such that the disc $\{z \in \mathbb{C} | |z - z_0| < r\} \subseteq S$ is a subset of $S$.
+
+\textbf{Def 4.2:} An open set is connected if it is not a disjoint union of two non-empty open sets. OR: If any two points inside can be connected with a continuous line which is contained in the set.\}
+
+RMK: In $\mathbb{C}$ these two definitions (in Def 4.2) are equivalent, but it is not always the case. The second - path connected - always implies the first, but there are complicated examples of sets that are connected but not path connected. OR means: For any points $z, z'$ in the set $S$ there exists a continuous function $p: [0, 1] \to S$ such that $p(0) = z, p(1) = z'$.
+
+\textbf{Def 4.3:} A connected open subset $R \subseteq \mathbb{C}$ is called a domain.
+
+\textbf{Ex 6.1:} a) The interior of the unit disc $\{z \in \mathbb{C} | |z| < 1\}$ is a domain - it is open and connected.
+
+b) The unit disc with the boundary $\{z \in \mathbb{C} | |z| \leq 1\}$ is connected but not open $\implies$ it is not a domain. Take any point on the boundary $|z| = 1$. Then, any disc around this point is not contained in the unit disc regardless how small its radius.
+
+c) $\{z \in \mathbb{C} | |z| < 1\} \cup \{z \in \mathbb{C} | |z - 3| < 1\}$ - open, but not connected - it is a union of 2 non-empty disjoint open sets.
+
+\textbf{Def 4.4:} Let $S \subseteq \mathbb{C}$. $z_0 \in S$ is an interior point of $S$ if there exists $r > 0$ such that the disc $\{z \in \mathbb{C} | |z - z_0| < r\} \subseteq S$. $z_1 \in S$ is a boundary point of $S$ if every open disc around it, $\{z \in \mathbb{C} | |z - z_1| < r\}$ for any $r > 0$ contains points from $S$ and not from $S$ ($\mathbb{C} \setminus S$). The collection of boundary points of $S$ is called the boundary of $S$ and denoted by $\partial S$.
+
+An equivalent definition of an open set:
+
+\textbf{Def 4.1$\frac{1}{2}$:} $S \subseteq \mathbb{C}$ is open if it contains only interior points.
+
+\textbf{Def 4.5:} A set $S \subseteq \mathbb{C}$ is closed if it contains all its boundary points.
+
+Let $S \subseteq \mathbb{C}$ be an open set. If we add to $S$ all its boundary points we always will get a closed set! The closure of $S$: $\bar{S} = S \cup \partial S$ is a closed set.
+
+Rmk: There exist sets that are neither open nor closed!
+
+\textbf{Ex 6.2:} 1) The set $S = \{z \in \mathbb{C} | 1 < |z| < 4\}$ is an open set. Its boundary consists of two parts: $\partial S = \{z \in \mathbb{C} | |z| = 1, |z| = 4\}$ and its closure is: $\bar{S} = S \cup \partial S = \{z \in \mathbb{C} | 1 \leq |z| \leq 4\}$.
+
+\begin{enumerate}
+    \setcounter{enumi}{1}
+    \item The set $S = \{z \in \mathbb{C} | 1 \leq |z| < 4\}$ neither open nor closed : it contains only part of its boundary points $\{z \in \mathbb{C} | |z| = 1\}$ but not all the boundary points, as $\{z \in \mathbb{C} | |z| = 4\}$ is not in $S$.
+\end{enumerate}
+
+\textbf{Def 4.6:} A collection of all the points $z \in \mathbb{C}$ that are on the distance $\epsilon > 0$ from $z_0$ is called $\epsilon$-neighborhood of $z_0 \in \mathbb{C}$. For $\epsilon > 0, z_0 \in \mathbb{C}: \epsilon$-neighborhood of $z_0$ is the set $\{z \in \mathbb{C} | |z - z_0| < \epsilon\}$.
+
+Having all these definitions, now we can study the continuity of a complex function.
+
+\section{Continuity}
+\textbf{Def 5.1:} The function $f(z)$ is continuous at the point $z_0$ if it is defined at a neighborhood of $z_0$ (and at $z_0$) and $\lim_{z\to z_0} f(z) = f(z_0)$.
+Namely: $f$ is defined at $z_0$, at some $\epsilon$-neighborhood of $z_0$, the limit above exists and it is equal to the value of the function at the point $z_0$.
+The function $f(z)$ is continuous in some domain $S$ if it is continuous at every point $z \in S$.
+
+As a consequence of the limit laws in Prop 3.1, we have the following (similar) proposition about the continuity.
+\textbf{Prop 5.1:} If $f(z)$ and $g(z)$ are continuous at $z_0 \in \mathbb{C}$, then so are $f+g$ and $f\cdot g$, and if $g(z_0) \neq 0$, then $\frac{f}{g}$ is continuous at $z_0$.
+We also have an analogue of Prop 3.2:
+
+\textbf{Prop 5.2:} The function $f(z) = u(x,y) + iv(x,y)$ is continuous at the point $z_0 = x_0 + iy_0 \iff$ the real functions $u(x,y), v(x,y)$ are continuous at the point $(x_0, y_0)$.
+
+Let us see some examples of continuous functions.
+\textbf{Ex 7.1:} a) It is obvious that the constant function is continuous everywhere. $f(z) = c$ is continuous at every $z \in \mathbb{C}$.
+b) It is also clear that the identity function is continuous everywhere: $f(z) = z$ is continuous at every $z \in \mathbb{C}$ (Check - from Def 5.1!)
+c) Combining a), b), and Prop 5.1: We conclude that the linear function is continuous everywhere: for constants $a, b \in \mathbb{C}$, $f(z) = az + b$ is continuous at every $z \in \mathbb{C}$.
+
+\textbf{Ex 7.2:} Prove that $z^n, n \in \mathbb{N}$ is continuous for all $z \in \mathbb{C}$.
+Pf: We prove it by checking the definition Def 5.1 at some $z_0 \in \mathbb{C}$. Consider:
+$$ z^n - z_0^n = (z - z_0)(z^{n-1} + z^{n-2}z_0 + z^{n-3}z_0^2 + \dots + zz_0^{n-2} + z_0^{n-1}) $$
+Denote $|z| = r, |z_0| = r_0$. Then, we obtain
+$$ |z^n - z_0^n| \leq |z - z_0|(r^{n-1} + r^{n-2}r_0 + \dots + rr_0^{n-2} + r_0^{n-1}) $$
+Let us look at all the $z$-s inside the disc of radius $\delta$ centered at $z_0: \{z \in \mathbb{C} | |z - z_0| < \delta\}$. For every $z$ in this set $r = |z| = |z - z_0 + z_0| \leq |z - z_0| + |z_0| < \delta + r_0$, thus
+\begin{align*}
+|z^n - z_0^n| &\leq |z - z_0|((r_0 + \delta)^{n-1} + (r_0 + \delta)^{n-2}r_0 + \dots + (r_0 + \delta)r_0^{n-2} + r_0^{n-1}) \\
+&\leq |z - z_0| n(r_0 + \delta)^{n-1}
+\end{align*}
+The choice of $\delta$ small enough so that $|z^n - z_0^n|$ is smaller than the given $\epsilon$ finishes the proof.
+
+Combining Prop 5.1, Ex 7.2, and Ex 7.1 a),b), we conclude:
+\textbf{Prop 5.3:} Every polynomial $P_n(z) = a_0 + a_1 z + a_2 z^2 + \dots + a_n z^n$ with complex coefficients $a_0, a_1, a_2, a_3, \dots, a_n \in \mathbb{C}$ is continuous at every $z \in \mathbb{C}$. Furthermore, every rational function $f(z) = \frac{P_n(z)}{Q_m(z)}$ ($P_n, Q_m$ polynomials of degree $n, m$ respectively) is continuous at every $z \in \mathbb{C}$, except possibly at the roots of $Q_m(z)$.
+
+"Possibly" since if there is a common root to $P_n(z)$ and $Q_m(z)$ that can be factorized, the function *may* be continuous at that root. We said that rational functions are continuous except possibly at the roots of the denominator, however, recalling Def 3.3: Def 3.3 $\implies$ Rational functions can be regarded as continuous everywhere on $\mathbb{C} \cup \{\infty\}$.
+
+In practice, one of the best ways of dealing with "$\infty$" in limits is to use substitution $z = \frac{1}{\zeta}$ and let $\zeta \to 0$.
+
+\textbf{Ex 7.3:} 1) $\lim_{z \to i} \frac{iz + 3}{z + 1} = \infty$ since $\lim_{z \to -1} \frac{z + 1}{iz + 3} = \frac{-1 + 1}{-i + 3} = 0$.
+
+\begin{enumerate}
+    \setcounter{enumi}{1}
+    \item $\lim_{z \to \infty} \frac{z + 2i}{z^2 + 8i} = \lim_{\zeta \to 0} \frac{\frac{1}{\zeta} + 2i}{\frac{1}{\zeta^2} + 8i} = \lim_{\zeta \to 0} \frac{\zeta(1 + 2i\zeta)}{1 + 8i\zeta^2} = \lim_{\zeta \to 0} \zeta \lim_{\zeta \to 0} \frac{1 + 2i\zeta}{1 + 8i\zeta^2} = 0 \cdot 1 = 0$.
+    \item $\lim_{z \to \infty} \frac{5z + i}{z + i} = \lim_{\zeta \to 0} \frac{\frac{5}{\zeta} + i}{\frac{1}{\zeta} + i} = \lim_{\zeta \to 0} \frac{5 + i\zeta}{1 + i\zeta} = \lim_{\zeta \to 0} (5 + i\zeta) \lim_{\zeta \to 0} \frac{1}{1 + i\zeta} = 5 \cdot 1 = 5$.
+\end{enumerate}
+
+\textbf{Ex 7.4:} Is $\frac{z^3 + 8i}{z + 2i}$ continuous at $z = 2i$?
+
+Sol: Since $2i + 1 \neq 0$, by Prop 5.1: $\lim_{z \to 2i} \frac{z^3 + 8i}{z + 2i} = \frac{\lim_{z \to 2i} (z^3 + 8i)}{\lim_{z \to 2i} z + 1} = \frac{(8i^3 + 8i)}{2i + 1} = \frac{-8i + 8i}{2i + 1} = 0$ $\implies$ continuous. The function is defined at $z = 2i$ and in a neighborhood of $z = 2i$, the limit exists and equal to the value of the function $\implies$ the function is continuous at $z = 2i$.
+
+\section{Lectures 8+9}
+We have studied the limits and the continuity of complex functions. Now we will study what does it mean for the complex function to be differentiable.
+
+\section{Differentiability}
+\textbf{Def 6.1} Let $f(z)$ be defined in a neighborhood of a point $z_0 \in \mathbb{C}$. If the limit $\lim_{z \to z_0} \frac{f(z) - f(z_0)}{z - z_0}$ exists, then $f$ is differentiable at $z_0$ and $f'(z_0) = \lim_{z \to z_0} \frac{f(z) - f(z_0)}{z - z_0}$.
+
+Alternative notation: Denote $\Delta z = z - z_0$. Then $f'(z_0) = \lim_{\Delta z \to 0} \frac{f(z_0 + \Delta z) - f(z_0)}{\Delta z}$.
+
+\textbf{Ex 8.1:} Using Def 6.1 compute the derivative of a) $f(z) = z$ b) $f(z) = z^2$.
+
+Sol: a) $\lim_{\Delta z \to 0} \frac{f(z_0 + \Delta z) - f(z_0)}{\Delta z} = \lim_{\Delta z \to 0} \frac{z_0 + \Delta z - z_0}{\Delta z} = \lim_{\Delta z \to 0} \frac{\Delta z}{\Delta z} = 1 \implies f'(z)$ exists for all $z$ and $f'(z) = 1$.
+
+b) $\lim_{\Delta z \to 0} \frac{f(z_0 + \Delta z) - f(z_0)}{\Delta z} = \lim_{\Delta z \to 0} \frac{(z_0 + \Delta z)^2 - z_0^2}{\Delta z} = \lim_{\Delta z \to 0} \frac{z_0^2 + 2z_0 \Delta z + \Delta z^2 - z_0^2}{\Delta z} = \lim_{\Delta z \to 0} \frac{\Delta z(2z_0 + \Delta z)}{\Delta z} = 2z_0 + \lim_{\Delta z \to 0} \Delta z = 2z_0 \implies f'(z)$ exists for all $z$ and $f'(z) = 2z$.
+
+\textbf{Ex 8.2:} Prove that for any $n \in \mathbb{N}$, $(z^n)' = nz^{n-1}$ for all $z \in \mathbb{C}$.
+
+Pf: Recall: $(a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^k b^{n-k}$, where $\binom{n}{k} = \frac{n!}{k!(n-k)!}$.
+$$ \lim_{\Delta z \to 0} \frac{f(z_0 + \Delta z) - f(z_0)}{\Delta z} = \lim_{\Delta z \to 0} \frac{(z_0 + \Delta z)^n - z_0^n}{\Delta z} = \lim_{\Delta z \to 0} \frac{z_0^n + nz_0^{n-1}\Delta z + \frac{n(n-1)}{2}z_0^{n-2}\Delta z^2 + \dots + \Delta z^n - z_0^n}{\Delta z} $$
+$$ = \lim_{\Delta z \to 0} \left(nz_0^{n-1} + \frac{n(n-1)}{2}z_0^{n-2}\Delta z + \dots + \Delta z^{n-1}\right) = nz_0^{n-1} $$
+$\implies f'(z)$ exists for all $z$ and $f'(z) = nz^{n-1}$.
+
+These examples suggest that the differentiation of complex functions is similar to the differentiation of real functions. Let us see examples that it may be very different!
+
+\textbf{Ex 8.3} Compute the derivative of $f(z) = \bar{z}$.
+Sol: $\lim_{\Delta z \to 0} \frac{f(z_0 + \Delta z) - f(z_0)}{\Delta z} = \lim_{\Delta z \to 0} \frac{\overline{z_0 + \Delta z} - \bar{z_0}}{\Delta z} = \lim_{\Delta z \to 0} \frac{\bar{z_0} + \overline{\Delta z} - \bar{z_0}}{\Delta z} = \lim_{\Delta z \to 0} \frac{\overline{\Delta z}}{\Delta z}$ - doesn't exist! (Ex 5.2)
+
+We have proved (Ex 5.2) that this limit does not exist by looking at the limits along real and imaginary axes and showing that they do not agree.
+$\implies f(z) = \bar{z}$ is not differentiable at any $z \in \mathbb{C}$.
+
+\textbf{Ex 8.4:} Compute the derivative of $f(z) = |z|^2$.
+Sol: $\lim_{\Delta z \to 0} \frac{|z + \Delta z|^2 - |z|^2}{\Delta z} = \lim_{\Delta z \to 0} \frac{(z + \Delta z)(\bar{z} + \overline{\Delta z}) - |z|^2}{\Delta z} = \lim_{\Delta z \to 0} \frac{z\bar{z} + \Delta z \bar{z} + z\overline{\Delta z} + \Delta z \overline{\Delta z} - z\bar{z}}{\Delta z} = \lim_{\Delta z \to 0} \left(\bar{z} + z\frac{\overline{\Delta z}}{\Delta z} + \overline{\Delta z}\right)$ (*)
+
+If $z \neq 0$, then $\lim_{\Delta z \to 0} \frac{\overline{\Delta z}}{\Delta z}$ does not exist! (tends to $z$ along the real axis and to $(-z)$ along imaginary axis $\implies$ does not exist) $\implies$ The limit (*) does not exist $\implies f'(z)$ does not exist.
+
+If $z = 0: \lim_{\Delta z \to 0} \frac{\overline{\Delta z}}{\Delta z} \cdot 0 = 0, \bar{z} = 0 \implies$ the limit (*) exists and $f'(0) = 0$.
+
+Thus, $f(z) = |z|^2$ is differentiable only at $z = 0$.
+
+Now we observe how we can construct complicated differentiable functions from elementary ones. The following proposition is analogous to the real case.
+
+\textbf{Prop 6.1:} If $c \in \mathbb{C}$ is a constant and $f(z), g(z)$ are differentiable at $z$, then:
+\begin{enumerate}
+    \item $c' = 0$
+    \item $(cf(z))' = cf'(z)$
+    \item $f + g$ is differentiable at $z$ and $(f + g)'(z) = f'(z) + g'(z)$
+    \item $f \cdot g$ is differentiable at $z$ and $(fg)'(z) = f'(z)g(z) + f(z)g'(z)$
+    \item If $g(z) \neq 0$, then $\frac{f}{g}$ is differentiable at $z$ and $\left(\frac{f}{g}\right)'(z) = \frac{g(z)f'(z) - f(z)g'(z)}{(g(z))^2}$
+    \item Chain rule. If $f(z)$ is differentiable at $z_0$ and $g(z)$ is differentiable at $w_0 = f(z_0)$, then the composed function $(g \circ f)(z) = g(f(z))$ is differentiable at $z_0$ and $(g \circ f)'(z_0) = g'(w_0)f'(z_0) = g'(f(z_0))f'(z_0)$.
+\end{enumerate}
+
+Pf. EXERCISE (The details follow from Def 6.1, Prop 3.1; the chain rule - proof follows from Def 6.1 as in the real case).
+We have seen that the constant function, the identity function and $z^n$ are differentiable everywhere. Since any polynomial can be constructed out of these functions, using Prop 6.1 we conclude:
+
+Combining Ex 8.1, Ex 8.2, and Prop 6.1 1), 3), we obtain:
+
+\textbf{Cor 6.1.} Any polynomial $P_n(z) = a_0 + a_1z + \dots + a_nz^n, a_0, \dots, a_n \in \mathbb{C}$ is differentiable everywhere in $\mathbb{C}$ and $(P_n)'(z) = a_1 + 2a_2z + 3a_3z^2 + \dots + na_nz^{n-1}$.
+
+Prop 6.1 with Cor 6.1 imply
+
+\textbf{Cor 6.2:} Any rational function $f(z) = \frac{P_n(z)}{Q_m(z)}$ ($P_n, Q_m$ polynomials of degree $n, m$ respectively) is differentiable everywhere in $\mathbb{C}$, except possibly at the roots of $Q_m(z)$, and $f'(z) = \frac{P_n'(z)Q_m(z) - P_n(z)Q_m'(z)}{(Q_m(z))^2}, (Q_m(z) \neq 0)$.
+
+\textbf{Ex 8.5:} Compute the derivative of $f(z) = \frac{z^3 - 5z + 2i}{z^2 - 3iz}$.
+
+Sol: Combining Prop 6.4, Cor 6.2, and Ex 8.2 we obtain
+$$ f'(z) = \frac{(3z^2 - 5)(z^2 - 3iz) - (z^3 - 5z + 2i)(2z - 3i)}{(z^2 - 3iz)^2} = \frac{z^4 - 6iz^3 + 5z^2 - 4iz - 6}{(z^2 - 3iz)^2} $$
+(exists for $z \neq 0, 3i$, for which $z^2 - 3iz = 0$ and the numerator is not 0!)
+
+Next proposition provides a relation between the continuity and differentiability.
+
+\textbf{Prop 6.5:} If $f$ is differentiable at $z_0$, then $f$ is continuous at $z_0$.
+
+Pf: Observe that
+$$ \lim_{z \to z_0} (f(z) - f(z_0)) = \lim_{z \to z_0} \frac{f(z) - f(z_0)}{z - z_0}(z - z_0) =  \lim_{z \to z_0}\frac{f(z) - f(z_0)}{z - z_0} \lim_{z \to z_0}(z - z_0) = f'(z_0) \cdot 0 = 0 $$
+$$ \implies \lim_{z \to z_0}(f(z) - f(z_0)) = (\lim_{z \to z_0} f(z)) - f(z_0) = 0 \iff \lim_{z \to z_0} f(z) = f(z_0) $$
+
+Rmk: The converse is false!  $f(z) = \bar{z}$ is continuous everywhere, yet differentiable nowhere!
+
+This leads to the following natural question:
+Q-n: What are the necessary and sufficient conditions for a complex function to be differentiable?
+
+We are going to state and partially prove these conditions.
+Recall: A real function $u(x,y)$ is differentiable at the point $(x_0, y_0)$ if both partial derivatives $\frac{\partial u}{\partial x}, \frac{\partial u}{\partial y}$ exist at $(x_0, y_0)$, and
+$$\lim_{(x,y) \to (x_0, y_0)} \frac{u(x,y) - u(x_0, y_0) - \frac{\partial u}{\partial x}(x_0, y_0)(x-x_0) - \frac{\partial u}{\partial y}(x_0, y_0)(y-y_0)}{\sqrt{(x-x_0)^2 + (y-y_0)^2}} = 0$$
+Namely, the function $\left( u(x_0, y_0) + \frac{\partial u}{\partial x}(x_0, y_0)(x-x_0) + \frac{\partial u}{\partial y}(x_0, y_0)(y-y_0) \right)$ is a good approximation to $u(x,y)$ near the point $(x_0, y_0)$.
+In particular, it means that: There exists a neighborhood of $(x_0, y_0)$ s.t. $\frac{\partial u}{\partial x}, \frac{\partial u}{\partial y}$ are defined everywhere in this neighborhood and continuous at $(x_0, y_0)$.
+
+Now we are ready to state the conditions.
+\textbf{Thm 6.1:} The function $f(z) = u(x,y) + iv(x,y)$ is differentiable at $z_0 = x_0 + iy_0$ if and only if $u(x,y)$ and $v(x,y)$ are differentiable at $(x_0, y_0)$ and the following conditions, called Cauchy-Riemann equations, hold:
+\begin{align*}
+\frac{\partial u}{\partial x}(x_0, y_0) &= \frac{\partial v}{\partial y}(x_0, y_0) \\
+\frac{\partial u}{\partial y}(x_0, y_0) &= -\frac{\partial v}{\partial x}(x_0, y_0) \quad \text{CR equations}
+\end{align*}
+Furthermore: $f'(z_0) = \frac{\partial u}{\partial x}(x_0, y_0) + i\frac{\partial v}{\partial x}(x_0, y_0)$.
+
+The contrapositive statement: if Cauchy-Riemann equations fail, then the function is not differentiable.
+However, it is *not* true that if CR equations hold, then the function is differentiable, namely, we cannot drop the assumption that $u$ and $v$ are differentiable at $(x_0, y_0)$.
+
+\textbf{Ex 8.6} Let $z = x+iy, f(z) = \sqrt{|xy|}$, namely: $u(x,y) = \sqrt{|xy|}, v(x,y) = 0$.
+CHECK: $f(z)$ satisfies CR equations at $z=0$:
+$$ \frac{\partial u}{\partial x}(0,0) = \frac{\partial v}{\partial y}(0,0) = \frac{\partial u}{\partial y}(0,0) = \frac{\partial v}{\partial x}(0,0) = 0 $$
+CHECK: $u(x,y)$ is not differentiable at $(0,0)$.
+Claim: $f'(0)$ does not exist.
+Pf: Need to show that $\lim_{z\to 0} \frac{f(z) - f(0)}{z-0} = \lim_{z\to 0} \frac{f(z)}{z}$ does not exist.
+
+We do that by showing that on different paths the limit takes different values.
+
+Let $x = \alpha r, y = \beta r$, where $\alpha, \beta \in \mathbb{R}, \alpha, \beta \neq 0$ constants. Assume $r > 0$ ($r < 0$ in the same way).
+$$ \lim_{z \to 0} \frac{f(z)}{z} = \lim_{(x,y) \to (0,0)} \frac{\sqrt{|xy|}}{x + iy} = \lim_{r \to 0} \frac{\sqrt{|\alpha \beta|r^2}}{r(\alpha + i\beta)} = \lim_{r \to 0} \frac{\sqrt{|\alpha \beta|}r}{r(\alpha + i\beta)} = \frac{\sqrt{|\alpha \beta|}}{\alpha + i\beta} $$
+Namely, for different $\alpha$ and $\beta$ the limit takes different values, thus does not exist.
+
+This example shows that it is not enough for the sufficient part that the partial derivatives are just defined at a point, they need to be defined in a neighborhood and to be continuous at the point. For the necessary part, it is enough though, and we will prove this direction now.
+
+First, we state a corollary that gives polar form of Cauchy-Riemann equations.
+
+\textbf{Cor 6.3} [Polar form of Cauchy-Riemann equations]
+Let $z = re^{i\theta} = r(\cos \theta + i\sin \theta)$, where $r = |z|, \theta = \arg z \mod 2\pi$. Let $f(z) = \psi(r, \theta) + i\phi(r, \theta)$. Then $\frac{\partial \psi}{\partial r} = \frac{1}{r}\frac{\partial \phi}{\partial \theta}$ and $\frac{\partial \phi}{\partial r} = -\frac{1}{r}\frac{\partial \psi}{\partial \theta}$.
+Moreover: $f'(z) = e^{-i\theta}(\frac{\partial \psi}{\partial r} + i\frac{\partial \phi}{\partial r})$.
+
+Now we prove the following form of the necessary condition:
+\textbf{Prop 6.6:} If $f(z) = u(x,y) + iv(x,y)$ is differentiable at $z_0 = x_0 + iy_0$, then $\frac{\partial u}{\partial x}, \frac{\partial u}{\partial y}, \frac{\partial v}{\partial x}, \frac{\partial v}{\partial y}$ all exist at $(x_0, y_0)$, and $\frac{\partial u}{\partial x}(x_0, y_0) = \frac{\partial v}{\partial y}(x_0, y_0)$ and $\frac{\partial u}{\partial y}(x_0, y_0) = -\frac{\partial v}{\partial x}(x_0, y_0)$.
+
+This statement is weaker as we are not proving that $u$ and $v$ are differentiable at $(x_0, y_0)$.
+
+Pf: Since $f$ is differentiable at $z_0$, the following limit exists:
+$$ f'(z_0) = \lim_{\Delta z \to 0} \frac{f(z_0 + \Delta z) - f(z_0)}{\Delta z} = \lim_{\substack{\Delta x \to 0 \\ \Delta y \to 0}} \frac{u(x_0 + \Delta x, y_0 + \Delta y) + iv(x_0 + \Delta x, y_0 + \Delta y) - (u(x_0, y_0) + iv(x_0, y_0))}{\Delta x + i\Delta y} $$
+$$ = \lim_{\substack{\Delta x \to 0 \\ \Delta y \to 0}} \left[ \frac{u(x_0 + \Delta x, y_0 + \Delta y) - u(x_0, y_0) + i(v(x_0 + \Delta x, y_0 + \Delta y) - v(x_0, y_0))}{\Delta x + i\Delta y} \right] \quad (*) $$
+
+Since the limit (*) exists, it is unique and independent of path $\Delta z \to 0$. We compute this limit along 2 different paths:
+
+1) $\Delta x \to 0, \Delta y = 0$
+2) $\Delta x = 0, \Delta y \to 0$
+
+1) $f'(z_0) = \lim_{\substack{\Delta x \to 0 \\ \Delta y = 0}} \left[ \frac{u(x_0 + \Delta x, y_0) - u(x_0, y_0) + i(v(x_0 + \Delta x, y_0) - v(x_0, y_0))}{\Delta x} \right] = \frac{\partial u}{\partial x}(x_0, y_0) + i\frac{\partial v}{\partial x}(x_0, y_0)$
+
+2) $f'(z_0) = \lim_{\substack{\Delta x = 0 \\ \Delta y \to 0}} \left[ \frac{u(x_0, y_0 + \Delta y) - u(x_0, y_0) + i(v(x_0, y_0 + \Delta y) - v(x_0, y_0))}{i\Delta y} \right] = \frac{1}{i}\frac{\partial u}{\partial y}(x_0, y_0) + \frac{\partial v}{\partial y}(x_0, y_0) = -i\frac{\partial u}{\partial y}(x_0, y_0) + \frac{\partial v}{\partial y}(x_0, y_0)$
+
+Since on both paths we get the same limit, we conclude that $\frac{\partial u}{\partial x}(x_0, y_0) + i\frac{\partial v}{\partial x}(x_0, y_0) = -i\frac{\partial u}{\partial y}(x_0, y_0) + \frac{\partial v}{\partial y}(x_0, y_0)$.
+
+Comparing the real and imaginary parts we obtain $\frac{\partial u}{\partial x}(x_0, y_0) = \frac{\partial v}{\partial y}(x_0, y_0)$ and $-\frac{\partial u}{\partial y}(x_0, y_0) = \frac{\partial v}{\partial x}(x_0, y_0)$.
+
+\textbf{Ex 8.7} Where $f(x,y) = x^3 - 3xy^2 + i(3x^2y - y^3)$ is differentiable?
+
+Sol: Let us check where $u = x^3 - 3xy^2, v = 3x^2y - y^3$ are differentiable and CR equations hold.
+
+$\frac{\partial u}{\partial x} = 3x^2 - 3y^2 \qquad \frac{\partial v}{\partial x} = 6xy$
+
+$\frac{\partial u}{\partial y} = -6xy \qquad \frac{\partial v}{\partial y} = 3x^2 - 3y^2$
+
+$\implies u, v$ are differentiable at every $(x,y)$. CR equations:
+$$ \begin{cases}
+\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y} \\
+\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}
+\end{cases}
+\iff
+\begin{cases}
+3x^2 - 3y^2 = 3x^2 - 3y^2 \to \text{holds only for } x = 0 \\
+-6xy = -6xy \to \text{since } x = 0, \text{holds for any } y
+\end{cases}
+$$
+
+$\implies f(z)$ is differentiable at all points of the form $(0, y)$ and $f'(0, y) = \frac{\partial u}{\partial x}(0, y) + i\frac{\partial v}{\partial x}(0, y) = -3y^2$.
+
+\end{document}
