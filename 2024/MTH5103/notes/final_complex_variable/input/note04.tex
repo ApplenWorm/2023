@@ -1,5 +1,6 @@
-
-\section*{Week 4. Lecture 10}
+\week{4}
+\lecture{10}{Analyticity and other...}
+% \section*{Week 4. Lecture 10}
 
 We have studied the continuity and differentiability of complex functions. Our next subject - analytic functions.
 
@@ -7,16 +8,16 @@ We have studied the continuity and differentiability of complex functions. Our n
 
 Recall: If for any $z$ corresponds one value $f(z)$, then we say that $f$ is single-valued function.
 
-\textbf{Def 7.1:} Single-valued function $f(z)$ is analytic at the point $z_0$ if there exists $\epsilon$-neighborhood $D(z_0, \epsilon)$ of $z_0$ so that $f$ is differentiable at every $z \in D(z_0, \epsilon)$.
-
+\begin{definition} 7.1:} Single-valued function $f(z)$ is analytic at the point $z_0$ if there exists $\epsilon$-neighborhood $D(z_0, \epsilon)$ of $z_0$ so that $f$ is differentiable at every $z \in D(z_0, \epsilon)$.
+\end{definition}
 We have proved that if $f$ is differentiable at $z_0$, then $f$ is continuous at $z_0$, therefore if $f$ is analytic at $z_0$, then $f$ is continuous at $z_0$.
 
 Let us note that we will also use names Holomorphic or Regular functions for analytic functions.
 
-\textbf{Def 7.2:} A function that is analytic for every $z \in \mathbb{C}$ (on the whole plane) is called an entire function.
-
-\textbf{Def 7.3:} Single-valued function is analytic on a domain (open connected subset of the plane $\mathbb{C}$) $\Omega$ if it is differentiable at every $z \in \Omega$.
-
+\begin{definition} 7.2:} A function that is analytic for every $z \in \mathbb{C}$ (on the whole plane) is called an entire function.
+\end{definition}
+\begin{definition} 7.3:} Single-valued function is analytic on a domain (open connected subset of the plane $\mathbb{C}$) $\Omega$ if it is differentiable at every $z \in \Omega$.
+\end{definition}
 Note: From Def 7.1: a set on which the function is analytic needs to be open, however if we say that some function $f$ is analytic in a closed set, we mean that there exists an open set that contains this closed set and the function is analytic on this open set.
 
 \textbf{Ex 9.1:} Polynomial $P_n(z) = a_0 + a_1z + \dots + a_nz^n$ - single-valued function differentiable at every $z \in \mathbb{C} \implies$ analytic on $\mathbb{C} \implies$ entire.
@@ -52,16 +53,16 @@ $(1 + i)^4 = (\sqrt{2})^4 (\cos(\frac{\pi}{4}) + i\sin(\frac{\pi}{4})) = -4$ De 
 
 Next proposition is analogous to propositions about the limits, continuity, and differentiability.
 
-\textbf{Prop 7.1:} If $f, g$ are analytic functions on a domain $\Omega$, then also $f + g$ and $f \cdot g$ are analytic on $\Omega$. If $g(z) \neq 0$ on $\Omega$, then $\frac{f}{g}$ is analytic on $\Omega$. The composition $(g \circ f)$ of two analytic functions on $\Omega$ is an analytic function on $\Omega$.
+\begin{proposition} 7.1:} If $f, g$ are analytic functions on a domain $\Omega$, then also $f + g$ and $f \cdot g$ are analytic on $\Omega$. If $g(z) \neq 0$ on $\Omega$, then $\frac{f}{g}$ is analytic on $\Omega$. The composition $(g \circ f)$ of two analytic functions on $\Omega$ is an analytic function on $\Omega$.
 
 Pf: EXERCISE
-
+\end{proposition}
 \textbf{Ex 9.5:} Prove: if $f(z)$ is analytic and real on a domain $\Omega$, then $f$ is a constant function.
 
 Pf: $f$ is analytic and real on $\Omega \implies f(x,y) = u(x,y) + i \cdot 0$, namely $v(x,y) = 0$; CR equations hold for every $z \in \Omega$.
 $f$ from analyticity on $\Omega$: $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y} = 0$ and $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x} = 0 \implies u(x,y) = c \in \mathbb{R} \implies f(x,y) = c$, namely $f$ is a constant function.
 
-\textbf{Prop 7.2:} If $f$ is analytic on a domain $\Omega$ and $f'(z) = 0$ for all $z \in \Omega$, then $f$ is constant on $\Omega$.
+\begin{proposition} 7.2:} If $f$ is analytic on a domain $\Omega$ and $f'(z) = 0$ for all $z \in \Omega$, then $f$ is constant on $\Omega$.
 
 Rmk: Prop 7.2 is false if $\Omega$ is not connected - $f$ can take different constants (constant values) on each connected component of $\Omega$.
 
@@ -70,6 +71,7 @@ Pf: The version of this proposition for real functions is proved using the Mean 
 However, we can use the Mean Value Theorem for Re $f$ and Im $f$ as follows:
 
 Since $f'(z) = 0$ for all $z \in \Omega$ by CR equations $0 = f'(z) = \frac{\partial u}{\partial x} + i\frac{\partial v}{\partial x}$ for all $z \in \Omega \implies \frac{\partial u}{\partial x} = \frac{\partial u}{\partial y} = \frac{\partial v}{\partial x} = \frac{\partial v}{\partial y} = 0$ for all $z \in \Omega$.
+\end{proposition}
 
 Claim: $u$ is a constant function.
 
@@ -83,7 +85,8 @@ Now we are going to study analyticity of multi-valued functions - here we will s
 \section{Analyticity of multi-valued functions}
 We have seen that analytic function is always continuous, thus multi-valued functions are not analytic as is. The question is: can we choose a branch of such function that is single-valued and analytic?
 
-\textbf{Def 8.1.} We say that on a domain $\Omega$ there is a single-valued branch of multi-valued function if for every point of $\Omega$ we can choose one of the values of a function such that the resulting single-valued function is continuous in $\Omega$.
+\begin{definition} 8.1.} We say that on a domain $\Omega$ there is a single-valued branch of multi-valued function if for every point of $\Omega$ we can choose one of the values of a function such that the resulting single-valued function is continuous in $\Omega$.
+\end{definition}
 
 In other words: to choose single-valued branch means to choose the domain of definition of a function such that when a point $z$ moves along some closed continuous curve that is contained in the domain of definition and goes back to the starting point we get the same value of the function.
 
@@ -111,7 +114,8 @@ From the picture above that the value of the modulus and of the argument after c
 
 \textbf{Cor 8.1:} On a domain $\Omega$ that contains curves that encircle $z_0$ it is impossible to choose a continuous branch of the function $\sqrt{z - z_0}$.
 
-\section*{Lecture Notes,Lectures 11 + 12}
+% \section*{Lecture Notes,Lectures 11 + 12}
+\lecture{11+12}{Continuation and Harmonic functions}
 
 We have studied the double-valued function \( f(z) = \sqrt{z - z_0} \).
 
@@ -151,8 +155,8 @@ For a ray with \( \theta = \frac{\pi}{4} \), two continuous branches of \( \sqrt
     w = \pm \sqrt{r} (\cos \frac{\theta}{2} + i \sin \frac{\theta}{2}), \quad \frac{\pi}{4} < \theta \leq \frac{5\pi}{4}
 \]
 
-\textbf{Def 8.2:} The point \( z_0 \) is called a \textit{branch point} for a complex multi-valued function if the value of \( f(z) \) does not return to its initial value as a closed curve around the point is traced (starting from some arbitrary point on the curve) in such a way that \( f \) varies continuously as the path is traced.
-
+\begin{definition} 8.2:} The point \( z_0 \) is called a \textit{branch point} for a complex multi-valued function if the value of \( f(z) \) does not return to its initial value as a closed curve around the point is traced (starting from some arbitrary point on the curve) in such a way that \( f \) varies continuously as the path is traced.
+\end{definition}
 \textbf{Important:} What matters here is the \textbf{local} behavior of the function \( f \) near \( z_0 \). What may happen on paths that are some distance away from \( z_0 \) is not relevant. To be more precise:
 
 \textbf{The behavior must occur for all the curves that enclose the point and are sufficiently close to it.}
@@ -211,7 +215,8 @@ If $z$ is on $L_1$ (around $z = i$): when $z$ returns to the initial point $\sqr
 
 $\implies$ We can choose a continuous branch on a domain $\Omega$ if none of the closed curves in $\Omega$ enclose $i$ and not $-i$ (or $-i$ and not $i$), but it can enclose both. Namely, if we cut the plane along the interval connecting $i$ and $-i$, we will get a domain in which it is possible to choose a continuous branch.
 
-\textbf{Def 8.3:} Single-valued branch is called an analytic function on a domain $\Omega$ if it is differentiable at every $z \in \Omega$.
+\begin{definition} 8.3:} Single-valued branch is called an analytic function on a domain $\Omega$ if it is differentiable at every $z \in \Omega$.
+\end{definition}
 
 \textbf{Ex 10.4:} Prove that $w = \sqrt[n]{z}$ is analytic on the domain $\Omega = \{z \in \mathbb{C}: 0 < \arg z < \frac{2\pi}{n}\}$.
 
@@ -229,8 +234,9 @@ In many problems in hydrodynamics, the elasticity theory and other fields there 
 
 \section{Harmonic functions.}
 
-\textbf{Def 9.1:} The real function $u(x,y)$ is called harmonic on a domain $\Omega$ if it is continuous on $\Omega$ with continuous partial derivatives of the first and second order $\{\frac{\partial u}{\partial x}, \frac{\partial u}{\partial y}, \frac{\partial^2 u}{\partial x^2}, \frac{\partial^2 u}{\partial y^2}, \frac{\partial^2 u}{\partial x \partial y}, \frac{\partial^2 u}{\partial y \partial x}\}$, and the following equation, called the Laplace equation, holds:
+\begin{definition} 9.1:} The real function $u(x,y)$ is called harmonic on a domain $\Omega$ if it is continuous on $\Omega$ with continuous partial derivatives of the first and second order $\{\frac{\partial u}{\partial x}, \frac{\partial u}{\partial y}, \frac{\partial^2 u}{\partial x^2}, \frac{\partial^2 u}{\partial y^2}, \frac{\partial^2 u}{\partial x \partial y}, \frac{\partial^2 u}{\partial y \partial x}\}$, and the following equation, called the Laplace equation, holds:
 $$ \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = 0 $$
+\end{definition}
 
 \textbf{Ex 11.1:} The function $u(x,y) = x^2 - y^2$ is harmonic for every $(x,y) \in \mathbb{R}^2$.
 
@@ -248,7 +254,7 @@ $$ \frac{\partial^2 u}{\partial x \partial y} = e^{xy} + yxe^{xy} \qquad \frac{\
 
 All partial derivatives are defined and continuous for all $(x,y) \in \mathbb{R}^2$. However $\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = y^2e^{xy} + x^2e^{xy} = e^{xy}(x^2 + y^2) \neq 0$ except for $(0,0) \implies u(x,y)$ is *not* harmonic function on $\mathbb{R}^2$.
 
-\textbf{Prop 9.1:} If the function $f(z) = u(x,y) + iv(x,y)$ is analytic on a domain $\Omega$, then $u(x,y)$ and $v(x,y)$ are harmonic on $\Omega$.
+\begin{proposition} 9.1:} If the function $f(z) = u(x,y) + iv(x,y)$ is analytic on a domain $\Omega$, then $u(x,y)$ and $v(x,y)$ are harmonic on $\Omega$.
 
 Pf: By CR equations $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$ and $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$ (since $f$ is analytic). Let us differentiate the first equation with respect to $x$ and the second with respect to $y$:
 $$ \frac{\partial^2 u}{\partial x^2} = \frac{\partial^2 v}{\partial y \partial x}, \quad \frac{\partial^2 u}{\partial y^2} = -\frac{\partial^2 v}{\partial x \partial y} $$
@@ -257,23 +263,26 @@ $$ \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = \frac
 $\implies u$ is harmonic function on $\Omega$.
 
 If we differentiate now $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$ with respect to $y$ and $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$ with respect to $x$, and use $\frac{\partial^2 u}{\partial x \partial y} = \frac{\partial^2 u}{\partial y \partial x}$ we will obtain that $v$ is also harmonic function on $\Omega$.
+\end{proposition}
 
 This proposition implies that in order to construct an analytic function we cannot choose the real and imaginary parts in an arbitrary way. The functions that we choose must be harmonic and, moreover, the CR equations must hold.
 
-\textbf{Def 9.2:} If $u(x,y)$ and $v(x,y)$ are harmonic functions on a domain $\Omega$ such that CR equations hold ($\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$), then the function $v(x,y)$ is called the *harmonic conjugate* of the function $u(x,y)$ on a domain $\Omega$.
-
-\textbf{Prop 9.2:} The function $f(z) = u(x,y) + iv(x,y)$ is analytic in a domain $\Omega \iff v(x,y)$ is the harmonic conjugate of $u(x,y)$.
+\begin{definition} 9.2:} If $u(x,y)$ and $v(x,y)$ are harmonic functions on a domain $\Omega$ such that CR equations hold ($\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$), then the function $v(x,y)$ is called the *harmonic conjugate* of the function $u(x,y)$ on a domain $\Omega$.
+\end{definition}
+\begin{proposition} 9.2:} The function $f(z) = u(x,y) + iv(x,y)$ is analytic in a domain $\Omega \iff v(x,y)$ is the harmonic conjugate of $u(x,y)$.
 
 Pf: [$\implies$] Assume $f$ is analytic in a domain $\Omega$. By Prop 9.1
 $u(x,y)$ and $v(x,y)$ are harmonic functions on $\Omega$. Since $f$ is analytic, CR equations hold, thus by Def 9.2 $v(x,y)$ is the harmonic conjugate of $u(x,y)$.
 
 [$\impliedby$] If $u(x,y)$ and $v(x,y)$ are harmonic functions on a domain $\Omega$, then $u$ and $v$ are differentiable at all $z \in \Omega$. Since $v(x,y)$ is the harmonic conjugate of $u(x,y)$, by Def 9.2 - CR equations hold, thus Thm 6.1 asserts that $f$ is analytic in a domain $\Omega$.
+\end{proposition}
 
 Thus, to conclude that we can reconstruct an analytic function from its real part we need to know whether it is always possible to find a harmonic conjugate to a given harmonic function. The answer is yes - it is given by the following proposition which we state without the proof.
 
-\textbf{Prop 9.3:} For any harmonic function $u(x,y)$ in a domain $\Omega$ there exists a function $v(x,y)$ in $\Omega$ which is the harmonic conjugate of $u(x,y)$.
+\begin{proposition} 9.3:} For any harmonic function $u(x,y)$ in a domain $\Omega$ there exists a function $v(x,y)$ in $\Omega$ which is the harmonic conjugate of $u(x,y)$.
 
 The proof is by construction: one explicitly constructs the function $v(x,y)$. Since the proof involves somewhat complicated real analysis, we omit it.
+\end{proposition}
 
 \textbf{Ex 11.3:} Find an analytic function $f(z) = u(x,y) + iv(x,y)$ such that $u(x,y) = \text{Re } f(z) = \arctan \frac{y}{x}$.
 

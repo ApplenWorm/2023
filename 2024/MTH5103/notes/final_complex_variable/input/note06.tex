@@ -1,6 +1,6 @@
-
-\section*{Week 6. Lecture 16.}
-
+\week{6}
+% \section*{Week 6. Lecture 16.}
+\lecture{16}{Taylor and Laurent series}
 \section{Taylor and Laurent series}
 We investigate complex Taylor series and the generalizations of power series to include negative powers, called Laurent series.
 
@@ -94,7 +94,8 @@ This series is absolutely convergent for $z$ satisfying $|2(z-2)| < 1 \iff |z-2|
 
 Note: $f(z) = \frac{1}{2z-3}$ is undefined at $z = \frac{3}{2} \implies$ the series and the function only agree up to, but not including $\partial D$ - the boundary of the disc $D: \{z \in \mathbb{C}: |z-2| = \frac{1}{2}\}$.
 
-\section*{Lectures 17 + 18.}
+% \section*{Lectures 17 + 18.}
+\lecture{17+18}{Continuation and Laurent}
 Our next subject is another series. We have seen that the Taylor series exists for functions that are analytic (holomorphic) on discs. But analytic functions on certain other types of regions also may have series representations.
 
 \section{Laurent series}
@@ -104,7 +105,8 @@ In this case $|\frac{1}{z}| < 1$, so we can try to form a series in $\frac{1}{z}
 $$ \frac{1}{1-z} = \frac{1}{z} \cdot \frac{1}{\frac{1}{z} - 1} = -\frac{1}{z} \cdot \frac{1}{1 - \frac{1}{z}} = -\frac{1}{z} \sum_{n=0}^{\infty} \left(\frac{1}{z}\right)^n = \sum_{n=0}^{\infty} -\left(\frac{1}{z}\right)^{n+1} = \sum_{n=1}^{\infty} -z^{-n} $$
 This series is absolutely convergent for all $|z| > 1$, but divergent for all $|z| < 1$.
 
-\textbf{Def 13.1:} Let $A$ be an annulus centered at $z = z_0$ with inner radius $R_1$, outer radius $R_2$, $0 \leq R_1 < R_2 \leq \infty: A = \{z \in \mathbb{C}: R_1 < |z - z_0| < R_2\}$. A series given by $\sum_{n=0}^{\infty} a_n (z - z_0)^n + \sum_{n=1}^{\infty} b_n (z - z_0)^{-n}, a_n, b_n \in \mathbb{C}$ converging to $f(z)$ at every $z \in A$ is called the Laurent series for $f$ on A.
+\begin{definition} 13.1:} Let $A$ be an annulus centered at $z = z_0$ with inner radius $R_1$, outer radius $R_2$, $0 \leq R_1 < R_2 \leq \infty: A = \{z \in \mathbb{C}: R_1 < |z - z_0| < R_2\}$. A series given by $\sum_{n=0}^{\infty} a_n (z - z_0)^n + \sum_{n=1}^{\infty} b_n (z - z_0)^{-n}, a_n, b_n \in \mathbb{C}$ converging to $f(z)$ at every $z \in A$ is called the Laurent series for $f$ on A.
+\end{definition}
 
 Note: $\sum_{n=0}^{\infty} a_n (z - z_0)^n$ converges for all $|z - z_0| < R_2$ and $\sum_{n=1}^{\infty} b_n (z - z_0)^{-n}$ converges for all $|z - z_0| > R_1$. Therefore, we see that this series is an analytic function in its annulus of convergence. Now the question is whether any analytic function on some annulus can be represented as a Laurent series. The answer is yes:
 
@@ -147,8 +149,8 @@ Now we substitute back $z - 2i = w$: $f(z) = -\sum_{n=2}^{\infty} \frac{4^{n-2}}
 
 Now we are going to study one of the important transformations, the simplest after the linear and the inverse transformations, the Möbius transformation. First, let us briefly go over linear transformations.
 
-\textbf{Def 14.1:} Function of the form $w = az + b, a,b \in \mathbb{C}, a \neq 0$, is called the linear function (linear transformation).
-
+\begin{definition} 14.1:} Function of the form $w = az + b, a,b \in \mathbb{C}, a \neq 0$, is called the linear function (linear transformation).
+\end{definition}
 There are 3 important special cases of this transformation.
 
 I. Translation: $w = z + b$. Since the addition of complex numbers obeys the rules of addition of vectors we get the point $w$ by moving the point $z$ in direction of the vector $b$ to the distance that equals to the length of $b$. Obviously, the whole domain $\Omega$ after application of $w$ is moved by vector $b$.
@@ -164,7 +166,8 @@ the points on the circle $|w| = 6$.
 
 The general case of a linear transformation $w = az + b$, where $a = re^{i\alpha}, r, \alpha \in \mathbb{R}$, is obtained by first rotation around origin by an angle $\alpha$, then expansion by $r$, and then translation by $b$.
 
-\textbf{Def 14.2:} A transformation of the form $w = \frac{az+b}{cz+d}, ad-bc \neq 0, a,b,c,d \in \mathbb{C}$ are constants, is called the Möbius transformation (or Bilinear transformation, or Linear fractional transformation).
+\begin{definition} 14.2:} A transformation of the form $w = \frac{az+b}{cz+d}, ad-bc \neq 0, a,b,c,d \in \mathbb{C}$ are constants, is called the Möbius transformation (or Bilinear transformation, or Linear fractional transformation).
+\end{definition}
 
 Derivative: $w' = \frac{ad-bc}{(cz+d)^2}$. The condition $ad-bc \neq 0$ guarantees that $w' \neq 0$. In case that $ad-bc = 0$ the function is constant.
 
@@ -172,8 +175,8 @@ The inverse of $w$: $z = \frac{-dw+b}{cw-a}$: eliminate $z$ from $w$: $w(cz+d) =
 
 $\implies$ The inverse of a Möbius transformation is again Möbius transformation. If correspond $z = -\frac{d}{c}$ to $w = \infty$ and $z = \infty$ to $w = \frac{a}{c} \implies$ the Möbius transformation maps $\mathbb{C} \cup \{\infty\}$ to itself and it is one to one (namely, it is bijection from $\mathbb{C} \cup \{\infty\}$ to itself).
 
-\textbf{Prop 14.1:} Möbius transformations send lines and circles to lines and circles.
-
+\begin{proposition} 14.1:} Möbius transformations send lines and circles to lines and circles.
+\end{proposition}
 \textbf{Ex 16.3:} Find the Möbius transformation that sends $z_1 = 1 \to -i = w_1, z_2 = 0 \to -1 = w_2, z_3 = i \to 1 = w_3$.
 
 Sol: Let us plug the values of $z_i$ and $w_i$ and get:

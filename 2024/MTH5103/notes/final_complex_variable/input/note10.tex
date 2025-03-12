@@ -1,0 +1,305 @@
+\section*{Week 11. Lecture 28}
+\week{11}
+\lecture{28}{Cauchy's theorem continuation. Why are you TORTURING us, CAUCHY?????}
+
+ We have proved Cauchy's theorem and have seen an important corollary of it - the Deformation Principle. We are about to see more important consequences of Cauchy's Theorem.
+
+ Thm 18.7 (The Cauchy Integral Formula): If $f$ is analytic on and everywhere inside a simple, closed, positively oriented contour $C$, and if $z_0$ is any point inside $C$, then
+\begin{equation*}
+\text{CIF: } f(z_0) = \frac{1}{2\pi i} \oint_C \frac{f(z)}{z-z_0} dz
+\end{equation*}
+
+ In other words: once we know the value of $f$ at every point on $C$, we can compute its value at every point inside $C$.
+
+ Pf: Let $\epsilon > 0$. By Prop 6.5 $f$ is continuous $\Rightarrow$ there exists $\delta > 0$ such that if $|z-z_0| < \delta$, then $|f(z)-f(z_0)| < \epsilon$. Choose $R > 0$ such that $R < \delta$ and such that the disc of radius $R$ centered at $z_0$ is inside $C$. Let $C_0$ be the positively oriented boundary of that disc, parametrized by $\gamma(t) = z_0 + Re^{it}$, $0 \leq t \leq 2\pi$. We have:
+\begin{equation*}
+\oint_C \frac{f(z)}{z-z_0} dz = \oint_{C_0} \frac{f(z)}{z-z_0} dz = \oint_{C_0} \frac{f(z) - f(z_0) + f(z_0)}{z-z_0} dz
+\end{equation*}
+\begin{equation*}
+= \oint_{C_0} \frac{f(z) - f(z_0)}{z-z_0} dz + f(z_0) \oint_{C_0} \frac{1}{z-z_0} dz = f(z_0) \int_0^{2\pi} \frac{Re^{it}}{Re^{it}} dt + I = f(z_0) 2\pi i + I,
+\end{equation*}
+where:
+\begin{equation*}
+|I| \leq \max_{z \in C_0} \left| \frac{f(z) - f(z_0)}{z-z_0} \right| \text{Length}(C_0) < \frac{\epsilon}{R} \cdot 2\pi R = 2\pi \epsilon
+\end{equation*}
+$z \in C_0 \Rightarrow |z-z_0| = R$
+
+ But $\epsilon > 0$ is arbitrary, therefore we conclude that $I = 0$.
+
+ Ex 20.2: Compute $\oint_C \frac{z}{(9-z^2)(z+i)} dz$, where $C$ is the positively oriented circle centered at the origin of radius 2.
+
+ Sol: Note: $f(z) = \frac{z}{(9-z^2)(z+i)}$ has simple poles at $z = -i, \pm 3$ (CHECK!) and only $z = -i$ is enclosed by $C$. Therefore:
+\begin{equation*}
+\oint_C \frac{z}{(9-z^2)(z+i)} dz = \oint_C \frac{f(z)}{z+i} dz,
+\end{equation*}
+where $f(z) = \frac{z}{9-z^2}$ is analytic on and everywhere inside $C$. By CIF (Thm 18.7):
+%%%%%%
+$\int_C \frac{f(z)}{z+i} dz = 2\pi i f(-i) = 2\pi i \frac{-i}{-i-2} = 2\pi i \frac{-i}{-3} = \frac{\pi}{5}$.
+
+As this example suggests, there is a connection between the singularities of a given complex function $f(z)$ and the value of the contour integral for a given contour. In fact, there is an even stronger statement that one can make, relating the integral to the Laurent series expansion of $f$. We will not see it here.
+
+\textbf{Ex 20.3:} Compute $\int_C \frac{z^2 + 1}{z^2 + 2z - 3} dz$, where
+a) $C_1 = \{z \in \mathbb{C}: |z| = 2\}$
+b) $C_2 = \{z \in \mathbb{C}: |z + 2 + 3i| = 4\}$
+c) $C_3 = \{z \in \mathbb{C}: |z + 1| = 1\}$
+d) $C_4 = \{z \in \mathbb{C}: |z + 1 + i| = 5\}$
+
+Sol: First: $z^2 + 2z - 3 = 0 \iff z = 1, z = -3$.
+
+a) Inside $C_1$ the denominator is equal to 0 only at $z = 1$. Rewrite: $\int_{C_1} \frac{z^2 + 1}{z^2 + 2z - 3} dz = \int_{C_1} \frac{z^2 + 1}{z+3} \cdot \frac{1}{z-1} dz = \int_{C_1} \frac{f(z)}{z-1} dz$, where $f(z) = \frac{z^2 + 1}{z+3}$ is analytic on and everywhere inside $C_1$. Hence, by CIF: $\int_{C_1} \frac{f(z)}{z-1} dz = 2\pi i f(1) = 2\pi i \frac{1}{2} = \pi i$.
+
+b) Inside $C_2$ the denominator is equal to 0 only at $z = -3$. Rewrite: $\int_{C_2} \frac{z^2 + 1}{z^2 + 2z - 3} dz = \int_{C_2} \frac{z^2 + 1}{z-1} \cdot \frac{1}{z+3} dz = \int_{C_2} \frac{f(z)}{z+3} dz$, where $f(z) = \frac{z^2 + 1}{z-1}$ is analytic on and everywhere inside $C_2$. Hence, by CIF, we get: $\int_{C_2} \frac{f(z)}{z+3} dz = 2\pi i f(-3) = 2\pi i \frac{10}{-4} = -5\pi i$.
+
+c) The function $f(z) = \frac{z^2 + 1}{z^2 + 2z - 3}$ is analytic on and everywhere inside $C_3$, therefore, by Cauchy's Theorem $\int_{C_3} f(z) dz = 0$.
+
+d) Since $|1 + i| = \sqrt{5} < 5, |-3 + i| = \sqrt{10} < 5$ both roots of the denominator lie in a domain bounded by $C_4$, therefore we cannot use CIF!
+%%%%
+
+
+One can compute this integral by several different ways. We will use the generalized Deformation Principle and CIF as follows: encircle the points $z = 1, z = -3$ by 2 circular contours $\tilde{C_1}, \tilde{C_2}$ so that they are disjoint and they are entirely lie interior to $C_4$: for example:
+
+$\tilde{C_1} = \{z \in \mathbb{C}: |z - 1| = \frac{1}{3}\}, \tilde{C_2} = \{z \in \mathbb{C}: |z + 3| = \frac{1}{3}\}$
+
+Then $\tilde{C_1} \cap \tilde{C_2} = \emptyset$ and $\tilde{C_1}, \tilde{C_2}$ lie interior to $C_4$. Then $f(z)$ is analytic in a domain that contains $C_4, \tilde{C_1}, \tilde{C_2}$, and the region between them. Therefore, by the generalized Deformation Principle (Cor 18.6):
+$$ \int_{C_4} \frac{z^2 + 1}{z^2 + 2z - 3} dz = \int_{\tilde{C_1}} \frac{z^2 + 1}{z^2 + 2z - 3} dz + \int_{\tilde{C_2}} \frac{z^2 + 1}{z^2 + 2z - 3} dz $$
+$\tilde{C_1}$ and $\tilde{C_2}$ are positively oriented (anticlockwise)
+
+For each of the integrals on the RHS we can use CIF:
+$$ \int_{\tilde{C_1}} \frac{z^2 + 1}{z^2 + 2z - 3} dz = \int_{\tilde{C_1}} \frac{z^2 + 1}{z+3} \cdot \frac{1}{z-1} dz = \int_{\tilde{C_1}} \frac{f(z)}{z-1} dz = 2\pi i f(1) = \pi i $$
+$$ \int_{\tilde{C_2}} \frac{z^2 + 1}{z^2 + 2z - 3} dz = \int_{\tilde{C_2}} \frac{z^2 + 1}{z-1} \cdot \frac{1}{z+3} dz = \int_{\tilde{C_2}} \frac{f(z)}{z+3} dz = 2\pi i f(-3) = -5\pi i $$
+$\implies \int_{C_4} \frac{z^2 + 1}{z^2 + 2z - 3} dz = \pi i - 5\pi i = -4\pi i$.
+
+The next theorem tells us that for the complex function it is enough to be differentiable once to be differentiable infinitely many times - very different from the real functions! Once differentiable real functions need not be even differentiable twice, let alone infinitely many times!
+
+\textbf{Thm 18.8:} If $f$ is analytic at $z_0$ (f is differentiable at every point in some open disc centered at $z_0$), then the derivatives of $f$ of all order exist and are analytic at $z_0$.
+
+Pf (Sketch!): Choose a small, positively oriented circle around $z_0$ such that $f$ is analytic on and everywhere inside it. By CIF: $f(z_0) = \frac{1}{2\pi i} \int_C \frac{f(z)}{z - z_0} dz$.
+
+%%%%%%
+Differentiating under the integral sign with respect to $z_0$, gives
+\begin{align*}
+    f'(z_0) &= \frac{1}{2\pi i} \int_C \frac{f(z)}{(z - z_0)^2} dz \\
+    f''(z_0) &= \frac{2!}{2\pi i} \int_C \frac{f(z)}{(z - z_0)^3} dz \\
+    f^{(3)}(z_0) &= \frac{3!}{2\pi i} \int_C \frac{f(z)}{(z - z_0)^4} dz \\
+    &\vdots \\
+    f^{(n)}(z_0) &= \frac{n!}{2\pi i} \int_C \frac{f(z)}{(z - z_0)^{n+1}} dz
+\end{align*}
+
+Note: one cannot always differentiate under an integral in this manner. We should, in fact, prove a technical lemma, justifying why we are allowed to perform such an operation. For example, the first derivative - we need to interchange $\lim_{\Delta z \to 0}$ and the integral and this requires justification!
+
+(163)
+
+% \begin{center}
+% Lectures 29+30
+% \end{center}
+\lecture{29+30}{Cauchy Integral Formula continuation.}
+We have seen that once differentiable complex function is differentiable infinitely many times. A useful corollary is the following extended version of the Cauchy Integral Formula.
+
+Cor 18.9 (Extended version of the CIF): Let $f$ be analytic on and inside a simple, closed, positively oriented contour $C$ and let $z_0$ be inside $C$. Then, for all $n \ge 0$,
+\[
+f^{(n)}(z_0) = \frac{n!}{2\pi i} \int_C \frac{f(z)}{(z-z_0)^{n+1}} dz
+\]
+
+Ex 20.4: Compute $\int_C \frac{z^3}{(z-1)^4} dz$, where $C$ is any simple, closed, positively oriented contour around $z=1$.
+
+Sol: Set $f(z) = z^3$, apply Cor 18.9 with $n=3$:
+\[
+f'(z) = 3z^2, \quad f''(z) = 6z, \quad f'''(z) = 6
+\]
+\[
+\int_C \frac{f(z)}{(z-1)^4} dz = \frac{2\pi i}{3!} f'''(1) = \frac{2\pi i}{6} \cdot 6 = 2\pi i
+\]
+
+Ex 20.5: Compute the following integrals
+\begin{enumerate}
+    \item[a)] $\int_{|z|=1} \cos z \, dz$
+    \item[b)] $\int_{|z-3|=6} \frac{z}{(z-2)^2(z+5)} dz$
+\end{enumerate}
+
+Sol:
+\begin{enumerate}
+    \item[a)] Set $f(z) = \cos z$. It is analytic in $\{z \in \mathbb{C}: |z| \le 1\}$. Thus, by Cor 18.9 with $n=2$, since $f'(z) = -\sin z$, $f''(z) = -\cos z$, $f''(0) = -1$,
+    \[
+    f''(0) = \frac{2!}{2\pi i} \int_{|z|=1} \frac{\cos z}{z^3} dz \quad \Rightarrow \quad \int_{|z|=1} \frac{\cos z}{z^3} dz = \pi i f''(0) = -\pi i
+    \]
+    \item[b)] The function $f(z) = \frac{z}{z+5}$ is analytic in the disc $\{z \in \mathbb{C}: |z-3| \le 6\}$. By Cor 18.9 with $n=1$, since $f'(z) = \frac{5}{(z+5)^2} \Rightarrow f'(2) = \frac{5}{49}$,
+    \[
+    f'(2) = \frac{1}{2\pi i} \int_{|z-3|=6} \frac{f(z)}{(z-2)^2} dz \quad \Rightarrow \quad \int_{|z-3|=6} \frac{f(z)}{(z-2)^2} dz = 2\pi i f'(2) = \frac{10\pi i}{49}
+    \]
+\end{enumerate}
+
+Now we are going to formulate and sketch a proof of another consequence of Cauchy's Theorem, that is a very powerful tool in computations of integrals.
+
+Recall (Def 16.2): The coefficient $b_1$ of the term $\frac{1}{z-z_0}$ is called the residue of the singularity at $z=z_0$, denoted by $\text{Res}(f, z_0)$. We have seen the definition and examples on week 8!
+
+Now we are going to see how to compute integrals using only the values of the function at singularities - the residues.
+
+Thm 19.1 (Residue Theorem) Let $f$ be analytic on and inside a simple, closed, positively oriented contour $C$, except at a finite number of points $z_1, \dots, z_n$ inside $C$. Then
+\[
+\int_C f(z) dz = 2\pi i \sum_{k=1}^n \text{Res}(f, z_k)
+\]
+
+
+(164)
+
+number of isolated singularities $z_1, \dots, z_n$ all inside $C$. Then,
+\[
+\int_C f(z) dz = 2\pi i \sum_{k=1}^n \text{Res}(f, z_k)
+\]
+
+Pf: We shall sketch the proof of the case where $z_1, \dots, z_n$ are simple poles or removable singularities.
+
+Draw small positively oriented circles $C_k$ around the singularities $z_k$ such that they all inside $C$ and they are disjoint - choose radius small enough, so it is possible.
+
+By extended Deformation Principle (Cor 18.6):
+\[
+\int_C f(z) dz = \sum_{k=1}^n \int_{C_k} f(z) dz
+\]
+
+If $z_k$ is a removable singularity: By definition, $f$ can be extended to an analytic function everywhere inside $C_k$, thus by Cauchy's Theorem $\int_{C_k} f(z) dz = 0$. But in this case $\text{Res}(f, z_k) = 0$ as well.
+
+If $z_k$ is a simple pole, then by Prop 16.2 ($m=1$) $f(z) = \frac{\varphi(z)}{z-z_k}$ where $\varphi(z)$ is analytic at $z_k$, therefore by CIF (Thm 18.7)
+\[
+\int_{C_k} f(z) dz = \int_{C_k} \frac{\varphi(z)}{z-z_k} dz = 2\pi i \varphi(z_k)
+\]
+
+But by Prop 16.2 (for $m=1$) $\text{Res}(f, z_k) = \frac{\varphi(z_k)}{0!} = \varphi(z_k)$.
+
+Now we can work out examples applying the Residue Theorem.
+
+Ex 21.1: Compute $\int_{|z|=1} \frac{\cos z}{z^5} dz$
+
+Sol: Consider the Laurent series:
+\[
+\frac{\cos z}{z^5} = \frac{1}{z^5} \left( 1 - \frac{z^2}{2!} + \frac{z^4}{4!} - \frac{z^6}{6!} + \dots \right) = \frac{1}{z^5} - \frac{1}{2! z^3} + \frac{1}{4! z} - \frac{z}{6!} + \dots
+\]
+\[
+\Rightarrow b_1 = \frac{1}{4!} = \frac{1}{24} \Rightarrow \int_{|z|=1} \frac{\cos z}{z^5} dz = 2\pi i \frac{1}{4!} = \frac{\pi i}{12}
+\]
+
+Note: the singularity is $z=0$ that is a pole of order 4, and it is inside the disc $\{z \in \mathbb{C}: |z| \le 1\}$. Thus, the Residue Theorem is applicable.
+
+Recall how we compute the residue of the poles. Start with the case of a simple pole.
+
+$z=z_0$ is a simple pole $\Rightarrow f(z) = \frac{b_1}{z-z_0} + a_0 + a_1 (z-z_0) + \dots$ (the Laurent series expansion)
+
+Multiply both sides by $(z-z_0)$ and take the limit when $z$ tends to $z_0$:
+\[
+\lim_{z \to z_0} (z-z_0) f(z) = b_1 = \text{Res}(f, z_0)
+\]
+
+
+(165)
+
+Ex 21.2: Compute $\text{Res}(f, z_0)$ for $f(z) = \frac{3+4z}{(z+2)(z-i)}$ at $i, -2$.
+
+Sol: $z_0 = i$ is a simple pole since $\frac{3+4z}{z+2}|_{z=i} = \frac{3+4i}{i+2} \neq 0$ (and it is analytic at a neighborhood of $i$ and at $i$). In the same way (CHECK!) $z_0 = -2$ is a simple pole. Thus, from
+\[
+\text{Res}(f, -2) = \lim_{z \to -2} (z+2) \frac{3+4z}{(z+2)(z-i)} = \frac{3+4z}{z-i}|_{z=-2} = \frac{-5}{-2-i} = \frac{5}{2+i} = 2-i
+\]
+\[
+\text{Res}(f, i) = \frac{3+4z}{z+2}|_{z=i} = \frac{3+4i}{i+2} = \frac{3+4i}{i+2} \cdot \frac{2-i}{2-i} = \frac{10+5i}{5} = 2+i
+\]
+
+Now the case of a pole of order $m$.
+
+By Prop 16.2 if $z_0$ is a pole of order $m$, then $\text{Res}(f, z_0) = \frac{\varphi^{(m-1)}(z_0)}{(m-1)!}$ where $f(z) = \frac{\varphi(z)}{(z-z_0)^m}$, $\varphi$ is analytic at a neighborhood of $z_0$ and $\varphi(z_0) \neq 0$. Thus, it is equivalent to:
+
+(CHECK!) $\text{Res}(f, z_0) = \frac{1}{(m-1)!} \lim_{z \to z_0} \left[ (z-z_0)^m f(z) \right]^{(m-1)}$
+
+Ex 21.3: Compute $\text{Res}(f, -2)$ for $f(z) = \frac{z+1}{(z-1)(z+2)^2}$.
+
+Sol: $\text{Res}(f, -2) = \lim_{z \to -2} \left[ (z+2)^2 f(z) \right]' = \lim_{z \to -2} \left( \frac{z+1}{z-1} \right)' = \lim_{z \to -2} \frac{(z-1) - (z+1)}{(z-1)^2} = \lim_{z \to -2} \frac{-2}{(z-1)^2} = -\frac{2}{9}$
+
+Ex 21.4: Compute $\text{Res}(f, 0)$ for $f(z) = \frac{1}{z(e^z - 1)}$.
+
+Sol: (CHECK!) $z=0$ is a pole of order 2.
+\[
+z(e^z - 1) = z \left( 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \dots - 1 \right) = z \left( z + \frac{z^2}{2!} + \frac{z^3}{3!} + \dots \right) = z^2 \left( 1 + \frac{z}{2!} + \frac{z^2}{3!} + \dots \right)
+\]
+\[
+\text{Res}(f, 0) = \lim_{z \to 0} \left[ z^2 \cdot \frac{1}{z^2 \left( 1 + \frac{z}{2!} + \frac{z^2}{3!} + \dots \right)} \right]' = \lim_{z \to 0} \left[ \frac{1}{1 + \frac{z}{2!} + \frac{z^2}{3!} + \dots} \right]'
+\]
+\[
+= \lim_{z \to 0} \left[ -\frac{\frac{1}{2} + \frac{z}{3} + \dots}{\left( 1 + \frac{z}{2} + \frac{z^2}{6} + \dots \right)^2} \right] = -\frac{1}{2}
+\]
+
+Ex 21.5: Compute $\int_C \frac{1}{(z-4)^2} dz$, where $C$ is the contour defined by traversing once the square with vertices $\pm 3i, 6 \pm 3i$ anticlockwise (See Ex 20.1 for another solution).
+
+Sol: $z=4$ is a pole of order 2 of $\frac{1}{(z-4)^2}$ (Justify!). Other than at $z=4$ the function $\frac{1}{(z-4)^2}$ is analytic. Thus by Prop 16.2 for $\varphi(z) = 1$: $\text{Res} \left( \frac{1}{(z-4)^2}, 4 \right) = \varphi'(4) = 1' = 0$.
+
+By the Residue Theorem:
+\[
+\int_C \frac{1}{(z-4)^2} dz = 2\pi i \text{Res} \left( \frac{1}{(z-4)^2}, 4 \right) = 2\pi i \cdot 0 = 0
+\]
+
+(166)
+
+Ex 21.6: Compute $\int_C \frac{dz}{(z-1)(z-2)}$ where $C$ is some closed, simple, positively oriented contour.
+
+Sol: $f(z) = \frac{1}{(z-1)(z-2)}$ has 2 simple poles $z=1, z=2$ (CHECK!)
+$\text{Res}(f, 1) = -1$, $\text{Res}(f, 2) = 1$. Thus:
+\[
+\int_C \frac{dz}{(z-1)(z-2)} = \begin{cases}
+-2\pi i & \text{if } C \text{ contains } z=1, \text{ but not } z=2 \\
+2\pi i & \text{if } C \text{ contains } z=2, \text{ but not } z=1 \\
+0 & \text{otherwise}
+\end{cases}
+\]
+
+Ex 21.7: Compute $\int_{|z|=3} \frac{z+1}{(z-1)(z+2)^2} dz$
+
+Sol: In the disc $\{z \in \mathbb{C}: |z| \le 3\}$ the function $f(z) = \frac{z+1}{(z-1)(z+2)^2}$ has 2 isolated singularities - poles at $z=1$ and at $z=-2$ (CHECK!). Therefore, by the Residue Theorem
+\[
+\int_{|z|=3} f(z) dz = 2\pi i \left[ \text{Res}(f, 1) + \text{Res}(f, -2) \right]
+\]
+
+$z=-2$: By Prop 16.2 $f(z) = \frac{\varphi(z)}{(z+2)^2}$ where $\varphi(z) = \frac{z+1}{z-1}$ is analytic at a neighborhood of $z=-2$ and at $z=-2$, and $\varphi(-2) = \frac{1}{3} \neq 0$ (for $m=2$).
+\[
+\text{Res}(f, -2) = \varphi'(-2) = \left. \frac{(z-1) - (z+1)}{(z-1)^2} \right|_{z=-2} = -\frac{2}{9}
+\]
+
+$z=1$: By Prop 16.2 $f(z) = \frac{\varphi(z)}{z-1}$ where $\varphi(z) = \frac{z+1}{(z+2)^2}$ is analytic at a neighborhood of $z=1$ and at $z=1$, and $\varphi(1) = \frac{2}{9} \neq 0$.
+\[
+\text{Res}(f, 1) = \varphi(1) = \frac{2}{9}
+\]
+\[
+\Rightarrow \int_{|z|=3} f(z) dz = 2\pi i \left( \frac{2}{9} - \frac{2}{9} \right) = 0
+\]
+
+Now we state (and prove some of) a collection of surprising and powerful consequences of Cauchy's Theorem.
+
+Thm 20.1 (Gauss's Mean Value Theorem) Let $f$ be analytic on and inside a circle of radius $R$, centered at $z_0$. Then, $f(z_0)$ is the mean value of $f$ on $C$, that is
+\[
+f(z_0) = \frac{1}{2\pi} \int_0^{2\pi} f(z_0 + Re^{i\theta}) d\theta
+\]
+
+Pf: Parametrize the contour $C$ by: $\gamma(\theta) = z_0 + Re^{i\theta}$, $0 \le \theta \le 2\pi$. By the CIF and the definition of the contour integral (Def 17.7)
+\[
+f(z_0) = \frac{1}{2\pi i} \int_C \frac{f(z)}{z-z_0} dz = \frac{1}{2\pi i} \int_0^{2\pi} \frac{f(z_0 + Re^{i\theta})}{Re^{i\theta}} Re^{i\theta} i d\theta = \frac{1}{2\pi} \int_0^{2\pi} f(z_0 + Re^{i\theta}) d\theta
+\]
+
+From this theorem follows that either $|f(z)| > |f(z_0)|$ for some $z$ on $C$ or $|f(z)| = |f(z_0)|$ for all $z$ on $C$, in which case
+
+(167)
+
+One can deduce: we can show that $f$ must be a constant function (EXERCISE).
+
+Thm 20.2 (Maximum Modulus Principle) Let $\Omega$ be a bounded region. Let $f$ be a continuous function on $\Omega$ and on the boundary of $\partial \Omega$. Let $f$ be analytic on $\Omega$. Then, either $f$ is constant or else the maximum of $|f(z)|$ can only be attained on the boundary $\partial \Omega$ of $\Omega$. That is, there exists $z_0 \in \partial \Omega$ such that $|f(z_0)| = M = \sup \{|f(z)|: z \in \Omega \cup \partial \Omega\}$ and $|f(z)| < M$ for all $z \in \Omega$.
+
+Rmk: The Maximum Principal is false for unbounded regions.
+
+Ex 22.1: Let $\Omega = \{x+iy: -\frac{\pi}{2} < y < \frac{\pi}{2}\}$, let $f(z) = e^{e^z}$.
+
+Then, for $x \in \mathbb{R}$ we have
+\[
+f(x \pm \frac{\pi}{2}i) = e^{\pm ie^x} \Rightarrow |f(z)| = 1 \text{ for } z \in \Omega.
+\]
+However: $f(x) = e^{e^x} \to \infty$ on the real axis ($y=0$) that is contained in $\Omega$.
+
+Ex 22.2: Obtain an estimate on the absolute value of the $n$-th derivative of an analytic function $f$ in the disc $|z-z_0| \le R$.
+
+Sol: By the Maximum Modulus Principle $\max |f(z)|$ is attained on the circle $|z-z_0| = R$ (depends only on $R$). Denote $\max |f(z)| = MR$. To estimate $|f^{(n)}(z_0)|$ we use Cor 18.6 (extended CIF) and Prop 17.5 (ML inequality):
+\[
+|f^{(n)}(z_0)| = \left| \frac{n!}{2\pi i} \int_{|z-z_0|=R} \frac{f(z)}{(z-z_0)^{n+1}} dz \right| \le \frac{n!}{2\pi} \frac{MR}{R^{n+1}} 2\pi R = \frac{n! MR}{R^n}
+\]
