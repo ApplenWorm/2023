@@ -61,15 +61,17 @@ One can compute this integral by several different ways. We will use the general
 
 $\tilde{C_1} = \{z \in \mathbb{C}: |z - 1| = \frac{1}{3}\}, \tilde{C_2} = \{z \in \mathbb{C}: |z + 3| = \frac{1}{3}\}$
 
-Then $\tilde{C_1} \cap \tilde{C_2} = \emptyset$ and $\tilde{C_1}, \tilde{C_2}$ lie interior to $C_4$. Then $f(z)$ is analytic in a domain that contains $C_4, \tilde{C_1}, \tilde{C_2}$, and the region between them. Therefore, by the generalized Deformation Principle (Cor 18.6):
-$$ \int_{C_4} \frac{z^2 + 1}{z^2 + 2z - 3} dz = \int_{\tilde{C_1}} \frac{z^2 + 1}{z^2 + 2z - 3} dz + \int_{\tilde{C_2}} \frac{z^2 + 1}{z^2 + 2z - 3} dz $$
+Then $\tilde{C_1} \cap \tilde{C_2} = \emptyset$ and $\tilde{C_1}, \tilde{C_2}$ lie interior to $C_4$. Then $f(z)$ is analytic in a domain that contains $C_4, \tilde{C_1}, \tilde{C_2}$, and the region between them. 
+Therefore, by the generalized Deformation Principle (Cor 18.6):
+\[ \int_{C_4} \frac{z^2 + 1}{z^2 + 2z - 3} dz = \int_{\tilde{C_1}} \frac{z^2 + 1}{z^2 + 2z - 3} dz + \int_{\tilde{C_2}} \frac{z^2 + 1}{z^2 + 2z - 3} dz \]
 $\tilde{C_1}$ and $\tilde{C_2}$ are positively oriented (anticlockwise)
 
 For each of the integrals on the RHS we can use CIF:
-$$ \int_{\tilde{C_1}} \frac{z^2 + 1}{z^2 + 2z - 3} dz = \int_{\tilde{C_1}} \frac{z^2 + 1}{z+3} \cdot \frac{1}{z-1} dz = \int_{\tilde{C_1}} \frac{f(z)}{z-1} dz = 2\pi i f(1) = \pi i $$
-$$ \int_{\tilde{C_2}} \frac{z^2 + 1}{z^2 + 2z - 3} dz = \int_{\tilde{C_2}} \frac{z^2 + 1}{z-1} \cdot \frac{1}{z+3} dz = \int_{\tilde{C_2}} \frac{f(z)}{z+3} dz = 2\pi i f(-3) = -5\pi i $$
-$\implies \int_{C_4} \frac{z^2 + 1}{z^2 + 2z - 3} dz = \pi i - 5\pi i = -4\pi i$.
-
+\begin{align*}
+    & \int_{\tilde{C_1}} \frac{z^2 + 1}{z^2 + 2z - 3} dz = \int_{\tilde{C_1}} \frac{z^2 + 1}{z+3} \cdot \frac{1}{z-1} dz = \int_{\tilde{C_1}} \frac{f(z)}{z-1} dz = 2\pi i f(1) = \pi i \\
+    & \int_{\tilde{C_2}} \frac{z^2 + 1}{z^2 + 2z - 3} dz = \int_{\tilde{C_2}} \frac{z^2 + 1}{z-1} \cdot \frac{1}{z+3} dz = \int_{\tilde{C_2}} \frac{f(z)}{z+3} dz = 2\pi i f(-3) = -5\pi i \\
+     \implies &\int_{C_4} \frac{z^2 + 1}{z^2 + 2z - 3} dz = \pi i - 5\pi i = -4\pi i.
+\end{align*}
 The next theorem tells us that for the complex function it is enough to be differentiable once to be differentiable infinitely many times - very different from the real functions! Once differentiable real functions need not be even differentiable twice, let alone infinitely many times!
 
 \textbf{Thm 18.8:} If $f$ is analytic at $z_0$ (f is differentiable at every point in some open disc centered at $z_0$), then the derivatives of $f$ of all order exist and are analytic at $z_0$.

@@ -1,0 +1,8 @@
+PWD /home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input
+INPUT /usr/local/texlive/2024/texmf.cnf
+INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note11.tex
+OUTPUT note11.log
+OUTPUT note11.pdf
+INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
