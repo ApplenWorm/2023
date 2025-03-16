@@ -162,7 +162,7 @@ Now we use our substitution and get:
 \]
 
 To compute the last integral we use the Residue Theorem:
-The function $f(z) = \frac{z}{(z^2 + 10z + 1)^2}$ has 2 poles: $z_{1,2} = -5 \pm \sqrt{24}$, both of order 2 (CHECK!), only $z_1 = -5 + \sqrt{24}$ is inside $|z| \le 1$ (CHECK!). By Prop 16.2 for $\varphi(z) = \frac{z}{(z - (-5 - \sqrt{24}))^2}$ and $m = 2$
+The function $f(z) = \frac{z}{(z^2 + 10z + 1)^2}$ has 2 poles: $z_{1,2} = -5 \pm \sqrt{24}$, both of order 2 (\verifythis), only $z_1 = -5 + \sqrt{24}$ is inside $|z| \le 1$ (\verifythis). By Prop 16.2 for $\varphi(z) = \frac{z}{(z - (-5 - \sqrt{24}))^2}$ and $m = 2$
 \[
 \text{Res} \left( f, -5 + \sqrt{24} \right) = \frac{\varphi'(-5 + \sqrt{24})}{1!} = \frac{z_1 + z_2}{(z_1 - z_2)^3} = \frac{5}{192 \sqrt{6}}
 \]
@@ -264,21 +264,25 @@ Therefore,
 
 Note that we could conclude the result directly from Thm 21.1.
 
-Rmk: (CHECK): $\int_{-\infty}^{\infty} \frac{dx}{x^2 + 1} = \arctan x \big|_{-\infty}^{\infty} = \frac{\pi}{2} - (-\frac{\pi}{2}) = \pi$
+\begin{remark} (\checkthis{}) $\int_{-\infty}^{\infty} \frac{dx}{x^2 + 1} = \arctan x \big|_{-\infty}^{\infty} = \frac{\pi}{2} - (-\frac{\pi}{2}) = \pi$
+\end{remark}
 
 Thus you have seen in the first calculus course.
 
-Rmk: If $f(x)$ is an even function, namely for every $x \in \mathbb{R}$ $f(x) = f(-x)$, then
-\[
-\int_0^{\infty} f(x) dx = \frac{1}{2} \int_{-\infty}^{\infty} f(x) dx
-\]
-and we can use Thm 21.1 again.
+\begin{remark}
+    
+    Rmk: If $f(x)$ is an even function, namely for every $x \in \mathbb{R}$ $f(x) = f(-x)$, then
+    \[
+        \int_0^{\infty} f(x) dx = \frac{1}{2} \int_{-\infty}^{\infty} f(x) dx
+        \]
+        and we can use Thm 21.1 again.
+    \end{remark}
 
 Let us see one more example.
 
 Ex 24.2: Compute $\int_0^{\infty} \frac{dx}{x^4 + 16}$.
 
-Sol: (CHECK) The function $f(z) = \frac{1}{z^4 + 16}$ has 4 zeros:
+Sol: (\verifythis) The function $f(z) = \frac{1}{z^4 + 16}$ has 4 zeros:
 \[
 z_1 = 2e^{i \frac{\pi}{4}}, \quad z_2 = 2e^{i \frac{3\pi}{4}}, \quad z_3 = 2e^{i \frac{5\pi}{4}}, \quad z_4 = 2e^{i \frac{7\pi}{4}}
 \]
@@ -287,7 +291,7 @@ Only $z_1$ and $z_2$ are in the upper-half plane. Note: since all the zeros are 
 
 To use Thm 21.1 we need to compute $\text{Res} \left( \frac{1}{z^4 + 16}, z_1 \right)$ and $\text{Res} \left( \frac{1}{z^4 + 16}, z_2 \right)$.
 
-$z_1$ (CHECK!): Since $z_1$ is a simple pole we can use Cor 16.5 with $p(z) = 1$, $q(z) = z^4 + 16$, $q'(z) = 4z^3$ and obtain:
+$z_1$ (\verifythis): Since $z_1$ is a simple pole we can use Cor 16.5 with $p(z) = 1$, $q(z) = z^4 + 16$, $q'(z) = 4z^3$ and obtain:
 \[
 \text{Res} \left( \frac{1}{z^4 + 16}, z_1 \right) = \frac{1}{4z_1^3} = \frac{1}{4 \cdot 8 \cdot e^{i \frac{3\pi}{4}}} = \frac{1}{16\sqrt{2} (i-1)} = -\frac{i+1}{32\sqrt{2}}
 \]
@@ -338,7 +342,7 @@ Claim 2: At $n=0$ $f$ has a pole of order 3 with residue $-\frac{\pi}{3}$.
 
 Pf: Let us look at the Laurent series expansion of $\cot x$ around $x=0$:
 
-CHECK: $\cot x = \frac{1}{x} - \frac{x}{3} - \frac{x^3}{45} - \frac{2x^5}{945} - \dots$
+\checkthis{} $\cot x = \frac{1}{x} - \frac{x}{3} - \frac{x^3}{45} - \frac{2x^5}{945} - \dots$
 \[
 \Rightarrow \frac{1}{z^2} \cot \pi z = \frac{1}{z^2} \left( \frac{1}{\pi z} - \frac{\pi z}{3} - \frac{(\pi z)^3}{45} - \frac{2 (\pi z)^5}{945} - \dots \right) = \frac{1}{\pi z^3} - \frac{\pi}{3z} - \frac{\pi^3 z}{45} - \frac{2 \pi^5 z^3}{945} - \dots
 \]
@@ -374,7 +378,7 @@ $|z| \ge N + \frac{1}{2} \ge N$, therefore $|\frac{1}{z^2}| \le \frac{1}{N^2}$. 
 \]
 
 In the same way:
-CHECK: $|\cos z|^2 = \cos^2 x + \sinh^2 y$
+\checkthis{} $|\cos z|^2 = \cos^2 x + \sinh^2 y$
 \[
 |\cot \pi z|^2 = \left| \frac{\cos \pi z}{\sin \pi z} \right|^2 = \frac{|\cos \pi z|^2}{|\sin \pi z|^2} = \frac{\cos^2 \pi x + \sinh^2 \pi y}{\sin^2 \pi x + \sinh^2 \pi y} =
 \]

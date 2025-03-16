@@ -2,16 +2,16 @@
 \week{11}
 \lecture{28}{Cauchy's theorem continuation. Why are you TORTURING us, CAUCHY?????}
 
- We have proved Cauchy's theorem and have seen an important corollary of it - the Deformation Principle. We are about to see more important consequences of Cauchy's Theorem.
+We have proved Cauchy's theorem and have seen an important corollary of it - the Deformation Principle. We are about to see more important consequences of Cauchy's Theorem.
 
- Thm 18.7 (The Cauchy Integral Formula): If $f$ is analytic on and everywhere inside a simple, closed, positively oriented contour $C$, and if $z_0$ is any point inside $C$, then
+Thm 18.7 (The Cauchy Integral Formula): If $f$ is analytic on and everywhere inside a simple, closed, positively oriented contour $C$, and if $z_0$ is any point inside $C$, then
 \begin{equation*}
 \text{CIF: } f(z_0) = \frac{1}{2\pi i} \oint_C \frac{f(z)}{z-z_0} dz
 \end{equation*}
 
- In other words: once we know the value of $f$ at every point on $C$, we can compute its value at every point inside $C$.
+In other words: once we know the value of $f$ at every point on $C$, we can compute its value at every point inside $C$.
 
- Pf: Let $\epsilon > 0$. By Prop 6.5 $f$ is continuous $\Rightarrow$ there exists $\delta > 0$ such that if $|z-z_0| < \delta$, then $|f(z)-f(z_0)| < \epsilon$. Choose $R > 0$ such that $R < \delta$ and such that the disc of radius $R$ centered at $z_0$ is inside $C$. Let $C_0$ be the positively oriented boundary of that disc, parametrized by $\gamma(t) = z_0 + Re^{it}$, $0 \leq t \leq 2\pi$. We have:
+Pf: Let $\epsilon > 0$. By Prop 6.5 $f$ is continuous $\Rightarrow$ there exists $\delta > 0$ such that if $|z-z_0| < \delta$, then $|f(z)-f(z_0)| < \epsilon$. Choose $R > 0$ such that $R < \delta$ and such that the disc of radius $R$ centered at $z_0$ is inside $C$. Let $C_0$ be the positively oriented boundary of that disc, parametrized by $\gamma(t) = z_0 + Re^{it}$, $0 \leq t \leq 2\pi$. We have:
 \begin{equation*}
 \oint_C \frac{f(z)}{z-z_0} dz = \oint_{C_0} \frac{f(z)}{z-z_0} dz = \oint_{C_0} \frac{f(z) - f(z_0) + f(z_0)}{z-z_0} dz
 \end{equation*}
@@ -28,7 +28,7 @@ $z \in C_0 \Rightarrow |z-z_0| = R$
 
  Ex 20.2: Compute $\oint_C \frac{z}{(9-z^2)(z+i)} dz$, where $C$ is the positively oriented circle centered at the origin of radius 2.
 
- Sol: Note: $f(z) = \frac{z}{(9-z^2)(z+i)}$ has simple poles at $z = -i, \pm 3$ (CHECK!) and only $z = -i$ is enclosed by $C$. Therefore:
+ Sol: Note: $f(z) = \frac{z}{(9-z^2)(z+i)}$ has simple poles at $z = -i, \pm 3$ (\verifythis) and only $z = -i$ is enclosed by $C$. Therefore:
 \begin{equation*}
 \oint_C \frac{z}{(9-z^2)(z+i)} dz = \oint_C \frac{f(z)}{z+i} dz,
 \end{equation*}
@@ -38,7 +38,7 @@ $\int_C \frac{f(z)}{z+i} dz = 2\pi i f(-i) = 2\pi i \frac{-i}{-i-2} = 2\pi i \fr
 
 As this example suggests, there is a connection between the singularities of a given complex function $f(z)$ and the value of the contour integral for a given contour. In fact, there is an even stronger statement that one can make, relating the integral to the Laurent series expansion of $f$. We will not see it here.
 
-\textbf{Ex 20.3:} Compute $\int_C \frac{z^2 + 1}{z^2 + 2z - 3} dz$, where
+\begin{example} 20.3:} Compute $\int_C \frac{z^2 + 1}{z^2 + 2z - 3} dz$, where
 a) $C_1 = \{z \in \mathbb{C}: |z| = 2\}$
 b) $C_2 = \{z \in \mathbb{C}: |z + 2 + 3i| = 4\}$
 c) $C_3 = \{z \in \mathbb{C}: |z + 1| = 1\}$
@@ -54,6 +54,7 @@ c) The function $f(z) = \frac{z^2 + 1}{z^2 + 2z - 3}$ is analytic on and everywh
 
 d) Since $|1 + i| = \sqrt{5} < 5, |-3 + i| = \sqrt{10} < 5$ both roots of the denominator lie in a domain bounded by $C_4$, therefore we cannot use CIF!
 %%%%
+\end{example}
 
 
 One can compute this integral by several different ways. We will use the generalized Deformation Principle and CIF as follows: encircle the points $z = 1, z = -3$ by 2 circular contours $\tilde{C_1}, \tilde{C_2}$ so that they are disjoint and they are entirely lie interior to $C_4$: for example:
@@ -193,7 +194,7 @@ Multiply both sides by $(z-z_0)$ and take the limit when $z$ tends to $z_0$:
 
 Ex 21.2: Compute $\text{Res}(f, z_0)$ for $f(z) = \frac{3+4z}{(z+2)(z-i)}$ at $i, -2$.
 
-Sol: $z_0 = i$ is a simple pole since $\frac{3+4z}{z+2}|_{z=i} = \frac{3+4i}{i+2} \neq 0$ (and it is analytic at a neighborhood of $i$ and at $i$). In the same way (CHECK!) $z_0 = -2$ is a simple pole. Thus, from
+Sol: $z_0 = i$ is a simple pole since $\frac{3+4z}{z+2}|_{z=i} = \frac{3+4i}{i+2} \neq 0$ (and it is analytic at a neighborhood of $i$ and at $i$). In the same way (\verifythis) $z_0 = -2$ is a simple pole. Thus, from
 \[
 \text{Res}(f, -2) = \lim_{z \to -2} (z+2) \frac{3+4z}{(z+2)(z-i)} = \frac{3+4z}{z-i}|_{z=-2} = \frac{-5}{-2-i} = \frac{5}{2+i} = 2-i
 \]
@@ -205,7 +206,7 @@ Now the case of a pole of order $m$.
 
 By Prop 16.2 if $z_0$ is a pole of order $m$, then $\text{Res}(f, z_0) = \frac{\varphi^{(m-1)}(z_0)}{(m-1)!}$ where $f(z) = \frac{\varphi(z)}{(z-z_0)^m}$, $\varphi$ is analytic at a neighborhood of $z_0$ and $\varphi(z_0) \neq 0$. Thus, it is equivalent to:
 
-(CHECK!) $\text{Res}(f, z_0) = \frac{1}{(m-1)!} \lim_{z \to z_0} \left[ (z-z_0)^m f(z) \right]^{(m-1)}$
+(\verifythis) $\text{Res}(f, z_0) = \frac{1}{(m-1)!} \lim_{z \to z_0} \left[ (z-z_0)^m f(z) \right]^{(m-1)}$
 
 Ex 21.3: Compute $\text{Res}(f, -2)$ for $f(z) = \frac{z+1}{(z-1)(z+2)^2}$.
 
@@ -213,7 +214,7 @@ Sol: $\text{Res}(f, -2) = \lim_{z \to -2} \left[ (z+2)^2 f(z) \right]' = \lim_{z
 
 Ex 21.4: Compute $\text{Res}(f, 0)$ for $f(z) = \frac{1}{z(e^z - 1)}$.
 
-Sol: (CHECK!) $z=0$ is a pole of order 2.
+Sol: (\verifythis) $z=0$ is a pole of order 2.
 \[
 z(e^z - 1) = z \left( 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \dots - 1 \right) = z \left( z + \frac{z^2}{2!} + \frac{z^3}{3!} + \dots \right) = z^2 \left( 1 + \frac{z}{2!} + \frac{z^2}{3!} + \dots \right)
 \]
@@ -237,7 +238,7 @@ By the Residue Theorem:
 
 Ex 21.6: Compute $\int_C \frac{dz}{(z-1)(z-2)}$ where $C$ is some closed, simple, positively oriented contour.
 
-Sol: $f(z) = \frac{1}{(z-1)(z-2)}$ has 2 simple poles $z=1, z=2$ (CHECK!)
+Sol: $f(z) = \frac{1}{(z-1)(z-2)}$ has 2 simple poles $z=1, z=2$ (\verifythis !)
 $\text{Res}(f, 1) = -1$, $\text{Res}(f, 2) = 1$. Thus:
 \[
 \int_C \frac{dz}{(z-1)(z-2)} = \begin{cases}
@@ -249,7 +250,7 @@ $\text{Res}(f, 1) = -1$, $\text{Res}(f, 2) = 1$. Thus:
 
 Ex 21.7: Compute $\int_{|z|=3} \frac{z+1}{(z-1)(z+2)^2} dz$
 
-Sol: In the disc $\{z \in \mathbb{C}: |z| \le 3\}$ the function $f(z) = \frac{z+1}{(z-1)(z+2)^2}$ has 2 isolated singularities - poles at $z=1$ and at $z=-2$ (CHECK!). Therefore, by the Residue Theorem
+Sol: In the disc $\{z \in \mathbb{C}: |z| \le 3\}$ the function $f(z) = \frac{z+1}{(z-1)(z+2)^2}$ has 2 isolated singularities - poles at $z=1$ and at $z=-2$ (\verifythis). Therefore, by the Residue Theorem
 \[
 \int_{|z|=3} f(z) dz = 2\pi i \left[ \text{Res}(f, 1) + \text{Res}(f, -2) \right]
 \]

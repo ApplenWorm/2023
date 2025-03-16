@@ -15,21 +15,23 @@ In this lecture we shall discuss the basic properties of functions of one comple
 \begin{example} 3.1 $f(z) = \frac{1}{z}$: $f$ is not defined at $z = 0$ and it is defined and single-valued everywhere else.
 \end{example}
 For example, the value of $f$ at $z = 8 - 3i$ is
-$$f(8 - 3i) = \frac{1}{8 - 3i} = \frac{1}{8 - 3i} \cdot \frac{8 + 3i}{8 + 3i} = \frac{8 + 3i}{8^2 + 3^2} = \frac{8 + 3i}{73} = \frac{8}{73} + i\frac{3}{73}$$
+\[ f(8 - 3i) = \frac{1}{8 - 3i} = \frac{1}{8 - 3i} \cdot \frac{8 + 3i}{8 + 3i} = \frac{8 + 3i}{8^2 + 3^2} = \frac{8 + 3i}{73} = \frac{8}{73} + i\frac{3}{73}\]
 
 \begin{example} 3.2 $f(z) = \sqrt{z + 1}$ defined everywhere on $\mathbb{C}$ and it is double-valued function: $f(0) = 1$ and $f(0) = -1$ (for instance).
-$$f(0) = \sqrt{1}: \vert 1\vert  = 1, \cos \theta = \frac{1}{1} = 1, \sin \theta = \frac{0}{1} = 0 \implies \theta = 0 + 2\pi k$$
-$$\implies \sqrt{1} = \cos\left(\frac{0 + 2\pi k}{2}\right) + i\sin\left(\frac{2\pi k}{2}\right), k = 0, 1$$
-$$k = 0: \cos 0 + i\sin 0 = 1, \quad k = 1: \cos \pi + i\sin \pi = -1$$
+\begin{align*}
+    & f(0) = \sqrt{1}: \vert 1\vert  = 1, \quad \cos \theta = \frac{1}{1} = 1, \quad \sin \theta = \frac{0}{1} = 0 \implies \theta = 0 + 2\pi k \\
+    & \implies \sqrt{1} = \cos\left(\frac{0 + 2\pi k}{2}\right) + i\sin\left(\frac{2\pi k}{2}\right), \quad k = 0, 1 \\
+    & k = 0: \cos 0 + i\sin 0 = 1, \quad k = 1: \cos \pi + i\sin \pi = -1 \\
+\end{align*}
 \end{example}
-\begin{example} 3.3 $f(z) = \sqrt{z - 1} + \sqrt{z + 1}$ is 4-valued: for example, if $z = 0$, we get $w_1 = i + 1, w_2 = -i + 1, w_3 = i - 1, w_4 = -i - 1$ (CHECK!)
+\begin{example} 3.3 $f(z) = \sqrt{z - 1} + \sqrt{z + 1}$ is 4-valued: for example, if $z = 0$, we get $w_1 = i + 1, w_2 = -i + 1, w_3 = i - 1, w_4 = -i - 1$ (\verifythis)
 \end{example}
 \begin{example} 3.4 Polynomials. General form: $P_n(z) = \sum_{j=0}^{n} a_j z^j$ - polynomial of degree $n$ of complex variable $z$ with complex coefficients $a_j \in \mathbb{C}$.
 \end{example}
 For example: $f(z) = z^2, f(z) = 4 + iz - z^2 + (1 + i)z^3$.
 
 \begin{example} 3.5 Rational function \{ratio of two polynomials\}. General form:
-$$f(z) = \frac{a_0 + a_1 z + \dots + a_n z^n}{b_0 + b_1 z + \dots + b_m z^m}$$
+\[f(z) = \frac{a_0 + a_1 z + \dots + a_n z^n}{b_0 + b_1 z + \dots + b_m z^m}\]
 defined and single-valued everywhere, except for the roots (zeros) of the denominator.
 \end{example}
 \begin{example} 3.6 The exponential function $f(z) = e^z$.
@@ -38,11 +40,12 @@ Defined to be the series $e^z = \sum_{n=0}^{\infty} \frac{z^n}{n!} = 1 + \frac{z
 \end{example}
 We will see later that the above series converges absolutely for all $z \in \mathbb{C}$, thus $f(z) = e^z$ can be defined for every $z$ in $\mathbb{C}$, namely, we can take the DoD to be $\mathbb{C}$. It is single-valued.
 
+
 \begin{example} 3.7 Trigonometric and Hyperbolic functions. For $z \in \mathbb{C}$ define:
-$$\cos z = \frac{1}{2}(e^{iz} + e^{-iz}), \quad \sin z = \frac{1}{2i}(e^{iz} - e^{-iz})$$
+\begin{equation} \cos z = \frac{1}{2}(e^{iz} + e^{-iz}), \quad \sin z = \frac{1}{2i}(e^{iz} - e^{-iz}) \tag{*}\end{equation}
 which agrees with the definition for real $z$ (by Euler's formula). By analogy with the real case, we define
-$$\cosh z = \frac{1}{2}(e^z + e^{-z}), \quad \sinh z = \frac{1}{2}(e^z - e^{-z})$$
-Using (*) and (**) it is easy to check that CHECK! $\cos z + i\sin z = e^{iz} = \cosh(iz) + \sinh(iz)$.
+\begin{equation} \cosh z = \frac{1}{2}(e^z + e^{-z}), \quad \sinh z = \frac{1}{2}(e^z - e^{-z})\tag{**}\end{equation}
+Using (*) and (**) it is easy to check that \checkthis $\cos z + i\sin z = e^{iz} = \cosh(iz) + \sinh(iz)$.
 \end{example}
 Let $z = x + iy$. We rewrite $f(z)$ and separate its real and imaginary parts as follows:
 (1) $f(z) = \text{Re } f(z) + i\text{Im } f(z) = u(x, y) + iv(x, y)$.
@@ -119,11 +122,14 @@ Now we will show (in the same way) that the imaginary axis is mapped to the nega
 
 Represent the imaginary axis $i\mathbb{R}$ as: $i\mathbb{R} = (i\mathbb{R})^+ \cup (i\mathbb{R})^-$, where $(i\mathbb{R})^+$ are points of the form $re^{i\frac{\pi}{2}} = ir (r > 0)$ and $(i\mathbb{R})^-: re^{i\frac{3\pi}{2}} = -ir$. $f$ maps these points to $r^2 e^{i2 \cdot \frac{\pi}{2}} = r^2 e^{i\pi} = -r^2 \leq 0, r^2 e^{i2 \cdot \frac{3\pi}{2}} = r^2 e^{i3\pi} = -r^2 \leq 0$.
 
-A quarter circle of radius $r$ centered at 0 is mapped by $z^2$ to a half circle of radius $r^2$ centered at 0.
-
+\begin{claim} A quarter circle of radius $r$ centered at 0 is mapped by $z^2$ to a half circle of radius $r^2$ centered at 0.
+    \begin{proof}
 Pf: The quarter circle is given by points $re^{i\theta}$ where $0 \leq \theta \leq \frac{\pi}{2}$. It is mapped by $z^2$ to $r^2 e^{2i\theta}$. Since $0 \leq \theta \leq \frac{\pi}{2} \implies 0 \leq 2\theta \leq \pi$, thus we obtain a half circle of radius $r^2$ centered at 0.
+    \end{proof}
+\end{claim}
 
-A line $l_\theta$ passing through the origin at angle $\theta$ is mapped to a ray $l_{2\theta}$ starting at 0 making an angle $2\theta$.
+\begin{claim} A line $l_\theta$ passing through the origin at angle $\theta$ is mapped to a ray $l_{2\theta}$ starting at 0 making an angle $2\theta$.
+\end{claim}
 
 The line is parameterized by $re^{i\theta}$, where $\theta$ is fixed and $r$ may vary. The map $f(z) = z^2$ sends $r$ to $r^2$ resulting in a ray and the angle is transformed from $\theta$ to $2\theta$.
 
@@ -163,15 +169,13 @@ Back to Ex 4.5. Let us study two images under $\frac{1}{z}$.
 a) Find the image of the line $z = t + i(1 - t)$ under $\frac{1}{z}$.
 
 \begin{soln} Denote: $w = u + iv, z = x + iy \implies x = t, y = (1 - t)$.
-$$w = u + iv = \frac{1}{x + iy} = \frac{x - iy}{x^2 + y^2} (\text{for } z \neq 0, w \neq 0) \iff u = \frac{x}{x^2 + y^2}, v = \frac{-y}{x^2 + y^2}$$
+\[w = u + iv = \frac{1}{x + iy} = \frac{x - iy}{x^2 + y^2} (\text{for } z \neq 0, w \neq 0) \iff u = \frac{x}{x^2 + y^2}, v = \frac{-y}{x^2 + y^2}\]
 Thus, plugging $x = t, y = 1 - t$, we obtain the following system:
 \begin{align*}
-t &= \frac{u}{u^2 + v^2} \\
-1 - t &= \frac{-v}{u^2 + v^2}
-\end{align*}
-\begin{align*}
-t(u^2 + v^2) &= u \\
-(1 - t)(u^2 + v^2) &= -v
+& t = \frac{u}{u^2 + v^2} \\
+& 1 - t = \frac{-v}{u^2 + v^2} \implies \\
+& t(u^2 + v^2) = u \\
+& (1 - t)(u^2 + v^2) = -v
 \end{align*}
 $\implies u^2 + v^2 = u - v$ (we add the equations) $\implies u^2 - u + v^2 + v = 0 \implies (u - \frac{1}{2})^2 + (v + \frac{1}{2})^2 = \frac{1}{2}$ (complete the square in $u$ and in $v$).
 
@@ -181,8 +185,10 @@ Namely, the map $w = \frac{1}{z}$ maps the line $z = t + i(1 - t)$ to the circle
 b) Determine how the horizontal lane $y = k$ is transformed under $w = \frac{1}{z}$.
 
 \begin{soln} Substitute as before: $x = \frac{u}{u^2 + v^2}, y = \frac{-v}{u^2 + v^2}$. Plug $y = k$:
-$$k = \frac{-v}{u^2 + v^2} \iff ku^2 + kv^2 + v = 0 \iff (k \neq 0) u^2 + v^2 + \frac{v}{k} = 0$$
-$$\iff u^2 + (v + \frac{1}{2k})^2 = \frac{1}{4k^2} \text{ (complete the square in } v)$$
+\begin{align*}  
+                & k = \frac{-v}{u^2 + v^2} \iff ku^2 + kv^2 + v = 0 \iff (k \neq 0) u^2 + v^2 + \frac{v}{k} = 0\\ 
+                & \iff u^2 + (v + \frac{1}{2k})^2 = \frac{1}{4k^2} \text{ (complete the square in } v)
+\end{align*}
 Namely, the line is mapped onto a circle, center of which depends on the sign of $k$, and the radius is $\frac{1}{2\vert k\vert }$.
 \end{soln}
 \end{example}
@@ -198,27 +204,34 @@ Let $f$ be a complex function. We say that $\lim_{z \to z_0} f(z) = w_0$ if when
 \end{definition}
 \begin{example}  Let $f(z) = \frac{z}{\bar{z}}$. Claim: for any $z_0$, $\lim_{z \to z_0} \frac{z}{\bar{z}} = \frac{z_0}{\bar{z_0}}$.
 
-Pf: Given $\epsilon > 0$, choose $\delta = 2\epsilon \vert z_0\vert $. Then, if $0 < \vert z - z_0\vert  < \delta$:
-$$\left\vert \frac{z}{\bar{z}} - \frac{z_0}{\bar{z_0}}\right\vert  = \left\vert \frac{z\bar{z_0} - z_0 \bar{z}}{\bar{z}\bar{z_0}}\right\vert  = \left\vert \frac{z\bar{z_0} + z\bar{z} - z\bar{z} - z_0\bar{z}}{\bar{z}\bar{z_0}}\right\vert  = \left\vert \frac{\bar{z}(z_0 - z) + z(\bar{z_0} - \bar{z})}{\bar{z}\bar{z_0}}\right\vert $$
-$$\leq \frac{\vert \bar{z}\vert \vert z_0 - z\vert  + \vert z\vert \vert \bar{z_0} - \bar{z}\vert }{\vert \bar{z}\vert \vert \bar{z_0}\vert } = \frac{\vert z_0 - z\vert }{\vert z_0\vert } + \frac{\vert z\vert }{\vert z\vert } \frac{\vert z - z_0\vert }{\vert z_0\vert } = \frac{2\vert z - z_0\vert }{\vert z_0\vert } < \frac{2\delta}{\vert z_0\vert } = \frac{2 \cdot 2\epsilon\vert z_0\vert }{\vert z_0\vert } = \epsilon$$
-\end{example}
+\begin{proof} Given $\epsilon > 0$, choose $\delta = 2\epsilon \vert z_0\vert $. Then, if $0 < \vert z - z_0\vert  < \delta$:
+\begin{align*}
+\left\vert \frac{z}{\bar{z}} - \frac{z_0}{\bar{z_0}}\right\vert  & = \left\vert \frac{z\bar{z_0} - z_0 \bar{z}}{\bar{z}\bar{z_0}}\right\vert  = \left\vert \frac{z\bar{z_0} + z\bar{z} - z\bar{z} - z_0\bar{z}}{\bar{z}\bar{z_0}}\right\vert  = \left\vert \frac{\bar{z}(z_0 - z) + z(\bar{z_0} - \bar{z})}{\bar{z}\bar{z_0}}\right\vert \\
+& \leq \frac{\vert \bar{z}\vert \vert z_0 - z\vert  + \vert z\vert \vert \bar{z_0} - \bar{z}\vert }{\vert \bar{z}\vert \vert \bar{z_0}\vert } = \frac{\vert z_0 - z\vert }{\vert z_0\vert } + \frac{\vert z\vert }{\vert z\vert } \frac{\vert z - z_0\vert }{\vert z_0\vert } = \frac{2\vert z - z_0\vert }{\vert z_0\vert } < \frac{2\delta}{\vert z_0\vert } = \frac{2 \cdot 2\epsilon\vert z_0\vert }{\vert z_0\vert } = \epsilon \\
+\end{align*}
 Thus, for a given $\epsilon > 0$ we have found $\delta$ (that depends on $\epsilon$!) s.t. if $\vert z - z_0\vert  < \delta$, then $\vert f(z) - w_0\vert  = \left\vert \frac{z}{\bar{z}} - \frac{z_0}{\bar{z_0}}\right\vert  < \epsilon$ (for any $z_0$!).
+\end{proof}
+\end{example}
 
 \begin{example} 5.2 Let $f(z) = \frac{z}{\bar{z}}, z \neq 0$. Prove that $\lim_{z \to 0} \frac{z}{\bar{z}}$ does not exist.
 \end{example}
 
 Before we proceed to the proof, let us show the following:
 
+\begin{claim}
 \textbf{Claim 3.1} If $\lim_{z \to z_0} f(z)$ exists, then it is unique.
 
+\begin{proof}
 Pf: Assume $\lim_{z \to z_0} f(z) = a$ and $\lim_{z \to z_0} f(z) = b$. By Def 3.1 for any $\epsilon > 0$ there exist $\delta_1 > 0$ and $\delta_2 > 0$ such that
 \begin{align*}
 \text{if } 0 < \vert z - z_0\vert  < \delta_1 &\implies \vert f(z) - a\vert  < \epsilon/2 \\
 \text{if } 0 < \vert z - z_0\vert  < \delta_2 &\implies \vert f(z) - b\vert  < \epsilon/2
 \end{align*}
 Choose $\delta < \min(\delta_1, \delta_2) \implies$ for $0 < \vert z - z_0\vert  < \delta$, $\vert f(z) - a\vert  < \epsilon/2$ and $\vert f(z) - b\vert  < \epsilon/2$. Thus, using triangle inequality, we obtain
-$$\vert a - b\vert  = \vert a - f(z) + f(z) - b\vert  \leq \vert a - f(z)\vert  + \vert f(z) - b\vert  < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon$$
+\[ \vert a - b\vert  = \vert a - f(z) + f(z) - b\vert  \leq \vert a - f(z)\vert  + \vert f(z) - b\vert  < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon \tag{*}\]
 Since (*) holds for any $\epsilon > 0$ we obtain that $a = b$.
+\end{proof}
+\end{claim}
 Back to Ex 5.2: we will use a common technique to show that the limit does not exist - we will show that there exist two different paths (directions) $z \to z_0$ along which we get 2 different limits.
 
 \begin{soln}
@@ -254,8 +267,9 @@ $\implies \lim_{z \to 0} \frac{\bar{z}^2}{z^2} = \lim_{r \to 0} e^{-4i\theta} = 
 Ex 5.3 shows that the different paths need not be the real and imaginary axes!
 \end{example}
 
-Rmk: If $\lim_{z \to z_0} f(z) = w_0$ exists, then $f(z) \to w_0$ as $z \to z_0$ on *every* path (uniqueness of the limit!) If on different paths $z \to z_0$ there are different values of the limit (or there exists a path on which the limit does not exist), then the limit $\lim_{z \to z_0} f(z)$ does not exist.
-
+\begin{remark} 
+    If $\lim_{z \to z_0} f(z) = w_0$ exists, then $f(z) \to w_0$ as $z \to z_0$ on *every* path (uniqueness of the limit!) If on different paths $z \to z_0$ there are different values of the limit (or there exists a path on which the limit does not exist), then the limit $\lim_{z \to z_0} f(z)$ does not exist.
+\end{remark}
 Similarly to the real functions we have the following proposition for the complex functions.
 
 \begin{proposition} 3.1 If $\lim_{z \to z_0} f(z) = w_0$ and $\lim_{z \to z_0} g(z) = w_1$, then
@@ -278,10 +292,10 @@ Note: the first limit is complex, but the last two limits are real!
 By Def 3.1: given $\epsilon > 0$ there exists $\delta = \delta(\epsilon) > 0$ s.t. for all $z$ with $0 < \vert z - z_0\vert  < \delta$ we have $\vert f(z) - (u_0 + iv_0)\vert  < \epsilon$.
 
 Since for any $z \in \mathbb{C}: \vert \text{Im } z\vert , \vert \text{Re } z\vert  \leq \vert \text{Re } z + i\text{Im } z\vert  = \vert z\vert $, we get:
-$$\vert v(x, y) - v_0\vert , \vert u(x, y) - u_0\vert  < \vert u(x, y) - u_0 + i(v(x, y) - v_0)\vert  = \vert u(x, y) + iv(x, y) - (u_0 + iv_0)\vert  = \vert f(z) - (u_0 + iv_0)\vert  < \epsilon$$
+\[ \vert v(x, y) - v_0\vert , \vert u(x, y) - u_0\vert  < \vert u(x, y) - u_0 + i(v(x, y) - v_0)\vert  = \vert u(x, y) + iv(x, y) - (u_0 + iv_0)\vert  = \vert f(z) - (u_0 + iv_0)\vert  < \epsilon\]
 Thus $\vert u(x, y) - u_0\vert  < \epsilon$ and $\vert v(x, y) - v_0\vert  < \epsilon$.
 
-CHECK: $\vert z - z_0\vert $ is the distance from $(x, y)$ to $(x_0, y_0)$ in $\mathbb{R}^2$.
+\checkthis $\vert z - z_0\vert $ is the distance from $(x, y)$ to $(x_0, y_0)$ in $\mathbb{R}^2$.
 $\implies \lim_{(x, y) \to (x_0, y_0)} u(x, y) = u_0$ and $\lim_{(x, y) \to (x_0, y_0)} v(x, y) = v_0$.
 
 Note: $\vert z - z_0\vert  < \delta \implies \vert x + iy - (x_0 + iy_0)\vert  = \vert (x - x_0) + i(y - y_0)\vert  < \delta$, and we get $\vert x - x_0\vert , \vert y - y_0\vert  \leq \vert (x - x_0) + i(y - y_0)\vert  < \delta$.
@@ -291,7 +305,10 @@ $\impliedby$ Assume that $\lim_{(x,y) \to (x_0, y_0)} u(x, y) = u_0$ and $\lim_{
 Let $\epsilon > 0$. Since $u$ and $v$ have real limits $u_0, v_0$ as $(x, y) \to (x_0, y_0)$ from Def 3.1 there exist $\delta_1 > 0$ and $\delta_2 > 0$ such that if $0 < \vert \vert (x, y) - (x_0, y_0)\vert \vert  < \delta_1$, then $\vert u(x, y) - u_0\vert  < \epsilon/2$, and $0 < \vert \vert (x, y) - (x_0, y_0)\vert \vert  < \delta_2$, then $\vert v(x, y) - v_0\vert  < \epsilon/2$.
 
 Choose $\delta < \min(\delta_1, \delta_2)$. Then, whenever $0 < \vert \vert (x, y) - (x_0, y_0)\vert \vert  < \delta$:
-$$\vert u(x, y) + iv(x, y) - (u_0 + iv_0)\vert  = \vert u(x, y) - u_0 + i(v(x, y) - v_0)\vert  \leq \vert u(x, y) - u_0\vert  + \vert v(x, y) - v_0\vert  < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon$$
+\begin{align*} 
+    \vert u(x, y) + iv(x, y) - (u_0 + iv_0)\vert  &= \vert u(x, y) - u_0 + i(v(x, y) - v_0)\vert  \\ 
+    & \leq \vert u(x, y) - u_0\vert  + \vert v(x, y) - v_0\vert  < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon
+\end{align*}
 by triangle inequality.
 
 Namely, for any $\epsilon > 0$ we have found $\delta > 0$ such that whenever $0 < \vert z - z_0\vert  < \delta: \vert f(z) - (u_0 + iv_0)\vert  < \epsilon$, as required.

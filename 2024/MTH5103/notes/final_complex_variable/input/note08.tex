@@ -4,15 +4,16 @@
 % \emoji{grinning-face}
 In this lecture we are going to see more examples of classification of singularities and will study the zeros of an analytic function and a connection between zeros and poles.
 
-\textbf{Ex 18.4:} What type of singularity does $f(z) = \frac{e^z - 1}{z}$ have at 0?
+\begin{example} 18.4:} What type of singularity does $f(z) = \frac{e^z - 1}{z}$ have at 0?
 
 Sol: The Laurent series of $f(z)$ about $z=0$ is given by:
 $$ f(z) = \frac{1}{z} \left( \sum_{n=0}^{\infty} \frac{z^n}{n!} - 1 \right) = \frac{1}{z} \left( 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \dots - 1 \right) = 1 + \frac{z}{2!} + \frac{z^2}{3!} + \dots $$
 The principal part of the Laurent series is $= 0 \implies$ it is a removable singularity. Define $\tilde{f}(z) = \begin{cases} \frac{e^z - 1}{z} & z \neq 0 \\ 1 & z = 0 \end{cases} \implies \tilde{f}$ is analytic for every $z \in \mathbb{C}$ (entire).
+\end{example}
 
 Alternatively: By Prop 16.1: $\lim_{z \to 0} z \cdot \frac{e^z - 1}{z} = \lim_{z \to 0} (e^z - 1) = 0 \implies z = 0$ is a removable singularity.
 
-\textbf{Ex 18.5:} Find all the singularities and determine their nature:
+\begin{example} 18.5:} Find all the singularities and determine their nature:
 1) $f(z) = \frac{z+1}{z^2 + 9}$
 2) $f(z) = \frac{z^3 + 2z}{(z-i)^3}$
 
@@ -21,13 +22,15 @@ Sol: 1) Since $z^2 + 9 = (z+3i)(z-3i)$, $f(z)$ has singularities at $z = \pm 3i$
 In the same way $z = -3i$ is a simple pole and $\text{Res}(f; -3i) = \frac{1}{2} + i\frac{1}{6}$.
 
 2) $f$ has an isolated singularity at $z = i$. Rewrite: $f(z) = \frac{\varphi(z)}{(z-i)^3}$, where $\varphi(z) = z^3 + 2z$ is analytic in a neighborhood of $z = i$ (including $z=i$) and $\varphi(i) = i^3 + 2i = i \neq 0$. Therefore, by Prop. 16.2 $f$ has a pole of order $m = 3$ at $z = i$, and by Prop 16.2 $\text{Res}(f; i) = \frac{\varphi^{(2)}(i)}{2!} = \frac{6i}{2} = 3i$.
+\end{example}
 
-\textbf{Ex 18.6:} Compute the residue of $f(z) = \frac{\sin z}{z^4}$.
+\begin{example} 18.6:} Compute the residue of $f(z) = \frac{\sin z}{z^4}$.
 
 Sol: $f$ has an isolated singularity at $z = 0$. We use Taylor series expansion for $\sin z$ (about $z = 0$) to obtain:
 $$ f(z) = \frac{1}{z^4} \left( z - \frac{z^3}{3!} + \frac{z^5}{5!} - \dots \right) = \frac{1}{z^3} - \frac{1}{3!} \frac{1}{z} + \frac{z}{5!} - \dots = $$
 $$ = \frac{1}{z^3}\left(1 - \frac{z^2}{3!} + \frac{z^4}{5!} - \dots \right) \implies z = 0 \text{ is a pole of order } m = 3 (\text{not } 4!) $$
 From the Laurent series we see that $\text{Res}(f; 0) = b_1 = -\frac{1}{3!} = -\frac{1}{6}$.
+\end{example}
 
 The importance of residues will become much clearer a bit later, when we will investigate the complex integration, but note that the term $\frac{1}{z-z_0}$ is the tricky one to integrate! Now we are going to study zeros of the analytic functions and a bit more poles.
 
@@ -37,18 +40,20 @@ The importance of residues will become much clearer a bit later, when we will in
 If $n = 1$, then the zero is called a simple zero.
 \end{definition}
 
-\textbf{Ex 18.7:} For the function $f(z) = (z-3)^2(z+2)^3$: $z = 3$ is a zero of order 2 and $z = -2$ is a zero of order 3. Let us check the case $z = 3$:
+\begin{example} 18.7:} For the function $f(z) = (z-3)^2(z+2)^3$: $z = 3$ is a zero of order 2 and $z = -2$ is a zero of order 3. Let us check the case $z = 3$:
 \begin{align*}
     f'(z) &= 2(z-3)(z+2)^3 + 3(z-3)^2(z+2)^2 \implies f'(3) = 0 \\
     f''(z) &= 2(z+2)^3 + 6(z-3)(z+2)^2 + 6(z-3)(z+2)^2 + 6(z-3)^2(z+2) \implies f''(3) = 250 \neq 0
 \end{align*}
 $\implies z = 3$ is a zero of order $n = 2$.
+\end{example}
 
 Rmk: To find all the zeros of $f(z)$ we need to solve the equation $f(z) = 0$.
 
-\textbf{Ex 18.8:} The function $f(z) = e^z$ does not have any zeros.
+\begin{example} 18.8:} The function $f(z) = e^z$ does not have any zeros.
 
 Pf: We need to show that there are no solutions of $e^z = 0$. Let $z = x + iy$. By Euler's formula $e^z = e^{x+iy} = e^x(\cos y + i\sin y) \implies \begin{cases} e^x \cos y = 0 \\ e^x \sin y = 0 \end{cases}$ (*). Since $x \in \mathbb{R} \implies e^x \neq 0$. But $y \in \mathbb{R} \implies$ there is no solution to (*).
+\end{example}
 
 \textbf{Prop 16.3:} $z = z_0$ is a zero of order $n$ of $f(z)$ (an analytic function) $\iff f(z)$ can be represented as $f(z) = (z-z_0)^n \varphi(z)$, where $\varphi(z)$ is analytic at $z = z_0$ and $\varphi(z_0) \neq 0$.
 
@@ -64,7 +69,7 @@ Expand $\varphi(z)$ into Taylor series about $z = z_0$: $f(z) = (z-z_0)^n (\tild
 
 From the last formula it is easy to see that $z = z_0$ is a zero of order $n$ of $f(z)$.
 
-\textbf{Ex 18.9:} What is the order of the zero $z_0 = 0$ for:
+\begin{example} 18.9:} What is the order of the zero $z_0 = 0$ for:
 1) $f(z) = z(e^z - 1)$
 2) $f(z) = \frac{z^{10}}{z - \sin z}$
 
@@ -76,6 +81,7 @@ Since $\varphi(0) = 1 \neq 0$ ($\varphi$ is analytic at $z_0 = 0$) by Prop 16.3 
 $$ \frac{z^{10}}{z - \sin z} = \frac{z^{10}}{z - (z - \frac{z^3}{3!} + \frac{z^5}{5!} - \frac{z^7}{7!} + \dots)} = \frac{z^{10}}{\frac{z^3}{3!} - \frac{z^5}{5!} + \frac{z^7}{7!} - \dots} = \frac{z^{10}}{z^3(\frac{1}{3!} - \frac{z^2}{5!} + \frac{z^4}{7!} - \dots)} $$
 Factorize $z^3$
 Let $\varphi(z) = \frac{1}{3!} - \frac{z^2}{5!} + \frac{z^4}{7!} - \dots$. Then $f(z) = z^7 \varphi(z)$, $\varphi$ is analytic at $z_0 = 0, \varphi(0) = \frac{1}{3!} = 6 \neq 0 \implies$ by Prop 16.3 $z_0 = 0$ is a zero of order 7 of $f(z)$.
+\end{example}
 
 \begin{definition} 16.4:} $z = z_0$ is an isolated zero of $f(z)$ if there exists a neighborhood of $z_0$ such that $f(z)$ vanishes only at $z_0$ in this neighborhood.
 \end{definition}
@@ -100,7 +106,7 @@ To find the residue, we expand $q$ into Taylor series about $z_0$: $q(z) = q(z_0
 Let us rewrite the denominator and factor a common factor $z - z_0$ from the denominator:
 $$ \frac{p(z)}{q(z)} = \frac{1}{z-z_0} \cdot \frac{p(z)}{q'(z_0) + \frac{q''(z_0)}{2!}(z-z_0) + \dots} $$
 
-\textbf{Ex 18.10:} Compute all the residues of $f(z) = \frac{1}{z(e^z - 1)}$.
+\begin{example} 18.10:} Compute all the residues of $f(z) = \frac{1}{z(e^z - 1)}$.
 
 Sol: Observe that $f$ has infinitely many isolated singularities at the points $z = 2\pi ni, n \in \mathbb{Z}$. We shall break the argument into 2 cases:
 
@@ -108,6 +114,7 @@ $n = 0$: The singularity is at $z = 0$. From Ex 18.9 1) $z = 0$ is a double zero
 
 $$ \text{Res}(f, 0) = \frac{\varphi'(0)}{1!} = -\frac{\frac{1}{2} + \frac{2z}{3!} + \frac{3z^2}{4!} + \dots}{\left(1 + \frac{z}{2} + \frac{z^2}{3!} + \dots \right)^2}\bigg|_{z=0} = -\frac{1}{2} $$
 $m = 2$
+\end{example}
 
 $n \neq 0$: In terms of Prop 16.4 we have $p(z) = 1, q(z) = z(e^z - 1)$ and $z = 2\pi ni$ is a simple zero of $q(z)$. $q'(z) = ze^z + e^z - 1 \implies q'(2\pi ni) = 2\pi ni$ (Recall: $e^{2\pi ni} = 1$) $\implies f$ has a simple pole at $2\pi ni, n \neq 0$, and the residue is given by (Cor 16.5) $\frac{p(2\pi ni)}{q'(2\pi ni)} = \frac{1}{2\pi ni}$.
 
@@ -130,13 +137,15 @@ If this limit is independent of the curve and of the choice of a point for the v
 \begin{definition} 17.1} A path is a continuous map $\gamma: [a, b] \to \mathbb{C}$ ($t \to \gamma(t)$), $\gamma(t) = x(t) + iy(t))$ where $[a, b] \subset \mathbb{R}$ is a closed interval. The image of any path $\gamma$ in $\mathbb{C}$ is called a curve. We say that $\gamma$ is a parametrization of that curve.
 \end{definition}
 
-\textbf{Ex 19.1} Define and compare 2 paths: $\gamma_1: [0, 1] \to \mathbb{C}$, $\gamma_1(t) = e^{2\pi i t}$; $\gamma_2: [0, 2\pi] \to \mathbb{C}$, $\gamma_2(t) = e^{it}$.
+\begin{example} 19.1} Define and compare 2 paths: $\gamma_1: [0, 1] \to \mathbb{C}$, $\gamma_1(t) = e^{2\pi i t}$; $\gamma_2: [0, 2\pi] \to \mathbb{C}$, $\gamma_2(t) = e^{it}$.
 
 Observe: $\gamma_1(0) = \gamma_1(1) = \gamma_2(0) = \gamma_2(2\pi) = 1$. $\gamma_1, \gamma_2$ define the same curve as their images is the unit circle $\{z \in \mathbb{C}: |z| = 1\}$. But: $\gamma_1$ and $\gamma_2$ are different paths! $\gamma_1$ and $\gamma_2$ are parametrizations of the same curve!
+\end{example}
 
-\textbf{Ex 19.2:} Another useful example is the straight line connecting two points $w$ and $w'$ in the complex plane.
+\begin{example} 19.2:} Another useful example is the straight line connecting two points $w$ and $w'$ in the complex plane.
 
 Straight line connecting $w$ and $w'$ (starting at $w$): $\gamma_3: [0, 1] \to \mathbb{C} \quad \gamma_3(t) = tw' + (1-t)w$.
+\end{example}
 
 \begin{definition} 17.2:} C is a simple curve if there exists a parametrization $\gamma$ of C which is injective (one to one): if $t_1 \neq t_2$, then $\gamma(t_1) \neq \gamma(t_2)$. C is a simple, closed curve if it is parametrized by $\gamma: [a, b] \to \mathbb{C}$ with $\gamma(a) = \gamma(b)$, but $\gamma(t_1) \neq \gamma(t_2)$ for all other $t_1, t_2 \in [a, b], t_1 \neq t_2$.
 \end{definition}
@@ -145,17 +154,19 @@ Jordan's Thm: Every simple closed curve divides $\mathbb{C}$ into 2 regions - "i
 
 Notation: $-\gamma$ stands for the negative of the path $\gamma$ - the path which gives the same curve as $\gamma$, but traversed in the opposite direction.
 
-\textbf{Ex 19.3} Write down $-\gamma$, where $\gamma$ is the straight line connecting $w$ to $w'$.
+\begin{example} 19.3} Write down $-\gamma$, where $\gamma$ is the straight line connecting $w$ to $w'$.
 
 Sol: From Ex 19.2: $\gamma_3(t) = tw' + (1-t)w$ - straight line that connects $w$ to $w'$. Using this: $-\gamma_3: [0, 1] \to \mathbb{C} \quad -\gamma_3(t) = (1-t)w' + tw$ ($0 \to w', 1 \to w$).
+\end{example}
 
-\textbf{Ex 19.4:} Write in the form $z(t) = x(t) + iy(t)$ the following curve: $9x^2 + 4y^2 = 36 \iff (\frac{x}{2})^2 + (\frac{y}{3})^2 = 1$.
+\begin{example} 19.4:} Write in the form $z(t) = x(t) + iy(t)$ the following curve: $9x^2 + 4y^2 = 36 \iff (\frac{x}{2})^2 + (\frac{y}{3})^2 = 1$.
 
 Sol: This is an equation of an ellipse with focal points $x = 2, y = 3$, since $\frac{x^2}{4} + \frac{y^2}{9} = 1 \iff (\frac{x}{2})^2 + (\frac{y}{3})^2 = 1$.
+\end{example}
 
 Parametrization: Take $x = 2\cos t, y = 3\sin t$ for $0 \leq t < 2\pi$. Then $(\frac{2\cos t}{2})^2 + (\frac{3\sin t}{3})^2 = \cos^2 t + \sin^2 t = 1 \implies z(t) = 2\cos t + i3\sin t$.
 
-\textbf{Ex 19.5:} Write parametrization $z(t) = x(t) + iy(t)$ of the curve, described by $|z-i| + |z+i| = 4$.
+\begin{example} 19.5:} Write parametrization $z(t) = x(t) + iy(t)$ of the curve, described by $|z-i| + |z+i| = 4$.
 
 Sol: $|z-i| + |z+i| = 4 \iff |x + i(y-1)| + |x + i(y+1)| = 4$
 $\iff \sqrt{x^2 + (y-1)^2} + \sqrt{x^2 + (y+1)^2} = 4$
@@ -165,6 +176,7 @@ $\iff 2\sqrt{x^2 + (y+1)^2} = 4 + y \iff 4x^2 + 4y^2 + 8y + 4 = 16 + y^2 + 8y$
 $\iff 4x^2 + 3y^2 = 12 \iff \frac{x^2}{3} + \frac{y^2}{4} = 1 \iff (\frac{x}{\sqrt{3}})^2 + (\frac{y}{2})^2 = 1$
 
 Again an ellipse equation. Take $x = \sqrt{3}\cos t, y = 2\sin t, 0 \leq t < 2\pi \implies$ parametrization $z(t) = \sqrt{3}\cos t + i2\sin t$.
+\end{example}
 
 We can add paths in the following manner:
 
@@ -177,11 +189,12 @@ We can add paths in the following manner:
 \begin{definition} 17.5:} A contour is a piecewise-smooth curve: a finite union of smooth curves joined end-to-end. The length of a contour C is defined to be $L = \int_a^b |\gamma'(t)| dt$, where $\gamma: [a, b] \to \mathbb{C}$ is any smooth parametrization of C.
 \end{definition}
 
-CHECK: The length is independent of parametrization!
+\checkthis{} The length is independent of parametrization!
 
-\textbf{Ex 19.6:} Define $\gamma: [0, 1] \to \mathbb{C}$ by $\gamma(t) = (1+i)t$. Graph this contour and calculate its length.
+\begin{example} 19.6:} Define $\gamma: [0, 1] \to \mathbb{C}$ by $\gamma(t) = (1+i)t$. Graph this contour and calculate its length.
 
 Sol: $L = \int_0^1 |\gamma'(t)| dt = \int_0^1 \sqrt{1^2 + 1^2} dt = \sqrt{2}$.
+\end{example}
 
 Now we study how to integrate a complex function of a real variable.
 
@@ -203,9 +216,10 @@ From standard results of real analysis we have:
 
 Note that the second and third parts of this proposition say that the integral defined is a linear map from the vector space of complex functions of a real variable to the complex numbers.
 
-\textbf{Ex 19.7:} Compute $\int_0^{\pi/4} e^{it} dt$.
+\begin{example} 19.7:} Compute $\int_0^{\pi/4} e^{it} dt$.
 
 Sol: $e^{it}$ has antiderivative $\frac{1}{i}e^{it} = -ie^{it} \implies$ by Prop 17.1 4) $\int_0^{\pi/4} e^{it} dt = -ie^{it}|_0^{\pi/4} = -i[e^{i\frac{\pi}{4}} - 1] = -i[\frac{1}{\sqrt{2}} + i\frac{1}{\sqrt{2}} - 1] = \frac{1}{\sqrt{2}} + i(1 - \frac{1}{\sqrt{2}})$.
+\end{example}
 
 The following proposition is a very useful estimate for the size of an integral of a complex function of a real variable. The proof is omitted.
 
@@ -222,14 +236,17 @@ Let C be a contour and $f$ a continuous complex-valued function defined on C. Su
 The basic idea is change of variables. Take $z = \gamma(t)$, then $dz = \frac{d\gamma}{dt} dt$, so the integral on the LHS should be equal to the one on the RHS. But, of course, to make it rigorous one needs to show that the expression on the RHS gives the same value as the definition with sums $\lim_{n \to \infty} \sum_{j=1}^n f(z_j)(z_j - z_{j-1}) (|z_j - z_{j-1}| \to 0)$. The definition
 of contour integral is much easier to use in practice. Let us see some examples.
 
-\textbf{Ex 19.8:} Let C be a semicircle parametrized by the path $\gamma(\theta) = 2e^{i\theta}, -\frac{\pi}{2} \leq \theta \leq \frac{\pi}{2}$. Let $f(z) = \bar{z}$. Then:
+\begin{example} 19.8:} Let C be a semicircle parametrized by the path $\gamma(\theta) = 2e^{i\theta}, -\frac{\pi}{2} \leq \theta \leq \frac{\pi}{2}$. Let $f(z) = \bar{z}$. Then:
 $$ \int_C f(z) dz = \int_{-\pi/2}^{\pi/2} f(\gamma(\theta)) \gamma'(\theta) d\theta = \int_{-\pi/2}^{\pi/2} \overline{2e^{i\theta}} 2ie^{i\theta} d\theta = \int_{-\pi/2}^{\pi/2} 4i d\theta = 4i(\frac{\pi}{2} - (-\frac{\pi}{2})) = 4\pi i $$
+\end{example}
 
-\textbf{Ex 19.9:} Let C be the same contour as in Ex 19.8, $f(z) = z^2$.
+\begin{example} 19.9:} Let C be the same contour as in Ex 19.8, $f(z) = z^2$.
 $$ \int_C f(z) dz = \int_{-\pi/2}^{\pi/2} (2e^{i\theta})^2 2ie^{i\theta} d\theta = \int_{-\pi/2}^{\pi/2} 8i e^{3i\theta} d\theta = \frac{8i}{3i} e^{3i\theta} |_{-\pi/2}^{\pi/2} = \frac{8}{3} [e^{i\frac{3\pi}{2}} - e^{-i\frac{3\pi}{2}}] = \frac{8}{3} 2i \sin(\frac{3\pi}{2}) = -i\frac{16}{3} $$
+\end{example}
 
-\textbf{Ex 19.10:} Let $f(z) = z^2$, C - the straight line segment from $-2i$ to $2i \implies$ C is parametrized by the path $\gamma(t) = 2it + (-2i)(1-t) = -2i + 4it, 0 \leq t \leq 1$. Then:
+\begin{example} 19.10:} Let $f(z) = z^2$, C - the straight line segment from $-2i$ to $2i \implies$ C is parametrized by the path $\gamma(t) = 2it + (-2i)(1-t) = -2i + 4it, 0 \leq t \leq 1$. Then:
 $$ \int_C f(z) dz = \int_0^1 f(\gamma(t)) \gamma'(t) dt = \int_0^1 (-2i + 4it)^2 4i dt = 4i(-4t - \frac{16t^3}{3} + \frac{16t^2}{2})|_0^1 = 4i(-4 - \frac{16}{3} + 8) = -i\frac{16}{3} $$
+\end{example}
 
 Note: in the last two examples we have integrated $f(z) = z^2$ on two different contours that connect $2i$ to $-2i$ and obtained the same value, this is not a coincidence!
 

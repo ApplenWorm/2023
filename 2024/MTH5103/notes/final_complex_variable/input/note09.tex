@@ -18,7 +18,7 @@ Prop 17.3 1)
 
 Note: The condition that $f$ has antiderivative is necessary!
 
-\textbf{Ex 19.11:} Compute $\int_C f(z) dz$ where $f(z) = \bar{z}$ and C connects 2 points $z_0 = 0, z_1 = 2 + 4i$
+\begin{example} 19.11:} Compute $\int_C f(z) dz$ where $f(z) = \bar{z}$ and C connects 2 points $z_0 = 0, z_1 = 2 + 4i$
 
 1) by straight line segment
 2) by parabola (part of it) $y = x^2$
@@ -28,8 +28,9 @@ Sol: 1) Straight line connecting 0 and $2 + 4i$ is parametrized by $\gamma(t) = 
 2) Parametrization: $\gamma(t) = t + it^2, 0 \leq t \leq 2$, and $\int_C f(z) dz = \int_0^2 \overline{f(\gamma(t))} \gamma'(t) dt = \int_0^2 (t-it^2)(1+2it) dt = \int_0^2 (t-it^2)(1+2it) dt = \int_0^2 (t + it^2 + 2t^3) dt = 10 + i\frac{8}{3} (\neq 10)$.
 
 $\bar{z}$ does not have an antiderivative!
+\end{example}
 
-\textbf{Ex 19.12:} Let $C_1$ be the contour from -1 to 1 along the upper unit semicircle and $C_2$ the contour from -1 to 1 along the 
+\begin{example} 19.12:} Let $C_1$ be the contour from -1 to 1 along the upper unit semicircle and $C_2$ the contour from -1 to 1 along the 
 lower unit semicircle. Compute $\int_{C_1} \frac{1}{(z-4)^2} dz$.
 
 Sol: Note: $\int_{C_1 - C_2} \frac{1}{(z-4)^2} dz = 0$. This is an analytic function on the unit circle, the only singularity is a 
@@ -40,10 +41,12 @@ $\int_{C_1-C_2}^{} \frac{1}{(z-4)^2} dz = 0$.
 % $$ \oint_{C_1 - C_2} \frac{1}{(z-4)^2} \, dz = 0 $$
  $C_1 - C_2$ is a closed contour; the unit circle.
 $\implies \int_{C_1} \frac{dz}{(z-4)^2} = \int_{C_2} \frac{dz}{(z-4)^2} = -\frac{1}{z-4}|_{-1}^1 = \frac{1}{-3} - \frac{1}{-5} = \frac{2}{15}$.
+\end{example}
 
-\textbf{Ex 19.13:} Compute $\int_C \frac{dz}{(z-z_0)^n}$, where $C = \{z \in \mathbb{C}: |z-z_0| = R\}$ and $n$ is some integer.
+\begin{example} 19.13:} Compute $\int_C \frac{dz}{(z-z_0)^n}$, where $C = \{z \in \mathbb{C}: |z-z_0| = R\}$ and $n$ is some integer.
 
 Sol: C is a circle centered at $z_0$ of radius R. Parametrization of C: $|z-z_0| = R \implies (x-x_0)^2 + (y-y_0)^2 = R^2$. Take $x-x_0 = R\cos t, y - y_0 = R\sin t, 0 \leq t \leq 2\pi$, then by Euler's formula $z - z_0 = R(\cos t + i\sin t) = Re^{it}, 0 \leq t \leq 2\pi \implies dz = iRe^{it} dt$.
+\end{example}
 
 By Def 17.7 (of the contour integral) $\int_C \frac{dz}{(z-z_0)^n} = \int_0^{2\pi} \frac{iRe^{it}}{R^n e^{int}} dt = \frac{i}{R^{n-1}} \int_0^{2\pi} e^{i(1-n)t} dt$.
 
@@ -53,7 +56,7 @@ $n = 1: \int_C \frac{dz}{z-z_0} = i \int_0^{2\pi} dt = 2\pi i$.
 
 $n \neq 1: \int_C \frac{dz}{(z-z_0)^n} = \frac{i}{R^{n-1}} \int_0^{2\pi} e^{i(1-n)t} dt = \frac{i}{(1-n)R^{n-1}} e^{i(1-n)t} |_0^{2\pi} = \frac{1}{(1-n)R^{n-1}} [e^{i(1-n)2\pi} - 1] = 0$ \{$e^{2\pi ki} = 1 \quad \forall k \in \mathbb{Z}$\}.
 
-\textbf{Ex 19.4:} Compute $\int_C \frac{dz}{\sqrt{z}}$ where $C = \{f(x,y): x^2 + y^2 = 16, y \geq 0\}$, and the branch of $\sqrt{z}$ is such that $\sqrt{4} = -2$.
+\begin{example} 19.4:} Compute $\int_C \frac{dz}{\sqrt{z}}$ where $C = \{f(x,y): x^2 + y^2 = 16, y \geq 0\}$, and the branch of $\sqrt{z}$ is such that $\sqrt{4} = -2$.
 
 Sol: Note: the contour is the upper half of the circle centered at 0 of radius 4.
 
@@ -62,6 +65,7 @@ Rewrite: $C = \{z \in \mathbb{C}: |z| = 4, \text{Im } z > 0\} \implies$ if $z \i
 $\sqrt{z}$ attains 2 values: $w_1 = \sqrt{4e^{it}} = 2e^{i\frac{t}{2}}$ and $w_2 = \sqrt{4e^{it}} = 2e^{i(\frac{t}{2} + \pi)}$.
 
 If $t = 0: w_1 = \sqrt{4} = 2e^0 = 2$ and $w_2 = \sqrt{4} = 2e^{i\pi} = -2 \implies$ the given branch is $w_2$. Now we compute: $\sqrt{z} = 2e^{i(\frac{t}{2} + \pi)}, dz = 4ie^{it} dt \implies \int_C \frac{dz}{\sqrt{z}} = \int_0^\pi \frac{4ie^{it}}{2e^{i(\frac{t}{2} + \pi)}} dt = 2i \int_0^\pi e^{i(\frac{t}{2} - \pi)} dt = 4e^{i(\frac{t}{2} - \pi)}|_0^\pi = 4(e^{-i\frac{\pi}{2}} - e^{-i\pi}) = 4(-i + 1)$ \{$\because e^{-i\frac{\pi}{2}} = \cos \frac{\pi}{2} - i\sin \frac{\pi}{2} = -i$\}.
+\end{example}
 
 The estimate in Prop 17.2 for the size of an integral of a complex-valued function of a real variable also has an important consequence for contour integrals.
 
@@ -186,9 +190,10 @@ More generally, a similar proof to the one used for the Deformation Principle, g
 The picture to have in mind is:
 [PUT PICTRE HERE]
 
-\textbf{Ex 20.1:} Compute $\int_C \frac{z}{(z-4)^2} dz$, where C is the contour defined by traversing once the square with vertices $\pm 3i, 6 \pm 3i$ anticlockwise.
+\begin{example} 20.1:} Compute $\int_C \frac{z}{(z-4)^2} dz$, where C is the contour defined by traversing once the square with vertices $\pm 3i, 6 \pm 3i$ anticlockwise.
 
 Sol: To compute this integral we apply the Deformation principle and observe that $\int_C \frac{z dz}{(z-4)^2} = \int_{C'} \frac{z dz}{(z-4)^2}$, where C' is the circular contour centered at 4 of radius 1. In particular, C' may be parametrized by the path $\gamma(t) = 4 + e^{2\pi i t}, 0 \leq t \leq 1$
 $\implies \int_{C'} \frac{z dz}{(z-4)^2} = \int_0^1 \frac{4 + e^{2\pi i t}}{e^{4\pi i t}} 2\pi i e^{2\pi i t} dt = 2\pi i \int_0^1 (4e^{-2\pi i t} + 1) dt = 2\pi i [-\frac{2}{\pi i}e^{-2\pi i t} + t]|_0^1 = [-4e^{-2\pi i t} + 2\pi i t]|_0^1 = -4 + 2\pi i - (-4 + 0) = 2\pi i$.
 
+\end{example}
 

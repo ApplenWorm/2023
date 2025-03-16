@@ -17,20 +17,23 @@ Pf: Assume $\lim_{n \to \infty} z_n = \tilde{z_1}$ and $\lim_{n \to \infty} z_n 
 
 Thus $|\tilde{z_1} - \tilde{z_2}| = |\tilde{z_1} - z_n + z_n - \tilde{z_2}| \leq |\tilde{z_1} - z_n| + |z_n - \tilde{z_2}| < \epsilon/2 + \epsilon/2 = \epsilon$. Since this is true for any $\epsilon > 0$ we conclude that $\tilde{z_1} = \tilde{z_2}$.
 
-Also, it is possible to show that the complex sequence $\{z_n\}$ converges to $z \iff$ the real sequence $\{|z_n - z|\}_{n=0}^{\infty}$ converges to 0 (CHECK!)
+Also, it is possible to show that the complex sequence $\{z_n\}$ converges to $z \iff$ the real sequence $\{|z_n - z|\}_{n=0}^{\infty}$ converges to 0 (\verifythis)
 
-\textbf{Ex 12.1:} Let $z_n = (\frac{i}{2})^n, n \in \mathbb{N}$. Then: $z_0 = 1, z_1 = \frac{i}{2}, z_2 = \frac{i^2}{4} = -\frac{1}{4}, z_3 = \frac{i^3}{8} = -\frac{i}{8}, z_4 = \frac{i^4}{16} = \frac{1}{16}, \dots$
-
-This sequence converges to 0: $\lim_{n \to \infty} z_n = 0$. Can be demonstrated by proving that $|z_n|$ decreases to 0 as $n$ tends to infinity. (CHECK: By graphing the points $z_n$ check that the sequence
+\begin{example} 12.1:} Let $z_n = (\frac{i}{2})^n, n \in \mathbb{N}$. Then: $z_0 = 1, z_1 = \frac{i}{2}, z_2 = \frac{i^2}{4} = -\frac{1}{4}, z_3 = \frac{i^3}{8} = -\frac{i}{8}, z_4 = \frac{i^4}{16} = \frac{1}{16}, \dots$
+\end{example}
+This sequence converges to 0: $\lim_{n \to \infty} z_n = 0$. Can be demonstrated by proving that $|z_n|$ decreases to 0 as $n$ tends to infinity. (\checkthis{} By graphing the points $z_n$ check that the sequence
 $\{z_n\}$ "spirals" in toward the origin $(0)$ in the $z$-plane.
 
-\textbf{Ex 12.2:} Let $z_n = (2i)^n: z_0 = 1, z_1 = 2i, z_2 = -4, z_3 = -8i, \dots$. This sequence diverges: one can show that $\{|z_n|\}_{n=0}^{\infty}$ is unbounded increasing sequence \{namely, $|z_n|$ gets arbitrarily large\}.
+\begin{example} 12.2:} Let $z_n = (2i)^n: z_0 = 1, z_1 = 2i, z_2 = -4, z_3 = -8i, \dots$. This sequence diverges: one can show that $\{|z_n|\}_{n=0}^{\infty}$ is unbounded increasing sequence \{namely, $|z_n|$ gets arbitrarily large\}.
+\end{example}
 
-\textbf{Ex 12.3:} Let $z_n = (i)^n: z_0 = 1, z_1 = i, z_2 = -1, z_3 = -i, z_4 = 1, z_5 = i, \dots$. This is a bounded sequence ($|z_n| \leq 1$ for any $n$), but $\lim_{n \to \infty} z_n$ does not exist: there is no $z$ such that almost all but finitely many points of the sequence are in a small neighborhood of some $z$: $z_n$ jumps at every step.
+\begin{example} 12.3:} Let $z_n = (i)^n: z_0 = 1, z_1 = i, z_2 = -1, z_3 = -i, z_4 = 1, z_5 = i, \dots$. This is a bounded sequence ($|z_n| \leq 1$ for any $n$), but $\lim_{n \to \infty} z_n$ does not exist: there is no $z$ such that almost all but finitely many points of the sequence are in a small neighborhood of some $z$: $z_n$ jumps at every step.
+\end{example}
 
 Important real sequence (limit): let $a_n = (1 + \frac{a}{n})^n$ for some $a$. Then $\lim_{n \to \infty} a_n = (1 + \frac{a}{n})^n = e^a$.
 
-\textbf{Ex 12.4:} $\lim_{n \to \infty} (1 + \frac{i}{n})^n = e^i, \quad \lim_{n \to \infty} (1 - \frac{i}{n})^n = \lim_{n \to \infty} (1 + \frac{-i}{n})^n = e^{-i} = \frac{1}{e^i}$.
+\begin{example} 12.4:} $\lim_{n \to \infty} (1 + \frac{i}{n})^n = e^i, \quad \lim_{n \to \infty} (1 - \frac{i}{n})^n = \lim_{n \to \infty} (1 + \frac{-i}{n})^n = e^{-i} = \frac{1}{e^i}$.
+\end{example}
 
 \begin{proposition} 10.1:} If the sequences $\{z_n\}, \{w_n\}$ of complex numbers converge, then so the sequences $\{z_n \pm w_n\}, \{z_n \cdot w_n\}$, and if $w_n \neq 0$ also $\{\frac{z_n}{w_n}\}$, and $\lim_{n \to \infty} (z_n \pm w_n) = \lim_{n \to \infty} z_n \pm \lim_{n \to \infty} w_n; \quad \lim_{n \to \infty} z_n w_n = \lim_{n \to \infty} z_n \lim_{n \to \infty} w_n$.
 
@@ -84,7 +87,7 @@ In much of what follows, we can use Prop 11.3 and results in real sequences and 
 Pf: (EXERCISE - exactly as in the real case - partial sums).
 \end{proposition}
 
-\textbf{Ex 13.1} (Key example - Geometric series)
+\begin{example} 13.1} (Key example - Geometric series)
 
 Suppose that $|z| < 1$. We claim that the series $\sum_{n=0}^{\infty} z^n$, called the Geometric series, converges.
 
@@ -102,8 +105,9 @@ First, we obtain a closed formula for $S_N$ as follows.
     &\implies S_N = \frac{1 - z^{N+1}}{1-z}
 \end{align*}
 Now we use this formula to compute the limit
-$$ \left| \frac{1}{1-z} - S_N \right| = \left| \frac{1}{1-z} - \frac{1 - z^{N+1}}{1-z} \right| = \left| \frac{z^{N+1}}{1-z} \right| = \frac{|z|^{N+1}}{|1-z|} $$
+\[ \left| \frac{1}{1-z} - S_N \right| = \left| \frac{1}{1-z} - \frac{1 - z^{N+1}}{1-z} \right| = \left| \frac{z^{N+1}}{1-z} \right| = \frac{|z|^{N+1}}{|1-z|} \]
 Since $|z| < 1 \implies \lim_{N \to \infty} |z|^N = 0$ (from what we know about real sequences). Therefore $\left| \frac{1}{1-z} - S_N \right| \xrightarrow{N \to \infty} 0 \implies \lim_{N \to \infty} S_N = \frac{1}{1-z}$.
+\end{example}
 
 % \section*{Lectures 14+15.}
 \lecture{14+15}{Absolute convergence?! WTH is that?}
@@ -158,7 +162,7 @@ Suppose that $L < 1$. Choose a number $r$ such that $L < r < 1$. Since $\lim_{n 
 Root Test and Comparison Test: EXERCISE!
 \end{proposition}
 
-\textbf{Ex 13.2:} Check the convergence of the following series:
+\begin{example} 13.2:} Check the convergence of the following series:
 a) $\sum_{n=0}^{\infty} (2i)^n$ b) $\sum_{n=0}^{\infty} \left(\frac{1+i}{2}\right)^n$ c) $\sum_{n=0}^{\infty} \frac{(4i)^n}{n!}$
 
 Sol: 1) We use Comparison Test as follows: $a_n = (2i)^n \implies |a_n| = (|2i|)^n = |2|^n = 2^n > (\frac{3}{2})^n$. Since $\sum_{n=0}^{\infty} (\frac{3}{2})^n$ diverges (for example, by the Test for Divergence, since $\lim_{n \to \infty} (\frac{3}{2})^n = \infty \neq 0$) by Comparison Test $\sum_{n=0}^{\infty} (2i)^n$ diverges.
@@ -168,8 +172,13 @@ $\implies \lim_{n \to \infty} \sqrt[n]{|a_n|} = \lim_{n \to \infty} \sqrt[n]{\le
 $\implies \sum_{n=0}^{\infty} \left(\frac{1+i}{2}\right)^n$ converges absolutely.
 
 c) Let us apply the Ratio Test: $a_n = \frac{(4i)^n}{n!}$
-$$ \implies \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n \to \infty} \left| \frac{\frac{(4i)^{n+1}}{(n+1)!}}{\frac{(4i)^n}{n!}} \right| = \lim_{n \to \infty} \left| \frac{(4i)^{n+1}}{(n+1)!} \cdot \frac{n!}{(4i)^n} \right| = \lim_{n \to \infty} \frac{|4i|}{n+1} = \lim_{n \to \infty} \frac{4}{n+1} = 0 < 1 \implies \text{converges} $$
-absolutely.
+
+\begin{align*}
+    & \implies \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n \to \infty} \left| \frac{\frac{(4i)^{n+1}}{(n+1)!}}{\frac{(4i)^n}{n!}} \right| = \lim_{n \to \infty} \left| \frac{(4i)^{n+1}}{(n+1)!} \cdot \frac{n!}{(4i)^n} \right| = \lim_{n \to \infty} \frac{|4i|}{n+1} = \lim_{n \to \infty} \frac{4}{n+1} = 0 < 1 
+\end{align*}
+
+     $\implies $ converges absolutely.
+\end{example}
 
 \section{Complex Power Series}
 \begin{definition} 12.1:} The series $\sum_{n=0}^{\infty} a_n(z-z_0)^n, a_n \in \mathbb{C}, n \in \mathbb{N}$, is called a power series centered at $z = z_0$ (about $z = z_0$).
@@ -197,7 +206,8 @@ $\implies$ since $|z| < |z_0|$, namely $\left| \frac{z}{z_0} \right| < 1$, the g
 \begin{definition} 12.2} If the series $\sum_{n=0}^{\infty} a_n z^n$ converges for all $z \in U \subseteq \mathbb{C}$, then its sum defines a function on $U$.
 \end{definition}
 
-\textbf{Ex 13.1 (continued):} $\sum_{n=0}^{\infty} z^n$ - power series centered at $z_0 = 0$, $a_n = 1$ for all $n$. Converges on the open unit disc $U = \{z \in \mathbb{C}: |z| < 1\}$ (converges absolutely!), and equal to the function $f(z) = \frac{1}{1-z}$ on $U$.
+\begin{example} 13.1 (continued):} $\sum_{n=0}^{\infty} z^n$ - power series centered at $z_0 = 0$, $a_n = 1$ for all $n$. Converges on the open unit disc $U = \{z \in \mathbb{C}: |z| < 1\}$ (converges absolutely!), and equal to the function $f(z) = \frac{1}{1-z}$ on $U$.
+\end{example}
 
 Next proposition tells us where the power series converges. The proof is omitted.
 
@@ -213,21 +223,23 @@ A very useful formulae for computing the radius of convergence of power series:
     \item Cauchy-Hadamard formula: $R = \lim_{n \to \infty} \frac{1}{\sqrt[n]{|a_n|}}$
 \end{itemize}
 
-\textbf{Ex 14.1} Find the radius of convergence of $\sum_{n=0}^{\infty} (n+i)z^n$.
+\begin{example} 14.1} Find the radius of convergence of $\sum_{n=0}^{\infty} (n+i)z^n$.
 
 Sol: $a_n = n + i \implies |a_n| = \sqrt{n^2 + 1}$.
 
 Using Cauchy-Hadamard formula and that $\lim_{n \to \infty} \sqrt[n]{n} = 1$ we get: $R = \lim_{n \to \infty} \frac{1}{\sqrt[n]{\sqrt{n^2 + 1}}} = 1$. Namely, the series converges absolutely for $|z| < 1$.
+\end{example}
 
 Rmk: The power series with the radius of convergence $R$ on the circle $|z - z_0| = R$ (or $|z| = R$ if $z_0 = 0$) may converge or diverge or converge at some points and diverge at others.
 
-\textbf{Ex 14.2:} 1) The geometric series $\sum_{n=0}^{\infty} z^n$ - the radius of convergence $R = 1$ and the series diverges at any point on the circle $|z| = 1$ (by the Test for Divergence).
+\begin{example} 14.2:} 1) The geometric series $\sum_{n=0}^{\infty} z^n$ - the radius of convergence $R = 1$ and the series diverges at any point on the circle $|z| = 1$ (by the Test for Divergence).
 
-2) $\sum_{n=0}^{\infty} \frac{z^n}{n^2}$: The radius of convergence $R = 1$ [CHECK!]
+2) $\sum_{n=0}^{\infty} \frac{z^n}{n^2}$: The radius of convergence $R = 1$ [\verifythis]
 
 and the series converges (absolutely) for any $|z| \leq 1$.
 
 3) One can prove: the series $1 + z + \frac{z^2}{2} + \frac{z^3}{3} + \dots + \frac{z^n}{n} + \dots$ with the radius of convergence $R = 1$, diverges at $z = 1$ and converges at all other points $|z| = 1$ (not absolutely!).
+\end{example}
 
 \begin{definition} 12.3:} The disc of convergence of the power series $\sum_{n=0}^{\infty} a_n (z - z_0)^n$ is given by $D = \{z \in \mathbb{C}: |z - z_0| < R\}$ and we write $f(z)$ for the sum of the series on this disc.
 \end{definition}
@@ -242,16 +254,19 @@ and the series converges (absolutely) for any $|z| \leq 1$.
 Note: From Prop 12.2: $f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n$ is differentiable arbitrarily many times at any $z$ in the disc of convergence of the series (namely, we can define its higher derivatives).
 
 \begin{definition} 12.4:} For any $z \in \mathbb{C}$ we define the exponential function as the sum of the following series
-$$ e^z = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \dots = \sum_{n=0}^{\infty} \frac{z^n}{n!} $$
+\[ e^z = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \dots = \sum_{n=0}^{\infty} \frac{z^n}{n!} \]
 If $z$ is real, we get the usual expansion of $e^x$ to series.
 \end{definition}
 
+\begin{claim}
 Claim: $e^z$ is well-defined for all $z \in \mathbb{C}$, namely $R = \infty$.
 
+\begin{proof}
 Pf: By Ratio Test:
-$$ \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n \to \infty} \left| \frac{\frac{z^{n+1}}{(n+1)!}}{\frac{z^n}{n!}} \right| = \lim_{n \to \infty} \left| \frac{z}{n+1} \right| = 0 < 1 \quad \text{for all } z \in \mathbb{C} $$
+\[ \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n \to \infty} \left| \frac{\frac{z^{n+1}}{(n+1)!}}{\frac{z^n}{n!}} \right| = \lim_{n \to \infty} \left| \frac{z}{n+1} \right| = 0 < 1 \quad \text{for all } z \in \mathbb{C} \]
 $\implies \sum_{n=0}^{\infty} \frac{z^n}{n!}$ converges absolutely for all $z \in \mathbb{C}$.
-
+\end{proof}
+\end{claim}
 \begin{proposition} 12.3:} $e^z$ is entire and $(e^z)' = e^z$.
 
 Pf: By Prop 12.2 1) $e^z$ is analytic for every $z \in \mathbb{C} \implies$ entire (since $R = \infty$). By Prop 12.2 2): $(e^z)' = \sum_{n=1}^{\infty} \frac{nz^{n-1}}{n!} = \sum_{n=1}^{\infty} \frac{z^{n-1}}{(n-1)!} = \sum_{n=0}^{\infty} \frac{z^n}{n!} = e^z$.
@@ -268,8 +283,10 @@ $e^{z_1 + z_2} = 1 + (z_1 + z_2) + \frac{1}{2!}(z_1 + z_2)^2 + \dots + \frac{1}{
 Now we can define trigonometric functions as power series:
 
 \begin{definition} 12.5:} For any $z \in \mathbb{C}, |z| < \infty$
-$$ \sin z = \text{Im } e^{iz} = z - \frac{z^3}{3!} + \frac{z^5}{5!} - \dots = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!}z^{2n+1} $$
-$$ \cos z = \text{Re } e^{iz} = 1 - \frac{z^2}{2!} + \frac{z^4}{4!} - \dots = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n)!}z^{2n} $$
+    \begin{align*} 
+        & \sin z = \text{Im } e^{iz} = z - \frac{z^3}{3!} + \frac{z^5}{5!} - \dots = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!}z^{2n+1} \\
+        & \cos z = \text{Re } e^{iz} = 1 - \frac{z^2}{2!} + \frac{z^4}{4!} - \dots = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n)!}z^{2n} 
+    \end{align*}
 For real $z$ this definition coincide with Taylor series expansion of $\sin x$ and $\cos x$ about $x = 0$.
 
 \end{definition}
