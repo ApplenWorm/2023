@@ -8,7 +8,8 @@ We are also going to discuss the relationship between these series and analytic 
 
 The Geometric series: for $|z| < 1$ $\sum_{n=0}^{\infty} z^n = \frac{1}{1-z}$ (converges absolutely).
 
-\begin{example}\label{example:15.1} Determine the convergence or divergence of:
+\begin{example}\label{example:15.1} 
+    Determine the convergence or divergence of:
 1) $\sum_{n=0}^{\infty} \left(\frac{4+i}{6}\right)^n$
 2) $\sum_{n=2}^{\infty} \left(\frac{4+i}{56}\right)^n$
 3) $\sum_{n=0}^{\infty} \left(\frac{4+i}{3}\right)^n$
@@ -49,7 +50,8 @@ The radius of convergence of this power series is given by $R = \lim_{n \to \inf
 
 Another type of question we may encounter is one in which we are asked to determine the power series of a given function.
 
-\begin{example}\label{example15.3} Find the power series expansion of the function $f(z) = \frac{1}{2z-3}$ about the point $z_0 = 0$ and determine the radius of convergence.
+\begin{example}\label{example:15.3} 
+    Find the power series expansion of the function $f(z) = \frac{1}{2z-3}$ about the point $z_0 = 0$ and determine the radius of convergence.
 
 Sol: Observe that $f$ can be written in the form of a convergent geometric series as follows:
 \[ \frac{1}{2z-3} = -\frac{1}{3} \cdot \frac{1}{1 - \frac{2z}{3}} = -\frac{1}{3} \sum_{n=0}^{\infty} \left(\frac{2z}{3}\right)^n = -\sum_{n=0}^{\infty} \frac{2^n}{3^{n+1}}z^n \]
@@ -73,7 +75,7 @@ The series on the right is called the Taylor series for $f$ at $a$.
 
 Namely, $f$ is differentiable arbitrarily many times at $a$ and this is a unique representation of $f$ as power series on $C$.
 
-Note: we conclude that if $f$ is once differentiable, then can be written as power series, then we can deduce: By Prop 12.2: $f'(z) = \sum_{n=1}^{\infty} \frac{f^{(n)}(a)}{(n-1)!}(z-a)^{n-1}, f''(z) = \sum_{n=2}^{\infty} \frac{f^{(n)}(a)}{(n-2)!}(z-a)^{n-2}$, and so on for all $z \in \mathbb{C}$.
+Note: we conclude that if $f$ is once differentiable, then can be written as power series, then we can deduce: By (Prop 12.2(\ref{proposition:12.2})): $f'(z) = \sum_{n=1}^{\infty} \frac{f^{(n)}(a)}{(n-1)!}(z-a)^{n-1}, f''(z) = \sum_{n=2}^{\infty} \frac{f^{(n)}(a)}{(n-2)!}(z-a)^{n-2}$, and so on for all $z \in \mathbb{C}$.
 
 \begin{remark}
     This is very different from the real case! In the real case a function can be differentiable once, but not twice:
@@ -102,21 +104,22 @@ For all $n \geq 0$, $f^{(n)}(0) = 0 \implies$ its Taylor series must be: $0 + 0 
 Now let us see a couple of examples of Taylor series.
 
 \begin{example}\label{example:15.6} We have seen: $e^z = \sum_{n=0}^{\infty} \frac{z^n}{n!}$ converges absolutely for all $z \in \mathbb{C} \implies$ the radius of convergence $R = \infty \implies e^z$ is
-
 differentiable at all $z \in \mathbb{C}$ ($\implies$ entire) and $(e^z)' = e^z$ (Prop 12.3). $\sum_{n=0}^{\infty} \frac{z^n}{n!}$ is Maclaurin series for $e^z$, namely Taylor series about $z_0 = 0$. By Thm 13.1 it is a unique representation of $e^z$ (about $z_0 = 0$) as power series.
 \end{example}
 
 \begin{example}\label{example:15.7}
 Let $f(z) = \frac{1}{2z-3}$. What is the power series of $f$ about $z_0 = 2$?
-
-Sol: We need to find a Taylor series expansion of the form $\sum_{n=0}^{\infty} a_n (z-2)^n$. We could use the formula for the coefficients in Thm 13.1(\ref{theorem:13.1}) to find this representation. Having the representation it is easy to find the radius of convergence. However, we do it differently - we represent this series as geometric series.
-
-Rewrite $f(z)$ as geometric series (about $z_0 = 2$!):
-\begin{align*}
-f(z) = \frac{1}{2z-3} = \frac{1}{2} \cdot \frac{1}{z - \frac{3}{2}} & = \frac{1}{2} \cdot \frac{1}{(z-2) + \frac{1}{2}} = \frac{1}{2((z-2) + \frac{1}{2})} = \frac{1}{1 - (-2(z-2))} \\
-& = \sum_{n=0}^{\infty} (-2(z-2))^n = \sum_{n=0}^{\infty} (-2)^n (z-2)^n 
-\end{align*}
-This series is absolutely convergent for $z$ satisfying $|2(z-2)| < 1 \iff |z-2| < \frac{1}{2} \implies R = \frac{1}{2}$. Thus, the function $f(z)$ is represented by this series on the disc of convergence given by $D = \{z \in \mathbb{C}: |z-2| < \frac{1}{2}\}$.
+\begin{soln}
+    
+    Sol: We need to find a Taylor series expansion of the form $\sum_{n=0}^{\infty} a_n (z-2)^n$. We could use the formula for the coefficients in Thm 13.1(\ref{theorem:13.1}) to find this representation. Having the representation it is easy to find the radius of convergence. However, we do it differently - we represent this series as geometric series.
+    
+    Rewrite $f(z)$ as geometric series (about $z_0 = 2$!):
+    \begin{align*}
+        f(z) = \frac{1}{2z-3} = \frac{1}{2} \cdot \frac{1}{z - \frac{3}{2}} & = \frac{1}{2} \cdot \frac{1}{(z-2) + \frac{1}{2}} = \frac{1}{2((z-2) + \frac{1}{2})} = \frac{1}{1 - (-2(z-2))} \\
+        & = \sum_{n=0}^{\infty} (-2(z-2))^n = \sum_{n=0}^{\infty} (-2)^n (z-2)^n 
+    \end{align*}
+    This series is absolutely convergent for $z$ satisfying $|2(z-2)| < 1 \iff |z-2| < \frac{1}{2} \implies R = \frac{1}{2}$. Thus, the function $f(z)$ is represented by this series on the disc of convergence given by $D = \{z \in \mathbb{C}: |z-2| < \frac{1}{2}\}$.
+\end{soln}
 \end{example}
 
 Note: $f(z) = \frac{1}{2z-3}$ is undefined at $z = \frac{3}{2} \implies$ the series and the function only agree up to, but not including $\partial D$ - the boundary of the disc $D: \{z \in \mathbb{C}: |z-2| = \frac{1}{2}\}$.
@@ -222,7 +225,7 @@ $\implies$ The inverse of a Möbius transformation is again Möbius transformati
 
 \begin{proposition} \label{proposition:14.1} Möbius transformations send lines and circles to lines and circles.
 \end{proposition}
-\begin{example}\label{examine:16.3}
+\begin{example}\label{example:16.3}
      Find the Möbius transformation that sends $z_1 = 1 \to -i = w_1, z_2 = 0 \to -1 = w_2, z_3 = i \to 1 = w_3$.
 
 Sol: Let us plug the values of $z_i$ and $w_i$ and get:

@@ -24,8 +24,8 @@ From the extended Cauchy Integral Formula (Cor 18.9):
 \end{proof}
 
 Now we can answer the question.
-\begin{theorem}[Liouville's Thm]
-    Thm 20.4 If $f$ is entire and bounded, then $f$ is a constant function.
+\begin{theorem}[Liouville's Theorem]\label{theorem:Liouville.20.4}
+    If $f$ is entire and bounded, then $f$ is a constant function.
 \end{theorem}
 \begin{proof}
 
@@ -37,8 +37,8 @@ which means that $u$ and $v$ are constant functions $\Rightarrow f$ is constant.
     
 \end{proof}
     Incredibly, one may use Liouville's Theorem to prove:
-\begin{theorem}[Fundamental Theoreom of Algebra]
-Thm 20.5  Any nonconstant complex polynomial $p(z) = a_0 + a_1 z + \dots + a_n z^n$ ($n \ge 1$, $a_j \in \mathbb{C}$, $a_n \neq 0$) has at least one root in $\mathbb{C}$.
+\begin{theorem}[Fundamental Theoreom of Algebra]\label{theorem:Fundamental.theorem.algebra.20.5}
+    Any nonconstant complex polynomial $p(z) = a_0 + a_1 z + \dots + a_n z^n$ ($n \ge 1$, $a_j \in \mathbb{C}$, $a_n \neq 0$) has at least one root in $\mathbb{C}$.
 \end{theorem}
 \begin{proof}
 Suppose there exists a nonconstant complex polynomial $p(z) = a_0 + a_1 z + a_2 z^2 + \dots + a_n z^n$, $n \ge 1$, $a_j \in \mathbb{C}$, $a_n \neq 0$ having no roots in $\mathbb{C}$. Define the entire function $f(z) = \frac{1}{p(z)}$. We shall show that $f$ is bounded, hence is constant by Liouville's
@@ -77,7 +77,7 @@ Suppose there exists a nonconstant complex polynomial $p(z) = a_0 + a_1 z + a_2 
                             |f(z)| \le \max \{ M, \frac{2}{R^n |a_n|} \}
                             \]
                             
-                            But this means (Liouville's Thm) that $f$ is constant (since $f$ is entire and it is bounded for all $z \in \mathbb{C}$).
+                            But this means (Liouville's \ref{theorem:Liouville.20.4}) that $f$ is constant (since $f$ is entire and it is bounded for all $z \in \mathbb{C}$).
                             
                         \end{proof}
                             The last subject of our course is:
@@ -246,9 +246,7 @@ Use (2) to estimate the integrand:
 
 Summarizing: We have proved the following theorem:
 \begin{theorem}\label{theorem:21.1}
-    
-    
-    Thm 21.1: Let $m \ge n+2$, $f(x) = \frac{P_n(x)}{Q_m(x)}$ rational function, such that the integral (1) converges. Assume that $z_1, z_2, \dots, z_K$ are poles of $f(z)$, 
+    Let $m \ge n+2$, $f(x) = \frac{P_n(x)}{Q_m(x)}$ rational function, such that the integral (1) converges. Assume that $z_1, z_2, \dots, z_K$ are poles of $f(z)$, 
     all lie in the upper-half plane, and assume that there are no poles of $f(z)$ on the real axis. Then
     \[
         \int_{-\infty}^{\infty} f(x) dx = 2\pi i \sum_{j=1}^K \text{Res}(f, z_j)
@@ -298,7 +296,7 @@ Thus you have seen in the first calculus course.
     If $f(x)$ is an even function, namely for every $x \in \mathbb{R}$ $f(x) = f(-x)$, then
     \[\int_0^{\infty} f(x) dx = \frac{1}{2} \int_{-\infty}^{\infty} f(x) dx
         \]
-        and we can use Thm 21.1 (\ref{theorem:21.1}) again.
+        and we can use  21.1 (\ref{theorem:21.1}) again.
     \end{remark}
 
 Let us see one more example.

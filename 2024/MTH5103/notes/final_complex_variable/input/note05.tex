@@ -39,7 +39,10 @@ Important real sequence (limit): let $a_n = (1 + \frac{a}{n})^n$ for some $a$. T
 \begin{example}\label{example:12.4} $\lim_{n \to \infty} (1 + \frac{i}{n})^n = e^i, \quad \lim_{n \to \infty} (1 - \frac{i}{n})^n = \lim_{n \to \infty} (1 + \frac{-i}{n})^n = e^{-i} = \frac{1}{e^i}$.
 \end{example}
 
-\begin{proposition}\label{proposition:10.1} If the sequences $\{z_n\}, \{w_n\}$ of complex numbers converge, then so the sequences $\{z_n \pm w_n\}, \{z_n \cdot w_n\}$, and if $w_n \neq 0$ also $\{\frac{z_n}{w_n}\}$, and $\lim_{n \to \infty} (z_n \pm w_n) = \lim_{n \to \infty} z_n \pm \lim_{n \to \infty} w_n; \quad \lim_{n \to \infty} z_n w_n = \lim_{n \to \infty} z_n \lim_{n \to \infty} w_n$.
+\begin{proposition}\label{proposition:10.1} 
+    If the sequences $\{z_n\}, \{w_n\}$ of complex numbers converge, then so the sequences $\{z_n \pm w_n\}, \{z_n \cdot w_n\}$, 
+    and if $w_n \neq 0$ also $\{\frac{z_n}{w_n}\}$, and 
+    \[\lim_{n \to \infty} (z_n \pm w_n) = \lim_{n \to \infty} z_n \pm \lim_{n \to \infty} w_n; \quad \lim_{n \to \infty} z_n w_n = \lim_{n \to \infty} z_n \lim_{n \to \infty} w_n.\]
 
 If $\lim_{n \to \infty} w_n \neq 0$, then: $\lim_{n \to \infty} \frac{z_n}{w_n} = \frac{\lim_{n \to \infty} z_n}{\lim_{n \to \infty} w_n}$.
 \end{proposition}
@@ -125,7 +128,7 @@ Since $|z| < 1 \implies \lim_{N \to \infty} |z|^N = 0$ (from what we know about 
 
 Now we introduce the notion of absolute convergence.
 
-\begin{definition} 11.2} The series $\sum_{n=0}^{\infty} z_n$ converges absolutely if the series of the moduli of the terms $\sum_{n=0}^{\infty} |z_n|$ converges.
+\begin{definition}\label{definition:11.2} The series $\sum_{n=0}^{\infty} z_n$ converges absolutely if the series of the moduli of the terms $\sum_{n=0}^{\infty} |z_n|$ converges.
 \end{definition}
 
 \begin{remark}
@@ -169,6 +172,7 @@ Now we state 3 very useful tests for convergence of complex series.
     \end{itemize}
 
 \end{enumerate}
+\end{proposition}
 \begin{proof}
     Ratio Test: If $L > 1$, then the sequence $\{|a_n|\}$ is increasing (for sufficiently large $n$), therefore the series diverges by the Test for Divergence.
     
@@ -176,7 +180,6 @@ Now we state 3 very useful tests for convergence of complex series.
     
     Root Test and Comparison Test: EXERCISE!
 \end{proof}
-\end{proposition}
 
 \begin{example}\label{example:13.2} Check the convergence of the following series:
 a) $\sum_{n=0}^{\infty} (2i)^n$ b) $\sum_{n=0}^{\infty} \left(\frac{1+i}{2}\right)^n$ c) $\sum_{n=0}^{\infty} \frac{(4i)^n}{n!}$
@@ -197,7 +200,8 @@ c) Let us apply the Ratio Test: $a_n = \frac{(4i)^n}{n!}$
 \end{example}
 
 \section{Complex Power Series}
-\begin{definition}\label{definition:12.1} The series $\sum_{n=0}^{\infty} a_n(z-z_0)^n, a_n \in \mathbb{C}, n \in \mathbb{N}$, is called a power series centered at $z = z_0$ (about $z = z_0$).
+\begin{definition}\label{definition:12.1} 
+    The series $\sum_{n=0}^{\infty} a_n(z-z_0)^n, a_n \in \mathbb{C}, n \in \mathbb{N}$, is called a power series centered at $z = z_0$ (about $z = z_0$).
 \end{definition}
 
 A power series is an example of complex series where the sequence $z_n$ from Def 11.1 is of the special form $\{a_n(z-z_0)^n\}$ - involves variable $z$. 
@@ -208,18 +212,18 @@ From Def 12.1 every power series $\sum_{n=0}^{\infty} a_n(z-z_0)^n$ converges fo
 \end{remark}
 Next theorem tells us that convergence at one point guarantees convergence on some small disc around $z_0$. We prove it for the case $z_0 = 0$ (for simplicity of notation), the general case $z_0 \neq 0$ is proved in exactly the same way.
 
-\begin{theorem}{Abel}\label{theorem12.1}
+\begin{theorem}[Abel]\label{theorem:12.1}
     If $\sum_{n=0}^{\infty} a_n z^n$ converges at $z_0 \neq 0$, then it converges absolutely for any $z$ with $|z| < |z_0|$.
     Namely, if the series converges at a point $z_0$, then it converges absolutely at every interior point of the disc centered at 0 of radius $|z_0|$.
+\end{theorem}
     \begin{proof}
-        Since $\sum_{n=0}^{\infty} a_n z_0^n$ converges by Prop 11.1 $\lim_{n \to \infty} a_n z_0^n = 0$, 
+        Since $\sum_{n=0}^{\infty} a_n z_0^n$ converges by (Prop 11.1(\ref{proposition:11.1})) $\lim_{n \to \infty} a_n z_0^n = 0$, 
         thus $\{a_n z_0^n\}$ is a bounded sequence: there exists $M \in \mathbb{N}$ such that for every $n \in \mathbb{N}$ $|a_n z_0^n| < M$.
         Write the modulus of the general term of the series as: $|a_n z^n| = |a_n z_0^n \cdot \frac{z^n}{z_0^n}| = |a_n z_0^n| \left| \frac{z}{z_0} \right|^n < M \left| \frac{z}{z_0} \right|^n$
         $\implies$ since $|z| < |z_0|$, namely $\left| \frac{z}{z_0} \right| < 1$, the general term of the positive series $\sum_{n=0}^{\infty} |a_n z^n|$ is smaller than the one of the positive geometric 
         series $\sum_{n=0}^{\infty} M \left| \frac{z}{z_0} \right|^n \implies$ by Comparison Test
         ( $\sum_{n=0}^{\infty} |a_n z^n|$ ) converges $\implies \sum_{n=0}^{\infty} a_n z^n$ converges absolutely.
     \end{proof}
-\end{theorem}
     
 \begin{corollary}\label{corollary:12.1}
     If $\sum_{n=0}^{\infty} a_n z^n$ converges at $z = z_1$, then it diverges for every $z$ with $|z| > |z_1|$.
@@ -245,11 +249,14 @@ A very useful formulae for computing the radius of convergence of power series:
     \item Cauchy-Hadamard formula: $R = \lim_{n \to \infty} \frac{1}{\sqrt[n]{|a_n|}}$
 \end{itemize}
 
-\begin{example} 14.1} Find the radius of convergence of $\sum_{n=0}^{\infty} (n+i)z^n$.
+\begin{example}\label{example:14.1} Find the radius of convergence of $\sum_{n=0}^{\infty} (n+i)z^n$.
+\begin{soln}
+     $a_n = n + i \implies |a_n| = \sqrt{n^2 + 1}$.
 
-Sol: $a_n = n + i \implies |a_n| = \sqrt{n^2 + 1}$.
-
-Using Cauchy-Hadamard formula and that $\lim_{n \to \infty} \sqrt[n]{n} = 1$ we get: $R = \lim_{n \to \infty} \frac{1}{\sqrt[n]{\sqrt{n^2 + 1}}} = 1$. Namely, the series converges absolutely for $|z| < 1$.
+    Using Cauchy-Hadamard formula and that $\lim_{n \to \infty} \sqrt[n]{n} = 1$ we get: 
+    \[ R = \lim_{n \to \infty} \frac{1}{\sqrt[n]{\sqrt{n^2 + 1}}} = 1.\] 
+    Namely, the series converges absolutely for $|z| < 1$.
+\end{soln}
 \end{example}
 
 \begin{remark}
@@ -275,7 +282,7 @@ and the series converges (absolutely) for any $|z| \leq 1$.
 2) For all $z \in D$ the series $\sum_{n=0}^{\infty} na_n (z - z_0)^{n-1}$ is absolutely convergent and has sum $f'(z)$ (the derivative of $f$ at $z$).
 \end{proposition}
 
-Note: From Prop 12.2: $f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n$ is differentiable arbitrarily many times at any $z$ in the disc of convergence of the series (namely, we can define its higher derivatives).
+Note: From Prop 12.2(\ref{proposition:12.2}): $f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n$ is differentiable arbitrarily many times at any $z$ in the disc of convergence of the series (namely, we can define its higher derivatives).
 
 \begin{definition} \label{definition:12.4} For any $z \in \mathbb{C}$ we define the exponential function as the sum of the following series
 \[ e^z = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \dots = \sum_{n=0}^{\infty} \frac{z^n}{n!} \]
@@ -293,7 +300,7 @@ $\implies \sum_{n=0}^{\infty} \frac{z^n}{n!}$ converges absolutely for all $z \i
 \end{claim}
 \begin{proposition}\label{proposition:12.3} $e^z$ is entire and $(e^z)' = e^z$.
 \begin{proof}
-    By Prop 12.2 1) $e^z$ is analytic for every $z \in \mathbb{C} \implies$ entire (since $R = \infty$). By Prop 12.2 2): $(e^z)' = \sum_{n=1}^{\infty} \frac{nz^{n-1}}{n!} = \sum_{n=1}^{\infty} \frac{z^{n-1}}{(n-1)!} = \sum_{n=0}^{\infty} \frac{z^n}{n!} = e^z$.
+    By Prop 12.2(\ref{proposition:12.2}) 1) $e^z$ is analytic for every $z \in \mathbb{C} \implies$ entire (since $R = \infty$). By Prop 12.2 (\ref{proposition:12.2}) 2): $(e^z)' = \sum_{n=1}^{\infty} \frac{nz^{n-1}}{n!} = \sum_{n=1}^{\infty} \frac{z^{n-1}}{(n-1)!} = \sum_{n=0}^{\infty} \frac{z^n}{n!} = e^z$.
 \end{proof}
 \end{proposition}
 
