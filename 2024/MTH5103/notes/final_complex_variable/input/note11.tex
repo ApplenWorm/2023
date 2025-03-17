@@ -1,77 +1,87 @@
 
 (178)
-% \section*{Week 12. Lecture 31}
 \week{12}
 \lecture{31}{Cauchy AGAIN! Cauchy estimate and other stuff...}
 
 
 We continue with consequences of Cauchy's Theorem. The first one is the Liouville Theorem: suppose $f$ is entire (analytic on $\mathbb{C}$). By the Maximum Modulus Principle as $|z|$ gets larger, we can find points with $|f(z)|$ larger and larger, since the complex plane is unbounded. Does this mean that $|f(z)|$ must be unbounded for $z \in \mathbb{C}$? To address this question we need to investigate the size of $|f^{(n)}(z)|$.
-
-Prop 20.3 (Cauchy's Estimate): Let $f$ be analytic on and inside a circle $C$ centered at $z_0$ of radius $R$. Let $M = \max |f(z)|$, $z \in C$. Then, for all $n \ge 0$,
+\begin{proposition}[Cauchy's Estimate]
+    Prop 20.3 Let $f$ be analytic on and inside a circle $C$ centered at $z_0$ of radius $R$. Let $M = \max |f(z)|$, $z \in C$. Then, for all $n \ge 0$,
+    \[
+        |f^{(n)}(z_0)| \le \frac{n! M}{R^n}
+        \]
+    \end{proposition}
+\begin{proof}
+From the extended Cauchy Integral Formula (Cor 18.9):
 \[
-|f^{(n)}(z_0)| \le \frac{n! M}{R^n}
-\]
-
-Pf: From the extended Cauchy Integral Formula (Cor 18.9):
-\[
-f^{(n)}(z_0) = \frac{n!}{2\pi i} \int_C \frac{f(z)}{(z-z_0)^{n+1}} dz
-\]
-
-Thus, by ML inequality (Prop 17.5)
-\[
-|f^{(n)}(z_0)| \le \left| \frac{n!}{2\pi i} \right| \frac{M}{R^{n+1}} 2\pi R = \frac{n! M}{R^n}
-\]
+        f^{(n)}(z_0) = \frac{n!}{2\pi i} \int_C \frac{f(z)}{(z-z_0)^{n+1}} dz
+  \]
+        
+        Thus, by ML inequality (Prop 17.5)
+        \[
+            |f^{(n)}(z_0)| \le \left| \frac{n!}{2\pi i} \right| \frac{M}{R^{n+1}} 2\pi R = \frac{n! M}{R^n}
+  \]
+\end{proof}
 
 Now we can answer the question.
+\begin{theorem}[Liouville's Thm]
+    Thm 20.4 If $f$ is entire and bounded, then $f$ is a constant function.
+\end{theorem}
+\begin{proof}
 
-Thm 20.4 (Liouville's Thm): If $f$ is entire and bounded, then $f$ is a constant function.
-
-Pf: Since $f$ is bounded, there exists $M$ such that $|f(z)| \le M$ for all $z \in \mathbb{C}$. Take a circle centered at $z_0$ of radius $R$. Then, by Cauchy's Estimate (Prop 20.3): $|f'(z_0)| \le \frac{M}{R}$ and this inequality holds for all choices of $R > 0$. Thus, $|f'(z_0)| = 0$ for all $z_0 \in \mathbb{C}$, which means that $f'(z_0) = 0$ for all $z_0 \in \mathbb{C}$ (Why?). If $f = u + iv$, then all partial derivatives $\frac{\partial u}{\partial x}, \frac{\partial u}{\partial y}, \frac{\partial v}{\partial x}, \frac{\partial v}{\partial y}$ vanish, which means that $u$ and $v$ are constant functions $\Rightarrow f$ is constant.
-
-Incredibly, one may use Liouville's Theorem to prove:
-
-Thm 20.5 (Fundamental Theorem of Algebra): Any nonconstant complex polynomial $p(z) = a_0 + a_1 z + \dots + a_n z^n$ ($n \ge 1$, $a_j \in \mathbb{C}$, $a_n \neq 0$) has at least one root in $\mathbb{C}$.
-
-Pf: Suppose there exists a nonconstant complex polynomial $p(z) = a_0 + a_1 z + a_2 z^2 + \dots + a_n z^n$, $n \ge 1$, $a_j \in \mathbb{C}$, $a_n \neq 0$ having no roots in $\mathbb{C}$. Define the entire function $f(z) = \frac{1}{p(z)}$. We shall show that $f$ is bounded, hence is constant by Liouville's
-
-(179)
-
-Theorem, which contradicts the assumption that $n \ge 1$.
-
-First, write:
-\[
-p(z) = z^n \left[ \left( \frac{a_0}{z^n} + \frac{a_1}{z^{n-1}} + \dots + \frac{a_{n-1}}{z} \right) + a_n \right] = z^n (W + a_n)
-\]
-
-Choose $R \ge 0$ such that for $|z| > R$, the terms $\left| \frac{a_0}{z^n} \right|, \dots, \left| \frac{a_{n-1}}{z} \right|$ are (all) strictly smaller than $\frac{|a_n|}{2n}$. Then, for $|z| > R$:
-\[
-|W| = \left| \frac{a_0}{z^n} + \dots + \frac{a_{n-1}}{z} \right| \le \left| \frac{a_0}{z^n} \right| + \dots + \left| \frac{a_{n-1}}{z} \right| < n \cdot \frac{|a_n|}{2n} = \frac{|a_n|}{2}
-\]
-
-By the Reverse Triangle Inequality
-\[
-|W + a_n| \ge ||a_n| - |W|| > \frac{|a_n|}{2}
-\]
-
-Thus, if $|z| > R$, we get
-\[
-|p(z)| = |z|^n |W + a_n| > |z|^n \frac{|a_n|}{2} > R^n \frac{|a_n|}{2}
-\]
-
-Hence, for $|z| > R$,
-\[
-|f(z)| = \frac{1}{|p(z)|} < \frac{2}{R^n |a_n|}
-\]
-
-If $M = \max \{ |f(z)|: |z| \le R \}$, then, for all $z \in \mathbb{C}$
-\[
-|f(z)| \le \max \{ M, \frac{2}{R^n |a_n|} \}
-\]
-
-But this means (Liouville's Thm) that $f$ is constant (since $f$ is entire and it is bounded for all $z \in \mathbb{C}$).
-
-The last subject of our course is:
-
+Since $f$ is bounded, there exists $M$ such that $|f(z)| \le M$ for all $z \in \mathbb{C}$. 
+Take a circle centered at $z_0$ of radius $R$. Then, by Cauchy's Estimate (Prop 20.3): $|f'(z_0)| \le \frac{M}{R}$ and this inequality holds for all choices of $R > 0$. 
+Thus, $|f'(z_0)| = 0$ for all $z_0 \in \mathbb{C}$, which means that $f'(z_0) = 0$ for all $z_0 \in \mathbb{C}$ (Why?). If $f = u + iv$, 
+then all partial derivatives $\frac{\partial u}{\partial x}, \frac{\partial u}{\partial y}, \frac{\partial v}{\partial x}, \frac{\partial v}{\partial y}$ vanish, 
+which means that $u$ and $v$ are constant functions $\Rightarrow f$ is constant.
+    
+\end{proof}
+    Incredibly, one may use Liouville's Theorem to prove:
+\begin{theorem}[Fundamental Theoreom of Algebra]
+Thm 20.5  Any nonconstant complex polynomial $p(z) = a_0 + a_1 z + \dots + a_n z^n$ ($n \ge 1$, $a_j \in \mathbb{C}$, $a_n \neq 0$) has at least one root in $\mathbb{C}$.
+\end{theorem}
+\begin{proof}
+Suppose there exists a nonconstant complex polynomial $p(z) = a_0 + a_1 z + a_2 z^2 + \dots + a_n z^n$, $n \ge 1$, $a_j \in \mathbb{C}$, $a_n \neq 0$ having no roots in $\mathbb{C}$. Define the entire function $f(z) = \frac{1}{p(z)}$. We shall show that $f$ is bounded, hence is constant by Liouville's
+    
+    (179)
+    
+    Theorem, which contradicts the assumption that $n \ge 1$.
+    
+    First, write:
+    \[
+        p(z) = z^n \left[ \left( \frac{a_0}{z^n} + \frac{a_1}{z^{n-1}} + \dots + \frac{a_{n-1}}{z} \right) + a_n \right] = z^n (W + a_n)
+        \]
+        
+        Choose $R \ge 0$ such that for $|z| > R$, the terms $\left| \frac{a_0}{z^n} \right|, \dots, \left| \frac{a_{n-1}}{z} \right|$ are (all) strictly smaller than $\frac{|a_n|}{2n}$. Then, for $|z| > R$:
+        \[
+            |W| = \left| \frac{a_0}{z^n} + \dots + \frac{a_{n-1}}{z} \right| \le \left| \frac{a_0}{z^n} \right| + \dots + \left| \frac{a_{n-1}}{z} \right| < n \cdot \frac{|a_n|}{2n} = \frac{|a_n|}{2}
+            \]
+            
+            By the Reverse Triangle Inequality
+            \[
+                |W + a_n| \ge ||a_n| - |W|| > \frac{|a_n|}{2}
+                \]
+                
+                Thus, if $|z| > R$, we get
+                \[
+                    |p(z)| = |z|^n |W + a_n| > |z|^n \frac{|a_n|}{2} > R^n \frac{|a_n|}{2}
+                    \]
+                    
+                    Hence, for $|z| > R$,
+                    \[
+                        |f(z)| = \frac{1}{|p(z)|} < \frac{2}{R^n |a_n|}
+                        \]
+                        
+                        If $M = \max \{ |f(z)|: |z| \le R \}$, then, for all $z \in \mathbb{C}$
+                        \[
+                            |f(z)| \le \max \{ M, \frac{2}{R^n |a_n|} \}
+                            \]
+                            
+                            But this means (Liouville's Thm) that $f$ is constant (since $f$ is entire and it is bounded for all $z \in \mathbb{C}$).
+                            
+                        \end{proof}
+                            The last subject of our course is:
+                            
 Applications of Contour Integration to Real Integrals
 
 First, we discuss integrals of the following form:
@@ -116,7 +126,9 @@ Sol: Let us make substitutions as in (*) and get:
 = \frac{1}{2i} \int_{|z|=1} \frac{z^6 + 1}{z^3 (-2z^2 + 5z - 2)} dz = -\frac{1}{2i} \int_{|z|=1} \frac{z^6 + 1}{z^3 (2z - 1) (z - 2)} dz
 \]
 
-The integrand has singularities at $z=0$, $\frac{1}{2}$, and $2$, but $z=2$ is outside of $|z| \le 1$, thus does not contribute to the value of the integral. Thus, we need to worry only about $z_0 = 0$, $z_1 = \frac{1}{2}$. It is clear that $z_0 = 0$ is a pole of order 3 (Why?) and $z_1 = \frac{1}{2}$ is a simple pole (Why?). Thus, by the Residue Theorem
+The integrand has singularities at $z=0$, $\frac{1}{2}$, and $2$, but $z=2$ is outside of $|z| \le 1$, thus does not contribute to the value of the integral. 
+Thus, we need to worry only about $z_0 = 0$, $z_1 = \frac{1}{2}$. It is clear that $z_0 = 0$ is a pole of order 3 (Why?) and $z_1 = \frac{1}{2}$ is a simple pole (Why?). 
+Thus, by the Residue Theorem
 \[
 \int_0^{2\pi} \frac{\cos 3t}{5-4 \cos t} dt = 2\pi i \left[ \text{Res} \left( \frac{z^6 + 1}{z^3 (2z - 1) (z - 2)}, 0 \right) + \text{Res} \left( f(z), \frac{1}{2} \right) \right]
 \]
@@ -216,31 +228,45 @@ Passing to the limit $R \to \infty$ we get:
 \[
 \int_{-\infty}^{\infty} f(x) dx = 2\pi i \sum_{j=1}^K \text{Res}(f, z_j) - \lim_{R \to \infty} \int_{C_R^+} f(z) dz
 \]
-
-Claim: $\lim_{R \to \infty} \int_{C_R^+} f(z) dz = 0$
-
-Pf: Use (2) to estimate the integrand:
-$|f(z)| < \frac{M}{R^2}$ (on $C_R^+$, $|z| = R$), therefore
-\[
-\left| \int_{C_R^+} f(z) dz \right| < \frac{M}{R^2} \frac{\pi R}{H} = \frac{M \pi}{R}
-\]
-where $H$ is the length of $C_R^+$
-
-Since (3) holds for any $R > 0$ we obtain the claim.
+\begin{claim}
+    
+    Claim: $\lim_{R \to \infty} \int_{C_R^+} f(z) dz = 0$
+\end{claim}
+\begin{proof}
+    
+Use (2) to estimate the integrand:
+    $|f(z)| < \frac{M}{R^2}$ (on $C_R^+$, $|z| = R$), therefore
+    \[
+        \left| \int_{C_R^+} f(z) dz \right| < \frac{M}{R^2} \frac{\pi R}{H} = \frac{M \pi}{R}
+        \]
+        where $H$ is the length of $C_R^+$
+        
+        Since (3) holds for any $R > 0$ we obtain the claim.
+    \end{proof}
 
 Summarizing: We have proved the following theorem:
+\begin{theorem}\label{theorem:21.1}
+    
+    
+    Thm 21.1: Let $m \ge n+2$, $f(x) = \frac{P_n(x)}{Q_m(x)}$ rational function, such that the integral (1) converges. Assume that $z_1, z_2, \dots, z_K$ are poles of $f(z)$, 
+    all lie in the upper-half plane, and assume that there are no poles of $f(z)$ on the real axis. Then
+    \[
+        \int_{-\infty}^{\infty} f(x) dx = 2\pi i \sum_{j=1}^K \text{Res}(f, z_j)
+        \]
+    \end{theorem}
 
-Thm 21.1: Let $m \ge n+2$, $f(x) = \frac{P_n(x)}{Q_m(x)}$ rational function, such that the integral (1) converges. Assume that $z_1, z_2, \dots, z_K$ are poles of $f(z)$, all lie in the upper-half plane, and assume that there are no poles of $f(z)$ on the real axis. Then
-\[
-\int_{-\infty}^{\infty} f(x) dx = 2\pi i \sum_{j=1}^K \text{Res}(f, z_j)
-\]
+\begin{remark}
+    If $f$ has singularities on $\mathbb{R}$, we may still be able to compute $\int_{-\infty}^{\infty} f(x) dx$ by using a suitable contour, excising the singularities along the real 
+    axis using small semicircular arcs. Now let us use these ideas to try a few explicit calculations.
+\end{remark}
+\begin{example}\label{example:24.1}
+    Compute $\int_{-\infty}^{\infty} \frac{dx}{x^2 + 1}$.
+\end{example}
 
-Rmk: If $f$ has singularities on $\mathbb{R}$, we may still be able to compute $\int_{-\infty}^{\infty} f(x) dx$ by using a suitable contour, excising the singularities along the real axis using small semicircular arcs. Now let us use these ideas to try a few explicit calculations.
-
-Ex 24.1 Compute $\int_{-\infty}^{\infty} \frac{dx}{x^2 + 1}$.
-
-Sol: Observe: the function $f(z) = \frac{1}{z^2 + 1}$ has 2 simple poles at $z = \pm i$. Define the contour $C = C_R^+ + (-R, R)$ as above, noting that for $R > 1$ $C$ will enclose the pole $z = i$ in the upper-half plane. By the Residue Theorem:
-\[
+\begin{soln}
+     Observe: the function $f(z) = \frac{1}{z^2 + 1}$ has 2 simple poles at $z = \pm i$. Define the contour $C = C_R^+ + (-R, R)$ as above, noting that for $R > 1$ $C$ will enclose the 
+     pole $z = i$ in the upper-half plane. By the Residue Theorem:
+    \[
 \int_C \frac{dz}{z^2 + 1} = 2\pi i \text{Res} \left( \frac{1}{z^2 + 1}, i \right) = 2\pi i \cdot \frac{1}{i+i} = \pi
 \]
 \[
@@ -254,42 +280,42 @@ The length of $C_R^+$ is $\pi R$, thus by ML inequality (Prop 17.5)
 \[
 \left| \int_{C_R^+} \frac{dz}{z^2 + 1} \right| \le \frac{\pi R}{R^2 - 1} \xrightarrow{R \to \infty} 0
 \]
-
-(184)
+% (184)
 
 Therefore,
 \[
-\int_{-\infty}^{\infty} \frac{dx}{x^2 + 1} = \lim_{R \to \infty} \int_{-R}^R \frac{dx}{x^2 + 1} + \lim_{R \to \infty} \int_{C_R^+} \frac{dz}{z^2 + 1} = \pi
+    \int_{-\infty}^{\infty} \frac{dx}{x^2 + 1} = \lim_{R \to \infty} \int_{-R}^R \frac{dx}{x^2 + 1} + \lim_{R \to \infty} \int_{C_R^+} \frac{dz}{z^2 + 1} = \pi
 \]
+Note that we could conclude the result directly from Thm 21.1(\ref{theorem:21.1}).
+\end{soln}
 
-Note that we could conclude the result directly from Thm 21.1.
-
-\begin{remark} (\checkthis{}) $\int_{-\infty}^{\infty} \frac{dx}{x^2 + 1} = \arctan x \big|_{-\infty}^{\infty} = \frac{\pi}{2} - (-\frac{\pi}{2}) = \pi$
+\begin{remark} \checkthis{} \[\int_{-\infty}^{\infty} \frac{dx}{x^2 + 1} = \arctan x \big|_{-\infty}^{\infty} = \frac{\pi}{2} - (-\frac{\pi}{2}) = \pi\]
 \end{remark}
 
 Thus you have seen in the first calculus course.
 
-\begin{remark}
-    
-    Rmk: If $f(x)$ is an even function, namely for every $x \in \mathbb{R}$ $f(x) = f(-x)$, then
-    \[
-        \int_0^{\infty} f(x) dx = \frac{1}{2} \int_{-\infty}^{\infty} f(x) dx
+\begin{remark}\label{remark:20.37}
+    If $f(x)$ is an even function, namely for every $x \in \mathbb{R}$ $f(x) = f(-x)$, then
+    \[\int_0^{\infty} f(x) dx = \frac{1}{2} \int_{-\infty}^{\infty} f(x) dx
         \]
-        and we can use Thm 21.1 again.
+        and we can use Thm 21.1 (\ref{theorem:21.1}) again.
     \end{remark}
 
 Let us see one more example.
-
-Ex 24.2: Compute $\int_0^{\infty} \frac{dx}{x^4 + 16}$.
-
-Sol: (\verifythis) The function $f(z) = \frac{1}{z^4 + 16}$ has 4 zeros:
+\begin{example}
+    
+    Ex 24.2: Compute $\int_0^{\infty} \frac{dx}{x^4 + 16}$.
+    
+    \begin{soln}
+    
+    (\verifythis) The function $f(z) = \frac{1}{z^4 + 16}$ has 4 zeros:
 \[
 z_1 = 2e^{i \frac{\pi}{4}}, \quad z_2 = 2e^{i \frac{3\pi}{4}}, \quad z_3 = 2e^{i \frac{5\pi}{4}}, \quad z_4 = 2e^{i \frac{7\pi}{4}}
 \]
 
 Only $z_1$ and $z_2$ are in the upper-half plane. Note: since all the zeros are simple (Justify!) the integrand has 2 simple poles $z_1, z_2$ in the upper-half plane.
 
-To use Thm 21.1 we need to compute $\text{Res} \left( \frac{1}{z^4 + 16}, z_1 \right)$ and $\text{Res} \left( \frac{1}{z^4 + 16}, z_2 \right)$.
+To use Thm 21.1 (\ref{theorem:21.1}) we need to compute $\text{Res} \left( \frac{1}{z^4 + 16}, z_1 \right)$ and $\text{Res} \left( \frac{1}{z^4 + 16}, z_2 \right)$.
 
 $z_1$ (\verifythis): Since $z_1$ is a simple pole we can use Cor 16.5 with $p(z) = 1$, $q(z) = z^4 + 16$, $q'(z) = 4z^3$ and obtain:
 \[
@@ -301,26 +327,36 @@ $z_2$: Again, using Cor 16.5:
 \text{Res} \left( \frac{1}{z^4 + 16}, z_2 \right) = \frac{1-i}{32\sqrt{2}}
 \]
 
-$\Rightarrow$ by Thm 21.1 (and Rmk) we obtain
+$\Rightarrow$ by Thm 21.1 (\ref{theorem:21.1}) (and \ref{remark:20.37}) we obtain
 \[
 \int_0^{\infty} \frac{dx}{x^4 + 16} = \frac{1}{2} \int_{-\infty}^{\infty} \frac{dx}{x^4 + 16} = \pi i \left( \text{Res} \left( \frac{1}{z^4 + 16}, z_1 \right) + \text{Res} \left( \frac{1}{z^4 + 16}, z_2 \right) \right)
 \]
+\end{soln}
+\end{example}
 
-Rmk: since $\frac{1}{x^4 + 16}$ is an even function
-\[
-= \frac{\pi i}{32\sqrt{2}} (-i - 1 + 1 - i) = \frac{\pi i}{32\sqrt{2}} (-2i) = \frac{\pi}{16\sqrt{2}} = \frac{\pi \sqrt{2}}{32}
-\]
+\begin{remark}
+    since $\frac{1}{x^4 + 16}$ is an even function
+    \[
+        = \frac{\pi i}{32\sqrt{2}} (-i - 1 + 1 - i) = \frac{\pi i}{32\sqrt{2}} (-2i) = \frac{\pi}{16\sqrt{2}} = \frac{\pi \sqrt{2}}{32}
+        \]
+    \end{remark}
 
 Now let us see an example showing how contour integrals can be used to sum infinite series.
+\begin{example}
+    
+    24.3: Prove that $\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}$.
+\end{example}
+\begin{soln}
+ Let $f(z) = \frac{1}{z^2} \cot (\pi z)$.
 
-Ex 24.3: Prove that $\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}$.
-
-Sol: Let $f(z) = \frac{1}{z^2} \cot (\pi z)$.
-
-Claim 1: At each $n \neq 0$ $f$ has a simple pole with residue $\frac{1}{n^2 \pi}$.
-
-Pf: Recall: $\cot (\pi z) = \frac{\cos \pi z}{\sin \pi z}$. $\sin \pi z = 0$ for $z = 0, \pm 1, \pm 2, \dots$
-
+\begin{claim}
+     At each $n \neq 0$ $f$ has a simple pole with residue $\frac{1}{n^2 \pi}$.
+\end{claim}
+\begin{proof}
+    
+   Recall: $\cot (\pi z) = \frac{\cos \pi z}{\sin \pi z}$. $\sin \pi z = 0$ for $z = 0, \pm 1, \pm 2, \dots$
+    
+\end{proof}
 Let us look at the Laurent series expansion of $\sin \pi z$.
 
 (185)
@@ -338,35 +374,43 @@ $f(n) = \cos \pi n = \pm 1$, $f'(n) = -\pi \sin \pi n = 0$, $f''(n) = -\pi^2 \co
 
 $\Rightarrow \text{Res} (\cot \pi z, n) = \frac{1}{\pi}$ and thus, since $\frac{1}{z^2}$ is analytic for every $z \neq 0$, $\text{Res} \left( \frac{1}{z^2} \cot \pi z, n \neq 0 \right) = \frac{1}{n^2 \pi}$. As we can see from the expansion all the poles are simple.
 
-Claim 2: At $n=0$ $f$ has a pole of order 3 with residue $-\frac{\pi}{3}$.
-
-Pf: Let us look at the Laurent series expansion of $\cot x$ around $x=0$:
-
-\checkthis{} $\cot x = \frac{1}{x} - \frac{x}{3} - \frac{x^3}{45} - \frac{2x^5}{945} - \dots$
-\[
-\Rightarrow \frac{1}{z^2} \cot \pi z = \frac{1}{z^2} \left( \frac{1}{\pi z} - \frac{\pi z}{3} - \frac{(\pi z)^3}{45} - \frac{2 (\pi z)^5}{945} - \dots \right) = \frac{1}{\pi z^3} - \frac{\pi}{3z} - \frac{\pi^3 z}{45} - \frac{2 \pi^5 z^3}{945} - \dots
-\]
-\[
-= \frac{1}{z^3} \left( \frac{1}{\pi} - \frac{\pi z^2}{3} - \frac{\pi^3 z^4}{45} - \frac{2 \pi^5 z^6}{945} - \dots \right) = \frac{\varphi(z)}{z^3}
-\]
-
-$\Rightarrow \text{Res} \left( \frac{1}{z^2} \cot \pi z, 0 \right) = -\frac{\pi}{3}$, and since $\varphi(z)$ is analytic in a neighborhood of $z=0$ (and at $z=0$) and $\varphi(0) = \frac{1}{\pi} \neq 0$, we conclude (by Prop 16.2) that $z=0$ is a pole of order 3.
+\begin{claim}[2]
+    
+    At $n=0$ $f$ has a pole of order 3 with residue $-\frac{\pi}{3}$.
+\end{claim}
+\begin{proof}
+    
+     Let us look at the Laurent series expansion of $\cot x$ around $x=0$:
+    
+    \checkthis{} $\cot x = \frac{1}{x} - \frac{x}{3} - \frac{x^3}{45} - \frac{2x^5}{945} - \dots$
+    \[
+        \Rightarrow \frac{1}{z^2} \cot \pi z = \frac{1}{z^2} \left( \frac{1}{\pi z} - \frac{\pi z}{3} - \frac{(\pi z)^3}{45} - \frac{2 (\pi z)^5}{945} - \dots \right) = \frac{1}{\pi z^3} - \frac{\pi}{3z} - \frac{\pi^3 z}{45} - \frac{2 \pi^5 z^3}{945} - \dots
+        \]
+        \[
+            = \frac{1}{z^3} \left( \frac{1}{\pi} - \frac{\pi z^2}{3} - \frac{\pi^3 z^4}{45} - \frac{2 \pi^5 z^6}{945} - \dots \right) = \frac{\varphi(z)}{z^3}
+            \]
+            
+            $\Rightarrow \text{Res} \left( \frac{1}{z^2} \cot \pi z, 0 \right) = -\frac{\pi}{3}$, and since $\varphi(z)$ is analytic in a neighborhood of $z=0$ (and at $z=0$) and $\varphi(0) = \frac{1}{\pi} \neq 0$, we conclude (by Prop 16.2) that $z=0$ is a pole of order 3.
+        \end{proof}
 
 Consider the square contour $C_N$ having corner vertices given by $\pm (N + \frac{1}{2}) \pm i (N + \frac{1}{2})$ for $N \in \mathbb{N}$.
 
-Note: this contour never passes through an integer value on the real axis $\mathbb{R}$ (where the poles of $f$ lie). Then, by the Residue Theorem:
+\emphw{Note}: this contour never passes through an integer value on the real axis $\mathbb{R}$ (where the poles of $f$ lie). Then, by the Residue Theorem:
 \[
 \int_{C_N} f(z) dz = 2 \pi i \sum_{n=-N}^N \text{Res} (f, n)
 \]
 
-Claim 3: $\lim_{N \to \infty} \int_{C_N} f(z) dz = 0$.
+\begin{claim}[3]
+      $\lim_{N \to \infty} \int_{C_N} f(z) dz = 0$.
+\end{claim}
+\begin{proof}
+    
+     We estimate $\max |f(z)|$ on each side of $C_N$. First, each side of $C_N$ has length $2N+1$, thus the length of the contour $C_N$ is bounded by $8N+4 = O(N)$. On the other hand, for $z \in C_N$
+    
+    
+    (186)
 
-Pf: We estimate $\max |f(z)|$ on each side of $C_N$. First, each side of $C_N$ has length $2N+1$, thus the length of the contour $C_N$ is bounded by $8N+4 = O(N)$. On the other hand, for $z \in C_N$
-
-
-(186)
-
-$|z| \ge N + \frac{1}{2} \ge N$, therefore $|\frac{1}{z^2}| \le \frac{1}{N^2}$. So, it is sufficient to show that $\cot \pi z$ is bounded on $C_N$ by a constant independent of $N$. Then we use ML inequality (Prop 17.5) and finish. We have:
+    $|z| \ge N + \frac{1}{2} \ge N$, therefore $|\frac{1}{z^2}| \le \frac{1}{N^2}$. So, it is sufficient to show that $\cot \pi z$ is bounded on $C_N$ by a constant independent of $N$. Then we use ML inequality (Prop 17.5) and finish. We have:
 \[
 |\sin z|^2 = |\sin (x+iy)|^2 = |\sin x \cos (iy) + \cos x \sin (iy)|^2 =
 \]
@@ -402,17 +446,18 @@ On the upper horizontal line of $C_N$ $|y| = N + \frac{1}{2}$, thus we get $|\si
 
 Therefore, there exists a positive constant $K$ such that for all $N \ge 1$ and all $z \in C_N$:
 \[
-|\cot \pi z| = \left| \frac{\cos \pi z}{\sin \pi z} \right| \le K
-\]
-
-Thus, by ML inequality (Prop 17.5)
-\[
-\left| \int_{C_N} \frac{1}{z^2} \frac{\cos \pi z}{\sin \pi z} dz \right| \le K \frac{8N+4}{N^2} \xrightarrow{N \to \infty} 0
-\]
-
-(187)
-
-Hence, we get:
+    |\cot \pi z| = \left| \frac{\cos \pi z}{\sin \pi z} \right| \le K
+    \]
+    
+    Thus, by ML inequality (Prop 17.5)
+    \[ 
+        \left| \int_{C_N} \frac{1}{z^2} \frac{\cos \pi z}{\sin \pi z} dz \right| \le K \frac{8N+4}{N^2} \xrightarrow{N \to \infty} 0
+        \]
+        
+    \end{proof}
+        (187)
+        
+        Hence, we get:
 \[
 2\pi i \sum_{n=-\infty}^{\infty} \text{Res}(f, n) = 0 \iff \sum_{n=-\infty}^{\infty} \text{Res}(f, n) = 0
 \]
@@ -426,7 +471,7 @@ Thus,
 \[
 \frac{\pi}{3} = 2 \sum_{n=1}^{\infty} \frac{1}{n^2 \pi} \Rightarrow \sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}
 \]
-
+\end{soln}
 %②
  Actually
 \[

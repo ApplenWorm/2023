@@ -57,7 +57,10 @@ Our next subject is continuity of complex functions. First, we need several defi
 \begin{definition} 4.2 An open set is connected if it is not a disjoint union of two non-empty open sets. OR: If any two points inside can be connected with a continuous line which is contained in the set.\}
 \end{definition}
 
-\begin{remark} In $\mathbb{C}$ these two definitions (in Def 4.2) are equivalent, but it is not always the case. The second - path connected - always implies the first, but there are complicated examples of sets that are connected but not path connected. OR means: For any points $z, z'$ in the set $S$ there exists a continuous function $p: [0, 1] \to S$ such that $p(0) = z, p(1) = z'$.
+\begin{remark} 
+    In $\mathbb{C}$ these two definitions (in Def 4.2) are equivalent, but it is not always the case. The second - path connected - always implies the first, 
+    but there are complicated examples of sets that are connected but not path connected. OR means: For any points $z, z'$ in the set $S$ there exists a 
+    continuous function $p: [0, 1] \to S$ such that $p(0) = z, p(1) = z'$.
 \end{remark}
 \begin{definition} 4.3 A connected open subset $R \subseteq \mathbb{C}$ is called a domain.
 \end{definition}
@@ -83,7 +86,7 @@ An equivalent definition of an open set:
 Let $S \subseteq \mathbb{C}$ be an open set. If we add to $S$ all its boundary points we always will get a closed set! The closure of $S$: $\bar{S} = S \cup \partial S$ is a closed set.
 
 \begin{remark}
-     There exist sets that are neither open nor closed!
+    There exist sets that are neither open nor closed!
 \end{remark}
 
 \begin{example}6.2 
@@ -116,14 +119,15 @@ We also have an analogue of Prop 3.2:
 \end{proposition}
 
 Let us see some examples of continuous functions.
-\begin{example}7.1 a) It is obvious that the constant function is continuous everywhere. $f(z) = c$ is continuous at every $z \in \mathbb{C}$.
+\begin{example}\label{example:7.1}
+    a) It is obvious that the constant function is continuous everywhere. $f(z) = c$ is continuous at every $z \in \mathbb{C}$.
 b) It is also clear that the identity function is continuous everywhere: $f(z) = z$ is continuous at every $z \in \mathbb{C}$ (Check - from Def 5.1!)
 c) Combining a), b), and Prop 5.1: We conclude that the linear function is continuous everywhere: for constants $a, b \in \mathbb{C}$, $f(z) = az + b$ is continuous at every $z \in \mathbb{C}$.
 \end{example}
 
 \begin{example}7.2 Prove that $z^n, n \in \mathbb{N}$ is continuous for all $z \in \mathbb{C}$.
 \begin{proof}
-    Pf: We prove it by checking the definition Def 5.1 at some $z_0 \in \mathbb{C}$. Consider:
+    We prove it by checking the definition Def 5.1 at some $z_0 \in \mathbb{C}$. Consider:
 \[ z^n - z_0^n = (z - z_0)(z^{n-1} + z^{n-2}z_0 + z^{n-3}z_0^2 + \dots + zz_0^{n-2} + z_0^{n-1}) \]
 Denote $|z| = r, |z_0| = r_0$. Then, we obtain
 \[ |z^n - z_0^n| \leq |z - z_0|(r^{n-1} + r^{n-2}r_0 + \dots + rr_0^{n-2} + r_0^{n-1}) \]
@@ -260,7 +264,7 @@ Next proposition provides a relation between the continuity and differentiabilit
 \begin{proposition}6.5 If $f$ is differentiable at $z_0$, then $f$ is continuous at $z_0$.
 
     \begin{proof}
-Pf: Observe that
+ Observe that
 \begin{align*} 
     \lim_{z \to z_0} (f(z) &- f(z_0)) = \lim_{z \to z_0} \frac{f(z) - f(z_0)}{z - z_0}(z - z_0) =  \lim_{z \to z_0}\frac{f(z) - f(z_0)}{z - z_0} \lim_{z \to z_0}(z - z_0) = f'(z_0) \cdot 0 = 0 \\
 & \implies \lim_{z \to z_0}(f(z) - f(z_0)) = (\lim_{z \to z_0} f(z)) - f(z_0) = 0 \iff \lim_{z \to z_0} f(z) = f(z_0) \\
@@ -280,7 +284,8 @@ Namely, the function $\left( u(x_0, y_0) + \frac{\partial u}{\partial x}(x_0, y_
 In particular, it means that: There exists a neighborhood of $(x_0, y_0)$ s.t. $\frac{\partial u}{\partial x}, \frac{\partial u}{\partial y}$ are defined everywhere in this neighborhood and continuous at $(x_0, y_0)$.
 
 Now we are ready to state the conditions.
-\begin{theorem} hm 6.1 The function $f(z) = u(x,y) + iv(x,y)$ is differentiable at $z_0 = x_0 + iy_0$ if and only if $u(x,y)$ and $v(x,y)$ are differentiable at $(x_0, y_0)$ and the following conditions, called Cauchy-Riemann equations, hold:
+\begin{theorem}\label{theorem:6.1}
+    The function $f(z) = u(x,y) + iv(x,y)$ is differentiable at $z_0 = x_0 + iy_0$ if and only if $u(x,y)$ and $v(x,y)$ are differentiable at $(x_0, y_0)$ and the following conditions, called Cauchy-Riemann equations, hold:
 \begin{align*}
 \frac{\partial u}{\partial x}(x_0, y_0) &= \frac{\partial v}{\partial y}(x_0, y_0) \\
 \frac{\partial u}{\partial y}(x_0, y_0) &= -\frac{\partial v}{\partial x}(x_0, y_0) \quad \text{CR equations}

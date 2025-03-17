@@ -3,9 +3,10 @@
 \lecture{19}{Logarithm in $\mathbb C$}
 
 \section{Function $\ln z$}
-\textbf{Def 15.1:} The natural logarithm of a complex number $z$ is a complex number $w$ such that $e^w = z$. Notation: $w = \text{Ln } z$.
-
-The logarithm of $r \in \mathbb{R}$ denote as usual $\ln r$.
+\begin{definition}\label{definition:15.1}
+     The natural logarithm of a complex number $z$ is a complex number $w$ such that $e^w = z$. Notation: $w = \text{Ln } z$.
+        The logarithm of $r \in \mathbb{R}$ denote as usual $\ln r$.
+\end{definition}
 
 Let us develop a formula for the computation of the complex logarithm. Write: $z = r(\cos \varphi + i\sin \varphi), w = u + iv$.
 
@@ -25,13 +26,14 @@ Recall: $r = |z|, \varphi + 2\pi k = \arg z$, thus (*) $\text{Ln } z = \ln |z| +
 
 $\implies \text{Ln } z$ is defined for any $z \neq 0$ and it is multi-valued function (for different values of $k$ the function attains different values).
 
-\begin{example} 17.1:} Compute: 1) $\text{Ln } i$ 2) $\text{Ln } (-4)$
+\begin{example}\label{example:17.1} Compute: 1) $\text{Ln } i$ 2) $\text{Ln } (-4)$
 
 Sol: 1) $\text{Ln } i = \ln |i| + i(\arg i + 2\pi k) = \ln 1 + i(\frac{\pi}{2} + 2\pi k) = i(\frac{\pi}{2} + 2\pi k)$.
 
 2) $\text{Ln } (-4) = \ln |-4| + i(\arg(-4) + 2\pi k) = \ln 4 + i(\pi + 2\pi k)$.
 \end{example}
-\begin{example} 17.2:} Find an analytic function $f(z)$ such that $\text{Re } f(z) = \arctan \frac{y}{x}$ and $f(-i) = \frac{3\pi}{2} + 2i$.
+\begin{example} \label{example:17.2}
+     Find an analytic function $f(z)$ such that $\text{Re } f(z) = \arctan \frac{y}{x}$ and $f(-i) = \frac{3\pi}{2} + 2i$.
 
 Sol: In Ex 11.3 we have seen that $f(z) = \arctan \frac{y}{x} - \frac{i}{2} \ln(x^2 + y^2) + ic$.
 
@@ -41,7 +43,7 @@ Let $z = x + iy$. Recall: $\arg z - \theta$ s.t. $\cos \theta = \frac{x}{|z|}, \
 $\implies f(z) = \arg z - \frac{i}{2} \ln |z|^2 + ic = -i(\ln|z| + i \arg z) + ic$, or $f(z) = -i \text{Ln } z + c_1$, where $c_1 \in \mathbb{C}$ is a constant, let us compute it: $\frac{3\pi}{2} + 2i = f(-i) = -i\text{Ln }(-i) + c_1 = -i(0 + i\frac{3\pi}{2}) + c_1 = \frac{3\pi}{2} + c_1 \implies c_1 = 2i$ and $f(z) = i\text{Ln } z + 2i$.
 \end{example}
 
-\begin{proposition} 15.1:} For any $z_1, z_2 \in \mathbb{C}, n \in \mathbb{N}$:
+\begin{proposition}\label{proposition:15.1} For any $z_1, z_2 \in \mathbb{C}, n \in \mathbb{N}$:
 \begin{enumerate}
     \item $\text{Ln}(z_1 z_2) = \text{Ln } z_1 + \text{Ln } z_2$
     \item $\text{Ln}(z_1/z_2) = \text{Ln } z_1 - \text{Ln } z_2$
@@ -54,7 +56,9 @@ $\text{Ln}(z_1 z_2) = \ln|z_1 z_2| + i\arg(z_1 z_2) = \ln(|z_1||z_2|) + i(\arg z
 The rest in the same way. (FINISH!)
 \end{proof}
 \end{proposition}
-Rmk: If $z_1 = r_1 e^{i\varphi_1}, z_2 = r_2 e^{i\varphi_2}$, then 1) can be written as $\text{Ln}(z_1 z_2) = \ln r_1 + \ln r_2 + i\varphi$, where $\varphi = \varphi_1 + \varphi_2 \pmod{2\pi}$.
+\begin{remark}
+    If $z_1 = r_1 e^{i\varphi_1}, z_2 = r_2 e^{i\varphi_2}$, then 1) can be written as $\text{Ln}(z_1 z_2) = \ln r_1 + \ln r_2 + i\varphi$, where $\varphi = \varphi_1 + \varphi_2 \pmod{2\pi}$.
+\end{remark}
 
 Q-n: \checkthis{}- 2), 3), 4)!
 
@@ -75,7 +79,7 @@ that encircle $z = 0$ one can choose infinitely many single-valued continuous br
 
 \checkthis{} $z = z_0$ is the branch point of $\text{Ln}(z - z_0)$ and in the cut-plane with the cut along some ray starting at $z = z_0$ (including $z_0$) one can choose infinitely many single-valued continuous branches.
 
-\begin{proposition} 15.2:} Every branch of the function $\text{Ln } z$ is an analytic function in the cut-plane (cutted along some ray starting at the origin) and $(\text{Ln } z)' = \frac{1}{z}$.
+\begin{proposition}\label{proposition:15.2} Every branch of the function $\text{Ln } z$ is an analytic function in the cut-plane (cutted along some ray starting at the origin) and $(\text{Ln } z)' = \frac{1}{z}$.
 
     \begin{proof}
 We prove that $\text{Ln } z$ is differentiable. Let $\Delta z$ be such that $z$ and $z + \Delta z$ are in the same domain. We compute:
@@ -90,7 +94,7 @@ Passing to the limit $\Delta z \to 0$ we get: $\frac{dw}{dz} = \frac{1}{e^w} \im
 \end{proof}
 \end{proposition}
 
-\begin{example} 17.3:} Study the function $w = \text{Ln}(z^2 + 4)$.
+\begin{example} \label{example:17.3} Study the function $w = \text{Ln}(z^2 + 4)$.
 
 Sol: $w = \text{Ln}(z^2 + 4) = \text{Ln}(z + 2i)(z - 2i) = \text{Ln}(z + 2i) + \text{Ln}(z - 2i)$ (Prop 15.1 1)) $\implies w$ has 2 branch points $z = 2i$ and $z = -2i$. Therefore, $w$ is analytic in the cut-plane where we cut along 2 rays that start at $z = \pm 2i$ (including $\pm 2i$):
 
@@ -98,36 +102,47 @@ The derivative of this function in the cut-plane is computed as a composition fu
 \end{example}
 
 Now we define the main branch of the function $\text{Ln } z$.
-
-\textbf{Def 15.2:} The branch of $w = \text{Ln } z$ when $k = 0, -\pi < \varphi \leq \pi$ is called the main branch of the logarithm: $w_0 = \text{Ln } z = \ln r + i\varphi$.
+\begin{definition}\label{definition:15.2}
+    The branch of $w = \text{Ln } z$ when $k = 0, -\pi < \varphi \leq \pi$ is called the main branch of the logarithm: $w_0 = \text{Ln } z = \ln r + i\varphi$.
+\end{definition}
 
 Having the logarithm, similarly to the way that we have defined the trigonometric and hyperbolic functions using the exponential function, we define the inverse of the trigonometric and hyperbolic functions as follows:
+\begin{definition}\label{definition:15.3}
+    
+    1) $\arcsin z$ is $w \in \mathbb{C}$ such that $\sin w = z$.
 
-\textbf{Def 15.3:} 1) $\arcsin z$ is $w \in \mathbb{C}$ such that $\sin w = z$.
-2) $\arccos z$ is $w \in \mathbb{C}$ such that $\cos w = z$.
-3) $\arctan z$ is $w \in \mathbb{C}$ such that $\tan w = z$.
+    2) $\arccos z$ is $w \in \mathbb{C}$ such that $\cos w = z$.
+    
+    3) $\arctan z$ is $w \in \mathbb{C}$ such that $\tan w = z$.
+    
+    From 1): $z = \sin w$. By Euler's formula $z = \frac{e^{iw} - e^{-iw}}{2i}$.
+\end{definition}
 
-From 1): $z = \sin w$. By Euler's formula $z = \frac{e^{iw} - e^{-iw}}{2i}$.
-
-Eliminating $w$ we obtain: Denote $e^{iw} = t \implies z = \frac{t - \frac{1}{t}}{2i} \iff t^2 - 2izt - 1 = 0 \implies t = iz \pm \sqrt{1 - z^2}$ or $e^{iw} = iz \pm \sqrt{1 - z^2}$, when there are two branches of (each) square root. Thus: $\arcsin z = w = \frac{1}{i} \text{Ln}(iz \pm \sqrt{1 - z^2}) = -i\text{Ln}(iz \pm \sqrt{1 - z^2})$.
+Eliminating $w$ we obtain: Denote $e^{iw} = t \implies z = \frac{t - \frac{1}{t}}{2i} \iff t^2 - 2izt - 1 = 0 \implies t = iz \pm \sqrt{1 - z^2}$ or $e^{iw} = iz \pm \sqrt{1 - z^2}$, when
+ there are two branches of (each) square root. 
+ Thus: $\arcsin z = w = \frac{1}{i} \text{Ln}(iz \pm \sqrt{1 - z^2}) = -i\text{Ln}(iz \pm \sqrt{1 - z^2})$.
 
 In the same way:
 
-EXERCISE: $\arccos z = -i\text{Ln}(z \pm i\sqrt{1 - z^2})$
-$\arctan z = \frac{1}{2i} \text{Ln}\left(\frac{1+iz}{1-iz}\right)$.
+\begin{exercise}
+    
+    EXERCISE: $\arccos z = -i\text{Ln}(z \pm i\sqrt{1 - z^2})$
+    $\arctan z = \frac{1}{2i} \text{Ln}\left(\frac{1+iz}{1-iz}\right)$.
+\end{exercise}
 
-\begin{example} 17.4:} Compute: 1) $\arcsin 2$ 2) $\arcsin i$.
-
-Sol: 1) $\arcsin 2 = -i\text{Ln}(2i \pm \sqrt{1-4}) = -i\text{Ln}((2 \pm \sqrt{3})i) = -i(\ln(2 \pm \sqrt{3}) + i(\frac{\pi}{2} + 2\pi k)) = \frac{\pi}{2} + 2\pi k - i\ln(2 \pm \sqrt{3})$. If, for example, $k = 1$, $\arcsin 2$ attains two values: $\arcsin 2 \approx \frac{5}{2}\pi \pm i \cdot 1.32$.
-
-2) $\arcsin i = -i\text{Ln}(-1 \pm \sqrt{2})$. Let us compute each of the logarithms:
-\begin{align*}
-    \text{Ln}(-1 + \sqrt{2}) &= \ln(\sqrt{2} - 1) + 2\pi k i \\
-    \text{Ln}(-1 - \sqrt{2}) &= \ln(\sqrt{2} + 1) + (2k+1)\pi i
-\end{align*}
-$\implies \arcsin i = 2\pi k - i\ln(\sqrt{2} - 1), \quad k \in \mathbb{Z}$ ($k = 0, \pm 1, \pm 2, \dots$)
-
-$\arcsin i = \pi(2k+1) - i\ln(\sqrt{2} + 1), \quad k \in \mathbb{Z}$.
+\begin{example}\label{example:17.4} 
+    Compute: 1) $\arcsin 2$ 2) $\arcsin i$.
+\begin{soln}
+1) $\arcsin 2 = -i\text{Ln}(2i \pm \sqrt{1-4}) = -i\text{Ln}((2 \pm \sqrt{3})i) = -i(\ln(2 \pm \sqrt{3}) + i(\frac{\pi}{2} + 2\pi k)) = \frac{\pi}{2} + 2\pi k - i\ln(2 \pm \sqrt{3})$. If, for example, $k = 1$, $\arcsin 2$ attains two values: $\arcsin 2 \approx \frac{5}{2}\pi \pm i \cdot 1.32$.
+    
+    2) $\arcsin i = -i\text{Ln}(-1 \pm \sqrt{2})$. Let us compute each of the logarithms:
+    \begin{align*}
+        \text{Ln}(-1 + \sqrt{2}) &= \ln(\sqrt{2} - 1) + 2\pi k i \\
+        \text{Ln}(-1 - \sqrt{2}) &= \ln(\sqrt{2} + 1) + (2k+1)\pi i
+    \end{align*}
+    $\implies \arcsin i = 2\pi k - i\ln(\sqrt{2} - 1), \quad k \in \mathbb{Z}$ ($k = 0, \pm 1, \pm 2, \dots$)
+    $\arcsin i = \pi(2k+1) - i\ln(\sqrt{2} + 1), \quad k \in \mathbb{Z}$.
+\end{soln}
 \end{example}
 
 \begin{remark}
@@ -144,9 +159,13 @@ $\arcsin i = \pi(2k+1) - i\ln(\sqrt{2} + 1), \quad k \in \mathbb{Z}$.
 
 Now we introduce isolated singularities and discuss their classification. Then we define the residue of a function and relate calculation of residues of certain singularities to zeros of analytic functions.
 
-\textbf{Def 16.1:} If $f$ is analytic on a punctured disc $D' = \{z \in \mathbb{C}: 0 < |z - z_0| < r\}$ but it is not analytic at $z_0$ (or not defined at $z_0$), then $z_0$ is called an isolated singularity of $f$.
+\begin{definition}\label{definition:16.1} 
+    If $f$ is analytic on a punctured disc $D' = \{z \in \mathbb{C}: 0 < |z - z_0| < r\}$ but it is not analytic at $z_0$ (or not defined at $z_0$), then $z_0$ is called an isolated singularity of $f$.
+\end{definition}
 
-In other words, $z_0$ is an isolated singularity if there exists a neighborhood of $z_0$ such that $f$ is analytic at every point in this neighborhood except at $z_0$. If $z_0$ is an isolated singularity of $f$, then there exists an annulus $0 < |z - z_0| < r$ (sufficiently small) such that $f$ is analytic there and hence the Laurent series expansion of $f$ exists on this annulus.
+In other words, $z_0$ is an isolated singularity if there exists a neighborhood of $z_0$ such that $f$ is analytic at every point in this neighborhood except at $z_0$. 
+If $z_0$ is an isolated singularity of $f$, then there exists an annulus $0 < |z - z_0| < r$ (sufficiently small) such that $f$ is analytic there 
+and hence the Laurent series expansion of $f$ exists on this annulus.
 
 By Thm 14.2 (Laurent series) Such $f$ has a Laurent series expansion valid on $D'$:
 \[  f(z) = \sum_{n=1}^{\infty} b_n (z - z_0)^{-n} + \sum_{n=0}^{\infty} a_n (z - z_0)^n = \dots \frac{b_2}{(z-z_0)^2} + \frac{b_1}{z-z_0} + a_0 + \dots \]
@@ -169,17 +188,22 @@ a_0 & z = z_0
 \]
 Then, $\tilde{f}(z)$ is the value of $\sum_{n=0}^{\infty} a_n (z - z_0)^n$ on $|z - z_0| < r$ (including $z = z_0$) and $\tilde{f}(z)$ is analytic at the point $z = z_0$.
 
-II Pole: If the principal part of the Laurent series $\sum_{n=1}^{m} b_n (z - z_0)^{-n}$ has finite strictly positive number of non-zero terms, namely, if it has the form $\sum_{n=1}^{m} b_n (z - z_0)^{-n}$ with $b_m \neq 0$, then $z_0$ is called a pole of order $m$. A pole of order $m = 1$ is called a simple pole.
+II Pole: If the principal part of the Laurent series $\sum_{n=1}^{m} b_n (z - z_0)^{-n}$ has finite strictly positive number of non-zero terms, namely, 
+if it has the form $\sum_{n=1}^{m} b_n (z - z_0)^{-n}$ with $b_m \neq 0$, then $z_0$ is called a pole of order $m$. A pole of order $m = 1$ is called a simple pole.
 
 III Essential singularity: If $b_n \neq 0$ for infinitely many $n$, then $z_0$ is called an essential singularity.
 
-\textbf{Def 16.2:} The coefficient $b_1$ of $\frac{1}{z - z_0}$ term is called the residue of the singularity at $z = z_0$, denoted by $\underset{z=z_0}{\text{Res}} f(z) = \text{Res}(f, z_0)$.
+\begin{definition}\label{definition:16.2}
+     The coefficient $b_1$ of $\frac{1}{z - z_0}$ term is called the residue of the singularity at $z = z_0$, denoted by $\underset{z=z_0}{\text{Res}} f(z) = \text{Res}(f, z_0)$.
+\end{definition}
 
 First, let us study the case of removable singularity. The following proposition is a useful criterion to check for removable singularity.
 
-\begin{proposition} 16.1:} $z_0$ is a removable singularity of $f(z)$ if and only if $\lim_{z \to z_0} (z - z_0)f(z) = 0$.
+\begin{proposition}\label{proposition:16.1}
+    $z_0$ is a removable singularity of $f(z)$ if and only if $\lim_{z \to z_0} (z - z_0)f(z) = 0$.
+\end{proposition}
 \begin{proof}
-Pf: $\implies$ Suppose $z_0$ is removable and $g$ is analytic on the open disc centered at $z_0$ of radius $R: D = \{z \in \mathbb{C}: 0 \leq |z - z_0| < R\}$, such that $f = g$ for $z \neq z_0$. 
+ $\implies$ Suppose $z_0$ is removable and $g$ is analytic on the open disc centered at $z_0$ of radius $R: D = \{z \in \mathbb{C}: 0 \leq |z - z_0| < R\}$, such that $f = g$ for $z \neq z_0$. 
 Then, since $g$ is continuous at $z_0$ (Prop 6.5) and \[ \lim_{z \to z_0} (z - z_0)f(z) = \lim_{z \to z_0} (z - z_0)g(z) = \lim_{z \to z_0} (z - z_0) \lim_{z \to z_0} g(z) = 0 \cdot g(z_0) = 0.\]
 
 $\impliedby$ Suppose that $\lim_{z \to z_0} (z - z_0)f(z) = 0$ and $f$ is analytic on the punctured disc $D' = \{z \in \mathbb{C}: 0 < |z - z_0| < R \}$. Define:
@@ -194,7 +218,6 @@ from the series, so
 \[ g(z) = (z - z_0)^2 \sum_{n=0}^{\infty} a_{n+2} (z - z_0)^n = (z - z_0)^2 \varphi(z).\] 
 Therefore, for $z \neq z_0$ we have: $f(z) = \sum_{n=0}^{\infty} a_{n+2} (z - z_0)^n$ and this series defines an analytic function on $D$.
 \end{proof}
-\end{proposition}
 
 The other types of singularities can also be recognised by the behavior of $f$ near it.
 
@@ -211,61 +234,79 @@ Therefore, since $\lim_{z \to z_0} \frac{1}{(z - z_0)^m} = \infty$ and $\lim_{z 
 
 In fact, more is true in the case of an essential singularity:
 
-\textbf{Thm (Great Picard Theorem)} If an analytic function $f$ has an essential singularity at $z_0$, then on any punctured neighborhood of $z_0$, $f$ takes on all possible values in $\mathbb{C}$ infinitely often with at most one exception.
+\textbf{Thm (Great Picard Theorem)} If an analytic function $f$ has an essential singularity at $z_0$, then on any punctured neighborhood of $z_0$, $f$ takes on all possible 
+values in $\mathbb{C}$ infinitely often with at most one exception.
 
 In other words, if $z_0$ is an essential singularity of the function $f$, then the equation $f(z) = c$ for any (finite) $c$ except possibly for one value, has infinitely many solutions that tend to $z_0$.
 
 Similarly to Prop 16.1, we have the following proposition which provides a method for recognising the order of a pole and computing the corresponding residue.
 
-\begin{proposition} 16.2:} $z = z_0$ is a pole of order $m > 0$ of $f \iff f$ can be expressed as $f(z) = \frac{\varphi(z)}{(z - z_0)^m}$ where $\varphi(z)$ is analytic at a neighborhood of $z_0$ (and at $z_0$) and $\varphi(z_0) \neq 0$. Moreover, $\text{Res}(f, z_0) = \frac{\varphi^{(m-1)}(z_0)}{(m-1)!}$.
+\begin{proposition}\label{proposition:16.2} 
+    $z = z_0$ is a pole of order $m > 0$ of $f \iff f$ can be expressed as $f(z) = \frac{\varphi(z)}{(z - z_0)^m}$ where $\varphi(z)$ is analytic 
+    at a neighborhood of $z_0$ (and at $z_0$) and $\varphi(z_0) \neq 0$. Moreover, $\text{Res}(f, z_0) = \frac{\varphi^{(m-1)}(z_0)}{(m-1)!}$.
+\end{proposition}
 \begin{proof}
 $\implies$ If $z_0$ is a pole of order $m$, then as we have seen 
 \[ f(z) = \frac{1}{(z - z_0)^m} [b_m + b_{m-1}(z - z_0) + \dots + b_1(z - z_0)^{m-1} + a_0(z - z_0)^m + \dots] \]
 
 Denote: \[ \varphi(z) = b_m + b_{m-1}(z - z_0) + \dots + b_1(z - z_0)^{m-1} + a_0(z - z_0)^m + \dots.\]
 Then, $\varphi$ is analytic at a neighborhood of $z_0$ (this is its Taylor series expansion!) including $z_0$ and $\varphi(z_0) = b_m \neq 0$.
-$\impliedby$ Assume $f(z) = \frac{\varphi(z)}{(z - z_0)^m}$, where $\varphi$ is analytic in a neighborhood of $z_0$ (including $z_0$) and $\varphi(z_0) \neq 0$. Since $\varphi$ is analytic there exists Taylor series expansion in some neighborhood of $z_0$ given by
+$\impliedby$ Assume $f(z) = \frac{\varphi(z)}{(z - z_0)^m}$, where $\varphi$ is analytic in a neighborhood of $z_0$ (including $z_0$) and $\varphi(z_0) \neq 0$. Since $\varphi$ is analytic 
+there exists Taylor series expansion in some neighborhood of $z_0$ given by
 \[ \varphi(z) = \varphi(z_0) + \frac{\varphi'(z_0)}{1!}(z - z_0) + \dots + \frac{\varphi^{(m-1)}(z_0)}{(m-1)!}(z - z_0)^{m-1} + \dots\]
 $\implies f$ can be written in terms of series expansion as 
 \[ f(z) = \frac{\varphi(z_0)}{(z - z_0)^m} + \frac{\varphi'(z_0)}{(z - z_0)^{m-1}} + \dots + \frac{\varphi^{(m-1)}(z_0)}{(m-1)!} \frac{1}{z - z_0} + \frac{\varphi^{(m)}(z_0)}{m!} + \dots \]
-This is a Laurent series with finitely many terms in its principal part. Since $\varphi(z_0) \neq 0$, $f$ has a pole of order $m$ at $z_0$. The residue is the coefficient of $\frac{1}{z - z_0}$, namely $\frac{\varphi^{(m-1)}(z_0)}{(m-1)!}$.
+This is a Laurent series with finitely many terms in its principal part. Since $\varphi(z_0) \neq 0$, $f$ has a pole of order $m$ at $z_0$. The residue is the coefficient of $\frac{1}{z - z_0}$, 
+namely $\frac{\varphi^{(m-1)}(z_0)}{(m-1)!}$.
 \end{proof}
-\end{proposition}
 
 Let us see examples of these singularities.
 
-\begin{example} 18.1:} Let $f(z) = \frac{1}{(z-1)(z-2)}$. Then $f$ has isolated singularities at $z = 1$ and $z = 2$ \{f is a rational function $\implies$ analytic everywhere except at the zeros of the denominator\}.
+\begin{example}\label{example:18.1} Let $f(z) = \frac{1}{(z-1)(z-2)}$. Then $f$ has isolated singularities at $z = 1$ and $z = 2$ \{f is a rational function $\implies$ analytic everywhere except at the 
+    zeros of the denominator\}.
 
-\checkthis{} The Laurent series about the point $z_0 = 1$ is given by $f(z) = -\frac{1}{z-1} + \sum_{n=0}^{\infty} (-1)^n (z-1)^n$.
-
-The Laurent series at $z_0 = 2$: Observe that $f(z) = \frac{1}{(z-2)(z-1)} = \frac{1}{z-2} \cdot \frac{1}{1 + (z-2)} = \frac{1}{z-2} \sum_{n=0}^{\infty} (-1)^n (z-2)^n = \frac{1}{z-2} + \sum_{n=0}^{\infty} (-1)^{n+1} (z-2)^{n-1}$. The series is valid on a punctured disc centered at $z_0 = 2$ of radius 1: $D' = \{z \in \mathbb{C}: 0 < |z-2| < 1\}$.
 \end{example}
+\checkthis{} The Laurent series about the point $z_0 = 1$ is given by \[ f(z) = -\frac{1}{z-1} + \sum_{n=0}^{\infty} (-1)^n (z-1)^n.\]
 
-Claim: $z = 1, z = 2$ are simple poles.
+The Laurent series at $z_0 = 2$: Observe that
+\begin{align*} f(z) = \frac{1}{(z-2)(z-1)} & = \frac{1}{z-2} \cdot \frac{1}{1 + (z-2)} = \frac{1}{z-2} \sum_{n=0}^{\infty} (-1)^n (z-2)^n \\ 
+    & = \frac{1}{z-2} + \sum_{n=0}^{\infty} (-1)^{n+1} (z-2)^{n-1}.
+\end{align*}
+The series is valid on a punctured disc centered at $z_0 = 2$ of radius 1: $D' = \{z \in \mathbb{C}: 0 < |z-2| < 1\}$.
+\begin{claim}
+    Claim: $z = 1, z = 2$ are simple poles.
+\end{claim}
+\begin{proof}
+ $z = 2$: Rewrite $f(z)$ in the form $f(z) = \frac{\varphi(z)}{z-1}$, where $\varphi(z) = \frac{1}{z-1}$. Then $\varphi(z)$ is analytic in a 
+ neighborhood of $z = 2$ (including $z = 2$) and $\varphi(2) = 1 \neq 0$, thus, by Prop 16.2 $z = 2$ is a simple pole.
 
-Pf: $z = 2$: Rewrite $f(z)$ in the form $f(z) = \frac{\varphi(z)}{z-1}$, where $\varphi(z) = \frac{1}{z-1}$. Then $\varphi(z)$ is analytic in a neighborhood of $z = 2$ (including $z = 2$) and $\varphi(2) = 1 \neq 0$, thus, by Prop 16.2 $z = 2$ is a simple pole.
-
-$z = 1$: In the same way: $f(z) = \frac{\tilde{\varphi}(z)}{z-1}$, $\tilde{\varphi}(z) = \frac{1}{z-2}$, $\tilde{\varphi}$ is analytic in a neighborhood of $z = 1$ (including $z = 1$), and $\tilde{\varphi}(1) = -1 \neq 0$. Thus, by Prop 16.2 $z = 1$ is a simple pole.
-
+$z = 1$: In the same way: $f(z) = \frac{\tilde{\varphi}(z)}{z-1}$, $\tilde{\varphi}(z) = \frac{1}{z-2}$, $\tilde{\varphi}$ is analytic in a 
+neighborhood of $z = 1$ (including $z = 1$), and $\tilde{\varphi}(1) = -1 \neq 0$. Thus, by Prop 16.2 $z = 1$ is a simple pole.
+\end{proof}
 By Prop 16.2: $\text{Res}(f, 2) = \frac{\varphi(2)}{0!} = 1; \text{Res}(f, 1) = \frac{\tilde{\varphi}(1)}{0!} = -1$.
 
-\begin{example} 18.2} Prove:
+\begin{example}\label{example:18.2} Prove:
 
 1) $z = 3$ is a removable singularity of $f(z) = \frac{z^2 - 9}{z - 3}$.
 2) $z = 0$ is a removable singularity of $f(z) = \frac{\sin z}{z}$.
 
-Sol: 1) Since $\lim_{z \to 3} \frac{(z-3)(z+3)}{z-3} = 6$ and $\lim_{z \to 3} (z-3) \cdot \frac{(z-3)(z+3)}{z-3} = 0$ by Prop 16.1 $z = 3$ is a removable singularity. Define: $\tilde{f}(z) = \begin{cases} \frac{z^2 - 9}{z-3} & z \neq 3 \\ 6 & z = 3 \end{cases} \implies \tilde{f}(z)$ is entire (analytic on $\mathbb{C}$).
+\end{example}
+Sol: 1) Since $\lim_{z \to 3} \frac{(z-3)(z+3)}{z-3} = 6$ and $\lim_{z \to 3} (z-3) \cdot \frac{(z-3)(z+3)}{z-3} = 0$ by Prop 16.1 $z = 3$ is a removable singularity. 
+Define: $\tilde{f}(z) = \begin{cases} \frac{z^2 - 9}{z-3} & z \neq 3 \\ 6 & z = 3 \end{cases} \implies \tilde{f}(z)$ is entire (analytic on $\mathbb{C}$).
 
 2) We prove this in two ways:
 
-i) The Laurent series for $f$ in $0 < |z| < R$ is $f(z) = \frac{1}{z}(z - \frac{z^3}{3!} + \frac{z^5}{5!} - \dots) = 1 - \frac{z^2}{3!} + \frac{z^4}{5!} - \dots$ $\implies$ the principal part does not exist $\implies z = 0$ is a removable singularity.
+i) The Laurent series for $f$ in $0 < |z| < R$ is $f(z) = \frac{1}{z}(z - \frac{z^3}{3!} + \frac{z^5}{5!} - \dots) = 1 - \frac{z^2}{3!} + \frac{z^4}{5!} - \dots$ $\implies$ the 
+principal part does not exist $\implies z = 0$ is a removable singularity.
 
 ii) $\lim_{z \to 0} z \cdot \frac{\sin z}{z} = \lim_{z \to 0} \sin z = 0 \implies$ by Prop 16.1 $z = 0$ is a removable singularity.
-\end{example}
 
-\begin{example} 18.3:} Classify the singularities of $f(z) = e^{\frac{1}{z}}$ and compute the residue of $f$ at $z = 0$.
-
-Sol: Since $f(z)$ is analytic everywhere except for $z = 0$, $f$ has an isolated singularity at $z = 0$. To determine the nature of this singularity, we write the Laurent series expansion: 
-\[ e^{\frac{1}{z}} = e^{z^{-1}} = \sum_{n=0}^{\infty} \frac{1}{n!} z^{-n} = 1 + \frac{1}{z} + \frac{1}{2!} \cdot \frac{1}{z^2} + \frac{1}{3!} \cdot \frac{1}{z^3} + \dots\]
-$\implies$ the principal part $\sum_{n=1}^{\infty} b_n (z - z_0)^{-n}$ has infinitely many non-zero terms $\implies z = 0$ is an essential singularity. By Picard's Great Theorem, $f$ takes every value of $\mathbb{C} \setminus \{0\}$ infinitely often. The coefficient of the term $\frac{1}{z}$ in the Laurent series expansion is 1, therefore $\text{Res}(e^{\frac{1}{z}}, 0) = b_1 = 1$.
+\begin{example}\label{example:18.3} Classify the singularities of $f(z) = e^{\frac{1}{z}}$ and compute the residue of $f$ at $z = 0$.
+\begin{soln}
+    
+    Since $f(z)$ is analytic everywhere except for $z = 0$, $f$ has an isolated singularity at $z = 0$. To determine the nature of this singularity, we write the Laurent series expansion: 
+    \[ e^{\frac{1}{z}} = e^{z^{-1}} = \sum_{n=0}^{\infty} \frac{1}{n!} z^{-n} = 1 + \frac{1}{z} + \frac{1}{2!} \cdot \frac{1}{z^2} + \frac{1}{3!} \cdot \frac{1}{z^3} + \dots\]
+    $\implies$ the principal part $\sum_{n=1}^{\infty} b_n (z - z_0)^{-n}$ has infinitely many non-zero terms $\implies z = 0$ is an essential singularity. 
+    By Picard's Great Theorem, $f$ takes every value of $\mathbb{C} \setminus \{0\}$ infinitely often. The coefficient of the term $\frac{1}{z}$ in the Laurent series expansion is 1, therefore $\text{Res}(e^{\frac{1}{z}}, 0) = b_1 = 1$.
+\end{soln}
 \end{example}

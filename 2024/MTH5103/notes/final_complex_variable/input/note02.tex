@@ -124,7 +124,7 @@ Represent the imaginary axis $i\mathbb{R}$ as: $i\mathbb{R} = (i\mathbb{R})^+ \c
 
 \begin{claim} A quarter circle of radius $r$ centered at 0 is mapped by $z^2$ to a half circle of radius $r^2$ centered at 0.
     \begin{proof}
-Pf: The quarter circle is given by points $re^{i\theta}$ where $0 \leq \theta \leq \frac{\pi}{2}$. It is mapped by $z^2$ to $r^2 e^{2i\theta}$. Since $0 \leq \theta \leq \frac{\pi}{2} \implies 0 \leq 2\theta \leq \pi$, thus we obtain a half circle of radius $r^2$ centered at 0.
+The quarter circle is given by points $re^{i\theta}$ where $0 \leq \theta \leq \frac{\pi}{2}$. It is mapped by $z^2$ to $r^2 e^{2i\theta}$. Since $0 \leq \theta \leq \frac{\pi}{2} \implies 0 \leq 2\theta \leq \pi$, thus we obtain a half circle of radius $r^2$ centered at 0.
     \end{proof}
 \end{claim}
 
@@ -222,7 +222,7 @@ Before we proceed to the proof, let us show the following:
 \textbf{Claim 3.1} If $\lim_{z \to z_0} f(z)$ exists, then it is unique.
 
 \begin{proof}
-Pf: Assume $\lim_{z \to z_0} f(z) = a$ and $\lim_{z \to z_0} f(z) = b$. By Def 3.1 for any $\epsilon > 0$ there exist $\delta_1 > 0$ and $\delta_2 > 0$ such that
+ Assume $\lim_{z \to z_0} f(z) = a$ and $\lim_{z \to z_0} f(z) = b$. By Def 3.1 for any $\epsilon > 0$ there exist $\delta_1 > 0$ and $\delta_2 > 0$ such that
 \begin{align*}
 \text{if } 0 < \vert z - z_0\vert  < \delta_1 &\implies \vert f(z) - a\vert  < \epsilon/2 \\
 \text{if } 0 < \vert z - z_0\vert  < \delta_2 &\implies \vert f(z) - b\vert  < \epsilon/2
@@ -235,7 +235,7 @@ Since (*) holds for any $\epsilon > 0$ we obtain that $a = b$.
 Back to Ex 5.2: we will use a common technique to show that the limit does not exist - we will show that there exist two different paths (directions) $z \to z_0$ along which we get 2 different limits.
 
 \begin{soln}
-Ex 5.2 Pf: Note: for real $z$ we have: \{namely, fix $y = 0$\}
+Ex 5.2  Note: for real $z$ we have: \{namely, fix $y = 0$\}
 $z = x \in \mathbb{R}: \frac{z}{\bar{z}} = \frac{x}{x} = 1 \implies \lim_{x \to 0} \frac{z}{\bar{z}} = 1$.
 
 On the other hand, for purely imaginary $z$ we get: \{namely, fix $x = 0$\}
@@ -243,7 +243,7 @@ $z = iy \in i\mathbb{R}: \frac{z}{\bar{z}} = \frac{iy}{-iy} = -1 \implies \lim_{
 $\implies$ the limit as $z \to 0$ does not exist.
 \end{soln}
 Note: 
-\begin{remark} 8989 For any $z_0 \neq 0$, $\lim_{z \to z_0} \frac{z}{\bar{z}} = \frac{z_0}{\bar{z_0}}$. Pf:
+\begin{remark} 8989 For any $z_0 \neq 0$, $\lim_{z \to z_0} \frac{z}{\bar{z}} = \frac{z_0}{\bar{z_0}}$. 
     \begin{proof} Given $\epsilon > 0$, choose $\delta = \frac{\epsilon}2 \vert z_0\vert $. Then
 \begin{align*} &\left| \frac{\bar{z}}{\bar{z}} - \frac{\bar{z_0}}{z_0} \right| = \left| \frac{\bar{z}z_0 - \bar{z_0}z}{z z_0} \right| \\
         &= \left| \frac{\bar{z}z_0 + z\bar{z} - z\bar{z} - \bar{z_0}z}{z z_0} \right| = \left| \frac{\bar{z}(z_0 - z) + z(\bar{z} - \bar{z_0})}{z z_0} \right| \\
@@ -253,7 +253,8 @@ That's where our choice of $\delta$ come in,  $\delta = \frac{\epsilon}{2}|z_0|$
     \end{proof}
 \end{remark}
 
-\begin{example} 5.3 Show that $\lim_{z \to 0} \frac{\bar{z}^2}{z^2}$ does not exist.
+\begin{example}\label{example:5.3}
+     5.3 Show that $\lim_{z \to 0} \frac{\bar{z}^2}{z^2}$ does not exist.
 \begin{soln} Here, for $z = x \in \mathbb{R}:  \frac{\bar{z}^2}{z^2} = \frac{x^2}{x^2} = 1$ and for $z=iy \in i\mathbb{R}: \frac{\bar{z}^2}{z^2} = \frac{(-iy)^2}{(iy)^2} = \frac{-y^2}{-y^2}=1$. However, choosing the path $z=(1+i)t$ for $t \in \mathbb{R} \setminus \{0\}$ gives us $\frac{\bar{z}^2}{z^2}=\frac{((1-i)t)^2}{((1+i)t)^2} = \frac{(1-i)^2}{(1+i)^2} = \frac{1-2i-1}{1+2i-1}=-1$. $-1 \neq 1$ - does not agree with the value on previous two paths, thus we can conclude that the original limit does not exist.
 \end{soln}
 \end{example}
@@ -263,8 +264,7 @@ $\implies \lim_{z \to 0} \frac{\bar{z}^2}{z^2} = \lim_{r \to 0} e^{-4i\theta} = 
 % \end{soln}
 
 \begin{example}
-
-Ex 5.3 shows that the different paths need not be the real and imaginary axes!
+Ex 5.3 (\ref{example:5.3}) shows that the different paths need not be the real and imaginary axes!
 \end{example}
 
 \begin{remark} 
@@ -279,7 +279,7 @@ Similarly to the real functions we have the following proposition for the comple
     \item If $w_1 \neq 0$, then $\lim_{z \to z_0} \frac{f(z)}{g(z)} = \frac{w_0}{w_1}$
 \end{enumerate}
 
-Pf: \begin{proof} EXERCISE - a very good exercise to "play" with $\epsilon$-$\delta$ definition! \end{proof}
+\begin{proof} EXERCISE - a very good exercise to "play" with $\epsilon$-$\delta$ definition! \end{proof}
 \end{proposition}
 Next proposition provides a relation between the limit of the complex function and its real and imaginary parts (that are real functions).
 
@@ -287,7 +287,7 @@ Next proposition provides a relation between the limit of the complex function a
 \end{proposition}
 Note: the first limit is complex, but the last two limits are real!
 
-\begin{proof} Pf: $\implies$ Assume that $\lim_{z \to z_0} f(z) = u_0 + iv_0$. Let us show that $\lim_{(x, y) \to (x_0, y_0)} u(x, y) = u_0 = \text{Re } w_0$ and $\lim_{(x, y) \to (x_0, y_0)} v(x, y) = v_0 = \text{Im } w_0$.
+\begin{proof}  $\implies$ Assume that $\lim_{z \to z_0} f(z) = u_0 + iv_0$. Let us show that $\lim_{(x, y) \to (x_0, y_0)} u(x, y) = u_0 = \text{Re } w_0$ and $\lim_{(x, y) \to (x_0, y_0)} v(x, y) = v_0 = \text{Im } w_0$.
 
 By Def 3.1: given $\epsilon > 0$ there exists $\delta = \delta(\epsilon) > 0$ s.t. for all $z$ with $0 < \vert z - z_0\vert  < \delta$ we have $\vert f(z) - (u_0 + iv_0)\vert  < \epsilon$.
 

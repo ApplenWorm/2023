@@ -1,18 +1,19 @@
-\section*{Week 11. Lecture 28}
+% \section*{Week 11. Lecture 28}
 \week{11}
 \lecture{28}{Cauchy's theorem continuation. Why are you TORTURING us, CAUCHY?????}
 
 We have proved Cauchy's theorem and have seen an important corollary of it - the Deformation Principle. We are about to see more important consequences of Cauchy's Theorem.
-
-Thm 18.7 (The Cauchy Integral Formula): If $f$ is analytic on and everywhere inside a simple, closed, positively oriented contour $C$, and if $z_0$ is any point inside $C$, then
-\begin{equation*}
-\text{CIF: } f(z_0) = \frac{1}{2\pi i} \oint_C \frac{f(z)}{z-z_0} dz
-\end{equation*}
-
-In other words: once we know the value of $f$ at every point on $C$, we can compute its value at every point inside $C$.
-
-Pf: Let $\epsilon > 0$. By Prop 6.5 $f$ is continuous $\Rightarrow$ there exists $\delta > 0$ such that if $|z-z_0| < \delta$, then $|f(z)-f(z_0)| < \epsilon$. Choose $R > 0$ such that $R < \delta$ and such that the disc of radius $R$ centered at $z_0$ is inside $C$. Let $C_0$ be the positively oriented boundary of that disc, parametrized by $\gamma(t) = z_0 + Re^{it}$, $0 \leq t \leq 2\pi$. We have:
-\begin{equation*}
+\begin{theorem}[The Cauchy Integral Formula]
+    THM 18.7 If $f$ is analytic on and everywhere inside a simple, closed, positively oriented contour $C$, and if $z_0$ is any point inside $C$, then
+    \begin{equation*}
+        \text{CIF: } f(z_0) = \frac{1}{2\pi i} \oint_C \frac{f(z)}{z-z_0} dz
+    \end{equation*}
+    
+    In other words: once we know the value of $f$ at every point on $C$, we can compute its value at every point inside $C$.
+\end{theorem}
+\begin{proof}
+     Let $\epsilon > 0$. By Prop 6.5 $f$ is continuous $\Rightarrow$ there exists $\delta > 0$ such that if $|z-z_0| < \delta$, then $|f(z)-f(z_0)| < \epsilon$. Choose $R > 0$ such that $R < \delta$ and such that the disc of radius $R$ centered at $z_0$ is inside $C$. Let $C_0$ be the positively oriented boundary of that disc, parametrized by $\gamma(t) = z_0 + Re^{it}$, $0 \leq t \leq 2\pi$. We have:
+    \begin{equation*}
 \oint_C \frac{f(z)}{z-z_0} dz = \oint_{C_0} \frac{f(z)}{z-z_0} dz = \oint_{C_0} \frac{f(z) - f(z_0) + f(z_0)}{z-z_0} dz
 \end{equation*}
 \begin{equation*}
@@ -20,25 +21,30 @@ Pf: Let $\epsilon > 0$. By Prop 6.5 $f$ is continuous $\Rightarrow$ there exists
 \end{equation*}
 where:
 \begin{equation*}
-|I| \leq \max_{z \in C_0} \left| \frac{f(z) - f(z_0)}{z-z_0} \right| \text{Length}(C_0) < \frac{\epsilon}{R} \cdot 2\pi R = 2\pi \epsilon
+    |I| \leq \max_{z \in C_0} \left| \frac{f(z) - f(z_0)}{z-z_0} \right| \text{Length}(C_0) < \frac{\epsilon}{R} \cdot 2\pi R = 2\pi \epsilon
 \end{equation*}
 $z \in C_0 \Rightarrow |z-z_0| = R$
 
- But $\epsilon > 0$ is arbitrary, therefore we conclude that $I = 0$.
+But $\epsilon > 0$ is arbitrary, therefore we conclude that $I = 0$.
+\end{proof}
+\begin{example}
+    
+    Ex 20.2: Compute $\oint_C \frac{z}{(9-z^2)(z+i)} dz$, where $C$ is the positively oriented circle centered at the origin of radius 2.
+\end{example}
+\begin{soln}
 
- Ex 20.2: Compute $\oint_C \frac{z}{(9-z^2)(z+i)} dz$, where $C$ is the positively oriented circle centered at the origin of radius 2.
-
- Sol: Note: $f(z) = \frac{z}{(9-z^2)(z+i)}$ has simple poles at $z = -i, \pm 3$ (\verifythis) and only $z = -i$ is enclosed by $C$. Therefore:
-\begin{equation*}
-\oint_C \frac{z}{(9-z^2)(z+i)} dz = \oint_C \frac{f(z)}{z+i} dz,
-\end{equation*}
-where $f(z) = \frac{z}{9-z^2}$ is analytic on and everywhere inside $C$. By CIF (Thm 18.7):
-%%%%%%
-$\int_C \frac{f(z)}{z+i} dz = 2\pi i f(-i) = 2\pi i \frac{-i}{-i-2} = 2\pi i \frac{-i}{-3} = \frac{\pi}{5}$.
+    Sol: Note: $f(z) = \frac{z}{(9-z^2)(z+i)}$ has simple poles at $z = -i, \pm 3$ (\verifythis) and only $z = -i$ is enclosed by $C$. Therefore:
+    \begin{equation*}
+        \oint_C \frac{z}{(9-z^2)(z+i)} dz = \oint_C \frac{f(z)}{z+i} dz,
+    \end{equation*}
+    where $f(z) = \frac{z}{9-z^2}$ is analytic on and everywhere inside $C$. By CIF (Thm 18.7):
+    %%%%%%
+    $\int_C \frac{f(z)}{z+i} dz = 2\pi i f(-i) = 2\pi i \frac{-i}{-i-2} = 2\pi i \frac{-i}{-3} = \frac{\pi}{5}$.
+\end{soln}
 
 As this example suggests, there is a connection between the singularities of a given complex function $f(z)$ and the value of the contour integral for a given contour. In fact, there is an even stronger statement that one can make, relating the integral to the Laurent series expansion of $f$. We will not see it here.
 
-\begin{example} 20.3:} Compute $\int_C \frac{z^2 + 1}{z^2 + 2z - 3} dz$, where
+\begin{example} \label{example:20.3} Compute $\int_C \frac{z^2 + 1}{z^2 + 2z - 3} dz$, where
 a) $C_1 = \{z \in \mathbb{C}: |z| = 2\}$
 b) $C_2 = \{z \in \mathbb{C}: |z + 2 + 3i| = 4\}$
 c) $C_3 = \{z \in \mathbb{C}: |z + 1| = 1\}$
@@ -136,50 +142,48 @@ Now we are going to formulate and sketch a proof of another consequence of Cauch
 Recall (Def 16.2): The coefficient $b_1$ of the term $\frac{1}{z-z_0}$ is called the residue of the singularity at $z=z_0$, denoted by $\text{Res}(f, z_0)$. We have seen the definition and examples on week 8!
 
 Now we are going to see how to compute integrals using only the values of the function at singularities - the residues.
-
-Thm 19.1 (Residue Theorem) Let $f$ be analytic on and inside a simple, closed, positively oriented contour $C$, except at a finite number of points $z_1, \dots, z_n$ inside $C$. Then
+\begin{theorem}[Residue Theorem]
+Thm 19.1  Let $f$ be analytic on and inside a simple, closed, positively oriented contour $C$, except at a finite number of isolated singularities $z_1, \dots, z_n$ inside $C$. Then
 \[
 \int_C f(z) dz = 2\pi i \sum_{k=1}^n \text{Res}(f, z_k)
 \]
-
-
-(164)
-
-number of isolated singularities $z_1, \dots, z_n$ all inside $C$. Then,
-\[
-\int_C f(z) dz = 2\pi i \sum_{k=1}^n \text{Res}(f, z_k)
-\]
-
-Pf: We shall sketch the proof of the case where $z_1, \dots, z_n$ are simple poles or removable singularities.
-
-Draw small positively oriented circles $C_k$ around the singularities $z_k$ such that they all inside $C$ and they are disjoint - choose radius small enough, so it is possible.
-
-By extended Deformation Principle (Cor 18.6):
-\[
-\int_C f(z) dz = \sum_{k=1}^n \int_{C_k} f(z) dz
-\]
-
-If $z_k$ is a removable singularity: By definition, $f$ can be extended to an analytic function everywhere inside $C_k$, thus by Cauchy's Theorem $\int_{C_k} f(z) dz = 0$. But in this case $\text{Res}(f, z_k) = 0$ as well.
-
-If $z_k$ is a simple pole, then by Prop 16.2 ($m=1$) $f(z) = \frac{\varphi(z)}{z-z_k}$ where $\varphi(z)$ is analytic at $z_k$, therefore by CIF (Thm 18.7)
-\[
-\int_{C_k} f(z) dz = \int_{C_k} \frac{\varphi(z)}{z-z_k} dz = 2\pi i \varphi(z_k)
-\]
-
-But by Prop 16.2 (for $m=1$) $\text{Res}(f, z_k) = \frac{\varphi(z_k)}{0!} = \varphi(z_k)$.
-
+\end{theorem}
+\begin{proof}
+We shall sketch the proof of the case where $z_1, \dots, z_n$ are simple poles or removable singularities.
+    
+    Draw small positively oriented circles $C_k$ around the singularities $z_k$ such that they all inside $C$ and they are disjoint - choose radius small enough, so it is possible.
+    
+    By extended Deformation Principle (Cor 18.6):
+    \[
+        \int_C f(z) dz = \sum_{k=1}^n \int_{C_k} f(z) dz
+        \]
+        
+        If $z_k$ is a removable singularity: By definition, $f$ can be extended to an analytic function everywhere inside $C_k$, thus by Cauchy's Theorem $\int_{C_k} f(z) dz = 0$. But in this case $\text{Res}(f, z_k) = 0$ as well.
+        
+        If $z_k$ is a simple pole, then by Prop 16.2 ($m=1$) $f(z) = \frac{\varphi(z)}{z-z_k}$ where $\varphi(z)$ is analytic at $z_k$, therefore by CIF (Thm 18.7)
+        \[
+            \int_{C_k} f(z) dz = \int_{C_k} \frac{\varphi(z)}{z-z_k} dz = 2\pi i \varphi(z_k)
+            \]
+            
+            But by Prop 16.2 (for $m=1$) $\text{Res}(f, z_k) = \frac{\varphi(z_k)}{0!} = \varphi(z_k)$.
+            
+        \end{proof}
 Now we can work out examples applying the Residue Theorem.
-
-Ex 21.1: Compute $\int_{|z|=1} \frac{\cos z}{z^5} dz$
-
-Sol: Consider the Laurent series:
-\[
-\frac{\cos z}{z^5} = \frac{1}{z^5} \left( 1 - \frac{z^2}{2!} + \frac{z^4}{4!} - \frac{z^6}{6!} + \dots \right) = \frac{1}{z^5} - \frac{1}{2! z^3} + \frac{1}{4! z} - \frac{z}{6!} + \dots
-\]
-\[
-\Rightarrow b_1 = \frac{1}{4!} = \frac{1}{24} \Rightarrow \int_{|z|=1} \frac{\cos z}{z^5} dz = 2\pi i \frac{1}{4!} = \frac{\pi i}{12}
-\]
-
+\begin{example}
+    
+    Ex 21.1: Compute $\int_{|z|=1} \frac{\cos z}{z^5} dz$
+\end{example}
+\begin{soln}
+    
+    Sol: Consider the Laurent series:
+    \[
+        \frac{\cos z}{z^5} = \frac{1}{z^5} \left( 1 - \frac{z^2}{2!} + \frac{z^4}{4!} - \frac{z^6}{6!} + \dots \right) = \frac{1}{z^5} - \frac{1}{2! z^3} + \frac{1}{4! z} - \frac{z}{6!} + \dots
+        \]
+        \[
+            \Rightarrow b_1 = \frac{1}{4!} = \frac{1}{24} \Rightarrow \int_{|z|=1} \frac{\cos z}{z^5} dz = 2\pi i \frac{1}{4!} = \frac{\pi i}{12}
+            \]
+            
+        \end{soln}
 Note: the singularity is $z=0$ that is a pole of order 4, and it is inside the disc $\{z \in \mathbb{C}: |z| \le 1\}$. Thus, the Residue Theorem is applicable.
 
 Recall how we compute the residue of the poles. Start with the case of a simple pole.
@@ -271,38 +275,56 @@ $z=1$: By Prop 16.2 $f(z) = \frac{\varphi(z)}{z-1}$ where $\varphi(z) = \frac{z+
 \]
 
 Now we state (and prove some of) a collection of surprising and powerful consequences of Cauchy's Theorem.
+\begin{theorem}[Gauss's Mean Value Theorem]
+    Thm 20.1  Let $f$ be analytic on and inside a circle of radius $R$, centered at $z_0$. Then, $f(z_0)$ is the mean value of $f$ on $C$, that is
+    \[
+        f(z_0) = \frac{1}{2\pi} \int_0^{2\pi} f(z_0 + Re^{i\theta}) d\theta
+    \]
+\end{theorem}
 
-Thm 20.1 (Gauss's Mean Value Theorem) Let $f$ be analytic on and inside a circle of radius $R$, centered at $z_0$. Then, $f(z_0)$ is the mean value of $f$ on $C$, that is
-\[
-f(z_0) = \frac{1}{2\pi} \int_0^{2\pi} f(z_0 + Re^{i\theta}) d\theta
-\]
-
-Pf: Parametrize the contour $C$ by: $\gamma(\theta) = z_0 + Re^{i\theta}$, $0 \le \theta \le 2\pi$. By the CIF and the definition of the contour integral (Def 17.7)
-\[
-f(z_0) = \frac{1}{2\pi i} \int_C \frac{f(z)}{z-z_0} dz = \frac{1}{2\pi i} \int_0^{2\pi} \frac{f(z_0 + Re^{i\theta})}{Re^{i\theta}} Re^{i\theta} i d\theta = \frac{1}{2\pi} \int_0^{2\pi} f(z_0 + Re^{i\theta}) d\theta
-\]
-
+\begin{proof}
+   
+     Parametrize the contour $C$ by: $\gamma(\theta) = z_0 + Re^{i\theta}$, $0 \le \theta \le 2\pi$. By the CIF and the definition of the contour integral (Def 17.7)
+        \[
+            f(z_0) = \frac{1}{2\pi i} \int_C \frac{f(z)}{z-z_0} dz = \frac{1}{2\pi i} \int_0^{2\pi} \frac{f(z_0 + Re^{i\theta})}{Re^{i\theta}} Re^{i\theta} i d\theta = \frac{1}{2\pi} \int_0^{2\pi} f(z_0 + Re^{i\theta}) d\theta
+            \]
+        \end{proof}
+            
 From this theorem follows that either $|f(z)| > |f(z_0)|$ for some $z$ on $C$ or $|f(z)| = |f(z_0)|$ for all $z$ on $C$, in which case
 
 (167)
 
 One can deduce: we can show that $f$ must be a constant function (EXERCISE).
+\begin{theorem}[Maximum Modulus Principle]
+    
+    Thm 20.2  Let $\Omega$ be a bounded region. Let $f$ be a continuous function on $\Omega$ and on the boundary of $\partial \Omega$. Let $f$ be analytic on $\Omega$. Then, either $f$ is constant or else the maximum of $|f(z)|$ can only be attained on the boundary $\partial \Omega$ of $\Omega$. That is, there exists $z_0 \in \partial \Omega$ such that $|f(z_0)| = M = \sup \{|f(z)|: z \in \Omega \cup \partial \Omega\}$ and $|f(z)| < M$ for all $z \in \Omega$.
+\end{theorem}
 
-Thm 20.2 (Maximum Modulus Principle) Let $\Omega$ be a bounded region. Let $f$ be a continuous function on $\Omega$ and on the boundary of $\partial \Omega$. Let $f$ be analytic on $\Omega$. Then, either $f$ is constant or else the maximum of $|f(z)|$ can only be attained on the boundary $\partial \Omega$ of $\Omega$. That is, there exists $z_0 \in \partial \Omega$ such that $|f(z_0)| = M = \sup \{|f(z)|: z \in \Omega \cup \partial \Omega\}$ and $|f(z)| < M$ for all $z \in \Omega$.
+\begin{remark}
+    The Maximum Principal is false for unbounded regions.
+\end{remark}
+\begin{example}
+    
+    Ex 22.1: Let $\Omega = \{x+iy: -\frac{\pi}{2} < y < \frac{\pi}{2}\}$, let $f(z) = e^{e^z}$.
+    
+    Then, for $x \in \mathbb{R}$ we have
+    \[
+        f(x \pm \frac{\pi}{2}i) = e^{\pm ie^x} \Rightarrow |f(z)| = 1 \text{ for } z \in \Omega.
+        \]
+        However: $f(x) = e^{e^x} \to \infty$ on the real axis ($y=0$) that is contained in $\Omega$.
+        
+\end{example}
 
-Rmk: The Maximum Principal is false for unbounded regions.
-
-Ex 22.1: Let $\Omega = \{x+iy: -\frac{\pi}{2} < y < \frac{\pi}{2}\}$, let $f(z) = e^{e^z}$.
-
-Then, for $x \in \mathbb{R}$ we have
-\[
-f(x \pm \frac{\pi}{2}i) = e^{\pm ie^x} \Rightarrow |f(z)| = 1 \text{ for } z \in \Omega.
-\]
-However: $f(x) = e^{e^x} \to \infty$ on the real axis ($y=0$) that is contained in $\Omega$.
-
-Ex 22.2: Obtain an estimate on the absolute value of the $n$-th derivative of an analytic function $f$ in the disc $|z-z_0| \le R$.
-
-Sol: By the Maximum Modulus Principle $\max |f(z)|$ is attained on the circle $|z-z_0| = R$ (depends only on $R$). Denote $\max |f(z)| = MR$. To estimate $|f^{(n)}(z_0)|$ we use Cor 18.6 (extended CIF) and Prop 17.5 (ML inequality):
-\[
-|f^{(n)}(z_0)| = \left| \frac{n!}{2\pi i} \int_{|z-z_0|=R} \frac{f(z)}{(z-z_0)^{n+1}} dz \right| \le \frac{n!}{2\pi} \frac{MR}{R^{n+1}} 2\pi R = \frac{n! MR}{R^n}
-\]
+\begin{example}
+    
+    Ex 22.2: Obtain an estimate on the absolute value of the $n$-th derivative of an analytic function $f$ in the disc $|z-z_0| \le R$.
+    
+    \begin{soln}
+    
+        Sol: By the Maximum Modulus Principle $\max |f(z)|$ is attained on the circle $|z-z_0| = R$ (depends only on $R$). Denote $\max |f(z)| = MR$. To estimate $|f^{(n)}(z_0)|$ we use Cor 18.6 (extended CIF) and Prop 17.5 (ML inequality):
+        \[
+            |f^{(n)}(z_0)| = \left| \frac{n!}{2\pi i} \int_{|z-z_0|=R} \frac{f(z)}{(z-z_0)^{n+1}} dz \right| \le \frac{n!}{2\pi} \frac{MR}{R^{n+1}} 2\pi R = \frac{n! MR}{R^n}
+            \]
+        \end{soln}
+        
+    \end{example}
