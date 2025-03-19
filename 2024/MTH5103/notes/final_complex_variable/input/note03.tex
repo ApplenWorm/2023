@@ -21,15 +21,16 @@ We extend the definition of limit to include the point at $\infty$:
     We say that $\lim_{z \to \infty} f(z) = \infty$ if for any $R > 0$ there exists $S = S(R) > 0$ such that if $|z| > S$, then $|f(z)| > R$.
 \end{definition}
 
-\begin{example}5.5 Prove that 
+\begin{example}\label{example:5.5} Prove that 
     \begin{enumerate}[label=\alph*)] 
         \item $\lim_{z \to i} z - i = \infty$ 
         \item $\lim_{z \to \infty} \frac{1}{z} = 0$.
     \end{enumerate}
 
 \begin{soln} 
-    \begin{enumerate}[label=\alph*)] \item By Def 3.3 we need to find $\delta = \delta(R) > 0$ for a given $R > 0$: If $\left|\frac{1}{z-i}\right| > R$, then $|z - i| < \frac{1}{R}$, thus the choice $\delta = \frac{1}{R}$ finishes the proof.
-\item By Def 3.2 we need to find $R > 0$ for a given $\epsilon > 0$. If $\left|\frac{1}{z} - 0\right| = \frac{1}{|z|} < \epsilon$, then $|z| > \frac{1}{\epsilon}$, choose $R = \frac{1}{\epsilon}$ and finish.
+    \begin{enumerate}[label=\alph*)] 
+        \item By Def 3.3 (\ref{definition:3.3})  we need to find $\delta = \delta(R) > 0$ for a given $R > 0$: If $\left|\frac{1}{z-i}\right| > R$, then $|z - i| < \frac{1}{R}$, thus the choice $\delta = \frac{1}{R}$ finishes the proof.
+\item By Def 3.2 (\ref{definition:3.2}) we need to find $R > 0$ for a given $\epsilon > 0$. If $\left|\frac{1}{z} - 0\right| = \frac{1}{|z|} < \epsilon$, then $|z| > \frac{1}{\epsilon}$, choose $R = \frac{1}{\epsilon}$ and finish.
     \end{enumerate}
 \end{soln}
 \end{example}
@@ -37,7 +38,7 @@ We extend the definition of limit to include the point at $\infty$:
 \begin{example} \label{example:5.6}
      Prove that $\lim_{z \to \infty} \frac{z^2 + 1}{z + 2i} = \infty$.
 \end{example}
-\begin{soln}  By Def 3.4 we need to find $S = S(R) > 0$ for a given $R > 0$. If $\left|\frac{z^2 + 1}{z + 2i}\right| > R$, then
+\begin{soln}  By Def 3.4 (\ref{definition:3.4}) we need to find $S = S(R) > 0$ for a given $R > 0$. If $\left|\frac{z^2 + 1}{z + 2i}\right| > R$, then
 \[ \left|\frac{z^2 + 1}{z + 2i}\right| = \left|\frac{z^2(1 + \frac{1}{z^2})}{z(1 + \frac{2i}{z})}\right| = |z| \left|\frac{1 + \frac{1}{z^2}}{1 + \frac{2i}{z}}\right| > R \]
 Let us show that $\left|\frac{1 + \frac{1}{z^2}}{1 + \frac{2i}{z}}\right| < 2$, then
 \[ \left|1 + \frac{2i}{z}\right| \geq \left|1 - \left|\frac{2i}{z}\right|\right| = \left|1 - \frac{2}{|z|}\right| \geq \left|1 - 2\right| = 1 \]
@@ -47,9 +48,9 @@ triangle inequality.
 
 Thus (2) $\left|1 + \frac{1}{z^2}\right| < 1$ and we get
 \[ \left|\frac{1 + \frac{1}{z^2}}{1 + \frac{2i}{z}}\right| = \frac{\left|1 + \frac{1}{z^2}\right|}{\left|1 + \frac{2i}{z}\right|} < \frac{2}{1} = 2 \]
-Alternatively: By Prop 3.1 2)
+Alternatively: By Prop 3.1 (\ref{proposition:3.1}) 2)
 \[ \lim_{z \to \infty} \left|\frac{z^2 + 1}{z + 2i}\right| = \lim_{z \to \infty} |z| \left|1 + \frac{1}{z^2}\right| \left|\frac{1}{1 + \frac{2i}{z}}\right| = \lim_{z \to \infty} |z| \lim_{z \to \infty} \left|1 + \frac{1}{z^2}\right| \lim_{z \to \infty} \left|\frac{1}{1 + \frac{2i}{z}}\right| \]
-By example 5.5 b): $\lim_{z \to \infty} \frac{1}{z} = 0 \implies \lim_{z \to \infty} 1 + \frac{1}{z^2} = 1, \lim_{z \to \infty} \frac{1}{1 + \frac{2i}{z}} = 1 \implies \lim_{z \to \infty} \frac{z^2 + 1}{z + 2i} = \infty$.
+By example 5.5 (\ref{example:5.5}) b): $\lim_{z \to \infty} \frac{1}{z} = 0 \implies \lim_{z \to \infty} 1 + \frac{1}{z^2} = 1, \lim_{z \to \infty} \frac{1}{1 + \frac{2i}{z}} = 1 \implies \lim_{z \to \infty} \frac{z^2 + 1}{z + 2i} = \infty$.
 \end{soln}
 
 Our next subject is continuity of complex functions. First, we need several definitions of sets in the complex plane.
@@ -167,7 +168,7 @@ In practice, one of the best ways of dealing with "$\infty$" in limits is to use
 \begin{example}\label{example:7.4} 
     Is $\frac{z^3 + 8i}{z + 2i}$ continuous at $z = 2i$?
 
-\begin{soln}  Since $2i + 1 \neq 0$, by Prop 5.1: \[ \lim_{z \to 2i} \frac{z^3 + 8i}{z + 2i} = \frac{\lim_{z \to 2i} (z^3 + 8i)}{\lim_{z \to 2i} z + 1} = \frac{(8i^3 + 8i)}{2i + 1} = \frac{-8i + 8i}{2i + 1} = 0, \] which $\implies$ continuous. The function is defined at $z = 2i$ and in a neighborhood of $z = 2i$, the limit exists and equal to the value of the function $\implies$ the function is continuous at $z = 2i$.
+\begin{soln}  Since $2i + 1 \neq 0$, by Prop 5.1(\ref{proposition:5.1}): \[ \lim_{z \to 2i} \frac{z^3 + 8i}{z + 2i} = \frac{\lim_{z \to 2i} (z^3 + 8i)}{\lim_{z \to 2i} z + 1} = \frac{(8i^3 + 8i)}{2i + 1} = \frac{-8i + 8i}{2i + 1} = 0, \] which $\implies$ continuous. The function is defined at $z = 2i$ and in a neighborhood of $z = 2i$, the limit exists and equal to the value of the function $\implies$ the function is continuous at $z = 2i$.
 \end{soln}
 
 \end{example}

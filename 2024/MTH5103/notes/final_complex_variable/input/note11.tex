@@ -12,12 +12,12 @@ We continue with consequences of Cauchy's Theorem. The first one is the Liouvill
         \]
     \end{proposition}
 \begin{proof}
-From the extended Cauchy Integral Formula (Cor 18.9):
+From the extended Cauchy Integral Formula (Cor 18.9(\ref{corollary:18.9})):
 \[
         f^{(n)}(z_0) = \frac{n!}{2\pi i} \int_C \frac{f(z)}{(z-z_0)^{n+1}} dz
   \]
         
-        Thus, by ML inequality (Prop 17.5)
+        Thus, by ML inequality (Prop 17.5(\ref{proposition:17.5}))
         \[
             |f^{(n)}(z_0)| \le \left| \frac{n!}{2\pi i} \right| \frac{M}{R^{n+1}} 2\pi R = \frac{n! M}{R^n}
   \]
@@ -116,43 +116,53 @@ The integral now is of the form
 
 The last integral is well within what contour integrals are about and we might be able to evaluate it with the aid of the Residue Theorem. Let us see an example.
 
-Ex 23.1: Prove that $\int_0^{2\pi} \frac{\cos 3t}{5-4 \cos t} dt = \frac{\pi}{12}$.
-
-Sol: Let us make substitutions as in (*) and get:
-\[
-\int_0^{2\pi} \frac{\cos 3t}{5-4 \cos t} dt = \int_{|z|=1} \frac{\frac{1}{2} (z^3 + \frac{1}{z^3})}{5-4 \frac{1}{2} (z + \frac{1}{z})} \frac{dz}{iz} = \frac{1}{2i} \int_{|z|=1} \frac{z^6 + 1}{z^3 (5z - 2(z^2 + 1))} dz
-\]
-\[
-= \frac{1}{2i} \int_{|z|=1} \frac{z^6 + 1}{z^3 (-2z^2 + 5z - 2)} dz = -\frac{1}{2i} \int_{|z|=1} \frac{z^6 + 1}{z^3 (2z - 1) (z - 2)} dz
-\]
-
-The integrand has singularities at $z=0$, $\frac{1}{2}$, and $2$, but $z=2$ is outside of $|z| \le 1$, thus does not contribute to the value of the integral. 
+\begin{example}\label{example:23.1}
+    
+    
+    Ex 23.1: Prove that $\int_0^{2\pi} \frac{\cos 3t}{5-4 \cos t} dt = \frac{\pi}{12}$.
+\end{example}
+\begin{soln}
+    
+    Sol: Let us make substitutions as in (*) and get:
+    \[
+        \int_0^{2\pi} \frac{\cos 3t}{5-4 \cos t} dt = \int_{|z|=1} \frac{\frac{1}{2} (z^3 + \frac{1}{z^3})}{5-4 \frac{1}{2} (z + \frac{1}{z})} \frac{dz}{iz} = \frac{1}{2i} \int_{|z|=1} \frac{z^6 + 1}{z^3 (5z - 2(z^2 + 1))} dz
+        \]
+        \[
+            = \frac{1}{2i} \int_{|z|=1} \frac{z^6 + 1}{z^3 (-2z^2 + 5z - 2)} dz = -\frac{1}{2i} \int_{|z|=1} \frac{z^6 + 1}{z^3 (2z - 1) (z - 2)} dz
+            \]
+            
+            The integrand has singularities at $z=0$, $\frac{1}{2}$, and $2$, but $z=2$ is outside of $|z| \le 1$, thus does not contribute to the value of the integral. 
 Thus, we need to worry only about $z_0 = 0$, $z_1 = \frac{1}{2}$. It is clear that $z_0 = 0$ is a pole of order 3 (Why?) and $z_1 = \frac{1}{2}$ is a simple pole (Why?). 
 Thus, by the Residue Theorem
 \[
 \int_0^{2\pi} \frac{\cos 3t}{5-4 \cos t} dt = 2\pi i \left[ \text{Res} \left( \frac{z^6 + 1}{z^3 (2z - 1) (z - 2)}, 0 \right) + \text{Res} \left( f(z), \frac{1}{2} \right) \right]
 \]
 
-$\text{Res} \left( f(z), \frac{1}{2} \right)$ is of the form $\frac{p(\frac{1}{2})}{q'(\frac{1}{2})}$ with $p(\frac{1}{2}) = 2^{-6} + 1$ and $q(z) = z^3 (2z - 1) (z - 2)$, $q'(z) = 10z^4 - 20z^3 + 6z^2$. By Cor 16.5, since $q'(\frac{1}{2}) = -\frac{3}{4}$,
+$\text{Res} \left( f(z), \frac{1}{2} \right)$ is of the form $\frac{p(\frac{1}{2})}{q'(\frac{1}{2})}$ with $p(\frac{1}{2}) = 2^{-6} + 1$ and $q(z) = z^3 (2z - 1) (z - 2)$, $q'(z) = 10z^4 - 20z^3 + 6z^2$. 
+By Cor 16.5(\ref{corollary:16.5}), since $q'(\frac{1}{2}) = -\frac{3}{4}$,
 \[
 \text{Res} \left( \frac{z^6 + 1}{z^3 (2z - 1) (z - 2)}, \frac{1}{2} \right) = \frac{p(\frac{1}{2})}{q'(\frac{1}{2})} = \frac{\frac{65}{64}}{-\frac{3}{4}} = -\frac{65}{48}
 \]
 
-$z_0 = 0$: By Prop 16.2 for $\varphi(z) = \frac{z^6 + 1}{2z^2 - 5z + 2}$: $\text{Res} (f, 0) = \frac{\varphi''(0)}{2!} = \frac{21}{8}$
+$z_0 = 0$: By Prop 16.2(\ref{proposition:16.2}) for $\varphi(z) = \frac{z^6 + 1}{2z^2 - 5z + 2}$: $\text{Res} (f, 0) = \frac{\varphi''(0)}{2!} = \frac{21}{8}$
 \[
--\frac{1}{2i} \int_{|z|=1} \frac{z^6 + 1}{z^3 (2z - 1) (z - 2)} dz = -\frac{1}{2i} 2\pi i \left( \frac{21}{8} - \frac{65}{48} \right) = \pi \frac{63 - 65}{24} = -\frac{\pi}{12}
-\]
-
-Ex 23.2: Compute $\int_0^{\pi} \frac{dt}{(2 + \cos^2 t)^2}$.
-
-Sol: Since the integration is on $[0, \pi]$ we cannot use directly the formula. The function $\frac{1}{(2 + \cos^2 t)^2}$ is even, thus
-\[
-\int_0^{\pi} \frac{dt}{(2 + \cos^2 t)^2} = \frac{1}{2} \int_{-\pi}^{\pi} \frac{dt}{(2 + \cos^2 t)^2}
-\]
+    -\frac{1}{2i} \int_{|z|=1} \frac{z^6 + 1}{z^3 (2z - 1) (z - 2)} dz = -\frac{1}{2i} 2\pi i \left( \frac{21}{8} - \frac{65}{48} \right) = \pi \frac{63 - 65}{24} = -\frac{\pi}{12}
+    \]
+    
+\end{soln}
+\begin{example}\label{example:23.2}
+    
+    Ex 23.2: Compute $\int_0^{\pi} \frac{dt}{(2 + \cos^2 t)^2}$.
+\end{example}
+    \begin{soln}
+        Sol: Since the integration is on $[0, \pi]$ we cannot use directly the formula. The function $\frac{1}{(2 + \cos^2 t)^2}$ is even, thus
+        \[
+        \int_0^{\pi} \frac{dt}{(2 + \cos^2 t)^2} = \frac{1}{2} \int_{-\pi}^{\pi} \frac{dt}{(2 + \cos^2 t)^2}
+        \]
 
 To use the formula we expand the domain of integration to the interval $[-\pi, \pi]$: substitute $2t = \varphi$, $2dt = d\varphi$, and get
 
-(181)
+% (181)
 
 \[
 \int_0^{\pi} \frac{dt}{(2 + \cos^2 t)^2} = \frac{1}{4} \int_{-\pi}^{\pi} \frac{d\Psi}{(2 + \cos^2 \frac{\Psi}{2})^2} = \frac{1}{4} \int_{-\pi}^{\pi} \frac{d\Psi}{(2 + \frac{1}{2} (\cos \Psi + 1))^2}
@@ -179,13 +189,17 @@ The function $f(z) = \frac{z}{(z^2 + 10z + 1)^2}$ has 2 poles: $z_{1,2} = -5 \pm
 \text{Res} \left( f, -5 + \sqrt{24} \right) = \frac{\varphi'(-5 + \sqrt{24})}{1!} = \frac{z_1 + z_2}{(z_1 - z_2)^3} = \frac{5}{192 \sqrt{6}}
 \]
 \[
-\Rightarrow \int_0^{\pi} \frac{dt}{(2 + \cos^2 t)^2} = 2\pi i \text{Res} \left( f, -5 + \sqrt{24} \right) = -4i \cdot 2\pi i \cdot \frac{5}{192 \sqrt{6}} = \frac{5\pi}{24 \sqrt{6}}
-\]
-
-EXERCISE: 1) Prove that $\int_0^{2\pi} \frac{\sin^2 t}{5 - 4 \cos t} dt = \frac{\pi}{4}$
-
-2) Compute $\int_0^{\frac{\pi}{2}} \frac{dt}{(4 + \sin^2 t)^2}$
-
+    \Rightarrow \int_0^{\pi} \frac{dt}{(2 + \cos^2 t)^2} = 2\pi i \text{Res} \left( f, -5 + \sqrt{24} \right) = -4i \cdot 2\pi i \cdot \frac{5}{192 \sqrt{6}} = \frac{5\pi}{24 \sqrt{6}}
+    \]
+    
+\end{soln}
+\begin{exercise}
+    
+    EXERCISE: 1) Prove that $\int_0^{2\pi} \frac{\sin^2 t}{5 - 4 \cos t} dt = \frac{\pi}{4}$
+    
+    2) Compute $\int_0^{\frac{\pi}{2}} \frac{dt}{(4 + \sin^2 t)^2}$
+    
+\end{exercise}
 (182)
 
 % \begin{center}

@@ -59,17 +59,17 @@ Namely, the \emphi{tail} of the series converges to 0.
 From Def 11.1 we immediately conclude:
 \begin{proposition}\label{proposition:11.1} If $\sum_{n=0}^{\infty} z_n$ converges, then $\lim_{n \to \infty} z_n = 0$.
 \begin{proof}
-    By Def 11.1: If $\sum_{n=0}^{\infty} z_n = S$, then $\lim_{N \to \infty} S_N = \lim_{N \to \infty} \sum_{n=0}^{N} z_n = S$. On the other hand: $S_N - S_{N-1} = (z_0 + z_1 + \dots + z_N) - (z_0 + z_1 + \dots + z_{N-1}) = z_N$
-    $\implies \lim_{N \to \infty} z_N = \lim_{N \to \infty} (S_N - S_{N-1}) = \lim_{N \to \infty} S_N - \lim_{N \to \infty} S_{N-1} = S - S = 0$ by Prop 10.1. $s$ is unique.
+    By Def 11.1(\ref{definition:11.1}): If $\sum_{n=0}^{\infty} z_n = S$, then $\lim_{N \to \infty} S_N = \lim_{N \to \infty} \sum_{n=0}^{N} z_n = S$. On the other hand: $S_N - S_{N-1} = (z_0 + z_1 + \dots + z_N) - (z_0 + z_1 + \dots + z_{N-1}) = z_N$
+    $\implies \lim_{N \to \infty} z_N = \lim_{N \to \infty} (S_N - S_{N-1}) = \lim_{N \to \infty} S_N - \lim_{N \to \infty} S_{N-1} = S - S = 0$ by Prop 10.1(\ref{proposition:10.1}). $s$ is unique.
 \end{proof}
 \end{proposition}
 The contrapositive statement is often called the Test for Divergence.
 
-\begin{proposition}\label{proposition:11.2} (Test for Divergence) Let $\{z_n\}_{n=0}^{\infty} \in \mathbb{C}$. If $\lim_{n \to \infty} z_n \neq 0$ (or does not exist), then the series $\sum_{n=0}^{\infty} z_n$ diverges.
+\begin{proposition}[Test for Divergence]\label{proposition:11.2} (Test for Divergence) Let $\{z_n\}_{n=0}^{\infty} \in \mathbb{C}$. If $\lim_{n \to \infty} z_n \neq 0$ (or does not exist), then the series $\sum_{n=0}^{\infty} z_n$ diverges.
 \end{proposition}
 
 \begin{remark}
-The converse of Prop 11.2 is false: $\lim_{n \to \infty} \frac{1}{n} = 0$, but the series $\sum_{n=1}^{\infty} \frac{1}{n}$ diverges!
+The converse of Prop 11.2(\ref{proposition:11.2}) is false: $\lim_{n \to \infty} \frac{1}{n} = 0$, but the series $\sum_{n=1}^{\infty} \frac{1}{n}$ diverges!
 \end{remark}
 As expected there is an immediate relation between convergence or divergence of complex sequences and series to that of real ones.
 
@@ -144,7 +144,9 @@ The absolute convergence *however* always implies convergence:
 
 \begin{proposition}\label{proposition:11.6} If $\sum_{n=0}^{\infty} |z_n|$ converges, then $\sum_{n=0}^{\infty} z_n$ converges.
 \begin{proof}
-    We have $|z_n| = \sqrt{x_n^2 + y_n^2} \geq |x_n|, |y_n|$, therefore using the Comparison test for positive (real) series we get that $\sum_{n=0}^{\infty} |x_n|$ and $\sum_{n=0}^{\infty} |y_n|$ converge $\implies$ (by analogous statement for real series) $\sum_{n=0}^{\infty} x_n$ and $\sum_{n=0}^{\infty} y_n$ converge. Thus, by Prop 11.3 2) $\sum_{n=0}^{\infty} z_n$ converges.
+    We have $|z_n| = \sqrt{x_n^2 + y_n^2} \geq |x_n|, |y_n|$, therefore using the Comparison test for positive (real) series we get that $\sum_{n=0}^{\infty} |x_n|$ 
+    and $\sum_{n=0}^{\infty} |y_n|$ converge $\implies$ (by analogous statement for real series) $\sum_{n=0}^{\infty} x_n$ and $\sum_{n=0}^{\infty} y_n$ converge. 
+    Thus, by Prop 11.3(\ref{proposition:11.3}) 2) $\sum_{n=0}^{\infty} z_n$ converges.
 \end{proof}
 \end{proposition}
 

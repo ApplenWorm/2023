@@ -233,9 +233,10 @@ Note that $\lvert z\rvert^2 \in \mathbb{R}$, $\lvert z+1 \rvert ^2  \in \mathbb{
 % \section{Week 2: Lectures 2+3}
 \lecture{2+3}{Geometry in Complex Numbers. WO00o0W.}
 
-\section{Geometric Representation of Complex Numbers. Modulus and Argument. Polar Form}
+\section{Geometric Representation of Complex Numbers}
+% Modulus and Argument. Polar Form}
 
-% \subsection{Modulus and Argument. Polar Form}
+\subsection{Modulus and Argument. Polar Form}
 
 Any complex number $z = a + ib$ can be numerically described as a point in the plane with the coordinates $(a, b)$ or as a vector that starts at the origin $(0, 0)$ and ends at the point $(a, b)$.
 $iy$ $\Im z$ Imaginary axis
@@ -335,7 +336,7 @@ In particular, if $c=2\pi$, then $a\equiv b(\text{mod } 2\pi)$ means that there 
  \end{remark}
 We have already studied some of the properties of the modulus in proposition 1.2.
 
-\begin{proposition}
+\begin{proposition}\label{proposition:1.2.5}
 For any $z_1, z_2 \in \mathbb{C} (z_2\neq 0)$.
 \begin{enumerate}
     \item $\lvert \bar{z}\rvert =\lvert z\rvert$
@@ -402,7 +403,7 @@ $\sin 3\alpha = 3\cos^2\alpha\sin\alpha - \sin^3\alpha$
 Define $\frac{1}{z}$ geometrically.
 
 \begin{soln}  Let us compute the modulus and the argument.
-By proposition 1.2.5 part 3): $\lvert \frac{1}{z}\rvert = \frac{1}{\lvert z\rvert}$ and since $z\cdot \frac{1}{z} = 1$
+By proposition 1.2.5(\ref{proposition:1.2.5}) part 3): $\lvert \frac{1}{z}\rvert = \frac{1}{\lvert z\rvert}$ and since $z\cdot \frac{1}{z} = 1$
 $0 = \arg 1 = \arg(z\cdot \frac{1}{z}) = \arg z + \arg \frac{1}{z} \implies \arg \frac{1}{z} = -\arg z$
 \end{soln}
 \end{example}
