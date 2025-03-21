@@ -18,10 +18,10 @@
 \contentsline {section}{\numberline {16}Taylor and Laurent series}{62}{section.16}%
 \contentsline {section}{\numberline {17}Laurent series}{65}{section.17}%
 \contentsline {section}{\numberline {18}Transformations and Mob(rph)eus}{68}{section.18}%
-\contentsline {section}{\numberline {19}Function $\ln z$}{73}{section.19}%
-\contentsline {section}{\numberline {20}Three types of isolated singularities.}{77}{section.20}%
-\contentsline {subsection}{\numberline {20.1}Zeros and Poles}{83}{subsection.20.1}%
-\contentsline {section}{\numberline {21}Complex integration.}{87}{section.21}%
-\contentsline {subsection}{\numberline {21.1}Contour Integrals}{90}{subsection.21.1}%
-\contentsline {section}{\numberline {22}Cauchy's Theorem}{95}{section.22}%
-\contentsline {section}{\numberline {23}Implications of Cuachy's Theorems}{108}{section.23}%
+\contentsline {section}{\numberline {19}Function $\ln z$}{72}{section.19}%
+\contentsline {section}{\numberline {20}Three types of isolated singularities.}{76}{section.20}%
+\contentsline {subsection}{\numberline {20.1}Zeros and Poles}{82}{subsection.20.1}%
+\contentsline {section}{\numberline {21}Complex integration.}{86}{section.21}%
+\contentsline {subsection}{\numberline {21.1}Contour Integrals}{89}{subsection.21.1}%
+\contentsline {section}{\numberline {22}Cauchy's Theorem}{94}{section.22}%
+\contentsline {section}{\numberline {23}Implications of Cuachy's Theorems}{107}{section.23}%

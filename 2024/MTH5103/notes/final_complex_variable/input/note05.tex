@@ -1,3 +1,33 @@
+%\usepackage{xr}
+
+% \externaldocument{note01}
+% \externaldocument{note02}
+% \externaldocument{note03}
+% \externaldocument{note04}
+% \externaldocument{note05}
+% \externaldocument{note06}
+% \externaldocument{note07}
+% \externaldocument{note08}
+% \externaldocument{note09}
+% \externaldocument{note10}
+% \externaldocument{note11}
+
+
+\zexternaldocument{note01}
+\zexternaldocument{note02}
+\zexternaldocument{note03}
+\zexternaldocument{note04}
+\zexternaldocument{note05}
+\zexternaldocument{note06}
+\zexternaldocument{note07}
+\zexternaldocument{note08}
+\zexternaldocument{note09}
+\zexternaldocument{note10}
+\zexternaldocument{note11}
+% \externaldocument{note12}
+
+
+
 \week{5}
 % \section*{Week 5. Lecture 13.}
 \lecture{13}{Sequences in $\mathbb{C}$}
@@ -39,7 +69,7 @@ Important real sequence (limit): let $a_n = (1 + \frac{a}{n})^n$ for some $a$. T
 \begin{example}\label{example:12.4} $\lim_{n \to \infty} (1 + \frac{i}{n})^n = e^i, \quad \lim_{n \to \infty} (1 - \frac{i}{n})^n = \lim_{n \to \infty} (1 + \frac{-i}{n})^n = e^{-i} = \frac{1}{e^i}$.
 \end{example}
 
-\begin{proposition}\label{proposition:10.1} 
+\begin{proposition} \zlabel{proposition:10.1} 
     If the sequences $\{z_n\}, \{w_n\}$ of complex numbers converge, then so the sequences $\{z_n \pm w_n\}, \{z_n \cdot w_n\}$, 
     and if $w_n \neq 0$ also $\{\frac{z_n}{w_n}\}$, and 
     \[\lim_{n \to \infty} (z_n \pm w_n) = \lim_{n \to \infty} z_n \pm \lim_{n \to \infty} w_n; \quad \lim_{n \to \infty} z_n w_n = \lim_{n \to \infty} z_n \lim_{n \to \infty} w_n.\]
@@ -49,18 +79,20 @@ If $\lim_{n \to \infty} w_n \neq 0$, then: $\lim_{n \to \infty} \frac{z_n}{w_n} 
 
 \section{Complex (scalar) series.}
 
-\begin{definition}\label{definition:11.1} The complex (scalar) series $\sum_{n=1}^{\infty} z_n$ converges to the value $s \in \mathbb{C}$ if the sequence of partial sums $\{S_N\}_{N=0}^{\infty}, S_N = z_0 + z_1 + \dots + z_N$ converges to $s$. The value $s$ is called the sum of the series. If the limit does not exist (or $\infty$) ($\lim_{N \to \infty} S_N$) then the series diverges. If the series converges to some value $s$, then $s$ is unique.
+\begin{definition}\label{definition:11.1} 
+    The complex (scalar) series $\sum_{n=1}^{\infty} z_n$ converges to the value $s \in \mathbb{C}$ if the sequence of partial sums $\{S_N\}_{N=0}^{\infty}, S_N = z_0 + z_1 + \dots + z_N$ converges to $s$. 
+    The value $s$ is called the sum of the series. If the limit does not exist (or $\infty$) ($\lim_{N \to \infty} S_N$) then the series diverges. If the series converges to some value $s$, then $s$ is unique.
 \end{definition}
 
 \begin{remark}
 Furthermore: if $r_N = S - S_N = \sum_{n=N+1}^{\infty} z_n$, then it is possible to show that $\sum_{n=0}^{\infty} z_n = S \iff \lim_{N \to \infty} r_N = 0$. 
 Namely, the \emphi{tail} of the series converges to 0.
 \end{remark}
-From Def 11.1 we immediately conclude:
+From Def (\ref{definition:11.1}) we immediately conclude:
 \begin{proposition}\label{proposition:11.1} If $\sum_{n=0}^{\infty} z_n$ converges, then $\lim_{n \to \infty} z_n = 0$.
 \begin{proof}
-    By Def 11.1(\ref{definition:11.1}): If $\sum_{n=0}^{\infty} z_n = S$, then $\lim_{N \to \infty} S_N = \lim_{N \to \infty} \sum_{n=0}^{N} z_n = S$. On the other hand: $S_N - S_{N-1} = (z_0 + z_1 + \dots + z_N) - (z_0 + z_1 + \dots + z_{N-1}) = z_N$
-    $\implies \lim_{N \to \infty} z_N = \lim_{N \to \infty} (S_N - S_{N-1}) = \lim_{N \to \infty} S_N - \lim_{N \to \infty} S_{N-1} = S - S = 0$ by Prop 10.1(\ref{proposition:10.1}). $s$ is unique.
+    By Def (\ref{definition:11.1}): If $\sum_{n=0}^{\infty} z_n = S$, then $\lim_{N \to \infty} S_N = \lim_{N \to \infty} \sum_{n=0}^{N} z_n = S$. On the other hand: $S_N - S_{N-1} = (z_0 + z_1 + \dots + z_N) - (z_0 + z_1 + \dots + z_{N-1}) = z_N$
+    $\implies \lim_{N \to \infty} z_N = \lim_{N \to \infty} (S_N - S_{N-1}) = \lim_{N \to \infty} S_N - \lim_{N \to \infty} S_{N-1} = S - S = 0$ by Prop 10.1(\zref{proposition:10.1}). $s$ is unique.
 \end{proof}
 \end{proposition}
 The contrapositive statement is often called the Test for Divergence.
@@ -239,7 +271,7 @@ Next theorem tells us that convergence at one point guarantees convergence on so
 
 Next proposition tells us where the power series converges. The proof is omitted.
 
-\begin{proposition}\label{definition:12.1} Given a power series $\sum_{n=0}^{\infty} a_n (z - z_0)^n$ there exists $0 \leq R \leq \infty$ \{a real non-negative number or else infinity\} such that if $|z - z_0| < R$, then $\sum_{n=0}^{\infty} a_n (z - z_0)^n$ converges absolutely and if $|z - z_0| > R$, then $\sum_{n=0}^{\infty} a_n (z - z_0)^n$ diverges.
+\begin{proposition}\label{proposition:12.1} Given a power series $\sum_{n=0}^{\infty} a_n (z - z_0)^n$ there exists $0 \leq R \leq \infty$ \{a real non-negative number or else infinity\} such that if $|z - z_0| < R$, then $\sum_{n=0}^{\infty} a_n (z - z_0)^n$ converges absolutely and if $|z - z_0| > R$, then $\sum_{n=0}^{\infty} a_n (z - z_0)^n$ diverges.
 \end{proposition}
 
 The value $R$ is called the radius of convergence of power series.

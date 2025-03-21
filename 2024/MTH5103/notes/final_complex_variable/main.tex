@@ -8,6 +8,55 @@
 % \usepackage{fontspec}
 % \usepackage{emoji}
 \usepackage{xcolor}
+\usepackage{xr}
+\usepackage{zref-xr}
+\usepackage{zref-user}
+\usepackage{xr-hyper}
+\usepackage{hyperref}
+\usepackage{zref}
+
+
+% % #### for labeling and referencing START
+% \zexternaldocument{input/note01}
+% \zexternaldocument{input/note02}
+% \zexternaldocument{input/note03}
+% \zexternaldocument{input/note04}
+% \zexternaldocument{input/note05}
+% \zexternaldocument{input/note06}
+% \zexternaldocument{input/note07}
+% \zexternaldocument{input/note08}
+% \zexternaldocument{input/note09}
+% \zexternaldocument{input/note10}
+% \zexternaldocument{input/note11}
+% \zexternaldocument{input/note12}
+% \zexternaldocument{input/note13}
+% \zexternaldocument{input/note14}
+% % \externaldocument{input/note15}
+% % \externaldocument{input/note01}
+
+% ############### END
+
+% #### for labeling and referencing START
+% \externaldocument{input/note01}
+% \externaldocument{input/note02}
+% \externaldocument{input/note03}
+% \externaldocument{input/note04}
+% \externaldocument{input/note05}
+% \externaldocument{input/note06}
+% \externaldocument{input/note07}
+% \externaldocument{input/note08}
+% \externaldocument{input/note09}
+% \externaldocument{input/note10}
+% \externaldocument{input/note11}
+% \externaldocument{input/note12}
+% \externaldocument{input/note13}
+% \externaldocument{input/note14}
+% \externaldocument{input/note15}
+% \externaldocument{input/note01}
+
+% ############### END
+
+
 \newcommand{\verifythis}{\textbf{\textcolor{red}{Check!}}}
 
 \providecommand{\BibLatexMode}[1]{}
@@ -23,10 +72,6 @@
 
 %%%
 
-\BibLatexMode{%
-   \usepackage[bibencoding=utf8,style=alphabetic,backend=biber]{biblatex}%
-   \usepackage{my_biblatex}%
-}
 
 %%%
 
@@ -52,7 +97,7 @@
 
 \providecommand{\emphic}[2]{}
 \renewcommand{\emphic}[2]{\textcolor{blue25emph}{%
-      \textbf{\emph{#1}}}\index{#2}}
+\textbf{\emph{#1}}}\index{#2}}
 
 \providecommand{\emphi}[1]{}%
 \renewcommand{\emphi}[1]{\emphic{#1}{#1}}
@@ -94,7 +139,7 @@
 
 
 \newcommand{\MiraThanks}[1]{%
-   \thanks{%
+\thanks{%
       School of Mathematical Sciences; %
       Queen Mary, University of London; %
       Mile End Road; %
@@ -108,9 +153,11 @@
 
 % Bib latex stuff
 \BibLatexMode{%
-   \usepackage[bibencoding=utf8,style=alphabetic,backend=biber]{biblatex}%
-   \usepackage{my_biblatex}%
+\usepackage[bibencoding=utf8,style=alphabetic,backend=biber]{biblatex}%
+\usepackage{my_biblatex}%
 }
+
+
 
 \BibLatexMode{%
    \bibliography{template}
@@ -170,19 +217,35 @@
 \include{input/note09}
 \include{input/note10}
 \include{input/note11}
-\include{input/note12}
-\include{input/note13}
-\include{input/note14}
-% \include{input/note15}
+
+%\include{input/note12}
+%\include{input/note13}
+%\include{input/note14}
+%\include{input/note15}
+
+
+% \input{input/note02}
+% \input{input/note03}
+% \input{input/note04}
+% \input{input/note05}
+% \input{input/note06}
+% \input{input/note07}
+% \input{input/note08}
+% \input{input/note09}
+% \input{input/note10}
+% \input{input/note11}
+% \input{input/note12}
+% \input{input/note13}
+% \input{input/note14}
 
 
 %-------------------------------------------------------------------------
 
-\BibTexMode{%
-   \bibliographystyle{alpha}
-   \bibliography{template}
-}%
-\BibLatexMode{\printbibliography}
+% \BibTexMode{%
+%    \bibliographystyle{alpha}
+%    \bibliography{template}
+% }%
+% \BibLatexMode{\printbibliography}
 
 \end{document}
 

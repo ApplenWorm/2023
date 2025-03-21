@@ -1,3 +1,33 @@
+%\usepackage{xr}
+
+% \externaldocument{note01}
+% \externaldocument{note02}
+% \externaldocument{note03}
+% \externaldocument{note04}
+% \externaldocument{note05}
+% \externaldocument{note06}
+% \externaldocument{note07}
+% \externaldocument{note08}
+% \externaldocument{note09}
+% \externaldocument{note10}
+% \externaldocument{note11}
+
+
+\zexternaldocument{note01}
+\zexternaldocument{note02}
+\zexternaldocument{note03}
+\zexternaldocument{note04}
+\zexternaldocument{note05}
+\zexternaldocument{note06}
+\zexternaldocument{note07}
+\zexternaldocument{note08}
+\zexternaldocument{note09}
+\zexternaldocument{note10}
+\zexternaldocument{note11}
+% \externaldocument{note12}
+
+
+
 \week{6}
 % \section*{Week 6. Lecture 16.}
 \lecture{16}{Taylor and Laurent series}
@@ -166,7 +196,7 @@ After opening of the brackets and combining similar terms, we obtain the formula
 
 \begin{example}\label{example:15.10} What is the laurent series of $f(z) = \frac{1}{(z-1)(z-2)}$ on the annulus $A = \{z \in \mathbb{C}: 1 < |z| < 2\}$?
 
-Sol: First, we write $f$ a sum of 2 functions using a partial fraction expansion:
+First, we write $f$ a sum of 2 functions using a partial fraction expansion:
 \[
  \frac{1}{(z-1)(z-2)} = \frac{1}{z-2} - \frac{1}{z-1} = \frac{-1}{2(\frac{z}{2} - 1)} - \frac{1}{z(1-\frac{1}{z})} = -\frac{1}{2} \sum_{n=0}^{\infty} \left(\frac{z}{2}\right)^n - \sum_{n=1}^{\infty} z^{-n} 
 \]
@@ -177,7 +207,10 @@ Note: The first sum $\sum_{n=0}^{\infty} \left(\frac{z}{2}\right)^n$ exists only
 
 \begin{example} \label{example:15.11} Obtain the series expansion for $f(z) = \frac{1}{z^2 + 4}$ valid in the region $|z - 2i| > 4$.
 
-The region here is a domain: the exterior of the circle centered at $(0, 2i)$ of radius 4.
+\end{example}
+    \begin{soln}
+        
+        The region here is a domain: the exterior of the circle centered at $(0, 2i)$ of radius 4.
 
 We want a series expansion about $z_0 = 2i$. To do this we make a substitution $w = z - 2i$ and look for the expansion in $w$, where $|w| > 4$. To make the series expansion easier we manipulate again $f(z)$ into a form similar to the series expansion for $\frac{1}{1-z}$. 
 We get:
@@ -191,7 +224,7 @@ Now we use standard geometric series and compute: \[ \frac{1}{4iw(1 - \frac{iw}{
 We require the expansion for $|w| > 4$:
 \[ f(z) = -\sum_{n=1}^{\infty} \frac{4^{n-1}}{(iw)^{n+1}} = -\sum_{n=2}^{\infty} \frac{4^{n-2}}{(iw)^n} \]
 Now we substitute back $z - 2i = w$: $f(z) = -\sum_{n=2}^{\infty} \frac{4^{n-2}}{(i(z-2i))^n}, |z-2i| > 4$.
-\end{example}
+\end{soln}
 
 \section{Transformations and Mob(rph)eus}
 Now we are going to study one of the important transformations, the simplest after the linear and the inverse transformations, the Möbius transformation. First, let us briefly go over linear transformations.
@@ -237,8 +270,11 @@ We have 3 equations with 4 variables. We compute a,b,c via d. The second equatio
 
 \begin{example}\label{example:16.4} Find the image of the upper-half circle $D = \{z \in \mathbb{C}: |z| < 1, \text{Im } z > 0\}$ under the Möbius transformation $w = \frac{i-iz}{1+z}$.
 
-Sol: First, let us see what is the image of the boundary of the upper half circle under this transformation.
-
+\end{example}
+\begin{soln}
+    
+     First, let us see what is the image of the boundary of the upper half circle under this transformation.
+    
 The boundary contains two parts: the interval AB and the half circle BCA: $\partial D = AB \cup BCA$.
 
 First we find the image of AB.
@@ -257,7 +293,7 @@ Conclusion: the boundary in the w-plane is the positive half of the v-axis and t
 without the first quadrant (since they both have the same boundary). To see to which one we need to understand where to the interior points of this upper half circle are mapped, since the interior points in the z-plane are mapped to interior points in the w-plane. Let us take some interior point.
 
 Take $z = \frac{1}{2}i \in D \implies w = \frac{i - \frac{1}{2}i^2}{1 + \frac{1}{2}i} = \frac{\frac{1}{2} + i}{\frac{1}{2}(2+i)} = \frac{(\frac{1}{2} + i)(1 - \frac{1}{2}i)}{5/4} = \frac{4}{5} + i\frac{3}{5} \in$ I-st quadrant since $x, y \geq 0 \implies$ the image = $\{w: 0 < \arg w < \frac{\pi}{2}\}$, namely the first quadrant of the w-plane.
-\end{example}
+\end{soln}
 
 \begin{example} \label{example:16.5} Find the Möbius transformation sending $-1 \to i, 0 \to 1, i \to -i$.
 

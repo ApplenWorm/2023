@@ -1,3 +1,33 @@
+%\usepackage{xr}
+
+% \externaldocument{note01}
+% \externaldocument{note02}
+% \externaldocument{note03}
+% \externaldocument{note04}
+% \externaldocument{note05}
+% \externaldocument{note06}
+% \externaldocument{note07}
+% \externaldocument{note08}
+% \externaldocument{note09}
+% \externaldocument{note10}
+% \externaldocument{note11}
+
+
+\zexternaldocument{note01}
+\zexternaldocument{note02}
+\zexternaldocument{note03}
+\zexternaldocument{note04}
+\zexternaldocument{note05}
+\zexternaldocument{note06}
+\zexternaldocument{note07}
+\zexternaldocument{note08}
+\zexternaldocument{note09}
+\zexternaldocument{note10}
+\zexternaldocument{note11}
+% \externaldocument{note12}
+
+
+
 \week{3}
 \lecture{7}{Continuation from prev.}
 % \section*{Week 3 Lecture 7}
@@ -150,7 +180,7 @@ The choice of $\delta$ small enough so that $|z^n - z_0^n|$ is smaller than the 
 \end{proof}
 \end{example}
 
-Combining Prop 5.1, Ex 7.2, and Ex 7.1 a),b), we conclude:
+Combining Prop (\ref{proposition:5.1}), Ex (\ref{example:7.2}), and Ex (\ref{example:7.1}) a),b), we conclude:
 \begin{proposition}5.3 Every polynomial $P_n(z) = a_0 + a_1 z + a_2 z^2 + \dots + a_n z^n$ with complex coefficients $a_0, a_1, a_2, a_3, \dots, a_n \in \mathbb{C}$ is continuous at every $z \in \mathbb{C}$. Furthermore, every rational function $f(z) = \frac{P_n(z)}{Q_m(z)}$ ($P_n, Q_m$ polynomials of degree $n, m$ respectively) is continuous at every $z \in \mathbb{C}$, except possibly at the roots of $Q_m(z)$.
 \end{proposition}
 
@@ -183,8 +213,9 @@ Let $f(z)$ be defined in a neighborhood of a point $z_0 \in \mathbb{C}$. If the 
 
 Alternative notation: Denote $\Delta z = z - z_0$. Then $f'(z_0) = \lim_{\Delta z \to 0} \frac{f(z_0 + \Delta z) - f(z_0)}{\Delta z}$.
 
-\begin{example}\label{example:8.1} 8.1 Using Def 6.1 compute the derivative of a) $f(z) = z$ b) $f(z) = z^2$.
+\begin{example}\label{example:8.1} Using Def 6.1 compute the derivative of a) $f(z) = z$ b) $f(z) = z^2$.
 
+\end{example}
 \begin{soln}
       \begin{enumerate}[label=\alph*)]
     \item \[ \lim_{\Delta z \to 0} \frac{f(z_0 + \Delta z) - f(z_0)}{\Delta z} = \lim_{\Delta z \to 0} \frac{z_0 + \Delta z - z_0}{\Delta z} = \lim_{\Delta z \to 0} \frac{\Delta z}{\Delta z} = 1, \] which $\implies f'(z)$ exists for all $z$ and $f'(z) = 1$.
@@ -195,7 +226,6 @@ Alternative notation: Denote $\Delta z = z - z_0$. Then $f'(z_0) = \lim_{\Delta 
     
 \end{soln}
 
-\end{example}
 
 \begin{example}\label{example:8.2} 8.2 Prove that for any $n \in \mathbb{N}$, $(z^n)' = nz^{n-1}$ for all $z \in \mathbb{C}$.
 
