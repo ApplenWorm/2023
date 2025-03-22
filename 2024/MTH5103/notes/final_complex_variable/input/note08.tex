@@ -34,36 +34,43 @@
 In this lecture we are going to see more examples of classification of singularities and will study the zeros of an analytic function and a connection between zeros and poles.
 
 \begin{example} \label{example:18.4} What type of singularity does $f(z) = \frac{e^z - 1}{z}$ have at 0?
-
-Sol: The Laurent series of $f(z)$ about $z=0$ is given by:
-\[ f(z) = \frac{1}{z} \left( \sum_{n=0}^{\infty} \frac{z^n}{n!} - 1 \right) = \frac{1}{z} \left( 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \dots - 1 \right) = 1 + \frac{z}{2!} + \frac{z^2}{3!} + \dots \]
-The principal part of the Laurent series is $= 0 \implies$ it is a removable singularity. Define 
-\[ \tilde{f}(z) = \begin{cases} \frac{e^z - 1}{z} & z \neq 0 \\ 1 & z = 0 \end{cases}\] 
-$ \implies \tilde{f}$ is analytic for every $z \in \mathbb{C}$ (entire).
+\begin{soln}
+    
+    The Laurent series of $f(z)$ about $z=0$ is given by:
+    \[ f(z) = \frac{1}{z} \left( \sum_{n=0}^{\infty} \frac{z^n}{n!} - 1 \right) = \frac{1}{z} \left( 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \dots - 1 \right) = 1 + \frac{z}{2!} + \frac{z^2}{3!} + \dots \]
+    The principal part of the Laurent series is $= 0 \implies$ it is a removable singularity. Define 
+    \[ \tilde{f}(z) = \begin{cases} \frac{e^z - 1}{z} & z \neq 0 \\ 1 & z = 0 \end{cases}\] 
+    $ \implies \tilde{f}$ is analytic for every $z \in \mathbb{C}$ (entire).
+\end{soln}
 \end{example}
 
-Alternatively: By Prop 16.1: $\lim_{z \to 0} z \cdot \frac{e^z - 1}{z} = \lim_{z \to 0} (e^z - 1) = 0 \implies z = 0$ is a removable singularity.
+Alternatively: By Prop 16.1(\ref{proposition:16.1}): $\lim_{z \to 0} z \cdot \frac{e^z - 1}{z} = \lim_{z \to 0} (e^z - 1) = 0 \implies z = 0$ is a removable singularity.
 
 \begin{example} \label{example:18.5} Find all the singularities and determine their nature:
 1) $f(z) = \frac{z+1}{z^2 + 9}$
 2) $f(z) = \frac{z^3 + 2z}{(z-i)^3}$
-
-Sol: 1) Since $z^2 + 9 = (z+3i)(z-3i)$, $f(z)$ has singularities at $z = \pm 3i$. For $z = 3i$: Rewrite $f(z) = \frac{\varphi(z)}{z-3i}$, where $\varphi(z) = \frac{z+1}{z+3i}$ is analytic in a neighborhood of $z = 3i$ (and at $3i$), and $\varphi(3i) = \frac{1}{2} - i\frac{1}{6} \neq 0 \implies$ by Prop 16.2 $f(z)$ has a simple pole at $z = 3i$, and $\text{Res}(f; 3i) = \varphi(3i) = \frac{1}{2} - i\frac{1}{6}$.
-
-In the same way $z = -3i$ is a simple pole and $\text{Res}(f; -3i) = \frac{1}{2} + i\frac{1}{6}$.
-
-2) $f$ has an isolated singularity at $z = i$. Rewrite: $f(z) = \frac{\varphi(z)}{(z-i)^3}$, where $\varphi(z) = z^3 + 2z$ is analytic in a neighborhood of $z = i$ (including $z=i$) and $\varphi(i) = i^3 + 2i = i \neq 0$. Therefore, by Prop. 16.2 $f$ has a pole of order $m = 3$ at $z = i$, and by Prop 16.2 $\text{Res}(f; i) = \frac{\varphi^{(2)}(i)}{2!} = \frac{6i}{2} = 3i$.
+\begin{soln}
+        1) Since $z^2 + 9 = (z+3i)(z-3i)$, $f(z)$ has singularities at $z = \pm 3i$. For $z = 3i$: Rewrite $f(z) = \frac{\varphi(z)}{z-3i}$, where $\varphi(z) = \frac{z+1}{z+3i}$ is analytic in a 
+        neighborhood of $z = 3i$ (and at $3i$), 
+        and $\varphi(3i) = \frac{1}{2} - i\frac{1}{6} \neq 0 \implies$ by Prop 16.2(\ref{proposition:16.2}) $f(z)$ has a simple pole at $z = 3i$, and $\text{Res}(f; 3i) = \varphi(3i) = \frac{1}{2} - i\frac{1}{6}$.
+    
+    In the same way $z = -3i$ is a simple pole and $\text{Res}(f; -3i) = \frac{1}{2} + i\frac{1}{6}$.
+    
+    2) $f$ has an isolated singularity at $z = i$. Rewrite: $f(z) = \frac{\varphi(z)}{(z-i)^3}$, where $\varphi(z) = z^3 + 2z$ is analytic in a neighborhood of $z = i$ (including $z=i$) and $\varphi(i) = i^3 + 2i = i \neq 0$. 
+    Therefore, by Prop. 16.2(\ref{proposition:16.2}) $f$ has a pole of order $m = 3$ at $z = i$, and by Prop 16.2(\ref{proposition:16.2}) $\text{Res}(f; i) = \frac{\varphi^{(2)}(i)}{2!} = \frac{6i}{2} = 3i$.
+\end{soln}
 \end{example}
 
 \begin{example} \label{example:18.6} Compute the residue of $f(z) = \frac{\sin z}{z^4}$.
-    
-Sol: $f$ has an isolated singularity at $z = 0$. We use Taylor series expansion for $\sin z$ (about $z = 0$) to obtain:
-\begin{align*} 
-    f(z) & = \frac{1}{z^4} \left( z - \frac{z^3}{3!} + \frac{z^5}{5!} - \dots \right) = \frac{1}{z^3} - \frac{1}{3!} \frac{1}{z} + \frac{z}{5!} - \dots = \\
+    \begin{soln}
+                $f$ has an isolated singularity at $z = 0$. We use Taylor series expansion for $\sin z$ (about $z = 0$) to obtain:
+        \begin{align*} 
+            f(z) & = \frac{1}{z^4} \left( z - \frac{z^3}{3!} + \frac{z^5}{5!} - \dots \right) = \frac{1}{z^3} - \frac{1}{3!} \frac{1}{z} + \frac{z}{5!} - \dots = \\
             & = \frac{1}{z^3}\left(1 - \frac{z^2}{3!} + \frac{z^4}{5!} - \dots \right) 
         \end{align*}
-$\implies z = 0$ is a pole of order $  m = 3$ not $4$!) 
-From the Laurent series we see that $\text{Res}(f; 0) = b_1 = -\frac{1}{3!} = -\frac{1}{6}$.
+        $\implies z = 0$ is a pole of order $  m = 3$ not $4$!) 
+        From the Laurent series we see that $\text{Res}(f; 0) = b_1 = -\frac{1}{3!} = -\frac{1}{6}$.
+    \end{soln}
 \end{example}
 
 The importance of residues will become much clearer a bit later, when we will investigate the complex integration, but note that the term $\frac{1}{z-z_0}$ is the tricky one to integrate! Now we are going to study zeros of the analytic functions and a bit more poles.
@@ -124,7 +131,7 @@ $\implies z = 3$ is a zero of order $n = 2$.
          z(1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \frac{z^4}{4!} + \dots - 1) & = z^2 + \frac{z^3}{2!} + \frac{z^4}{3!} + \dots \\ 
         &   = z^2(1 + \frac{z}{2!} + \frac{z^2}{3!} + \dots) = z^2 \varphi(z).
     \end{align*}
-Since $\varphi(0) = 1 \neq 0$ ($\varphi$ is analytic at $z_0 = 0$) by Prop 16.3 $z_0 = 0$ is a zero of order 2 of $f(z)$.
+Since $\varphi(0) = 1 \neq 0$ ($\varphi$ is analytic at $z_0 = 0$) by Prop 16.3(\ref{proposition:16.3}) $z_0 = 0$ is a zero of order 2 of $f(z)$.
 \item Plug the expansion of $\sin z$ (about $z_0 = 0$) into $f$ and get:
 \begin{align*}
      \frac{z^{10}}{z - \sin z} & = \frac{z^{10}}{z - (z - \frac{z^3}{3!} + \frac{z^5}{5!} - \frac{z^7}{7!} + \dots)} \\ 
@@ -133,7 +140,7 @@ Since $\varphi(0) = 1 \neq 0$ ($\varphi$ is analytic at $z_0 = 0$) by Prop 16.3 
 Factorize $z^3$.
 Let 
 \[ \varphi(z) = \frac{1}{3!} - \frac{z^2}{5!} + \frac{z^4}{7!} - \dots\]
-Then $f(z) = z^7 \varphi(z)$, $\varphi$ is analytic at $z_0 = 0, \varphi(0) = \frac{1}{3!} = 6 \neq 0 \implies$ by Prop 16.3 $z_0 = 0$ is a zero of order 7 of $f(z)$.
+Then $f(z) = z^7 \varphi(z)$, $\varphi$ is analytic at $z_0 = 0, \varphi(0) = \frac{1}{3!} = 6 \neq 0 \implies$ by Prop 16.3(\ref{proposition:16.3}) $z_0 = 0$ is a zero of order 7 of $f(z)$.
 \end{enumerate}
 \end{soln}
 
@@ -143,7 +150,9 @@ Then $f(z) = z^7 \varphi(z)$, $\varphi$ is analytic at $z_0 = 0, \varphi(0) = \f
      The zeros of an analytic function are isolated (all).
 \end{theorem}
 \begin{proof}
-Assume $z = z_0$ is a zero of $f(z)$. Then, by Prop 16.3 $f(z) = (z-z_0)^n \varphi(z)$, where $\varphi(z)$ is analytic and $\varphi(z_0) \neq 0 \implies \varphi(z)$ is continuous at $z_0$ (Prop 6.5). Therefore, there exists a neighborhood of $z = z_0$ such that $\varphi(z) \neq 0$ for all $z$ in this neighborhood and in this neighborhood $f(z)$ has no other zeros different from $z = z_0$.
+Assume $z = z_0$ is a zero of $f(z)$. Then, by Prop 16.3(\ref{proposition:16.3}) $f(z) = (z-z_0)^n \varphi(z)$, where $\varphi(z)$ is analytic and $\varphi(z_0) \neq 0 \implies \varphi(z)$ 
+is continuous at $z_0$ (Prop 6.5). Therefore, there exists a neighborhood of $z = z_0$ such that $\varphi(z) \neq 0$ for all $z$ in this neighborhood and in this neighborhood $f(z)$ has no other zeros 
+different from $z = z_0$.
 \end{proof}
 
 Next proposition provides a relation between zeros and poles of an analytic function.
@@ -152,15 +161,19 @@ Next proposition provides a relation between zeros and poles of an analytic func
     If $p(z), q(z)$ are analytic at $z_0$ and $p(z_0) \neq 0$, then $f(z) = (\frac{p}{q})(z)$ has a pole of order $m$ at $z_0 \iff q$ has a zero of order $m$ at $z_0$.
 \end{proposition}
 \begin{proof}
-    [$\implies$] Suppose $f$ has a pole of order $m$ at $z_0$. Then, by Prop 16.2 $f(z) = \frac{\varphi(z)}{(z-z_0)^m}$, where $\varphi(z)$ is analytic at $z_0$ and $\varphi(z_0) \neq 0$. Thus, we have: $q(z) = (z-z_0)^m \frac{p(z)}{\varphi(z)}$, where $\frac{p(z_0)}{\varphi(z_0)} \neq 0$. Thus, $q$ has a zero of order $m$ at $z_0$ (by Prop 16.3).
+    [$\implies$] Suppose $f$ has a pole of order $m$ at $z_0$. Then, by Prop 16.2(\ref{proposition:16.2}) $f(z) = \frac{\varphi(z)}{(z-z_0)^m}$, where $\varphi(z)$ is analytic at $z_0$ and $\varphi(z_0) \neq 0$. 
+    Thus, we have: $q(z) = (z-z_0)^m \frac{p(z)}{\varphi(z)}$, where $\frac{p(z_0)}{\varphi(z_0)} \neq 0$. 
+    Thus, $q$ has a zero of order $m$ at $z_0$ (by Prop 16.3(\ref{proposition:16.3})).
     
-    [$\impliedby$] Assume $q$ has a zero of order $m$ at $z_0$. Then, by Prop 16.3 $q(z) = (z-z_0)^m \psi(z)$, where $\psi(z)$ is analytic at $z = z_0$ and $\psi(z_0) \neq 0$. Thus, $f(z) = \frac{p(z)}{(z-z_0)^m \psi(z)} = \frac{p(z)/\psi(z)}{(z-z_0)^m}$, where $\frac{p(z_0)}{\psi(z_0)} \neq 0$ ($\frac{p}{\psi}$ is analytic at $z = z_0$). Therefore, by Prop 16.2 $f$ has a pole of order $m$ at $z_0$.
+    [$\impliedby$] Assume $q$ has a zero of order $m$ at $z_0$. Then, by Prop 16.3(\ref{proposition:16.3}) $q(z) = (z-z_0)^m \psi(z)$, where $\psi(z)$ is analytic at $z = z_0$ and $\psi(z_0) \neq 0$. 
+    Thus, $f(z) = \frac{p(z)}{(z-z_0)^m \psi(z)} = \frac{p(z)/\psi(z)}{(z-z_0)^m}$, where $\frac{p(z_0)}{\psi(z_0)} \neq 0$ ($\frac{p}{\psi}$ is analytic at $z = z_0$). 
+    Therefore, by Prop 16.2(\ref{proposition:16.2}) $f$ has a pole of order $m$ at $z_0$.
 \end{proof}
 
 \begin{corollary}\label{corollary:16.5}
     If $p(z_0) \neq 0$ and $q(z)$ has a simple zero at $z_0$, then $\frac{p}{q}$ has a simple pole at $z_0$, and $\text{Res}(\frac{p}{q}, z_0) = \frac{p(z_0)}{q'(z_0)}$.
 \end{corollary}
-\begin{proof}    By Prop 16.4 with $m = 1$: $\frac{p}{q}$ has a simple pole at $z_0$.
+\begin{proof}    By Prop 16.4(\ref{proposition:16.4}) with $m = 1$: $\frac{p}{q}$ has a simple pole at $z_0$.
     
     To find the residue, we expand $q$ into Taylor series about $z_0$: $q(z) = q(z_0) + q'(z_0)(z-z_0) + \dots = q'(z_0)(z-z_0) + \frac{q''(z_0)}{2!}(z-z_0)^2 + \dots$, $q(z_0) = 0, q'(z_0) \neq 0$.
     
@@ -171,7 +184,7 @@ Next proposition provides a relation between zeros and poles of an analytic func
     Compute all the residues of $f(z) = \frac{1}{z(e^z - 1)}$.
 \begin{soln}
     Observe that $f$ has infinitely many isolated singularities at the points $z = 2\pi ni, n \in \mathbb{Z}$. We shall break the argument into 2 cases:
-    $n = 0$: The singularity is at $z = 0$. From Ex 18.9 1) $z = 0$ is a double zero (of order 2) of $z(e^z - 1) \implies$ by Prop 16.4 $z = 0$ is a pole of order 2 of $f(z)$. 
+    $n = 0$: The singularity is at $z = 0$. From Ex 18.9 1) $z = 0$ is a double zero (of order 2) of $z(e^z - 1) \implies$ by Prop 16.4(\ref{proposition:16.4}) $z = 0$ is a pole of order 2 of $f(z)$. 
     The residue is the coefficient of $\frac{1}{z}$ in the 
     Laurent series expansion of $f$: \[ f(z) = \frac{1}{z^2} \cdot \frac{1}{1 + \frac{z}{2!} + \frac{z^2}{3!} + \dots} \implies \varphi(z) = 1 + \frac{z}{2} + \frac{z^2}{3!} + \dots\] 
     We get
@@ -179,23 +192,31 @@ Next proposition provides a relation between zeros and poles of an analytic func
 \end{soln}
 \end{example}
 
-$n \neq 0$: In terms of Prop 16.4 we have $p(z) = 1, q(z) = z(e^z - 1)$ and $z = 2\pi ni$ is a simple zero of $q(z)$. $q'(z) = ze^z + e^z - 1 \implies q'(2\pi ni) = 2\pi ni$ (Recall: $e^{2\pi ni} = 1$) $\implies f$ has a simple pole at $2\pi ni, n \neq 0$, and the residue is given by (Cor 16.5) $\frac{p(2\pi ni)}{q'(2\pi ni)} = \frac{1}{2\pi ni}$.
+$n \neq 0$: In terms of Prop 16.4(\ref{proposition:16.4}) we have $p(z) = 1, q(z) = z(e^z - 1)$ and $z = 2\pi ni$ is a simple zero of $q(z)$. $q'(z) = ze^z + e^z - 1 \implies q'(2\pi ni) = 2\pi ni$ (Recall: $e^{2\pi ni} = 1$) $\implies f$ has a simple pole at $2\pi ni, n \neq 0$, 
+and the residue is given by (Cor 16.5(\ref{corollary:16.5})) $\frac{p(2\pi ni)}{q'(2\pi ni)} = \frac{1}{2\pi ni}$.
 
 % \section*{Lectures 23 + 24}
 \lecture{23+24}{Complex Integration. HUUURRAY>>>}
 \section{Complex integration.}
 
-In this lecture we first define the integral of a complex function of a real variable $\int w(t) dt$ and then the integral of a complex function of complex variable. Let us start with some motivation from real case.
+In this lecture we first define the integral of a complex function of a real 
+variable $\int w(t) dt$ and then the integral of a complex function of complex variable. Let us start with some 
+motivation from real case.
 
-Recall the definition of the integral of a real function: Let $f(x)$ be a real, continuous on a closed, bounded interval $[a, b]$. Partition the interval $[a, b]$ into $n$ subintervals: $a = x_0 < x_1 < \dots < x_{n-1} < x_n = b$, choose a sample point $x_j^*$, $0 \leq j \leq n$ in each subinterval. Then, $\int_a^b f(x) dx = \lim_{n \to \infty} \sum_{j=1}^n f(x_j^*)(x_j - x_{j-1})$, where the width of partition $\max |x_j - x_{j-1}| \to 0$.
+Recall the definition of the integral of a real function: Let $f(x)$ be a real, continuous on a closed, bounded interval $[a, b]$. 
+Partition the interval $[a, b]$ into $n$ subintervals: $a = x_0 < x_1 < \dots < x_{n-1} < x_n = b$, choose 
+a sample point $x_j^*$, $0 \leq j \leq n$ in each subinterval. Then, $\int_a^b f(x) dx = \lim_{n \to \infty} \sum_{j=1}^n f(x_j^*)(x_j - x_{j-1})$, where the width of partition $\max |x_j - x_{j-1}| \to 0$.
 
 Q-n: In the complex case, what will take the place of the partition?
 
 In the complex plane there are a lot of curves that connect 2 points. So, the analogue of the real integration is:
 
-For a given curve $C$ from $u + iv$ to $u' + iv'$ define $\int_C f(z) dz = \lim_{n \to \infty} \sum_{j=1}^n f(\xi_j)(z_j - z_{j-1})$, $\max |z_j - z_{j-1}| \to 0$, where we partition the curve and $(\xi_{j-1}, \xi_j)$ is an arc, $|z_j - z_{j-1}|$ is a length of a string that connects $z_{j-1}$ and $z_j$ on this arc.
+For a given curve $C$ from $u + iv$ to $u' + iv'$ define $\int_C f(z) dz = \lim_{n \to \infty} \sum_{j=1}^n f(\xi_j)(z_j - z_{j-1})$, $\max |z_j - z_{j-1}| \to 0$, where we 
+partition the curve and $(\xi_{j-1}, \xi_j)$ is an arc, $|z_j - z_{j-1}|$ is a length of a string that connects $z_{j-1}$ and $z_j$ on this arc.
 
-If this limit is independent of the curve and of the choice of a point for the value $f(\xi_j)$, then this integral exists and it is called a path integral with respect to the path C. To see this first we need to know more about curves and paths.
+If this limit is independent of the curve and of the choice of a point for 
+the value $f(\xi_j)$, then this integral exists and it is called a path integral with respect to the path C. 
+To see this first we need to know more about curves and paths.
 
 \begin{definition}\label{definition:17.1} A path is a continuous map $\gamma: [a, b] \to \mathbb{C}$ ($t \to \gamma(t)$), $\gamma(t) = x(t) + iy(t))$ where $[a, b] \subset \mathbb{R}$ is a closed interval. The image of any path $\gamma$ in $\mathbb{C}$ is called a curve. We say that $\gamma$ is a parametrization of that curve.
 \end{definition}
@@ -210,53 +231,73 @@ Observe: $\gamma_1(0) = \gamma_1(1) = \gamma_2(0) = \gamma_2(2\pi) = 1$. $\gamma
 Straight line connecting $w$ and $w'$ (starting at $w$): $\gamma_3: [0, 1] \to \mathbb{C} \quad \gamma_3(t) = tw' + (1-t)w$.
 \end{example}
 
-\begin{definition} \label{definition:17.2} C is a simple curve if there exists a parametrization $\gamma$ of C which is injective (one to one): if $t_1 \neq t_2$, then $\gamma(t_1) \neq \gamma(t_2)$. C is a simple, closed curve if it is parametrized by $\gamma: [a, b] \to \mathbb{C}$ with $\gamma(a) = \gamma(b)$, but $\gamma(t_1) \neq \gamma(t_2)$ for all other $t_1, t_2 \in [a, b], t_1 \neq t_2$.
+\begin{definition} \label{definition:17.2} C is a simple curve if there exists a 
+    parametrization $\gamma$ of C which is injective (one to one): if $t_1 \neq t_2$, then $\gamma(t_1) \neq \gamma(t_2)$. 
+    C is a simple, closed curve if it is parametrized by $\gamma: [a, b] \to \mathbb{C}$ with $\gamma(a) = \gamma(b)$, but $\gamma(t_1) \neq \gamma(t_2)$ for all other $t_1, t_2 \in [a, b], t_1 \neq t_2$.
 \end{definition}
+\begin{theorem}[Jordan's Theorem] \label{theorem:jordan}
+    Every simple closed curve divides $\mathbb{C}$ into 2 regions - "inside" and "outside" the curve.
+\end{theorem}
 
-Jordan's Thm: Every simple closed curve divides $\mathbb{C}$ into 2 regions - "inside" and "outside" the curve.
-
-Notation: $-\gamma$ stands for the negative of the path $\gamma$ - the path which gives the same curve as $\gamma$, but traversed in the opposite direction.
+\emphic{Notation:}{} $-\gamma$ stands for the negative of the path $\gamma$ - the path which 
+gives the same curve as $\gamma$, but traversed in the opposite direction.
 
 \begin{example} \label{example:19.3} Write down $-\gamma$, where $\gamma$ is the straight line connecting $w$ to $w'$.
-
-Sol: From Ex 19.2: $\gamma_3(t) = tw' + (1-t)w$ - straight line that connects $w$ to $w'$. Using this: $-\gamma_3: [0, 1] \to \mathbb{C} \quad -\gamma_3(t) = (1-t)w' + tw$ ($0 \to w', 1 \to w$).
+\begin{soln}
+    From Ex 19.2 (\ref{example:19.2}): $\gamma_3(t) = tw' + (1-t)w$ - straight line that 
+    connects $w$ to $w'$. Using this: $-\gamma_3: [0, 1] \to \mathbb{C} \quad -\gamma_3(t) = (1-t)w' + tw$ ($0 \to w', 1 \to w$).
+\end{soln}
 \end{example}
 
 \begin{example}\label{example:19.4} Write in the form $z(t) = x(t) + iy(t)$ the following curve: $9x^2 + 4y^2 = 36 \iff (\frac{x}{2})^2 + (\frac{y}{3})^2 = 1$.
-
-Sol: This is an equation of an ellipse with focal points $x = 2, y = 3$, since $\frac{x^2}{4} + \frac{y^2}{9} = 1 \iff (\frac{x}{2})^2 + (\frac{y}{3})^2 = 1$.
+\begin{soln}
+    This is an equation of an ellipse with focal points $x = 2, y = 3$, since $\frac{x^2}{4} + \frac{y^2}{9} = 1 \iff (\frac{x}{2})^2 + (\frac{y}{3})^2 = 1$.
+\end{soln}
 \end{example}
 
 Parametrization: Take $x = 2\cos t, y = 3\sin t$ for $0 \leq t < 2\pi$. Then $(\frac{2\cos t}{2})^2 + (\frac{3\sin t}{3})^2 = \cos^2 t + \sin^2 t = 1 \implies z(t) = 2\cos t + i3\sin t$.
 
 \begin{example} \label{example:19.5} Write parametrization $z(t) = x(t) + iy(t)$ of the curve, described by $|z-i| + |z+i| = 4$.
-
-Sol: $|z-i| + |z+i| = 4 \iff |x + i(y-1)| + |x + i(y+1)| = 4$
-$\iff \sqrt{x^2 + (y-1)^2} + \sqrt{x^2 + (y+1)^2} = 4$
-$\iff x^2 + (y-1)^2 = (x^2 + (y+1)^2 + 16 - 8\sqrt{x^2 + (y+1)^2})$
-$\iff 8\sqrt{x^2 + (y+1)^2} = 16 + (y+1)^2 - (y-1)^2 = 16 + 4y$
-$\iff 2\sqrt{x^2 + (y+1)^2} = 4 + y \iff 4x^2 + 4y^2 + 8y + 4 = 16 + y^2 + 8y$
-$\iff 4x^2 + 3y^2 = 12 \iff \frac{x^2}{3} + \frac{y^2}{4} = 1 \iff (\frac{x}{\sqrt{3}})^2 + (\frac{y}{2})^2 = 1$
-
-Again an ellipse equation. Take $x = \sqrt{3}\cos t, y = 2\sin t, 0 \leq t < 2\pi \implies$ parametrization $z(t) = \sqrt{3}\cos t + i2\sin t$.
+\begin{soln}
+    
+    $|z-i| + |z+i| = 4 \iff |x + i(y-1)| + |x + i(y+1)| = 4$
+    $\iff \sqrt{x^2 + (y-1)^2} + \sqrt{x^2 + (y+1)^2} = 4$
+    $\iff x^2 + (y-1)^2 = (x^2 + (y+1)^2 + 16 - 8\sqrt{x^2 + (y+1)^2})$
+    $\iff 8\sqrt{x^2 + (y+1)^2} = 16 + (y+1)^2 - (y-1)^2 = 16 + 4y$
+    $\iff 2\sqrt{x^2 + (y+1)^2} = 4 + y \iff 4x^2 + 4y^2 + 8y + 4 = 16 + y^2 + 8y$
+    $\iff 4x^2 + 3y^2 = 12 \iff \frac{x^2}{3} + \frac{y^2}{4} = 1 \iff (\frac{x}{\sqrt{3}})^2 + (\frac{y}{2})^2 = 1$
+    
+    Again an ellipse equation. Take $x = \sqrt{3}\cos t, y = 2\sin t, 0 \leq t < 2\pi \implies$ parametrization $z(t) = \sqrt{3}\cos t + i2\sin t$.
+\end{soln}
 \end{example}
 
 We can add paths in the following manner:
 
-\begin{definition} \label{definition:17.3} Given two paths $\gamma_1, \gamma_2$ defined by $\gamma_1: [a, b] \to \mathbb{C}, \gamma_2: [b, c] \to \mathbb{C}$ such that $\gamma_1(b) = \gamma_2(b)$ \{namely, the endpoint of the first path coincide with the starting point of the second path \} we define the sum: $\gamma_1 + \gamma_2: [a, c] \to \mathbb{C}$: $t \to \begin{cases} \gamma_1(t) \text{ if } t \in [a, b] \\ \gamma_2(t) \text{ if } t \in [b, c] \end{cases}$. We can also add curves by choosing appropriate parametrizations.
+\begin{definition} \label{definition:17.3} 
+    Given two paths $\gamma_1, \gamma_2$ defined by $\gamma_1: [a, b] \to \mathbb{C}, \gamma_2: [b, c] \to \mathbb{C}$ 
+    such that $\gamma_1(b) = \gamma_2(b)$ \{namely, the endpoint of the first path 
+    coincide with the starting point of the second path \} we define the 
+    sum: $\gamma_1 + \gamma_2: [a, c] \to \mathbb{C}$: $t \to \begin{cases} \gamma_1(t) \text{ if } t \in [a, b] \\ \gamma_2(t) \text{ if } t \in [b, c] \end{cases}$. 
+    We can also add curves by choosing appropriate parametrizations.
 \end{definition}
 
-\begin{definition} \label{definition:17.4} Let C be a curve parametrized by the path $\gamma: [a, b] \to \mathbb{C}$, $\gamma(t) = x(t) + iy(t)$ is called differentiable if the real functions $x(t)$ and $y(t)$ are differentiable on $[a, b]$. If $\gamma$ is differentiable on $(a, b)$ and $\gamma'(t) \neq 0$ for $t \in (a, b)$, then C is called a smooth curve.
+\begin{definition} \label{definition:17.4} 
+    Let C be a curve parametrized by the path $\gamma: [a, b] \to \mathbb{C}$, $\gamma(t) = x(t) + iy(t)$ is 
+    called differentiable if the real functions $x(t)$ and $y(t)$ are differentiable on $[a, b]$. 
+    If $\gamma$ is differentiable on $(a, b)$ and $\gamma'(t) \neq 0$ for $t \in (a, b)$, then C is called a smooth curve.
 \end{definition}
 
-\begin{definition} \label{definition:17.5} A contour is a piecewise-smooth curve: a finite union of smooth curves joined end-to-end. The length of a contour C is defined to be $L = \int_a^b |\gamma'(t)| dt$, where $\gamma: [a, b] \to \mathbb{C}$ is any smooth parametrization of C.
+\begin{definition} \label{definition:17.5} A contour is a piecewise-smooth curve: a finite union of smooth curves joined end-to-end. 
+    The length of a contour C is defined to be $L = \int_a^b |\gamma'(t)| dt$, where $\gamma: [a, b] \to \mathbb{C}$ is any smooth parametrization of C.
 \end{definition}
 
 \checkthis{} The length is independent of parametrization!
 
-\begin{example} \label{example:19.6} Define $\gamma: [0, 1] \to \mathbb{C}$ by $\gamma(t) = (1+i)t$. Graph this contour and calculate its length.
-
-Sol: $L = \int_0^1 |\gamma'(t)| dt = \int_0^1 \sqrt{1^2 + 1^2} dt = \sqrt{2}$.
+\begin{example} \label{example:19.6} 
+    Define $\gamma: [0, 1] \to \mathbb{C}$ by $\gamma(t) = (1+i)t$. Graph this contour and calculate its length.
+\begin{soln}
+     $L = \int_0^1 |\gamma'(t)| dt = \int_0^1 \sqrt{1^2 + 1^2} dt = \sqrt{2}$.
+\end{soln}
 \end{example}
 
 Now we study how to integrate a complex function of a real variable.
@@ -279,11 +320,13 @@ From standard results of real analysis we have:
     \end{enumerate}
 \end{proposition}
     
-Note that the second and third parts of this proposition say that the integral defined is a linear map from the vector space of complex functions of a real variable to the complex numbers.
+Note that the second and third parts of this proposition say that the integral defined is a 
+linear map from the vector space of complex functions of a real variable to the complex numbers.
 
 \begin{example} \label{example:19.7} Compute $\int_0^{\pi/4} e^{it} dt$.
 \begin{soln}
-    $e^{it}$ has antiderivative $\frac{1}{i}e^{it} = -ie^{it} \implies$ by Prop 17.1 4) $\int_0^{\pi/4} e^{it} dt = -ie^{it}|_0^{\pi/4} = -i[e^{i\frac{\pi}{4}} - 1] = -i[\frac{1}{\sqrt{2}} + i\frac{1}{\sqrt{2}} - 1] = \frac{1}{\sqrt{2}} + i(1 - \frac{1}{\sqrt{2}})$.
+    $e^{it}$ has antiderivative $\frac{1}{i}e^{it} = -ie^{it} \implies$ by 
+    Prop 17.1(\ref{proposition:17.1}) 4) $\int_0^{\pi/4} e^{it} dt = -ie^{it}|_0^{\pi/4} = -i[e^{i\frac{\pi}{4}} - 1] = -i[\frac{1}{\sqrt{2}} + i\frac{1}{\sqrt{2}} - 1] = \frac{1}{\sqrt{2}} + i(1 - \frac{1}{\sqrt{2}})$.
 \end{soln}
 \end{example}
 
@@ -297,11 +340,14 @@ Our next subject is contour integrals, namely the integral of some function alon
 \subsection{Contour Integrals}
 Let C be a contour and $f$ a continuous complex-valued function defined on C. Suppose that C is parametrized by the path $\gamma: [a, b] \to \mathbb{C}$.
 
-\begin{definition}\label{definition:17.7} The contour integral of $f$ along C is defined as $\int_C f(z) dz = \int_a^b f(\gamma(t)) \gamma'(t) dt$.
+\begin{definition}\label{definition:17.7}
+    The contour integral of $f$ along C is defined as $\int_C f(z) dz = \int_a^b f(\gamma(t)) \gamma'(t) dt$.
 \end{definition}
 
-The basic idea is change of variables. Take $z = \gamma(t)$, then $dz = \frac{d\gamma}{dt} dt$, so the integral on the LHS should be equal to the one on the RHS. 
-But, of course, to make it rigorous one needs to show that the expression on the RHS gives the same value as the definition with sums \[ \lim_{n \to \infty} \sum_{j=1}^n f(z_j)(z_j - z_{j-1}) (|z_j - z_{j-1}| \to 0).\] 
+The basic idea is change of variables. Take $z = \gamma(t)$, 
+then $dz = \frac{d\gamma}{dt} dt$, so the integral on the LHS should be equal to the one on the RHS. 
+But, of course, to make it rigorous one needs to show that the expression on the 
+RHS gives the same value as the definition with sums \[ \lim_{n \to \infty} \sum_{j=1}^n f(z_j)(z_j - z_{j-1}) (|z_j - z_{j-1}| \to 0).\] 
 The definition of contour integral is much easier to use in practice. Let us see some examples.
 
 \begin{example}\label{example:19.8} Let C be a semicircle parametrized by the path $\gamma(\theta) = 2e^{i\theta}, -\frac{\pi}{2} \leq \theta \leq \frac{\pi}{2}$. Let $f(z) = \bar{z}$. Then:
@@ -318,7 +364,9 @@ The definition of contour integral is much easier to use in practice. Let us see
     \end{align*}
 \end{example}
 
-\begin{example} \label{example:19.10} Let $f(z) = z^2$, C - the straight line segment from $-2i$ to $2i \implies$ C is parametrized by the path $\gamma(t) = 2it + (-2i)(1-t) = -2i + 4it, 0 \leq t \leq 1$. Then:
+\begin{example} \label{example:19.10} 
+    Let $f(z) = z^2$, C - the straight line segment from $-2i$ to $2i \implies$
+    C is parametrized by the path $\gamma(t) = 2it + (-2i)(1-t) = -2i + 4it, 0 \leq t \leq 1$. Then:
 \begin{align*} 
     \int_C f(z) dz & = \int_0^1 f(\gamma(t)) \gamma'(t) dt \\ 
     & = \int_0^1 (-2i + 4it)^2 4i dt = 4i(-4t - \frac{16t^3}{3} + \frac{16t^2}{2})|_0^1 \\ 
@@ -326,7 +374,8 @@ The definition of contour integral is much easier to use in practice. Let us see
 \end{align*}
 \end{example}
 
-Note: in the last two examples we have integrated $f(z) = z^2$ on two different contours that connect $2i$ to $-2i$ and obtained the same value, this is not a coincidence!
+Note: in the last two examples we have integrated $f(z) = z^2$ on two different 
+contours that connect $2i$ to $-2i$ and obtained the same value, this is not a coincidence!
 
 Prop 17.1 + basic linearity properties of integration applied to $\int_C f(z) dz$ imply:
 \begin{proposition}\label{proposition:17.3}
@@ -335,23 +384,28 @@ Prop 17.1 + basic linearity properties of integration applied to $\int_C f(z) dz
         \item $\int_{C_1 + C_2} f(z) dz = \int_{C_1} f(z) dz + \int_{C_2} f(z) dz$ and $\int_{-C} f(z) dz = -\int_C f(z) dz$
         \item $\int_C (f+g)(z) dz = \int_C f(z) dz + \int_C g(z) dz$
         \item For any $\alpha \in \mathbb{C}: \int_C \alpha f(z) dz = \alpha \int_C f(z) dz$
-        \item If $f$ is continuous on a domain $D \subseteq \mathbb{C}$ and has antiderivative $F(z)$ on D, then $\int_C f(z) dz = F(z_1) - F(z_0)$, where $z_0$ and $z_1$ are the endpoints of C.
+        \item If $f$ is continuous on a domain $D \subseteq \mathbb{C}$ and has 
+        antiderivative $F(z)$ on D, then $\int_C f(z) dz = F(z_1) - F(z_0)$, where $z_0$ and $z_1$ are the endpoints of C.
     \end{enumerate}
     
 \end{proposition}
 \begin{proof}
     
-    1), 2), 3) follow directly from Prop 17.1.
+    1), 2), 3) follow directly from Prop 17.1(\ref{proposition:17.1}).
     
     4) If F is an antiderivative of $f$, then
     
     \[ \frac{d}{dt} F(\gamma(t)) = F'(\gamma(t)) \gamma'(t) = f(\gamma(t)) \gamma'(t) \]
-    Here $\gamma: [a, b] \to \mathbb{C}$ is a parametrization of a contour C in D with $\gamma(a) = z_0$ and $\gamma(b) = z_1$. Applying Prop 17.1 with $w(t) = f(\gamma(t))\gamma'(t)$ and $F(\gamma(t)) = W(t)$ yields the result.
+    Here $\gamma: [a, b] \to \mathbb{C}$ is a parametrization of a contour C in D with $\gamma(a) = z_0$ and $\gamma(b) = z_1$. 
+    Applying Prop 17.1(\ref{proposition:17.1}) with $w(t) = f(\gamma(t))\gamma'(t)$ and $F(\gamma(t)) = W(t)$ yields the result.
     
 \end{proof}
 
 \begin{theorem}[Jordan Curve]
-    Let C be simple closed curve (Jordan curve) in $\mathbb{R}^2$. Then its complement $\mathbb{R}^2 \setminus C$ consists of exactly two connected components. One of these components is bounded (the interior) and the other is unbounded (the exterior), and the curve C is the boundary of each component.
+    Let C be simple closed curve (Jordan curve) in $\mathbb{R}^2$. Then its 
+    complement $\mathbb{R}^2 \setminus C$ consists of exactly two connected components. 
+    One of these components is bounded (the interior) and the other is unbounded (the exterior), 
+    and the curve C is the boundary of each component.
     
     The proof is highly non-trivial and it is omitted.
     \url{https://en.wikipedia.org/wiki/Jordan_curve_theorem#Proof_and_generalizations}[PROOF FROM WIKI.]

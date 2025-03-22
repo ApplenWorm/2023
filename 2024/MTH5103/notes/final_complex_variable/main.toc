@@ -4,24 +4,30 @@
 \contentsline {section}{\numberline {3}Geometric Representation of Complex Numbers}{9}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Modulus and Argument. Polar Form}{9}{subsection.3.1}%
 \contentsline {section}{\numberline {4}Functions of a Complex Variable}{16}{section.4}%
-\contentsline {section}{\numberline {5}Transformations of the Complex plane}{19}{section.5}%
-\contentsline {section}{\numberline {6}Limits}{23}{section.6}%
-\contentsline {section}{\numberline {7}Sets in $\mathbb {C}$}{28}{section.7}%
-\contentsline {section}{\numberline {8}Continuity}{30}{section.8}%
-\contentsline {section}{\numberline {9}Differentiability}{32}{section.9}%
-\contentsline {section}{\numberline {10}Single-valued analytic functions.}{40}{section.10}%
-\contentsline {section}{\numberline {11}Analyticity of multi-valued functions}{43}{section.11}%
-\contentsline {section}{\numberline {12}Harmonic functions.}{48}{section.12}%
-\contentsline {section}{\numberline {13}Complex sequences.}{52}{section.13}%
-\contentsline {section}{\numberline {14}Complex (scalar) series.}{53}{section.14}%
-\contentsline {section}{\numberline {15}Complex Power Series}{58}{section.15}%
-\contentsline {section}{\numberline {16}Taylor and Laurent series}{62}{section.16}%
-\contentsline {section}{\numberline {17}Laurent series}{65}{section.17}%
-\contentsline {section}{\numberline {18}Transformations and Mob(rph)eus}{68}{section.18}%
-\contentsline {section}{\numberline {19}Function $\ln z$}{72}{section.19}%
-\contentsline {section}{\numberline {20}Three types of isolated singularities.}{76}{section.20}%
-\contentsline {subsection}{\numberline {20.1}Zeros and Poles}{82}{subsection.20.1}%
-\contentsline {section}{\numberline {21}Complex integration.}{86}{section.21}%
-\contentsline {subsection}{\numberline {21.1}Contour Integrals}{89}{subsection.21.1}%
-\contentsline {section}{\numberline {22}Cauchy's Theorem}{94}{section.22}%
-\contentsline {section}{\numberline {23}Implications of Cuachy's Theorems}{107}{section.23}%
+\contentsline {subsection}{\numberline {4.1}Transformations of the Complex plane}{19}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Limits}{23}{section.5}%
+\contentsline {section}{\numberline {6}Sets in $\mathbb {C}$}{28}{section.6}%
+\contentsline {section}{\numberline {7}Continuity}{30}{section.7}%
+\contentsline {section}{\numberline {8}Differentiability}{32}{section.8}%
+\contentsline {section}{\numberline {9}Single-valued analytic functions.}{40}{section.9}%
+\contentsline {section}{\numberline {10}Analyticity of multi-valued functions}{43}{section.10}%
+\contentsline {section}{\numberline {11}Harmonic functions.}{48}{section.11}%
+\contentsline {section}{\numberline {12}Complex sequences.}{52}{section.12}%
+\contentsline {section}{\numberline {13}Complex (scalar) series.}{53}{section.13}%
+\contentsline {section}{\numberline {14}Complex Power Series}{58}{section.14}%
+\contentsline {section}{\numberline {15}Taylor and Laurent series}{62}{section.15}%
+\contentsline {section}{\numberline {16}Laurent series}{65}{section.16}%
+\contentsline {section}{\numberline {17}Transformations and Mob(rph)eus}{68}{section.17}%
+\contentsline {section}{\numberline {18}Function Ln $z$}{72}{section.18}%
+\contentsline {section}{\numberline {19}Isolated Singularities}{76}{section.19}%
+\contentsline {subsection}{\numberline {19.1}Three types of isolated singularities.}{76}{subsection.19.1}%
+\contentsline {subsection}{\numberline {19.2}Zeros and Poles}{82}{subsection.19.2}%
+\contentsline {section}{\numberline {20}Complex integration.}{86}{section.20}%
+\contentsline {subsection}{\numberline {20.1}Contour Integrals}{89}{subsection.20.1}%
+\contentsline {section}{\numberline {21}Cauchy's Theorem}{95}{section.21}%
+\contentsline {subsection}{\numberline {21.1}The Cauchy Integral Formula}{101}{subsection.21.1}%
+\contentsline {section}{\numberline {22}Residue Theorem}{105}{section.22}%
+\contentsline {section}{\numberline {23}Implications of Cuachy's Theorems}{109}{section.23}%
+\contentsline {subsection}{\numberline {23.1}Cauchy's Estimate}{111}{subsection.23.1}%
+\contentsline {section}{\numberline {24}Applications of Contour Integration to Real Integrals}{113}{section.24}%
+\contentsline {subsection}{\numberline {24.1}Sum of Infinite Rational Functions}{115}{subsection.24.1}%

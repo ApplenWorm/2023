@@ -161,7 +161,7 @@ We also have an analogue of Prop 3.2:
 Let us see some examples of continuous functions.
 \begin{example}\label{example:7.1}
     a) It is obvious that the constant function is continuous everywhere. $f(z) = c$ is continuous at every $z \in \mathbb{C}$.
-b) It is also clear that the identity function is continuous everywhere: $f(z) = z$ is continuous at every $z \in \mathbb{C}$ (Check - from Def 5.1!)
+b) It is also clear that the identity function is continuous everywhere: $f(z) = z$ is continuous at every $z \in \mathbb{C}$ (\verifythis - from Def 5.1(\ref{definition:5.1})!)
 c) Combining a), b), and Prop 5.1: We conclude that the linear function is continuous everywhere: for constants $a, b \in \mathbb{C}$, $f(z) = az + b$ is continuous at every $z \in \mathbb{C}$.
 \end{example}
 
@@ -276,9 +276,13 @@ Now we observe how we can construct complicated differentiable functions from el
     \item If $g(z) \neq 0$, then $\frac{f}{g}$ is differentiable at $z$ and $\left(\frac{f}{g}\right)'(z) = \frac{g(z)f'(z) - f(z)g'(z)}{(g(z))^2}$
     \item Chain rule. If $f(z)$ is differentiable at $z_0$ and $g(z)$ is differentiable at $w_0 = f(z_0)$, then the composed function $(g \circ f)(z) = g(f(z))$ is differentiable at $z_0$ and $(g \circ f)'(z_0) = g'(w_0)f'(z_0) = g'(f(z_0))f'(z_0)$.
 \end{enumerate}
-
-Pf. EXERCISE (The details follow from Def 6.1, Prop 3.1; the chain rule - proof follows from Def 6.1 as in the real case).
 \end{proposition}
+\begin{proof}[Exercise]
+    
+    \begin{exercise}
+        (The details follow from Def 6.1(\ref{definition:6.1}), Prop 3.1(\ref{proposition:3.1}); the chain rule - proof follows from Def 6.1(\ref{definition:6.1}) as in the real case).
+    \end{exercise}
+\end{proof}
 
 We have seen that the constant function, the identity function and $z^n$ are differentiable everywhere. Since any polynomial can be constructed out of these functions, using Prop 6.1 we conclude:
 

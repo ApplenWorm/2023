@@ -31,7 +31,7 @@
 % \section*{Week 8. Lecture 19.}
 \lecture{19}{Logarithm in $\mathbb C$}
 
-\section{Function $\ln z$}
+\section{Function Ln $z$}
 \begin{definition}\label{definition:15.1}
      The natural logarithm of a complex number $z$ is a complex number $w$ such that $e^w = z$. Notation: $w = \text{Ln } z$.
         The logarithm of $r \in \mathbb{R}$ denote as usual $\ln r$.
@@ -39,7 +39,7 @@
 
 Let us develop a formula for the computation of the complex logarithm. Write: $z = r(\cos \varphi + i\sin \varphi), w = u + iv$.
 
-By Def 15.1: $e^{u+iv} = r(\cos \varphi + i\sin \varphi) \implies e^u (\cos v + i\sin v) = r(\cos \varphi + i\sin \varphi)$.
+By Def 15.1(\ref{definition:15.1}): $e^{u+iv} = r(\cos \varphi + i\sin \varphi) \implies e^u (\cos v + i\sin v) = r(\cos \varphi + i\sin \varphi)$.
 
 By comparing the complex numbers, we conclude:
 \begin{align*}
@@ -57,19 +57,23 @@ $\implies \text{Ln } z$ is defined for any $z \neq 0$ and it is multi-valued fun
 
 \begin{example}\label{example:17.1} Compute: 1) $\text{Ln } i$ 2) $\text{Ln } (-4)$
 
-Sol: 1) $\text{Ln } i = \ln |i| + i(\arg i + 2\pi k) = \ln 1 + i(\frac{\pi}{2} + 2\pi k) = i(\frac{\pi}{2} + 2\pi k)$.
-
-2) $\text{Ln } (-4) = \ln |-4| + i(\arg(-4) + 2\pi k) = \ln 4 + i(\pi + 2\pi k)$.
+    \begin{soln}
+                        1) $\text{Ln } i = \ln |i| + i(\arg i + 2\pi k) = \ln 1 + i(\frac{\pi}{2} + 2\pi k) = i(\frac{\pi}{2} + 2\pi k)$.
+        
+        2) $\text{Ln } (-4) = \ln |-4| + i(\arg(-4) + 2\pi k) = \ln 4 + i(\pi + 2\pi k)$.
+    \end{soln}
 \end{example}
 \begin{example} \label{example:17.2}
      Find an analytic function $f(z)$ such that $\text{Re } f(z) = \arctan \frac{y}{x}$ and $f(-i) = \frac{3\pi}{2} + 2i$.
-
-Sol: In Ex 11.3 we have seen that $f(z) = \arctan \frac{y}{x} - \frac{i}{2} \ln(x^2 + y^2) + ic$.
-
-$\implies$ the only question is to determine the value of the constant $c$.
-
-Let $z = x + iy$. Recall: $\arg z - \theta$ s.t. $\cos \theta = \frac{x}{|z|}, \sin \theta = \frac{y}{|z|} \implies \frac{\sin \theta}{\cos \theta} = \tan \theta = \frac{y}{x} \implies \theta = \arctan \frac{y}{x} \implies \arg z = \arctan \frac{y}{x}$ (up to $2\pi$), $|z|^2 = x^2 + y^2$.
-$\implies f(z) = \arg z - \frac{i}{2} \ln |z|^2 + ic = -i(\ln|z| + i \arg z) + ic$, or $f(z) = -i \text{Ln } z + c_1$, where $c_1 \in \mathbb{C}$ is a constant, let us compute it: $\frac{3\pi}{2} + 2i = f(-i) = -i\text{Ln }(-i) + c_1 = -i(0 + i\frac{3\pi}{2}) + c_1 = \frac{3\pi}{2} + c_1 \implies c_1 = 2i$ and $f(z) = i\text{Ln } z + 2i$.
+\begin{soln}
+    
+    In Ex 11.3(\ref{example:11.3}) we have seen that $f(z) = \arctan \frac{y}{x} - \frac{i}{2} \ln(x^2 + y^2) + ic$.
+    
+    $\implies$ the only question is to determine the value of the constant $c$.
+    
+    Let $z = x + iy$. Recall: $\arg z - \theta$ s.t. $\cos \theta = \frac{x}{|z|}, \sin \theta = \frac{y}{|z|} \implies \frac{\sin \theta}{\cos \theta} = \tan \theta = \frac{y}{x} \implies \theta = \arctan \frac{y}{x} \implies \arg z = \arctan \frac{y}{x}$ (up to $2\pi$), $|z|^2 = x^2 + y^2$.
+    $\implies f(z) = \arg z - \frac{i}{2} \ln |z|^2 + ic = -i(\ln|z| + i \arg z) + ic$, or $f(z) = -i \text{Ln } z + c_1$, where $c_1 \in \mathbb{C}$ is a constant, let us compute it: $\frac{3\pi}{2} + 2i = f(-i) = -i\text{Ln }(-i) + c_1 = -i(0 + i\frac{3\pi}{2}) + c_1 = \frac{3\pi}{2} + c_1 \implies c_1 = 2i$ and $f(z) = i\text{Ln } z + 2i$.
+\end{soln}
 \end{example}
 
 \begin{proposition}\label{proposition:15.1} For any $z_1, z_2 \in \mathbb{C}, n \in \mathbb{N}$:
@@ -124,10 +128,12 @@ Passing to the limit $\Delta z \to 0$ we get: $\frac{dw}{dz} = \frac{1}{e^w} \im
 \end{proposition}
 
 \begin{example} \label{example:17.3} Study the function $w = \text{Ln}(z^2 + 4)$.
-
-Sol: $w = \text{Ln}(z^2 + 4) = \text{Ln}(z + 2i)(z - 2i) = \text{Ln}(z + 2i) + \text{Ln}(z - 2i)$ (Prop 15.1 1)) $\implies w$ has 2 branch points $z = 2i$ and $z = -2i$. Therefore, $w$ is analytic in the cut-plane where we cut along 2 rays that start at $z = \pm 2i$ (including $\pm 2i$):
-
-The derivative of this function in the cut-plane is computed as a composition function using: By the Chain Rule (Prop 6.1 6)): $(\text{Ln}(z^2 + 4))' = \frac{2z}{z^2 + 4}$.
+\begin{soln}
+    
+    $w = \text{Ln}(z^2 + 4) = \text{Ln}(z + 2i)(z - 2i) = \text{Ln}(z + 2i) + \text{Ln}(z - 2i)$ (Prop 15.1 1)) $\implies w$ has 2 branch points $z = 2i$ and $z = -2i$. Therefore, $w$ is analytic in the cut-plane where we cut along 2 rays that start at $z = \pm 2i$ (including $\pm 2i$):
+    
+    The derivative of this function in the cut-plane is computed as a composition function using: By the Chain Rule (Prop 6.1 6)): $(\text{Ln}(z^2 + 4))' = \frac{2z}{z^2 + 4}$.
+\end{soln}
 \end{example}
 
 Now we define the main branch of the function $\text{Ln } z$.
@@ -154,8 +160,7 @@ Eliminating $w$ we obtain: Denote $e^{iw} = t \implies z = \frac{t - \frac{1}{t}
 In the same way:
 
 \begin{exercise}
-    
-    EXERCISE: $\arccos z = -i\text{Ln}(z \pm i\sqrt{1 - z^2})$
+     $\arccos z = -i\text{Ln}(z \pm i\sqrt{1 - z^2})$
     $\arctan z = \frac{1}{2i} \text{Ln}\left(\frac{1+iz}{1-iz}\right)$.
 \end{exercise}
 
@@ -187,7 +192,7 @@ In the same way:
 \lecture{20+21}{Singularities and other isolated ones...}
 
 Now we introduce isolated singularities and discuss their classification. Then we define the residue of a function and relate calculation of residues of certain singularities to zeros of analytic functions.
-
+\section{Isolated Singularities}
 \begin{definition}\label{definition:16.1} 
     If $f$ is analytic on a punctured disc $D' = \{z \in \mathbb{C}: 0 < |z - z_0| < r\}$ but it is not analytic at $z_0$ (or not defined at $z_0$), then $z_0$ is called an isolated singularity of $f$.
 \end{definition}
@@ -196,15 +201,16 @@ In other words, $z_0$ is an isolated singularity if there exists a neighborhood 
 If $z_0$ is an isolated singularity of $f$, then there exists an annulus $0 < |z - z_0| < r$ (sufficiently small) such that $f$ is analytic there 
 and hence the Laurent series expansion of $f$ exists on this annulus.
 
-By Thm 14.2 (Laurent series) Such $f$ has a Laurent series expansion valid on $D'$:
+By Thm 13.2(\ref{theorem:13.2}) (Laurent series) Such $f$ has a Laurent series expansion valid on $D'$:
 \[  f(z) = \sum_{n=1}^{\infty} b_n (z - z_0)^{-n} + \sum_{n=0}^{\infty} a_n (z - z_0)^n = \dots \frac{b_2}{(z-z_0)^2} + \frac{b_1}{z-z_0} + a_0 + \dots \]
 The $\sum_{n=1}^{\infty} b_n (z - z_0)^{-n}$ part of the series is called the principal part of the Laurent series.
 
 Note: $\sum_{n=0}^{\infty} a_n (z - z_0)^n \xrightarrow{z \to z_0} a_0$.
 
-Now we can see that there are 3 options for the principal part in (*): there is no principal part; there is principal part and it has finitely many terms; or there is an infinite principal part. This observation leads to the following classification of isolated singularities.
+Now we can see that there are 3 options for the principal part in (*): there is no principal part; there is principal part and it has finitely many terms; or there is an infinite principal part. 
+This observation leads to the following classification of isolated singularities.
 
-\section{Three types of isolated singularities.}
+\subsection{Three types of isolated singularities.}
 I. Removable singularity: If $b_n = 0$ for all $n$, namely the principal part of the Laurent series is identically 0, then $z = z_0$ is called the removable singularity.
 
 Namely, the Laurent series is an analytic function on the disc centered at $z_0$, including the point $z_0$. At every interior point of that disc the series converges to the function $f(z)$ and at $z_0$
@@ -308,12 +314,12 @@ The series is valid on a punctured disc centered at $z_0 = 2$ of radius 1: $D' =
 \end{claim}
 \begin{proof}
  $z = 2$: Rewrite $f(z)$ in the form $f(z) = \frac{\varphi(z)}{z-1}$, where $\varphi(z) = \frac{1}{z-1}$. Then $\varphi(z)$ is analytic in a 
- neighborhood of $z = 2$ (including $z = 2$) and $\varphi(2) = 1 \neq 0$, thus, by Prop 16.2 $z = 2$ is a simple pole.
+ neighborhood of $z = 2$ (including $z = 2$) and $\varphi(2) = 1 \neq 0$, thus, by Prop 16.2 (\ref{proposition:16.2}) $z = 2$ is a simple pole.
 
 $z = 1$: In the same way: $f(z) = \frac{\tilde{\varphi}(z)}{z-1}$, $\tilde{\varphi}(z) = \frac{1}{z-2}$, $\tilde{\varphi}$ is analytic in a 
-neighborhood of $z = 1$ (including $z = 1$), and $\tilde{\varphi}(1) = -1 \neq 0$. Thus, by Prop 16.2 $z = 1$ is a simple pole.
+neighborhood of $z = 1$ (including $z = 1$), and $\tilde{\varphi}(1) = -1 \neq 0$. Thus, by Prop 16.2(\ref{proposition:16.2}) $z = 1$ is a simple pole.
 \end{proof}
-By Prop 16.2: $\text{Res}(f, 2) = \frac{\varphi(2)}{0!} = 1; \text{Res}(f, 1) = \frac{\tilde{\varphi}(1)}{0!} = -1$.
+By Prop 16.2(\ref{proposition:16.2}): $\text{Res}(f, 2) = \frac{\varphi(2)}{0!} = 1; \text{Res}(f, 1) = \frac{\tilde{\varphi}(1)}{0!} = -1$.
 
 \begin{example}\label{example:18.2} Prove:
 
@@ -321,15 +327,18 @@ By Prop 16.2: $\text{Res}(f, 2) = \frac{\varphi(2)}{0!} = 1; \text{Res}(f, 1) = 
 2) $z = 0$ is a removable singularity of $f(z) = \frac{\sin z}{z}$.
 
 \end{example}
-Sol: 1) Since $\lim_{z \to 3} \frac{(z-3)(z+3)}{z-3} = 6$ and $\lim_{z \to 3} (z-3) \cdot \frac{(z-3)(z+3)}{z-3} = 0$ by Prop 16.1 $z = 3$ is a removable singularity. 
-Define: $\tilde{f}(z) = \begin{cases} \frac{z^2 - 9}{z-3} & z \neq 3 \\ 6 & z = 3 \end{cases} \implies \tilde{f}(z)$ is entire (analytic on $\mathbb{C}$).
 
-2) We prove this in two ways:
-
-i) The Laurent series for $f$ in $0 < |z| < R$ is $f(z) = \frac{1}{z}(z - \frac{z^3}{3!} + \frac{z^5}{5!} - \dots) = 1 - \frac{z^2}{3!} + \frac{z^4}{5!} - \dots$ $\implies$ the 
-principal part does not exist $\implies z = 0$ is a removable singularity.
-
-ii) $\lim_{z \to 0} z \cdot \frac{\sin z}{z} = \lim_{z \to 0} \sin z = 0 \implies$ by Prop 16.1 $z = 0$ is a removable singularity.
+\begin{soln}
+    1) Since $\lim_{z \to 3} \frac{(z-3)(z+3)}{z-3} = 6$ and $\lim_{z \to 3} (z-3) \cdot \frac{(z-3)(z+3)}{z-3} = 0$ by Prop 16.1 (\ref{proposition:16.1})$z = 3$ is a removable singularity. 
+    Define: $\tilde{f}(z) = \begin{cases} \frac{z^2 - 9}{z-3} & z \neq 3 \\ 6 & z = 3 \end{cases} \implies \tilde{f}(z)$ is entire (analytic on $\mathbb{C}$).
+    
+    2) We prove this in two ways:
+    
+    i) The Laurent series for $f$ in $0 < |z| < R$ is $f(z) = \frac{1}{z}(z - \frac{z^3}{3!} + \frac{z^5}{5!} - \dots) = 1 - \frac{z^2}{3!} + \frac{z^4}{5!} - \dots$ $\implies$ the 
+    principal part does not exist $\implies z = 0$ is a removable singularity.
+    
+    ii) $\lim_{z \to 0} z \cdot \frac{\sin z}{z} = \lim_{z \to 0} \sin z = 0 \implies$ by Prop 16.1 (\remref{proposition:16.1})$z = 0$ is a removable singularity.
+\end{soln}
 
 \begin{example}\label{example:18.3} Classify the singularities of $f(z) = e^{\frac{1}{z}}$ and compute the residue of $f$ at $z = 0$.
 \begin{soln}

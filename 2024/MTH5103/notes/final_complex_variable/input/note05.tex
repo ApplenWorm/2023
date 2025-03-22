@@ -111,7 +111,7 @@ As expected there is an immediate relation between convergence or divergence of 
     \item $\sum_{n=0}^{\infty} z_n = S \iff \sum_{n=0}^{\infty} x_n = u$ and $\sum_{n=0}^{\infty} y_n = v$
 \end{enumerate}
 \begin{proof}
- 1) follows directly from Def 10.1 and the application of triangle inequality: $|x_n - x|, |y_n - y| \leq |z_n - z| \leq |x_n - x| + |y_n - y|$
+ 1) follows directly from Def 10.1(\ref{definition:10.1}) and the application of triangle inequality: $|x_n - x|, |y_n - y| \leq |z_n - z| \leq |x_n - x| + |y_n - y|$
 
 2) is proved by decomposing the complex sum into real and imaginary parts $\sum_{n=0}^{\infty} z_n = \sum_{n=0}^{\infty} x_n + i\sum_{n=0}^{\infty} y_n$ and a careful use of 1) [FINISH!]
 \end{proof}
@@ -217,20 +217,21 @@ Now we state 3 very useful tests for convergence of complex series.
 
 \begin{example}\label{example:13.2} Check the convergence of the following series:
 a) $\sum_{n=0}^{\infty} (2i)^n$ b) $\sum_{n=0}^{\infty} \left(\frac{1+i}{2}\right)^n$ c) $\sum_{n=0}^{\infty} \frac{(4i)^n}{n!}$
-
-Sol: 1) We use Comparison Test as follows: $a_n = (2i)^n \implies |a_n| = (|2i|)^n = |2|^n = 2^n > (\frac{3}{2})^n$. Since $\sum_{n=0}^{\infty} (\frac{3}{2})^n$ diverges (for example, by the Test for Divergence, since $\lim_{n \to \infty} (\frac{3}{2})^n = \infty \neq 0$) by Comparison Test $\sum_{n=0}^{\infty} (2i)^n$ diverges.
-
-2) Let us apply the Root Test: $a_n = \left(\frac{1+i}{2}\right)^n$
-$\implies \lim_{n \to \infty} \sqrt[n]{|a_n|} = \lim_{n \to \infty} \sqrt[n]{\left|\frac{1+i}{2}\right|^n} = \lim_{n \to \infty} \frac{|1+i|}{2} = \frac{\sqrt{2}}{2} = \frac{1}{\sqrt{2}} < 1$
-$\implies \sum_{n=0}^{\infty} \left(\frac{1+i}{2}\right)^n$ converges absolutely.
-
-c) Let us apply the Ratio Test: $a_n = \frac{(4i)^n}{n!}$
-
-\begin{align*}
-    & \implies \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n \to \infty} \left| \frac{\frac{(4i)^{n+1}}{(n+1)!}}{\frac{(4i)^n}{n!}} \right| = \lim_{n \to \infty} \left| \frac{(4i)^{n+1}}{(n+1)!} \cdot \frac{n!}{(4i)^n} \right| = \lim_{n \to \infty} \frac{|4i|}{n+1} = \lim_{n \to \infty} \frac{4}{n+1} = 0 < 1 
-\end{align*}
-
-     $\implies $ converges absolutely.
+\begin{soln}
+         1) We use Comparison Test as follows: $a_n = (2i)^n \implies |a_n| = (|2i|)^n = |2|^n = 2^n > (\frac{3}{2})^n$. Since $\sum_{n=0}^{\infty} (\frac{3}{2})^n$ diverges (for example, by the Test for Divergence, since $\lim_{n \to \infty} (\frac{3}{2})^n = \infty \neq 0$) by Comparison Test $\sum_{n=0}^{\infty} (2i)^n$ diverges.
+    
+    2) Let us apply the Root Test: $a_n = \left(\frac{1+i}{2}\right)^n$
+    $\implies \lim_{n \to \infty} \sqrt[n]{|a_n|} = \lim_{n \to \infty} \sqrt[n]{\left|\frac{1+i}{2}\right|^n} = \lim_{n \to \infty} \frac{|1+i|}{2} = \frac{\sqrt{2}}{2} = \frac{1}{\sqrt{2}} < 1$
+    $\implies \sum_{n=0}^{\infty} \left(\frac{1+i}{2}\right)^n$ converges absolutely.
+    
+    c) Let us apply the Ratio Test: $a_n = \frac{(4i)^n}{n!}$
+    
+    \begin{align*}
+        & \implies \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n \to \infty} \left| \frac{\frac{(4i)^{n+1}}{(n+1)!}}{\frac{(4i)^n}{n!}} \right| = \lim_{n \to \infty} \left| \frac{(4i)^{n+1}}{(n+1)!} \cdot \frac{n!}{(4i)^n} \right| = \lim_{n \to \infty} \frac{|4i|}{n+1} = \lim_{n \to \infty} \frac{4}{n+1} = 0 < 1 
+    \end{align*}
+    
+    $\implies $ converges absolutely.
+\end{soln}
 \end{example}
 
 \section{Complex Power Series}
@@ -238,11 +239,11 @@ c) Let us apply the Ratio Test: $a_n = \frac{(4i)^n}{n!}$
     The series $\sum_{n=0}^{\infty} a_n(z-z_0)^n, a_n \in \mathbb{C}, n \in \mathbb{N}$, is called a power series centered at $z = z_0$ (about $z = z_0$).
 \end{definition}
 
-A power series is an example of complex series where the sequence $z_n$ from Def 11.1 is of the special form $\{a_n(z-z_0)^n\}$ - involves variable $z$. 
+A power series is an example of complex series where the sequence $z_n$ from Def 11.1(\ref{definition:11.1}) is of the special form $\{a_n(z-z_0)^n\}$ - involves variable $z$. 
 Thus, the convergence or divergence of a power series may depend on the values of the variable $z$. If $z_0 = 0$, the power series are of the form $\sum_{n=0}^{\infty} a_n z^n$.
 
 \begin{remark}
-From Def 12.1 every power series $\sum_{n=0}^{\infty} a_n(z-z_0)^n$ converges for at least one point $z = z_0$.
+From Def 12.1(\ref{definition:12.1}) every power series $\sum_{n=0}^{\infty} a_n(z-z_0)^n$ converges for at least one point $z = z_0$.
 \end{remark}
 Next theorem tells us that convergence at one point guarantees convergence on some small disc around $z_0$. We prove it for the case $z_0 = 0$ (for simplicity of notation), the general case $z_0 \neq 0$ is proved in exactly the same way.
 
@@ -303,10 +304,12 @@ A very useful formulae for computing the radius of convergence of power series:
 
 and the series converges (absolutely) for any $|z| \leq 1$.
 
-3) One can prove: the series $1 + z + \frac{z^2}{2} + \frac{z^3}{3} + \dots + \frac{z^n}{n} + \dots$ with the radius of convergence $R = 1$, diverges at $z = 1$ and converges at all other points $|z| = 1$ (not absolutely!).
+3) One can prove: the series $1 + z + \frac{z^2}{2} + \frac{z^3}{3} + \dots + \frac{z^n}{n} + \dots$ with the radius of convergence $R = 1$, diverges at $z = 1$ and converges at 
+all other points $|z| = 1$ (not absolutely!).
 \end{example}
 
-\begin{definition}\label{definition:12.3} The disc of convergence of the power series $\sum_{n=0}^{\infty} a_n (z - z_0)^n$ is given by $D = \{z \in \mathbb{C}: |z - z_0| < R\}$ and we write $f(z)$ for the sum of the series on this disc.
+\begin{definition}\label{definition:12.3} The disc of convergence of the power series $\sum_{n=0}^{\infty} a_n (z - z_0)^n$ is given by $D = \{z \in \mathbb{C}: |z - z_0| < R\}$ and we 
+    write $f(z)$ for the sum of the series on this disc.
 \end{definition}
 
 \begin{proposition} \label{proposition:12.2} Suppose the power series $\sum_{n=0}^{\infty} a_n (z - z_0)^n$ has disc of convergence $D$. Then,
@@ -316,7 +319,8 @@ and the series converges (absolutely) for any $|z| \leq 1$.
 2) For all $z \in D$ the series $\sum_{n=0}^{\infty} na_n (z - z_0)^{n-1}$ is absolutely convergent and has sum $f'(z)$ (the derivative of $f$ at $z$).
 \end{proposition}
 
-Note: From Prop 12.2(\ref{proposition:12.2}): $f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n$ is differentiable arbitrarily many times at any $z$ in the disc of convergence of the series (namely, we can define its higher derivatives).
+Note: From Prop 12.2(\ref{proposition:12.2}): $f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n$ is differentiable arbitrarily many times at any $z$ in the disc of convergence 
+of the series (namely, we can define its higher derivatives).
 
 \begin{definition} \label{definition:12.4} For any $z \in \mathbb{C}$ we define the exponential function as the sum of the following series
 \[ e^z = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \dots = \sum_{n=0}^{\infty} \frac{z^n}{n!} \]
@@ -341,7 +345,7 @@ $\implies \sum_{n=0}^{\infty} \frac{z^n}{n!}$ converges absolutely for all $z \i
 \begin{proposition} \label{proposition:12.4} For any $z_1, z_2 \in \mathbb{C}: e^{z_1} \cdot e^{z_2} = e^{z_1 + z_2}$.
 \begin{proof}
     
-    By Def 12.4: $e^{z_1} = \sum_{n=0}^{\infty} \frac{z_1^n}{n!}, \quad e^{z_2} = \sum_{n=0}^{\infty} \frac{z_2^n}{n!}$.
+    By Def 12.4(\ref{definition:12.4}): $e^{z_1} = \sum_{n=0}^{\infty} \frac{z_1^n}{n!}, \quad e^{z_2} = \sum_{n=0}^{\infty} \frac{z_2^n}{n!}$.
     
     These are absolutely convergent series $\implies$ we can multiply them:
     $e^{z_1 + z_2} = 1 + (z_1 + z_2) + \frac{1}{2!}(z_1 + z_2)^2 + \dots + \frac{1}{n!}(z_1 + z_2)^n + \dots = 1 + (z_1 + z_2) + \left(\frac{z_1^2}{2!} + z_1z_2 + \frac{z_2^2}{2!}\right) + \dots + \left(\frac{z_1^n}{n!} + \frac{z_1^{n-1}}{(n-1)!}z_2 + \dots + \frac{z_2^n}{n!}\right) + \dots = e^{z_1}e^{z_2}$

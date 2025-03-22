@@ -37,7 +37,8 @@ We have studied the continuity and differentiability of complex functions. Our n
 
 Recall: If for any $z$ corresponds one value $f(z)$, then we say that $f$ is single-valued function.
 
-\begin{definition}\label{definition:7.1} Single-valued function $f(z)$ is analytic at the point $z_0$ if there exists $\epsilon$-neighborhood $D(z_0, \epsilon)$ of $z_0$ so that $f$ is differentiable at every $z \in D(z_0, \epsilon)$.
+\begin{definition}\label{definition:7.1} Single-valued function $f(z)$ is analytic at the 
+    point $z_0$ if there exists $\epsilon$-neighborhood $D(z_0, \epsilon)$ of $z_0$ so that $f$ is differentiable at every $z \in D(z_0, \epsilon)$.
 \end{definition}
 We have proved that if $f$ is differentiable at $z_0$, then $f$ is continuous at $z_0$, therefore if $f$ is analytic at $z_0$, then $f$ is continuous at $z_0$.
 
@@ -47,14 +48,19 @@ Let us note that we will also use names Holomorphic or Regular functions for ana
 \end{definition}
 \begin{definition}\label{definition:7.3} Single-valued function is analytic on a domain (open connected subset of the plane $\mathbb{C}$) $\Omega$ if it is differentiable at every $z \in \Omega$.
 \end{definition}
-Note: From Def 7.1: a set on which the function is analytic needs to be open, however if we say that some function $f$ is analytic in a closed set, we mean that there exists an open set that contains this closed set and the function is analytic on this open set.
+Note: From Def 7.1(\ref{definition:7.1}): a set on which the function is analytic needs to be open, 
+however if we say that some function $f$ is analytic in a closed set, we mean that there exists an open set that 
+contains this closed set and the function is analytic on this open set.
 
 \begin{example}\label{example:9.1}
     Polynomial $P_n(z) = a_0 + a_1z + \dots + a_nz^n$ - single-valued function differentiable at every $z \in \mathbb{C} \implies$ analytic on $\mathbb{C} \implies$ entire.
 \end{example}
 
 \begin{example}\label{example:9.2}
-    Every rational function $f(z) = \frac{P_n(z)}{Q_m(z)}$ where $P_n(z), Q_m(z)$ are polynomials (of deg $n, m$ respectively) without common factors is analytic on $\mathbb{C}$ except for the roots of $Q_m(z)$, namely except for the points where $Q_m(z) = 0$. For instance: $f(z) = \frac{z-1}{z^2 + iz} = \frac{z-1}{z(z+i)}$ is analytic everywhere except for $z = 0, -i$. For example, it is analytic on the following domains:
+    Every rational function $f(z) = \frac{P_n(z)}{Q_m(z)}$ where $P_n(z), Q_m(z)$ are polynomials 
+    (of deg $n, m$ respectively) without common factors is analytic on $\mathbb{C}$ except for the roots of $Q_m(z)$, 
+    namely except for the points where $Q_m(z) = 0$. For instance: $f(z) = \frac{z-1}{z^2 + iz} = \frac{z-1}{z(z+i)}$ is analytic everywhere except for $z = 0, -i$. 
+    For example, it is analytic on the following domains:
 
 $\{z \in \mathbb{C}: \text{Re } z > 0\} \quad \{z \in \mathbb{C}: \text{Re } z < 0\} \quad \{z \in \mathbb{C}: \text{Im } z > 0\} \quad \{z \in \mathbb{C}: \text{Im } z < -1\}$
 
@@ -110,7 +116,10 @@ $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x} = 0 \implies u(x
      Prop 7.2 is false if $\Omega$ is not connected - $f$ can take different constants (constant values) on each connected component of $\Omega$.
 \end{remark}
 \begin{proof}
-    The version of this proposition for real functions is proved using the Mean Value Theorem, that asserts that under appropriate continuity assumption for $f: (a,b) \to \mathbb{R}$ there exists $c \in (a,b)$ s.t. $f(b) - f(a) = f'(c)(b-a)$. So, if $f'(x) = 0$ for all $x \in (a,b)$, then $f(b) = f(a)$. The problem in the complex case is that there is no analogous idea of "between $a$ and $b$" in $\mathbb{C}$, since there are many routes from $a$ to $b$.
+    The version of this proposition for real functions is proved using the Mean Value Theorem, 
+    that asserts that under appropriate continuity assumption for $f: (a,b) \to \mathbb{R}$ there exists $c \in (a,b)$ s.t. $f(b) - f(a) = f'(c)(b-a)$. 
+    So, if $f'(x) = 0$ for all $x \in (a,b)$, then $f(b) = f(a)$. The problem in the complex case is that there is no analogous idea of "between $a$ and $b$" in $\mathbb{C}$, 
+    since there are many routes from $a$ to $b$.
 
 However, we can use the Mean Value Theorem for Re $f$ and Im $f$ as follows:
 
@@ -120,7 +129,8 @@ Since $f'(z) = 0$ for all $z \in \Omega$ by CR equations $0 = f'(z) = \frac{\par
 \begin{claim} $u$ is a constant function.
     \begin{proof}
         We have $u: \Omega \to \mathbb{R}, \frac{\partial u}{\partial x} = \frac{\partial u}{\partial y} = 0$ for all $(x,y) \in \Omega$. Pick $(x_0, y_0), (x_1, y_1) \in \Omega$. $\Omega$ is connected, 
-        thus by Def 4.2(\ref{definition:4.2}) any 2 points in $\Omega$ can be connected by a path that is entirely in $\Omega$. We join $(x_0, y_0)$ and $(x_1, y_1)$ by a path comprised of pieces parallel to x-axis or 
+        thus by Def 4.2(\ref{definition:4.2}) any 2 points in $\Omega$ can be connected by a path that is entirely in $\Omega$. 
+        We join $(x_0, y_0)$ and $(x_1, y_1)$ by a path comprised of pieces parallel to x-axis or 
         y-axis [One needs to show that such path exists!] 
         Since $\frac{\partial u}{\partial x} = 0$ by the Mean Value Theorem, $u$ is constant on the horizontal pieces. In the same way,
         since $\frac{\partial u}{\partial y} = 0$, $u$ is constant on vertical pieces. Thus, $u$ is constant on $\Omega$.
@@ -133,10 +143,12 @@ Now we are going to study analyticity of multi-valued functions - here we will s
 \section{Analyticity of multi-valued functions}
 We have seen that analytic function is always continuous, thus multi-valued functions are not analytic as is. The question is: can we choose a branch of such function that is single-valued and analytic?
 
-\begin{definition}\label{definition:8.1} We say that on a domain $\Omega$ there is a single-valued branch of multi-valued function if for every point of $\Omega$ we can choose one of the values of a function such that the resulting single-valued function is continuous in $\Omega$.
+\begin{definition}\label{definition:8.1} We say that on a domain $\Omega$ there is a single-valued 
+    branch of multi-valued function if for every point of $\Omega$ we can choose one of the values of a function such that the resulting single-valued function is continuous in $\Omega$.
 \end{definition}
 
-In other words: to choose single-valued branch means to choose the domain of definition of a function such that when a point $z$ moves along some closed continuous curve that is contained in the domain of definition and goes back to the starting point we get the same value of the function.
+In other words: to choose single-valued branch means to choose the domain of definition of a function such that when a point $z$ 
+moves along some closed continuous curve that is contained in the domain of definition and goes back to the starting point we get the same value of the function.
 
 Let us demonstrate how we do that on the following example.
 
@@ -154,7 +166,8 @@ Let us follow the value $w_0$ when $z$ is on the closed continuous curve $L$ tha
 If $z$ moves to $z_1$, the argument of $z_1 - z_0$ will be
 $\arg(z_1 - z_0) = \theta + \theta_1$.
 
-If it continues to move along $L$, $z$ will eventually return to the starting point: the modulus $r = |z - z_0|$ will be the same, but the argument will increase by $2\pi$ (since we completed the circle), and $w_0$ will attain the new value $w_1$.
+If it continues to move along $L$, $z$ will eventually return to the starting point: the modulus $r = |z - z_0|$ will be the same, 
+but the argument will increase by $2\pi$ (since we completed the circle), and $w_0$ will attain the new value $w_1$.
 \begin{align*} 
     w_{new} & = \sqrt{r}\left(\cos\left(\frac{\theta + 2\pi}{2}\right) + i\sin\left(\frac{\theta + 2\pi}{2}\right)\right) \\ 
             & = \sqrt{r}\left(\cos\left(\frac{\theta}{2} + \pi\right) + i\sin\left(\frac{\theta}{2} + \pi\right)\right) = w_1 = -w_0 
@@ -163,7 +176,8 @@ If it continues to move along $L$, $z$ will eventually return to the starting po
 Let us check what happens to $w_0$ is we move along a closed continuous curve that does not encircle the point $z_0$.
 \end{example}
 
-From the picture above that the value of the modulus and of the argument after completing the full circle will return to its starting value - the same, with no change. This is independent of the curve $L_1$ (the only important thing that the curve does not encircle the point $z_0$).
+From the picture above that the value of the modulus and of the argument after completing the full circle will return to its starting value - the same, with no change. 
+This is independent of the curve $L_1$ (the only important thing that the curve does not encircle the point $z_0$).
 \begin{corollary}\label{corollary:8.1} 
     On a domain $\Omega$ that contains curves that encircle $z_0$, it is impossible to choose a continuous branch of the function $\sqrt{z - z_0}$.
 \end{corollary}
@@ -301,11 +315,12 @@ In many problems in hydrodynamics, the elasticity theory and other fields there 
 \end{definition}
 
 \begin{example}\label{example:11.1} The function $u(x,y) = x^2 - y^2$ is harmonic for every $(x,y) \in \mathbb{R}^2$.
-
-Sol: $u(x,y)$ is defined everywhere, and we have:
-$\frac{\partial u}{\partial x} = 2x \quad \frac{\partial u}{\partial y} = -2y \quad \frac{\partial^2 u}{\partial x^2} = 2 \quad \frac{\partial^2 u}{\partial y^2} = -2 \quad \frac{\partial^2 u}{\partial x \partial y} = \frac{\partial^2 u}{\partial y \partial x} = 0$
-
-All partial derivatives are continuous everywhere, and $\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = 2 + (-2) = 0$.
+\begin{soln}
+         $u(x,y)$ is defined everywhere, and we have:
+    $\frac{\partial u}{\partial x} = 2x \quad \frac{\partial u}{\partial y} = -2y \quad \frac{\partial^2 u}{\partial x^2} = 2 \quad \frac{\partial^2 u}{\partial y^2} = -2 \quad \frac{\partial^2 u}{\partial x \partial y} = \frac{\partial^2 u}{\partial y \partial x} = 0$
+    
+    All partial derivatives are continuous everywhere, and $\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = 2 + (-2) = 0$.
+\end{soln}
 \end{example}
 
 \begin{example}\label{example:11.2} The function $u(x,y) = e^x y$ is \textbf{not} harmonic function on $\mathbb{R}^2$.

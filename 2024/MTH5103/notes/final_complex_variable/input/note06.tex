@@ -70,22 +70,24 @@ We have also studied Power series centered at $z_0$: $\sum_{n=0}^{\infty} a_n(z-
 Now we can adjust the previous example to include a variable $z \in \mathbb{C}$, making the geometric series above into power series.
 
 \begin{example}\label{example:15.2} For what values of $z$ does the power series $\sum_{n=0}^{\infty} \left(\frac{4+i}{6}\right)^n (z-3)^n$ converge?
-
-Sol: In this case we are studying a power series centered at $z_0 = 3$. We can apply the Ratio Test and obtain:
-\[  \lim_{n \to \infty} \left| \frac{a_{n+1}(z-z_0)^{n+1}}{a_n(z-z_0)^n} \right| = \lim_{n \to \infty} \left| \frac{(\frac{4+i}{6})^{n+1}(z-3)^{n+1}}{(\frac{4+i}{6})^n (z-3)^n} \right| = \frac{\sqrt{17}}{6}|z-3| = L \]
-By Ratio Test: the series converges absolutely if $L < 1$ (diverges if $L > 1$) $\implies$ converges absolutely if $|z-3| < \frac{6}{\sqrt{17}}$.
-
-The radius of convergence of this power series is given by $R = \lim_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right| = \frac{6}{\sqrt{17}}$.
+    \begin{soln}
+         In this case we are studying a power series centered at $z_0 = 3$. We can apply the Ratio Test and obtain:
+        \[  \lim_{n \to \infty} \left| \frac{a_{n+1}(z-z_0)^{n+1}}{a_n(z-z_0)^n} \right| = \lim_{n \to \infty} \left| \frac{(\frac{4+i}{6})^{n+1}(z-3)^{n+1}}{(\frac{4+i}{6})^n (z-3)^n} \right| = \frac{\sqrt{17}}{6}|z-3| = L \]
+        By Ratio Test: the series converges absolutely if $L < 1$ (diverges if $L > 1$) $\implies$ converges absolutely if $|z-3| < \frac{6}{\sqrt{17}}$.
+        
+        The radius of convergence of this power series is given by $R = \lim_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right| = \frac{6}{\sqrt{17}}$.
+    \end{soln}
 \end{example}
 
 Another type of question we may encounter is one in which we are asked to determine the power series of a given function.
 
 \begin{example}\label{example:15.3} 
     Find the power series expansion of the function $f(z) = \frac{1}{2z-3}$ about the point $z_0 = 0$ and determine the radius of convergence.
-
-Sol: Observe that $f$ can be written in the form of a convergent geometric series as follows:
-\[ \frac{1}{2z-3} = -\frac{1}{3} \cdot \frac{1}{1 - \frac{2z}{3}} = -\frac{1}{3} \sum_{n=0}^{\infty} \left(\frac{2z}{3}\right)^n = -\sum_{n=0}^{\infty} \frac{2^n}{3^{n+1}}z^n \]
-The series expansion is valid only if $\left|\frac{2z}{3}\right| < 1 \implies$ the radius of convergence of this series is $R = \frac{3}{2}$.
+\begin{soln}
+        Observe that $f$ can be written in the form of a convergent geometric series as follows:
+    \[ \frac{1}{2z-3} = -\frac{1}{3} \cdot \frac{1}{1 - \frac{2z}{3}} = -\frac{1}{3} \sum_{n=0}^{\infty} \left(\frac{2z}{3}\right)^n = -\sum_{n=0}^{\infty} \frac{2^n}{3^{n+1}}z^n \]
+    The series expansion is valid only if $\left|\frac{2z}{3}\right| < 1 \implies$ the radius of convergence of this series is $R = \frac{3}{2}$.
+\end{soln}
 \end{example}
 
 Some natural questions to pose at this point are: What happens if we asked to find the power series representation of a function $f$ that cannot be expressed as a geometric series? Is there a general method by which we can find the power series representation of an arbitrary function? How do we even know that a function admits a power series representation? Now we will partially answer these questions.
@@ -134,14 +136,13 @@ For all $n \geq 0$, $f^{(n)}(0) = 0 \implies$ its Taylor series must be: $0 + 0 
 Now let us see a couple of examples of Taylor series.
 
 \begin{example}\label{example:15.6} We have seen: $e^z = \sum_{n=0}^{\infty} \frac{z^n}{n!}$ converges absolutely for all $z \in \mathbb{C} \implies$ the radius of convergence $R = \infty \implies e^z$ is
-differentiable at all $z \in \mathbb{C}$ ($\implies$ entire) and $(e^z)' = e^z$ (Prop 12.3). $\sum_{n=0}^{\infty} \frac{z^n}{n!}$ is Maclaurin series for $e^z$, namely Taylor series about $z_0 = 0$. By Thm 13.1 it is a unique representation of $e^z$ (about $z_0 = 0$) as power series.
+differentiable at all $z \in \mathbb{C}$ ($\implies$ entire) and $(e^z)' = e^z$ (Prop 12.3). $\sum_{n=0}^{\infty} \frac{z^n}{n!}$ is Maclaurin series for $e^z$, namely Taylor series about $z_0 = 0$. By Thm 13.1(\ref{theorem:13.1}) it is a unique representation of $e^z$ (about $z_0 = 0$) as power series.
 \end{example}
 
 \begin{example}\label{example:15.7}
 Let $f(z) = \frac{1}{2z-3}$. What is the power series of $f$ about $z_0 = 2$?
 \begin{soln}
-    
-    Sol: We need to find a Taylor series expansion of the form $\sum_{n=0}^{\infty} a_n (z-2)^n$. We could use the formula for the coefficients in Thm 13.1(\ref{theorem:13.1}) to find this representation. Having the representation it is easy to find the radius of convergence. However, we do it differently - we represent this series as geometric series.
+    We need to find a Taylor series expansion of the form $\sum_{n=0}^{\infty} a_n (z-2)^n$. We could use the formula for the coefficients in Thm 13.1(\ref{theorem:13.1}) to find this representation. Having the representation it is easy to find the radius of convergence. However, we do it differently - we represent this series as geometric series.
     
     Rewrite $f(z)$ as geometric series (about $z_0 = 2$!):
     \begin{align*}
@@ -233,14 +234,18 @@ Now we are going to study one of the important transformations, the simplest aft
 \end{definition}
 There are 3 important special cases of this transformation.
 
-I. Translation: $w = z + b$. Since the addition of complex numbers obeys the rules of addition of vectors we get the point $w$ by moving the point $z$ in direction of the vector $b$ to the distance that equals to the length of $b$. Obviously, the whole domain $\Omega$ after application of $w$ is moved by vector $b$.
+I. Translation: $w = z + b$. Since the addition of complex numbers obeys the rules of addition of vectors we get the point $w$ by moving the point $z$ in direction of 
+the vector $b$ to the distance that equals to the length of $b$. Obviously, the whole domain $\Omega$ after application of $w$ is moved by vector $b$.
 
-\begin{example} \label{example:16.1} For $w = z + 1$: the whole domain is moved by 1 to the right parallel to x-axis. For $w = z - 2i$ - the whole domain is moved by 2 down parallel to y-axis. For $w = z - 1 + 2i$ - the whole domain is moved to the direction of the vector $-1 + 2i$ and by distance $\sqrt{5}$.
+\begin{example} \label{example:16.1} For $w = z + 1$: the whole domain is moved by 1 to the right parallel to x-axis. For $w = z - 2i$ - the whole domain is moved by 2 down parallel to y-axis. 
+    For $w = z - 1 + 2i$ - the whole domain is moved to the direction of the vector $-1 + 2i$ and by distance $\sqrt{5}$.
 \end{example}
 
-II. Rotation: $w = e^{i\alpha}z, \alpha \in \mathbb{R}$ (!) constant: $|w| = |z|, \arg w = \alpha + \arg z$. Namely, $z$ is moved to the point $w$ by rotation of the vector $z$ around the origin by angle $\alpha$.
+II. Rotation: $w = e^{i\alpha}z, \alpha \in \mathbb{R}$ (!) constant: $|w| = |z|, \arg w = \alpha + \arg z$. Namely, $z$ is moved to the point $w$ by rotation of the vector $z$ around the origin 
+by angle $\alpha$.
 
-III. Expansion: $w = r \cdot z, r > 0: |w| = r|z|, \arg w = \arg z$. The point $z$ goes to the point $w$ that is on the line connecting $z$ with the origin by distance multiplied by $r$. Contraction if $0 < r < 1$, Dilation if $r > 1$.
+III. Expansion: $w = r \cdot z, r > 0: |w| = r|z|, \arg w = \arg z$. The point $z$ goes to the point $w$ that is on the line connecting $z$ with the origin by distance multiplied by $r$. 
+Contraction if $0 < r < 1$, Dilation if $r > 1$.
 
 \begin{example} \label{example:16.2} Points on the circle $|z| = 2$ under $w = 3z$ pass to
 the points on the circle $|w| = 6$.
@@ -261,11 +266,12 @@ $\implies$ The inverse of a Möbius transformation is again Möbius transformati
 \end{proposition}
 \begin{example}\label{example:16.3}
      Find the Möbius transformation that sends $z_1 = 1 \to -i = w_1, z_2 = 0 \to -1 = w_2, z_3 = i \to 1 = w_3$.
-
-Sol: Let us plug the values of $z_i$ and $w_i$ and get:
-\[  -i = \frac{a+b}{c+d} \qquad -1 = \frac{b}{d} \qquad 1 = \frac{ai+b}{ci+d} \]
-We have 3 equations with 4 variables. We compute a,b,c via d. The second equation gives: $-1 = \frac{b}{d} \iff b = -d \implies$
-\[ \implies w = \frac{(1-2i)dz - d}{dz + d} \, \overset{1) \text{ and } 3)}{=} \, \frac{(1-2i)z - 1}{z + 1}, \quad d \neq 0 \]
+\begin{soln}
+    Let us plug the values of $z_i$ and $w_i$ and get:
+    \[  -i = \frac{a+b}{c+d} \qquad -1 = \frac{b}{d} \qquad 1 = \frac{ai+b}{ci+d} \]
+    We have 3 equations with 4 variables. We compute a,b,c via d. The second equation gives: $-1 = \frac{b}{d} \iff b = -d \implies$
+    \[ \implies w = \frac{(1-2i)dz - d}{dz + d} \, \overset{1) \text{ and } 3)}{=} \, \frac{(1-2i)z - 1}{z + 1}, \quad d \neq 0 \]
+\end{soln}
 \end{example}
 
 \begin{example}\label{example:16.4} Find the image of the upper-half circle $D = \{z \in \mathbb{C}: |z| < 1, \text{Im } z > 0\}$ under the Möbius transformation $w = \frac{i-iz}{1+z}$.
@@ -296,9 +302,8 @@ Take $z = \frac{1}{2}i \in D \implies w = \frac{i - \frac{1}{2}i^2}{1 + \frac{1}
 \end{soln}
 
 \begin{example} \label{example:16.5} Find the Möbius transformation sending $-1 \to i, 0 \to 1, i \to -i$.
-
     \begin{soln}
-Sol: Let us plug the values to get:
+         Let us plug the values to get:
 \begin{enumerate}
     \item $i = \frac{a+b}{c+d}$
     \item $1 = \frac{b}{d}$

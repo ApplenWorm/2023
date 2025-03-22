@@ -31,10 +31,14 @@
 \week{12}
 \lecture{31}{Cauchy AGAIN! Cauchy estimate and other stuff...}
 
+\subsection{Cauchy's Estimate}
 
-We continue with consequences of Cauchy's Theorem. The first one is the Liouville Theorem: suppose $f$ is entire (analytic on $\mathbb{C}$). By the Maximum Modulus Principle as $|z|$ gets larger, we can find points with $|f(z)|$ larger and larger, since the complex plane is unbounded. Does this mean that $|f(z)|$ must be unbounded for $z \in \mathbb{C}$? To address this question we need to investigate the size of $|f^{(n)}(z)|$.
-\begin{proposition}[Cauchy's Estimate]
-    Prop 20.3 Let $f$ be analytic on and inside a circle $C$ centered at $z_0$ of radius $R$. Let $M = \max |f(z)|$, $z \in C$. Then, for all $n \ge 0$,
+
+We continue with consequences of Cauchy's Theorem. The first one is the Liouville Theorem: suppose $f$ is entire (analytic on $\mathbb{C}$). By the Maximum Modulus Principle as $|z|$ gets larger, 
+we can find points with $|f(z)|$ larger and larger, since the complex plane is unbounded. Does this mean that $|f(z)|$ must be unbounded for $z \in \mathbb{C}$? 
+To address this question we need to investigate the size of $|f^{(n)}(z)|$.
+\begin{proposition}[Cauchy's Estimate]\label{proposition:20.3}
+     Let $f$ be analytic on and inside a circle $C$ centered at $z_0$ of radius $R$. Let $M = \max |f(z)|$, $z \in C$. Then, for all $n \ge 0$,
     \[
         |f^{(n)}(z_0)| \le \frac{n! M}{R^n}
         \]
@@ -110,7 +114,7 @@ Suppose there exists a nonconstant complex polynomial $p(z) = a_0 + a_1 z + a_2 
                         \end{proof}
                             The last subject of our course is:
                             
-fications of Contour Integration to Real Integrals
+\section{Applications of Contour Integration to Real Integrals}
 
 First, we discuss integrals of the following form:
 
@@ -145,13 +149,10 @@ The integral now is of the form
 The last integral is well within what contour integrals are about and we might be able to evaluate it with the aid of the Residue Theorem. Let us see an example.
 
 \begin{example}\label{example:23.1}
-    
-    
-    Ex 23.1: Prove that $\int_0^{2\pi} \frac{\cos 3t}{5-4 \cos t} dt = \frac{\pi}{12}$.
+    Prove that $\int_0^{2\pi} \frac{\cos 3t}{5-4 \cos t} dt = \frac{\pi}{12}$.
 \end{example}
 \begin{soln}
-    
-    Sol: Let us make substitutions as in (*) and get:
+    Let us make substitutions as in (*) and get:
     \[
         \int_0^{2\pi} \frac{\cos 3t}{5-4 \cos t} dt = \int_{|z|=1} \frac{\frac{1}{2} (z^3 + \frac{1}{z^3})}{5-4 \frac{1}{2} (z + \frac{1}{z})} \frac{dz}{iz} = \frac{1}{2i} \int_{|z|=1} \frac{z^6 + 1}{z^3 (5z - 2(z^2 + 1))} dz
         \]
@@ -180,10 +181,10 @@ $z_0 = 0$: By Prop 16.2(\ref{proposition:16.2}) for $\varphi(z) = \frac{z^6 + 1}
 \end{soln}
 \begin{example}\label{example:23.2}
     
-    Ex 23.2: Compute $\int_0^{\pi} \frac{dt}{(2 + \cos^2 t)^2}$.
+    Compute $\int_0^{\pi} \frac{dt}{(2 + \cos^2 t)^2}$.
 \end{example}
     \begin{soln}
-        Sol: Since the integration is on $[0, \pi]$ we cannot use directly the formula. The function $\frac{1}{(2 + \cos^2 t)^2}$ is even, thus
+         Since the integration is on $[0, \pi]$ we cannot use directly the formula. The function $\frac{1}{(2 + \cos^2 t)^2}$ is even, thus
         \[
         \int_0^{\pi} \frac{dt}{(2 + \cos^2 t)^2} = \frac{1}{2} \int_{-\pi}^{\pi} \frac{dt}{(2 + \cos^2 t)^2}
         \]
@@ -212,7 +213,9 @@ Now we use our substitution and get:
 \]
 
 To compute the last integral we use the Residue Theorem:
-The function $f(z) = \frac{z}{(z^2 + 10z + 1)^2}$ has 2 poles: $z_{1,2} = -5 \pm \sqrt{24}$, both of order 2 (\verifythis), only $z_1 = -5 + \sqrt{24}$ is inside $|z| \le 1$ (\verifythis). By Prop 16.2 for $\varphi(z) = \frac{z}{(z - (-5 - \sqrt{24}))^2}$ and $m = 2$
+The function $f(z) = \frac{z}{(z^2 + 10z + 1)^2}$ has 2 poles: $z_{1,2} = -5 \pm \sqrt{24}$, 
+both of order 2 (\verifythis), only $z_1 = -5 + \sqrt{24}$ is inside $|z| \le 1$ (\verifythis). 
+By Prop 16.2 (\ref{proposition:16.2}) for $\varphi(z) = \frac{z}{(z - (-5 - \sqrt{24}))^2}$ and $m = 2$
 \[
 \text{Res} \left( f, -5 + \sqrt{24} \right) = \frac{\varphi'(-5 + \sqrt{24})}{1!} = \frac{z_1 + z_2}{(z_1 - z_2)^3} = \frac{5}{192 \sqrt{6}}
 \]
@@ -235,6 +238,8 @@ The function $f(z) = \frac{z}{(z^2 + 10z + 1)^2}$ has 2 poles: $z_{1,2} = -5 \pm
 % \end{center}
 \lecture{32+33}{Infinite integrals, WHAAAT?}
 
+
+\subsection{Sum of Infinite Rational Functions}
 Now we are going to compute infinite integrals of rational functions of a real variable. Recall that the infinite integral converges if the following limits exist:
 \[
 \int_{-\infty}^{\infty} f(x) dx = \lim_{A \to -\infty} \int_A^0 f(x) dx + \lim_{B \to \infty} \int_0^B f(x) dx
@@ -316,7 +321,7 @@ Summarizing: We have proved the following theorem:
 First, we claim that $\lim_{R \to \infty} \int_{C_R^+} \frac{dz}{z^2 + 1} = 0$. Note that on $C_R^+$ we have:
 $|z^2 + 1| \ge ||z|^2 - 1| = R^2 - 1$ ($R > 1$) $\Rightarrow |\frac{1}{z^2 + 1}| \le \frac{1}{R^2 - 1}$
 
-The length of $C_R^+$ is $\pi R$, thus by ML inequality (Prop 17.5)
+The length of $C_R^+$ is $\pi R$, thus by ML inequality (Prop 17.5 (\ref{proposition:17.5}))
 \[
 \left| \int_{C_R^+} \frac{dz}{z^2 + 1} \right| \le \frac{\pi R}{R^2 - 1} \xrightarrow{R \to \infty} 0
 \]
@@ -342,9 +347,8 @@ Thus you have seen in the first calculus course.
     \end{remark}
 
 Let us see one more example.
-\begin{example}
-    
-    Ex 24.2: Compute $\int_0^{\infty} \frac{dx}{x^4 + 16}$.
+\begin{example}\label{example:24.2}
+    Compute $\int_0^{\infty} \frac{dx}{x^4 + 16}$.
     
     \begin{soln}
     
@@ -357,12 +361,12 @@ Only $z_1$ and $z_2$ are in the upper-half plane. Note: since all the zeros are 
 
 To use Thm 21.1 (\ref{theorem:21.1}) we need to compute $\text{Res} \left( \frac{1}{z^4 + 16}, z_1 \right)$ and $\text{Res} \left( \frac{1}{z^4 + 16}, z_2 \right)$.
 
-$z_1$ (\verifythis): Since $z_1$ is a simple pole we can use Cor 16.5 with $p(z) = 1$, $q(z) = z^4 + 16$, $q'(z) = 4z^3$ and obtain:
+$z_1$ (\verifythis): Since $z_1$ is a simple pole we can use Cor 16.5(\ref{corollary:16.5}) with $p(z) = 1$, $q(z) = z^4 + 16$, $q'(z) = 4z^3$ and obtain:
 \[
 \text{Res} \left( \frac{1}{z^4 + 16}, z_1 \right) = \frac{1}{4z_1^3} = \frac{1}{4 \cdot 8 \cdot e^{i \frac{3\pi}{4}}} = \frac{1}{16\sqrt{2} (i-1)} = -\frac{i+1}{32\sqrt{2}}
 \]
 
-$z_2$: Again, using Cor 16.5:
+$z_2$: Again, using Cor 16.5(\ref{corollary:16.5}):
 \[
 \text{Res} \left( \frac{1}{z^4 + 16}, z_2 \right) = \frac{1-i}{32\sqrt{2}}
 \]
@@ -382,9 +386,8 @@ $\Rightarrow$ by Thm 21.1 (\ref{theorem:21.1}) (and \ref{remark:20.37}) we obtai
     \end{remark}
 
 Now let us see an example showing how contour integrals can be used to sum infinite series.
-\begin{example}
-    
-    24.3: Prove that $\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}$.
+\begin{example}\label{example:24.3}
+    Prove that $\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}$.
 \end{example}
 \begin{soln}
  Let $f(z) = \frac{1}{z^2} \cot (\pi z)$.
@@ -412,7 +415,8 @@ $f(n) = \cos \pi n = \pm 1$, $f'(n) = -\pi \sin \pi n = 0$, $f''(n) = -\pi^2 \co
 = \frac{\pm 1 \pm \frac{\pi^2}{2} (z-n)^2 + \dots}{(z-n) \left( \pm \pi \pm \frac{\pi^3}{3!} (z-n)^2 + \dots \right)}
 \]
 
-$\Rightarrow \text{Res} (\cot \pi z, n) = \frac{1}{\pi}$ and thus, since $\frac{1}{z^2}$ is analytic for every $z \neq 0$, $\text{Res} \left( \frac{1}{z^2} \cot \pi z, n \neq 0 \right) = \frac{1}{n^2 \pi}$. As we can see from the expansion all the poles are simple.
+$\Rightarrow \text{Res} (\cot \pi z, n) = \frac{1}{\pi}$ and thus, since $\frac{1}{z^2}$ is analytic for every $z \neq 0$, $\text{Res} \left( \frac{1}{z^2} \cot \pi z, n \neq 0 \right) = \frac{1}{n^2 \pi}$. 
+As we can see from the expansion all the poles are simple.
 
 \begin{claim}[2]
     
@@ -430,7 +434,8 @@ $\Rightarrow \text{Res} (\cot \pi z, n) = \frac{1}{\pi}$ and thus, since $\frac{
             = \frac{1}{z^3} \left( \frac{1}{\pi} - \frac{\pi z^2}{3} - \frac{\pi^3 z^4}{45} - \frac{2 \pi^5 z^6}{945} - \dots \right) = \frac{\varphi(z)}{z^3}
             \]
             
-            $\Rightarrow \text{Res} \left( \frac{1}{z^2} \cot \pi z, 0 \right) = -\frac{\pi}{3}$, and since $\varphi(z)$ is analytic in a neighborhood of $z=0$ (and at $z=0$) and $\varphi(0) = \frac{1}{\pi} \neq 0$, we conclude (by Prop 16.2) that $z=0$ is a pole of order 3.
+            $\Rightarrow \text{Res} \left( \frac{1}{z^2} \cot \pi z, 0 \right) = -\frac{\pi}{3}$, and since $\varphi(z)$ is analytic in a neighborhood of $z=0$ (and at $z=0$) and $\varphi(0) = \frac{1}{\pi} \neq 0$, 
+            we conclude (by Prop 16.2 (\ref{proposition:16.2})) that $z=0$ is a pole of order 3.
         \end{proof}
 
 Consider the square contour $C_N$ having corner vertices given by $\pm (N + \frac{1}{2}) \pm i (N + \frac{1}{2})$ for $N \in \mathbb{N}$.

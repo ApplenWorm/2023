@@ -31,7 +31,10 @@
 \week{11}
 \lecture{28}{Cauchy's theorem continuation. Why are you TORTURING us, CAUCHY?????}
 
-We have proved Cauchy's theorem and have seen an important corollary of it - the Deformation Principle. We are about to see more important consequences of Cauchy's Theorem.
+\subsection{The Cauchy Integral Formula}
+
+We have proved Cauchy's theorem and have seen an important corollary of it - the Deformation Principle. 
+We are about to see more important consequences of Cauchy's Theorem.
 \begin{theorem}[The Cauchy Integral Formula]\label{theorem:Cauchy.Integral.formula.18.7}
     If $f$ is analytic on and everywhere inside a simple, closed, positively oriented contour $C$, and if $z_0$ is any point inside $C$, then
     \begin{equation*}
@@ -41,7 +44,11 @@ We have proved Cauchy's theorem and have seen an important corollary of it - the
     In other words: once we know the value of $f$ at every point on $C$, we can compute its value at every point inside $C$.
 \end{theorem}
 \begin{proof}
-     Let $\epsilon > 0$. By Prop (\ref{proposition:6.5}) $f$ is continuous $\Rightarrow$ there exists $\delta > 0$ such that if $|z-z_0| < \delta$, then $|f(z)-f(z_0)| < \epsilon$. Choose $R > 0$ such that $R < \delta$ and such that the disc of radius $R$ centered at $z_0$ is inside $C$. Let $C_0$ be the positively oriented boundary of that disc, parametrized by $\gamma(t) = z_0 + Re^{it}$, $0 \leq t \leq 2\pi$. We have:
+     Let $\epsilon > 0$. By Prop (\ref{proposition:6.5}) $f$ is continuous $\Rightarrow$ 
+     there exists $\delta > 0$ such that if $|z-z_0| < \delta$, then $|f(z)-f(z_0)| < \epsilon$. 
+     Choose $R > 0$ such that $R < \delta$ and such that the disc of radius $R$ centered at $z_0$ is inside $C$. 
+     Let $C_0$ be the positively oriented boundary of that disc, parametrized by $\gamma(t) = z_0 + Re^{it}$, $0 \leq t \leq 2\pi$. 
+     We have:
     \begin{equation*}
 \oint_C \frac{f(z)}{z-z_0} dz = \oint_{C_0} \frac{f(z)}{z-z_0} dz = \oint_{C_0} \frac{f(z) - f(z_0) + f(z_0)}{z-z_0} dz
 \end{equation*}
@@ -65,12 +72,15 @@ But $\epsilon > 0$ is arbitrary, therefore we conclude that $I = 0$.
     \begin{equation*}
         \oint_C \frac{z}{(9-z^2)(z+i)} dz = \oint_C \frac{f(z)}{z+i} dz,
     \end{equation*}
-    where $f(z) = \frac{z}{9-z^2}$ is analytic on and everywhere inside $C$. By CIF ( 18.7)(\ref{theorem:Cauchy.Integral.formula.18.7}:
+    where $f(z) = \frac{z}{9-z^2}$ is analytic on and everywhere inside $C$. By CIF (18.7)(\ref{theorem:Cauchy.Integral.formula.18.7}:
     %%%%%%
     $\int_C \frac{f(z)}{z+i} dz = 2\pi i f(-i) = 2\pi i \frac{-i}{-i-2} = 2\pi i \frac{-i}{-3} = \frac{\pi}{5}$.
 \end{soln}
 
-As this example suggests, there is a connection between the singularities of a given complex function $f(z)$ and the value of the contour integral for a given contour. In fact, there is an even stronger statement that one can make, relating the integral to the Laurent series expansion of $f$. We will not see it here.
+As this example suggests, there is a connection between the singularities of a given complex 
+function $f(z)$ and the value of the contour integral for a given contour. In fact, there is an even 
+stronger statement that one can make, relating the integral to the Laurent series expansion of $f$. 
+We will not see it here.
 
 \begin{example} \label{example:20.3} Compute $\int_C \frac{z^2 + 1}{z^2 + 2z - 3} dz$, where
 a) $C_1 = \{z \in \mathbb{C}: |z| = 2\}$
@@ -153,7 +163,7 @@ We have seen that once differentiable complex function is differentiable infinit
     \end{example}
 
     \begin{soln}
-      Set $f(z) = z^3$, apply Cor 18.9 with $n=3$:
+      Set $f(z) = z^3$, apply Cor 18.9(\ref{corollary:18.9}) with $n=3$:
         \[
             f'(z) = 3z^2, \quad f''(z) = 6z, \quad f'''(z) = 6
             \]
@@ -188,6 +198,7 @@ Now we are going to formulate and sketch a proof of another consequence of Cauch
 
 Recall (Def 16.2(\ref{definition:16.2})): The coefficient $b_1$ of the term $\frac{1}{z-z_0}$ is called the residue of the singularity at $z=z_0$, denoted by $\text{Res}(f, z_0)$. We have seen the definition and examples on week 8!
 
+\section{Residue Theorem}
 Now we are going to see how to compute integrals using only the values of the function at singularities - the residues.
 \begin{theorem}[Residue Theorem]\label{theorem:residue.19.1}
     Let $f$ be analytic on and inside a simple, closed, positively oriented contour $C$, except at a finite number of isolated singularities $z_1, \dots, z_n$ inside $C$. Then
@@ -215,7 +226,7 @@ We shall sketch the proof of the case where $z_1, \dots, z_n$ are simple poles o
             But by Prop (\ref{proposition:16.2}) (for $m=1$) $\text{Res}(f, z_k) = \frac{\varphi(z_k)}{0!} = \varphi(z_k)$.
             
         \end{proof}
-Now we can work out examples applying the Residue Theorem.
+Now we can work out examples applying the Residue Theorem(\ref{theorem:residue.19.1}).
 \begin{example}\label{example:21.1}
     
    Compute $\int_{|z|=1} \frac{\cos z}{z^5} dz$
@@ -352,7 +363,7 @@ $z=1$: By Prop (\ref{proposition:16.2}) $f(z) = \frac{\varphi(z)}{z-1}$ where $\
 \]
 \end{soln}
 
-\section{Implications of  Cuachy's Theorems}
+\section{Implications of Cuachy's Theorems}
 
 Now we state (and prove some of) a collection of surprising and powerful consequences of Cauchy's Theorem.
 \begin{theorem}[Gauss's Mean Value Theorem]\label{theorem:GaussMVT.20.1}
