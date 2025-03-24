@@ -12,6 +12,8 @@
 % \externaldocument{note10}
 % \externaldocument{note11}
 
+\graphicspath{./input/graphs/note01/}
+
 \zexternaldocument{note01}
 \zexternaldocument{note02}
 \zexternaldocument{note03}
@@ -275,12 +277,31 @@ $iy$ $\Im z$ Imaginary axis
 $ib$  Point in the plane $\mathbb{R}^2$: $(a,b)$.
 $(a,b) = z = a+ib$ OR vector connecting $(0,0)$ and $(a,b)$.
 
+% \begin{figure}
+%     \centering
+    \includegraphics{complex_plane.pdf}
+    % \includegraphics[width=0.8\textwidth]{figures/graph.pdf}
+    % \caption{My compiled graph}
+    % \label{fig:mygraph}
+% \end{figure}
+
 $x$ $(\Re z)$ Real Axis
 
 The plane (x,y) is called the complex plane. The x-axis is called the real axis and the y-axis is called the imaginary axis.
+
+% \begin{figure}[h]
+%     \centering
+    \includegraphics{complex_conjugate.pdf}
+% \end{figure}
+
 The complex conjugate of z in this plane is described by a vector that is symmetric with respect to the real axis.
 
-The sum of 2 complex numbers can be described as a sum of two vectors that start at the origin: the diagonal of the parallelogram that is constructed out of those 2 vectors. The difference between 2 complex numbers is the second(shorter) diagonal of the same parallelogram.
+The sum of 2 complex numbers can be described as a sum of two vectors that start at the origin: the diagonal of the parallelogram that is constructed out of those 2 vectors.
+
+\includegraphics{sum_complex.pdf}
+
+The difference between 2 complex numbers is the second(shorter) diagonal of the same parallelogram.
+\includegraphics{length_angle_complex.pdf}
 
 Recall: any vector is uniquely determined by its length and the angle that it creates with the x-axis [in the counterclockwise, positive direction]
 
@@ -289,6 +310,8 @@ Recall: any vector is uniquely determined by its length and the angle that it cr
 \end{definition}
 Let us assume that this is the only definition and obtain previous definition from it.
 By the Pythagorean theorem we get:
+\includegraphics{coordinates_complex.pdf}
+
 $\lvert z\rvert = \sqrt{a^2+b^2}(= \lvert a+ib \rvert)$. This is exactly the previous modulus definition.
 
 \begin{example}
@@ -306,19 +329,23 @@ Circle with radius R centered at $z_0$ : $\lvert z-z_0\rvert = R$.
 \begin{example}
 $\lvert z+1+i\rvert = 2$: circle centered at $z_0 = -(1+i)$ of radius 2.
 
+\includegraphics{circle_coord_complex.pdf}
 Indeed, all the points for which this equation holds lie on the circle described by $\sqrt{(x+1)^2+(y+1)^2} = 2$
 \end{example}
 
-The equation $\lvert z-z_0 \rvert <R$ describes all the points that lie inside the circle centered at $z_0$ of radius $R$ (but not on the circle!).
+The equation $\lvert z-z_0 \rvert <R$ describes all the points that lie inside the circle centered at $z_0$ of radius $R$ (but not on the circle!). \includegraphics{filled_circle.pdf}
 
 \begin{example}
  Find the geometric place of the points $z$ for which $\lvert z+2 \rvert - \lvert z-2\rvert = 1$
 \end{example}
 We are looking for the geometric place of all points $z$ such that the difference of distances from the point $z$ to two points $z=2$ and $z=-2$ is 1. Let us show that this is a hyperbola.
 Recall: hyperbola equation $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$ - hyperbola with vertices at $(a,0)$ and $(-a,0)$ with asymptotes at $y=\pm \frac{b}{a}x$.
+\includegraphics{hyperbola_cmplx.pdf}
 
 For $-\frac{y^2}{b^2}+\frac{x^2}{a^2} = 1$: the vertices are at $(0,b)$ and $(0,-b)$ and asymptotes at $y=\pm \frac{b}{a}x$.
 
+\includegraphics{hyperbola2-cmplx.pdf}
+\includegraphics{hyperbola2-complex.pdf}
 Here we have:
 $ \lvert z+2 \rvert -\lvert z-2\rvert = 1 \implies \lvert x+iy+2\rvert - \lvert x+iy-2\rvert = 1 $
 $ \implies \lvert (x+2)+iy\rvert-\lvert(x-2)+iy\rvert = 1 \implies \sqrt{(x+2)^2+y^2} - \sqrt{(x-2)^2+y^2} = 1 $
@@ -336,6 +363,7 @@ An \emph{argument} of $z \neq 0$, denoted by $\arg z$, is an angle $\theta$ such
 \end{definition}
  It is only defined up to the addition of multiples of $2\pi$. We say that $\theta$ is the \emph{principle value} of the argument if $0\leq \theta < 2\pi$ and denote the principal value of the argument $z$ by $\text{Arg} z$.
 
+ \includegraphics{angle_complex.pdf}
  The argument is exactly the angle that the vector $z$ creates with the x-axis when measured following the positive (anti-clockwise) direction.
  As we said: the argument takes infinitely many values that differ one from another by a multiple of $2\pi$.
  So, now we have 3 ways to represent a complex number: as an ordered pair, an algebraic form $x+iy$, or via its modulus and an argument.
@@ -479,6 +507,7 @@ $k=2: \quad 2^{1/8}(\cos\frac{23\pi}{16} + i\sin\frac{23\pi}{16}) \approx -0.21 
 $k=3: \quad 2^{1/8}(\cos\frac{31\pi}{16} + i\sin\frac{31\pi}{16}) \approx 1.07 - i0.21$
 
 Let us draw these roots on a circle, centered at 0 of radius $2^{1/8}$. Connecting the neighboring roots we obtain a square.
+\includegraphics{circle_square.pdf}
 \end{soln}
 \end{example}
 
@@ -492,6 +521,7 @@ $k=0: \quad \sqrt{2}(\cos\frac{\pi}{4} + i\sin\frac{\pi}{4}) = \sqrt{2}(\frac{1}
 $k=1: \quad \sqrt{2}(\cos\frac{3\pi}{4} + i\sin\frac{3\pi}{4}) = \sqrt{2}(-\frac{1}{\sqrt{2}} + i\frac{1}{\sqrt{2}}) = -1+i$
 $k=2: \quad \sqrt{2}(\cos\frac{5\pi}{4} + i\sin\frac{5\pi}{4}) = \sqrt{2}(-\frac{1}{\sqrt{2}} - i\frac{1}{\sqrt{2}}) = -1-i$
 $k=3: \quad \sqrt{2}(\cos\frac{7\pi}{4} + i\sin\frac{7\pi}{4}) = \sqrt{2}(\frac{1}{\sqrt{2}} - i\frac{1}{\sqrt{2}}) = 1-i$
+\includegraphics{circle_square2.pdf}
 \end{soln}
 \end{example}
 
