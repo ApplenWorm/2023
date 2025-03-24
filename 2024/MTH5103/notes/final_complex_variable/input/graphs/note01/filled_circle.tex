@@ -1,0 +1,17 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns} % Required for the hatching pattern
+
+\begin{document}
+\begin{tikzpicture}[scale=1]
+
+  % Axes
+  \draw[->] (-2.5,0) -- (2.5,0);
+  \draw[->] (0,-2.5) -- (0,2.5);
+
+  % Filled circle with hatching
+  \draw[pattern=north east lines, pattern color=blue] (0,0) circle (1cm);
+    \draw (0,0) circle (1cm);
+
+\end{tikzpicture}
+\end{document}
