@@ -1,0 +1,23 @@
+\documentclass[tikz, border=3mm]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Latex, % Set default arrow tip style
+    point/.style={circle, fill=red, inner sep=1.5pt}, % Style for the red points
+    labelstyle/.style={red} % Style for the labels
+]
+
+    % Axes
+    \draw[->, thick] (-1.5, 0) -- (1.5, 0) node[right] {$x$}; % Added x label for context
+    \draw[->, thick] (0, -1.5) -- (0, 1.5) node[above] {$iy$}; % Added y label for context
+
+    % Points and Labels
+    \node[point, label={[labelstyle]below right:1}] at (1, 0) {};
+    \node[point, label={[labelstyle]below left:-1}] at (-1, 0) {};
+    \node[point, label={[labelstyle]right:$i$}] at (0, 1) {};
+    \node[point, label={[labelstyle]right:$-i$}] at (0, -1) {};
+
+\end{tikzpicture}
+\end{document}
