@@ -1,8 +1,8 @@
-\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Motivation}{4}{subsection.1.1}%
-\contentsline {section}{\numberline {2}The Field of Complex Numbers}{4}{section.2}%
-\contentsline {section}{\numberline {3}Geometric Representation of Complex Numbers}{9}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Modulus and Argument. Polar Form}{9}{subsection.3.1}%
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Motivation}{3}{subsection.1.1}%
+\contentsline {section}{\numberline {2}The Field of Complex Numbers}{3}{section.2}%
+\contentsline {section}{\numberline {3}Geometric Representation of Complex Numbers}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Modulus and Argument. Polar Form}{8}{subsection.3.1}%
 \contentsline {section}{\numberline {4}Functions of a Complex Variable}{16}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Transformations of the Complex plane}{19}{subsection.4.1}%
 \contentsline {section}{\numberline {5}Limits}{23}{section.5}%
