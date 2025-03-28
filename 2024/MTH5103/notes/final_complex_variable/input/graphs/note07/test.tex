@@ -1,51 +1,39 @@
-\documentclass{standalone}
+\documentclass[tikz, border=3mm]{standalone}
 \usepackage{tikz}
-\usepackage{amsmath}
-\usetikzlibrary{angles, quotes}
+\usetikzlibrary{arrows.meta, positioning, calc}
 
 \begin{document}
-\begin{tikzpicture}[scale=1]
+\begin{tikzpicture}[
+    >=Latex, % Set default arrow tip style
+    dot/.style={fill=black, circle, inner sep=1.5pt}, % Style for points
+    labelstyle/.style={black} % Style for labels
+]
 
-    \begin{scope}[shift=(0,0)]
-     % Axes
-  \draw[->] (-2.5,0) -- (2.5,0) node[right] {$x$};
-  \draw[->] (0,-2.5) -- (0,2.5) node[above] {$y$};
+    % --- Given Definitions ---
+    \coordinate (Ce) at (2.2, 1.5); % Center of the ellipse
+    \coordinate (Z1) at (1.5, 0.8); % First point on ellipse
+    \coordinate (Z2) at (2.0, 2.0); % Second point on ellipse
 
-  % Define the angle (in degrees)
-  \def\thetaaa{30}
+    % --- Visual Approximation Parameters (Adjust these by eye) ---
+    \def\xrad{0.9}  % Estimated x-radius before rotation
+    \def\yrad{0.6}  % Estimated y-radius before rotation
+    \def\rotangle{25} % Estimated rotation angle in degrees
 
-  % Line (extending in both directions)
-  \draw[red, thick] (-2,{-2*tan(\thetaaa)}) -- (2,{2*tan(\thetaaa)}) node[above right] {$l_\theta$};
+    % --- Drawing ---
+    % Axes (adjust limits to fit ellipse)
+    \draw[->, thick] (0, 0) -- (4, 0) node[below] {$x$};
+    \draw[->, thick] (0, 0) -- (0, 3) node[left] {$y$};
 
-  % Define coordinates for the angle (more robust)
-  \coordinate (O) at (0,0);
-  \coordinate (A) at (1,0);
-  \coordinate (B) at ({1.5*cos(\thetaaa)},{1.5*sin(\thetaaa)});
+    % Draw the Ellipse (Approximation)
+    \draw[red, thick] (Ce) ellipse [x radius=\xrad, y radius=\yrad, rotate=\rotangle];
 
-  % Angle (using angles and quotes libraries)
-  \pic [draw, "$\theta$", angle eccentricity=1.2, angle radius=0.7cm] {angle = A--O--B};
-    \end{scope}
+    % Draw the points and labels
+    \draw[rotate=30, red, thick] (Ce) ellipse (\xrad , 10);  % old syntax
 
-    \draw[->, thick] (4,1) -- (6,1);
-    \node[above] at (5, 1.25) {$z^2$};
 
-    \begin{scope}[shift={(8.9,0)}]
-
-        % Axes
-\draw[->] (-3,0) -- (3,0) node[right] {$u$};
-\draw[->] (0,-0.5) -- (0,3) node[above] {$v$};
-
-% Define the radius
-\def\r{2}
-
-% Semicircle
-\draw[red, thick] (-\r,0) arc (180:0:\r);
-
-% Labels
-\node[below] at (\r,0) {$r^2$};
-\node[below] at (-\r,0) {$-r^2$};
-\node[left] at (0,\r) {$ir^2$};
-  \end{scope}
+    % Optional: Add lines from center to points to help visualize
+    % \draw[gray, thin] (Ce) -- (Z1);
+    % \draw[gray, thin] (Ce) -- (Z2);
 
 \end{tikzpicture}
 \end{document}
