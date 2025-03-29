@@ -12,6 +12,9 @@
 % \externaldocument{note10}
 % \externaldocument{note11}
 
+\graphicspath{{./input/graphs/note08/}}
+
+
 \zexternaldocument{note01}
 \zexternaldocument{note02}
 \zexternaldocument{note03}
@@ -203,6 +206,8 @@ In this lecture we first define the integral of a complex function of a real
 variable $\int w(t) dt$ and then the integral of a complex function of complex variable. Let us start with some 
 motivation from real case.
 
+\includegraphics{img_graph1.pdf}
+
 Recall the definition of the integral of a real function: Let $f(x)$ be a real, continuous on a closed, bounded interval $[a, b]$. 
 Partition the interval $[a, b]$ into $n$ subintervals: $a = x_0 < x_1 < \dots < x_{n-1} < x_n = b$, choose 
 a sample point $x_j^*$, $0 \leq j \leq n$ in each subinterval. Then, $\int_a^b f(x) dx = \lim_{n \to \infty} \sum_{j=1}^n f(x_j^*)(x_j - x_{j-1})$, where the width of partition $\max |x_j - x_{j-1}| \to 0$.
@@ -213,6 +218,8 @@ In the complex plane there are a lot of curves that connect 2 points. So, the an
 
 For a given curve $C$ from $u + iv$ to $u' + iv'$ define $\int_C f(z) dz = \lim_{n \to \infty} \sum_{j=1}^n f(\xi_j)(z_j - z_{j-1})$, $\max |z_j - z_{j-1}| \to 0$, where we 
 partition the curve and $(\xi_{j-1}, \xi_j)$ is an arc, $|z_j - z_{j-1}|$ is a length of a string that connects $z_{j-1}$ and $z_j$ on this arc.
+
+\includegraphics{img_graph2.pdf}
 
 If this limit is independent of the curve and of the choice of a point for 
 the value $f(\xi_j)$, then this integral exists and it is called a path integral with respect to the path C. 
@@ -254,6 +261,8 @@ gives the same curve as $\gamma$, but traversed in the opposite direction.
     This is an equation of an ellipse with focal points $x = 2, y = 3$, since $\frac{x^2}{4} + \frac{y^2}{9} = 1 \iff (\frac{x}{2})^2 + (\frac{y}{3})^2 = 1$.
 \end{soln}
 \end{example}
+
+\includegraphics{img_graph3.pdf}
 
 Parametrization: Take $x = 2\cos t, y = 3\sin t$ for $0 \leq t < 2\pi$. Then $(\frac{2\cos t}{2})^2 + (\frac{3\sin t}{3})^2 = \cos^2 t + \sin^2 t = 1 \implies z(t) = 2\cos t + i3\sin t$.
 
@@ -297,6 +306,8 @@ We can add paths in the following manner:
     Define $\gamma: [0, 1] \to \mathbb{C}$ by $\gamma(t) = (1+i)t$. Graph this contour and calculate its length.
 \begin{soln}
      $L = \int_0^1 |\gamma'(t)| dt = \int_0^1 \sqrt{1^2 + 1^2} dt = \sqrt{2}$.
+
+     \includegraphics{img_graph4.pdf}
 \end{soln}
 \end{example}
 
@@ -351,6 +362,8 @@ RHS gives the same value as the definition with sums \[ \lim_{n \to \infty} \sum
 The definition of contour integral is much easier to use in practice. Let us see some examples.
 
 \begin{example}\label{example:19.8} Let C be a semicircle parametrized by the path $\gamma(\theta) = 2e^{i\theta}, -\frac{\pi}{2} \leq \theta \leq \frac{\pi}{2}$. Let $f(z) = \bar{z}$. Then:
+
+    \includegraphics{img_graph5.pdf}
 \begin{align*}
     \int_C f(z) dz &= \int_{-\pi/2}^{\pi/2} f(\gamma(\theta)) \gamma'(\theta) d\theta = \int_{-\pi/2}^{\pi/2} \overline{2e^{i\theta}} 2ie^{i\theta} d\theta = \int_{-\pi/2}^{\pi/2} 4i d\theta \\ 
     & = 4i(\frac{\pi}{2} - (-\frac{\pi}{2})) = 4\pi i 
@@ -406,7 +419,8 @@ Prop 17.1 + basic linearity properties of integration applied to $\int_C f(z) dz
     complement $\mathbb{R}^2 \setminus C$ consists of exactly two connected components. 
     One of these components is bounded (the interior) and the other is unbounded (the exterior), 
     and the curve C is the boundary of each component.
-    
+    \includegraphics{img_graph6.pdf}
+
     The proof is highly non-trivial and it is omitted.
     \url{https://en.wikipedia.org/wiki/Jordan_curve_theorem#Proof_and_generalizations}[PROOF FROM WIKI.]
 \end{theorem}

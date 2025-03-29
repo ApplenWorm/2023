@@ -12,6 +12,8 @@
 % \externaldocument{note10}
 % \externaldocument{note11}
 
+\graphicspath{{./input/graphs/note04/}}
+
 
 \zexternaldocument{note01}
 \zexternaldocument{note02}
@@ -61,6 +63,12 @@ contains this closed set and the function is analytic on this open set.
     (of deg $n, m$ respectively) without common factors is analytic on $\mathbb{C}$ except for the roots of $Q_m(z)$, 
     namely except for the points where $Q_m(z) = 0$. For instance: $f(z) = \frac{z-1}{z^2 + iz} = \frac{z-1}{z(z+i)}$ is analytic everywhere except for $z = 0, -i$. 
     For example, it is analytic on the following domains:
+
+    \includegraphics{image_graph1.pdf}
+
+    \includegraphics{img_graph2.pdf}
+
+    \includegraphics{img_graph3.pdf}
 
 $\{z \in \mathbb{C}: \text{Re } z > 0\} \quad \{z \in \mathbb{C}: \text{Re } z < 0\} \quad \{z \in \mathbb{C}: \text{Im } z > 0\} \quad \{z \in \mathbb{C}: \text{Im } z < -1\}$
 
@@ -121,6 +129,7 @@ $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x} = 0 \implies u(x
     So, if $f'(x) = 0$ for all $x \in (a,b)$, then $f(b) = f(a)$. The problem in the complex case is that there is no analogous idea of "between $a$ and $b$" in $\mathbb{C}$, 
     since there are many routes from $a$ to $b$.
 
+    \includegraphics{img_graph4.pdf}
 However, we can use the Mean Value Theorem for Re $f$ and Im $f$ as follows:
 
 Since $f'(z) = 0$ for all $z \in \Omega$ by CR equations $0 = f'(z) = \frac{\partial u}{\partial x} + i\frac{\partial v}{\partial x}$ for all $z \in \Omega \implies \frac{\partial u}{\partial x} = \frac{\partial u}{\partial y} = \frac{\partial v}{\partial x} = \frac{\partial v}{\partial y} = 0$ for all $z \in \Omega$.
@@ -138,6 +147,9 @@ Since $f'(z) = 0$ for all $z \in \Omega$ by CR equations $0 = f'(z) = \frac{\par
     \end{proof}
 \end{claim}
 \end{proposition}
+
+\includegraphics{img_graph5.pdf}
+
 Now we are going to study analyticity of multi-valued functions - here we will see the big difference between the complex and real functions.
 
 \section{Analyticity of multi-valued functions}
@@ -166,6 +178,8 @@ Let us follow the value $w_0$ when $z$ is on the closed continuous curve $L$ tha
 If $z$ moves to $z_1$, the argument of $z_1 - z_0$ will be
 $\arg(z_1 - z_0) = \theta + \theta_1$.
 
+\includegraphics{img_graph6.pdf}
+
 If it continues to move along $L$, $z$ will eventually return to the starting point: the modulus $r = |z - z_0|$ will be the same, 
 but the argument will increase by $2\pi$ (since we completed the circle), and $w_0$ will attain the new value $w_1$.
 \begin{align*} 
@@ -175,6 +189,8 @@ but the argument will increase by $2\pi$ (since we completed the circle), and $w
 
 Let us check what happens to $w_0$ is we move along a closed continuous curve that does not encircle the point $z_0$.
 \end{example}
+
+\includegraphics{img_graph7.pdf}
 
 From the picture above that the value of the modulus and of the argument after completing the full circle will return to its starting value - the same, with no change. 
 This is independent of the curve $L_1$ (the only important thing that the curve does not encircle the point $z_0$).
@@ -206,12 +222,18 @@ Indeed, the biggest domain on which none of the closed continuous curves encircl
 
 \subsection*{The "largest" such domain}
 \begin{itemize}
-    \item Cut-plane: \( \mathbb{C} \) without the line \( \{ z = x + iy \mid x \leq x_0 \} \) (including \( z_0 \)).
+    \item Cut-plane: \( \mathbb{C} \) without the line \( \{ z = x + iy \mid x \leq x_0 \} \) 
+    (including \( z_0 \)).
+    
+    \includegraphics{img_graph8.pdf}
+
     \item Cut-plane: two single-valued branches:
     \[
         w_0 = \sqrt{r} (\cos \frac{\theta}{2} + i \sin \frac{\theta}{2}), \quad 
         w_1 = -\sqrt{r} (\cos \frac{\theta}{2} + i \sin \frac{\theta}{2})
     \]
+
+    \includegraphics{img_graph9.pdf}
 \end{itemize}
 
 \emphOnly{Note}: We can cut along any ray starting at \( z_0 \).
@@ -244,6 +266,8 @@ w_k = \sqrt[n]{r} \left( \cos \frac{\theta + 2\pi k}{n} + i \sin \frac{\theta + 
 Fix \( 0 \leq k_0 \leq n-1 \).
 
 As before, we let \( z \) be on the closed continuous curve \( L \) that encloses \( z_0 \). 
+
+\includegraphics{img_graph10.pdf}
 
 When \( z \) will complete the full circle (anticlockwise), the modulus \( r \) will return to the same value. The argument, however, will increase by \( 2\pi \), and \( w \) will attain a new value.
 % \end{example}
@@ -281,11 +305,15 @@ $\implies z = z_0$ is the branch point of the function $f(z) = \sqrt[n]{z - z_0}
         $\sqrt{1 + z^2} = \sqrt{z - i} \cdot \sqrt{z + i}$, therefore $z = \pm i$ are the branch points of $\sqrt{z - i}$, $\sqrt{z + i} \implies$ branch points of $\sqrt{1 + z^2}$.
 Let us see on the picture what happens and where to cut so we will be able to obtain a continuous single-valued branch of $f(z)$.
 
+\includegraphics{img_graph11.pdf}
+
 If $z$ is on $L_1$ (around $z = i$): when $z$ returns to the initial point $\sqrt{z + i}$ returns to the same value since $L_1$ does not enclose $z = -i$ while $\sqrt{z - i}$ attains new value - changes the sign of the previous one. Therefore, $f(z)$ also changes the sign. In the same way: if $z$ is on $L_2$, then upon return to the initial point $\sqrt{z + i}$ will change the value - change the sign, $\sqrt{z - i}$ will return to the same value, and the function will change the sign. If $z$ is on $L_3$ that encloses both $z_0 = i$ and $z_0 = -i$, then $\sqrt{z - i}$ and $\sqrt{z + i}$ will change the sign, but their product - the original function - will not!
     \end{soln}
 \end{example}
 
 $\implies$ We can choose a continuous branch on a domain $\Omega$ if none of the closed curves in $\Omega$ enclose $i$ and not $-i$ (or $-i$ and not $i$), but it can enclose both. Namely, if we cut the plane along the interval connecting $i$ and $-i$, we will get a domain in which it is possible to choose a continuous branch.
+
+\includegraphics{img_graph12.pdf}
 
 \begin{definition}\label{definition:8.3} Single-valued branch is called an analytic function on a domain $\Omega$ if it is differentiable at every $z \in \Omega$.
 \end{definition}

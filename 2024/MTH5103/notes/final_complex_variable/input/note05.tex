@@ -12,6 +12,8 @@
 % \externaldocument{note10}
 % \externaldocument{note11}
 
+\graphicspath{{./input/graphs/note05/}}
+
 
 \zexternaldocument{note01}
 \zexternaldocument{note02}
@@ -61,7 +63,11 @@ $\{z_n\}$ "spirals" in toward the origin $(0)$ in the $z$-plane.
 \begin{example}\label{example:12.2} Let $z_n = (2i)^n: z_0 = 1, z_1 = 2i, z_2 = -4, z_3 = -8i, \dots$. This sequence diverges: one can show that $\{|z_n|\}_{n=0}^{\infty}$ is unbounded increasing sequence \{namely, $|z_n|$ gets arbitrarily large\}.
 \end{example}
 
-\begin{example}\label{example:12.3} Let $z_n = (i)^n: z_0 = 1, z_1 = i, z_2 = -1, z_3 = -i, z_4 = 1, z_5 = i, \dots$. This is a bounded sequence ($|z_n| \leq 1$ for any $n$), but $\lim_{n \to \infty} z_n$ does not exist: there is no $z$ such that almost all but finitely many points of the sequence are in a small neighborhood of some $z$: $z_n$ jumps at every step.
+\begin{example}\label{example:12.3} Let $z_n = (i)^n: z_0 = 1, z_1 = i, z_2 = -1, z_3 = -i, z_4 = 1, z_5 = i, \dots$. This is a bounded sequence ($|z_n| \leq 1$ for any $n$), but $\lim_{n \to \infty} z_n$ does not exist: there is no $z$ such that almost all but finitely many points of the sequence are in a small neighborhood of some $z$: 
+    
+    \includegraphics{img_graph1.pdf}
+    
+    $z_n$ jumps at every step.
 \end{example}
 
 Important real sequence (limit): let $a_n = (1 + \frac{a}{n})^n$ for some $a$. Then $\lim_{n \to \infty} a_n = (1 + \frac{a}{n})^n = e^a$.

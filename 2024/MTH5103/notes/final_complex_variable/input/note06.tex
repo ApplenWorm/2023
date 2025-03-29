@@ -12,6 +12,8 @@
 % \externaldocument{note10}
 % \externaldocument{note11}
 
+\graphicspath{{./input/graphs/note06/}}
+
 
 \zexternaldocument{note01}
 \zexternaldocument{note02}
@@ -213,6 +215,8 @@ Note: The first sum $\sum_{n=0}^{\infty} \left(\frac{z}{2}\right)^n$ exists only
         
         The region here is a domain: the exterior of the circle centered at $(0, 2i)$ of radius 4.
 
+        \includegraphics{img_graph1.pdf}
+
 We want a series expansion about $z_0 = 2i$. To do this we make a substitution $w = z - 2i$ and look for the expansion in $w$, where $|w| > 4$. To make the series expansion easier we manipulate again $f(z)$ into a form similar to the series expansion for $\frac{1}{1-z}$. 
 We get:
 \[ f(z) = \frac{1}{4iw(1 - \frac{i w}{4})} \] 
@@ -237,12 +241,25 @@ There are 3 important special cases of this transformation.
 I. Translation: $w = z + b$. Since the addition of complex numbers obeys the rules of addition of vectors we get the point $w$ by moving the point $z$ in direction of 
 the vector $b$ to the distance that equals to the length of $b$. Obviously, the whole domain $\Omega$ after application of $w$ is moved by vector $b$.
 
-\begin{example} \label{example:16.1} For $w = z + 1$: the whole domain is moved by 1 to the right parallel to x-axis. For $w = z - 2i$ - the whole domain is moved by 2 down parallel to y-axis. 
+\includegraphics{img_graph2.pdf}
+
+\begin{example} \label{example:16.1} For $w = z + 1$: the whole domain is moved by 1 to the right parallel to x-axis. 
+    
+    \includegraphics{img_graph3.pdf}
+
+    For $w = z - 2i$ - the whole domain is moved by 2 down parallel to y-axis. 
+
+    \includegraphics{img_graph4.pdf}
+
     For $w = z - 1 + 2i$ - the whole domain is moved to the direction of the vector $-1 + 2i$ and by distance $\sqrt{5}$.
+
+    \includegraphics{img_graph5.pdf}
 \end{example}
 
 II. Rotation: $w = e^{i\alpha}z, \alpha \in \mathbb{R}$ (!) constant: $|w| = |z|, \arg w = \alpha + \arg z$. Namely, $z$ is moved to the point $w$ by rotation of the vector $z$ around the origin 
 by angle $\alpha$.
+
+\includegraphics{img_graph6.pdf}
 
 III. Expansion: $w = r \cdot z, r > 0: |w| = r|z|, \arg w = \arg z$. The point $z$ goes to the point $w$ that is on the line connecting $z$ with the origin by distance multiplied by $r$. 
 Contraction if $0 < r < 1$, Dilation if $r > 1$.
@@ -280,7 +297,9 @@ $\implies$ The inverse of a Möbius transformation is again Möbius transformati
 \begin{soln}
     
      First, let us see what is the image of the boundary of the upper half circle under this transformation.
-    
+
+    \includegraphics{img_graph7.pdf}
+
 The boundary contains two parts: the interval AB and the half circle BCA: $\partial D = AB \cup BCA$.
 
 First we find the image of AB.
@@ -291,14 +310,20 @@ For $z_1 = -1 \to w_1 = \infty; z_2 = 0 \to w_2 = i; z_3 = 1 \to w_3 = 0$.
 
 $\implies$ The interval AB is mapped to the upper half of the v-axis with direction from infinity to zero.
 
+\includegraphics{img_graph8.pdf}
+
 Let us study the image of the upper half of the unit circle BCA. The images of A and B will be $w_1$ and $w_3$ respectively. Let us find the image of the point $C = z_4 = i \implies w_4 = \frac{i-i^2}{1+i} = \frac{1+i}{1+i} = 1$.
 
 Namely, the points B, C, A on the circle are mapped to the points $w_3, w_4, w_1$ (respectively) that are (all) on the positive half of the real axis in direction from the origin to $\infty$.
+
+\includegraphics{img_graph9.pdf}
 
 Conclusion: the boundary in the w-plane is the positive half of the v-axis and the positive half of the u-axis, thus D is mapped either to a first quadrant or to the plane
 without the first quadrant (since they both have the same boundary). To see to which one we need to understand where to the interior points of this upper half circle are mapped, since the interior points in the z-plane are mapped to interior points in the w-plane. Let us take some interior point.
 
 Take $z = \frac{1}{2}i \in D \implies w = \frac{i - \frac{1}{2}i^2}{1 + \frac{1}{2}i} = \frac{\frac{1}{2} + i}{\frac{1}{2}(2+i)} = \frac{(\frac{1}{2} + i)(1 - \frac{1}{2}i)}{5/4} = \frac{4}{5} + i\frac{3}{5} \in$ I-st quadrant since $x, y \geq 0 \implies$ the image = $\{w: 0 < \arg w < \frac{\pi}{2}\}$, namely the first quadrant of the w-plane.
+
+\includegraphics{img_graph10.pdf}
 \end{soln}
 
 \begin{example} \label{example:16.5} Find the Möbius transformation sending $-1 \to i, 0 \to 1, i \to -i$.

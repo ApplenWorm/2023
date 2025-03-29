@@ -193,6 +193,8 @@ v &= 2xy = 2cy
 \end{align*}
 $y = \frac{v}{2c} \implies u = c^2 - \frac{v^2}{4c^2}$: this is leftward opening parabola with vertex $(c^2, 0)$, intersecting the v-axis at $(0, \pm 2c^2)$ \{Note that: if $c$ is negative, the image again is the same, namely, the image is independent of the sign of $c$\}.
 
+\includegraphics{image_lin7.pdf}
+
 % \textbf{Lectures 5+6}
 \lecture{5+6}{Images under $z^2$}
 We continue to examine the images under $z^2$ and other transformations.
@@ -201,6 +203,8 @@ We continue to examine the images under $z^2$ and other transformations.
 
 First, we identify: the upper half of w-plane = \{$w \in \mathbb{C} \vert  \text{Im } w \geq 0$\} $\theta = \arg w \leq \pi$: An element $z = re^{i\theta} \to w = r^2 e^{2i\theta}$ is in the upper half plane iff the argument of $w$ lies between 0 and $\pi$: $0 + 2\pi k \leq 2\theta \leq \pi + 2\pi k, k \in \mathbb{Z} \implies k\pi \leq \theta \leq \frac{\pi}{2} + k\pi$. 
 Namely, $z$ must lie in the first or third quadrant in order to map to the upper half plane [Plug $k = 1, 2, 3, 4$ to see this!]
+
+\includegraphics{image_lin8.pdf}
 
 Alternatively: we could use the algebraic form $x + iy$ and get: $w = z^2 = x^2 - y^2 + i2xy \implies \text{Im } w \geq 0 \iff 2xy \geq 0 \iff x, y \geq 0$ or $x, y \leq 0$. This gives again I and III quadrant.
 \end{example}
@@ -211,6 +215,8 @@ Now let us study another function and its images.
 It is an instructive exercise to draw a picture trying to determine where to various regions of the plane are mapped.
 
 EXERCISE: 1) Show that $w = \frac{1}{z}$ maps the interior of the unit circle in the first quadrant to the exterior of the unit circle in the fourth quadrant.
+
+\includegraphics{image_lin9.pdf}
 
 2) What is the image of the unit circle under $\frac{1}{z}$?
 3) Write down how $z \to \frac{1}{z} = w$ maps the punctured plane $\mathbb{C} \setminus \{0\}$ to itself (and $\mathbb{C} \cup \{\infty\}$ to itself).
@@ -234,6 +240,8 @@ $\implies u^2 + v^2 = u - v$ (we add the equations) $\implies u^2 - u + v^2 + v 
 Namely, the map $w = \frac{1}{z}$ maps the line $z = t + i(1 - t)$ to the circle (in w-plane) centered at the point $(\frac{1}{2}, -\frac{1}{2})$ with radius $\frac{1}{\sqrt{2}}$.
 \end{soln}
 
+\includegraphics{image_lin10.pdf}
+
 b) Determine how the horizontal lane $y = k$ is transformed under $w = \frac{1}{z}$.
 
 \begin{soln} Substitute as before: $x = \frac{u}{u^2 + v^2}, y = \frac{-v}{u^2 + v^2}$. Plug $y = k$:
@@ -244,6 +252,11 @@ b) Determine how the horizontal lane $y = k$ is transformed under $w = \frac{1}{
 Namely, the line is mapped onto a circle, center of which depends on the sign of $k$, and the radius is $\frac{1}{2\vert k\vert }$.
 \end{soln}
 \end{example}
+
+\includegraphics{image_lin11.pdf}
+
+\includegraphics{image_lin12.pdf}
+
 Now we have a feeling on geometrical description of the complex functions - we will study more transformations later.
 
 Next subject - the limits of complex functions. The introduction of a limit will allow us to investigate what it means for the complex function $f$ to be continuous and differentiable. 

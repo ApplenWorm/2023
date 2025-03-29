@@ -12,6 +12,9 @@
 % \externaldocument{note10}
 % \externaldocument{note11}
 
+\graphicspath{{./input/graphs/note07/}}
+
+
 \zexternaldocument{note01}
 \zexternaldocument{note02}
 \zexternaldocument{note03}
@@ -99,7 +102,11 @@ Now let us study $\text{Ln } z$ in the same spirit as we studied the complex roo
 
 $w = \text{Ln } z$: For any $z$ correspond infinite number of values $w$. We choose a single-valued branch by fixing $k_0$: $w_{k_0} = \ln r + i(\varphi + 2\pi k_0)$.
 
+\includegraphics{img_graph1.pdf}
+
 Let $z$ move on some closed curve that does not encircle the origin, $z = 0$. After completing a full circle, $z$ returns to the same point with the same values of $r$ and $\varphi \implies$ the point $w_{k_0}$ does not change.
+
+\includegraphics{img_graph2.pdf}
 
 If $z$ moves (anticlockwise) on some closed curve that encircles the origin, then when $z$ returns to the starting point the modulus $r$ is the same, but the argument of $z$ will increase by $2\pi$ and $\text{Ln } z$ will attain a new value: $w_{new} = \ln r + i((\varphi + 2\pi k_0) + 2\pi) = \ln r + i(\varphi + 2\pi(k_0 + 1)) = w_{k_0 + 1}$.
 
@@ -108,7 +115,10 @@ So, after completing a full circle around the origin, the branch $w_{k_0}$ "jump
 The point $z = 0$ is the branch point of the function $\text{Ln } z$.
 
 Conclusion: In any domain that does not contain closed curves
-that encircle $z = 0$ one can choose infinitely many single-valued continuous branches of multi-valued function $w = \text{Ln } z$. If we cut the complex plane along any ray that starts at $z = 0$ (including $z = 0$) - for example, the negative half of the real axis including $z = 0$, we will get a cut-plane in which one can choose single-valued continuous branches. In this case the branch $w_{k_0}$ maps the cut-plane $z$ to a strip $\{w: k_0 \pi < \text{Im } w < (k_0 + 2)\pi\}$ in the w-plane.
+that encircle $z = 0$ one can choose infinitely many single-valued continuous branches of multi-valued function $w = \text{Ln } z$. If we cut the complex plane along any ray that starts at $z = 0$ (including $z = 0$) - for example, the negative half of the real axis including $z = 0$, we will get a cut-plane in which one can choose single-valued continuous branches. 
+\includegraphics{img_graph3.pdf}
+
+In this case the branch $w_{k_0}$ maps the cut-plane $z$ to a strip $\{w: k_0 \pi < \text{Im } w < (k_0 + 2)\pi\}$ in the w-plane.
 
 \checkthis{} $z = z_0$ is the branch point of $\text{Ln}(z - z_0)$ and in the cut-plane with the cut along some ray starting at $z = z_0$ (including $z_0$) one can choose infinitely many single-valued continuous branches.
 
@@ -130,7 +140,8 @@ Passing to the limit $\Delta z \to 0$ we get: $\frac{dw}{dz} = \frac{1}{e^w} \im
 \begin{example} \label{example:17.3} Study the function $w = \text{Ln}(z^2 + 4)$.
 \begin{soln}
     
-    $w = \text{Ln}(z^2 + 4) = \text{Ln}(z + 2i)(z - 2i) = \text{Ln}(z + 2i) + \text{Ln}(z - 2i)$ (Prop 15.1 1)) $\implies w$ has 2 branch points $z = 2i$ and $z = -2i$. Therefore, $w$ is analytic in the cut-plane where we cut along 2 rays that start at $z = \pm 2i$ (including $\pm 2i$):
+    $w = \text{Ln}(z^2 + 4) = \text{Ln}(z + 2i)(z - 2i) = \text{Ln}(z + 2i) + \text{Ln}(z - 2i)$ (Prop 15.1 \ref{proposition:15.1}1)) $\implies w$ has 2 branch points $z = 2i$ and $z = -2i$. Therefore, $w$ is analytic in the cut-plane where we cut along 2 rays that start at $z = \pm 2i$ (including $\pm 2i$):
+    \includegraphics{img_graph4.pdf}
     
     The derivative of this function in the cut-plane is computed as a composition function using: By the Chain Rule (Prop 6.1 6)): $(\text{Ln}(z^2 + 4))' = \frac{2z}{z^2 + 4}$.
 \end{soln}
