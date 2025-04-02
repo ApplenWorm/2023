@@ -73,6 +73,7 @@ Note: The condition that $f$ has antiderivative is necessary!
     Let $C_1$ be the contour from -1 to 1 along the upper unit semicircle and $C_2$ the contour from -1 to 1 along the 
 lower unit semicircle. Compute $\int_{C_1} \frac{1}{(z-4)^2} dz$.
 \begin{soln}
+
 \includegraphics{img_graph1.pdf}
 
     \emphi{Note:} $\int_{C_1 - C_2} \frac{1}{(z-4)^2} dz = 0$. This is an analytic function on the unit circle, the only singularity is a 
@@ -203,6 +204,7 @@ Now we prove it.
     Divide T into 4 triangles $T^{(j)}$ by bisecting the sides of T.
     
 	\includegraphics{img_graph5.pdf}
+
     By orienting each of the boundaries $\partial T^{(j)}$ of the subtriangles anticlockwise, 
 we have: $\eta(T) = \sum_{j=1}^4 \eta(T^{(j)})$ \{the internal edges of each of the subtriangles $T^{(j)}$ will cancel out\}. 
 Each $T^{(j)}$ has a boundary with Length $(\partial T^{(j)}) = \frac{L}{2}$. At least one of the $T^{(j)}$ must satisfy $|\eta(T^{(j)})| \geq \frac{1}{4} |\eta(T)|$. Call this triangle $T_1$.
@@ -270,7 +272,10 @@ One of very useful corollaries of this theorem is the Deformation Principle.
     region between them, then $\int_{C_1} f(z) dz = \int_{C_2} f(z) dz$.
 \end{corollary}
 
-The picture that you should have in mind here is where D is a domain that contains both curves and the region between them: [PICTURE!] \includegraphics{img_graph7.pdf}
+The picture that you should have in mind here is where D is a domain that contains both curves and the region between them: 
+ 
+\includegraphics{img_graph7.pdf}
+
 \begin{proof}
     The main idea of the proof is to divide the region between $C_1$ and $C_2$ by "cuts" into star-shaped regions.
     Construct 2 disjoint contours (or cuts) $L_1$ and $L_2$ that join $C_1$ and $C_2$. The contour $C_1$ is 
@@ -326,7 +331,7 @@ More generally, a similar proof to the one used for the Deformation Principle, g
 \end{corollary}
 
 The picture to have in mind is:
-[PUT PICTRE HERE]
+
 \includegraphics{img_graph11.pdf}
 
 \begin{example}\label{example:20.1}

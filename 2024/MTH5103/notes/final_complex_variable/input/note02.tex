@@ -142,8 +142,10 @@ We will treat the function as a map that maps a set from $(x, y)$-plane to some 
 \begin{example} \label{example:4.1} 
     Let $f(z) = \text{Im } z$ (defined and single-valued everywhere). Let us find its image \{namely, where to the complex plane $\mathbb{C}$ is mapped\}.
 $\text{Im } z = y \in \mathbb{R} \implies$ the complex plane $\mathbb{C}$ is mapped to $\mathbb{R}$.
+
 \includegraphics{image_lin.pdf}
 \end{example}
+
 \begin{example} \label{example:4.2} What is the image of the ray $\arg z = \frac{\pi}{3}$ under $f(z) = z^3$?
 
 \begin{soln} Let us write the function $f$ in polar coordinates.
@@ -154,6 +156,7 @@ $f(z) = r^3(\cos \theta + i\sin \theta)^3 = r^3(\cos 3\theta + i\sin 3\theta)$ \
 Thus, the image of $\arg z = \frac{\pi}{3}$ under $z^3$ is $r^3(\cos(3 \cdot \frac{\pi}{3}) + i\sin(3 \cdot \frac{\pi}{3})) = -r^3 (r \geq 0!)$.
 
 Recall that $r = \vert z\vert $, therefore $r \geq 0$ always. Hence, the image of that ray is the negative half of the real axis.
+
 \includegraphics{image_lin2.pdf}
 
 $f(z) = z^2$.
@@ -165,14 +168,20 @@ $z = re^{i\theta}: f(r, \theta) = r^2 e^{2i\theta} = r^2 \cos 2\theta + ir^2 \si
 \begin{example} \label{example:4.3} First, we determine what is the image of x-axis and of y-axis. The real axis $\mathbb{R}$ is mapped to the positive half of the real axis $\mathbb{R}^+$. $\mathbb{R} \to \mathbb{R}^+$. 
     To see that we represent $\mathbb{R}$ as $\mathbb{R} = \mathbb{R}^+ \cup \mathbb{R}^-$, where $\mathbb{R}^+$ ($\mathbb{R}^-$) the positive (negative) half of $\mathbb{R}$. Every point in $\mathbb{R}^+$ is of the form $re^{i0} = r \geq 0$ and every point in $\mathbb{R}^-$ is of the form $re^{i\pi} = -r \leq 0$. 
     These points are mapped by $f$ to: $r^2 e^{2 \cdot i \cdot 0} = (r)^2, r^2 e^{2 \cdot 0 \cdot i\pi} = r^2 \in \mathbb{R}^+$.
+    
     \includegraphics{image_lin3.pdf}
 \end{example}
+
 Now we will show (in the same way) that the imaginary axis is mapped to the negative half of the real axis: $i\mathbb{R} \xrightarrow[]{z^2} \mathbb{R}^-$.
 
 Represent the imaginary axis $i\mathbb{R}$ as: $i\mathbb{R} = (i\mathbb{R})^+ \cup (i\mathbb{R})^-$, where $(i\mathbb{R})^+$ are points of the form $re^{i\frac{\pi}{2}} = ir (r > 0)$ and $(i\mathbb{R})^-: re^{i\frac{3\pi}{2}} = -ir$. $f$ maps these points to $r^2 e^{i2 \cdot \frac{\pi}{2}} = r^2 e^{i\pi} = -r^2 \leq 0, r^2 e^{i2 \cdot \frac{3\pi}{2}} = r^2 e^{i3\pi} = -r^2 \leq 0$.
+
 \includegraphics{image_lin4.pdf}
+
 \begin{claim} A quarter circle of radius $r$ centered at 0 is mapped by $z^2$ to a half circle of radius $r^2$ centered at 0.
+    
     \includegraphics{image_lin5.pdf}
+
     \begin{proof}
 The quarter circle is given by points $re^{i\theta}$ where $0 \leq \theta \leq \frac{\pi}{2}$. It is mapped by $z^2$ to $r^2 e^{2i\theta}$. Since $0 \leq \theta \leq \frac{\pi}{2} \implies 0 \leq 2\theta \leq \pi$, thus we obtain a half circle of radius $r^2$ centered at 0.
     \end{proof}
@@ -182,6 +191,7 @@ The quarter circle is given by points $re^{i\theta}$ where $0 \leq \theta \leq \
 \end{claim}
 
 \includegraphics{image_lin6.pdf}
+
 The line is parameterized by $re^{i\theta}$, where $\theta$ is fixed and $r$ may vary. The map $f(z) = z^2$ sends $r$ to $r^2$ resulting in a ray and the angle is transformed from $\theta$ to $2\theta$.
 
 Now let us find the image of a vertical line $x = c \in \mathbb{R}$: In this case the geometric representation is more convenient. $z \to z^2: (x, y) \mapsto (x^2 - y^2, 2xy)$. Set $x = c$.
