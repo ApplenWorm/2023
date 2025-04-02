@@ -78,7 +78,7 @@ which means that $u$ and $v$ are constant functions $\Rightarrow f$ is constant.
 \begin{proof}
 Suppose there exists a nonconstant complex polynomial $p(z) = a_0 + a_1 z + a_2 z^2 + \dots + a_n z^n$, $n \ge 1$, $a_j \in \mathbb{C}$, $a_n \neq 0$ having no roots in $\mathbb{C}$. Define the entire function $f(z) = \frac{1}{p(z)}$. We shall show that $f$ is bounded, hence is constant by Liouville's
     
-    (179)
+  %  (179)
     
     Theorem, which contradicts the assumption that $n \ge 1$.
     
@@ -140,7 +140,7 @@ f(z) = R \left( \frac{1}{2} (z^b + \frac{1}{z^b}), \frac{1}{2i} (z^a - \frac{1}{
 
 It is easy to see that when $t$ changes from $0$ to $2\pi$, the variable $z = e^{it}$ "moves" along the unit circle $|z| = 1$ counter-
 
-(180)
+%(180)
 
 clockwise. Since $dz = ie^{it} dt$ we get $dt = \frac{dz}{iz}$.
 
@@ -234,7 +234,7 @@ By Prop 16.2 (\ref{proposition:16.2}) for $\varphi(z) = \frac{z}{(z - (-5 - \sqr
     2) Compute $\int_0^{\frac{\pi}{2}} \frac{dt}{(4 + \sin^2 t)^2}$
     
 \end{exercise}
-(182)
+%(182)
 
 % \begin{center}
 % Lectures 32+33
@@ -260,7 +260,11 @@ Assume $f(x) = \frac{P_n(x)}{Q_m(x)}$, where $P_n(x)$ is a polynomial of degree 
 
 This inequality implies convergence of an infinite integral. Assume also that $Q_m(x) \neq 0$ for any $x \in \mathbb{R}$.
 
-Let us construct a complex function $f(z) = \frac{P_n(z)}{Q_m(z)}$. $f(z)$ has finitely many poles $z_1, z_2, \dots, z_K$ ($K \le m$) in the upper-half plane. Consider the integral $\int_C f(z) dz$, where $C$ is a contour (simple, closed) $C = C_R^+ + (-R, R)$ defined piecewise as the sum of $C_R^+$ - the upper semicircular arc of radius $R$ connecting $R$ to $-R$ anticlockwise, and the interval $(-R, R)$ - straight line connecting $R$ to $-R$ along the real axis, where $R$ is sufficiently large, so that $|z_j| < R$ for $j=1, 2, \dots, K$.
+Let us construct a complex function $f(z) = \frac{P_n(z)}{Q_m(z)}$. $f(z)$ has finitely many poles $z_1, z_2, \dots, z_K$ ($K \le m$) in the upper-half plane. Consider the integral $\int_C f(z) dz$, where $C$ is a contour (simple, closed) $C = C_R^+ + (-R, R)$ defined piecewise as the sum of $C_R^+$ - the upper semicircular arc of radius $R$ connecting $R$ to $-R$ anticlockwise,
+
+\includegraphics{img_graph1.pdf}
+
+and the interval $(-R, R)$ - straight line connecting $R$ to $-R$ along the real axis, where $R$ is sufficiently large, so that $|z_j| < R$ for $j=1, 2, \dots, K$.
 
 By the Residue Theorem:
 \[
@@ -273,7 +277,7 @@ where $z_1, z_2, \dots, z_K$ are the poles of $f(z)$ in the upper-half plane (al
 
 Passing to the limit $R \to \infty$ we get:
 
-(183)
+%(183)
 
 \[
 \int_{-\infty}^{\infty} f(x) dx = 2\pi i \sum_{j=1}^K \text{Res}(f, z_j) - \lim_{R \to \infty} \int_{C_R^+} f(z) dz
@@ -405,7 +409,7 @@ Now let us see an example showing how contour integrals can be used to sum infin
 \end{proof}
 Let us look at the Laurent series expansion of $\sin \pi z$.
 
-(185)
+%(185)
 
 around $z=n$: $f(n) = \sin \pi n = 0$, $f'(n) = \pi \cos \pi n = \pm \pi$, $f''(n) = -\pi^2 \sin \pi n = 0$, $f'''(n) = -\pi^3 \cos \pi n = \mp \pi^3$ and so on.
 
@@ -443,6 +447,8 @@ As we can see from the expansion all the poles are simple.
 
 Consider the square contour $C_N$ having corner vertices given by $\pm (N + \frac{1}{2}) \pm i (N + \frac{1}{2})$ for $N \in \mathbb{N}$.
 
+\includegraphics{img_graph2.pdf}
+
 \emphw{Note}: this contour never passes through an integer value on the real axis $\mathbb{R}$ (where the poles of $f$ lie). Then, by the Residue Theorem:
 \[
 \int_{C_N} f(z) dz = 2 \pi i \sum_{n=-N}^N \text{Res} (f, n)
@@ -456,7 +462,7 @@ Consider the square contour $C_N$ having corner vertices given by $\pm (N + \fra
      We estimate $\max |f(z)|$ on each side of $C_N$. First, each side of $C_N$ has length $2N+1$, thus the length of the contour $C_N$ is bounded by $8N+4 = O(N)$. On the other hand, for $z \in C_N$
     
     
-    (186)
+    %(186)
 
     $|z| \ge N + \frac{1}{2} \ge N$, therefore $|\frac{1}{z^2}| \le \frac{1}{N^2}$. So, it is sufficient to show that $\cot \pi z$ is bounded on $C_N$ by a constant independent of $N$. Then we use ML inequality (Prop 17.5) and finish. We have:
 \[
@@ -503,7 +509,7 @@ Therefore, there exists a positive constant $K$ such that for all $N \ge 1$ and 
         \]
         
     \end{proof}
-        (187)
+       % (187)
         
         Hence, we get:
 \[
