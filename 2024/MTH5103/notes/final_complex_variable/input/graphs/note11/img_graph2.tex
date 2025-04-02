@@ -1,0 +1,72 @@
+\documentclass[tikz, border=5pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, decorations.markings}
+\usepackage{amsmath} % For \frac
+
+\begin{document}
+\begin{tikzpicture}[
+    scale=1.2, % Adjust scale if needed
+    axis/.style={->, >=Stealth, black, thin},
+    contour/.style={red, thick},
+    label_style/.style={blue}, % Style for the coordinate labels
+    tick_style/.style={black, thin},
+    arrow_mark/.style={
+        decoration={
+            markings,
+            mark=at position 0.85 with {\arrow{Triangle[red, fill=red, length=4pt, width=6pt]}} % Arrow style
+        },
+        postaction={decorate}
+    }
+]
+
+% Define N and the half-side length L = N + 1/2
+% Choose a representative value for N, e.g., N=2
+\def\Nval{2}
+\pgfmathsetmacro{\Lval}{\Nval + 0.5}
+\pgfmathsetmacro{\AxisMax}{\Lval + 0.8} % Extend axes slightly beyond the box
+
+% Draw Axes
+\draw[axis] (-\AxisMax,0) -- (\AxisMax,0) node[anchor=west]{$x$}; % x-axis
+\draw[axis] (0,-\AxisMax) -- (0,\AxisMax) node[anchor=south west]{$y$}; % y-axis
+
+% Draw Square Contour (C_N) with arrows
+\coordinate (TR) at (\Lval, \Lval); % Top Right
+\coordinate (TL) at (-\Lval, \Lval); % Top Left
+\coordinate (BL) at (-\Lval, -\Lval); % Bottom Left
+\coordinate (BR) at (\Lval, -\Lval); % Bottom Right
+
+\draw[contour, arrow_mark] (BR) -- (TR); % Right side (up)
+\draw[contour, arrow_mark] (TR) -- (TL); % Top side (left)
+\draw[contour, arrow_mark] (TL) -- (BL); % Left side (down)
+\draw[contour, arrow_mark] (BL) -- (BR); % Bottom side (right)
+
+% Add Tick Marks for N and L values
+% X-axis ticks
+\draw[tick_style] (\Nval, -0.05) -- (\Nval, 0.05);
+\draw[tick_style] (-\Nval, -0.05) -- (-\Nval, 0.05);
+\draw[tick_style] (\Lval, -0.05) -- (\Lval, 0.05);
+\draw[tick_style] (-\Lval, -0.05) -- (-\Lval, 0.05);
+% Y-axis ticks
+\draw[tick_style] (-0.05, \Nval) -- (0.05, \Nval);
+\draw[tick_style] (-0.05, -\Nval) -- (0.05, -\Nval);
+\draw[tick_style] (-0.05, \Lval) -- (0.05, \Lval);
+\draw[tick_style] (-0.05, -\Lval) -- (0.05, -\Lval);
+
+% Add Labels
+% Labels for N+1/2 points
+\node[label_style, anchor=north] at (\Lval, 0) {$N+\frac{1}{2}$};
+\node[label_style, anchor=north] at (-\Lval, 0) {$-(N+\frac{1}{2})$};
+\node[label_style, anchor=west, xshift=2pt] at (0, \Lval+0.09) {$i(N+\frac{1}{2})$};
+\node[label_style, anchor=west, xshift=2pt] at (-0.1, -\Lval-0.09) {$-i(N+\frac{1}{2})$};
+
+% Labels for N points
+\node[label_style, anchor=south, yshift=1pt] at (\Nval, 0.05) {$N$};
+\node[label_style, anchor=south, yshift=1pt] at (-\Nval, 0.05) {$-N$};
+\node[label_style, anchor=east, xshift=-1pt] at (0.05, \Nval) {$iN$};
+\node[label_style, anchor=east, xshift=-1pt] at (0.05, -\Nval) {$-iN$};
+
+% Label for the contour C_N
+\node[red, anchor=west] at (\Lval + 0.2, \Nval*0.5) {$C_N$}; % Positioned near the right edge
+
+\end{tikzpicture}
+\end{document}
