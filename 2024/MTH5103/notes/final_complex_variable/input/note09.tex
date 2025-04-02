@@ -73,6 +73,8 @@ Note: The condition that $f$ has antiderivative is necessary!
     Let $C_1$ be the contour from -1 to 1 along the upper unit semicircle and $C_2$ the contour from -1 to 1 along the 
 lower unit semicircle. Compute $\int_{C_1} \frac{1}{(z-4)^2} dz$.
 \begin{soln}
+\includegraphics{img_graph1.pdf}
+
     \emphi{Note:} $\int_{C_1 - C_2} \frac{1}{(z-4)^2} dz = 0$. This is an analytic function on the unit circle, the only singularity is a 
     pole of order 2 at $z = 4$ - outside the unit circle, with antiderivative $-\frac{1}{z-4}$.
     
@@ -108,6 +110,8 @@ Consider two cases:
     
     Rewrite: $C = \{z \in \mathbb{C}: |z| = 4, \text{Im } z > 0\} \implies$ if $z \in \mathbb{C}$, then $z = 4e^{it}$ for $0 \leq t \leq \pi$.
     
+	\includegraphics{img_graph2.pdf}
+	
     $\sqrt{z}$ attains 2 values: $w_1 = \sqrt{4e^{it}} = 2e^{i\frac{t}{2}}$ and $w_2 = \sqrt{4e^{it}} = 2e^{i(\frac{t}{2} + \pi)}$.
     
     If $t = 0: w_1 = \sqrt{4} = 2e^0 = 2$ and $w_2 = \sqrt{4} = 2e^{i\pi} = -2 \implies$ the given branch is $w_2$.
@@ -139,7 +143,11 @@ $U \subseteq \mathbb{C}$ is star-shaped about $w$ if for all $z \in U$, the line
 \end{definition}
 
 \begin{remark}
-    Any convex set is star-shaped, but not every star-shaped set is convex: look at  - it is star-shaped about $w$ (in the center),
+    Any convex set is star-shaped, but not every star-shaped set is convex: look at 
+
+	\includegraphics{img_graph3.pdf}
+	
+	- it is star-shaped about $w$ (in the center),
     but it is not convex - the line segment connecting any two neighboring corners is not contained in this set.
 \end{remark}
 
@@ -184,20 +192,27 @@ Our goal now is to prove Cauchy's Theorem for star-shaped domains.
 
 We have proved Cauchy's Theorem for star-shaped domains up to: (*) $\int_{[w, z]} f(\xi) d\xi - \int_{[w, z_0]} f(\xi) d\xi = \int_{[z_0, z]} f(\xi) d\xi$, which is Cauchy's Theorem for a Triangle.
 Now we prove it.
-\begin{theorem}[Cauchy's Theorem for a triangle]
+\begin{theorem}[Cauchy's Theorem for a triangle]\label{theorem:18.2}
     Let $f$ be analytic in a domain U containing a triangle T. Then: $\int_{\partial T} f(z) dz = 0$.
 \end{theorem}
 \begin{proof}
     Let $\eta(T) = \int_{\partial T} f(z) dz$, denote the length of $\partial T$ by L.
     
+	\includegraphics{img_graph4.pdf}
+	
     Divide T into 4 triangles $T^{(j)}$ by bisecting the sides of T.
     
+	\includegraphics{img_graph5.pdf}
     By orienting each of the boundaries $\partial T^{(j)}$ of the subtriangles anticlockwise, 
 we have: $\eta(T) = \sum_{j=1}^4 \eta(T^{(j)})$ \{the internal edges of each of the subtriangles $T^{(j)}$ will cancel out\}. 
 Each $T^{(j)}$ has a boundary with Length $(\partial T^{(j)}) = \frac{L}{2}$. At least one of the $T^{(j)}$ must satisfy $|\eta(T^{(j)})| \geq \frac{1}{4} |\eta(T)|$. Call this triangle $T_1$.
     
     Divide $T_1$ into 4 triangles in the same way as T and conclude that one of these triangles, $T_2$, satisfies $|\eta(T_2)| \geq \frac{1}{4} |\eta(T_1)| \geq \frac{1}{4^2} |\eta(T)|$, 
-Length $(\partial T_2) = \frac{L}{4}$. Repeating this procedure, we construct a sequence of 
+Length $(\partial T_2) = \frac{L}{4}$. 
+
+\includegraphics{img_graph6.pdf}
+
+Repeating this procedure, we construct a sequence of 
 triangles $T_1 \supset T_2 \supset T_3 \supset \dots \supset T_n \supset \dots$ with $|\eta(T_n)| \geq \frac{1}{4^n} |\eta(T)|$ and Length $(\partial T_n) = \frac{L}{2^n}$. 
 Let $z_0$ be the point of intersection $\bigcap_{n=1}^\infty T_n$ \{exists and unique by Cantor Lemma or (**)\}. 
 Since $f$ is differentiable at $z_0$, given any $\epsilon > 0$ there exists $\delta > 0$ such that for $|z - z_0| < \delta$ we have $|f(z) - f(z_0) - f'(z_0)(z-z_0)| < \epsilon |z - z_0|$.
@@ -255,12 +270,16 @@ One of very useful corollaries of this theorem is the Deformation Principle.
     region between them, then $\int_{C_1} f(z) dz = \int_{C_2} f(z) dz$.
 \end{corollary}
 
-The picture that you should have in mind here is where D is a domain that contains both curves and the region between them: [PICTURE!]
+The picture that you should have in mind here is where D is a domain that contains both curves and the region between them: [PICTURE!] \includegraphics{img_graph7.pdf}
 \begin{proof}
     The main idea of the proof is to divide the region between $C_1$ and $C_2$ by "cuts" into star-shaped regions.
     Construct 2 disjoint contours (or cuts) $L_1$ and $L_2$ that join $C_1$ and $C_2$. The contour $C_1$ is 
     cut into 2 contours $C_1^*$ and $C_1^{**}$ and the contour $C_2$ is cut into $C_2^*$ and $C_2^{**}$.
     
+	\includegraphics{img_graph8.pdf}
+	
+	\includegraphics{img_graph9.pdf}
+	
     Now form 2 new contours: $K_1 = -C_1^* + L_1 + C_2^* - L_2$ \{-$L_2, -C_1^*$ since we have changed the orientation\}, $K_2 = -C_1^{**} + L_2 + C_2^{**} - L_1$.
     
     $K_{1,2}$ - new contours, $D_{1,2}$ - new domains.
@@ -287,6 +306,8 @@ Now we can give an alternative proof to Ex 19.13 (\ref{example:19.13}). It is an
     Since $z_0$ lies interior to C, we can choose R so that the circle $C_R$ with center $z_0$ and radius R lies interior to C.
         Hence, $f(z) = \frac{1}{(z-z_0)^n}$ is analytic in a domain D that contains both C and $C_R$ and the region 
         between them \{we excluded the only singularity of $f$ $z = z_0$, everywhere else $f$ is analytic\}.
+		
+		\includegraphics{img_graph10.pdf}
     
     As in Ex 19.13 (\ref{example:19.13}): let $C_R$ be parametrized by: $z(\theta) = z_0 + Re^{i\theta}, 0 \leq \theta \leq 2\pi$, $dz(\theta) = iRe^{i\theta} d\theta$.
     
@@ -306,6 +327,7 @@ More generally, a similar proof to the one used for the Deformation Principle, g
 
 The picture to have in mind is:
 [PUT PICTRE HERE]
+\includegraphics{img_graph11.pdf}
 
 \begin{example}\label{example:20.1}
     Compute $\int_C \frac{z}{(z-4)^2} dz$, where C is the contour defined by traversing once the square with vertices $\pm 3i, 6 \pm 3i$ anticlockwise.
@@ -313,6 +335,9 @@ The picture to have in mind is:
     To compute this integral we apply the Deformation principle (\ref{corollary:18.4.deformation}) and
     observe that $\int_C \frac{z dz}{(z-4)^2} = \int_{C'} \frac{z dz}{(z-4)^2}$, where C' is the circular 
     contour centered at 4 of radius 1. 
+	
+	\includegraphics{img_graph12.pdf}
+	
     In particular, C' may be parametrized by the path $\gamma(t) = 4 + e^{2\pi i t}, 0 \leq t \leq 1$
     \begin{align*}
             \implies \int_{C'} \frac{z dz}{(z-4)^2} &= \int_0^1 \frac{4 + e^{2\pi i t}}{e^{4\pi i t}} 2\pi i e^{2\pi i t} dt \\
