@@ -54,7 +54,11 @@ By comparing the complex numbers, we conclude:
 \end{align*}
 $\implies \text{Ln } z = w = u + iv = \ln r + i(\varphi + 2\pi k)$ for $k \in \mathbb{Z}$.
 
-Recall: $r = |z|, \varphi + 2\pi k = \arg z$, thus (*) $\text{Ln } z = \ln |z| + i \arg z$.
+Recall: $r = |z|, \varphi + 2\pi k = \arg z$, thus 
+%(*)
+\begin{equation*}\label{equation:ln_z_formula}
+    \text{Ln } z = \ln |z| + i \arg z. \tag{*}
+\end{equation*}
 
 $\implies \text{Ln } z$ is defined for any $z \neq 0$ and it is multi-valued function (for different values of $k$ the function attains different values).
 
@@ -87,7 +91,7 @@ $\implies \text{Ln } z$ is defined for any $z \neq 0$ and it is multi-valued fun
     \item $\text{Ln} \sqrt[n]{z} = \frac{1}{n} \text{Ln } z$
 \end{enumerate}
 \begin{proof}
-By formula (*), Prop 1.2, and Prop 1.3, we get:
+By formula (\ref{equation:ln_z_formula}), Prop 1.2 (\ref{proposition:1.2}), and Prop 1.3 (\ref{proposition:1.3}), we get:
 $\text{Ln}(z_1 z_2) = \ln|z_1 z_2| + i\arg(z_1 z_2) = \ln(|z_1||z_2|) + i(\arg z_1 + \arg z_2) = (\ln|z_1| + i\arg z_1) + (\ln|z_2| + i\arg z_2) = \text{Ln } z_1 + \text{Ln } z_2$.
 The rest in the same way. (FINISH!)
 \end{proof}
@@ -219,7 +223,7 @@ The $\sum_{n=1}^{\infty} b_n (z - z_0)^{-n}$ part of the series is called the pr
 
 Note: $\sum_{n=0}^{\infty} a_n (z - z_0)^n \xrightarrow{z \to z_0} a_0$.
 
-Now we can see that there are 3 options for the principal part in (*): there is no principal part; there is principal part and it has finitely many terms; or there is an infinite principal part. 
+Now we can see that there are 3 options for the principal part in (\ref{equation:ln_z_formula}): there is no principal part; there is principal part and it has finitely many terms; or there is an infinite principal part. 
 This observation leads to the following classification of isolated singularities.
 
 \subsection{Three types of isolated singularities.}
@@ -287,7 +291,7 @@ In fact, more is true in the case of an essential singularity:
 
 In other words, if $z_0$ is an essential singularity of the function $f$, then the equation $f(z) = c$ for any (finite) $c$ except possibly for one value, has infinitely many solutions that tend to $z_0$.
 
-Similarly to Prop 16.1, we have the following proposition which provides a method for recognising the order of a pole and computing the corresponding residue.
+Similarly to Prop (16.1) (\ref{proposition:16.1}), we have the following proposition which provides a method for recognising the order of a pole and computing the corresponding residue.
 
 \begin{proposition}\label{proposition:16.2} 
     $z = z_0$ is a pole of order $m > 0$ of $f \iff f$ can be expressed as $f(z) = \frac{\varphi(z)}{(z - z_0)^m}$ where $\varphi(z)$ is analytic 
@@ -334,9 +338,10 @@ neighborhood of $z = 1$ (including $z = 1$), and $\tilde{\varphi}(1) = -1 \neq 0
 By Prop 16.2(\ref{proposition:16.2}): $\text{Res}(f, 2) = \frac{\varphi(2)}{0!} = 1; \text{Res}(f, 1) = \frac{\tilde{\varphi}(1)}{0!} = -1$.
 
 \begin{example}\label{example:18.2} Prove:
-
-1) $z = 3$ is a removable singularity of $f(z) = \frac{z^2 - 9}{z - 3}$.
-2) $z = 0$ is a removable singularity of $f(z) = \frac{\sin z}{z}$.
+    \begin{enumerate}
+        \item $z = 3$ is a removable singularity of $f(z) = \frac{z^2 - 9}{z - 3}$.
+        \item $z = 0$ is a removable singularity of $f(z) = \frac{\sin z}{z}$.
+    \end{enumerate}
 
 \end{example}
 
@@ -349,7 +354,7 @@ By Prop 16.2(\ref{proposition:16.2}): $\text{Res}(f, 2) = \frac{\varphi(2)}{0!} 
     i) The Laurent series for $f$ in $0 < |z| < R$ is $f(z) = \frac{1}{z}(z - \frac{z^3}{3!} + \frac{z^5}{5!} - \dots) = 1 - \frac{z^2}{3!} + \frac{z^4}{5!} - \dots$ $\implies$ the 
     principal part does not exist $\implies z = 0$ is a removable singularity.
     
-    ii) $\lim_{z \to 0} z \cdot \frac{\sin z}{z} = \lim_{z \to 0} \sin z = 0 \implies$ by Prop 16.1 (\remref{proposition:16.1})$z = 0$ is a removable singularity.
+    ii) $\lim_{z \to 0} z \cdot \frac{\sin z}{z} = \lim_{z \to 0} \sin z = 0 \implies$ by Prop 16.1 (\remref{proposition:16.1}) $z = 0$ is a removable singularity.
 \end{soln}
 
 \begin{example}\label{example:18.3} Classify the singularities of $f(z) = e^{\frac{1}{z}}$ and compute the residue of $f$ at $z = 0$.
