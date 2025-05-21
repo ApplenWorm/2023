@@ -211,9 +211,11 @@ To use the formula we expand the domain of integration to the interval $[-\pi, \
 \]
 
 Now we use our substitution and get:
-\[
-\int_0^{\pi} \frac{dt}{(2 + \cos^2 t)^2} = \frac{1}{4} \int_{-\pi}^{\pi} \frac{d\Psi}{(5 + \cos \Psi)^2} = \frac{1}{4} \int_{|z|=1} \frac{1}{(5 + \frac{1}{2} (z + \frac{1}{z}))^2} \frac{dz}{iz} = -4i \int_{|z|=1} \frac{z dz}{(z^2 + 10z + 1)^2}
-\]
+\begin{align*}
+\int_0^{\pi} \frac{dt}{(2 + \cos^2 t)^2} &= \frac{1}{4} \int_{-\pi}^{\pi} \frac{d\Psi}{(5 + \cos \Psi)^2} \\
+&= \frac{1}{4} \int_{|z|=1} \frac{1}{(5 + \frac{1}{2} (z + \frac{1}{z}))^2} \frac{dz}{iz} \\
+&= -4i \int_{|z|=1} \frac{z dz}{(z^2 + 10z + 1)^2}
+\end{align*}
 
 To compute the last integral we use the Residue Theorem:
 The function $f(z) = \frac{z}{(z^2 + 10z + 1)^2}$ has 2 poles: $z_{1,2} = -5 \pm \sqrt{24}$, 

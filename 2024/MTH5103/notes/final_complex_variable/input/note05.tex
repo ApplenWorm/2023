@@ -222,21 +222,28 @@ Now we state 3 very useful tests for convergence of complex series.
 \end{proof}
 
 \begin{example}\label{example:13.2} Check the convergence of the following series:
-a) $\sum_{n=0}^{\infty} (2i)^n$ b) $\sum_{n=0}^{\infty} \left(\frac{1+i}{2}\right)^n$ c) $\sum_{n=0}^{\infty} \frac{(4i)^n}{n!}$
+    \begin{enumerate}
+        \item  $\sum_{n=0}^{\infty} (2i)^n$ 
+        \item  $\sum_{n=0}^{\infty} \left(\frac{1+i}{2}\right)^n$ 
+        \item  $\sum_{n=0}^{\infty} \frac{(4i)^n}{n!}$
+    \end{enumerate}
 \begin{soln}
-         1) We use Comparison Test as follows: $a_n = (2i)^n \implies |a_n| = (|2i|)^n = |2|^n = 2^n > (\frac{3}{2})^n$. Since $\sum_{n=0}^{\infty} (\frac{3}{2})^n$ diverges (for example, by the Test for Divergence, since $\lim_{n \to \infty} (\frac{3}{2})^n = \infty \neq 0$) by Comparison Test $\sum_{n=0}^{\infty} (2i)^n$ diverges.
+    \begin{enumerate}
+        \item We use Comparison Test as follows: $a_n = (2i)^n \implies |a_n| = (|2i|)^n = |2|^n = 2^n > (\frac{3}{2})^n$. Since $\sum_{n=0}^{\infty} (\frac{3}{2})^n$ diverges (for example, by the Test for Divergence, since $\lim_{n \to \infty} (\frac{3}{2})^n = \infty \neq 0$) by Comparison Test $\sum_{n=0}^{\infty} (2i)^n$ diverges.
     
-    2) Let us apply the Root Test: $a_n = \left(\frac{1+i}{2}\right)^n$
+        \item Let us apply the Root Test: $a_n = \left(\frac{1+i}{2}\right)^n$
     $\implies \lim_{n \to \infty} \sqrt[n]{|a_n|} = \lim_{n \to \infty} \sqrt[n]{\left|\frac{1+i}{2}\right|^n} = \lim_{n \to \infty} \frac{|1+i|}{2} = \frac{\sqrt{2}}{2} = \frac{1}{\sqrt{2}} < 1$
     $\implies \sum_{n=0}^{\infty} \left(\frac{1+i}{2}\right)^n$ converges absolutely.
     
-    c) Let us apply the Ratio Test: $a_n = \frac{(4i)^n}{n!}$
+    \item Let us apply the Ratio Test: $a_n = \frac{(4i)^n}{n!}$
     
     \begin{align*}
-        & \implies \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n \to \infty} \left| \frac{\frac{(4i)^{n+1}}{(n+1)!}}{\frac{(4i)^n}{n!}} \right| = \lim_{n \to \infty} \left| \frac{(4i)^{n+1}}{(n+1)!} \cdot \frac{n!}{(4i)^n} \right| = \lim_{n \to \infty} \frac{|4i|}{n+1} = \lim_{n \to \infty} \frac{4}{n+1} = 0 < 1 
+         \implies \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n \to \infty} \left| \frac{\frac{(4i)^{n+1}}{(n+1)!}}{\frac{(4i)^n}{n!}} \right| &= \lim_{n \to \infty} \left| \frac{(4i)^{n+1}}{(n+1)!} \cdot \frac{n!}{(4i)^n} \right| \\
+         & = \lim_{n \to \infty} \frac{|4i|}{n+1} = \lim_{n \to \infty} \frac{4}{n+1} = 0 < 1 
     \end{align*}
     
     $\implies $ converges absolutely.
+    \end{enumerate}
 \end{soln}
 \end{example}
 

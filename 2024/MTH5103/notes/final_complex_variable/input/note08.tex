@@ -50,17 +50,21 @@ In this lecture we are going to see more examples of classification of singulari
 Alternatively: By Prop 16.1(\ref{proposition:16.1}): $\lim_{z \to 0} z \cdot \frac{e^z - 1}{z} = \lim_{z \to 0} (e^z - 1) = 0 \implies z = 0$ is a removable singularity.
 
 \begin{example} \label{example:18.5} Find all the singularities and determine their nature:
-1) $f(z) = \frac{z+1}{z^2 + 9}$
-2) $f(z) = \frac{z^3 + 2z}{(z-i)^3}$
+    \begin{enumerate}
+        \item $f(z) = \frac{z+1}{z^2 + 9}$
+        \item $f(z) = \frac{z^3 + 2z}{(z-i)^3}$
+    \end{enumerate}
 \begin{soln}
-        1) Since $z^2 + 9 = (z+3i)(z-3i)$, $f(z)$ has singularities at $z = \pm 3i$. For $z = 3i$: Rewrite $f(z) = \frac{\varphi(z)}{z-3i}$, where $\varphi(z) = \frac{z+1}{z+3i}$ is analytic in a 
+    \begin{enumerate}
+        \item Since $z^2 + 9 = (z+3i)(z-3i)$, $f(z)$ has singularities at $z = \pm 3i$. For $z = 3i$: Rewrite $f(z) = \frac{\varphi(z)}{z-3i}$, where $\varphi(z) = \frac{z+1}{z+3i}$ is analytic in a 
         neighborhood of $z = 3i$ (and at $3i$), 
         and $\varphi(3i) = \frac{1}{2} - i\frac{1}{6} \neq 0 \implies$ by Prop 16.2(\ref{proposition:16.2}) $f(z)$ has a simple pole at $z = 3i$, and $\text{Res}(f; 3i) = \varphi(3i) = \frac{1}{2} - i\frac{1}{6}$.
     
     In the same way $z = -3i$ is a simple pole and $\text{Res}(f; -3i) = \frac{1}{2} + i\frac{1}{6}$.
     
-    2) $f$ has an isolated singularity at $z = i$. Rewrite: $f(z) = \frac{\varphi(z)}{(z-i)^3}$, where $\varphi(z) = z^3 + 2z$ is analytic in a neighborhood of $z = i$ (including $z=i$) and $\varphi(i) = i^3 + 2i = i \neq 0$. 
+    \item $f$ has an isolated singularity at $z = i$. Rewrite: $f(z) = \frac{\varphi(z)}{(z-i)^3}$, where $\varphi(z) = z^3 + 2z$ is analytic in a neighborhood of $z = i$ (including $z=i$) and $\varphi(i) = i^3 + 2i = i \neq 0$. 
     Therefore, by Prop. 16.2(\ref{proposition:16.2}) $f$ has a pole of order $m = 3$ at $z = i$, and by Prop 16.2(\ref{proposition:16.2}) $\text{Res}(f; i) = \frac{\varphi^{(2)}(i)}{2!} = \frac{6i}{2} = 3i$.
+    \end{enumerate}
 \end{soln}
 \end{example}
 
@@ -87,7 +91,8 @@ If $n = 1$, then the zero is called a simple zero.
 \begin{example}\label{example:18.7} For the function $f(z) = (z-3)^2(z+2)^3$: $z = 3$ is a zero of order 2 and $z = -2$ is a zero of order 3. Let us check the case $z = 3$:
 \begin{align*}
     f'(z) &= 2(z-3)(z+2)^3 + 3(z-3)^2(z+2)^2 \implies f'(3) = 0 \\
-    f''(z) &= 2(z+2)^3 + 6(z-3)(z+2)^2 + 6(z-3)(z+2)^2 + 6(z-3)^2(z+2) \implies f''(3) = 250 \neq 0
+    f''(z) &= 2(z+2)^3 + 6(z-3)(z+2)^2 + 6(z-3)(z+2)^2 + 6(z-3)^2(z+2) \\
+     &\implies f''(3) = 250 \neq 0
 \end{align*}
 $\implies z = 3$ is a zero of order $n = 2$.
 \end{example}

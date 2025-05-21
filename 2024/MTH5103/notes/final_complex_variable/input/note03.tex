@@ -200,7 +200,7 @@ Combining Prop (\ref{proposition:5.1}), Ex (\ref{example:7.2}), and Ex (\ref{exa
 \begin{proposition}5.3 Every polynomial $P_n(z) = a_0 + a_1 z + a_2 z^2 + \dots + a_n z^n$ with complex coefficients $a_0, a_1, a_2, a_3, \dots, a_n \in \mathbb{C}$ is continuous at every $z \in \mathbb{C}$. Furthermore, every rational function $f(z) = \frac{P_n(z)}{Q_m(z)}$ ($P_n, Q_m$ polynomials of degree $n, m$ respectively) is continuous at every $z \in \mathbb{C}$, except possibly at the roots of $Q_m(z)$.
 \end{proposition}
 
-"Possibly" since if there is a common root to $P_n(z)$ and $Q_m(z)$ that can be factorized, the function *may* be continuous at that root. We said that rational functions are continuous except possibly at the roots of the denominator, however, recalling Def 3.3: Def 3.3 $\implies$ Rational functions can be regarded as continuous everywhere on $\mathbb{C} \cup \{\infty\}$.
+"Possibly" since if there is a common root to $P_n(z)$ and $Q_m(z)$ that can be factorized, the function *may* be continuous at that root. We said that rational functions are continuous except possibly at the roots of the denominator, however, recalling Def 3.3(\ref{definition:3.3}): Def 3.3(\ref{definition:3.3}) $\implies$ Rational functions can be regarded as continuous everywhere on $\mathbb{C} \cup \{\infty\}$.
 
 In practice, one of the best ways of dealing with "$\infty$" in limits is to use substitution $z = \frac{1}{\zeta}$ and let $\zeta \to 0$.
 
@@ -328,7 +328,8 @@ Next proposition provides a relation between the continuity and differentiabilit
     \begin{proof}
  Observe that
 \begin{align*} 
-    \lim_{z \to z_0} (f(z) &- f(z_0)) = \lim_{z \to z_0} \frac{f(z) - f(z_0)}{z - z_0}(z - z_0) =  \lim_{z \to z_0}\frac{f(z) - f(z_0)}{z - z_0} \lim_{z \to z_0}(z - z_0) = f'(z_0) \cdot 0 = 0 \\
+    \lim_{z \to z_0} (f(z) &- f(z_0)) = \lim_{z \to z_0} \frac{f(z) - f(z_0)}{z - z_0}(z - z_0) \\ 
+    &=  \lim_{z \to z_0}\frac{f(z) - f(z_0)}{z - z_0} \lim_{z \to z_0}(z - z_0) = f'(z_0) \cdot 0 = 0 \\
 & \implies \lim_{z \to z_0}(f(z) - f(z_0)) = (\lim_{z \to z_0} f(z)) - f(z_0) = 0 \iff \lim_{z \to z_0} f(z) = f(z_0) \\
 \end{align*}
 \end{proof}

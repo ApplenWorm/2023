@@ -224,12 +224,17 @@ Now let us study another function and its images.
 
 It is an instructive exercise to draw a picture trying to determine where to various regions of the plane are mapped.
 
-EXERCISE: 1) Show that $w = \frac{1}{z}$ maps the interior of the unit circle in the first quadrant to the exterior of the unit circle in the fourth quadrant.
+EXERCISE: \begin{enumerate}
+
+\item Show that $w = \frac{1}{z}$ maps the interior of the unit circle in the first quadrant to the exterior of the unit circle in the fourth quadrant.
 
 \includegraphics{image_lin9.pdf}
 
-2) What is the image of the unit circle under $\frac{1}{z}$?
-3) Write down how $z \to \frac{1}{z} = w$ maps the punctured plane $\mathbb{C} \setminus \{0\}$ to itself (and $\mathbb{C} \cup \{\infty\}$ to itself).
+\item What is the image of the unit circle under $\frac{1}{z}$?
+\item Write down how $z \to \frac{1}{z} = w$ maps the punctured plane $\mathbb{C} \setminus \{0\}$ to itself (and $\mathbb{C} \cup \{\infty\}$ to itself).
+
+\end{enumerate} 
+
 \end{example}
 
 \begin{example}
@@ -287,7 +292,8 @@ Let $f$ be a complex function. We say that $\lim_{z \to z_0} f(z) = w_0$ if when
 \begin{proof} Given $\epsilon > 0$, choose $\delta = 2\epsilon \vert z_0\vert $. Then, if $0 < \vert z - z_0\vert  < \delta$:
 \begin{align*}
 \left\vert \frac{z}{\bar{z}} - \frac{z_0}{\bar{z_0}}\right\vert  & = \left\vert \frac{z\bar{z_0} - z_0 \bar{z}}{\bar{z}\bar{z_0}}\right\vert  = \left\vert \frac{z\bar{z_0} + z\bar{z} - z\bar{z} - z_0\bar{z}}{\bar{z}\bar{z_0}}\right\vert  = \left\vert \frac{\bar{z}(z_0 - z) + z(\bar{z_0} - \bar{z})}{\bar{z}\bar{z_0}}\right\vert \\
-& \leq \frac{\vert \bar{z}\vert \vert z_0 - z\vert  + \vert z\vert \vert \bar{z_0} - \bar{z}\vert }{\vert \bar{z}\vert \vert \bar{z_0}\vert } = \frac{\vert z_0 - z\vert }{\vert z_0\vert } + \frac{\vert z\vert }{\vert z\vert } \frac{\vert z - z_0\vert }{\vert z_0\vert } = \frac{2\vert z - z_0\vert }{\vert z_0\vert } < \frac{2\delta}{\vert z_0\vert } = \frac{2 \cdot 2\epsilon\vert z_0\vert }{\vert z_0\vert } = \epsilon \\
+& \leq \frac{\vert \bar{z}\vert \vert z_0 - z\vert  + \vert z\vert \vert \bar{z_0} - \bar{z}\vert }{\vert \bar{z}\vert \vert \bar{z_0}\vert } = \frac{\vert z_0 - z\vert }{\vert z_0\vert } + \frac{\vert z\vert }{\vert z\vert } \frac{\vert z - z_0\vert }{\vert z_0\vert } \\
+&= \frac{2\vert z - z_0\vert }{\vert z_0\vert } < \frac{2\delta}{\vert z_0\vert } = \frac{2 \cdot 2\epsilon\vert z_0\vert }{\vert z_0\vert } = \epsilon \\
 \end{align*}
 Thus, for a given $\epsilon > 0$ we have found $\delta$ (that depends on $\epsilon$!) s.t. if $\vert z - z_0\vert  < \delta$, then $\vert f(z) - w_0\vert  = \left\vert \frac{z}{\bar{z}} - \frac{z_0}{\bar{z_0}}\right\vert  < \epsilon$ (for any $z_0$!).
 \end{proof}
@@ -325,7 +331,7 @@ $z = iy \in i\mathbb{R}: \frac{z}{\bar{z}} = \frac{iy}{-iy} = -1 \implies \lim_{
 $\implies$ the limit as $z \to 0$ does not exist.
 \end{soln}
 Note: 
-\begin{remark} 8989 For any $z_0 \neq 0$, $\lim_{z \to z_0} \frac{z}{\bar{z}} = \frac{z_0}{\bar{z_0}}$. 
+\begin{remark}  For any $z_0 \neq 0$, $\lim_{z \to z_0} \frac{z}{\bar{z}} = \frac{z_0}{\bar{z_0}}$. 
     \begin{proof} Given $\epsilon > 0$, choose $\delta = \frac{\epsilon}2 \vert z_0\vert $. Then
 \begin{align*} &\left| \frac{\bar{z}}{\bar{z}} - \frac{\bar{z_0}}{z_0} \right| = \left| \frac{\bar{z}z_0 - \bar{z_0}z}{z z_0} \right| \\
         &= \left| \frac{\bar{z}z_0 + z\bar{z} - z\bar{z} - \bar{z_0}z}{z z_0} \right| = \left| \frac{\bar{z}(z_0 - z) + z(\bar{z} - \bar{z_0})}{z z_0} \right| \\
@@ -378,7 +384,10 @@ Note: the first limit is complex, but the last two limits are real!
 By Def 3.1(\ref{definition:3.1}): given $\epsilon > 0$ there exists $\delta = \delta(\epsilon) > 0$ s.t. for all $z$ with $0 < \vert z - z_0\vert  < \delta$ we have $\vert f(z) - (u_0 + iv_0)\vert  < \epsilon$.
 
 Since for any $z \in \mathbb{C}: \vert \text{Im } z\vert , \vert \text{Re } z\vert  \leq \vert \text{Re } z + i\text{Im } z\vert  = \vert z\vert $, we get:
-\[ \vert v(x, y) - v_0\vert , \vert u(x, y) - u_0\vert  < \vert u(x, y) - u_0 + i(v(x, y) - v_0)\vert  = \vert u(x, y) + iv(x, y) - (u_0 + iv_0)\vert  = \vert f(z) - (u_0 + iv_0)\vert  < \epsilon\]
+\begin{align*}
+ \vert v(x, y) - v_0\vert , \vert u(x, y) - u_0\vert  & < \vert u(x, y) - u_0 + i(v(x, y) - v_0)\vert  = \vert u(x, y) + iv(x, y) - (u_0 + iv_0)\vert  \\
+ & = \vert f(z) - (u_0 + iv_0)\vert  < \epsilon 
+ \end{align*}
 Thus $\vert u(x, y) - u_0\vert  < \epsilon$ and $\vert v(x, y) - v_0\vert  < \epsilon$.
 
 \checkthis $\vert z - z_0\vert $ is the distance from $(x, y)$ to $(x_0, y_0)$ in $\mathbb{R}^2$.
