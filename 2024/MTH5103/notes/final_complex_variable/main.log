@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025 - Flatpak) (preloaded format=pdflatex 2025.5.5)  21 MAY 2025 04:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025 - Flatpak) (preloaded format=pdflatex 2025.5.5)  21 MAY 2025 04:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1536,11 +1536,7 @@ Overfull \hbox (11.6558pt too wide) in paragraph at lines 504--507
 m/it/12 i\OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 (-20) = [] =
  []
 
-
-LaTeX Warning: Reference `equation:244.1' on page 17 undefined on input line 50
-8.
-
-<./input/graphs/note01/circle_square.pdf, id=521, 176.68811pt x 165.38086pt>
+<./input/graphs/note01/circle_square.pdf, id=522, 176.68811pt x 165.38086pt>
 File: ./input/graphs/note01/circle_square.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/circle_square.pdf>
 Package pdftex.def Info: ./input/graphs/note01/circle_square.pdf  used on input
@@ -1556,11 +1552,7 @@ has been already used, duplicate ignored
                    \relax 
 l.524 C
        ompute all the roots of $z = \sqrt[4]{-4}$.
-
-LaTeX Warning: Reference `equation:244.1' on page 17 undefined on input line 52
-7.
-
-<./input/graphs/note01/circle_square2.pdf, id=522, 155.04526pt x 157.8698pt>
+<./input/graphs/note01/circle_square2.pdf, id=524, 155.04526pt x 157.8698pt>
 File: ./input/graphs/note01/circle_square2.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/circle_square2.pdf>
 Package pdftex.def Info: ./input/graphs/note01/circle_square2.pdf  used on inpu
@@ -1786,7 +1778,7 @@ has been already used, duplicate ignored
                    \relax 
 l.142 \begin{example} \label
                             {example:4.1}
-<./input/graphs/note02/image_lin.pdf, id=596, 339.99722pt x 141.35309pt>
+<./input/graphs/note02/image_lin.pdf, id=598, 339.99722pt x 141.35309pt>
 File: ./input/graphs/note02/image_lin.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin.pdf  used on input lin
@@ -1802,7 +1794,7 @@ has been already used, duplicate ignored
                    \relax 
 l.149 \begin{example} \label
                             {example:4.2} What is the image of the ray $\arg...
-<./input/graphs/note02/image_lin2.pdf, id=597, 345.68748pt x 128.54926pt>
+<./input/graphs/note02/image_lin2.pdf, id=599, 345.68748pt x 128.54926pt>
 File: ./input/graphs/note02/image_lin2.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin2.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin2.pdf  used on input li
@@ -1822,13 +1814,13 @@ has been already used, duplicate ignored
                    \relax 
 l.168 \begin{example} \label
                             {example:4.3} First, we determine what is the im...
-<./input/graphs/note02/image_lin3.pdf, id=626, 374.54027pt x 98.67365pt>
+<./input/graphs/note02/image_lin3.pdf, id=628, 374.54027pt x 98.67365pt>
 File: ./input/graphs/note02/image_lin3.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin3.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin3.pdf  used on input li
 ne 172.
 (pdftex.def)             Requested size: 374.53934pt x 98.67339pt.
-<./input/graphs/note02/image_lin4.pdf, id=627, 374.13979pt x 99.07414pt>
+<./input/graphs/note02/image_lin4.pdf, id=629, 374.13979pt x 99.07414pt>
 File: ./input/graphs/note02/image_lin4.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin4.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin4.pdf  used on input li
@@ -1839,7 +1831,7 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 181.
 Package hyperref Info: bookmark level for unknown claim defaults to 0 on input 
 line 181.
-<./input/graphs/note02/image_lin5.pdf, id=628, 366.27841pt x 114.31308pt>
+<./input/graphs/note02/image_lin5.pdf, id=630, 366.27841pt x 114.31308pt>
 File: ./input/graphs/note02/image_lin5.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin5.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin5.pdf  used on input li
@@ -1852,13 +1844,13 @@ f>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 190.
-<./input/graphs/note02/image_lin6.pdf, id=654, 399.73842pt x 167.51282pt>
+<./input/graphs/note02/image_lin6.pdf, id=656, 399.73842pt x 167.51282pt>
 File: ./input/graphs/note02/image_lin6.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin6.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin6.pdf  used on input li
 ne 193.
 (pdftex.def)             Requested size: 399.73744pt x 167.5124pt.
-<./input/graphs/note02/image_lin7.pdf, id=655, 394.05719pt x 195.41306pt>
+<./input/graphs/note02/image_lin7.pdf, id=657, 394.05719pt x 195.41306pt>
 File: ./input/graphs/note02/image_lin7.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin7.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin7.pdf  used on input li
@@ -1878,7 +1870,7 @@ has been already used, duplicate ignored
                    \relax 
 l.212 \begin{example}\label
                            {example:4.4} Determine which regions (if any) of...
-<./input/graphs/note02/image_lin8.pdf, id=693, 351.77823pt x 176.24846pt>
+<./input/graphs/note02/image_lin8.pdf, id=695, 351.77823pt x 176.24846pt>
 File: ./input/graphs/note02/image_lin8.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin8.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin8.pdf  used on input li
@@ -1897,7 +1889,7 @@ has been already used, duplicate ignored
                    \relax 
 l.222 \begin{example} \label
                             {example:4.5}
-<./input/graphs/note02/image_lin9.pdf, id=716, 239.60315pt x 125.99171pt>
+<./input/graphs/note02/image_lin9.pdf, id=718, 239.60315pt x 125.99171pt>
 File: ./input/graphs/note02/image_lin9.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin9.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin9.pdf  used on input li
@@ -1909,7 +1901,7 @@ ne 231.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 241.
-<./input/graphs/note02/image_lin10.pdf, id=737, 386.9436pt x 199.68202pt>
+<./input/graphs/note02/image_lin10.pdf, id=739, 386.9436pt x 199.68202pt>
 File: ./input/graphs/note02/image_lin10.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin10.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin10.pdf  used on input l
@@ -1924,13 +1916,13 @@ Package mdframed Info: mdframed detected package amsthm
 
 
 [29 <./input/graphs/note02/image_lin10.pdf>]
-<./input/graphs/note02/image_lin11.pdf, id=796, 395.45642pt x 144.19772pt>
+<./input/graphs/note02/image_lin11.pdf, id=798, 395.45642pt x 144.19772pt>
 File: ./input/graphs/note02/image_lin11.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin11.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin11.pdf  used on input l
 ine 274.
 (pdftex.def)             Requested size: 395.45546pt x 144.19736pt.
-<./input/graphs/note02/image_lin12.pdf, id=797, 403.83873pt x 176.39702pt>
+<./input/graphs/note02/image_lin12.pdf, id=799, 403.83873pt x 176.39702pt>
 File: ./input/graphs/note02/image_lin12.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin12.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin12.pdf  used on input l
@@ -2170,7 +2162,7 @@ as been already used, duplicate ignored
                    \relax 
 l.109 \begin{example}\label
                            {example:6.1} a) The interior of the unit disc $\...
-<./input/graphs/note03/image_lin1.pdf, id=935, 168.67116pt x 80.46762pt>
+<./input/graphs/note03/image_lin1.pdf, id=937, 168.67116pt x 80.46762pt>
 File: ./input/graphs/note03/image_lin1.pdf Graphic file (type pdf)
 <use ./input/graphs/note03/image_lin1.pdf>
 Package pdftex.def Info: ./input/graphs/note03/image_lin1.pdf  used on input li
@@ -2210,7 +2202,7 @@ has been already used, duplicate ignored
                    \relax 
 l.143 \begin{example}\label
                            {example:6.2}
-<./input/graphs/note03/image_lin2.pdf, id=936, 125.99171pt x 125.99171pt>
+<./input/graphs/note03/image_lin2.pdf, id=938, 125.99171pt x 125.99171pt>
 File: ./input/graphs/note03/image_lin2.pdf Graphic file (type pdf)
 <use ./input/graphs/note03/image_lin2.pdf>
 Package pdftex.def Info: ./input/graphs/note03/image_lin2.pdf  used on input li
@@ -2522,19 +2514,19 @@ as been already used, duplicate ignored
                    \relax 
 l.61 \begin{example}\label
                           {example:9.2}
-<./input/graphs/note04/image_graph1.pdf, id=1066, 478.35213pt x 137.82892pt>
+<./input/graphs/note04/image_graph1.pdf, id=1068, 478.35213pt x 137.82892pt>
 File: ./input/graphs/note04/image_graph1.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/image_graph1.pdf>
 Package pdftex.def Info: ./input/graphs/note04/image_graph1.pdf  used on input 
 line 67.
 (pdftex.def)             Requested size: 448.75499pt x 129.3026pt.
-<./input/graphs/note04/img_graph2.pdf, id=1067, 144.06422pt x 183.82677pt>
+<./input/graphs/note04/img_graph2.pdf, id=1069, 144.06422pt x 183.82677pt>
 File: ./input/graphs/note04/img_graph2.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph2.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph2.pdf  used on input li
 ne 69.
 (pdftex.def)             Requested size: 144.06386pt x 183.82631pt.
-<./input/graphs/note04/img_graph3.pdf, id=1068, 115.61092pt x 146.83858pt>
+<./input/graphs/note04/img_graph3.pdf, id=1070, 115.61092pt x 146.83858pt>
 File: ./input/graphs/note04/img_graph3.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph3.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph3.pdf  used on input li
@@ -2596,7 +2588,7 @@ l.120 \begin{proposition} \label
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 124.
-<./input/graphs/note04/img_graph4.pdf, id=1196, 131.68295pt x 103.22966pt>
+<./input/graphs/note04/img_graph4.pdf, id=1198, 131.68295pt x 103.22966pt>
 File: ./input/graphs/note04/img_graph4.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph4.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph4.pdf  used on input li
@@ -2608,7 +2600,7 @@ Package mdframed Info: mdframed detected package amsthm
 
 
 [50]
-<./input/graphs/note04/img_graph5.pdf, id=1208, 160.13527pt x 131.68295pt>
+<./input/graphs/note04/img_graph5.pdf, id=1210, 160.13527pt x 131.68295pt>
 File: ./input/graphs/note04/img_graph5.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph5.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph5.pdf  used on input li
@@ -2633,7 +2625,7 @@ as been already used, duplicate ignored
                    \relax 
 l.168 \begin{example}\label
                            {example:10.1}
-<./input/graphs/note04/img_graph6.pdf, id=1223, 201.38638pt x 151.767pt>
+<./input/graphs/note04/img_graph6.pdf, id=1225, 201.38638pt x 151.767pt>
 File: ./input/graphs/note04/img_graph6.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph6.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph6.pdf  used on input li
@@ -2642,7 +2634,7 @@ ne 182.
 
 
 [52 <./input/graphs/note04/img_graph5.pdf>]
-<./input/graphs/note04/img_graph7.pdf, id=1243, 208.4046pt x 137.54085pt>
+<./input/graphs/note04/img_graph7.pdf, id=1245, 208.4046pt x 137.54085pt>
 File: ./input/graphs/note04/img_graph7.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph7.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph7.pdf  used on input li
@@ -2657,7 +2649,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 216.
-<./input/graphs/note04/img_graph8.pdf, id=1267, 165.9259pt x 109.2883pt>
+<./input/graphs/note04/img_graph8.pdf, id=1269, 165.9259pt x 109.2883pt>
 File: ./input/graphs/note04/img_graph8.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph8.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph8.pdf  used on input li
@@ -2666,7 +2658,7 @@ ne 229.
 
 
 [54 <./input/graphs/note04/img_graph7.pdf>]
-<./input/graphs/note04/img_graph9.pdf, id=1287, 165.9259pt x 137.7406pt>
+<./input/graphs/note04/img_graph9.pdf, id=1289, 165.9259pt x 137.7406pt>
 File: ./input/graphs/note04/img_graph9.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph9.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph9.pdf  used on input li
@@ -2693,7 +2685,7 @@ as been already used, duplicate ignored
                    \relax 
 l.261 \begin{example} C
                        onsider \( w = \sqrt[n]{z - z_0} \). Take \( z - z_0 ...
-<./input/graphs/note04/img_graph10.pdf, id=1325, 165.9259pt x 123.51445pt>
+<./input/graphs/note04/img_graph10.pdf, id=1327, 165.9259pt x 123.51445pt>
 File: ./input/graphs/note04/img_graph10.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph10.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph10.pdf  used on input l
@@ -2712,13 +2704,13 @@ as been already used, duplicate ignored
                    \relax 
 l.304 \begin{example}\label
                            {example:10.3} Find the branch points of the func...
-<./input/graphs/note04/img_graph11.pdf, id=1344, 144.06422pt x 173.05151pt>
+<./input/graphs/note04/img_graph11.pdf, id=1346, 144.06422pt x 173.05151pt>
 File: ./input/graphs/note04/img_graph11.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph11.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph11.pdf  used on input l
 ine 309.
 (pdftex.def)             Requested size: 144.06386pt x 173.05109pt.
-<./input/graphs/note04/img_graph12.pdf, id=1345, 109.0203pt x 109.2873pt>
+<./input/graphs/note04/img_graph12.pdf, id=1347, 109.0203pt x 109.2873pt>
 File: ./input/graphs/note04/img_graph12.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph12.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph12.pdf  used on input l
@@ -2912,7 +2904,7 @@ as been already used, duplicate ignored
                    \relax 
 l.66 \begin{example}\label
                           {example:12.3} Let $z_n = (i)^n: z_0 = 1, z_1 = i,...
-<./input/graphs/note05/img_graph1.pdf, id=1420, 117.8252pt x 118.43547pt>
+<./input/graphs/note05/img_graph1.pdf, id=1422, 117.8252pt x 118.43547pt>
 File: ./input/graphs/note05/img_graph1.pdf Graphic file (type pdf)
 <use ./input/graphs/note05/img_graph1.pdf>
 Package pdftex.def Info: ./input/graphs/note05/img_graph1.pdf  used on input li
@@ -3408,7 +3400,7 @@ as been already used, duplicate ignored
                    \relax 
 l.211 \begin{example} \label
                             {example:15.11} Obtain the series expansion for ...
-<./input/graphs/note06/img_graph1.pdf, id=1595, 314.78001pt x 315.315pt>
+<./input/graphs/note06/img_graph1.pdf, id=1597, 314.78001pt x 315.315pt>
 File: ./input/graphs/note06/img_graph1.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph1.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph1.pdf  used on input li
@@ -3426,7 +3418,7 @@ l.237 \begin{definition} \label
 
 
 [79 <./input/graphs/note06/img_graph1.pdf>]
-<./input/graphs/note06/img_graph2.pdf, id=1621, 144.06422pt x 116.14592pt>
+<./input/graphs/note06/img_graph2.pdf, id=1623, 144.06422pt x 116.14592pt>
 File: ./input/graphs/note06/img_graph2.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph2.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph2.pdf  used on input li
@@ -3442,19 +3434,19 @@ as been already used, duplicate ignored
                    \relax 
 l.246 \begin{example} \label
                             {example:16.1} For $w = z + 1$: the whole domain...
-<./input/graphs/note06/img_graph3.pdf, id=1622, 103.22966pt x 74.77737pt>
+<./input/graphs/note06/img_graph3.pdf, id=1624, 103.22966pt x 74.77737pt>
 File: ./input/graphs/note06/img_graph3.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph3.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph3.pdf  used on input li
 ne 248.
 (pdftex.def)             Requested size: 103.22939pt x 74.77718pt.
-<./input/graphs/note06/img_graph4.pdf, id=1623, 103.22966pt x 74.77737pt>
+<./input/graphs/note06/img_graph4.pdf, id=1625, 103.22966pt x 74.77737pt>
 File: ./input/graphs/note06/img_graph4.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph4.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph4.pdf  used on input li
 ne 252.
 (pdftex.def)             Requested size: 103.22939pt x 74.77718pt.
-<./input/graphs/note06/img_graph5.pdf, id=1624, 137.4736pt x 139.25827pt>
+<./input/graphs/note06/img_graph5.pdf, id=1626, 137.4736pt x 139.25827pt>
 File: ./input/graphs/note06/img_graph5.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph5.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph5.pdf  used on input li
@@ -3463,7 +3455,7 @@ ne 256.
 
 
 [80 <./input/graphs/note06/img_graph2.pdf>]
-<./input/graphs/note06/img_graph6.pdf, id=1639, 151.69974pt x 109.2873pt>
+<./input/graphs/note06/img_graph6.pdf, id=1641, 151.69974pt x 109.2873pt>
 File: ./input/graphs/note06/img_graph6.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph6.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph6.pdf  used on input li
@@ -3523,19 +3515,19 @@ l.294 \begin{example}\label
 
 
 [82]
-<./input/graphs/note06/img_graph7.pdf, id=1686, 120.43495pt x 93.28853pt>
+<./input/graphs/note06/img_graph7.pdf, id=1688, 120.43495pt x 93.28853pt>
 File: ./input/graphs/note06/img_graph7.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph7.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph7.pdf  used on input li
 ne 301.
 (pdftex.def)             Requested size: 120.43465pt x 93.28828pt.
-<./input/graphs/note06/img_graph8.pdf, id=1687, 308.19441pt x 122.54181pt>
+<./input/graphs/note06/img_graph8.pdf, id=1689, 308.19441pt x 122.54181pt>
 File: ./input/graphs/note06/img_graph8.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph8.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph8.pdf  used on input li
 ne 313.
 (pdftex.def)             Requested size: 308.19365pt x 122.5415pt.
-<./input/graphs/note06/img_graph9.pdf, id=1688, 349.4395pt x 93.28853pt>
+<./input/graphs/note06/img_graph9.pdf, id=1690, 349.4395pt x 93.28853pt>
 File: ./input/graphs/note06/img_graph9.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph9.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph9.pdf  used on input li
@@ -3545,7 +3537,7 @@ ne 319.
 
 [83 <./input/graphs/note06/img_graph7.pdf> <./input/graphs/note06/img_graph8.pd
 f> <./input/graphs/note06/img_graph9.pdf>]
-<./input/graphs/note06/img_graph10.pdf, id=1733, 342.75351pt x 110.3603pt>
+<./input/graphs/note06/img_graph10.pdf, id=1735, 342.75351pt x 110.3603pt>
 File: ./input/graphs/note06/img_graph10.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph10.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph10.pdf  used on input l
@@ -3630,35 +3622,24 @@ l.38 \begin{definition}\label
                              {definition:15.1}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 61.
+(mdframed)              on input line 65.
 
 pdfTeX warning (ext4): destination with the same identifier (name{example.2}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.61 \begin{example}\label
+l.65 \begin{example}\label
                           {example:17.1} Compute: 1) $\text{Ln } i$ 2) $\tex...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 69.
+(mdframed)              on input line 73.
 
 pdfTeX warning (ext4): destination with the same identifier (name{example.3}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.69 \begin{example} \label
+l.73 \begin{example} \label
                            {example:17.2}
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 82.
-
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.4
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.82 \begin{proposition}\label
-                              {proposition:15.1} For any $z_1, z_2 \in \math...
-
 
 [86
 
@@ -3667,71 +3648,89 @@ l.82 \begin{proposition}\label
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 96.
+(mdframed)              on input line 86.
+
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.4
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.86 \begin{proposition}\label
+                              {proposition:15.1} For any $z_1, z_2 \in \math...
+
+LaTeX Warning: Reference `proposition:1.2' on page 87 undefined on input line 9
+4.
+
+
+LaTeX Warning: Reference `proposition:1.3' on page 87 undefined on input line 9
+4.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 100.
 
 pdfTeX warning (ext4): destination with the same identifier (name{remark.5}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.96     I
-          f $z_1 = r_1 e^{i\varphi_1}, z_2 = r_2 e^{i\varphi_2}$, then 1) ca...
-<./input/graphs/note07/img_graph1.pdf, id=1768, 123.24644pt x 102.51399pt>
+l.100     I
+           f $z_1 = r_1 e^{i\varphi_1}, z_2 = r_2 e^{i\varphi_2}$, then 1) c...
+<./input/graphs/note07/img_graph1.pdf, id=1771, 123.24644pt x 102.51399pt>
 File: ./input/graphs/note07/img_graph1.pdf Graphic file (type pdf)
 <use ./input/graphs/note07/img_graph1.pdf>
 Package pdftex.def Info: ./input/graphs/note07/img_graph1.pdf  used on input li
-ne 105.
+ne 109.
 (pdftex.def)             Requested size: 123.24612pt x 102.51373pt.
-<./input/graphs/note07/img_graph2.pdf, id=1769, 109.0203pt x 109.2873pt>
+
+
+[87 <./input/graphs/note07/img_graph1.pdf>]
+<./input/graphs/note07/img_graph2.pdf, id=1792, 109.0203pt x 109.2873pt>
 File: ./input/graphs/note07/img_graph2.pdf Graphic file (type pdf)
 <use ./input/graphs/note07/img_graph2.pdf>
 Package pdftex.def Info: ./input/graphs/note07/img_graph2.pdf  used on input li
-ne 109.
+ne 113.
 (pdftex.def)             Requested size: 109.02002pt x 109.28702pt.
-
-
-[87 <./input/graphs/note07/img_graph1.pdf> <./input/graphs/note07/img_graph2.pd
-f>]
-<./input/graphs/note07/img_graph3.pdf, id=1798, 137.58904pt x 95.06114pt>
+<./input/graphs/note07/img_graph3.pdf, id=1793, 137.58904pt x 95.06114pt>
 File: ./input/graphs/note07/img_graph3.pdf Graphic file (type pdf)
 <use ./input/graphs/note07/img_graph3.pdf>
 Package pdftex.def Info: ./input/graphs/note07/img_graph3.pdf  used on input li
-ne 119.
+ne 123.
 (pdftex.def)             Requested size: 137.58868pt x 95.0609pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 125.
+(mdframed)              on input line 129.
 
 pdfTeX warning (ext4): destination with the same identifier (name{proposition.6
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.125 \begin{proposition}\label
+l.129 \begin{proposition}\label
                                {proposition:15.2} Every branch of the functi...
 
 
-[88 <./input/graphs/note07/img_graph3.pdf>]
+[88 <./input/graphs/note07/img_graph2.pdf> <./input/graphs/note07/img_graph3.pd
+f>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 140.
+(mdframed)              on input line 144.
 
 pdfTeX warning (ext4): destination with the same identifier (name{example.7}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 \begin{example} \label
+l.144 \begin{example} \label
                             {example:17.3} Study the function $w = \text{Ln}...
-<./input/graphs/note07/img_graph4.pdf, id=1813, 293.96826pt x 166.1929pt>
+<./input/graphs/note07/img_graph4.pdf, id=1817, 293.96826pt x 166.1929pt>
 File: ./input/graphs/note07/img_graph4.pdf Graphic file (type pdf)
 <use ./input/graphs/note07/img_graph4.pdf>
 Package pdftex.def Info: ./input/graphs/note07/img_graph4.pdf  used on input li
-ne 145.
+ne 149.
 (pdftex.def)             Requested size: 293.96753pt x 166.19247pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{definition.8}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.152 \begin{definition}\label
+l.156 \begin{definition}\label
                               {definition:15.2}
 
 [89 <./input/graphs/note07/img_graph4.pdf>]
@@ -3739,27 +3738,27 @@ pdfTeX warning (ext4): destination with the same identifier (name{exercise.10})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.175      $
+l.179      $
             \arccos z = -i\text{Ln}(z \pm i\sqrt{1 - z^2})$
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 179.
+(mdframed)              on input line 183.
 
 pdfTeX warning (ext4): destination with the same identifier (name{example.11}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.179 \begin{example}\label
+l.183 \begin{example}\label
                            {example:17.4}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 195.
+(mdframed)              on input line 199.
 
 pdfTeX warning (ext4): destination with the same identifier (name{remark.12}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.195     I
+l.199     I
            n a domains where the corresponding branches of the square root a...
 
 
@@ -3768,7 +3767,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.208 \begin{definition}\label
+l.212 \begin{definition}\label
                               {definition:16.1}
 
 [91]
@@ -3776,21 +3775,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.2}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.243 \begin{definition}\label
+l.247 \begin{definition}\label
                               {definition:16.2}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 249.
+(mdframed)              on input line 253.
 
 pdfTeX warning (ext4): destination with the same identifier (name{proposition.3
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.249 \begin{proposition}\label
+l.253 \begin{proposition}\label
                                {proposition:16.1}
 
 [92]
-Overfull \hbox (13.59354pt too wide) in paragraph at lines 277--279
+Overfull \hbox (13.59354pt too wide) in paragraph at lines 281--283
 \OT1/cmr/m/n/12 (-20) Therefore, since $[][] [] = \OMS/cmsy/m/n/12 1$ \OT1/cmr/
 m/n/12 (-20) and $[][][\OML/cmm/m/it/12 b[] \OT1/cmr/m/n/12 (-20) + [] ] = \OML
 /cmm/m/it/12 b[]$\OT1/cmr/m/n/12 (-20) , we con-clude that $[][] \OML/cmm/m/it/
@@ -3799,75 +3798,75 @@ m/n/12 (-20) and $[][][\OML/cmm/m/it/12 b[] \OT1/cmr/m/n/12 (-20) + [] ] = \OML
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 283.
+(mdframed)              on input line 287.
 
 pdfTeX warning (ext4): destination with the same identifier (name{theorem.4}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.283 \begin{theorem}[The Great Picard Theorem]
+l.287 \begin{theorem}[The Great Picard Theorem]
                                                \label{theorem:great.picard}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 292.
+(mdframed)              on input line 296.
 
 pdfTeX warning (ext4): destination with the same identifier (name{proposition.5
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.292 \begin{proposition}\label
+l.296 \begin{proposition}\label
                                {proposition:16.2}
 
 [93]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 313.
+(mdframed)              on input line 317.
 
 pdfTeX warning (ext4): destination with the same identifier (name{example.6}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.313 \begin{example}\label
+l.317 \begin{example}\label
                            {example:18.1} Let $f(z) = \frac{1}{(z-1)(z-2)}$....
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 325.
+(mdframed)              on input line 329.
 
 pdfTeX warning (ext4): destination with the same identifier (name{claim.7}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.325     C
+l.329     C
            laim: $z = 1, z = 2$ are simple poles.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 336.
+(mdframed)              on input line 340.
 
 pdfTeX warning (ext4): destination with the same identifier (name{example.8}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.336 \begin{example}\label
+l.340 \begin{example}\label
                            {example:18.2} Prove:
 
 [94]
 
 LaTeX Warning: Hyper reference `rem:proposition:16.1' on page 95 undefined on i
-nput line 352.
+nput line 357.
 
 
 LaTeX Warning: Reference `rem:proposition:16.1' on page 95 undefined on input l
-ine 352.
+ine 357.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 355.
+(mdframed)              on input line 360.
 
 pdfTeX warning (ext4): destination with the same identifier (name{example.9}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.355 \begin{example}\label
+l.360 \begin{example}\label
                            {example:18.3} Classify the singularities of $f(z...
 )
 
@@ -4037,7 +4036,7 @@ Package mdframed Info: mdframed detected package amsthm
 
 
 [100]
-<./input/graphs/note08/img_graph1.pdf, id=1943, 222.83148pt x 137.78577pt>
+<./input/graphs/note08/img_graph1.pdf, id=1951, 222.83148pt x 137.78577pt>
 File: ./input/graphs/note08/img_graph1.pdf Graphic file (type pdf)
 <use ./input/graphs/note08/img_graph1.pdf>
 Package pdftex.def Info: ./input/graphs/note08/img_graph1.pdf  used on input li
@@ -4046,7 +4045,7 @@ ne 214.
 
 
 [101 <./input/graphs/note08/img_graph1.pdf>]
-<./input/graphs/note08/img_graph2.pdf, id=1968, 104.72926pt x 76.8722pt>
+<./input/graphs/note08/img_graph2.pdf, id=1977, 104.72926pt x 76.8722pt>
 File: ./input/graphs/note08/img_graph2.pdf Graphic file (type pdf)
 <use ./input/graphs/note08/img_graph2.pdf>
 Package pdftex.def Info: ./input/graphs/note08/img_graph2.pdf  used on input li
@@ -4112,7 +4111,7 @@ as been already used, duplicate ignored
                    \relax 
 l.264 \begin{example}\label
                            {example:19.4} Write in the form $z(t) = x(t) + i...
-<./input/graphs/note08/img_graph3.pdf, id=1996, 174.46179pt x 223.0985pt>
+<./input/graphs/note08/img_graph3.pdf, id=2004, 174.46179pt x 223.0985pt>
 File: ./input/graphs/note08/img_graph3.pdf Graphic file (type pdf)
 <use ./input/graphs/note08/img_graph3.pdf>
 Package pdftex.def Info: ./input/graphs/note08/img_graph3.pdf  used on input li
@@ -4159,7 +4158,7 @@ has been already used, duplicate ignored
                    \relax 
 l.310 \begin{example} \label
                             {example:19.6}
-<./input/graphs/note08/img_graph4.pdf, id=2019, 113.85236pt x 81.51955pt>
+<./input/graphs/note08/img_graph4.pdf, id=2027, 113.85236pt x 81.51955pt>
 File: ./input/graphs/note08/img_graph4.pdf Graphic file (type pdf)
 <use ./input/graphs/note08/img_graph4.pdf>
 Package pdftex.def Info: ./input/graphs/note08/img_graph4.pdf  used on input li
@@ -4226,7 +4225,7 @@ has been already used, duplicate ignored
                    \relax 
 l.369 \begin{example}\label
                            {example:19.8} Let C be a semicircle parametrized...
-<./input/graphs/note08/img_graph5.pdf, id=2053, 123.24644pt x 166.1929pt>
+<./input/graphs/note08/img_graph5.pdf, id=2061, 123.24644pt x 166.1929pt>
 File: ./input/graphs/note08/img_graph5.pdf Graphic file (type pdf)
 <use ./input/graphs/note08/img_graph5.pdf>
 Package pdftex.def Info: ./input/graphs/note08/img_graph5.pdf  used on input li
@@ -4267,7 +4266,7 @@ l.400 \begin{proposition}\label
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 423.
-<./input/graphs/note08/img_graph6.pdf, id=2076, 165.9259pt x 137.7406pt>
+<./input/graphs/note08/img_graph6.pdf, id=2084, 165.9259pt x 137.7406pt>
 File: ./input/graphs/note08/img_graph6.pdf Graphic file (type pdf)
 <use ./input/graphs/note08/img_graph6.pdf>
 Package pdftex.def Info: ./input/graphs/note08/img_graph6.pdf  used on input li
@@ -4341,7 +4340,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 72.
-<./input/graphs/note09/img_graph1.pdf, id=2117, 125.41856pt x 109.2873pt>
+<./input/graphs/note09/img_graph1.pdf, id=2125, 125.41856pt x 109.2873pt>
 File: ./input/graphs/note09/img_graph1.pdf Graphic file (type pdf)
 <use ./input/graphs/note09/img_graph1.pdf>
 Package pdftex.def Info: ./input/graphs/note09/img_graph1.pdf  used on input li
@@ -4359,7 +4358,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 109.
-<./input/graphs/note09/img_graph2.pdf, id=2151, 279.73708pt x 167.71057pt>
+<./input/graphs/note09/img_graph2.pdf, id=2159, 279.73708pt x 167.71057pt>
 File: ./input/graphs/note09/img_graph2.pdf Graphic file (type pdf)
 <use ./input/graphs/note09/img_graph2.pdf>
 Package pdftex.def Info: ./input/graphs/note09/img_graph2.pdf  used on input li
@@ -4388,7 +4387,7 @@ s been already used, duplicate ignored
                    \relax 
 l.148     A
            ny convex set is star-shaped, but not every star-shaped set is co...
-<./input/graphs/note09/img_graph3.pdf, id=2178, 105.3516pt x 105.3516pt>
+<./input/graphs/note09/img_graph3.pdf, id=2186, 105.3516pt x 105.3516pt>
 File: ./input/graphs/note09/img_graph3.pdf Graphic file (type pdf)
 <use ./input/graphs/note09/img_graph3.pdf>
 Package pdftex.def Info: ./input/graphs/note09/img_graph3.pdf  used on input li
@@ -4422,13 +4421,13 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 197.
-<./input/graphs/note09/img_graph4.pdf, id=2196, 134.2094pt x 114.90529pt>
+<./input/graphs/note09/img_graph4.pdf, id=2204, 134.2094pt x 114.90529pt>
 File: ./input/graphs/note09/img_graph4.pdf Graphic file (type pdf)
 <use ./input/graphs/note09/img_graph4.pdf>
 Package pdftex.def Info: ./input/graphs/note09/img_graph4.pdf  used on input li
 ne 203.
 (pdftex.def)             Requested size: 134.20905pt x 114.905pt.
-<./input/graphs/note09/img_graph5.pdf, id=2197, 132.48296pt x 111.39517pt>
+<./input/graphs/note09/img_graph5.pdf, id=2205, 132.48296pt x 111.39517pt>
 File: ./input/graphs/note09/img_graph5.pdf Graphic file (type pdf)
 <use ./input/graphs/note09/img_graph5.pdf>
 Package pdftex.def Info: ./input/graphs/note09/img_graph5.pdf  used on input li
@@ -4437,7 +4436,7 @@ ne 207.
 
 
 [114 <./input/graphs/note09/img_graph4.pdf>]
-<./input/graphs/note09/img_graph6.pdf, id=2218, 192.0485pt x 132.48296pt>
+<./input/graphs/note09/img_graph6.pdf, id=2226, 192.0485pt x 132.48296pt>
 File: ./input/graphs/note09/img_graph6.pdf Graphic file (type pdf)
 <use ./input/graphs/note09/img_graph6.pdf>
 Package pdftex.def Info: ./input/graphs/note09/img_graph6.pdf  used on input li
@@ -4464,7 +4463,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{corollary.8})
                    \relax 
 l.270 \begin{corollary}[Deformation Principle]
                                               \label{corollary:18.4.deformat...
-<./input/graphs/note09/img_graph7.pdf, id=2238, 165.9259pt x 137.7406pt>
+<./input/graphs/note09/img_graph7.pdf, id=2246, 165.9259pt x 137.7406pt>
 File: ./input/graphs/note09/img_graph7.pdf Graphic file (type pdf)
 <use ./input/graphs/note09/img_graph7.pdf>
 Package pdftex.def Info: ./input/graphs/note09/img_graph7.pdf  used on input li
@@ -4473,13 +4472,13 @@ ne 278.
 
 
 [116]
-<./input/graphs/note09/img_graph8.pdf, id=2246, 194.37819pt x 166.1929pt>
+<./input/graphs/note09/img_graph8.pdf, id=2254, 194.37819pt x 166.1929pt>
 File: ./input/graphs/note09/img_graph8.pdf Graphic file (type pdf)
 <use ./input/graphs/note09/img_graph8.pdf>
 Package pdftex.def Info: ./input/graphs/note09/img_graph8.pdf  used on input li
 ne 285.
 (pdftex.def)             Requested size: 194.3777pt x 166.19247pt.
-<./input/graphs/note09/img_graph9.pdf, id=2247, 194.37819pt x 166.1929pt>
+<./input/graphs/note09/img_graph9.pdf, id=2255, 194.37819pt x 166.1929pt>
 File: ./input/graphs/note09/img_graph9.pdf Graphic file (type pdf)
 <use ./input/graphs/note09/img_graph9.pdf>
 Package pdftex.def Info: ./input/graphs/note09/img_graph9.pdf  used on input li
@@ -4499,7 +4498,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{corollary.9})
                    \relax 
 l.308 \begin{corollary}\label
                              {corollary:18.5} Let $z_0 \in \mathbb{C}$ be fi...
-<./input/graphs/note09/img_graph10.pdf, id=2294, 151.69974pt x 129.50482pt>
+<./input/graphs/note09/img_graph10.pdf, id=2302, 151.69974pt x 129.50482pt>
 File: ./input/graphs/note09/img_graph10.pdf Graphic file (type pdf)
 <use ./input/graphs/note09/img_graph10.pdf>
 Package pdftex.def Info: ./input/graphs/note09/img_graph10.pdf  used on input l
@@ -4511,7 +4510,7 @@ ine 316.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 328.
-<./input/graphs/note09/img_graph11.pdf, id=2318, 194.37819pt x 137.7406pt>
+<./input/graphs/note09/img_graph11.pdf, id=2326, 194.37819pt x 137.7406pt>
 File: ./input/graphs/note09/img_graph11.pdf Graphic file (type pdf)
 <use ./input/graphs/note09/img_graph11.pdf>
 Package pdftex.def Info: ./input/graphs/note09/img_graph11.pdf  used on input l
@@ -4527,7 +4526,7 @@ has been already used, duplicate ignored
                    \relax 
 l.338 \begin{example}\label
                            {example:20.1}
-<./input/graphs/note09/img_graph12.pdf, id=2320, 251.2838pt x 251.55179pt>
+<./input/graphs/note09/img_graph12.pdf, id=2328, 251.2838pt x 251.55179pt>
 File: ./input/graphs/note09/img_graph12.pdf Graphic file (type pdf)
 <use ./input/graphs/note09/img_graph12.pdf>
 Package pdftex.def Info: ./input/graphs/note09/img_graph12.pdf  used on input l
@@ -4588,7 +4587,7 @@ Package zref-xr Warning: File `note11.aux' not found or empty,
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 40.
-<./input/graphs/note10/img_graph1.pdf, id=2363, 151.69974pt x 129.50482pt>
+<./input/graphs/note10/img_graph1.pdf, id=2372, 151.69974pt x 129.50482pt>
 File: ./input/graphs/note10/img_graph1.pdf Graphic file (type pdf)
 <use ./input/graphs/note10/img_graph1.pdf>
 Package pdftex.def Info: ./input/graphs/note10/img_graph1.pdf  used on input li
@@ -4611,7 +4610,7 @@ has been already used, duplicate ignored
                    \relax 
 l.71 \begin{example}\label
                           {example:20.2}
-<./input/graphs/note10/img_graph2.pdf, id=2387, 222.83148pt x 166.1929pt>
+<./input/graphs/note10/img_graph2.pdf, id=2395, 222.83148pt x 166.1929pt>
 File: ./input/graphs/note10/img_graph2.pdf Graphic file (type pdf)
 <use ./input/graphs/note10/img_graph2.pdf>
 Package pdftex.def Info: ./input/graphs/note10/img_graph2.pdf  used on input li
@@ -4630,19 +4629,19 @@ l.94 \begin{example} \label
 
 
 [122 <./input/graphs/note10/img_graph2.pdf>]
-<./input/graphs/note10/img_graph3.pdf, id=2412, 222.83148pt x 166.1929pt>
+<./input/graphs/note10/img_graph3.pdf, id=2420, 222.83148pt x 166.1929pt>
 File: ./input/graphs/note10/img_graph3.pdf Graphic file (type pdf)
 <use ./input/graphs/note10/img_graph3.pdf>
 Package pdftex.def Info: ./input/graphs/note10/img_graph3.pdf  used on input li
 ne 108.
 (pdftex.def)             Requested size: 222.83093pt x 166.19247pt.
-<./input/graphs/note10/img_graph4.pdf, id=2413, 251.2838pt x 265.77795pt>
+<./input/graphs/note10/img_graph4.pdf, id=2421, 251.2838pt x 265.77795pt>
 File: ./input/graphs/note10/img_graph4.pdf Graphic file (type pdf)
 <use ./input/graphs/note10/img_graph4.pdf>
 Package pdftex.def Info: ./input/graphs/note10/img_graph4.pdf  used on input li
 ne 113.
 (pdftex.def)             Requested size: 251.28317pt x 265.7773pt.
-<./input/graphs/note10/img_graph5.pdf, id=2414, 165.9259pt x 109.2873pt>
+<./input/graphs/note10/img_graph5.pdf, id=2422, 165.9259pt x 109.2873pt>
 File: ./input/graphs/note10/img_graph5.pdf Graphic file (type pdf)
 <use ./input/graphs/note10/img_graph5.pdf>
 Package pdftex.def Info: ./input/graphs/note10/img_graph5.pdf  used on input li
@@ -4652,7 +4651,7 @@ ne 118.
 
 [123 <./input/graphs/note10/img_graph3.pdf> <./input/graphs/note10/img_graph4.p
 df>]
-<./input/graphs/note10/img_graph6.pdf, id=2455, 336.6427pt x 336.9097pt>
+<./input/graphs/note10/img_graph6.pdf, id=2463, 336.6427pt x 336.9097pt>
 File: ./input/graphs/note10/img_graph6.pdf Graphic file (type pdf)
 <use ./input/graphs/note10/img_graph6.pdf>
 Package pdftex.def Info: ./input/graphs/note10/img_graph6.pdf  used on input li
@@ -4665,7 +4664,7 @@ df>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 147.
-<./input/graphs/note10/img_graph7.pdf, id=2493, 69.9413pt x 69.79776pt>
+<./input/graphs/note10/img_graph7.pdf, id=2502, 69.9413pt x 69.79776pt>
 File: ./input/graphs/note10/img_graph7.pdf Graphic file (type pdf)
 <use ./input/graphs/note10/img_graph7.pdf>
 Package pdftex.def Info: ./input/graphs/note10/img_graph7.pdf  used on input li
@@ -4709,7 +4708,7 @@ l.205 \begin{example}\label
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 232.
-<./input/graphs/note10/img_graph8.pdf, id=2525, 167.79889pt x 139.1358pt>
+<./input/graphs/note10/img_graph8.pdf, id=2533, 167.79889pt x 139.1358pt>
 File: ./input/graphs/note10/img_graph8.pdf Graphic file (type pdf)
 <use ./input/graphs/note10/img_graph8.pdf>
 Package pdftex.def Info: ./input/graphs/note10/img_graph8.pdf  used on input li
@@ -4837,7 +4836,7 @@ as been already used, duplicate ignored
                    \relax 
 l.427 \begin{example}\label
                            {example:22.1}
-<./input/graphs/note10/img_graph9.pdf, id=2583, 257.87442pt x 148.62627pt>
+<./input/graphs/note10/img_graph9.pdf, id=2591, 257.87442pt x 148.62627pt>
 File: ./input/graphs/note10/img_graph9.pdf Graphic file (type pdf)
 <use ./input/graphs/note10/img_graph9.pdf>
 Package pdftex.def Info: ./input/graphs/note10/img_graph9.pdf  used on input li
@@ -4962,7 +4961,7 @@ l.185 \begin{example}\label
 [137]
 
 [138]
-<./input/graphs/note11/img_graph1.pdf, id=2658, 224.56999pt x 131.43002pt>
+<./input/graphs/note11/img_graph1.pdf, id=2666, 224.56999pt x 131.43002pt>
 File: ./input/graphs/note11/img_graph1.pdf Graphic file (type pdf)
 <use ./input/graphs/note11/img_graph1.pdf>
 Package pdftex.def Info: ./input/graphs/note11/img_graph1.pdf  used on input li
@@ -5091,7 +5090,7 @@ s been already used, duplicate ignored
                    \relax 
 l.430 \begin{claim}[2]
                       
-<./input/graphs/note11/img_graph2.pdf, id=2711, 248.127pt x 248.661pt>
+<./input/graphs/note11/img_graph2.pdf, id=2719, 248.127pt x 248.661pt>
 File: ./input/graphs/note11/img_graph2.pdf Graphic file (type pdf)
 <use ./input/graphs/note11/img_graph2.pdf>
 Package pdftex.def Info: ./input/graphs/note11/img_graph2.pdf  used on input li
@@ -5134,11 +5133,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 328256B3DC0AD6809349D2168F977254;5690.
  ) 
 Here is how much of TeX's memory you used:
- 38467 strings out of 473190
- 783825 string characters out of 5717360
- 1194851 words of memory out of 5000000
- 59979 multiletter control sequences out of 15000+600000
- 589552 words of font info for 259 fonts, out of 8000000 for 9000
+ 38475 strings out of 473190
+ 783933 string characters out of 5717360
+ 1195015 words of memory out of 5000000
+ 59982 multiletter control sequences out of 15000+600000
+ 589611 words of font info for 260 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  119i,16n,123p,1001b,1362s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </app/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></app/texl
@@ -5171,10 +5170,10 @@ onts/cm/cmtt12.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
 .pfb></app/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></app/te
 xlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></app/texlive/texmf-d
 ist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (146 pages, 1278712 bytes).
+Output written on main.pdf (146 pages, 1278865 bytes).
 PDF statistics:
- 3028 PDF objects out of 3580 (max. 8388607)
- 2435 compressed objects within 25 object streams
- 746 named destinations out of 1000 (max. 500000)
+ 3036 PDF objects out of 3580 (max. 8388607)
+ 2443 compressed objects within 25 object streams
+ 749 named destinations out of 1000 (max. 500000)
  55567 words of extra memory for PDF output out of 61914 (max. 10000000)
 
