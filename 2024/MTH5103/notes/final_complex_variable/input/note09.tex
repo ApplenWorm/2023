@@ -175,9 +175,12 @@ Our goal now is to prove Cauchy's Theorem for star-shaped domains.
     \end{claim}
         \begin{proof}[Proof of claim]
             Consider $\frac{F(z) - F(z_0)}{z - z_0} = \frac{1}{z-z_0} [\int_{[w, z]} f(\xi) d\xi - \int_{[w, z_0]} f(\xi) d\xi]$.
-            Suppose we could show that (*) $\int_{[w, z]} f(\xi) d\xi - \int_{[w, z_0]} f(\xi) d\xi = \int_{[z_0, z]} f(\xi) d\xi$.
+            Suppose we could show that (*) 
+            \begin{equation}\label{equation:cauchy_theorem_for_triangle}
+            \int_{[w, z]} f(\xi) d\xi - \int_{[w, z_0]} f(\xi) d\xi = \int_{[z_0, z]} f(\xi) d\xi. \tag{*}
+            \end{equation}
             
-            Then, by (*): $\frac{F(z) - F(z_0)}{z - z_0} = \frac{1}{z-z_0} \int_{[z_0, z]} f(\xi) d\xi$.
+            Then, by (\ref{equation:cauchy_theorem_for_triangle}): $\frac{F(z) - F(z_0)}{z - z_0} = \frac{1}{z-z_0} \int_{[z_0, z]} f(\xi) d\xi$.
             
             $f$ is analytic on $U \implies$ by Prop 6.5(\ref{proposition:6.5}) $f$ is continuous on $U \implies$ for every $\epsilon > 0$ there 
             exists $\delta > 0$ s.t. if $|z - z_0| < \delta$, then $|f(z) - f(z_0)| < \epsilon$.
