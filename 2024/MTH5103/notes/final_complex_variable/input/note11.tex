@@ -47,12 +47,12 @@ To address this question we need to investigate the size of $|f^{(n)}(z)|$.
         \]
     \end{proposition}
 \begin{proof}
-From the extended Cauchy Integral Formula (Cor 18.9(\ref{corollary:18.9})):
+From the extended Cauchy Integral Formula (Cor~\ref{corollary:18.9}):
 \[
         f^{(n)}(z_0) = \frac{n!}{2\pi i} \int_C \frac{f(z)}{(z-z_0)^{n+1}} dz
   \]
         
-        Thus, by ML inequality (Prop 17.5(\ref{proposition:17.5}))
+        Thus, by ML inequality (Prop~\ref{proposition:17.5})
         \[
             |f^{(n)}(z_0)| \le \left| \frac{n!}{2\pi i} \right| \frac{M}{R^{n+1}} 2\pi R = \frac{n! M}{R^n}
   \]
@@ -67,7 +67,7 @@ Now we can answer the question.
 \begin{proof}
 
 Since $f$ is bounded, there exists $M$ such that $|f(z)| \le M$ for all $z \in \mathbb{C}$. 
-Take a circle centered at $z_0$ of radius $R$. Then, by Cauchy's Estimate (Prop 20.3(\ref{proposition:20.3})): $|f'(z_0)| \le \frac{M}{R}$ and this inequality holds for all choices of $R > 0$. 
+Take a circle centered at $z_0$ of radius $R$. Then, by Cauchy's Estimate (Prop~\ref{proposition:20.3}): $|f'(z_0)| \le \frac{M}{R}$ and this inequality holds for all choices of $R > 0$. 
 Thus, $|f'(z_0)| = 0$ for all $z_0 \in \mathbb{C}$, which means that $f'(z_0) = 0$ for all $z_0 \in \mathbb{C}$ (Why?). If $f = u + iv$, 
 then all partial derivatives $\frac{\partial u}{\partial x}, \frac{\partial u}{\partial y}, \frac{\partial v}{\partial x}, \frac{\partial v}{\partial y}$ vanish, 
 which means that $u$ and $v$ are constant functions $\Rightarrow f$ is constant.
@@ -177,12 +177,12 @@ Thus, by the Residue Theorem
 \]
 
 $\text{Res} \left( f(z), \frac{1}{2} \right)$ is of the form $\frac{p(\frac{1}{2})}{q'(\frac{1}{2})}$ with $p(\frac{1}{2}) = 2^{-6} + 1$ and $q(z) = z^3 (2z - 1) (z - 2)$, $q'(z) = 10z^4 - 20z^3 + 6z^2$. 
-By Cor 16.5(\ref{corollary:16.5}), since $q'(\frac{1}{2}) = -\frac{3}{4}$,
+By Cor~\ref{corollary:16.5}, since $q'(\frac{1}{2}) = -\frac{3}{4}$,
 \[
 \text{Res} \left( \frac{z^6 + 1}{z^3 (2z - 1) (z - 2)}, \frac{1}{2} \right) = \frac{p(\frac{1}{2})}{q'(\frac{1}{2})} = \frac{\frac{65}{64}}{-\frac{3}{4}} = -\frac{65}{48}
 \]
 
-$z_0 = 0$: By Prop 16.2(\ref{proposition:16.2}) for $\varphi(z) = \frac{z^6 + 1}{2z^2 - 5z + 2}$: $\text{Res} (f, 0) = \frac{\varphi''(0)}{2!} = \frac{21}{8}$
+$z_0 = 0$: By Prop~\ref{proposition:16.2} for $\varphi(z) = \frac{z^6 + 1}{2z^2 - 5z + 2}$: $\text{Res} (f, 0) = \frac{\varphi''(0)}{2!} = \frac{21}{8}$
 \[
     -\frac{1}{2i} \int_{|z|=1} \frac{z^6 + 1}{z^3 (2z - 1) (z - 2)} dz = -\frac{1}{2i} 2\pi i \left( \frac{21}{8} - \frac{65}{48} \right) = \pi \frac{63 - 65}{24} = -\frac{\pi}{12}
     \]
@@ -226,7 +226,7 @@ Now we use our substitution and get:
 To compute the last integral we use the Residue Theorem:
 The function $f(z) = \frac{z}{(z^2 + 10z + 1)^2}$ has 2 poles: $z_{1,2} = -5 \pm \sqrt{24}$, 
 both of order 2 (\verifythis), only $z_1 = -5 + \sqrt{24}$ is inside $|z| \le 1$ (\verifythis). 
-By Prop 16.2 (\ref{proposition:16.2}) for $\varphi(z) = \frac{z}{(z - (-5 - \sqrt{24}))^2}$ and $m = 2$
+By Prop~\ref{proposition:16.2} for $\varphi(z) = \frac{z}{(z - (-5 - \sqrt{24}))^2}$ and $m = 2$
 \[
 \text{Res} \left( f, -5 + \sqrt{24} \right) = \frac{\varphi'(-5 + \sqrt{24})}{1!} = \frac{z_1 + z_2}{(z_1 - z_2)^3} = \frac{5}{192 \sqrt{6}}
 \]
@@ -336,7 +336,7 @@ Summarizing: We have proved the following theorem:
 First, we claim that $\lim_{R \to \infty} \int_{C_R^+} \frac{dz}{z^2 + 1} = 0$. Note that on $C_R^+$ we have:
 $|z^2 + 1| \ge ||z|^2 - 1| = R^2 - 1$ ($R > 1$) $\Rightarrow |\frac{1}{z^2 + 1}| \le \frac{1}{R^2 - 1}$
 
-The length of $C_R^+$ is $\pi R$, thus by ML inequality (Prop 17.5 (\ref{proposition:17.5}))
+The length of $C_R^+$ is $\pi R$, thus by ML inequality (Prop~\ref{proposition:17.5})
 \[
 \left| \int_{C_R^+} \frac{dz}{z^2 + 1} \right| \le \frac{\pi R}{R^2 - 1} \xrightarrow{R \to \infty} 0
 \]
@@ -346,7 +346,7 @@ Therefore,
 \[
     \int_{-\infty}^{\infty} \frac{dx}{x^2 + 1} = \lim_{R \to \infty} \int_{-R}^R \frac{dx}{x^2 + 1} + \lim_{R \to \infty} \int_{C_R^+} \frac{dz}{z^2 + 1} = \pi
 \]
-Note that we could conclude the result directly from Thm 21.1(\ref{theorem:21.1}).
+Note that we could conclude the result directly from Thm~\ref{theorem:21.1}.
 \end{soln}
 
 \begin{remark} \checkthis{} \[\int_{-\infty}^{\infty} \frac{dx}{x^2 + 1} = \arctan x \big|_{-\infty}^{\infty} = \frac{\pi}{2} - (-\frac{\pi}{2}) = \pi\]
@@ -358,7 +358,7 @@ Thus you have seen in the first calculus course.
     If $f(x)$ is an even function, namely for every $x \in \mathbb{R}$ $f(x) = f(-x)$, then
     \[\int_0^{\infty} f(x) dx = \frac{1}{2} \int_{-\infty}^{\infty} f(x) dx
         \]
-        and we can use  21.1 (\ref{theorem:21.1}) again.
+        and we can use Thm~\ref{theorem:21.1} again.
     \end{remark}
 
 Let us see one more example.
@@ -374,19 +374,19 @@ z_1 = 2e^{i \frac{\pi}{4}}, \quad z_2 = 2e^{i \frac{3\pi}{4}}, \quad z_3 = 2e^{i
 
 Only $z_1$ and $z_2$ are in the upper-half plane. Note: since all the zeros are simple (Justify!) the integrand has 2 simple poles $z_1, z_2$ in the upper-half plane.
 
-To use Thm 21.1 (\ref{theorem:21.1}) we need to compute $\text{Res} \left( \frac{1}{z^4 + 16}, z_1 \right)$ and $\text{Res} \left( \frac{1}{z^4 + 16}, z_2 \right)$.
+To use Thm~\ref{theorem:21.1} we need to compute $\text{Res} \left( \frac{1}{z^4 + 16}, z_1 \right)$ and $\text{Res} \left( \frac{1}{z^4 + 16}, z_2 \right)$.
 
-$z_1$ (\verifythis): Since $z_1$ is a simple pole we can use Cor 16.5(\ref{corollary:16.5}) with $p(z) = 1$, $q(z) = z^4 + 16$, $q'(z) = 4z^3$ and obtain:
+$z_1$ (\verifythis): Since $z_1$ is a simple pole we can use Cor~\ref{corollary:16.5} with $p(z) = 1$, $q(z) = z^4 + 16$, $q'(z) = 4z^3$ and obtain:
 \[
 \text{Res} \left( \frac{1}{z^4 + 16}, z_1 \right) = \frac{1}{4z_1^3} = \frac{1}{4 \cdot 8 \cdot e^{i \frac{3\pi}{4}}} = \frac{1}{16\sqrt{2} (i-1)} = -\frac{i+1}{32\sqrt{2}}
 \]
 
-$z_2$: Again, using Cor 16.5(\ref{corollary:16.5}):
+$z_2$: Again, using Cor~\ref{corollary:16.5}:
 \[
 \text{Res} \left( \frac{1}{z^4 + 16}, z_2 \right) = \frac{1-i}{32\sqrt{2}}
 \]
 
-$\Rightarrow$ by Thm 21.1 (\ref{theorem:21.1}) (and \ref{remark:20.37}) we obtain
+$\Rightarrow$ by Thm~\ref{theorem:21.1} (and \ref{remark:20.37}) we obtain
 \[
 \int_0^{\infty} \frac{dx}{x^4 + 16} = \frac{1}{2} \int_{-\infty}^{\infty} \frac{dx}{x^4 + 16} = \pi i \left( \text{Res} \left( \frac{1}{z^4 + 16}, z_1 \right) + \text{Res} \left( \frac{1}{z^4 + 16}, z_2 \right) \right)
 \]
@@ -450,7 +450,7 @@ As we can see from the expansion all the poles are simple.
             \]
             
             $\Rightarrow \text{Res} \left( \frac{1}{z^2} \cot \pi z, 0 \right) = -\frac{\pi}{3}$, and since $\varphi(z)$ is analytic in a neighborhood of $z=0$ (and at $z=0$) and $\varphi(0) = \frac{1}{\pi} \neq 0$, 
-            we conclude (by Prop 16.2 (\ref{proposition:16.2})) that $z=0$ is a pole of order 3.
+            we conclude (by Prop~\ref{proposition:16.2}) that $z=0$ is a pole of order 3.
         \end{proof}
 
 Consider the square contour $C_N$ having corner vertices given by $\pm (N + \frac{1}{2}) \pm i (N + \frac{1}{2})$ for $N \in \mathbb{N}$.

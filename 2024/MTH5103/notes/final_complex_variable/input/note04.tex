@@ -52,7 +52,7 @@ Let us note that we will also use names Holomorphic or Regular functions for ana
 \end{definition}
 \begin{definition}\label{definition:7.3} Single-valued function is analytic on a domain (open connected subset of the plane $\mathbb{C}$) $\Omega$ if it is differentiable at every $z \in \Omega$.
 \end{definition}
-Note: From Def 7.1(\ref{definition:7.1}): a set on which the function is analytic needs to be open, 
+Note: From Def~\ref{definition:7.1}: a set on which the function is analytic needs to be open, 
 however if we say that some function $f$ is analytic in a closed set, we mean that there exists an open set that 
 contains this closed set and the function is analytic on this open set.
 
@@ -143,7 +143,7 @@ Since $f'(z) = 0$ for all $z \in \Omega$ by CR equations $0 = f'(z) = \frac{\par
 \begin{claim} $u$ is a constant function.
     \begin{proof}
         We have $u: \Omega \to \mathbb{R}, \frac{\partial u}{\partial x} = \frac{\partial u}{\partial y} = 0$ for all $(x,y) \in \Omega$. Pick $(x_0, y_0), (x_1, y_1) \in \Omega$. $\Omega$ is connected, 
-        thus by Def 4.2(\ref{definition:4.2}) any 2 points in $\Omega$ can be connected by a path that is entirely in $\Omega$. 
+        thus by Def~\ref{definition:4.2} any 2 points in $\Omega$ can be connected by a path that is entirely in $\Omega$. 
         We join $(x_0, y_0)$ and $(x_1, y_1)$ by a path comprised of pieces parallel to x-axis or 
         y-axis [One needs to show that such path exists!] 
         Since $\frac{\partial u}{\partial x} = 0$ by the Mean Value Theorem, $u$ is constant on the horizontal pieces. In the same way,
@@ -393,11 +393,11 @@ This proposition implies that in order to construct an analytic function we cann
 \begin{proposition}\label{proposition:9.2} The function $f(z) = u(x,y) + iv(x,y)$ is analytic in a domain $\Omega \iff v(x,y)$ is the harmonic conjugate of $u(x,y)$.
 \end{proposition}
 
-\begin{proof} [$\implies$] Assume $f$ is analytic in a domain $\Omega$. By Prop 9.1 (\ref{proposition:9.1})
-$u(x,y)$ and $v(x,y)$ are harmonic functions on $\Omega$. Since $f$ is analytic, CR equations hold, thus by Def 9.2 (\ref{definition:9.2}) $v(x,y)$ is the harmonic conjugate of $u(x,y)$.
+\begin{proof} [$\implies$] Assume $f$ is analytic in a domain $\Omega$. By Prop~\ref{proposition:9.1}
+$u(x,y)$ and $v(x,y)$ are harmonic functions on $\Omega$. Since $f$ is analytic, CR equations hold, thus by Def~\ref{definition:9.2} $v(x,y)$ is the harmonic conjugate of $u(x,y)$.
 
 [$\impliedby$] If $u(x,y)$ and $v(x,y)$ are harmonic functions on a domain $\Omega$, then $u$ and $v$ are differentiable at all $z \in \Omega$. Since $v(x,y)$ is the harmonic conjugate of $u(x,y)$, 
-by Def 9.2(\ref{definition:9.2}) - CR equations hold, 
+by Def~\ref{definition:9.2} - CR equations hold, 
 thus Thm 6.1 \ref{theorem:6.1} asserts that $f$ is analytic in a domain $\Omega$.
 \end{proof}
 

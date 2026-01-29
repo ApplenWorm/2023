@@ -253,7 +253,7 @@ EXERCISE: \begin{enumerate}
 \end{example}
 
 \begin{example}
-Back to Ex 4.5.(\ref{example:4.5}) Let us study two images under $\frac{1}{z}$.
+Back to Ex~\ref{example:4.5}. Let us study two images under $\frac{1}{z}$.
     \begin{enumerate}[label=\alph*)]
         \item Find the image of the line $z = t + i(1 - t)$ under $\frac{1}{z}$.
         \item Determine how the horizontal lane $y = k$ is transformed under $w = \frac{1}{z}$.
@@ -325,7 +325,7 @@ Before we proceed to the proof, let us show the following:
     If $\lim_{z \to z_0} f(z)$ exists, then it is unique.
 
 \begin{proof}
- Assume $\lim_{z \to z_0} f(z) = a$ and $\lim_{z \to z_0} f(z) = b$. By Def 3.1(\ref{definition:3.1}) for any $\epsilon > 0$ there exist $\delta_1 > 0$ and $\delta_2 > 0$ such that
+ Assume $\lim_{z \to z_0} f(z) = a$ and $\lim_{z \to z_0} f(z) = b$. By Def~\ref{definition:3.1} for any $\epsilon > 0$ there exist $\delta_1 > 0$ and $\delta_2 > 0$ such that
 \begin{align*}
 \text{if } 0 < \vert z - z_0\vert  < \delta_1 &\implies \vert f(z) - a\vert  < \epsilon/2 \\
 \text{if } 0 < \vert z - z_0\vert  < \delta_2 &\implies \vert f(z) - b\vert  < \epsilon/2
@@ -336,7 +336,7 @@ Thus, using triangle inequality, we obtain
 Since (*) holds for any $\epsilon > 0$ we obtain that $a = b$.
 \end{proof}
 \end{claim}
-Back to Ex 5.2 (\ref{example:5.2}): we will use a common technique to show that the limit does not exist - we will show that there exist two different paths (directions) $z \to z_0$ along which we get 2 different limits.
+Back to Ex~\ref{example:5.2}: we will use a common technique to show that the limit does not exist - we will show that there exist two different paths (directions) $z \to z_0$ along which we get 2 different limits.
 
 \begin{soln}
 Ex 5.2  Note: for real $z$ we have: \{namely, fix $y = 0$\}
@@ -371,7 +371,7 @@ on different paths the limit does not agree $\implies$ the limit does not exist.
 % \end{soln}
 
 \begin{example}
-Ex 5.3 (\ref{example:5.3}) shows that the different paths need not be the real and imaginary axes!
+Ex~\ref{example:5.3} shows that the different paths need not be the real and imaginary axes!
 \end{example}
 
 \begin{remark} 
@@ -397,7 +397,7 @@ Note: the first limit is complex, but the last two limits are real!
 
 \begin{proof}  $\implies$ Assume that $\lim_{z \to z_0} f(z) = u_0 + iv_0$. Let us show that $\lim_{(x, y) \to (x_0, y_0)} u(x, y) = u_0 = \text{Re } w_0$ and $\lim_{(x, y) \to (x_0, y_0)} v(x, y) = v_0 = \text{Im } w_0$.
 
-By Def 3.1(\ref{definition:3.1}): given $\epsilon > 0$ there exists $\delta = \delta(\epsilon) > 0$ s.t. for all $z$ with $0 < \vert z - z_0\vert  < \delta$ we have $\vert f(z) - (u_0 + iv_0)\vert  < \epsilon$.
+By Def~\ref{definition:3.1}: given $\epsilon > 0$ there exists $\delta = \delta(\epsilon) > 0$ s.t. for all $z$ with $0 < \vert z - z_0\vert  < \delta$ we have $\vert f(z) - (u_0 + iv_0)\vert  < \epsilon$.
 
 Since for any $z \in \mathbb{C}: \vert \text{Im } z\vert , \vert \text{Re } z\vert  \leq \vert \text{Re } z + i\text{Im } z\vert  = \vert z\vert $, we get:
 \begin{align*}
@@ -413,7 +413,7 @@ Note: $\vert z - z_0\vert  < \delta \implies \vert x + iy - (x_0 + iy_0)\vert  =
 
 $\impliedby$ Assume that $\lim_{(x,y) \to (x_0, y_0)} u(x, y) = u_0$ and $\lim_{(x, y) \to (x_0, y_0)} v(x, y) = v_0$.
 
-Let $\epsilon > 0$. Since $u$ and $v$ have real limits $u_0, v_0$ as $(x, y) \to (x_0, y_0)$ from Def 3.1(\ref{definition:3.1}) there exist $\delta_1 > 0$ and $\delta_2 > 0$ such that if $0 < \vert \vert (x, y) - (x_0, y_0)\vert \vert  < \delta_1$, then $\vert u(x, y) - u_0\vert  < \epsilon/2$, and $0 < \vert \vert (x, y) - (x_0, y_0)\vert \vert  < \delta_2$, then $\vert v(x, y) - v_0\vert  < \epsilon/2$.
+Let $\epsilon > 0$. Since $u$ and $v$ have real limits $u_0, v_0$ as $(x, y) \to (x_0, y_0)$ from Def~\ref{definition:3.1} there exist $\delta_1 > 0$ and $\delta_2 > 0$ such that if $0 < \vert \vert (x, y) - (x_0, y_0)\vert \vert  < \delta_1$, then $\vert u(x, y) - u_0\vert  < \epsilon/2$, and $0 < \vert \vert (x, y) - (x_0, y_0)\vert \vert  < \delta_2$, then $\vert v(x, y) - v_0\vert  < \epsilon/2$.
 
 Choose $\delta < \min(\delta_1, \delta_2)$. Then, whenever $0 < \vert \vert (x, y) - (x_0, y_0)\vert \vert  < \delta$:
 \begin{align*} 

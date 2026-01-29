@@ -33,7 +33,7 @@
 \week{10}
 \lecture{25}{continuation of Integrals, i guess...}
 
-We have started to study the complex integration, formulated and proved Prop 17.3(\ref{proposition:17.3}) about contour integrals. We conclude the following useful corollary.
+We have started to study the complex integration, formulated and proved Prop~\ref{proposition:17.3} about contour integrals. We conclude the following useful corollary.
 
 \subsection{Antiderivatives and contour integrals}
 
@@ -46,7 +46,7 @@ We have started to study the complex integration, formulated and proved Prop 17.
 \end{corollary}
 \begin{proof}
     \begin{enumerate}
-        \item Immediate from Prop 17.3 (\ref{proposition:17.3}) 4)
+        \item Immediate from Prop~\ref{proposition:17.3} 4)
         \item If C is a closed contour, then we can write $C = C_1 - C_2$, where $C_1$ and $C_2$ have the same start point and the same end point. Then
         \[  \int_C f(z) dz = \int_{C_1 - C_2} f(z) dz = \int_{C_1} f(z) dz + \int_{-C_2} f(z) dz = \int_{C_1} f(z) dz - \int_{C_2} f(z) dz = 0 \]
         Prop 17.3 1)
@@ -76,7 +76,7 @@ Note: The condition that $f$ has antiderivative is necessary!
 \end{example}
 
 \begin{example}\label{example:19.12} 
-    Let $C_1$ be the contour from -1 to 1 along the upper unit semicircle and $C_2$ the contour from -1 to 1 along the 
+    Let $C_1$ be the contour from $-1$ to $1$ along the upper unit semicircle and $C_2$ the contour from $-1$ to $1$ along the 
 lower unit semicircle. Compute $\int_{C_1} \frac{1}{(z-4)^2} dz$.
 \begin{soln}
 
@@ -85,7 +85,7 @@ lower unit semicircle. Compute $\int_{C_1} \frac{1}{(z-4)^2} dz$.
     \emphi{Note:} $\int_{C_1 - C_2} \frac{1}{(z-4)^2} dz = 0$. This is an analytic function on the unit circle, the only singularity is a 
     pole of order 2 at $z = 4$ - outside the unit circle, with antiderivative $-\frac{1}{z-4}$.
     
-    $\implies$ By Cor 17.4 2(\ref{corollary:17.4}): 
+    $\implies$ By Cor~\ref{corollary:17.4} 2): 
     \[ \int_{C_1-C_2}^{} \frac{1}{(z-4)^2} dz = 0.\]
     
     $C_1 - C_2$ is a closed contour; the unit circle.
@@ -95,12 +95,12 @@ lower unit semicircle. Compute $\int_{C_1} \frac{1}{(z-4)^2} dz$.
 
 \begin{example} \label{example:19.13} Compute $\int_C \frac{dz}{(z-z_0)^n}$, where $C = \{z \in \mathbb{C}: |z-z_0| = R\}$ and $n$ is some integer.
 \begin{soln}
-         C is a circle centered at $z_0$ of radius R. Parametrization of C: $|z-z_0| = R \implies (x-x_0)^2 + (y-y_0)^2 = R^2$. 
+         $C$ is a circle centered at $z_0$ of radius R. Parametrization of C: $|z-z_0| = R \implies (x-x_0)^2 + (y-y_0)^2 = R^2$. 
     Take $x-x_0 = R\cos t, y - y_0 = R\sin t, 0 \leq t \leq 2\pi$, then by Euler's formula $z - z_0 = R(\cos t + i\sin t) = Re^{it}, 0 \leq t \leq 2\pi \implies dz = iRe^{it} dt$.
 \end{soln}
 \end{example}
 
-By Def 17.7 (\ref{definition:17.7}) (of the contour integral) 
+By Def~\ref{definition:17.7} (of the contour integral) 
 \[ \int_C \frac{dz}{(z-z_0)^n} = \int_0^{2\pi} \frac{iRe^{it}}{R^n e^{int}} dt = \frac{i}{R^{n-1}} \int_0^{2\pi} e^{i(1-n)t} dt.\]
 
 Consider two cases:
@@ -173,7 +173,7 @@ Our goal now is to prove Cauchy's Theorem for star-shaped domains.
 \begin{proof}
     
     It will suffice to show that $f$ has an antiderivative F on U, since then by 
-    Cor 17.4(\ref{corollary:17.4}) 2) we will conclude for a closed contour C that $\int_C f(z) dz = 0$.
+    Cor~\ref{corollary:17.4} 2) we will conclude for a closed contour C that $\int_C f(z) dz = 0$.
     
     Define: $F(z) = \int_{[w, z]} f(\xi) d\xi$, where w is such that U is star-shaped 
     about $w$, and $[w, z]$ is the straight line segment from $w$ to $z$.
@@ -190,7 +190,7 @@ Our goal now is to prove Cauchy's Theorem for star-shaped domains.
             
             Then, by (\ref{equation:cauchy_theorem_for_triangle}): $\frac{F(z) - F(z_0)}{z - z_0} = \frac{1}{z-z_0} \int_{[z_0, z]} f(\xi) d\xi$.
             
-            $f$ is analytic on $U \implies$ by Prop 6.5(\ref{proposition:6.5}) $f$ is continuous on $U \implies$ for every $\epsilon > 0$ there 
+            $f$ is analytic on $U \implies$ by Prop~\ref{proposition:6.5} $f$ is continuous on $U \implies$ for every $\epsilon > 0$ there 
             exists $\delta > 0$ s.t. if $|z - z_0| < \delta$, then $|f(z) - f(z_0)| < \epsilon$.
             $\implies$ If $|z - z_0| < \delta$, then $|\int_{[z_0, z]} f(\xi) d\xi - \int_{[z_0, z]} f(z_0) d\xi| < \epsilon |z - z_0|$, 
             since $|\int_{[z_0, z]} f(\xi) d\xi - \int_{[z_0, z]} f(z_0) d\xi| \leq \epsilon |z - z_0|$.
@@ -237,7 +237,7 @@ Take $n$ such that $\frac{L}{2^n} < \delta$. Then $\epsilon |z - z_0| < \frac{L\
 $|\int_{\partial T_n} [f(z) - f(z_0) - f'(z_0)(z-z_0)] dz| \leq \frac{L\epsilon}{2^n} \cdot \frac{L}{2^n} = \frac{L^2}{4^n} \epsilon$.
 
 However: $\int_{\partial T_n} [f(z_0) + f'(z_0)(z-z_0)] dz = 0$, since $f(z_0) + f'(z_0)(z-z_0)$ has antiderivative $z f(z_0) + f'(z_0)(\frac{z^2}{2} - z z_0)$ and $\partial T_n$ is a closed 
-curve (Cor 17.4(\ref{corollary:17.4})). Hence: $|\eta(T_n)| = |\int_{\partial T_n} f(z) dz| \leq (\frac{L^2}{4^n}) \epsilon$.
+curve (Cor~\ref{corollary:17.4}). Hence: $|\eta(T_n)| = |\int_{\partial T_n} f(z) dz| \leq (\frac{L^2}{4^n}) \epsilon$.
 
 On the other hand we KNOW that $|\eta(T_n)| \geq \frac{1}{4^n} |\eta(T)|$
 $\implies |\eta(T)| \leq \epsilon L^2$. Since $\epsilon > 0$ is arbitrary $\implies \eta(T) = 0$.
@@ -270,7 +270,7 @@ $\implies |\eta(T)| \leq \epsilon L^2$. Since $\epsilon > 0$ is arbitrary $\impl
 
 From the statement of Cauchy's Theorem for a star-shaped region, one can deduce the same result for more general regions comprised of star-shaped pieces.
 
-From Thm 18.1 (\ref{theorem:18.1})follows: If a curve C can be expressed as $C = C_1 + C_2 + \dots + C_N$ where the region enclosed by each $C_j$ is star-shaped, then
+From Thm~\ref{theorem:18.1} follows: If a curve C can be expressed as $C = C_1 + C_2 + \dots + C_N$ where the region enclosed by each $C_j$ is star-shaped, then
 $\int_C f(z) dz = \int_{C_1} f(z) dz + \int_{C_2} f(z) dz + \dots + \int_{C_N} f(z) dz = 0$.
 
 As a consequence one can prove:
@@ -303,7 +303,7 @@ The picture that you should have in mind here is where D is a domain that contai
     
     $K_{1,2}$ - new contours, $D_{1,2}$ - new domains.
     
-    Now we can apply Thm 18.3(\ref{theorem:18.3}) (Cauchy's Thm) 
+    Now we can apply Thm~\ref{theorem:18.3} (Cauchy's Thm) 
     to the contours $K_1$ and $K_2$ and obtain: $\int_{K_1} f(z) dz = 0 \quad \int_{K_2} f(z) dz = 0$.
     
     Adding contours (to reconstruct the original one) gives us: 
@@ -317,7 +317,7 @@ The picture that you should have in mind here is where D is a domain that contai
     Namely: $\int_{C_2} f(z) dz = \int_{C_1} f(z) dz$.
 \end{proof}
 
-Now we can give an alternative proof to Ex 19.13 (\ref{example:19.13}). It is an important tool for computations.
+Now we can give an alternative proof to Ex~\ref{example:19.13}. It is an important tool for computations.
 \begin{corollary}\label{corollary:18.5} Let $z_0 \in \mathbb{C}$ be fixed. If C is a simple, closed, positively oriented 
     contour such that $z_0$ lies interior to C, then $\int_C \frac{dz}{(z-z_0)^n} = \begin{cases} 2\pi i & n = 1 \\ 0 & n \neq 1, n \in \mathbb{Z} \end{cases}$.
 \end{corollary}
@@ -328,7 +328,7 @@ Now we can give an alternative proof to Ex 19.13 (\ref{example:19.13}). It is an
 		
 		\includegraphics{img_graph10.pdf}
     
-    As in Ex 19.13 (\ref{example:19.13}): let $C_R$ be parametrized by: $z(\theta) = z_0 + Re^{i\theta}, 0 \leq \theta \leq 2\pi$, $dz(\theta) = iRe^{i\theta} d\theta$.
+    As in Ex~\ref{example:19.13}: let $C_R$ be parametrized by: $z(\theta) = z_0 + Re^{i\theta}, 0 \leq \theta \leq 2\pi$, $dz(\theta) = iRe^{i\theta} d\theta$.
     
     The deformation principle implies that 
     \begin{align*}

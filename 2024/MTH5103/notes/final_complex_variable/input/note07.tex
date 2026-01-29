@@ -45,7 +45,7 @@
 
 Let us develop a formula for the computation of the complex logarithm. Write: $z = r(\cos \varphi + i\sin \varphi), w = u + iv$.
 
-By Def 15.1(\ref{definition:15.1}): $e^{u+iv} = r(\cos \varphi + i\sin \varphi) \implies e^u (\cos v + i\sin v) = r(\cos \varphi + i\sin \varphi)$.
+By Def~\ref{definition:15.1}: $e^{u+iv} = r(\cos \varphi + i\sin \varphi) \implies e^u (\cos v + i\sin v) = r(\cos \varphi + i\sin \varphi)$.
 
 By comparing the complex numbers, we conclude:
 \begin{align*}
@@ -83,7 +83,7 @@ $\implies \text{Ln } z$ is defined for any $z \neq 0$ and it is multi-valued fun
      Find an analytic function $f(z)$ such that $\text{Re } f(z) = \arctan \frac{y}{x}$ and $f(-i) = \frac{3\pi}{2} + 2i$.
 \begin{soln}
     
-    In Ex 11.3(\ref{example:11.3}) we have seen that $f(z) = \arctan \frac{y}{x} - \frac{i}{2} \ln(x^2 + y^2) + ic$.
+    In Ex~\ref{example:11.3} we have seen that $f(z) = \arctan \frac{y}{x} - \frac{i}{2} \ln(x^2 + y^2) + ic$.
     
     $\implies$ the only question is to determine the value of the constant $c$.
     
@@ -100,7 +100,7 @@ $\implies \text{Ln } z$ is defined for any $z \neq 0$ and it is multi-valued fun
     \item $\text{Ln} \sqrt[n]{z} = \frac{1}{n} \text{Ln } z$
 \end{enumerate}
 \begin{proof}
-By formula (\ref{equation:ln_z_formula}), Prop 1.2 (\ref{proposition:1.2}), and Prop 1.3 (\ref{proposition:1.3}), we get:
+By formula (\ref{equation:ln_z_formula}), Prop~\ref{proposition:1.2}, and Prop~\ref{proposition:1.3}, we get:
 $\text{Ln}(z_1 z_2) = \ln|z_1 z_2| + i\arg(z_1 z_2) = \ln(|z_1||z_2|) + i(\arg z_1 + \arg z_2) = (\ln|z_1| + i\arg z_1) + (\ln|z_2| + i\arg z_2) = \text{Ln } z_1 + \text{Ln } z_2$.
 The rest in the same way. (FINISH!)
 \end{proof}
@@ -232,7 +232,7 @@ In other words, $z_0$ is an isolated singularity if there exists a neighborhood 
 If $z_0$ is an isolated singularity of $f$, then there exists an annulus $0 < |z - z_0| < r$ (sufficiently small) such that $f$ is analytic there 
 and hence the Laurent series expansion of $f$ exists on this annulus.
 
-By Thm 13.2(\ref{theorem:13.2}) (Laurent series) Such $f$ has a Laurent series expansion valid on $D'$:
+By Thm~\ref{theorem:13.2} (Laurent series) Such $f$ has a Laurent series expansion valid on $D'$:
 \[  f(z) = \sum_{n=1}^{\infty} b_n (z - z_0)^{-n} + \sum_{n=0}^{\infty} a_n (z - z_0)^n = \dots \frac{b_2}{(z-z_0)^2} + \frac{b_1}{z-z_0} + a_0 + \dots \]
 The $\sum_{n=1}^{\infty} b_n (z - z_0)^{-n}$ part of the series is called the principal part of the Laurent series.
 
@@ -348,12 +348,12 @@ The series is valid on a punctured disc centered at $z_0 = 2$ of radius 1: $D' =
 \end{claim}
 \begin{proof}
  $z = 2$: Rewrite $f(z)$ in the form $f(z) = \frac{\varphi(z)}{z-1}$, where $\varphi(z) = \frac{1}{z-1}$. Then $\varphi(z)$ is analytic in a 
- neighborhood of $z = 2$ (including $z = 2$) and $\varphi(2) = 1 \neq 0$, thus, by Prop 16.2 (\ref{proposition:16.2}) $z = 2$ is a simple pole.
+ neighborhood of $z = 2$ (including $z = 2$) and $\varphi(2) = 1 \neq 0$, thus, by Prop~\ref{proposition:16.2} $z = 2$ is a simple pole.
 
 $z = 1$: In the same way: $f(z) = \frac{\tilde{\varphi}(z)}{z-1}$, $\tilde{\varphi}(z) = \frac{1}{z-2}$, $\tilde{\varphi}$ is analytic in a 
-neighborhood of $z = 1$ (including $z = 1$), and $\tilde{\varphi}(1) = -1 \neq 0$. Thus, by Prop 16.2(\ref{proposition:16.2}) $z = 1$ is a simple pole.
+neighborhood of $z = 1$ (including $z = 1$), and $\tilde{\varphi}(1) = -1 \neq 0$. Thus, by Prop~\ref{proposition:16.2} $z = 1$ is a simple pole.
 \end{proof}
-By Prop 16.2(\ref{proposition:16.2}): $\text{Res}(f, 2) = \frac{\varphi(2)}{0!} = 1; \text{Res}(f, 1) = \frac{\tilde{\varphi}(1)}{0!} = -1$.
+By Prop~\ref{proposition:16.2}: $\text{Res}(f, 2) = \frac{\varphi(2)}{0!} = 1; \text{Res}(f, 1) = \frac{\tilde{\varphi}(1)}{0!} = -1$.
 
 \begin{example}\label{example:18.2} Prove:
     \begin{enumerate}
@@ -365,13 +365,13 @@ By Prop 16.2(\ref{proposition:16.2}): $\text{Res}(f, 2) = \frac{\varphi(2)}{0!} 
 
 \begin{soln}
     \begin{enumerate}
-        \item Since $\lim_{z \to 3} \frac{(z-3)(z+3)}{z-3} = 6$ and $\lim_{z \to 3} (z-3) \cdot \frac{(z-3)(z+3)}{z-3} = 0$ by Prop 16.1 (\ref{proposition:16.1})$z = 3$ is a removable singularity. 
+        \item Since $\lim_{z \to 3} \frac{(z-3)(z+3)}{z-3} = 6$ and $\lim_{z \to 3} (z-3) \cdot \frac{(z-3)(z+3)}{z-3} = 0$ by Prop~\ref{proposition:16.1}$z = 3$ is a removable singularity. 
         Define: $\tilde{f}(z) = \begin{cases} \frac{z^2 - 9}{z-3} & z \neq 3 \\ 6 & z = 3 \end{cases} \implies \tilde{f}(z)$ is entire (analytic on $\mathbb{C}$).
         \item We prove this in two ways:
         \begin{enumerate}[label=\roman*)]
             \item The Laurent series for $f$ in $0 < |z| < R$ is $f(z) = \frac{1}{z}(z - \frac{z^3}{3!} + \frac{z^5}{5!} - \dots) = 1 - \frac{z^2}{3!} + \frac{z^4}{5!} - \dots$ $\implies$ the 
             principal part does not exist $\implies z = 0$ is a removable singularity.
-            \item $\lim_{z \to 0} z \cdot \frac{\sin z}{z} = \lim_{z \to 0} \sin z = 0 \implies$ by Prop 16.1 (\ref{proposition:16.1}) $z = 0$ is a removable singularity.
+            \item $\lim_{z \to 0} z \cdot \frac{\sin z}{z} = \lim_{z \to 0} \sin z = 0 \implies$ by Prop~\ref{proposition:16.1} $z = 0$ is a removable singularity.
         \end{enumerate}
     \end{enumerate}
 \end{soln}

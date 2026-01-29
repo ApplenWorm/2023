@@ -102,7 +102,7 @@ From Def (\ref{definition:11.1}) we immediately conclude:
 \begin{proposition}\label{proposition:11.1} If $\sum_{n=0}^{\infty} z_n$ converges, then $\lim_{n \to \infty} z_n = 0$.
 \begin{proof}
     By Def (\ref{definition:11.1}): If $\sum_{n=0}^{\infty} z_n = S$, then $\lim_{N \to \infty} S_N = \lim_{N \to \infty} \sum_{n=0}^{N} z_n = S$. On the other hand: $S_N - S_{N-1} = (z_0 + z_1 + \dots + z_N) - (z_0 + z_1 + \dots + z_{N-1}) = z_N$
-    $\implies \lim_{N \to \infty} z_N = \lim_{N \to \infty} (S_N - S_{N-1}) = \lim_{N \to \infty} S_N - \lim_{N \to \infty} S_{N-1} = S - S = 0$ by Prop 10.1(\zref{proposition:10.1}). $s$ is unique.
+    $\implies \lim_{N \to \infty} z_N = \lim_{N \to \infty} (S_N - S_{N-1}) = \lim_{N \to \infty} S_N - \lim_{N \to \infty} S_{N-1} = S - S = 0$ by Prop~\zref{proposition:10.1}. $s$ is unique.
 \end{proof}
 \end{proposition}
 The contrapositive statement is often called the Test for Divergence.
@@ -111,7 +111,7 @@ The contrapositive statement is often called the Test for Divergence.
 \end{proposition}
 
 \begin{remark}
-The converse of Prop 11.2(\ref{proposition:11.2}) is false: $\lim_{n \to \infty} \frac{1}{n} = 0$, but the series $\sum_{n=1}^{\infty} \frac{1}{n}$ diverges!
+The converse of Prop~\ref{proposition:11.2} is false: $\lim_{n \to \infty} \frac{1}{n} = 0$, but the series $\sum_{n=1}^{\infty} \frac{1}{n}$ diverges!
 \end{remark}
 As expected there is an immediate relation between convergence or divergence of complex sequences and series to that of real ones.
 
@@ -122,7 +122,7 @@ As expected there is an immediate relation between convergence or divergence of 
 \end{enumerate}
 \begin{proof}
     \begin{enumerate}
-        \item follows directly from Def 10.1(\ref{definition:10.1}) and the application of triangle inequality: $|x_n - x|, |y_n - y| \leq |z_n - z| \leq |x_n - x| + |y_n - y|$
+        \item follows directly from Def~\ref{definition:10.1} and the application of triangle inequality: $|x_n - x|, |y_n - y| \leq |z_n - z| \leq |x_n - x| + |y_n - y|$
         \item is proved by decomposing the complex sum into real and imaginary parts $\sum_{n=0}^{\infty} z_n = \sum_{n=0}^{\infty} x_n + i\sum_{n=0}^{\infty} y_n$ and a careful use of 1) [FINISH!]
     \end{enumerate}
 \end{proof}
@@ -189,7 +189,7 @@ The absolute convergence *however* always implies convergence:
 \begin{proof}
     We have $|z_n| = \sqrt{x_n^2 + y_n^2} \geq |x_n|, |y_n|$, therefore using the Comparison test for positive (real) series we get that $\sum_{n=0}^{\infty} |x_n|$ 
     and $\sum_{n=0}^{\infty} |y_n|$ converge $\implies$ (by analogous statement for real series) $\sum_{n=0}^{\infty} x_n$ and $\sum_{n=0}^{\infty} y_n$ converge. 
-    Thus, by Prop 11.3(\ref{proposition:11.3}) 2) $\sum_{n=0}^{\infty} z_n$ converges.
+    Thus, by Prop~\ref{proposition:11.3} 2) $\sum_{n=0}^{\infty} z_n$ converges.
 \end{proof}
 \end{proposition}
 
@@ -259,11 +259,11 @@ Now we state 3 very useful tests for convergence of complex series.
     The series $\sum_{n=0}^{\infty} a_n(z-z_0)^n, a_n \in \mathbb{C}, n \in \mathbb{N}$, is called a power series centered at $z = z_0$ (about $z = z_0$).
 \end{definition}
 
-A power series is an example of complex series where the sequence $z_n$ from Def 11.1(\ref{definition:11.1}) is of the special form $\{a_n(z-z_0)^n\}$ - involves variable $z$. 
+A power series is an example of complex series where the sequence $z_n$ from Def~\ref{definition:11.1} is of the special form $\{a_n(z-z_0)^n\}$ - involves variable $z$. 
 Thus, the convergence or divergence of a power series may depend on the values of the variable $z$. If $z_0 = 0$, the power series are of the form $\sum_{n=0}^{\infty} a_n z^n$.
 
 \begin{remark}
-From Def 12.1(\ref{definition:12.1}) every power series $\sum_{n=0}^{\infty} a_n(z-z_0)^n$ converges for at least one point $z = z_0$.
+From Def~\ref{definition:12.1} every power series $\sum_{n=0}^{\infty} a_n(z-z_0)^n$ converges for at least one point $z = z_0$.
 \end{remark}
 Next theorem tells us that convergence at one point guarantees convergence on some small disc around $z_0$. We prove it for the case $z_0 = 0$ (for simplicity of notation), the general case $z_0 \neq 0$ is proved in exactly the same way.
 
@@ -272,7 +272,7 @@ Next theorem tells us that convergence at one point guarantees convergence on so
     Namely, if the series converges at a point $z_0$, then it converges absolutely at every interior point of the disc centered at 0 of radius $|z_0|$.
 \end{theorem}
     \begin{proof}
-        Since $\sum_{n=0}^{\infty} a_n z_0^n$ converges by (Prop 11.1(\ref{proposition:11.1})) $\lim_{n \to \infty} a_n z_0^n = 0$, 
+        Since $\sum_{n=0}^{\infty} a_n z_0^n$ converges by (Prop~\ref{proposition:11.1}) $\lim_{n \to \infty} a_n z_0^n = 0$, 
         thus $\{a_n z_0^n\}$ is a bounded sequence: there exists $M \in \mathbb{N}$ such that for every $n \in \mathbb{N}$ $|a_n z_0^n| < M$.
         Write the modulus of the general term of the series as: $|a_n z^n| = |a_n z_0^n \cdot \frac{z^n}{z_0^n}| = |a_n z_0^n| \left| \frac{z}{z_0} \right|^n < M \left| \frac{z}{z_0} \right|^n$
         $\implies$ since $|z| < |z_0|$, namely $\left| \frac{z}{z_0} \right| < 1$, the general term of the positive series $\sum_{n=0}^{\infty} |a_n z^n|$ is smaller than the one of the positive geometric 
@@ -340,7 +340,7 @@ A very useful formulae for computing the radius of convergence of power series:
     \end{enumerate}
 \end{proposition}
 
-Note: From Prop 12.2(\ref{proposition:12.2}): $f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n$ is differentiable arbitrarily many times at any $z$ in the disc of convergence 
+Note: From Prop~\ref{proposition:12.2}: $f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n$ is differentiable arbitrarily many times at any $z$ in the disc of convergence 
 of the series (namely, we can define its higher derivatives).
 
 \begin{definition} \label{definition:12.4} For any $z \in \mathbb{C}$ we define the exponential function as the sum of the following series
@@ -359,14 +359,14 @@ $\implies \sum_{n=0}^{\infty} \frac{z^n}{n!}$ converges absolutely for all $z \i
 \end{claim}
 \begin{proposition}\label{proposition:12.3} $e^z$ is entire and $(e^z)' = e^z$.
 \begin{proof}
-    By Prop 12.2(\ref{proposition:12.2}) 1) $e^z$ is analytic for every $z \in \mathbb{C} \implies$ entire (since $R = \infty$). By Prop 12.2 (\ref{proposition:12.2}) 2): $(e^z)' = \sum_{n=1}^{\infty} \frac{nz^{n-1}}{n!} = \sum_{n=1}^{\infty} \frac{z^{n-1}}{(n-1)!} = \sum_{n=0}^{\infty} \frac{z^n}{n!} = e^z$.
+    By Prop~\ref{proposition:12.2} 1) $e^z$ is analytic for every $z \in \mathbb{C} \implies$ entire (since $R = \infty$). By Prop~\ref{proposition:12.2} 2): $(e^z)' = \sum_{n=1}^{\infty} \frac{nz^{n-1}}{n!} = \sum_{n=1}^{\infty} \frac{z^{n-1}}{(n-1)!} = \sum_{n=0}^{\infty} \frac{z^n}{n!} = e^z$.
 \end{proof}
 \end{proposition}
 
 \begin{proposition} \label{proposition:12.4} For any $z_1, z_2 \in \mathbb{C}: e^{z_1} \cdot e^{z_2} = e^{z_1 + z_2}$.
 \begin{proof}
     
-    By Def 12.4(\ref{definition:12.4}): $e^{z_1} = \sum_{n=0}^{\infty} \frac{z_1^n}{n!}, \quad e^{z_2} = \sum_{n=0}^{\infty} \frac{z_2^n}{n!}$.
+    By Def~\ref{definition:12.4}: $e^{z_1} = \sum_{n=0}^{\infty} \frac{z_1^n}{n!}, \quad e^{z_2} = \sum_{n=0}^{\infty} \frac{z_2^n}{n!}$.
     
     These are absolutely convergent series $\implies$ we can multiply them:
     $e^{z_1 + z_2} = 1 + (z_1 + z_2) + \frac{1}{2!}(z_1 + z_2)^2 + \dots + \frac{1}{n!}(z_1 + z_2)^n + \dots = 1 + (z_1 + z_2) + \left(\frac{z_1^2}{2!} + z_1z_2 + \frac{z_2^2}{2!}\right) + \dots + \left(\frac{z_1^n}{n!} + \frac{z_1^{n-1}}{(n-1)!}z_2 + \dots + \frac{z_2^n}{n!}\right) + \dots = e^{z_1}e^{z_2}$

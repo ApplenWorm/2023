@@ -81,7 +81,7 @@ But $\epsilon > 0$ is arbitrary, therefore we conclude that $I = 0$.
 	
 	\includegraphics{img_graph2.pdf}
 	
-	By CIF (18.7)(\ref{theorem:Cauchy.Integral.formula.18.7}:
+	By CIF~\ref{theorem:Cauchy.Integral.formula.18.7}:
     %%%%%%
     $\int_C \frac{f(z)}{z+i} dz = 2\pi i f(-i) = 2\pi i \frac{-i}{-i-2} = 2\pi i \frac{-i}{-3} = \frac{\pi}{5}$.
 \end{soln}
@@ -192,7 +192,7 @@ We have seen that once differentiable complex function is differentiable infinit
     \end{example}
 
     \begin{soln}
-      Set $f(z) = z^3$, apply Cor 18.9(\ref{corollary:18.9}) with $n=3$:
+      Set $f(z) = z^3$, apply Cor~\ref{corollary:18.9} with $n=3$:
         \[
             f'(z) = 3z^2, \quad f''(z) = 6z, \quad f'''(z) = 6
             \]
@@ -225,7 +225,7 @@ We have seen that once differentiable complex function is differentiable infinit
 
 Now we are going to formulate and sketch a proof of another consequence of Cauchy's Theorem, that is a very powerful tool in computations of integrals.
 
-Recall (Def 16.2(\ref{definition:16.2})): The coefficient $b_1$ of the term $\frac{1}{z-z_0}$ is called the residue of the singularity at $z=z_0$, denoted by $\text{Res}(f, z_0)$. We have seen the definition and examples on week 8!
+Recall (Def~\ref{definition:16.2}): The coefficient $b_1$ of the term $\frac{1}{z-z_0}$ is called the residue of the singularity at $z=z_0$, denoted by $\text{Res}(f, z_0)$. We have seen the definition and examples on week 8!
 
 \section{Residue Theorem}
 
@@ -244,14 +244,14 @@ We shall sketch the proof of the case where $z_1, \dots, z_n$ are simple poles o
 	
 Draw small positively oriented circles $C_k$ around the singularities $z_k$ such that they all inside $C$ and they are disjoint - choose radius small enough, so it is possible.
     
-    By extended Deformation Principle (Cor 18.6(\ref{corollary:18.6})):
+    By extended Deformation Principle (Cor~\ref{corollary:18.6}):
     \[
         \int_C f(z) dz = \sum_{k=1}^n \int_{C_k} f(z) dz
         \]
         
         If $z_k$ is a removable singularity: By definition, $f$ can be extended to an analytic function everywhere inside $C_k$, thus by Cauchy's Theorem $\int_{C_k} f(z) dz = 0$. But in this case $\text{Res}(f, z_k) = 0$ as well.
         
-        If $z_k$ is a simple pole, then by Prop (\ref{proposition:16.2}) ($m=1$) $f(z) = \frac{\varphi(z)}{z-z_k}$ where $\varphi(z)$ is analytic at $z_k$, therefore by CIF ( 18.7) \ref{theorem:Cauchy.Integral.formula.18.7}
+        If $z_k$ is a simple pole, then by Prop (\ref{proposition:16.2}) ($m=1$) $f(z) = \frac{\varphi(z)}{z-z_k}$ where $\varphi(z)$ is analytic at $z_k$, therefore by CIF~\ref{theorem:Cauchy.Integral.formula.18.7}
         \[
             \int_{C_k} f(z) dz = \int_{C_k} \frac{\varphi(z)}{z-z_k} dz = 2\pi i \varphi(z_k)
             \]
@@ -411,7 +411,7 @@ Now we state (and prove some of) a collection of surprising and powerful consequ
 
 \begin{proof}
    
-     Parametrize the contour $C$ by: $\gamma(\theta) = z_0 + Re^{i\theta}$, $0 \le \theta \le 2\pi$. By the CIF(\ref{theorem:Cauchy.Integral.formula.18.7}) and the definition of the contour integral (Def 17.7(\ref{definition:17.7}))
+     Parametrize the contour $C$ by: $\gamma(\theta) = z_0 + Re^{i\theta}$, $0 \le \theta \le 2\pi$. By the CIF~\ref{theorem:Cauchy.Integral.formula.18.7} and the definition of the contour integral (Def~\ref{definition:17.7})
         \[
             f(z_0) = \frac{1}{2\pi i} \int_C \frac{f(z)}{z-z_0} dz = \frac{1}{2\pi i} \int_0^{2\pi} \frac{f(z_0 + Re^{i\theta})}{Re^{i\theta}} Re^{i\theta} i d\theta = \frac{1}{2\pi} \int_0^{2\pi} f(z_0 + Re^{i\theta}) d\theta
             \]
@@ -450,7 +450,7 @@ One can deduce: we can show that $f$ must be a constant function (EXERCISE).
     
     \begin{soln}
     
-    By the Maximum Modulus Principle(\ref{theorem:Max.Modulus.Principle.20.2}) $\max |f(z)|$ is attained on the circle $|z-z_0| = R$ (depends only on $R$). Denote $\max |f(z)| = MR$. To estimate $|f^{(n)}(z_0)|$ we use Cor 18.6(\ref{corollary:18.6}) (extended CIF) and Prop 17.5(\ref{proposition:17.5}) (ML inequality):
+    By the Maximum Modulus Principle(\ref{theorem:Max.Modulus.Principle.20.2}) $\max |f(z)|$ is attained on the circle $|z-z_0| = R$ (depends only on $R$). Denote $\max |f(z)| = MR$. To estimate $|f^{(n)}(z_0)|$ we use Cor~\ref{corollary:18.6} (extended CIF) and Prop~\ref{proposition:17.5} (ML inequality):
         \[
             |f^{(n)}(z_0)| = \left| \frac{n!}{2\pi i} \int_{|z-z_0|=R} \frac{f(z)}{(z-z_0)^{n+1}} dz \right| \le \frac{n!}{2\pi} \frac{MR}{R^{n+1}} 2\pi R = \frac{n! MR}{R^n}
             \]

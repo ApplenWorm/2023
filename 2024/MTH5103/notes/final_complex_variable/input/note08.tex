@@ -47,7 +47,7 @@ In this lecture we are going to see more examples of classification of singulari
 \end{soln}
 \end{example}
 
-Alternatively: By Prop 16.1(\ref{proposition:16.1}): $\lim_{z \to 0} z \cdot \frac{e^z - 1}{z} = \lim_{z \to 0} (e^z - 1) = 0 \implies z = 0$ is a removable singularity.
+Alternatively: By Prop~\ref{proposition:16.1}: $\lim_{z \to 0} z \cdot \frac{e^z - 1}{z} = \lim_{z \to 0} (e^z - 1) = 0 \implies z = 0$ is a removable singularity.
 
 \begin{example} \label{example:18.5} Find all the singularities and determine their nature:
     \begin{enumerate}
@@ -58,12 +58,12 @@ Alternatively: By Prop 16.1(\ref{proposition:16.1}): $\lim_{z \to 0} z \cdot \fr
     \begin{enumerate}
         \item Since $z^2 + 9 = (z+3i)(z-3i)$, $f(z)$ has singularities at $z = \pm 3i$. For $z = 3i$: Rewrite $f(z) = \frac{\varphi(z)}{z-3i}$, where $\varphi(z) = \frac{z+1}{z+3i}$ is analytic in a 
         neighborhood of $z = 3i$ (and at $3i$), 
-        and $\varphi(3i) = \frac{1}{2} - i\frac{1}{6} \neq 0 \implies$ by Prop 16.2(\ref{proposition:16.2}) $f(z)$ has a simple pole at $z = 3i$, and $\text{Res}(f; 3i) = \varphi(3i) = \frac{1}{2} - i\frac{1}{6}$.
+        and $\varphi(3i) = \frac{1}{2} - i\frac{1}{6} \neq 0 \implies$ by Prop~\ref{proposition:16.2} $f(z)$ has a simple pole at $z = 3i$, and $\text{Res}(f; 3i) = \varphi(3i) = \frac{1}{2} - i\frac{1}{6}$.
     
     In the same way $z = -3i$ is a simple pole and $\text{Res}(f; -3i) = \frac{1}{2} + i\frac{1}{6}$.
     
     \item $f$ has an isolated singularity at $z = i$. Rewrite: $f(z) = \frac{\varphi(z)}{(z-i)^3}$, where $\varphi(z) = z^3 + 2z$ is analytic in a neighborhood of $z = i$ (including $z=i$) and $\varphi(i) = i^3 + 2i = i \neq 0$. 
-    Therefore, by Prop. 16.2(\ref{proposition:16.2}) $f$ has a pole of order $m = 3$ at $z = i$, and by Prop 16.2(\ref{proposition:16.2}) $\text{Res}(f; i) = \frac{\varphi^{(2)}(i)}{2!} = \frac{6i}{2} = 3i$.
+    Therefore, by Prop~\ref{proposition:16.2} $f$ has a pole of order $m = 3$ at $z = i$, and by Prop~\ref{proposition:16.2} $\text{Res}(f; i) = \frac{\varphi^{(2)}(i)}{2!} = \frac{6i}{2} = 3i$.
     \end{enumerate}
 \end{soln}
 \end{example}
@@ -139,7 +139,7 @@ $\implies z = 3$ is a zero of order $n = 2$.
          z(1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \frac{z^4}{4!} + \dots - 1) & = z^2 + \frac{z^3}{2!} + \frac{z^4}{3!} + \dots \\ 
         &   = z^2(1 + \frac{z}{2!} + \frac{z^2}{3!} + \dots) = z^2 \varphi(z).
     \end{align*}
-Since $\varphi(0) = 1 \neq 0$ ($\varphi$ is analytic at $z_0 = 0$) by Prop 16.3(\ref{proposition:16.3}) $z_0 = 0$ is a zero of order 2 of $f(z)$.
+Since $\varphi(0) = 1 \neq 0$ ($\varphi$ is analytic at $z_0 = 0$) by Prop~\ref{proposition:16.3} $z_0 = 0$ is a zero of order 2 of $f(z)$.
 \item Plug the expansion of $\sin z$ (about $z_0 = 0$) into $f$ and get:
 \begin{align*}
      \frac{z^{10}}{z - \sin z} & = \frac{z^{10}}{z - (z - \frac{z^3}{3!} + \frac{z^5}{5!} - \frac{z^7}{7!} + \dots)} \\ 
@@ -148,7 +148,7 @@ Since $\varphi(0) = 1 \neq 0$ ($\varphi$ is analytic at $z_0 = 0$) by Prop 16.3(
 Factorize $z^3$.
 Let 
 \[ \varphi(z) = \frac{1}{3!} - \frac{z^2}{5!} + \frac{z^4}{7!} - \dots\]
-Then $f(z) = z^7 \varphi(z)$, $\varphi$ is analytic at $z_0 = 0, \varphi(0) = \frac{1}{3!} = 6 \neq 0 \implies$ by Prop 16.3(\ref{proposition:16.3}) $z_0 = 0$ is a zero of order 7 of $f(z)$.
+Then $f(z) = z^7 \varphi(z)$, $\varphi$ is analytic at $z_0 = 0, \varphi(0) = \frac{1}{3!} = 6 \neq 0 \implies$ by Prop~\ref{proposition:16.3} $z_0 = 0$ is a zero of order 7 of $f(z)$.
 \end{enumerate}
 \end{soln}
 
@@ -158,7 +158,7 @@ Then $f(z) = z^7 \varphi(z)$, $\varphi$ is analytic at $z_0 = 0, \varphi(0) = \f
      The zeros of an analytic function are isolated (all).
 \end{theorem}
 \begin{proof}
-Assume $z = z_0$ is a zero of $f(z)$. Then, by Prop 16.3(\ref{proposition:16.3}) $f(z) = (z-z_0)^n \varphi(z)$, where $\varphi(z)$ is analytic and $\varphi(z_0) \neq 0 \implies \varphi(z)$ 
+Assume $z = z_0$ is a zero of $f(z)$. Then, by Prop~\ref{proposition:16.3} $f(z) = (z-z_0)^n \varphi(z)$, where $\varphi(z)$ is analytic and $\varphi(z_0) \neq 0 \implies \varphi(z)$ 
 is continuous at $z_0$ (Prop 6.5). Therefore, there exists a neighborhood of $z = z_0$ such that $\varphi(z) \neq 0$ for all $z$ in this neighborhood and in this neighborhood $f(z)$ has no other zeros 
 different from $z = z_0$.
 \end{proof}
@@ -169,19 +169,19 @@ Next proposition provides a relation between zeros and poles of an analytic func
     If $p(z), q(z)$ are analytic at $z_0$ and $p(z_0) \neq 0$, then $f(z) = (\frac{p}{q})(z)$ has a pole of order $m$ at $z_0 \iff q$ has a zero of order $m$ at $z_0$.
 \end{proposition}
 \begin{proof}
-    [$\implies$] Suppose $f$ has a pole of order $m$ at $z_0$. Then, by Prop 16.2(\ref{proposition:16.2}) $f(z) = \frac{\varphi(z)}{(z-z_0)^m}$, where $\varphi(z)$ is analytic at $z_0$ and $\varphi(z_0) \neq 0$. 
+    [$\implies$] Suppose $f$ has a pole of order $m$ at $z_0$. Then, by Prop~\ref{proposition:16.2} $f(z) = \frac{\varphi(z)}{(z-z_0)^m}$, where $\varphi(z)$ is analytic at $z_0$ and $\varphi(z_0) \neq 0$. 
     Thus, we have: $q(z) = (z-z_0)^m \frac{p(z)}{\varphi(z)}$, where $\frac{p(z_0)}{\varphi(z_0)} \neq 0$. 
-    Thus, $q$ has a zero of order $m$ at $z_0$ (by Prop 16.3(\ref{proposition:16.3})).
+    Thus, $q$ has a zero of order $m$ at $z_0$ (by Prop~\ref{proposition:16.3}).
     
-    [$\impliedby$] Assume $q$ has a zero of order $m$ at $z_0$. Then, by Prop 16.3(\ref{proposition:16.3}) $q(z) = (z-z_0)^m \psi(z)$, where $\psi(z)$ is analytic at $z = z_0$ and $\psi(z_0) \neq 0$. 
+    [$\impliedby$] Assume $q$ has a zero of order $m$ at $z_0$. Then, by Prop~\ref{proposition:16.3} $q(z) = (z-z_0)^m \psi(z)$, where $\psi(z)$ is analytic at $z = z_0$ and $\psi(z_0) \neq 0$. 
     Thus, $f(z) = \frac{p(z)}{(z-z_0)^m \psi(z)} = \frac{p(z)/\psi(z)}{(z-z_0)^m}$, where $\frac{p(z_0)}{\psi(z_0)} \neq 0$ ($\frac{p}{\psi}$ is analytic at $z = z_0$). 
-    Therefore, by Prop 16.2(\ref{proposition:16.2}) $f$ has a pole of order $m$ at $z_0$.
+    Therefore, by Prop~\ref{proposition:16.2} $f$ has a pole of order $m$ at $z_0$.
 \end{proof}
 
 \begin{corollary}\label{corollary:16.5}
     If $p(z_0) \neq 0$ and $q(z)$ has a simple zero at $z_0$, then $\frac{p}{q}$ has a simple pole at $z_0$, and $\text{Res}(\frac{p}{q}, z_0) = \frac{p(z_0)}{q'(z_0)}$.
 \end{corollary}
-\begin{proof}    By Prop 16.4(\ref{proposition:16.4}) with $m = 1$: $\frac{p}{q}$ has a simple pole at $z_0$.
+\begin{proof}    By Prop~\ref{proposition:16.4} with $m = 1$: $\frac{p}{q}$ has a simple pole at $z_0$.
     
     To find the residue, we expand $q$ into Taylor series about $z_0$: $q(z) = q(z_0) + q'(z_0)(z-z_0) + \dots = q'(z_0)(z-z_0) + \frac{q''(z_0)}{2!}(z-z_0)^2 + \dots$, $q(z_0) = 0, q'(z_0) \neq 0$.
     
@@ -192,7 +192,7 @@ Next proposition provides a relation between zeros and poles of an analytic func
     Compute all the residues of $f(z) = \frac{1}{z(e^z - 1)}$.
 \begin{soln}
     Observe that $f$ has infinitely many isolated singularities at the points $z = 2\pi ni, n \in \mathbb{Z}$. We shall break the argument into 2 cases:
-    $n = 0$: The singularity is at $z = 0$. From Ex 18.9 1) $z = 0$ is a double zero (of order 2) of $z(e^z - 1) \implies$ by Prop 16.4(\ref{proposition:16.4}) $z = 0$ is a pole of order 2 of $f(z)$. 
+    $n = 0$: The singularity is at $z = 0$. From Ex 18.9 1) $z = 0$ is a double zero (of order 2) of $z(e^z - 1) \implies$ by Prop~\ref{proposition:16.4} $z = 0$ is a pole of order 2 of $f(z)$. 
     The residue is the coefficient of $\frac{1}{z}$ in the 
     Laurent series expansion of $f$: \[ f(z) = \frac{1}{z^2} \cdot \frac{1}{1 + \frac{z}{2!} + \frac{z^2}{3!} + \dots} \implies \varphi(z) = 1 + \frac{z}{2} + \frac{z^2}{3!} + \dots\] 
     We get
@@ -200,8 +200,8 @@ Next proposition provides a relation between zeros and poles of an analytic func
 \end{soln}
 \end{example}
 
-$n \neq 0$: In terms of Prop 16.4(\ref{proposition:16.4}) we have $p(z) = 1, q(z) = z(e^z - 1)$ and $z = 2\pi ni$ is a simple zero of $q(z)$. $q'(z) = ze^z + e^z - 1 \implies q'(2\pi ni) = 2\pi ni$ (Recall: $e^{2\pi ni} = 1$) $\implies f$ has a simple pole at $2\pi ni, n \neq 0$, 
-and the residue is given by (Cor 16.5(\ref{corollary:16.5})) $\frac{p(2\pi ni)}{q'(2\pi ni)} = \frac{1}{2\pi ni}$.
+$n \neq 0$: In terms of Prop~\ref{proposition:16.4} we have $p(z) = 1, q(z) = z(e^z - 1)$ and $z = 2\pi ni$ is a simple zero of $q(z)$. $q'(z) = ze^z + e^z - 1 \implies q'(2\pi ni) = 2\pi ni$ (Recall: $e^{2\pi ni} = 1$) $\implies f$ has a simple pole at $2\pi ni, n \neq 0$, 
+and the residue is given by (Cor~\ref{corollary:16.5}) $\frac{p(2\pi ni)}{q'(2\pi ni)} = \frac{1}{2\pi ni}$.
 
 % \section*{Lectures 23 + 24}
 \lecture{23+24}{Complex Integration. HUUURRAY>>>}
@@ -258,7 +258,7 @@ gives the same curve as $\gamma$, but traversed in the opposite direction.
 
 \begin{example} \label{example:19.3} Write down $-\gamma$, where $\gamma$ is the straight line connecting $w$ to $w'$.
 \begin{soln}
-    From Ex 19.2 (\ref{example:19.2}): $\gamma_3(t) = tw' + (1-t)w$ - straight line that 
+    From Ex~\ref{example:19.2}: $\gamma_3(t) = tw' + (1-t)w$ - straight line that 
     connects $w$ to $w'$. Using this: $-\gamma_3: [0, 1] \to \mathbb{C} \quad -\gamma_3(t) = (1-t)w' + tw$ ($0 \to w', 1 \to w$).
 \end{soln}
 \end{example}
@@ -344,7 +344,7 @@ linear map from the vector space of complex functions of a real variable to the 
 \begin{example} \label{example:19.7} Compute $\int_0^{\pi/4} e^{it} dt$.
 \begin{soln}
     $e^{it}$ has antiderivative $\frac{1}{i}e^{it} = -ie^{it} \implies$ by 
-    Prop 17.1(\ref{proposition:17.1}) 4) $\int_0^{\pi/4} e^{it} dt = -ie^{it}|_0^{\pi/4} = -i[e^{i\frac{\pi}{4}} - 1] = -i[\frac{1}{\sqrt{2}} + i\frac{1}{\sqrt{2}} - 1] = \frac{1}{\sqrt{2}} + i(1 - \frac{1}{\sqrt{2}})$.
+    Prop~\ref{proposition:17.1} 4) $\int_0^{\pi/4} e^{it} dt = -ie^{it}|_0^{\pi/4} = -i[e^{i\frac{\pi}{4}} - 1] = -i[\frac{1}{\sqrt{2}} + i\frac{1}{\sqrt{2}} - 1] = \frac{1}{\sqrt{2}} + i(1 - \frac{1}{\sqrt{2}})$.
 \end{soln}
 \end{example}
 
@@ -378,7 +378,7 @@ The definition of contour integral is much easier to use in practice. Let us see
 \end{align*}
 \end{example}
 
-\begin{example}\label{example:19.9} Let C be the same contour as in Ex 19.8 (\ref{example:19.8}), $f(z) = z^2$.
+\begin{example}\label{example:19.9} Let C be the same contour as in Ex~\ref{example:19.8}, $f(z) = z^2$.
     \begin{align*}
  \int_C f(z) dz & = \int_{-\pi/2}^{\pi/2} (2e^{i\theta})^2 2ie^{i\theta} d\theta = \int_{-\pi/2}^{\pi/2} 8i e^{3i\theta} d\theta \\ 
  & = \frac{8i}{3i} e^{3i\theta} |_{-\pi/2}^{\pi/2} = \frac{8}{3} [e^{i\frac{3\pi}{2}} - e^{-i\frac{3\pi}{2}}] = \frac{8}{3} 2i \sin(\frac{3\pi}{2}) = -i\frac{16}{3}
@@ -412,12 +412,12 @@ Prop 17.1 + basic linearity properties of integration applied to $\int_C f(z) dz
 \end{proposition}
 \begin{proof}
     \begin{enumerate}
-        \item 1), 2), 3) follow directly from Prop 17.1(\ref{proposition:17.1}).
+        \item 1), 2), 3) follow directly from Prop~\ref{proposition:17.1}.
         \item If F is an antiderivative of $f$, then
     
     \[ \frac{d}{dt} F(\gamma(t)) = F'(\gamma(t)) \gamma'(t) = f(\gamma(t)) \gamma'(t) \]
     Here $\gamma: [a, b] \to \mathbb{C}$ is a parametrization of a contour C in D with $\gamma(a) = z_0$ and $\gamma(b) = z_1$. 
-    Applying Prop 17.1(\ref{proposition:17.1}) with $w(t) = f(\gamma(t))\gamma'(t)$ and $F(\gamma(t)) = W(t)$ yields the result.
+    Applying Prop~\ref{proposition:17.1} with $w(t) = f(\gamma(t))\gamma'(t)$ and $F(\gamma(t)) = W(t)$ yields the result.
     \end{enumerate}
     
 \end{proof}

@@ -113,7 +113,7 @@ The series on the right is called the Taylor series for $f$ at $a$.
 
 Namely, $f$ is differentiable arbitrarily many times at $a$ and this is a unique representation of $f$ as power series on $C$.
 
-Note: we conclude that if $f$ is once differentiable, then can be written as power series, then we can deduce: By (Prop 12.2(\ref{proposition:12.2})): $f'(z) = \sum_{n=1}^{\infty} \frac{f^{(n)}(a)}{(n-1)!}(z-a)^{n-1}, f''(z) = \sum_{n=2}^{\infty} \frac{f^{(n)}(a)}{(n-2)!}(z-a)^{n-2}$, and so on for all $z \in \mathbb{C}$.
+Note: we conclude that if $f$ is once differentiable, then can be written as power series, then we can deduce: By (Prop~\ref{proposition:12.2}): $f'(z) = \sum_{n=1}^{\infty} \frac{f^{(n)}(a)}{(n-1)!}(z-a)^{n-1}, f''(z) = \sum_{n=2}^{\infty} \frac{f^{(n)}(a)}{(n-2)!}(z-a)^{n-2}$, and so on for all $z \in \mathbb{C}$.
 
 \begin{remark}
     This is very different from the real case! In the real case a function can be differentiable once, but not twice:
@@ -142,13 +142,13 @@ For all $n \geq 0$, $f^{(n)}(0) = 0 \implies$ its Taylor series must be: $0 + 0 
 Now let us see a couple of examples of Taylor series.
 
 \begin{example}\label{example:15.6} We have seen: $e^z = \sum_{n=0}^{\infty} \frac{z^n}{n!}$ converges absolutely for all $z \in \mathbb{C} \implies$ the radius of convergence $R = \infty \implies e^z$ is
-differentiable at all $z \in \mathbb{C}$ ($\implies$ entire) and $(e^z)' = e^z$ (Prop 12.3). $\sum_{n=0}^{\infty} \frac{z^n}{n!}$ is Maclaurin series for $e^z$, namely Taylor series about $z_0 = 0$. By Thm 13.1(\ref{theorem:13.1}) it is a unique representation of $e^z$ (about $z_0 = 0$) as power series.
+differentiable at all $z \in \mathbb{C}$ ($\implies$ entire) and $(e^z)' = e^z$ (Prop 12.3). $\sum_{n=0}^{\infty} \frac{z^n}{n!}$ is Maclaurin series for $e^z$, namely Taylor series about $z_0 = 0$. By Thm~\ref{theorem:13.1} it is a unique representation of $e^z$ (about $z_0 = 0$) as power series.
 \end{example}
 
 \begin{example}\label{example:15.7}
 Let $f(z) = \frac{1}{2z-3}$. What is the power series of $f$ about $z_0 = 2$?
 \begin{soln}
-    We need to find a Taylor series expansion of the form $\sum_{n=0}^{\infty} a_n (z-2)^n$. We could use the formula for the coefficients in Thm 13.1(\ref{theorem:13.1}) to find this representation. Having the representation it is easy to find the radius of convergence. However, we do it differently - we represent this series as geometric series.
+    We need to find a Taylor series expansion of the form $\sum_{n=0}^{\infty} a_n (z-2)^n$. We could use the formula for the coefficients in Thm~\ref{theorem:13.1} to find this representation. Having the representation it is easy to find the radius of convergence. However, we do it differently - we represent this series as geometric series.
     
     Rewrite $f(z)$ as geometric series (about $z_0 = 2$!):
     \begin{align*}

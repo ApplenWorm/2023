@@ -64,8 +64,8 @@ We extend the definition of limit to include the point at $\infty$:
 
 \begin{soln} 
     \begin{enumerate}[label=\alph*)] 
-        \item By Def 3.3 (\ref{definition:3.3})  we need to find $\delta = \delta(R) > 0$ for a given $R > 0$: If $\left|\frac{1}{z-i}\right| > R$, then $|z - i| < \frac{1}{R}$, thus the choice $\delta = \frac{1}{R}$ finishes the proof.
-\item By Def 3.2 (\ref{definition:3.2}) we need to find $R > 0$ for a given $\epsilon > 0$. If $\left|\frac{1}{z} - 0\right| = \frac{1}{|z|} < \epsilon$, then $|z| > \frac{1}{\epsilon}$, choose $R = \frac{1}{\epsilon}$ and finish.
+        \item By Def~\ref{definition:3.3}  we need to find $\delta = \delta(R) > 0$ for a given $R > 0$: If $\left|\frac{1}{z-i}\right| > R$, then $|z - i| < \frac{1}{R}$, thus the choice $\delta = \frac{1}{R}$ finishes the proof.
+\item By Def~\ref{definition:3.2} we need to find $R > 0$ for a given $\epsilon > 0$. If $\left|\frac{1}{z} - 0\right| = \frac{1}{|z|} < \epsilon$, then $|z| > \frac{1}{\epsilon}$, choose $R = \frac{1}{\epsilon}$ and finish.
     \end{enumerate}
 \end{soln}
 \end{example}
@@ -73,7 +73,7 @@ We extend the definition of limit to include the point at $\infty$:
 \begin{example} \label{example:5.6}
      Prove that $\lim_{z \to \infty} \frac{z^2 + 1}{z + 2i} = \infty$.
 \end{example}
-\begin{soln}  By Def 3.4 (\ref{definition:3.4}) we need to find $S = S(R) > 0$ for a given $R > 0$. If $\left|\frac{z^2 + 1}{z + 2i}\right| > R$, then
+\begin{soln}  By Def~\ref{definition:3.4} we need to find $S = S(R) > 0$ for a given $R > 0$. If $\left|\frac{z^2 + 1}{z + 2i}\right| > R$, then
 \[ \left|\frac{z^2 + 1}{z + 2i}\right| = \left|\frac{z^2(1 + \frac{1}{z^2})}{z(1 + \frac{2i}{z})}\right| = |z| \left|\frac{1 + \frac{1}{z^2}}{1 + \frac{2i}{z}}\right| > R \]
 Let us show that $\left|\frac{1 + \frac{1}{z^2}}{1 + \frac{2i}{z}}\right| < 2$, then
 \[ \left|1 + \frac{2i}{z}\right| \geq \left|1 - \left|\frac{2i}{z}\right|\right| = \left|1 - \frac{2}{|z|}\right| \geq \left|1 - 2\right| = 1 \]
@@ -83,9 +83,9 @@ triangle inequality.
 
 Thus (2) $\left|1 + \frac{1}{z^2}\right| < 1$ and we get
 \[ \left|\frac{1 + \frac{1}{z^2}}{1 + \frac{2i}{z}}\right| = \frac{\left|1 + \frac{1}{z^2}\right|}{\left|1 + \frac{2i}{z}\right|} < \frac{2}{1} = 2 \]
-Alternatively: By Prop 3.1 (\ref{proposition:3.1}) 2)
+Alternatively: By Prop~\ref{proposition:3.1} 2)
 \[ \lim_{z \to \infty} \left|\frac{z^2 + 1}{z + 2i}\right| = \lim_{z \to \infty} |z| \left|1 + \frac{1}{z^2}\right| \left|\frac{1}{1 + \frac{2i}{z}}\right| = \lim_{z \to \infty} |z| \lim_{z \to \infty} \left|1 + \frac{1}{z^2}\right| \lim_{z \to \infty} \left|\frac{1}{1 + \frac{2i}{z}}\right| \]
-By example 5.5 (\ref{example:5.5}) b): $\lim_{z \to \infty} \frac{1}{z} = 0 \implies \lim_{z \to \infty} 1 + \frac{1}{z^2} = 1, \lim_{z \to \infty} \frac{1}{1 + \frac{2i}{z}} = 1 \implies \lim_{z \to \infty} \frac{z^2 + 1}{z + 2i} = \infty$.
+By example~\ref{example:5.5} b): $\lim_{z \to \infty} \frac{1}{z} = 0 \implies \lim_{z \to \infty} 1 + \frac{1}{z^2} = 1, \lim_{z \to \infty} \frac{1}{1 + \frac{2i}{z}} = 1 \implies \lim_{z \to \infty} \frac{z^2 + 1}{z + 2i} = \infty$.
 \end{soln}
 
 Our next subject is continuity of complex functions. First, we need several definitions of sets in the complex plane.
@@ -103,7 +103,7 @@ Our next subject is continuity of complex functions. First, we need several defi
 \end{definition}
 
 \begin{remark} 
-    In $\mathbb{C}$ these two definitions (in Def 4.2\ref{definition:4.2}) are equivalent, but it is not always the case. The second - path connected - always implies the first, 
+    In $\mathbb{C}$ these two definitions (in Def~\ref{definition:4.2}) are equivalent, but it is not always the case. The second - path connected - always implies the first, 
     but there are complicated examples of sets that are connected but not path connected. OR means: For any points $z, z'$ in the set $S$ there exists a 
     continuous function $p: [0, 1] \to S$ such that $p(0) = z, p(1) = z'$.
 \end{remark}
@@ -190,7 +190,7 @@ Let us see some examples of continuous functions.
 \begin{example}\label{example:7.1}
     \begin{enumerate}[label=\alph*)]
         \item It is obvious that the constant function is continuous everywhere. $f(z) = c$ is continuous at every $z \in \mathbb{C}$.
-        \item It is also clear that the identity function is continuous everywhere: $f(z) = z$ is continuous at every $z \in \mathbb{C}$ (\verifythis - from Def 5.1(\ref{definition:5.1})!)
+        \item It is also clear that the identity function is continuous everywhere: $f(z) = z$ is continuous at every $z \in \mathbb{C}$ (\verifythis - from Def~\ref{definition:5.1}!)
         \item Combining a), b), and Prop 5.1: We conclude that the linear function is continuous everywhere: for constants $a, b \in \mathbb{C}$, $f(z) = az + b$ is continuous at every $z \in \mathbb{C}$.
     \end{enumerate}
 \end{example}
@@ -214,7 +214,7 @@ Combining Prop (\ref{proposition:5.1}), Ex (\ref{example:7.2}), and Ex (\ref{exa
 \begin{proposition}5.3 Every polynomial $P_n(z) = a_0 + a_1 z + a_2 z^2 + \dots + a_n z^n$ with complex coefficients $a_0, a_1, a_2, a_3, \dots, a_n \in \mathbb{C}$ is continuous at every $z \in \mathbb{C}$. Furthermore, every rational function $f(z) = \frac{P_n(z)}{Q_m(z)}$ ($P_n, Q_m$ polynomials of degree $n, m$ respectively) is continuous at every $z \in \mathbb{C}$, except possibly at the roots of $Q_m(z)$.
 \end{proposition}
 
-"Possibly" since if there is a common root to $P_n(z)$ and $Q_m(z)$ that can be factorized, the function *may* be continuous at that root. We said that rational functions are continuous except possibly at the roots of the denominator, however, recalling Def 3.3(\ref{definition:3.3}): Def 3.3(\ref{definition:3.3}) $\implies$ Rational functions can be regarded as continuous everywhere on $\mathbb{C} \cup \{\infty\}$.
+"Possibly" since if there is a common root to $P_n(z)$ and $Q_m(z)$ that can be factorized, the function *may* be continuous at that root. We said that rational functions are continuous except possibly at the roots of the denominator, however, recalling Def~\ref{definition:3.3}: Def~\ref{definition:3.3} $\implies$ Rational functions can be regarded as continuous everywhere on $\mathbb{C} \cup \{\infty\}$.
 
 In practice, one of the best ways of dealing with "$\infty$" in limits is to use substitution $z = \frac{1}{\zeta}$ and let $\zeta \to 0$.
 
@@ -228,7 +228,7 @@ In practice, one of the best ways of dealing with "$\infty$" in limits is to use
 \begin{example}\label{example:7.4} 
     Is $\frac{z^3 + 8i}{z + 2i}$ continuous at $z = 2i$?
 
-\begin{soln}  Since $2i + 1 \neq 0$, by Prop 5.1(\ref{proposition:5.1}): \[ \lim_{z \to 2i} \frac{z^3 + 8i}{z + 2i} = \frac{\lim_{z \to 2i} (z^3 + 8i)}{\lim_{z \to 2i} z + 1} = \frac{(8i^3 + 8i)}{2i + 1} = \frac{-8i + 8i}{2i + 1} = 0, \] which $\implies$ continuous. The function is defined at $z = 2i$ and in a neighborhood of $z = 2i$, the limit exists and equal to the value of the function $\implies$ the function is continuous at $z = 2i$.
+\begin{soln}  Since $2i + 1 \neq 0$, by Prop~\ref{proposition:5.1}: \[ \lim_{z \to 2i} \frac{z^3 + 8i}{z + 2i} = \frac{\lim_{z \to 2i} (z^3 + 8i)}{\lim_{z \to 2i} z + 1} = \frac{(8i^3 + 8i)}{2i + 1} = \frac{-8i + 8i}{2i + 1} = 0, \] which $\implies$ continuous. The function is defined at $z = 2i$ and in a neighborhood of $z = 2i$, the limit exists and equal to the value of the function $\implies$ the function is continuous at $z = 2i$.
 \end{soln}
 
 \end{example}
@@ -319,7 +319,7 @@ Now we observe how we can construct complicated differentiable functions from el
 \begin{proof}[Exercise - on your own]
     
     \begin{exercise}
-        (The details follow from Def 6.1(\ref{definition:6.1}), Prop 3.1(\ref{proposition:3.1}); the chain rule - proof follows from Def 6.1(\ref{definition:6.1}) as in the real case).
+        (The details follow from Def~\ref{definition:6.1}, Prop~\ref{proposition:3.1}; the chain rule - proof follows from Def~\ref{definition:6.1} as in the real case).
     \end{exercise}
 \end{proof}
 
