@@ -1,0 +1,77 @@
+\documentclass[tikz, border=3mm]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath} % Needed for \tilde
+\usetikzlibrary{
+    arrows.meta,         % For arrow tips
+    decorations.markings,% For placing arrows along paths
+    calc,                % For coordinate calculations
+    positioning          % For label positioning
+}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Latex, % Set default arrow tip style
+    axis/.style={->, thick}, % Style for axes
+    contour/.style={thick},    % Base style for contours
+    dot/.style={fill=red, circle, inner sep=1.5pt}, % Style for red points
+    labelstyle/.style={red}, % Style for red labels
+    tick/.style={thick}, % Style for tick marks
+    % Style for placing a CCW arrow (<) on a path
+   midarrowL/.style={
+        decoration={markings, mark=at position 0.2 with {\arrowreversed{Latex}}},
+        postaction={decorate}
+    },
+    midarrow/.style={
+        decoration={markings, mark=at position 0.2 with {\arrow{Latex}}},
+        postaction={decorate}
+    }
+]
+
+    % Define parameters for outer circle C4
+    % Center (0, -1), Radius 5 (to pass through -5, 5, 4i, -6i)
+    \coordinate (C4center) at (0, -1);
+    \def\R{5}
+
+    % Define parameters for inner circles C1~, C2~
+    \coordinate (C1center) at (1, 0);
+    \coordinate (C2center) at (-3, 0);
+    \def\r{1.0} % Radius for inner circles
+    \def\rad{0.5}
+
+    % Axes (adjust limits)
+    \draw[axis] (-5.5, 0) -- (5.5, 0) node[below] {$x$};
+    \draw[axis] (0, -6.5) -- (0, 4.5) node[left] {$y$};
+
+    % Draw Outer Red Circle (C4) with CCW Arrow
+    \draw[contour, red, midarrow] (C4center) circle (\R); % Arrow near top-left
+    \node[red] at ($(C4center)+(135:\R+0.3)$) {$C_4$}; % Label C4
+
+    % Draw Inner Blue Circle C1~ with CCW Arrow
+    \draw[contour, blue] (C1center) circle (\r); % Draw circle border
+    \path[contour, blue,midarrow] (C1center) circle (\r); % Add arrow decoration
+    \node[blue] at ($(C1center)+(90:\r+0.2)$) {$\tilde{C}_1$}; % Label C1~ above circle
+
+    % Draw Inner Blue Circle C2~ with CCW Arrow
+    \draw[contour, blue] (C2center) circle (\rad); % Draw circle border
+    \path[contour, blue, midarrow] (C2center) circle (\rad); % Add arrow decoration
+    \node[blue] at ($(C2center)+(90:\rad+0.2)$) {$\tilde{C}_2$}; % Label C2~ above circle
+
+    % Draw Center Points (red dots) and Labels
+    \node[dot, label={[labelstyle]below right:1}] at (C1center) {};
+    \node[dot, label={[labelstyle]below right:-3}] at (C2center) {};
+    \node[dot, black] at (0,0) {}; % Dot at origin
+	\node[dot, red] at (0,-1) {};	
+    % Ticks and Labels on axes
+    % X-axis
+    \foreach \x in {-5, 5} {
+        \draw[tick] (\x, -2pt) -- (\x, 2pt);
+        \node[labelstyle, below=2pt] at (\x, 0) {$\x$};
+    }
+    % Y-axis
+    \foreach \y/\ylab in {4/{4i}, -6/{-6i}} {
+        \draw[tick] (-2pt, \y) -- (2pt, \y);
+        \node[labelstyle, left=2pt] at (0, \y) {$\ylab$};
+    }
+
+\end{tikzpicture}
+\end{document}

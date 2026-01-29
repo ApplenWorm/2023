@@ -1,0 +1,31 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{decorations.markings}
+
+\begin{document}
+\begin{tikzpicture}[
+  decoration={
+    markings,
+    mark=at position 0.99 with {\arrow{>}} % Arrow near the end
+  }
+]
+
+  % Parameters for the Archimedean spiral
+  \def\a{0.1}   % Starting radius (adjust for initial gap)
+  \def\b{0.15}  % Spacing between turns (adjust for tightness)
+  \def\turns{5} % Number of turns (adjust for length)
+
+  % Calculate the end angle
+  \pgfmathsetmacro{\endangle}{360*\turns}
+
+  % Draw the Archimedean spiral
+  \draw[postaction={decorate}]
+    plot[
+      domain=0:\endangle,
+      samples=200, % Increase for smoother curve
+      smooth
+    ]
+    ({(\a + \b*\x/360)*cos(\x)}, {(\a + \b*\x/360)*sin(\x)});
+
+\end{tikzpicture}
+\end{document}

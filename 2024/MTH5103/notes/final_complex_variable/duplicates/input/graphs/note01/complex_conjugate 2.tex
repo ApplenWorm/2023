@@ -1,0 +1,28 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{amsmath}
+
+\begin{document}
+\begin{tikzpicture}[scale=1] % Adjust scale as needed
+
+  % Axes
+  \draw[->] (-1,0) -- (3,0) node[right] {$x$};
+  \draw[->] (0,-3) -- (0,3) node[above] {$y$};
+
+  % Point a on the real axis
+  \draw[|-|] (0,0) -- (1.5,0) node[midway, below] {$a$};
+
+  % Point ib on the positive imaginary axis
+  \draw[|-|] (0,0) -- (0,2) node[midway, left] {$ib$};
+
+    % Point -ib on the negative imaginary axis
+  \draw[|-|] (0,0) -- (0,-2) node[midway, left] {$-ib$};
+
+  % Vector representing z
+  \draw[->, red, thick] (0,0) -- (1.5,2) node[midway, above right, black] {$z$};
+
+  % Vector representing conjugate of z
+  \draw[->, blue, thick] (0,0) -- (1.5,-2) node[midway, below right, black] {$\overline{z}$};
+
+\end{tikzpicture}
+\end{document}

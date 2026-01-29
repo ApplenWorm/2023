@@ -1,0 +1,39 @@
+\documentclass[tikz, border=3mm]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, calc}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Latex, % Set default arrow tip style
+    dot/.style={fill=black, circle, inner sep=1.5pt}, % Style for points
+    labelstyle/.style={black} % Style for labels
+]
+
+    % --- Given Definitions ---
+    \coordinate (Ce) at (2.2, 1.5); % Center of the ellipse
+    \coordinate (Z1) at (1.5, 0.8); % First point on ellipse
+    \coordinate (Z2) at (2.0, 2.0); % Second point on ellipse
+
+    % --- Visual Approximation Parameters (Adjust these by eye) ---
+    \def\xrad{0.9}  % Estimated x-radius before rotation
+    \def\yrad{0.6}  % Estimated y-radius before rotation
+    \def\rotangle{25} % Estimated rotation angle in degrees
+
+    % --- Drawing ---
+    % Axes (adjust limits to fit ellipse)
+    \draw[->, thick] (0, 0) -- (4, 0) node[below] {$x$};
+    \draw[->, thick] (0, 0) -- (0, 3) node[left] {$y$};
+
+    % Draw the Ellipse (Approximation)
+    \draw[red, thick] (Ce) ellipse [x radius=\xrad, y radius=\yrad, rotate=\rotangle];
+
+    % Draw the points and labels
+    \draw[rotate=30, red, thick] (Ce) ellipse (\xrad , 10);  % old syntax
+
+
+    % Optional: Add lines from center to points to help visualize
+    % \draw[gray, thin] (Ce) -- (Z1);
+    % \draw[gray, thin] (Ce) -- (Z2);
+
+\end{tikzpicture}
+\end{document}

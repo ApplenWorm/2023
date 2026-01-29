@@ -1,0 +1,26 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{amsmath}
+
+\begin{document}
+\begin{tikzpicture}[scale=1] % Adjust scale as needed
+
+  % Axes
+  \draw[->] (-0.5,0) -- (3,0) node[right] {$x$};
+  \draw[->] (0,-0.5) -- (0,3) node[above] {$y$};
+
+  % Vector (red)
+  \draw[->, red, thick] (0,0) -- (2,1.5);
+
+  % Point a on the x-axis
+  \draw[fill=red] (2,0) circle (1pt) node[below] {$a$};
+
+  % Point b on the y-axis
+  \draw[fill=red] (0,1.5) circle (1pt) node[left] {$b$};
+
+  % Dashed lines
+  \draw[dashed, red] (2,0) -- (2,1.5);
+  \draw[dashed, red] (0,1.5) -- (2,1.5);
+
+\end{tikzpicture}
+\end{document}

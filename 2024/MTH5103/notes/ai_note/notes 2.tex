@@ -1,0 +1,1813 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm, amsfonts}
+\usepackage{ocr}  % Assuming you might want to include some OCR'd text later
+\usepackage{graphicx} % For including images
+\usepackage{geometry}
+%%--------------------------------------------------------
+%% example.tex
+%%
+%%--------------------------------------------------------
+% \input{prefix}%
+\usepackage[sexy]{styles/evan}
+
+\providecommand{\BibLatexMode}[1]{}
+\providecommand{\BibTexMode}[1]{}
+
+\ifx\UseBibLatex\undefined%
+  \renewcommand{\BibLatexMode}[1]{}
+  \renewcommand{\BibTexMode}[1]{#1}
+\else
+  \renewcommand{\BibLatexMode}[1]{#1}
+  \renewcommand{\BibTexMode}[1]{}
+\fi
+
+%%%
+
+\BibLatexMode{%
+   \usepackage[bibencoding=utf8,style=alphabetic,backend=biber]{biblatex}%
+   \usepackage{my_biblatex}%
+}
+
+%%%
+
+
+%%%%
+
+\newcommand{\checkthis}[1]{\vspace{5pt}
+\noindent\textcolor{blue}{\textbf{Check:}} #1\vspace{5pt}}
+
+\newcommand{\week}[1]{\section*{Week #1}}
+\newcommand{\lecture}[2]{\subsection*{Lecture #1: #2}}
+%%%%
+
+% \newtheorem{theorem}{Theorem}[section]
+
+
+%%
+
+\providecommand{\emphind}[1]{}%
+\renewcommand{\emphind}[1]{\emph{#1}\index{#1}}
+
+\definecolor{blue25emph}{rgb}{0, 0, 11}
+
+\providecommand{\emphic}[2]{}
+\renewcommand{\emphic}[2]{\textcolor{blue25emph}{%
+      \textbf{\emph{#1}}}\index{#2}}
+
+\providecommand{\emphi}[1]{}%
+\renewcommand{\emphi}[1]{\emphic{#1}{#1}}
+
+\definecolor{almostblack}{rgb}{0, 0, 0.3}
+
+\providecommand{\emphw}[1]{}%
+\renewcommand{\emphw}[1]{{\textcolor{almostblack}{\emph{#1}}}}%
+
+\providecommand{\emphOnly}[1]{}%
+\renewcommand{\emphOnly}[1]{\emph{\textcolor{blue25}{\textbf{#1}}}}
+%%
+
+\newcommand{\HLink}[2]{\hyperref[#2]{#1~\ref*{#2}}}
+\newcommand{\HLinkSuffix}[3]{\hyperref[#2]{#1\ref*{#2}{#3}}}
+
+\newcommand{\figlab}[1]{\label{fig:#1}}
+\newcommand{\figref}[1]{\HLink{Figure}{fig:#1}}
+
+\newcommand{\thmlab}[1]{{\label{theo:#1}}}
+\newcommand{\thmref}[1]{\HLink{Theorem}{theo:#1}}
+
+\newcommand{\remlab}[1]{\label{rem:#1}}
+\newcommand{\remref}[1]{\HLink{Remark}{rem:#1}}%
+
+\newcommand{\corlab}[1]{\label{cor:#1}}
+\newcommand{\corref}[1]{\HLink{Corollary}{cor:#1}}%
+
+\providecommand{\deflab}[1]{}
+\renewcommand{\deflab}[1]{\label{def:#1}}
+\newcommand{\defref}[1]{\HLink{Definition}{def:#1}}
+
+\newcommand{\lemlab}[1]{\label{lemma:#1}}
+\newcommand{\lemref}[1]{\HLink{Lemma}{lemma:#1}}%
+
+\providecommand{\eqlab}[1]{}%
+\renewcommand{\eqlab}[1]{\label{equation:#1}}
+\newcommand{\Eqref}[1]{\HLinkSuffix{Eq.~(}{equation:#1}{)}}
+
+
+\newcommand{\MiraThanks}[1]{%
+   \thanks{%
+      School of Mathematical Sciences; %
+      Queen Mary, University of London; %
+      Mile End Road; %
+      London, E14NS, UK; %
+      \href{m.shamis@qmul.ac.uk}{m.shamis@qmul.ac.uk}; %
+      \url{https://www.qmul.ac.uk/maths/profiles/shamiss.html}. %
+   #1%
+   }%
+}
+
+
+% Bib latex stuff
+\BibLatexMode{%
+   \usepackage[bibencoding=utf8,style=alphabetic,backend=biber]{biblatex}%
+   \usepackage{my_biblatex}%
+}
+
+\BibLatexMode{%
+   \bibliography{template}
+}
+% \geometry{a4paper, margin=1in}
+
+% \newtheorem{theorem}{Theorem}[section]
+% \newtheorem{lemma}[theorem]{Lemma}
+% \newtheorem{proposition}[theorem]{Proposition}
+% \newtheorem{corollary}[theorem]{Corollary}
+% \newtheorem{definition}[theorem]{Definition}
+% \newtheorem{example}[theorem]{Example}
+% \newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Rea}{\text{Re}}
+\newcommand{\Ima}{\text{Im}}
+
+\title{Complex Variables Lecture Notes}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+These notes cover the fundamental concepts of complex variables. The course begins with the basics of complex numbers, their algebra, and geometry.  We then move to sequences, series, and power series, and finally to the core concepts of analytic functions, Cauchy-Riemann equations, and various related theorems and applications.
+
+\section{Week 1: Lecture 1}
+
+\subsection{Motivation}
+
+What is the use of complex functions and complex variables? One of many things is to compute the actual value of real convergent series.  For example, we know that the series $\sum_{n=1}^\infty \frac{1}{n^2}$ converges.  The question is, what is the value of the sum:  $\sum_{n=1}^\infty \frac{1}{n^2} = ?$  Towards the end of this module, we will be able to compute the answer. We will see:
+
+\begin{itemize}
+    \item $1 + \frac{1}{2^2} + \frac{1}{3^2} + \dots = \frac{\pi^2}{6}$
+    \item $1 + \frac{1}{2^4} + \frac{1}{3^4} + \dots = \frac{\pi^4}{90}$
+    \item $1 + \frac{1}{2^6} + \frac{1}{3^6} + \dots = \frac{\pi^6}{945}$
+\end{itemize}
+
+Using complex functions we will be able to compute quite complicated (real!) integrals, which may be very hard to compute otherwise, and a lot of other things. For example: Compute $\int_{-\infty}^{\infty} \frac{1}{x^4+1} dx = ?$
+
+\subsection{The Field of Complex Numbers}
+
+We start with the basic definitions, properties, and the geometry of complex numbers.
+
+\begin{definition}
+A \emph{complex number} is an ordered pair of real numbers, $(x, y)$.  If $y = 0$, we get the pair $(x, 0) = x$ (which we denote simply by $x$).
+\end{definition}
+
+Since real numbers are a part of complex numbers, the algebraic operations (sum, subtraction, multiplication, division) on complex numbers need to be such that they agree with the corresponding algebraic operations on real numbers.  We denote $\C$ as the set of all complex numbers.
+
+\begin{definition}
+Two complex numbers $z_1 = (x_1, y_1)$ and $z_2 = (x_2, y_2)$, $z_1, z_2 \in \C$, are \emph{equal} if and only if $x_1 = x_2$ and $y_1 = y_2$.
+\end{definition}
+
+\begin{definition}
+The \emph{sum} of two complex numbers $z_1 = (x_1, y_1)$ and $z_2 = (x_2, y_2)$ is a complex number $z_1 + z_2 = (x_1 + x_2, y_1 + y_2) = z_3 \in \C$.
+\end{definition}
+
+\begin{definition}
+The \emph{product} of two complex numbers $z_1 = (x_1, y_1)$ and $z_2 = (x_2, y_2)$ is a complex number $z_1 z_2 = (x_1 x_2 - y_1 y_2, x_1 y_2 + x_2 y_1) = z_3 \in \C$.
+\end{definition}
+It is easy to see that if we apply this rule to real numbers, we get the usual product.
+For $x_1,x_2 \in \mathbb{R}$: $x_1=(x_1,0)$, $x_2=(x_2,0)$
+\[ (x_1,0)(x_2,0) = (x_1x_2-0 \cdot 0, x_1 \cdot 0 + 0 \cdot x_1) = (x_1x_2,0) = x_1x_2. \]
+Usually, we will write a complex number as $z=x+iy$, where $i=(0,1)$.  $i$ is an ordered pair (0,1).
+Let us compute $i^2$ using definition 1.4:
+\[ i^2 = (0,1)(0,1) = (0 \cdot 0 - 1 \cdot 1, 0 \cdot 1+ 1\cdot 0) = (-1,0) = -1. \]
+It is easy to check the usual rules for arithmetic, namely the axioms of a field.
+
+\begin{proposition}
+If $z_1, z_2, z_3 \in \C$, then:
+\begin{enumerate}
+    \item \textbf{Closure:} $z_1 + z_2 \in \C$, $z_1 z_2 \in \C$.
+    \item \textbf{Commutativity:} $z_1 + z_2 = z_2 + z_1$, $z_1 z_2 = z_2 z_1$.
+    \item \textbf{Associativity:} $z_1 + (z_2 + z_3) = (z_1 + z_2) + z_3$, $z_1 (z_2 z_3) = (z_1 z_2) z_3$.
+    \item \textbf{Distributivity:} $z_1 (z_2 + z_3) = z_1 z_2 + z_1 z_3$.
+    \item \textbf{Zero and Identity:} $z + 0 = z$, $z \cdot 1 = z$.
+    \item \textbf{Negative and Inverse:} $z + (-z) = 0$, where for $z = x + iy$, $-z = -x - iy$.  If $z \neq 0$, then $z \cdot z^{-1} = 1$, where $z^{-1} = \frac{x}{x^2 + y^2} - i \frac{y}{x^2 + y^2}$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Let us prove the Inverse. As for the rest: check at home (all parts follow from the analogous properties of real numbers).
+
+$z \cdot z^{-1} = (x+iy) \left( \frac{x}{x^2+y^2} - i \frac{y}{x^2+y^2} \right) = \frac{x^2 - ixy + ixy - i^2y^2}{x^2 + y^2} + i \cdot 0 = \frac{x^2+y^2}{x^2+y^2} + i \cdot 0= 1.$
+\end{proof}
+
+We will see why the inverse is defined in exactly this way.
+
+\begin{definition}
+Let $z = x + iy \in \C$. $x$ is called the \emph{real part} of $z$ and denoted by $x = \Rea(z)$; $y$ is called the \emph{imaginary part} of $z$, denoted by $y = \Ima(z)$.
+\end{definition}
+
+The algebraic form $x+iy$ to write complex numbers allows us to add and multiply complex numbers as polynomials, but remember that $i^2 = -1$.  For example:
+
+$(x_1 + iy_1)(x_2 + iy_2) = x_1x_2 + ix_1y_2 + iy_1x_2 + i^2y_1y_2 = (x_1x_2 - y_1y_2) + i(x_1y_2 + y_1x_2)$.
+
+\section{Week 1: Lecture 2}
+
+\begin{example}
+ Let $z_1=1+i$, $z_2 = 2-i$. Compute $z_1+z_2$, $z_1z_2$, $z_2^{-1}$.
+
+\textbf{Solution:}
+$z_1+z_2 = (1+i)+(2-i)=(1+2)+(1+(-1))i = 3$
+$z_1z_2 = (1+i)(2-i) = (1 \cdot 2 + i(-i)) + i (1(-1)+1\cdot 2) = 3+i$
+$z_2^{-1}$: $\Rea(z_2) = x=2$, $\Ima(z_2) = y=-1 \implies z_2^{-1} = \frac{x}{x^2+y^2} -i \frac{y}{x^2+y^2} = \frac{2}{5} + i \frac{1}{5}$
+\end{example}
+
+\begin{definition}
+The \emph{complex conjugate} of the complex number $z = x + iy$ is the complex number given by $\bar{z} = x - iy$ (the bar denotes the operation of complex conjugation).
+\end{definition}
+
+\begin{remark}
+Check:
+\begin{enumerate}
+    \item $\overline{(\bar{z})} = z$
+    \item $\overline{z_1 + z_2} = \bar{z_1} + \bar{z_2}$
+    \item $\overline{z_1 z_2} = \bar{z_1} \bar{z_2}$
+    \item $\Rea(z) = \frac{1}{2}(z + \bar{z}) = \frac{1}{2}(x + iy + x - iy) = x$
+    \item $\Ima(z) = \frac{1}{2i}(z - \bar{z}) = \frac{1}{2i}(x + iy - x + iy) = y$
+\end{enumerate}
+\end{remark}
+
+Using addition and multiplication we can define subtraction and division.
+\begin{definition}
+Subtraction: $z_1-z_2$ is a complex number $z_3$ such that $z_1 = z_2+z_3$.
+\end{definition}
+Using this definition we obtain: $z_3 = (x_1-x_2) + i(y_1-y_2)$
+
+\begin{definition}
+Division: Let $z_2 \neq 0$. $\frac{z_1}{z_2}$ is a complex number $z_3$ such that $z_1 = z_2z_3$.
+\end{definition}
+Let us calculate $z_3$. From the definition for $z_1 = x_1+iy_1$, $z_2 = x_2+iy_2$, $z_3=x_3+iy_3$ we get:
+$z_1 = x_1 + iy_1 = (x_2+iy_2)(x_3+iy_3) = (x_2x_3-y_2y_3) + i (y_2x_3+x_2y_3) = z_2z_3$
+Using the equality definition we have the following system of equations:
+\begin{equation*}
+\begin{cases}
+\Rea(z_1) = x_1 = x_2x_3-y_2y_3 = \Rea(z_2z_3)\\
+\Ima(z_1) = y_1 = y_2x_3+x_2y_3 = \Ima(z_2z_3)
+\end{cases}
+\end{equation*}
+Let us solve this system: the unknowns are $x_3$, $y_3$. Solving it gives:
+\[ x_3 = \frac{x_1x_2+y_1y_2}{x_2^2+y_2^2}, \quad y_3 = \frac{x_2y_1-x_1y_2}{x_2^2+y_2^2} \]
+Therefore,
+\[ z_3 = \frac{z_1}{z_2} = \frac{x_1x_2+y_1y_2}{x_2^2+y_2^2} + i \frac{x_2y_1-x_1y_2}{x_2^2+y_2^2} \]
+
+In particular, we obtain for $1/z$: $x_1=1, y_1=0, x_2=x, y_2=y$,
+\[ \frac{1}{z} = \frac{1 \cdot x+ 0 \cdot y}{x^2+y^2} +i \frac{x \cdot 0 - 1 \cdot y}{x^2+y^2} = \frac{x}{x^2+y^2} -i \frac{y}{x^2+y^2} \]
+Note that in the denominator we have $z_2\bar{z_2} = (x_2+iy_2)(x_2-iy_2) = x_2^2+y_2^2$.
+
+Therefore, the recipe for division is: multiply the numerator and the denominator by the complex conjugate of the denominator and separate the real and imaginary parts.
+
+\begin{example}
+Calculate $z=\frac{3+4i}{1-i}$.
+
+\textbf{Solution:}
+\[ z = \frac{3+4i}{1-i} = \frac{3+4i}{1-i} \cdot \frac{1+i}{1+i} = \frac{3+3i+4i+4i^2}{1^2-(-1)^2} = \frac{-1+7i}{2} = -\frac{1}{2} + i\frac{7}{2} \]
+\end{example}
+
+\begin{example}
+ Prove that for any $z\in\mathbb{C}$, $\frac{z+\bar{z}}{z\bar{z}} \in \R$.
+ 
+ \textbf{Solution:} $\frac{z+\bar{z}}{z\bar{z}} = \frac{z}{z\bar{z}} + \frac{\bar{z}}{z\bar{z}} = \frac{1}{\bar{z}} + \frac{1}{z} = \frac{z+\bar{z}}{z\bar{z}} = \frac{2\Rea z}{|z|^2} = \frac{2x}{x^2+y^2} \in \R$.
+\end{example}
+
+\begin{definition}
+The \emph{modulus} of $z = x + iy$ is $|z| = \sqrt{x^2 + y^2}$.
+\end{definition}
+\begin{remark}
+$|z| \ge 0$ always and $|z| = 0 \iff z = 0 \iff x = y = 0$.
+\end{remark}
+
+Check: $|z|\ge \Rea(z)$ and $|z| \ge \Ima(z)$.
+Observe: $|z| = \sqrt{x^2+y^2} \implies |z|^2 = z\bar{z} \implies \frac{1}{z} = \frac{\bar{z}}{|z|^2}$ if $z\neq 0$.
+
+In the following proposition we list and prove the properties of the modulus of a complex number.
+\begin{proposition}
+Let $z,w \in \C$. Then
+\begin{enumerate}
+    \item $|zw| = |z||w|$
+    \item $|z+w| \le |z| + |w|$ (Triangle inequality)
+    \item $|z-w| \ge ||z|-|w||$ (Reverse Triangle inequality)
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+1) Observe that (commutativity):
+$ |zw|^2 = (zw)(\overline{zw}) = (zw)(\bar{z}\bar{w}) = (z\bar{z})(w\bar{w}) = |z|^2|w|^2 $ (for any $z_1,z_2$: $\overline{z_1z_2}=\bar{z_1}\bar{z_2}$).
+This proves 1) after taking square roots.
+
+2) By the definition:
+$|z+w|^2 = (z+w)(\bar{z}+\bar{w}) = (z+w)(\overline{z+w}) = z\bar{z} + w\bar{w} + z\bar{w} + \bar{z}w$.
+For any $z_1$, $z_2$: $\overline{z_1+z_2} = \bar{z_1}+\bar{z_2}$.
+$= |z|^2 + |w|^2 + z\bar{w} + \overline{(z\bar{w})} = |z|^2+|w|^2 + 2\Rea(z\bar{w})$.
+($w\bar{w} = w\bar{w}$, $z\bar{z} = \bar{z}z$ for any z: $z+\bar{z} = 2\Rea(z)$).
+$\leq |z|^2+|w|^2+2|z\bar{w}| = |z|^2+|w|^2+2|z||w| = |z|^2+|w|^2+2|z||w| = (|z|+|w|)^2$.
+($|z_1z_2| = |z_1||z_2|$ for any z).
+
+3) We employ the trick of adding zero and apply 2).
+
+$|z| = |(z-w)+w| \leq |z-w|+|w| \implies |z-w|\geq |z|-|w|$  (4)
+Similarly: $|w-z| = |-(z-w)| = |z-w| \geq |w|-|z|$   (5)
+
+Combining (4) and (5) we get 3).
+\end{proof}
+\begin{example}
+Prove that if $|z_1|=|z_2|=1$, then $\frac{z_1+z_2}{1+z_1z_2} \in \R$.
+
+\textbf{Solution:}
+First multiply and divide by the complex conjugate of the denominator.
+Denominator $1+z_1z_2 = \overline{1+z_1z_2} = 1+\bar{z_1}\bar{z_2}$
+\begin{align*}
+  \frac{z_1+z_2}{1+z_1z_2} &= \frac{z_1+z_2}{1+z_1z_2} \cdot \frac{1+\bar{z_1}\bar{z_2}}{1+\bar{z_1}\bar{z_2}} \\
+  &= \frac{z_1+z_2+z_1\bar{z_1}\bar{z_2}+z_2\bar{z_1}\bar{z_2}}{1+z_1z_2+\bar{z_1}\bar{z_2}+z_1z_2\bar{z_1}\bar{z_2}} \\
+  &= \frac{(z_1+\bar{z_1}) + (z_2+\bar{z_2})}{|1+z_1z_2|^2} (|z_1|=|z_2|=1)\\
+  &= \frac{2\Rea(z_1)+2\Rea(z_2)}{|1+z_1z_2|^2} \in \R
+\end{align*}
+\end{example}
+
+\begin{example}
+Prove that $\frac{z-1}{z+1}$ is purely imaginary iff $|z|=1$.
+
+\textbf{Solution:}(Purely imaginary, namely its real part is equal to 0)
+Denominator $z+1 = \bar{z}+1$
+\[ \frac{z-1}{z+1} = \frac{z-1}{z+1} \cdot \frac{\bar{z}+1}{\bar{z}+1} = \frac{z\bar{z}-z+\bar{z}-1}{|z+1|^2} = \frac{|z|^2-1 + (z-\bar{z})}{|z+1|^2} = \frac{|z|^2-1 + 2i\Ima(z)}{|z+1|^2} \]
+
+Note that $|z|^2 \in \R$, $|z+1|^2 \in \R$, $\Ima(z) \in \R$.
+\[ \Rea(\frac{z-1}{z+1}) = \frac{|z|^2-1}{|z+1|^2} \quad \Ima(\frac{z-1}{z+1}) = \frac{2\Ima(z)}{|z+1|^2} \]
+$\Rea(\frac{z-1}{z+1}) = 0 \iff \frac{|z|^2-1}{|z+1|^2} = 0 \iff |z|^2-1 = 0 \iff |z|^2=1 \iff |z|=1$
+\end{example}
+
+\section{Week 2: Lectures 2+3}
+
+\subsection{Geometric Representation of Complex Numbers}
+
+\subsubsection{Modulus and Argument. Polar Form}
+
+Any complex number $z = a + ib$ can be numerically described as a point in the plane with the coordinates $(a, b)$ or as a vector that starts at the origin $(0, 0)$ and ends at the point $(a, b)$.
+$iy$ $\Ima z$ Imaginary axis
+$ib$  Point in the plane $\mathbb{R}^2$: $(a,b)$.
+$(a,b) = z = a+ib$ OR vector connecting $(0,0)$ and $(a,b)$.
+
+$x$ $(\Rea z)$ Real Axis
+
+The plane (x,y) is called the complex plane. The x-axis is called the real axis and the y-axis is called the imaginary axis.
+The complex conjugate of z in this plane is described by a vector that is symmetric with respect to the real axis.
+
+The sum of 2 complex numbers can be described as a sum of two vectors that start at the origin: the diagonal of the parallelogram that is constructed out of those 2 vectors. The difference between 2 complex numbers is the second(shorter) diagonal of the same parallelogram.
+
+Recall: any vector is uniquely determined by its length and the angle that it creates with the x-axis [in the counterclockwise, positive direction]
+
+\begin{definition}[Alternative]
+ The distance from the origin $(0,0)$ to the point $z = (x,y)$ is called the modulus of the complex number $z$.
+\end{definition}
+Let us assume that this is the only definition and obtain previous definition from it.
+By the Pythagorean theorem we get:
+$|z| = \sqrt{a^2+b^2}(= |a+ib|)$. This is exactly the previous modulus definition.
+
+\begin{example}
+Compute $|z|$ for $z_1=7+9i$, $z_2=4-3i$.
+$|z_1| = |7+9i| = \sqrt{7^2+9^2} = \sqrt{130}$
+$|z_2| = |4-3i| = \sqrt{4^2+(-3)^2} = \sqrt{25} = 5$
+
+Check (very easy!): The distance between any two points
+$z=(x,y)$ and $z_0=(x_0,y_0)$ is
+\[ |z-z_0| = |(x-x_0)+i(y-y_0)| = \sqrt{(x-x_0)^2+(y-y_0)^2} \]
+\end{example}
+
+The equations $|z_1|=\sqrt{130}$, $|z_2|=5$ describe the geometric place of all the points z that are at distance $\sqrt{130}$ or 5 from the origin - namely, it is a circle. In general we have:
+Circle with radius R centered at $z_0$ : $|z-z_0| = R$.
+\begin{example}
+$|z+1+i| = 2$: circle centered at $z_0 = -(1+i)$ of radius 2.
+
+Indeed, all the points for which this equation holds lie on the circle described by $\sqrt{(x+1)^2+(y+1)^2} = 2$
+\end{example}
+
+The equation $|z-z_0|<R$ describes all the points that lie inside the circle centered at $z_0$ of radius $R$ (but not on the circle!).
+
+\begin{example}
+ Find the geometric place of the points $z$ for which $|z+2|-|z-2| = 1$
+\end{example}
+We are looking for the geometric place of all points $z$ such that the difference of distances from the point $z$ to two points $z=2$ and $z=-2$ is 1. Let us show that this is a hyperbola.
+Recall: hyperbola equation $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$ - hyperbola with vertices at $(a,0)$ and $(-a,0)$ with asymptotes at $y=\pm \frac{b}{a}x$.
+
+For $-\frac{y^2}{b^2}+\frac{x^2}{a^2} = 1$: the vertices are at $(0,b)$ and $(0,-b)$ and asymptotes at $y=\pm \frac{b}{a}x$.
+
+Here we have:
+$ |z+2|-|z-2| = 1 \implies |x+iy+2| - |x+iy-2| = 1 $
+$ \implies |(x+2)+iy|-|(x-2)+iy| = 1 \implies \sqrt{(x+2)^2+y^2} - \sqrt{(x-2)^2+y^2} = 1 $
+$ \implies \sqrt{(x+2)^2+y^2} = 1 + \sqrt{(x-2)^2+y^2} \iff (x+2)^2+y^2 = 1 + (x-2)^2+y^2 + 2\sqrt{(x-2)^2+y^2} $
+$ \iff (x+2)^2 - (x-2)^2 -1 = 2\sqrt{(x-2)^2+y^2} \iff x^2+4x+4-x^2+4x-4-1 = 2\sqrt{(x-2)^2+y^2} $
+$ \iff 8x-1 = 2\sqrt{(x-2)^2+y^2} \iff (8x-1)^2 = 4((x-2)^2+y^2) $
+$ \iff 64x^2-16x+1 = 4x^2-16x+16+4y^2 \implies 60x^2-4y^2 = 15$
+$ \iff 4x^2 - \frac{y^2}{15/4} = 1 \iff \frac{x^2}{1/4} - \frac{y^2}{15/4} = 1 \iff \frac{x^2}{(1/2)^2} - \frac{y^2}{(\sqrt{15}/2)^2} = 1 $
+Thus, this is a hyperbola with vertices at $(\pm \frac{1}{2}, 0)$ with asymptotes $y= \pm\frac{\sqrt{15}/2}{1/2}x = \pm \sqrt{15}x$
+
+Now we define the second object needed for a unique definition of a vector - an angle. This angle is called the argument of a complex number.
+
+\begin{definition}
+An \emph{argument} of $z \neq 0$, denoted by $\arg z$, is an angle $\theta$ such that $\cos\theta = \frac{\Rea z}{|z|}$, $\sin \theta = \frac{\Ima z}{|z|}$.
+\end{definition}
+ It is only defined up to the addition of multiples of $2\pi$. We say that $\theta$ is the \emph{principle value} of the argument if $0\leq \theta < 2\pi$ and denote the principal value of the argument $z$ by $\text{Arg} z$.
+
+ The argument is exactly the angle that the vector $z$ creates with the x-axis when measured following the positive (anti-clockwise) direction.
+ As we said: the argument takes infinitely many values that differ one from another by a multiple of $2\pi$.
+ So, now we have 3 ways to represent a complex number: as an ordered pair, an algebraic form $x+iy$, or via its modulus and an argument.
+ Representation: $z=(x,y), z=x+iy$, or $x=|z|\cos\theta, y=|z|\sin\theta \implies z=|z|(\cos\theta + i\sin\theta)$ Polar form ($r,\theta$ - coordinates.)
+ The last form is called the polar form of a complex number.
+
+It is more convenient to use the algebraic form to add complex numbers and it is easier to multiply using the polar form. Let us see how we pass from an algebraic to polar representation.
+
+\begin{example}
+ Write the following numbers in polar form:
+ a) -2+2i b) 2 c) -i
+
+Solution:
+a) $z=-2+2i \implies |z| = \sqrt{(-2)^2+2^2} = 2\sqrt{2}$, $\cos\theta = \frac{-2}{2\sqrt{2}} = -\frac{1}{\sqrt{2}}$, $\sin\theta = \frac{2}{2\sqrt{2}} = \frac{1}{\sqrt{2}} \implies \theta = \frac{3\pi}{4}(+2\pi k, k\in \mathbb{Z}) \implies z = 2\sqrt{2}(\cos\frac{3\pi}{4}+i\sin\frac{3\pi}{4})$
+b) $z=2 \implies |z| = \sqrt{2^2+0^2} = 2$, $\cos \theta = \frac{2}{2} = 1$, $\sin\theta = \frac{0}{2} = 0 \implies \theta = 0(+2\pi k, k\in \mathbb{Z}), z=2(\cos 0 + i\sin 0)$
+c) $z=-i \implies |z| = \sqrt{0^2+(-1)^2} = 1$, $\cos\theta = \frac{0}{1} = 0$, $\sin\theta = \frac{-1}{1}=-1 \implies \theta = \frac{3\pi}{2}(+2\pi k, k\in \mathbb{Z}) \implies z = 1(\cos(\frac{3\pi}{2})+i\sin(\frac{3\pi}{2}))$
+\end{example}
+ In all previous examples the argument is up to the addition of $2\pi k$.
+ \begin{remark}
+$a \equiv b(\text{mod } c)$: means that there exists an integer $k\in\mathbb{Z}$ s.t. a-b = kc.
+In particular, if $c=2\pi$, then $a\equiv b(\text{mod } 2\pi)$ means that there exists $k \in \mathbb{Z}$ s.t. $a-b = 2\pi k$.
+\textbf{Important}: The argument of $z=0$ is not defined!
+ \end{remark}
+We have already studied some of the properties of the modulus in proposition 1.2.
+
+\begin{proposition}
+For any $z_1, z_2 \in \mathbb{C} (z_2\neq 0)$.
+\begin{enumerate}
+    \item $|\bar{z}|=|z|$
+    \item $z\bar{z}=|z|^2$
+    \item $\left|\frac{z_1}{z_2}\right| = \frac{|z_1|}{|z_2|}$
+\end{enumerate}
+\end{proposition}
+Here we present the proof of 1) via polar coordinates; check the rest including the ones from proposition 1.2 (in the same way).
+Proof:
+1) $z = |z|(\cos\theta + i\sin\theta)$
+$\bar{z} = |z|(\cos\theta - i\sin\theta)$
+$|z| = |z|\sqrt{\cos^2\theta + \sin^2\theta} = |z|$
+$|\bar{z}| = |z|\sqrt{\cos^2\theta + (-\sin\theta)^2} = |z|\sqrt{\cos^2\theta+\sin^2\theta} = |z|$
+
+Let us study the properties of the argument.
+\begin{proposition}
+For any $z_1, z_2 \in \mathbb{C}(z_1, z_2 \neq 0)$
+\begin{enumerate}
+    \item $\arg(z_1z_2) = \arg z_1+\arg z_2$
+    \item $\arg(\frac{z_1}{z_2}) = \arg z_1 - \arg z_2$
+\end{enumerate}
+\end{proposition}
+Here we prove 1). Prove 2) in the same way.
+
+\begin{proof}
+Write $z_1,z_2$ in polar form: let $r_1 = |z_1|$, $r_2=|z_2|$, $\phi_1 = \arg z_1$, $\phi_2 = \arg z_2$. Then $z_1 = r_1(\cos\phi_1+i\sin\phi_1)$ ,$z_2 = r_2(\cos\phi_2+i\sin\phi_2)$
+
+$z_1/z_2 = r_1/r_2 (\cos\phi_1/\cos\phi_2 + i \sin\phi_1/\sin\phi_2)$
+(4) $z_1z_2 = r_1r_2(\cos\phi_1\cos\phi_2 - \sin\phi_1\sin\phi_2+i(\sin\phi_1\cos\phi_2+\sin\phi_2\cos\phi_1)) = r_1r_2
+= r_1r_2(\cos(\phi_1+\phi_2) + i\sin(\phi_1+\phi_2))$
+
+Since $\arg z_1 = \phi_1 + 2\pi k$, $\arg z_2 = \phi_2 + 2\pi m \implies \arg(z_1z_2) = \phi_1 + \phi_2 + 2\pi n$, where $n = m + k$  (1)
+
+\end{proof}
+
+\textbf{Exercise:} 2)
+
+$\implies$ The Geometric rule for multiplication: multiply moduli, add arguments.
+
+From rule: If $z_1 = z_2 = z$, from (4): $z^2 = r^2(\cos 2\phi + i\sin 2\phi)$.
+It is easy to prove by induction on $n$:
+\textbf{De Moivre formula} $z^n = |z|^n(\cos(n\phi) + i\sin(n\phi))$
+
+\begin{example}
+Express $\cos 3\alpha$ and $\sin 3\alpha$ in terms of $\cos\alpha$, $\sin\alpha$.
+
+\textbf{Solution:} Construct complex number $z = \cos\alpha + i\sin\alpha$. By De Moivre formula $z^3 = \cos 3\alpha + i\sin 3\alpha$. On the other hand:
+$z^3 = (\cos\alpha + i\sin\alpha)^3 = \cos^3\alpha + 3i\cos^2\alpha\sin\alpha + 3i^2\cos\alpha\sin^2\alpha + i^3\sin^3\alpha = \cos^3\alpha - 3\cos\alpha\sin^2\alpha + i(3\cos^2\alpha\sin\alpha - \sin^3\alpha)$
+
+By the equality definition: $z_1=z_2 \iff \Rea(z_1) = \Rea(z_2)$ and $\Ima(z_1) = \Ima(z_2)$.
+Let us compare these two expressions:
+$\cos 3\alpha + i\sin 3\alpha = \cos^3\alpha - 3\cos\alpha\sin^2\alpha + i(3\cos^2\alpha\sin\alpha - \sin^3\alpha)$
+$\implies \cos 3\alpha = \cos^3\alpha - 3\cos\alpha\sin^2\alpha$
+$\sin 3\alpha = 3\cos^2\alpha\sin\alpha - \sin^3\alpha$
+\end{example}
+
+\begin{example}
+Define $\frac{1}{z}$ geometrically.
+
+\textbf{Solution:} Let us compute the modulus and the argument.
+By proposition 1.2.5 part 3): $|\frac{1}{z}| = \frac{1}{|z|}$ and since $z\cdot \frac{1}{z} = 1$
+$0 = \arg 1 = \arg(z\cdot \frac{1}{z}) = \arg z + \arg \frac{1}{z} \implies \arg \frac{1}{z} = -\arg z$
+\end{example}
+
+\begin{definition}
+$n$-th root of a complex number $z$ is a complex number $w$ such that $z = w^n$ (Notation: $\sqrt[n]{z} = w$)
+\end{definition}
+
+\begin{example}
+Find the formula for computing roots of a given $z \in \mathbb{C}$.
+
+\textbf{Solution:} Let $z=w^n$, let us write $z$ and $w$ in polar form.
+$z = r(\cos\psi + i\sin\psi)$
+$w = \rho(\cos\theta + i\sin\theta)$
+
+Now we express $\rho$ and $\theta$ in terms of $r$ and $\psi$ ($r, \psi$ are given!).
+From the definition: $z=w^n$ or $r(\cos\psi + i\sin\psi) = \rho^n(\cos(n\theta) + i\sin(n\theta))$
+$\implies \rho^n = r$, $\cos(n\theta) = \cos\psi$, $\sin(n\theta) = \sin\psi \implies \rho = \sqrt[n]{r}$, $\theta = \frac{\psi + 2\pi k}{n}$ for $0\leq k \leq n-1$.
+It is easy to see (check!) that for $k>n-1$ we will get again the same values!. Thus, we obtain
+(44) $w = \sqrt[n]{r}(\cos(\frac{\psi + 2\pi k}{n}) + i\sin(\frac{\psi + 2\pi k}{n}))$, $k=0,1,2,...,n-1$.
+\end{example}
+
+\begin{corollary}
+$n$-th root of a complex number takes exactly $n$ different values that are placed on the vertices of a regular polygon with $n$ sides inscribed in a circle centered at 0 of radius $\sqrt[n]{|z|}$.
+\end{corollary}
+
+Recall: regular polygon is a polygon whose sides and angles are equal.
+
+\begin{example}
+Compute $\sqrt[4]{1-i}$.
+
+\textbf{Solution:} We need to compute the modulus and the argument of 1-i.
+$|1-i| = \sqrt{1^2+(-1)^2} = \sqrt{2}$, $\cos\theta = \frac{1}{\sqrt{2}}$, $\sin\theta = \frac{-1}{\sqrt{2}} \implies \theta = \frac{7\pi}{4} + 2\pi k$ (or $\theta = -\frac{\pi}{4} + 2\pi k$)
+$\implies 1-i = \sqrt{2}(\cos\frac{7\pi}{4} + i\sin\frac{7\pi}{4})$ - the polar form of 1-i.
+
+Using formula (44) we get
+$w = \sqrt[n]{1-i} = 2^{1/8}(\cos(\frac{7\pi/4 + 2\pi k}{4}) + i\sin(\frac{7\pi/4 + 2\pi k}{4}))$, $k=0,1,2,3$
+$k=0: \quad 2^{1/8}(\cos\frac{7\pi}{16} + i\sin\frac{7\pi}{16}) \approx 0.21 + i1.07$
+$k=1: \quad 2^{1/8}(\cos\frac{15\pi}{16} + i\sin\frac{15\pi}{16}) \approx -1.07 + i0.21$
+$k=2: \quad 2^{1/8}(\cos\frac{23\pi}{16} + i\sin\frac{23\pi}{16}) \approx -0.21 - i1.07$
+$k=3: \quad 2^{1/8}(\cos\frac{31\pi}{16} + i\sin\frac{31\pi}{16}) \approx 1.07 - i0.21$
+
+Let us draw these roots on a circle, centered at 0 of radius $2^{1/8}$. Connecting the neighboring roots we obtain a square.
+\end{example}
+
+\begin{example}
+Compute all the roots of $z = \sqrt[4]{-4}$.
+
+\textbf{Solution:} $|-4| = 4$, $\cos\theta = \frac{-4}{4} = -1$, $\sin\theta = \frac{0}{4} = 0 \implies \theta = \pi + 2\pi k$
+From (44) we get
+$\sqrt[4]{-4} = 4^{1/4}(\cos\frac{\pi + 2\pi k}{4} + i\sin\frac{\pi + 2\pi k}{4}) = \sqrt{2}(\cos(\frac{\pi}{4} + \frac{\pi k}{2}) + i\sin(\frac{\pi}{4} + \frac{\pi k}{2}))$ for $k=0,1,2,3$.
+$k=0: \quad \sqrt{2}(\cos\frac{\pi}{4} + i\sin\frac{\pi}{4}) = \sqrt{2}(\frac{1}{\sqrt{2}} + i\frac{1}{\sqrt{2}}) = 1+i$
+$k=1: \quad \sqrt{2}(\cos\frac{3\pi}{4} + i\sin\frac{3\pi}{4}) = \sqrt{2}(-\frac{1}{\sqrt{2}} + i\frac{1}{\sqrt{2}}) = -1+i$
+$k=2: \quad \sqrt{2}(\cos\frac{5\pi}{4} + i\sin\frac{5\pi}{4}) = \sqrt{2}(-\frac{1}{\sqrt{2}} - i\frac{1}{\sqrt{2}}) = -1-i$
+$k=3: \quad \sqrt{2}(\cos\frac{7\pi}{4} + i\sin\frac{7\pi}{4}) = \sqrt{2}(\frac{1}{\sqrt{2}} - i\frac{1}{\sqrt{2}}) = 1-i$
+\end{example}
+
+The following formula is one of the most celebrated formulas in mathematics.
+
+\begin{theorem}[Euler's formula; Euler 1760]
+Let $\theta \in \mathbb{R}$. Then $\cos\theta + i\sin\theta = e^{i\theta}$ where $e^{i\theta}$ denotes the sum of the power series $e^{i\theta} = 1 + i\theta + \frac{(i\theta)^2}{2!} + \frac{(i\theta)^3}{3!} + ... = \sum_{n=0}^{\infty}\frac{(i\theta)^n}{n!}$.
+\end{theorem}
+
+Set $\theta = \pi$. From this formula: $e^{i\pi} = -1$ - we have connected -1, e, i, $\pi$ in one formula!
+
+We cannot prove this theorem now: first, we will need to examine the properties of the power series, however, we shall use it as a convenient notation even before we proved it. From the formula:
+$\Rea e^{i\theta} = 1 - \frac{\theta^2}{2!} + \frac{\theta^4}{4!} - ... = $ The Taylor series for $\cos\theta$ (about $\theta = 0$)
+$\Ima e^{i\theta} = \theta - \frac{\theta^3}{3!} + \frac{\theta^5}{5!} - ... = $ The Taylor series for $\sin\theta$ (about $\theta = 0$)
+
+This formula provides a way of conversion between Cartesian coordinates $x+iy$ and the polar form (modulus and argument) as follows:
+If $z\neq 0$: $|z|=r$, $\arg z = \theta \implies z = re^{i\theta}$ (the polar form)
+
+Then $\bar{z} = x-iy = r(\cos\theta - i\sin\theta) = re^{-i\theta}$.
+The following should be true:
+$e^{i\theta} = e^{i(\theta + 2\pi n)}$ for every $n\in\mathbb{Z}$ (Euler's formula)
+$e^{i(\phi + \psi)} = e^{i\phi}e^{i\psi}$
+$\frac{1}{e^{i\theta}} = e^{-i\theta}$
+$(e^{i\theta})^n = e^{in\theta}$ for every $n\in\mathbb{Z}$.
+
+These facts are easily proved using theorem 1.1, but they are not obvious, since $e^{i\theta}$ means $1 + i\theta + \frac{(i\theta)^2}{2!} + ...$ and raising the real number $e$ to the purely imaginary power $i\theta$ is not well-defined at the moment.
+
+\section{Week 4: Lecture 10}
+We have studied the continuity and differentiability of complex functions. Our next subject - analytic functions.
+
+\subsection{Single-Valued Analytic Functions}
+Recall. If for any $z$ corresponds one value $f(z)$, then we say that $f$ is a single-valued function.
+
+\begin{definition}
+Single-valued function $f(z)$ is \emph{analytic} at the point $z_0$ if there exists an $\epsilon$-neighborhood $D(z_0, \epsilon)$ of $z_0$ so that $f$ is differentiable at every $z \in D(z_0, \epsilon)$.
+\end{definition}
+
+We have proved that if $f$ is differentiable at $z_0$, then $f$ is continuous at $z_0$, therefore if $f$ is analytic at $z_0$, then $f$ is continuous at $z_0$.
+
+Let us note that we will also use names \emph{Holomorphic} or \emph{Regular} functions for analytic functions.
+
+\begin{definition}
+A function that is analytic for every $z \in \mathbb{C}$ (on the whole plane) is called an \emph{entire} function.
+\end{definition}
+
+\begin{definition}
+Single-valued function is analytic on a domain (open connected subset of the plane $\mathbb{C}$) $\Omega$ if it is differentiable at every $z \in \Omega$.
+\end{definition}
+
+\begin{remark}
+From the definition: a set on which the function is analytic needs to be open, however if we say that some function $f$ is analytic in a closed set, we mean that there exists an open set that contains this closed set and the function is analytic on this open set.
+\end{remark}
+
+\begin{example}
+Polynomial $P_n(z) = a_0 + a_1z + ... + a_nz^n$ - single-valued function differentiable at every $z \in \mathbb{C}$ $\implies$ analytic on $\mathbb{C}$ $\implies$ entire.
+\end{example}
+
+\begin{example}
+Every rational function $f(z) = \frac{P_n(z)}{Q_m(z)}$ where $P_n(z)$, $Q_m(z)$ are polynomials (of degree $n, m$ respectively) without common factors is analytic on $\mathbb{C}$ except for the roots of $Q_m(z)$, namely except for the points where $Q_m(z) = 0$.
+
+For instance: $f(z) = \frac{z-1}{z^2+iz} = \frac{z-1}{z(z+i)}$ is analytic everywhere except for $z=0, -i$. For example, it is analytic on the following domains:
+\end{example}
+$\{z \in \mathbb{C}: \Rea(z) > 0\}$, $\{z \in \mathbb{C}: \Rea(z) < 0\}$, $\{z \in \mathbb{C}: \Ima(z) > 0\}$, $\{z \in \mathbb{C}: \Ima(z) < -1\}$, $\{z \in \mathbb{C}: |z| > 1\}$. But it is not analytic in $\Omega_6$, since $0 \in \partial \Omega_6$: $|z|<1$ and $f$ is not defined at $z=0$. $\{z \in \mathbb{C}: |z|<1\}$.
+
+\begin{remark}
+$f$ is analytic on a domain $\Omega \iff u$ and $v$ are differentiable on $\Omega$ and CR equations hold.
+\end{remark}
+
+\begin{example}
+The function $f(z) = e^x\cos y + ie^x\sin y = e^z$ is entire.
+\end{example}
+
+In the next example: a function for which CR equations hold on the whole plane, but $u$ and $v$ are not differentiable on the whole plane, thus the function is not entire.
+
+\begin{example}
+$f(z) = \begin{cases} e^{-1/z^4} & z \neq 0 \\ 0 & z=0 \end{cases}$ defined everywhere in $\mathbb{C}$.
+
+Check: CR equations hold for every $z \in \mathbb{C}$.
+\end{example}
+
+\begin{remark}
+$f(z)$ is not continuous at $z=0$ $\implies$ not differentiable.
+Compute $\lim_{z\to 0}f(z)$ on the path $y=x$:
+$\lim_{x\to 0} e^{-\frac{1}{(x+iy)^4}} = \lim_{x\to 0} e^{-\frac{1}{(1+i)^4x^4}} = \lim_{x\to 0} e^{\frac{1}{4x^4}} = +\infty$
+$(1+i)^4 = (\sqrt{2})^4(\cos(\frac{\pi}{4}) + i\sin(\frac{\pi}{4})) = -4$
+De Moivre
+\end{remark}
+
+Next proposition is analogous to propositions about the limits, continuity, and differentiability.
+
+\begin{proposition}
+If $f, g$ are analytic functions on a domain $\Omega$, then also $f+g$ and $f\cdot g$ are analytic on $\Omega$. If $g(z) \neq 0$ on $\Omega$, then $\frac{f}{g}$ is analytic on $\Omega$. The composition $(g \circ f)$ of two analytic functions on $\Omega$ is an analytic function on $\Omega$.
+\end{proposition}
+\begin{proof}
+Exercise.
+\end{proof}
+
+\begin{example}
+Prove: if $f(z)$ is analytic and real on a domain $\Omega$, then $f$ is a constant function.
+
+\textbf{Solution:} $f$ is analytic and real on $\Omega \implies f(x,y) = u(x,y) + i\cdot 0$, namely $v(x,y) = 0$; CR equations hold for every $z \in \Omega$.
+From analyticity on $\Omega$: $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y} = 0$ and $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x} = 0$
+$\implies \frac{\partial u}{\partial x} = \frac{\partial u}{\partial y} = 0 \implies u(x,y) = c \in \mathbb{R} \implies f(x,y) = c$, namely $f$ is a constant function.
+\end{example}
+
+\begin{proposition}
+If $f$ is analytic on a domain $\Omega$ and $f'(z) = 0$ for all $z \in \Omega$, then $f$ is constant on $\Omega$.
+\end{proposition}
+
+\begin{remark}
+The proposition is false if $\Omega$ is not connected - $f$ can take different constants (constant values) on each connected component of $\Omega$.
+\end{remark}
+
+\begin{proof}
+The version of this proposition for real functions is proved using the Mean Value Theorem, that asserts that under appropriate continuity assumption for $f:(a,b) \to \mathbb{R}$ there exists $c \in (a,b)$ s.t. $f(b) - f(a) = f'(c)(b-a)$. So, if $f'(x) = 0$ for all $x \in (a,b)$, then $f(b) = f(a)$. The problem in the complex case is that there is no analogous idea of "between a and b" in $\mathbb{C}$, since there are many routes from a to b.
+However, we can use the Mean Value Theorem for $\Rea f$ and $\Ima f$ as follows:
+Since $f'(z) = 0$ for all $z \in \Omega$ by CR equations $0 = f'(z) = \frac{\partial u}{\partial x} + i\frac{\partial v}{\partial x}$ for all $z \in \Omega$
+$\implies \frac{\partial u}{\partial x} - \frac{\partial u}{\partial y} = \frac{\partial v}{\partial x} = \frac{\partial v}{\partial y} = 0$ for all $z \in \Omega$.
+
+Claim: $u$ is a constant function.
+We have $u: \Omega \to \mathbb{R}$, $\frac{\partial u}{\partial x} = \frac{\partial u}{\partial y} = 0$ for all $(x,y) \in \Omega$.
+Pick $(x_0, y_0), (x_1, y_1) \in \Omega$. $\Omega$ is connected, thus by the definition any 2 points in $\Omega$ can be connected by a path that is entirely in $\Omega$. We join $(x_0, y_0)$ and $(x_1, y_1)$ by a path comprised of pieces parallel to x-axis or y-axis [One needs to show that such path exists!] Since $\frac{\partial u}{\partial x} = 0$ by the Mean Value Theorem, $u$ is constant on the horizontal pieces. In the same way, since $\frac{\partial u}{\partial y} = 0$, $u$ is constant on vertical pieces. Thus, $u$ is constant on $\Omega$.
+By a similar argument we obtain that $v$ is constant on $\Omega$, therefore $f = u+iv$ is constant on $\Omega$.
+\end{proof}
+
+\section{Week 5: Lectures 11+12}
+
+\subsection{Analyticity of Multi-Valued Functions}
+We have studied the double-valued function $f(z) = \sqrt{z-z_0}$.
+\begin{remark}
+On a domain $\Omega$ that contains curves that encircle $z_0$ it is impossible to choose a continuous branch of $\sqrt{z-z_0}$.
+For example: On $\frac{1}{2} < |z-z_0| < 2$ - impossible to choose single-valued branch of $\sqrt{z-z_0}$.
+On $|z-z_0| > 1$ impossible to choose single-valued branch of $\sqrt{z-z_0}$.
+\end{remark}
+We have also seen that if the curve does not encircle $z_0$, then the value of $\sqrt{z-z_0}$ stays the same. So, we have another corollary:
+\begin{corollary}
+It is possible to choose a single-valued branch of the function $\sqrt{z-z_0}$ on a domain $\Omega$ if none of the closed continuous curves in $\Omega$ encircle $z_0$.
+\end{corollary}
+Intuitively: if we would be able to "cut" the plane (in some way) up to $z_0$, including $z_0$, then there will be no closed curve that encircles $z_0$. Indeed, the biggest domain on which none of the closed continuous curves encircle $z_0$ is the cutted plane, where we cut as follows:
+The "largest" such domain: Cut-plane - $\mathbb{C}$ without the line $\{z = x+iy| x\leq x_0\}$ [including $z_0$]
+Cut-plane: two single-valued branches $w_0 = \sqrt{r}(\cos\frac{\theta}{2} + i\sin\frac{\theta}{2})$, $w_1 = -\sqrt{r}(\cos\frac{\theta}{2} + i\sin\frac{\theta}{2})$
+
+\begin{remark}
+Can cut along any ray starting at $z_0$.
+\end{remark}
+The cut will prevent from any closed curve to encircle $z_0$. In case like on the picture above (ray creates an angle $\psi$ with the positive - anticlockwise - direction with x-axis) we have:
+For a ray with $\theta = \frac{\pi}{2}$: 2 continuous branches of $\sqrt{z-z_0}$:
+$w = \pm \sqrt{r}(\cos\frac{\theta}{2} + i\sin\frac{\theta}{2})$ $\frac{\pi}{2} < \theta \leq \frac{5\pi}{2}$
+
+\begin{definition}
+The point $z_0$ is called a \emph{branch point}: for complex multi-valued function $f$ if the value of $f(z)$ does not return to its initial value as a closed curve around the point is traced (starting from some arbitrary point on the curve), in such a way that $f$ varies continuously as the path is traced.
+\end{definition}
+
+\textbf{Important}: What matters here is the \emph{local} behavior of the function $f$ near $z_0$. What may happen on paths that are some distance away from $z_0$ is not relevant. To be more precise: The behavior must occur for \emph{all} the curves that enclose the point and are sufficiently close to it.
+In the previous example: $z=z_0$ is the Branch Point.
+
+Let us consider a more general case.
+\begin{example}
+Consider $w = \sqrt[n]{z-z_0}$. Take $z-z_0 = r(\cos\theta + i\sin\theta)$. Then $w = \sqrt[n]{r}(\cos(\frac{\theta + 2\pi k}{n}) + i\sin(\frac{\theta + 2\pi k}{n}))$, $k=0,1,2,...,n-1$.
+Fix $0\leq k_0 \leq n-1$.
+As before: we let $z$ to be on the closed continuous curve $L$ that encloses $z_0$.
+When $z$ will complete the full circle (anticlockwise) the modulus ($r$) will return to the same value, the argument however will increase by $2\pi$ and $w$ will attain a new value:
+After full circle around $z_0$:
+$w_{new} = \sqrt[n]{r}(\cos(\frac{(\theta + 2\pi) + 2\pi k_0}{n}) + i\sin(\frac{(\theta + 2\pi) + 2\pi k_0}{n})) = \sqrt[n]{r}(\cos(\frac{\theta + 2\pi k_0}{n}) + i\sin(\frac{\theta + 2\pi k_0}{n}))(\cos\frac{2\pi}{n} + i\sin\frac{2\pi}{n}) = w_{k_0}(\cos\frac{2\pi}{n} + i\sin\frac{2\pi}{n}) = w_{k_0+1}$
+Namely, the new value of $w$ is equal to the previous one times $(\cos\frac{2\pi}{n} + i\sin\frac{2\pi}{n})$.
+Check: $(\cos\frac{2\pi}{n} + i\sin\frac{2\pi}{n})^n = 1$
+\end{example}
+This is independent of the curve that encloses $z_0$! If $z$ will run on a curve that does not encircle $z_0$, then, as before, the value $w_{k_0}$ will not change once $z$ returns to the starting point.
+Conclusion: If $z$ is on the curve that encloses $z_0$ once (anti-clockwise), then the value $\sqrt[n]{z-z_0} = w_{k_0}$ will change to the new value $w_{k_0+1}$. If $z$ is on the curve that does not encircle $z_0$ then the value of the function stays the same.
+$\implies z=z_0$ is the branch point of the function $f(z) = \sqrt[n]{z-z_0}$.
+
+\begin{example}
+Find the branch points of the function $f(z) = \sqrt{1+z^2}$.
+
+\textbf{Solution:} $\sqrt{1+z^2} = \sqrt{z-i}\sqrt{z+i}$, therefore $z=\pm i$ are the branch points of $\sqrt{1+z^2}$.
+$\sqrt{z-i}$, $\sqrt{z+i}$ $\implies$ branch points of $\sqrt{1+z^2}$.
+\end{example}
+Let us see on the picture what happens and where to cut so we will be able to obtain a continuous single-valued branch of $f(z)$.
+If $z$ is on $L_1$ (around $z=i$): When $z$ returns to the initial point $\sqrt{z+i}$ returning to the same value since $L_1$ does not enclose $z=-i$ while $\sqrt{z-i}$ attains new value - changes the sign of the previous one.
+Therefore, $f(z)$ also changes the sign. In the same way: if $z$ is on $L_2$, then upon return to the initial point $\sqrt{z+i}$ will change the value - change the sign, $\sqrt{z-i}$ will return to the same value, and the function will change the sign. If $z$ is on $L_3$ that encloses both $z_0 = i$ and $z_0 = -i$, then $\sqrt{z-i}$ and $\sqrt{z+i}$ will change the sign, but their product - the original function - will not!
+
+We can choose a continuous branch on a domain $\Omega$ if none of the closed curves in $\Omega$ enclose $i$ and not $-i$ (or $-i$ and not $i$), but it can enclose both. Namely, if we cut the plane along the interval connecting $i$ and $-i$, we will get a domain in which it is possible to choose a continuous branch.
+
+\begin{definition}
+Single-valued branch is called an \emph{analytic} function on a domain $\Omega$ if it is differentiable at every $z \in \Omega$.
+\end{definition}
+
+\begin{example}
+Prove that $w = \sqrt[n]{z}$ is analytic on the domain $\Omega = \{z \in \mathbb{C}: 0 < \arg z < \frac{2\pi}{n}\}$.
+
+\textbf{Solution:} We have already seen that on the cut-plane with the cut along any ray starting at $z_0 = 0$ (including $z_0 = 0$) every branch of this function is single-valued and continuous. Let us prove that it is differentiable and find the derivative.
+$\frac{f(z) - f(z_0)}{z-z_0} = \frac{(f(z))^n - (f(z_0))^n}{z-z_0} = \frac{1}{\frac{z-z_0}{(f(z))^n - (f(z_0))^n}} = \frac{1}{(f(z))^{n-1} + (f(z))^{n-2}f(z_0) + ... + (f(z_0))^{n-1}} = \frac{1}{(\sqrt[n]{z})^{n-1} + (\sqrt[n]{z})^{n-2}\sqrt[n]{z_0} + ... + (\sqrt[n]{z_0})^{n-1}}$
+Now we pass to the limit as $z$ tends to $z_0$ and obtain $\lim_{z\to z_0}\frac{f(z) - f(z_0)}{z-z_0} = \frac{1}{n(\sqrt[n]{z_0})^{n-1}}$
+$\implies f$ is differentiable and $( \sqrt[n]{z})' = \frac{1}{n(\sqrt[n]{z})^{n-1}}$
+\end{example}
+
+In many problems in hydrodynamics, the elasticity theory and other fields there is often a need to recreate an analytic function from its real part. Now we will find the set of functions for which it is possible. Our subject is:
+\textbf{Harmonic functions.}
+
+\begin{definition}
+The real function $u(x,y)$ is called \emph{harmonic} on a domain $\Omega$ if it is continuous on $\Omega$ with continuous partial derivatives of the first and second order $\{\frac{\partial u}{\partial x}, \frac{\partial u}{\partial y}, \frac{\partial^2 u}{\partial x^2}, \frac{\partial^2 u}{\partial y^2}, \frac{\partial^2 u}{\partial x \partial y}, \frac{\partial^2 u}{\partial y \partial x}\}$, and the following equation, called the \emph{Laplace} equation holds:
+$\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = 0$
+\end{definition}
+
+\begin{example}
+The function $u(x,y) = x^2 - y^2$ is harmonic for every $(x,y) \in \mathbb{R}^2$.
+
+\textbf{Solution:} $u(x,y)$ is defined everywhere, and we have:
+$\frac{\partial u}{\partial x} = 2x$, $\frac{\partial u}{\partial y}
+= -2y$, $\frac{\partial^2 u}{\partial x^2} = 2$, $\frac{\partial^2 u}{\partial y^2} = -2$, $\frac{\partial^2 u}{\partial x \partial y} = \frac{\partial^2 u}{\partial y \partial x} = 0$.
+All partial derivatives are continuous everywhere, and $\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = 2 + (-2) = 0$.
+\end{example}
+
+\begin{example}
+The function $u(x,y) = e^{xy}$ is not a harmonic function on $\mathbb{R}^2$.
+
+\textbf{Solution:} $u(x,y)$ is defined everywhere on $\mathbb{R}^2$.
+$\frac{\partial u}{\partial x} = ye^{xy}$, $\frac{\partial u}{\partial y} = xe^{xy}$, $\frac{\partial^2 u}{\partial x^2} = y^2e^{xy}$, $\frac{\partial^2 u}{\partial y^2} = x^2e^{xy}$,
+$\frac{\partial^2 u}{\partial x \partial y} = e^{xy} + yxe^{xy}$, $\frac{\partial^2 u}{\partial y \partial x} = e^{xy} + xy e^{xy}$.
+All partial derivatives are defined and continuous for all $(x,y) \in \mathbb{R}^2$. However,
+$\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = y^2e^{xy} + x^2e^{xy} = e^{xy}(x^2 + y^2) \neq 0$ except for $(0,0) \implies u(x,y)$ is not a harmonic function on $\mathbb{R}^2$.
+\end{example}
+
+\begin{proposition}
+If the function $f(z) = u(x,y) + iv(x,y)$ is analytic on a domain $\Omega$, then $u(x,y)$ and $v(x,y)$ are harmonic on $\Omega$.
+\end{proposition}
+
+\begin{proof}
+By CR equations $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$ and $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$ (since $f$ is analytic). Let us differentiate the first equation with respect to $x$ and the second with respect to $y$:
+$\frac{\partial^2 u}{\partial x^2} = \frac{\partial^2 v}{\partial y \partial x}$, $\frac{\partial^2 u}{\partial y^2} = -\frac{\partial^2 v}{\partial x \partial y}$.
+Since $f$ is analytic, $u$ and $v$ are continuously differentiable, thus from theory of real functions, we know that $\frac{\partial^2 v}{\partial y \partial x} = \frac{\partial^2 v}{\partial x \partial y}$.
+Therefore, if we add the equations $\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = \frac{\partial^2 v}{\partial y \partial x} - \frac{\partial^2 v}{\partial x \partial y} = \frac{\partial^2 v}{\partial x \partial y} - \frac{\partial^2 v}{\partial x \partial y} = 0$
+$\implies u$ is a harmonic function on $\Omega$.
+
+If we differentiate now $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$ with respect to $y$ and $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$ with respect to $x$, and use $\frac{\partial^2 u}{\partial x \partial y} = \frac{\partial^2 u}{\partial y \partial x}$ we will obtain that $v$ is also a harmonic function on $\Omega$.
+\end{proof}
+
+This proposition implies that in order to construct an analytic function we cannot choose the real and imaginary parts in an arbitrary way. The functions that we choose must be harmonic and, moreover, the CR equations must hold.
+
+\begin{definition}
+If $u(x,y)$ and $v(x,y)$ are harmonic functions on a domain $\Omega$ such that CR equations hold ($\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$, $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$), then the function $v(x,y)$ is called the \emph{harmonic conjugate} of the function $u(x,y)$ on a domain $\Omega$.
+\end{definition}
+
+\begin{proposition}
+The function $f(z) = u(x,y) + iv(x,y)$ is analytic in a domain $\Omega \iff v(x,y)$ is the harmonic conjugate of $u(x,y)$.
+\end{proposition}
+
+\begin{proof}
+$(\implies)$ Assume $f$ is analytic in a domain $\Omega$. By the previous proposition $u(x,y)$ and $v(x,y)$ are harmonic functions on $\Omega$. Since $f$ is analytic, CR equations hold, thus by the definition $v(x,y)$ is the harmonic conjugate of $u(x,y)$.
+
+$(\impliedby)$ If $u(x,y)$ and $v(x,y)$ are harmonic functions on a domain $\Omega$, then $u$ and $v$ are differentiable at all $z \in \Omega$. Since $v(x,y)$ is the harmonic conjugate of $u(x,y)$, by the definition - CR equations hold, thus a previous theorem asserts that $f$ is analytic in a domain $\Omega$.
+\end{proof}
+
+Thus, to conclude that we can reconstruct an analytic function from its real part we need to know whether it is always possible to find a harmonic conjugate to a given harmonic function. The answer is yes - it is given by the following proposition which we state without the proof.
+
+\begin{proposition}
+For any harmonic function $u(x,y)$ in a domain $\Omega$ there exists a function $v(x,y)$ in $\Omega$ which is the harmonic conjugate of $u(x,y)$.
+\end{proposition}
+
+The proof is by construction: one explicitly constructs the function $v(x,y)$. Since the proof involves somewhat complicated real analysis, we omit it.
+
+\begin{example}
+Find an analytic function $f(z) = u(x,y) + iv(x,y)$ such that $u(x,y) = \Rea f(z) = \arctan\frac{y}{x}$.
+
+\textbf{Solution:} Let us compute the partial derivatives and then use CR equations: Recall: $(\arctan x)' = \frac{1}{1+x^2}$
+$\frac{\partial u}{\partial x} = \frac{1}{1+(\frac{y}{x})^2} \cdot (-\frac{y}{x^2}) = -\frac{y}{x^2+y^2}$
+$\frac{\partial u}{\partial y} = \frac{1}{1+(\frac{y}{x})^2} \cdot \frac{1}{x} = \frac{x}{x^2+y^2}$
+$\implies \frac{\partial v}{\partial y} = -\frac{y}{x^2+y^2}$, $\frac{\partial v}{\partial x} = -\frac{x}{x^2+y^2}$ CR equations.
+
+To obtain $v(x,y)$ we integrate $\frac{\partial v}{\partial x}$ with respect to $x$ (or $\frac{\partial v}{\partial y}$ with respect to $y$).
+(A) $v(x,y) = \int \frac{\partial v}{\partial x} dx = \int -\frac{x}{x^2+y^2} dx = -\frac{1}{2}\ln(x^2 + y^2) + c(y)$
+Since the integral is with respect to $x$, the constant may depend on $y$ (only!). To find $c(y)$ we differentiate $v(x,y)$ in (A) with respect to $y$ and compare it to $\frac{\partial v}{\partial y}$ obtained from CR equations.
+$\frac{\partial v}{\partial y} = -\frac{y}{x^2+y^2} + c'(y) = -\frac{y}{x^2+y^2} \implies c'(y) = 0 \implies c = \text{constant} \in \mathbb{R}$
+$\implies v(x,y) = -\frac{1}{2}\ln(x^2 + y^2) + c$ and $f(z) = \arctan\frac{y}{x} - \frac{i}{2}[\ln(x^2 + y^2) + 2c]$
+\end{example}
+
+\section{Week 5: Lecture 13}
+
+We introduce complex sequences and series, discuss their convergence and use them to construct complex power series. Then, we make several concrete connections with complex differentiable functions.
+
+\subsection{Complex Sequences}
+
+\begin{definition}
+A sequence $\{z_n\}_{n=0}^\infty$, $z_n \in \mathbb{C}$, has limit $z$ (as $n \to \infty$) if for every $\epsilon > 0$ there exists $N = N(\epsilon) \in \mathbb{N}$ such that for all $n > N$ $|z_n - z| < \epsilon$. Notation: $\lim_{n\to\infty} z_n = z$.
+\end{definition}
+
+If the limit does not exist (or $\infty$), we say that the sequence diverges.
+
+In other words, a sequence of complex numbers $\{z_n\}$ converges to the complex number $z$ iff at every neighborhood of $z$ there are almost all but finite number of points from the sequence:
+$\lim_{n\to\infty} z_n = z \iff \forall \epsilon > 0$ $\exists N \in \mathbb{N}$ s.t. for every $n > N(\epsilon)$ $|z_n - z| < \epsilon$.
+
+\begin{lemma}
+If $\lim_{n\to\infty} z_n$ exists, then it is unique.
+\end{lemma}
+
+\begin{proof}
+Assume $\lim_{n\to\infty} z_n = z_1$ and $\lim_{n\to\infty} z_n = z_2$. Then, for any $\epsilon > 0$ there exists $N_1 \in \mathbb{N}$ s.t. for every $n > N_1$ $|z_n - z_1| < \epsilon/2$.
+Also there exists $N_2 \in \mathbb{N}$ s.t. for every $n > N_2$ $|z_n - z_2| < \epsilon/2$.
+Choose $N = \max\{N_1, N_2\}$, then for every $n > N$ $|z_n - z_1| < \epsilon/2$ and $|z_n - z_2| < \epsilon/2$.
+Thus $|z_1 - z_2| = |z_1 - z_n + z_n - z_2| \leq |z_1 - z_n| + |z_n - z_2| < \epsilon/2 + \epsilon/2 = \epsilon$.
+Since this is true for any $\epsilon > 0$ we conclude that $z_1 = z_2$.
+\end{proof}
+
+Also, it is possible to show that
+The complex sequence $\{z_n\}$ converges to $z \iff$ the real sequence $\{|z_n - z|\}_{n=0}^\infty$ converges to 0 (Check!).
+
+\begin{example}
+Let $z_n = (\frac{1}{2})^n$, $n \in \mathbb{N}$. Then:
+$z_0 = 1$, $z_1 = \frac{1}{2}$, $z_2 = \frac{1}{4} = \frac{1}{2^2}$, $z_3 = \frac{1}{8} = \frac{1}{2^3}$, $z_4 = \frac{1}{16} = \frac{1}{2^4}$, ...
+This sequence converges to 0: $\lim_{n\to\infty} z_n = 0$. Can be demonstrated by proving that $|z_n|$ decreases "to" 0 as $n$ tends to infinity.
+Check: By graphing the points $z_n$ check that the sequence $\{z_n\}$ "spirals" in toward the origin (0) in the z-plane.
+\end{example}
+
+\begin{example}
+Let $z_n = (2i)^n$: $z_0 = 1$, $z_1 = 2i$, $z_2 = -4$, $z_3 = -8i$, ...
+This sequence diverges: one can show that $\{|z_n|\}_{n=0}^\infty$ is unbounded increasing sequence {namely, $|z_n|$ gets arbitrarily large}.
+\end{example}
+
+\begin{example}
+Let $z_n = (i)^n$: $z_0 = 1$, $z_1 = i$, $z_2 = -1$, $z_3 = -i$, $z_4 = 1$, $z_5 = i$, ...
+This is a bounded sequence ($|z_n| \leq 1$ for any $n$), but $\lim_{n\to\infty} z_n$ does not exist: there is no $z$ such that almost all but finitely many points of the sequence are in a small neighborhood of some $z$: $\{z_n\}$ jumps at every step.
+\end{example}
+
+\begin{example}
+Important real sequence (limit): let $a_n = (1 + \frac{a}{n})^n$ for some $a$. Then $\lim_{n\to\infty} a_n = \lim_{n\to\infty} (1 + \frac{a}{n})^n = e^a$.
+\end{example}
+
+\begin{example}
+$\lim_{n\to\infty} (1 + \frac{i}{n})^n = e^i$, $\lim_{n\to\infty} (1 - \frac{i}{n})^n = \lim_{n\to\infty} (1 + \frac{-i}{n})^n = \frac{1}{e^i} = e^{-i}$.
+\end{example}
+
+\begin{proposition}
+If the sequences $\{z_n\}$, $\{w_n\}$ of complex numbers converge, then so the sequences $\{z_n \pm w_n\}$, $\{z_n \cdot w_n\}$, and if $w_n \neq 0$ also $\{\frac{z_n}{w_n}\}$, and
+$\lim_{n\to\infty} (z_n \pm w_n) = \lim_{n\to\infty} z_n \pm \lim_{n\to\infty} w_n$
+$\lim_{n\to\infty} z_n w_n = \lim_{n\to\infty} z_n \lim_{n\to\infty} w_n$
+If $\lim_{n\to\infty} w_n \neq 0$, then: $\lim_{n\to\infty} \frac{z_n}{w_n} = \frac{\lim_{n\to\infty} z_n}{\lim_{n\to\infty} w_n}$.
+\end{proposition}
+
+\subsection{Complex (Scalar) Series}
+
+\begin{definition}
+The complex (scalar) series $\sum_{n=1}^\infty z_n$ converges to the value $s \in \mathbb{C}$ if the sequence of partial sums $\{S_N\}_{N=0}^\infty$, $S_N = z_0 + z_1 + ... + z_N$ converges to $s$. The value $s$ is called the sum of the series. If the limit does not exist (or $\infty$) ($\lim_{N\to\infty} S_N$) then the series diverges.
+\end{definition}
+
+If the series converges to some value $s$, then $s$ is unique.
+
+\begin{remark}
+Furthermore: if $r_N = s - S_N = \sum_{n=N+1}^\infty z_n$, then it is possible to show that $\sum_{n=0}^\infty z_n = s \iff \lim_{N\to\infty} r_N = 0$.
+Namely, the tail of the series converges to 0.
+\end{remark}
+
+From the definition we immediately conclude:
+
+\begin{proposition}
+If $\sum_{n=0}^\infty z_n$ converges, then $\lim_{n\to\infty} z_n = 0$.
+\end{proposition}
+\begin{proof}
+By the definition: If $\sum_{n=0}^\infty z_n = s$, then $\lim_{N\to\infty} S_N = \lim_{N\to\infty} \sum_{n=0}^N z_n = s$.
+On the other hand:
+$S_N - S_{N-1} = (z_0 + z_1 + ... + z_N) - (z_0 + z_1 + ... + z_{N-1}) = z_N$
+$\implies \lim_{N\to\infty} z_N = \lim_{N\to\infty} (S_N - S_{N-1}) = \lim_{N\to\infty} S_N - \lim_{N\to\infty} S_{N-1} = s - s = 0$
+\end{proof}
+
+The contrapositive statement is often called the Test for Divergence.
+
+\begin{proposition}[Test for Divergence]
+Let $\{z_n\}_{n=0}^\infty \in \mathbb{C}$. If $\lim_{n\to\infty} z_n \neq 0$ (or does not exist), then the series $\sum_{n=0}^\infty z_n$ diverges.
+\end{proposition}
+
+\begin{remark}
+The converse of the previous proposition is false: $\lim_{n\to\infty} \frac{1}{n} = 0$, but the series $\sum_{n=1}^\infty \frac{1}{n}$ diverges!
+\end{remark}
+
+As expected there is an immediate relation between convergence or divergence of complex sequences and series to that of real ones.
+
+\begin{proposition}
+Let $\{z_n\}_{n=0}^\infty$, $z_n$ be the complex sequence and the complex series. Suppose that $z_n = x_n + iy_n$ and $s = u + iv$. Then:
+1) $\lim_{n\to\infty} z_n = z \iff \lim_{n\to\infty} x_n = x$ and $\lim_{n\to\infty} y_n = y$ (for $z_n = x_n + iy_n$)
+2) $\sum_{n=0}^\infty z_n = s \iff \sum_{n=0}^\infty x_n = u$ and $\sum_{n=0}^\infty y_n = v$
+\end{proposition}
+
+\begin{proof}
+1) follows directly from the definition and the application of triangle inequality: $|x_n - x|$, $|y_n - y| \leq |z_n - z| \leq |x_n - x| + |y_n - y|$
+2) is proved by decomposing the complex sum into real and imaginary parts $\sum_{n=0}^\infty z_n = \sum_{n=0}^\infty x_n + i\sum_{n=0}^\infty y_n$ and a careful use of 1) [Finish!]
+
+Hint: If $\sum_{n=0}^\infty x_n = u$, $\sum_{n=0}^\infty y_n = v$ $\implies$ obvious. Assume $\sum_{n=0}^\infty z_n = s$, define $X_N = \sum_{n=0}^N x_n$, $Y_N = \sum_{n=0}^N y_n$, apply 1) to $S_N = \sum_{n=0}^N z_n$.
+\end{proof}
+
+In much of what follows, we can use the previous proposition and results in real sequences and series - these are left as an exercise. For example, the previous proposition and an analogous proposition for the series!
+
+\begin{proposition}
+Suppose that $\sum_{n=0}^\infty z_n = s$, $\sum_{n=0}^\infty w_n = t$ are two convergent series. Let $\lambda \in \mathbb{C}$. Then,
+1) $\sum_{n=0}^\infty (z_n + w_n) = s+t$ (converges to $s+t$)
+2) $\sum_{n=0}^\infty \lambda z_n = \lambda s$ (converges to $\lambda s$)
+\end{proposition}
+\begin{proof}
+Exercise - exactly as in the real case - partial sums.
+\end{proof}
+
+\begin{example}[Key example - Geometric series]
+Suppose that $|z| < 1$.
+We claim that the series $\sum_{n=0}^\infty z^n$, called the Geometric series, converges.
+\end{example}
+
+\begin{proposition}
+$\sum_{n=0}^\infty z^n$ converges (if $|z| < 1$) and $\sum_{n=0}^\infty z^n = \frac{1}{1-z}$.
+\end{proposition}
+
+\begin{proof}
+We prove it using the definition: we will show that the sequence of partial sums converges to $\frac{1}{1-z}$.
+Need to show: $\lim_{N\to\infty} S_N = \lim_{N\to\infty} \sum_{n=0}^N z_n = \frac{1}{1-z}$.
+First, we obtain a closed formula for $S_N$ as follows:
+$S_N = 1 + z + z^2 + ... + z^N$
+$z \cdot S_N = z + z^2 + z^3 + ... + z^{N+1}$
+$S_N - zS_N = S_N(1-z) = 1 - z^{N+1} \implies S_N = \frac{1-z^{N+1}}{1-z}$
+Now we use this formula to compute the limit
+$|\frac{1}{1-z} - S_N| = |\frac{1}{1-z} - \frac{1-z^{N+1}}{1-z}| = |\frac{z^{N+1}}{1-z}| = \frac{|z|^{N+1}}{|1-z|}$
+Since $|z| < 1 \implies \lim_{N\to\infty} |z|^N = 0$ (from what we know about real sequences)
+Therefore $|\frac{1}{1-z} - S_N|_{N\to\infty} \to 0 \implies \lim_{N\to\infty} S_N = \frac{1}{1-z}$.
+\end{proof}
+
+\section{Week 5: Lectures 14+15}
+
+Now we introduce the notion of absolute convergence.
+
+\begin{definition}
+The series $\sum_{n=0}^\infty z_n$ converges \emph{absolutely} if the series of the moduli of the terms $\sum_{n=0}^\infty |z_n|$ converges.
+\end{definition}
+
+\begin{remark}[The Geometric series]
+For $|z| < 1$ $\sum_{n=0}^\infty |z|^n$ converges. Namely, the geometric series converges absolutely.
+\end{remark}
+
+\begin{proof}
+Follow exactly the same steps as in the previous example, replace $z$ by $|z|$...
+\end{proof}
+
+The definition of absolute convergence is subtle:
+Series can converge, but not absolutely: $\sum_{n=1}^\infty \frac{(-1)^n}{n}$ converges, but $\sum_{n=1}^\infty |\frac{(-1)^n}{n}| = \sum_{n=1}^\infty \frac{1}{n}$ diverges.
+The absolute convergence however always implies convergence:
+
+\begin{proposition}
+If $\sum_{n=0}^\infty |z_n|$ converges, then $\sum_{n=0}^\infty z_n$ converges.
+\end{proposition}
+
+\begin{proof}
+We have $|z_n| = \sqrt{x_n^2 + y_n^2} \geq |x_n|, |y_n|$, therefore using the Comparison test for positive (real) series we get that $\sum_{n=0}^\infty |x_n|$ and $\sum_{n=0}^\infty |y_n|$ converge (by analogous statement for real series) $\implies \sum_{n=0}^\infty x_n$ and $\sum_{n=0}^\infty y_n$ converge. Thus, by a previous proposition $\sum_{n=0}^\infty z_n$ converges.
+\end{proof}
+
+Now we state 3 very useful tests for convergence of complex series.
+
+\begin{proposition}
+Let $\sum_{n=0}^\infty a_n$, $a_n \in \mathbb{C}$ be a complex series.
+\begin{enumerate}
+    \item \textbf{Ratio-Test}: Consider the limit $\lim_{n\to\infty} |\frac{a_{n+1}}{a_n}| = L$
+    \begin{itemize}
+        \item If the limit exists and $L < 1$, then the series $\sum_{n=0}^\infty a_n$ converges absolutely
+        \item If the limit exists and $L > 1$, then the series $\sum_{n=0}^\infty a_n$ diverges
+        \item If $L = 1$ or the limit does not exist, then the test is inconclusive {namely, there are examples of convergent and divergent series}
+    \end{itemize}
+    \item \textbf{Root (Cauchy) Test}: Consider the limit $\lim_{n\to\infty} \sqrt[n]{|a_n|} = L$
+        \begin{itemize}
+            \item If the limit exists and $L < 1$, then the series $\sum_{n=0}^\infty a_n$ converges absolutely.
+            \item If the limit exists and $L > 1$, then the series $\sum_{n=0}^\infty a_n$ diverges.
+            \item If $L = 1$ or does not exist, then the test is inconclusive.
+        \end{itemize}
+    \item \textbf{Comparison Test}:
+    \begin{itemize}
+        \item If $0 \leq |a_n| \leq r_n$ and the positive real series $\sum_{n=0}^\infty r_n$ converges, then $\sum_{n=0}^\infty a_n$ converges absolutely.
+        \item If $|a_n| \geq r_n \geq 0$ and $\sum_{n=0}^\infty r_n$ diverges, then $\sum_{n=0}^\infty a_n$ diverges.
+    \end{itemize}
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Ratio Test: If $L > 1$, then the sequence $\{|a_n|\}$ is increasing (for sufficiently large $n$), therefore the series diverges by the Test for Divergence.
+
+Suppose that $L < 1$. Choose a number $r$ such that $L < r < 1$.
+Since $\lim_{n\to\infty} |\frac{a_{n+1}}{a_n}| = L$ there exists $N \in \mathbb{N}$ such that for all $n \geq N$ $|\frac{a_{n+1}}{a_n}| \leq r$. Set $a = a_N$. Then we have $|a_{N+1}| \leq r|a_N| = |a|r$,
+$|a_{N+2}| \leq r|a_{N+1}| \leq |a|r^2$ and, in general $|a_{N+k}| \leq |a|r^k$. Therefore for $n \geq N$ the terms of the series $\sum_{n=0}^\infty |a_n|$ are bounded by the terms of a convergent geometric series (since $0 < r < 1$), therefore $\sum_{n=0}^\infty |a_n|$ converges by the Comparison Test (for real series), namely, $\sum_{n=0}^\infty a_n$ converges absolutely.
+\end{proof}
+
+Root Test and Comparison Test: Exercise!
+
+\begin{example}
+Check the convergence of the following series:
+a) $\sum_{n=0}^\infty (\frac{1}{2i})^n$
+b) $\sum_{n=0}^\infty (\frac{1+i}{2})^n$
+c) $\sum_{n=0}^\infty (\frac{4+i}{6})^n$
+
+\textbf{Solution:}
+1) We use Comparison Test as follows:
+$a_n = (\frac{1}{2i})^n \implies |a_n| = |\frac{1}{2i}|^n = \frac{1}{|2i|^n} = \frac{1}{2^n} = (\frac{1}{2})^n$
+Since $\sum_{n=0}^\infty (\frac{1}{2})^n$ diverges (for example, by the Test for Divergence, since $\lim_{n\to\infty} (\frac{1}{2})^n = 0 \neq 0$) by Comparison Test $\sum_{n=0}^\infty (\frac{1}{2i})^n$ diverges.
+
+2) Let us apply the Root Test: $a_n = (\frac{1+i}{2})^n$
+$\implies \lim_{n\to\infty} \sqrt[n]{|a_n|} = \lim_{n\to\infty} \sqrt[n]{|(\frac{1+i}{2})^n|} = \lim_{n\to\infty} |\frac{1+i}{2}| = \frac{|1+i|}{2} = \frac{\sqrt{2}}{2} = \frac{1}{\sqrt{2}} < 1$
+$\implies \sum_{n=0}^\infty (\frac{1+i}{2})^n$ converges absolutely.
+
+c) Let us apply the Ratio Test: $a_n = (\frac{4+i}{6})^n$
+$\implies \lim_{n\to\infty} |\frac{a_{n+1}}{a_n}| = \lim_{n\to\infty} \frac{|(\frac{4+i}{6})^{n+1}|}{|(\frac{4+i}{6})^n|} = \lim_{n\to\infty} |\frac{4+i}{6}| \cdot \frac{(n+1)!}{n!} \cdot \frac{1}{n+1} = \lim_{n\to\infty} \frac{|4+i|}{6} = \frac{\sqrt{17}}{6} < 1 \implies$ converges absolutely.
+\end{example}
+
+\subsection{Complex Power Series}
+\begin{definition}
+The series $\sum_{n=0}^\infty a_n(z-z_0)^n$, $a_n \in \mathbb{C}$, $n \in \mathbb{N}$, is called a \emph{power series} centered at $z=z_0$ (about $z=z_0$).
+\end{definition}
+
+A power series is an example of complex series where the sequence $z_n$ from the definition is of the special form $\{a_n(z-z_0)^n\}$ - involves variable $z$. Thus, the convergence or divergence of a power series may depend on the values of the variable $z$. If $z_0 = 0$, the power series are of the form $\sum_{n=0}^\infty a_nz^n$.
+
+\begin{remark}
+From the definition every power series $\sum_{n=0}^\infty a_n(z-z_0)^n$ converges for at least one point $z=z_0$.
+\end{remark}
+
+Next theorem tells us that convergence at one point guarantees convergence on some small disc around $z_0$. We prove it for the case $z_0 = 0$ (for simplicity of notation), the general case $z_0 \neq 0$ is proved in exactly the same way.
+
+\begin{theorem}[Abel]
+If $\sum_{n=0}^\infty a_nz^n$ converges at $z_0 \neq 0$, then it converges absolutely for any $z$ with $|z| < |z_0|$.
+\end{theorem}
+Namely, if the series converges at a point $z_0$, then it converges absolutely at every interior point of the disc centered at 0 of radius $|z_0|$.
+
+\begin{proof}
+Since $\sum_{n=0}^\infty a_nz_0^n$ converges by a previous proposition $\lim_{n\to\infty} a_nz_0^n = 0$, thus $\{a_nz_0^n\}$ is a bounded sequence: there exists $M \in \mathbb{N}$ such that for every $n \in \mathbb{N}$ $|a_nz_0^n| \leq M$.
+Write the modulus of the general term of the series as:
+$|a_nz^n| = |a_nz_0^n \cdot \frac{z^n}{z_0^n}| = |a_nz_0^n||\frac{z}{z_0}|^n \leq M|\frac{z}{z_0}|^n$
+$\implies$ Since $|z| < |z_0|$, namely $|\frac{z}{z_0}| < 1$, the general term of the positive series $\sum_{n=0}^\infty |a_nz^n|$ is smaller than the one of the positive geometric series $\sum_{n=0}^\infty M|\frac{z}{z_0}|^n$ $\implies$ by Comparison Test $(\sum_{n=0}^\infty |a_nz^n|)$ converges $\implies \sum_{n=0}^\infty a_nz^n$ converges absolutely.
+\end{proof}
+
+\begin{corollary}
+If $\sum_{n=0}^\infty a_nz^n$ diverges at $z=z_1$, then it diverges for every $z$ with $|z| > |z_1|$.
+\end{corollary}
+
+\begin{definition}
+If the series $\sum_{n=0}^\infty a_nz^n$ converges for all $z \in \cup \cup \{\infty\}$, then its sum defines a function on $\cup$.
+\end{definition}
+
+\begin{example}[continued]
+$\sum_{n=0}^\infty z^n$ - power series centered at $z_0 = 0$
+$a_n = 1$ for all $n$. Converges on the open unit disc $\cup = \{z \in \mathbb{C}: |z| < 1\}$ (converges absolutely!), and equal to the function $f(z) = \frac{1}{1-z}$ on $\cup$.
+\end{example}
+
+Next proposition tells us where the power series converges. The proof is omitted.
+
+\begin{proposition}
+Given a power series $\sum_{n=0}^\infty a_n(z-z_0)^n$ there exists $0 \leq R \leq \infty$ {a real non-negative number or else infinity} such that if $|z-z_0| < R$, then $\sum_{n=0}^\infty a_n(z-z_0)^n$ converges absolutely and if $|z-z_0| > R$, then $\sum_{n=0}^\infty a_n(z-z_0)^n$diverges.
+\end{proposition}
+
+The value $R$ is called the \emph{radius of convergence} of power series.
+A very useful formula for computing the radius of convergence of power series:
+
+\begin{itemize}
+    \item $R = \lim_{n\to\infty} |\frac{a_n}{a_{n+1}}|$ \{for $\sum_{n=0}^\infty a_n(z-z_0)^n$\}
+    \item Cauchy-Hadamard formula: $R = \frac{1}{\lim_{n\to\infty} \sqrt[n]{|a_n|}}$
+\end{itemize}
+
+\begin{example}
+Find the radius of convergence of $\sum_{n=0}^\infty (n+i)z^n$.
+
+\textbf{Solution:} $a_n = n+i \implies |a_n| = |n+i| = \sqrt{n^2+1}$
+Using Cauchy-Hadamard formula and that $\lim_{n\to\infty} \sqrt[n]{n} = 1$ we get: $R = \frac{1}{\lim_{n\to\infty} \sqrt[n]{|a_n|}} = \frac{1}{\lim_{n\to\infty} \sqrt[n]{\sqrt{n^2+1}}} = \frac{1}{\lim_{n\to\infty} (n^2+1)^{1/2n}} = \frac{1}{\lim_{n\to\infty} (n^2(1+\frac{1}{n^2}))^{1/2n}} = \frac{1}{\lim_{n\to\infty} (\sqrt{n})^{1/n} \lim_{n\to\infty} (1+\frac{1}{n^2})^{1/2n}} = \frac{1}{1\cdot 1} = 1$. Namely, the series converges absolutely for $|z| < 1$.
+\end{example}
+
+\begin{remark}
+The power series with the radius of convergence $R$ on the circle $|z-z_0| = R$ (or $|z| = R$ if $z_0 = 0$) may converge or diverge or converge at some points and diverge at others.
+\end{remark}
+
+\begin{example}
+a) The geometric series $\sum_{n=0}^\infty z^n$ - the radius of convergence $R = 1$ and the series diverges at any point on the circle $|z| = 1$ (by the Test for Divergence) (Check!).
+b) $\sum_{n=0}^\infty \frac{z^n}{n^2}$ - the radius of convergence $R=1$ (Check!).
+\end{example}
+
+\section{Week 6: Lectures 14+15, Continued}
+
+\begin{definition}
+The \emph{disc of convergence} of the power series $\sum_{n=0}^\infty a_n(z-z_0)^n$ is given by $D = \{z \in \mathbb{C}: |z-z_0| < R\}$ and we write $f(z)$ for the sum of the series on this disc.
+\end{definition}
+
+\begin{proposition}
+Suppose the power series $\sum_{n=0}^\infty a_n(z-z_0)^n$ has disc of convergence $D$. Then,
+\begin{enumerate}
+    \item $f(z) = \sum_{n=0}^\infty a_n(z-z_0)^n$ is analytic on $D$ \{differentiable at every $z \in D$\}
+    \item For all $z \in D$ the series $\sum_{n=1}^\infty na_n(z-z_0)^{n-1}$ is absolutely convergent and has sum $f'(z)$ (the derivative of $f$ at $z$)
+\end{enumerate}
+\end{proposition}
+
+\begin{remark}
+From the proposition: $f(z) = \sum_{n=0}^\infty a_n(z-z_0)^n$ is differentiable arbitrarily many times at any $z$ in the disc of convergence of the series (namely, we can define its higher derivatives).
+\end{remark}
+
+\begin{definition}
+For any $z \in \mathbb{C}$ we define the exponential function as the sum of the following series
+$e^z = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + ... = \sum_{n=0}^\infty \frac{z^n}{n!}$
+\end{definition}
+
+If $z$ is real, we get the usual expansion of $e^x$ to series.
+
+\begin{remark}
+$e^z$ is well-defined for all $z \in \mathbb{C}$, namely $R = \infty$.
+\end{remark}
+
+\begin{proof}
+By Ratio Test:
+$\lim_{n\to\infty} |\frac{a_{n+1}}{a_n}| = \lim_{n\to\infty} |\frac{z^{n+1}}{(n+1)!} \cdot \frac{n!}{z^n}| = \lim_{n\to\infty} |\frac{z}{n+1}| = |z|\lim_{n\to\infty} \frac{1}{n+1} = 0 = L < 1$
+and $\lim_{n\to\infty} |\frac{a_{n+1}z^{n+1}}{a_nz^n}| = \lim_{n\to\infty} |\frac{z}{n+1}| = 0 < 1$ for all $z \in \mathbb{C}$
+$\implies \sum_{n=0}^\infty \frac{z^n}{n!}$ converges absolutely for all $z \in \mathbb{C}$.
+\end{proof}
+
+\begin{proposition}
+$e^z$ is entire and $(e^z)' = e^z$.
+\end{proposition}
+
+\begin{proof}
+By a previous proposition 1) $e^z$ is analytic for every $z \in \mathbb{C} \implies$ entire (since $R = \infty$) By a previous proposition 2):
+$(e^z)' = \sum_{n=1}^\infty n\frac{z^{n-1}}{n!} = \sum_{n=1}^\infty \frac{z^{n-1}}{(n-1)!} = \sum_{n=0}^\infty \frac{z^n}{n!} = e^z$.
+\end{proof}
+
+\begin{proposition}
+For any $z_1, z_2 \in \mathbb{C}$ $e^{z_1}e^{z_2} = e^{z_1 + z_2}$.
+\end{proposition}
+
+\begin{proof}
+By the definition: $e^{z_1} = \sum_{n=0}^\infty \frac{z_1^n}{n!}$, $e^{z_2} = \sum_{n=0}^\infty \frac{z_2^n}{n!}$.
+These are absolutely convergent series $\implies$ we can multiply them:
+$e^{z_1}e^{z_2} = (1 + z_1 + \frac{z_1^2}{2!} + ...) (1 + z_2 + \frac{z_2^2}{2!} + ...) = 1 + (z_1 + z_2) + \frac{1}{2!}(z_1^2 + 2z_1z_2 + z_2^2) + ... + \frac{1}{n!}(z_1 + z_2)^n + ... = e^{z_1 + z_2}$.
+\end{proof}
+
+\section{Week 7: Lecture 16}
+$= 1 + (z_1+z_2) + (\frac{z_1^2}{2!} + z_1z_2 + \frac{z_2^2}{2!}) + ... + (\frac{z_1^n}{n!} + ... + \frac{z_1z_2^{n-1}}{(n-1)!}) + ... = e^{z_1}e^{z_2}$
+
+Now we can define trigonometric functions as power series:
+\begin{definition}
+For any $z\in \mathbb{C}$, $|z|<\infty$
+$\sin z = \Ima e^{iz} = z - \frac{z^3}{3!} + \frac{z^5}{5!} - ... = \sum_{n=0}^\infty \frac{(-1)^nz^{2n+1}}{(2n+1)!}$
+$\cos z = \Rea e^{iz} = 1 - \frac{z^2}{2!} + \frac{z^4}{4!} - ... = \sum_{n=0}^\infty \frac{(-1)^nz^{2n}}{(2n)!}$
+\end{definition}
+For real $z$ this definition coincides with Taylor series expansion of $\sin x$ and $\cos x$ about $x=0$.
+
+\section{Week 4: Lecture 10, Continued}
+
+\subsection{Single-Valued Analytic Functions, Continued}
+
+\begin{proposition}
+If $f$ is analytic on a domain $\Omega$ and $f'(z) = 0$ for all $z \in \Omega$, then $f$ is constant on $\Omega$.
+\end{proposition}
+
+\begin{remark}
+Prop 7.2 is false if $\Omega$ is not connected - $f$ can take different constants (constant values) on each connected component of $\Omega$.
+\end{remark}
+
+\begin{proof}
+The version of this proposition for real functions is proved using the Mean Value Theorem, that asserts that under appropriate continuity assumption for $f: (a,b) \to \mathbb{R}$ there exists $c \in (a,b)$ s.t. $f(b) - f(a) = f'(c)(b-a)$. So, if $f'(x) = 0$ for all $x \in (a,b)$, then $f(b) = f(a)$. The problem in the complex case is that there is no analogous idea of "between a and b" in $\mathbb{C}$, since there are many routes from a to b.
+However, we can use the Mean Value Theorem for $\Rea f$ and $\Ima f$ as follows:
+Since $f'(z) = 0$ for all $z \in \Omega$ by CR equations $0 = f'(z) = \frac{\partial u}{\partial x} + i\frac{\partial v}{\partial x}$ for all $z \in \Omega$
+$\implies \frac{\partial u}{\partial x} = -\frac{\partial u}{\partial y} = \frac{\partial v}{\partial x} = \frac{\partial v}{\partial y} = 0$ for all $z \in \Omega$.
+
+Claim: $u$ is a constant function.
+We have $u: \Omega \to \mathbb{R}$, $\frac{\partial u}{\partial x} = \frac{\partial u}{\partial y} = 0$ for all $(x,y) \in \Omega$.
+Pick $(x_0, y_0), (x_1, y_1) \in \Omega$. $\Omega$ is connected, thus by the definition any 2 points in $\Omega$ can be connected by a path that is entirely in $\Omega$. We join $(x_0, y_0)$ and $(x_1, y_1)$ by a path comprised of pieces parallel to x-axis or y-axis [One needs to show that such path exists!] Since $\frac{\partial u}{\partial x} = 0$ by the Mean Value Theorem, $u$ is constant on the horizontal pieces. In the same way, since $\frac{\partial u}{\partial y} = 0$, $u$ is constant on vertical pieces. Thus, $u(x_0,y_0) = u(x_1,y_1)$. Thus, $u$ is constant on $\Omega$.
+By a similar argument we obtain that $v$ is constant on $\Omega$, therefore $f = u+iv$ is constant on $\Omega$.
+\end{proof}
+
+\section{Week 5: Lectures 11+12, Continued}
+
+We have studied the double-valued function $f(z) = \sqrt{z-z_0}$.
+Now we are going to study analyticity of multi-valued functions - here we will see the big difference between the complex and real functions.
+
+\subsection{Analyticity of Multi-Valued Functions}
+
+We have seen that analytic function is always continuous, thus multi-valued functions are not analytic as is. The question is: can we choose a branch of such function that is single-valued and analytic?
+
+\begin{definition}
+We say that on a domain $\Omega$ there is a \emph{single-valued branch} of multi-valued function if for every point of $\Omega$ we can choose one of the values of a function such that the resulting single-valued function is continuous in $\Omega$.
+\end{definition}
+
+In other words: to choose single-valued branch means to choose the domain of definition of a function such that when a point $z$ moves along some closed continuous curve that is contained in the domain of definition and goes back to the starting point we get the same value of the function.
+Let us demonstrate how we do that on the following example.
+
+\begin{example}
+Consider double-valued function $f(z) = \sqrt{z-z_0}$.
+$f(z)$ is defined for all $z \in \mathbb{C}$. Write:
+$z-z_0 = r(\cos\theta + i\sin\theta)$ $r = |z-z_0|$, $\theta = \arg(z-z_0)$
+At every $z \neq z_0$ $f(z)$ attains 2 values ($\implies$ double-valued!).
+$w_0 = \sqrt{r}(\cos\frac{\theta}{2} + i\sin\frac{\theta}{2})$
+$w_1 = \sqrt{r}(\cos(\frac{\theta + \pi}{2}) + i\sin(\frac{\theta + \pi}{2})) = -\sqrt{r}(\cos\frac{\theta}{2} + i\sin\frac{\theta}{2}) = -w_0$
+Let us follow the value $w_0$ when $z$ is on the closed continuous curve $L$ that encircles $z_0$ counterclockwise (anti-clockwise; the positive direction).
+If $z$ moves to $z_1$, the argument of $z_1 - z_0$ will be $\arg(z_1 - z_0) = \theta + \theta_1$.
+If $z$ continues to move along $L$, $z$ will eventually return to the starting point: the modulus $r = |z-z_0|$ will be the same, but the argument will increase by $2\pi$ (since we completed the circle) and $w_0$ will attain the new value $w_1$.
+$w_{new} = \sqrt{r}(\cos(\frac{\theta + 2\pi}{2}) + i\sin(\frac{\theta + 2\pi}{2})) = \sqrt{r}(\cos(\frac{\theta}{2} + \pi) + i\sin(\frac{\theta}{2} + \pi)) = w_1 = -w_0$.
+
+Let us check what happens to $w_0$ if we move along a closed continuous curve that does not encircle the point $z_0$.
+From the picture above that the value of the modulus and of the argument after completing the full circle will return to its starting value - the same, with no change. This is independent of the curve $L_1$ (the only important thing that the curve does not encircle the point $z_0$).
+\end{example}
+
+\begin{corollary}
+On a domain $\Omega$ that contains curves that encircle $z_0$ it is impossible to choose a continuous branch of the function $\sqrt{z-z_0}$.
+\end{corollary}
+
+\section{Week 6: Lectures 11+12, Continued}
+
+Intuitively: if we would be able to "cut" the plane (in some way) up to $z_0$, including $z_0$, then there will be no closed curve that encircles $z_0$. Indeed, the biggest domain on which none of the closed continuous curves encircle $z_0$ is the cutted plane, where we cut as follows:
+The "largest" such domain: Cut-plane - $\mathbb{C}$ without the line $\{z = x+iy| x \leq x_0\}$ [including $z_0$]
+Cut-plane: two single-valued branches $w_0 = \sqrt{r}(\cos\frac{\theta}{2} + i\sin\frac{\theta}{2})$, $w_1 = -\sqrt{r}(\cos\frac{\theta}{2} + i\sin\frac{\theta}{2})$.
+
+\begin{remark}
+Note: can cut along any ray starting at $z_0$.
+\end{remark}
+
+The cut will prevent from any closed curve to encircle $z_0$. In case like on the picture above (ray creates an angle $\psi$ with the positive - anticlockwise - direction with x-axis) we have:
+For a ray with $\theta = \frac{\pi}{2}$: 2 continuous branches of $\sqrt{z-z_0}$:
+$w = \pm \sqrt{r}(\cos\frac{\theta}{2} + i\sin\frac{\theta}{2})$ $\frac{\pi}{2} < \theta \leq \frac{5\pi}{2}$
+
+\begin{definition}
+The point $z_0$ is called a \emph{branch point}: for complex multi-valued function $f$ if the value of $f(z)$ does not return to its initial value as a closed curve around the point is traced (starting from some arbitrary point on the curve), in such a way that $f$ varies continuously as the path is traced.
+\end{definition}
+
+\textbf{Important}: What matters here is the \emph{local} behavior of the function $f$ near $z_0$. What may happen on paths that are some distance away from $z_0$ is not relevant. To be more precise: The behavior must occur for \emph{all} the curves that enclose the point and are sufficiently close to it.
+In the previous example: $z=z_0$ is the Branch Point.
+
+Let us consider a more general case.
+
+\begin{example}
+Consider $w = \sqrt[n]{z-z_0}$. Take $z-z_0 = r(\cos\theta + i\sin\theta)$. Then $w = \sqrt[n]{r}(\cos(\frac{\theta + 2\pi k}{n}) + i\sin(\frac{\theta + 2\pi k}{n}))$, $k=0,1,2,...,n-1$.
+Fix $0 \leq k_0 \leq n-1$.
+As before: we let $z$ to be on the closed continuous curve $L$ that encloses $z_0$.
+When $z$ will complete the full circle (anticlockwise) the modulus ($r$) will return to the same value, the argument however will increase by $2\pi$ and $w$ will attain a new value:
+After full circle around $z_0$:
+$w_{new} = \sqrt[n]{r}(\cos(\frac{(\theta + 2\pi) + 2\pi k_0}{n}) + i\sin(\frac{(\theta + 2\pi) + 2\pi k_0}{n})) = \sqrt[n]{r}(\cos(\frac{\theta + 2\pi k_0}{n} + \frac{2\pi}{n}) + i\sin(\frac{\theta + 2\pi k_0}{n} + \frac{2\pi}{n})) = \sqrt[n]{r}(\cos(\frac{\theta + 2\pi k_0}{n}) + i\sin(\frac{\theta + 2\pi k_0}{n}))(\cos\frac{2\pi}{n} + i\sin\frac{2\pi}{n}) = w_{k_0}(\cos\frac{2\pi}{n} + i\sin\frac{2\pi}{n}) = w_{k_0+1}$
+Namely, the new value of $w$ is equal to the previous one times $(\cos\frac{2\pi}{n} + i\sin\frac{2\pi}{n})$.
+Check: $(\cos\frac{2\pi}{n} + i\sin\frac{2\pi}{n})^n = 1$
+\end{example}
+This is independent of the curve that encloses $z_0$! If $z$ will run on a curve that does not encircle $z_0$, then, as before, the value $w_{k_0}$ will not change once $z$ returns to the starting point.
+Conclusion: If $z$ is on the curve that encloses $z_0$ once (anti-clockwise), then the value $\sqrt[n]{z-z_0} = w_{k_0}$ will change to the new value $w_{k_0+1}$. If $z$ is on the curve that does not encircle $z_0$ then the value of the function stays the same.
+$\implies z=z_0$ is the branch point of the function $f(z) = \sqrt[n]{z-z_0}$.
+
+\begin{example}
+Find the branch points of the function $f(z) = \sqrt{1+z^2}$.
+
+\textbf{Solution:} $\sqrt{1+z^2} = \sqrt{z-i}\sqrt{z+i}$, therefore $z=\pm i$ are the branch points of $\sqrt{1+z^2}$.
+$\sqrt{z-i}$, $\sqrt{z+i}$ $\implies$ branch points of $\sqrt{1+z^2}$.
+\end{example}
+Let us see on the picture what happens and where to cut so we will be able to obtain a continuous single-valued branch of $f(z)$.
+If $z$ is on $L_1$ (around $z=i$): When $z$ returns to the initial point $\sqrt{z+i}$ returning to the same value since $L_1$ does not enclose $z=-i$ while $\sqrt{z-i}$ attains new value - changes the sign of the previous one.
+Therefore, $f(z)$ also changes the sign. In the same way: if $z$ is on $L_2$, then upon return to the initial point $\sqrt{z+i}$ will change the value - change the sign, $\sqrt{z-i}$ will return to the same value, and the function will change the sign. If $z$ is on $L_3$ that encloses both $z_0 = i$ and $z_0 = -i$, then $\sqrt{z-i}$ and $\sqrt{z+i}$ will change the sign, but their product - the original function - will not!
+
+We can choose a continuous branch on a domain $\Omega$ if none of the closed curves in $\Omega$ enclose $i$ and not $-i$ (or $-i$ and not $i$), but it can enclose both. Namely, if we cut the plane along the interval connecting $i$ and $-i$, we will get a domain in which it is possible to choose a continuous branch.
+
+\begin{definition}
+Single-valued branch is called an \emph{analytic} function on a domain $\Omega$ if it is differentiable at every $z \in \Omega$.
+\end{definition}
+
+\begin{example}
+Prove that $w = \sqrt[n]{z}$ is analytic on the domain $\Omega = \{z \in \mathbb{C}: 0 < \arg z < \frac{2\pi}{n}\}$.
+
+\textbf{Solution:} We have already seen that on the cut-plane with the cut along any ray starting at $z_0 = 0$ (including $z_0 = 0$) every branch of this function is single-valued and continuous. Let us prove that it is differentiable and find the derivative.
+$\frac{f(z) - f(z_0)}{z-z_0} = \frac{(f(z))^n - (f(z_0))^n}{z-z_0} = \frac{1}{\frac{z-z_0}{(f(z))^n - (f(z_0))^n}} = \frac{1}{(f(z))^{n-1} + (f(z))^{n-2}f(z_0) + ... + (f(z_0))^{n-1}} = \frac{1}{(\sqrt[n]{z})^{n-1} + (\sqrt[n]{z})^{n-2}\sqrt[n]{z_0} + ... + (\sqrt[n]{z_0})^{n-1}}$
+Now we pass to the limit as $z$ tends to $z_0$ and obtain $\lim_{z\to z_0}\frac{f(z) - f(z_0)}{z-z_0} = \frac{1}{n(\sqrt[n]{z_0})^{n-1}}$
+$\implies f$ is differentiable and $( \sqrt[n]{z})' = \frac{1}{n(\sqrt[n]{z})^{n-1}}$
+\end{example}
+
+In many problems in hydrodynamics, the elasticity theory and other fields there is often a need to recreate an analytic function from its real part. Now we will find the set of functions for which it is possible. Our subject is:
+\textbf{Harmonic functions.}
+
+\begin{definition}
+The real function $u(x,y)$ is called \emph{harmonic} on a domain $\Omega$ if it is continuous on $\Omega$ with continuous partial derivatives of the first and second order $\{\frac{\partial u}{\partial x}, \frac{\partial u}{\partial y}, \frac{\partial^2 u}{\partial x^2}, \frac{\partial^2 u}{\partial y^2}, \frac{\partial^2 u}{\partial x \partial y}, \frac{\partial^2 u}{\partial y \partial x}\}$, and the following equation, called the \emph{Laplace} equation holds:
+$\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = 0$
+\end{definition}
+
+\begin{example}
+The function $u(x,y) = x^2 - y^2$ is harmonic for every $(x,y) \in \mathbb{R}^2$.
+
+\textbf{Solution:} $u(x,y)$ is defined everywhere, and we have:
+$\frac{\partial u}{\partial x} = 2x$, $\frac{\partial u}{\partial y} = -2y$, $\frac{\partial^2 u}{\partial x^2} = 2$, $\frac{\partial^2 u}{\partial y^2} = -2$, $\frac{\partial^2 u}{\partial x \partial y} = \frac{\partial^2 u}{\partial y \partial x} = 0$.
+All partial derivatives are continuous everywhere, and $\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = 2 + (-2) = 0$.
+\end{example}
+
+\begin{example}
+The function $u(x,y) = e^{xy}$ is not a harmonic function on $\mathbb{R}^2$.
+
+\textbf{Solution:} $u(x,y)$ is defined everywhere on $\mathbb{R}^2$.
+$\frac{\partial u}{\partial x} = ye^{xy}$, $\frac{\partial u}{\partial y} = xe^{xy}$, $\frac{\partial^2 u}{\partial x^2} = y^2e^{xy}$, $\frac{\partial^2 u}{\partial y^2} = x^2e^{xy}$,
+$\frac{\partial^2 u}{\partial x \partial y} = e^{xy} + yxe^{xy}$, $\frac{\partial^2 u}{\partial y \partial x} = e^{xy} + xy e^{xy}$.
+All partial derivatives are defined and continuous for all $(x,y) \in \mathbb{R}^2$. However,
+$\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = y^2e^{xy} + x^2e^{xy} = e^{xy}(x^2 + y^2) \neq 0$ except for $(0,0) \implies u(x,y)$ is not a harmonic function on $\mathbb{R}^2$.
+\end{example}
+
+\begin{proposition}
+If the function $f(z) = u(x,y) + iv(x,y)$ is analytic on a domain $\Omega$, then $u(x,y)$ and $v(x,y)$ are harmonic on $\Omega$.
+\end{proposition}
+
+\begin{proof}
+By CR equations $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$ and $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$ (since $f$ is analytic). Let us differentiate the first equation with respect to $x$ and the second with respect to $y$:
+$\frac{\partial^2 u}{\partial x^2} = \frac{\partial^2 v}{\partial y \partial x}$, $\frac{\partial^2 u}{\partial y^2} = -\frac{\partial^2 v}{\partial x \partial y}$.
+Since $f$ is analytic, $u$ and $v$ are continuously differentiable, thus from theory of real functions, we know that $\frac{\partial^2 v}{\partial y \partial x} = \frac{\partial^2 v}{\partial x \partial y}$.
+Therefore, if we add the equations $\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = \frac{\partial^2 v}{\partial y \partial x} - \frac{\partial^2 v}{\partial x \partial y} = \frac{\partial^2 v}{\partial x \partial y} - \frac{\partial^2 v}{\partial x \partial y} = 0$
+$\implies u$ is a harmonic function on $\Omega$.
+
+If we differentiate now $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$ with respect to $y$ and $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$ with respect to $x$, and use $\frac{\partial^2 u}{\partial x \partial y} = \frac{\partial^2 u}{\partial y \partial x}$ we will obtain that $v$ is also a harmonic function on $\Omega$.
+\end{proof}
+
+This proposition implies that in order to construct an analytic function we cannot choose the real and imaginary parts in an arbitrary way. The functions that we choose must be harmonic and, moreover, the CR equations must hold.
+
+\begin{definition}
+If $u(x,y)$ and $v(x,y)$ are harmonic functions on a domain $\Omega$ such that CR equations hold ($\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$, $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$), then the function $v(x,y)$ is called the \emph{harmonic conjugate} of the function $u(x,y)$ on a domain $\Omega$.
+\end{definition}
+
+\begin{proposition}
+The function $f(z) = u(x,y) + iv(x,y)$ is analytic in a domain $\Omega \iff v(x,y)$ is the harmonic conjugate of $u(x,y)$.
+\end{proposition}
+
+\begin{proof}
+$(\implies)$ Assume $f$ is analytic in a domain $\Omega$. By the previous proposition $u(x,y)$ and $v(x,y)$ are harmonic functions on $\Omega$. Since $f$ is analytic, CR equations hold, thus by the definition $v(x,y)$ is the harmonic conjugate of $u(x,y)$.
+
+$(\impliedby)$ If $u(x,y)$ and $v(x,y)$ are harmonic functions on a domain $\Omega$, then $u$ and $v$ are differentiable at all $z \in \Omega$. Since $v(x,y)$ is the harmonic conjugate of $u(x,y)$, by the definition - CR equations hold, thus a previous theorem asserts that $f$ is analytic in a domain $\Omega$.
+\end{proof}
+
+Thus, to conclude that we can reconstruct an analytic function from its real part we need to know whether it is always possible to find a harmonic conjugate to a given harmonic function. The answer is yes - it is given by the following proposition which we state without the proof.
+
+\begin{proposition}
+For any harmonic function $u(x,y)$ in a domain $\Omega$ there exists a function $v(x,y)$ in $\Omega$ which is the harmonic conjugate of $u(x,y)$.
+\end{proposition}
+
+The proof is by construction: one explicitly constructs the function $v(x,y)$. Since the proof involves somewhat complicated real analysis, we omit it.
+
+\begin{example}
+Find an analytic function $f(z) = u(x,y) + iv(x,y)$ such that $u(x,y) = \Rea f(z) = \arctan\frac{y}{x}$.
+
+\textbf{Solution:} Let us compute the partial derivatives and then use CR equations: Recall: $(\arctan x)' = \frac{1}{1+x^2}$
+$\frac{\partial u}{\partial x} = \frac{1}{1+(\frac{y}{x})^2} \cdot (-\frac{y}{x^2}) = -\frac{y}{x^2+y^2}$
+$\frac{\partial u}{\partial y} = \frac{1}{1+(\frac{y}{x})^2} \cdot \frac{1}{x} = \frac{x}{x^2+y^2}$
+$\implies \frac{\partial v}{\partial y} = -\frac{y}{x^2+y^2}$, $\frac{\partial v}{\partial x} = -\frac{x}{x^2+y^2}$ CR equations.
+
+To obtain $v(x,y)$ we integrate $\frac{\partial v}{\partial x}$ with respect to $x$ (or $\frac{\partial v}{\partial y}$ with respect to $y$).
+(A) $v(x,y) = \int \frac{\partial v}{\partial x} dx = \int -\frac{x}{x^2+y^2} dx = -\frac{1}{2}\ln(x^2 + y^2) + c(y)$
+Since the integral is with respect to $x$, the constant may depend on $y$ (only!). To find $c(y)$ we differentiate $v(x,y)$ in (A) with respect to $y$ and compare it to $\frac{\partial v}{\partial y}$ obtained from CR equations.
+$\frac{\partial v}{\partial y} = -\frac{y}{x^2+y^2} + c'(y) = -\frac{y}{x^2+y^2} \implies c'(y) = 0 \implies c = \text{constant} \in \mathbb{R}$
+$\implies v(x,y) = -\frac{1}{2}\ln(x^2 + y^2) + c$ and $f(z) = \arctan\frac{y}{x} - \frac{i}{2}[\ln(x^2 + y^2) + 2c]$
+\end{example}
+
+\section{Week 8: Lecture 16, Continued}
+
+\subsection{Taylor and Laurent Series}
+
+We investigate complex Taylor series and the generalizations of power series to include negative powers, called Laurent series. We are also going to discuss the relationship between these series and analytic functions. Let us start with some motivation. To motivate use of Taylor and Laurent series, we shall first present some examples related to the power series. Recall that:
+
+The Geometric series: For $|z| < 1$ $\sum_{n=0}^\infty z^n = \frac{1}{1-z}$ (converges absolutely)
+
+\begin{example}
+Determine the convergence or divergence of:
+1) $\sum_{n=0}^\infty (\frac{4+i}{6})^n$
+2) $\sum_{n=2}^\infty (\frac{4+i}{56})^n$
+3) $\sum_{n=0}^\infty (\frac{4+3i}{3})^n$
+
+\textbf{Solution:}
+Each of these series is a geometric series, so the convergence will be determined by whether the modulus of the general term is smaller or greater than 1.
+1) $|z| = |\frac{4+i}{6}| = \frac{|4+i|}{6} = \frac{\sqrt{4^2+1^2}}{6} = \frac{\sqrt{17}}{6} < 1 \implies$ converges absolutely to: $\sum_{n=0}^\infty (\frac{4+i}{6})^n = \frac{1}{1-\frac{4+i}{6}} = \frac{6}{6-4-i} = \frac{6}{2-i} = \frac{6(2+i)}{(2-i)(2+i)} = \frac{12+6i}{5} = \frac{12}{5} + i\frac{6}{5}$
+
+For the next series we may argue in the same manner to conclude the absolute convergence, but
+2) The sum starts at $n=2$! We use the following observation to determine the value of the sum.
+For $|z| < 1$: $\sum_{n=k}^\infty z^n = z^k \sum_{n=0}^\infty z^n = \frac{z^k}{1-z} = \frac{1}{1-z} - (1 + z + z^2 + ... + z^{k-1})$
+$\implies$ the series converges to:
+$\sum_{n=2}^\infty (\frac{4+i}{56})^n = \sum_{n=0}^\infty (\frac{4+i}{56})^n - (1 + \frac{4+i}{56}) = \frac{1}{1-\frac{4+i}{56}} - 1 - \frac{4+i}{56} = \frac{56}{52-i} - 1 - \frac{4+i}{56} = \frac{56^2 - (52-i)56 - (52-i)(4+i)}{56(52-i)} = \frac{3136-2912+56i-208-52i+4i-1}{56(52-i)} = \frac{207+4i}{2905-56i} = \frac{(207+4i)(2905+56i)}{(2905-56i)(2905+56i)} = \frac{601335+11592i+11620i-224}{2905^2+56^2} = \frac{601111}{8442161} + i\frac{23212}{8442161}$
+
+Finally, in the last example we have
+3) $|z| = |\frac{4+3i}{3}| = \frac{\sqrt{4^2+3^2}}{3} = \frac{5}{3} > 1 \implies$ the series diverges.
+\end{example}
+We have also studied.
+Power series centered at $z_0$: $\sum_{n=0}^\infty a_n(z-z_0)^n$, $a_n \in \mathbb{C}$.
+
+Now we can adjust the previous example to include a variable $z \in \mathbb{C}$, making the geometric series above into power series.
+
+\begin{example}
+For what values of $z$ does the power series $\sum_{n=0}^\infty (\frac{4+i}{6})^n(z-3)^n$ converge?
+
+\textbf{Solution:} In this case we are studying a power series centered at $z_0 = 3$. We can apply the Ratio Test and obtain:
+$\lim_{n\to\infty} |\frac{a_{n+1}(z-z_0)^{n+1}}{a_n(z-z_0)^n}| = \lim_{n\to\infty} |\frac{(\frac{4+i}{6})^{n+1}(z-3)^{n+1}}{(\frac{4+i}{6})^n(z-3)^n}| = \lim_{n\to\infty} |\frac{4+i}{6}(z-3)| = |\frac{4+i}{6}||z-3| = L$
+By Ratio Test: the series converges absolutely if $L < 1$ (diverges if $L > 1$) $\implies$ converges absolutely if $|z-3| < \frac{6}{\sqrt{17}}$.
+The radius of convergence of this power series is given by $R = \frac{1}{\lim_{n\to\infty} \sqrt[n]{|a_n|}} = \frac{6}{\sqrt{17}}$.
+\end{example}
+
+Another type of question we may encounter is one in which we are asked to determine the power series of a given function.
+
+\begin{example}
+Find the power series expansion of the function $f(z) = \frac{1}{2z-3}$ about the point $z_0 = 0$ and determine the radius of convergence.
+
+\textbf{Solution:} Observe that $f$ can be written in the form of a convergent geometric series as follows:
+$\frac{1}{2z-3} = -\frac{1}{3} \cdot \frac{1}{1-\frac{2z}{3}} = -\frac{1}{3} \sum_{n=0}^\infty (\frac{2z}{3})^n = -\frac{1}{3} \sum_{n=0}^\infty \frac{2^n}{3^n}z^n = \sum_{n=0}^\infty -\frac{2^n}{3^{n+1}}z^n$
+The series expansion is valid only if $|\frac{2z}{3}| < 1 \implies |z| < \frac{3}{2} \implies$ the radius of convergence of this series is $R = \frac{3}{2}$.
+\end{example}
+
+Some natural questions to pose at this point are: What happens if we asked to find the power series representation of a function $f$ that cannot be expressed as a geometric series? Is there a general method by which we can find the power series representation of an arbitrary function? How do we even know that a function admits a power series representation? Now we will partially answer these questions.
+
+\begin{theorem}[Taylor series]
+Let $f(z)$ be an analytic function on a domain $\Omega$, let $z=a \in \Omega$ be some point in $\Omega$. Assume that a circle $C$ of radius $r$ centered at $z=a$ is contained in $\Omega$.
+Then, there exists a unique power series with radius of convergence at least $r$ that converges to $f(z)$:
+$f(z) = \sum_{n=0}^\infty \frac{f^{(n)}(a)}{n!}(z-a)^n$, $|\frac{f^{(n)}(a)}{n!}| \leq M_n$, where $M$ is the maximum of $|f(z)|$ on the circle $|z-a| = r$:
+$M = \max_{|z-a|=r} |f(z)|$
+\end{theorem}
+The series on the right is called the Taylor series for $f$ at $a$.
+
+\begin{remark}
+For $a=0$ the series is called the Maclaurin series.
+Namely, $f$ is differentiable arbitrarily many times at $a$ and this is a unique representation of $f$ as power series on C.
+Note: we conclude that if $f$ is once differentiable, then can be written as power series, then we can deduce:
+By a previous proposition: $f'(z) = \sum_{n=1}^\infty \frac{f^{(n)}(a)}{(n-1)!}(z-a)^{n-1}$
+$f''(z) = \sum_{n=2}^\infty \frac{f^{(n)}(a)}{(n-2)!}(z-a)^{n-2}$, and so on for all $z \in \mathbb{C}$.
+\end{remark}
+
+\begin{remark}
+This is very different from the real case!
+In the real case a function can be differentiable once, but not twice:
+\end{remark}
+
+\begin{example}
+$f(x) = \begin{cases} x^2 & x \geq 0 \\ -x^2 & x \leq 0 \end{cases}$
+At $x=0$ $f$ is differentiable once, but not twice: $f'(x) = \begin{cases} 2x & x \geq 0 \\ -2x & x < 0 \end{cases} \implies f'(0) = 0$
+$f''(x) = \begin{cases} 2 & x \geq 0 \\ -2 & x < 0 \end{cases} \implies f''(0)$ does not exist!
+\end{example}
+Moreover, a real everywhere differentiable function need not be equal to its Taylor series!
+
+\begin{example}
+$f(x) = \begin{cases} e^{-1/x} & x > 0 \\ 0 & x \leq 0 \end{cases}$
+For all $n \geq 0$ $f^{(n)}(0) = 0 \implies$ its Taylor series must be:
+$0 + 0\cdot x + 0 \cdot x^2 + ... = 0$. But $f$ itself is not equal to its Taylor series.
+\end{example}
+
+Now let us see a couple of examples of Taylor series.
+
+\begin{example}
+We have seen: $e^z = \sum_{n=0}^\infty \frac{z^n}{n!}$ converges absolutely for all $z \in \mathbb{C} \implies$ the radius of convergence $R = \infty$ $\implies e^z$ is differentiable at all $z \in \mathbb{C}$ ($\implies$ entire) and $(e^z)' = e^z$ (a previous proposition).
+$\sum_{n=0}^\infty \frac{z^n}{n!}$ is Maclaurin series for $e^z$, namely Taylor series about $z_0 = 0$. By the theorem it is a unique representation of $e^z$ (about $z_0 = 0$) as power series.
+\end{example}
+
+\begin{example}
+Let $f(z) = \frac{1}{2z-3}$. What is the power series of $f$ about $z_0 = 2$?
+
+\textbf{Solution:} We need to find a Taylor series expansion of the form $\sum_{n=0}^\infty a_n(z-2)^n$. We could use the formula for the coefficients in the theorem to find this representation. Having the representation it is easy to find the radius of convergence. However, we do it differently - we represent this series as geometric series.
+Rewrite $f(z)$ as geometric series (about $z_0 = 2$!):
+$f(z) = \frac{1}{2z-3} = \frac{1}{2z-4+1} = \frac{1}{1+2(z-2)} = \frac{1}{1-(-2(z-2))} = \sum_{n=0}^\infty (-2(z-2))^n = \sum_{n=0}^\infty (-2)^n(z-2)^n$
+This series is absolutely convergent for $z$ satisfying $|2(z-2)| < 1 \iff |z-2| < \frac{1}{2} \implies R = \frac{1}{2}$. Thus, the function $f(z)$ is represented by this series on the disc of convergence given by $D = \{z \in \mathbb{C}: |z-2| < \frac{1}{2}\}$.
+\end{example}
+
+\begin{remark}
+Note: $f(z) = \frac{1}{2z-3}$ is undefined at $z = \frac{3}{2} \implies$ the series and the function only agree up to, but not including $\partial D$ - the boundary of the disc $D$: $\partial D = \{z \in \mathbb{C}: |z-2| = \frac{1}{2}\}$.
+\end{remark}
+
+\section{Week 7: Lectures 17+18}
+
+Our next subject is another series. We have seen that the Taylor series exists for functions that are analytic (holomorphic) on discs. But analytic functions on certain other types of regions also may have series representations.
+
+\subsection{Laurent Series}
+
+\begin{example}
+Let $f(z) = \frac{1}{1-z}$. We have a power series for $|z| < 1$:
+$f(z) = \sum_{n=0}^\infty z^n$ (geometric series). What can we do for $|z| > 1$?
+In this case $|\frac{1}{z}| < 1$, so we can try to form a series in $\frac{1}{z}$:
+$\frac{1}{1-z} = \frac{1}{\frac{1}{z}-1} \cdot \frac{1}{z} = -\frac{1}{z} \cdot \frac{1}{1-\frac{1}{z}} = -\frac{1}{z} \sum_{n=0}^\infty (\frac{1}{z})^n = -\sum_{n=0}^\infty \frac{1}{z^{n+1}} = -\sum_{n=1}^\infty z^{-n}$
+This series is absolutely convergent for all $|z| > 1$, but divergent for all $|z| < 1$.
+\end{example}
+
+\begin{definition}
+Let $A$ be an annulus centered at $z = z_0$ with inner radius $R_1$, outer radius $R_2$, $0 \leq R_1 < R_2 \leq \infty$: $A = \{z \in \mathbb{C}: R_1 < |z-z_0| < R_2\}$.
+A series given by $\sum_{n=0}^\infty a_n(z-z_0)^n + \sum_{n=1}^\infty b_n(z-z_0)^{-n}$, $a_n, b_n \in \mathbb{C}$ converging to $f(z)$ at every $z \in A$ is called the \emph{Laurent series} for $f$ on $A$.
+\end{definition}
+
+\begin{remark}
+Note: $\sum_{n=0}^\infty a_n(z-z_0)^n$ converges for all $|z-z_0| < R_2$ and $\sum_{n=1}^\infty b_n(z-z_0)^{-n}$ converges for all $|z-z_0| > R_1$. Therefore, we see that this series is an analytic function in its annulus of convergence. Now the question is whether any analytic function on some annulus can be represented as a Laurent series. The answer is yes:
+\end{remark}
+
+\begin{theorem}[Laurent series]
+If $f(z)$ is analytic on the annulus $A$ centered at $z_0$: $R_1 < |z-z_0| < R_2$, then $f(z)$ has a unique Laurent series expansion converging absolutely to $f(z)$ at every $z \in A$
+$f(z) = \sum_{n=0}^\infty a_n(z-z_0)^n + \sum_{n=1}^\infty b_n(z-z_0)^{-n}$, $a_n, b_n \in \mathbb{C}$ $\forall n$.
+\end{theorem}
+
+\begin{remark}
+We sometimes write $\sum_{n=-\infty}^\infty a_n(z-z_0)^n$ to denote the Laurent series, however: be careful to remember that this denotes the sum of two series.
+There exist formulae for the coefficients, but we will not use them. Usually we will represent the function as a sum or a product of two functions and then expand each into series in the domain of its absolute convergence. Let us see some examples.
+\end{remark}
+
+\begin{example}
+By definition: $e^{1/z} = \sum_{n=0}^\infty \frac{1}{n!}z^{-n}$ on $A = \{z \in \mathbb{C}: 0 < |z| < \infty\}$
+$\implies$ this is Laurent series by uniqueness. Let $f(z) = e^{z + \frac{1}{z}} = e^z e^{\frac{1}{z}}$
+$\implies e^{z + \frac{1}{z}} = (1 + z + \frac{z^2}{2!} + ...) (1 + \frac{1}{z} + \frac{1}{2!z^2} + \frac{1}{3!z^3} + ...)$
+After opening of the brackets and combining similar terms, we obtain the formula for the Laurent coefficients.
+$a_n = b_n = \sum_{k=0}^\infty \frac{1}{(n+k)!k!}$
+$\implies f(z) = e^{z + \frac{1}{z}} = \sum_{n=0}^\infty (\sum_{k=0}^\infty \frac{1}{(n+k)!k!})z^n + \sum_{n=1}^\infty (\sum_{k=0}^\infty \frac{1}{(n+k)!k!})z^{-n}$ on A.
+\end{example}
+
+\begin{example}
+What is the Laurent series of $f(z) = \frac{1}{(z-1)(z-2)}$ on the annulus $A = \{z \in \mathbb{C}: 1 < |z| < 2\}$?
+
+\textbf{Solution:} First, we write $f$ as a sum of 2 functions using a partial fraction expansion:
+(4) $\frac{1}{(z-1)(z-2)} = \frac{1}{z-2} - \frac{1}{z-1} = -\frac{1}{2} \cdot \frac{1}{1-\frac{z}{2}} - \frac{1}{z} \cdot \frac{1}{1-\frac{1}{z}} = -\frac{1}{2} \sum_{n=0}^\infty (\frac{z}{2})^n - \frac{1}{z} \sum_{n=0}^\infty (\frac{1}{z})^n$ = the Laurent series.
+
+Note: The first sum $\sum_{n=0}^\infty (\frac{z}{2})^n$ exists only if $|\frac{z}{2}| < 1 \iff |z| < 2$.
+The second sum $\sum_{n=0}^\infty z^{-n}$ exists only if $|\frac{1}{z}| < 1 \iff |z| > 1$.
+Thus, (4) is valid only on the annular region $1 < |z| < 2$.
+\end{example}
+
+\begin{example}
+Obtain the series expansion for $f(z) = \frac{1}{z^2 + 4}$ valid in the region $|z-2i| > 4$.
+
+The region here is a domain: the exterior of the circle centered at $(0, 2i)$ of radius 4.
+We want a series expansion about $z_0 = 2i$. To do this we make a substitution.
+Set $w = z-2i$ and look for the expansion in $w$, where $|w| > 4$. To make the series expansion easier we manipulate again $f(z)$ into a form similar to the series expansion for $\frac{1}{1-z}$. We get:
+$f(z) = \frac{1}{z^2+4} = \frac{1}{(z-2i)(z+2i)} = \frac{1}{w(w+4i)} = \frac{1}{4iw(1+\frac{w}{4i})} = \frac{1}{4iw(1-(-\frac{w}{4i}))}$
+Now we use standard geometric series and compute:
+$\frac{1}{4iw(1-(-\frac{w}{4i}))} = \frac{1}{4iw} \sum_{n=0}^\infty (-\frac{w}{4i})^n$ $|w| < 4$
+$\frac{1}{4iw(1-(-\frac{w}{4i}))} = \frac{1}{4iw} \sum_{n=0}^\infty (-\frac{4i}{w})^n$ $|w| > 4$
+\end{example}
+We require the expansion for $|w| > 4$:
+$f(z) = -\sum_{n=0}^\infty \frac{(-1)^n 4^n}{(4i)^{n+1}w^n} = -\sum_{n=0}^\infty \frac{(-1)^n 4^n}{(4i)^{n+1}(z-2i)^n} = -\sum_{n=2}^\infty \frac{(-1)^n 4^{n-2}}{(4i)^{n-1}(z-2i)^{n-2}}$
+
+Now we substitute back $z-2i = w$: $f(z) = -\sum_{n=2}^\infty \frac{(-1)^n 4^{n-2}}{(4i)^{n-1}(z-2i)^{n-2}}$, $|z-2i| > 4$.
+
+Now we are going to study one of the important transformations, the simplest after the linear and the inverse transformations, the Möbius transformation. First, let us briefly go over linear transformations.
+
+\begin{definition}
+Function of the form $w = az + b$, $a, b \in \mathbb{C}$, $a \neq 0$, is called the \emph{linear function} (linear transformation).
+\end{definition}
+
+There are 3 important special cases of this transformation.
+\begin{enumerate}
+    \item \textbf{Translation}: $w = z + b$
+\end{enumerate}
+Since the addition of complex numbers obeys the rules of addition of vectors we get the point $w$ by moving the point $z$ in direction of the vector $b$ to the distance that equals to the length of $b$. Obviously, the whole domain $\Omega$ after application of $w$ is moved by vector $b$.
+
+\begin{example}
+For $w = z+1$: the whole domain is moved by 1 to the right parallel to x-axis.
+$w = z-2i$ - the whole domain is moved by 2 down parallel to y-axis.
+$w = z-1+2i$ - the whole domain is moved to the direction of the vector $-1+2i$ and by distance $\sqrt{5}$.
+\end{example}
+
+\begin{enumerate}
+    \setcounter{enumi}{1}
+    \item \textbf{Rotation}: $w = e^{i\alpha}z$, $\alpha \in \mathbb{R}$ (!) constant: $|w| = |z|$, $\arg w = \alpha + \arg z$. Namely, $z$ is moved to the point $w$ by rotation of the vector $z$ around the origin by angle $\alpha$.
+    \item \textbf{Expansion}: $w = r \cdot z$, $r > 0$: $|w| = r|z|$, $\arg w = \arg z$.
+\end{enumerate}
+The point $z$ goes to the point $w$ that is on the line connecting $z$ with the origin by distance multiplied by $r$.
+Contraction if $0 < r < 1$, Dilatation if $r > 1$.
+
+\begin{example}
+Points on the circle $|z| = 2$ under $w = 3z$ pass to the points on the circle $|w| = 6$.
+\end{example}
+
+The general case of a linear transformation $w = az + b$, where $a = re^{i\alpha}$, $r, \alpha \in \mathbb{R}$, is obtained by first rotation around origin by an angle $\alpha$, then expansion by $r$, and then translation by $b$.
+
+\begin{definition}
+A transformation of the form $w = \frac{az+b}{cz+d}$, $ad-bc \neq 0$, $a,b,c,d \in \mathbb{C}$ are constants, is called the \emph{Möbius transformation} (or Bilinear transformation, or Linear Fractional transformation).
+\end{definition}
+
+Derivative: $w' = \frac{ad-bc}{(cz+d)^2}$. The condition $ad-bc \neq 0$ guarantees that $w' \neq 0$. In case that $ad-bc = 0$ the function is constant.
+
+The inverse of $w$: $z = \frac{-dw+b}{cw-a}$: eliminate $z$ from $w$:
+$w(cz+d) = az+b \implies wcz + wd = az+b \implies z(wc-a) = b-wd$
+$\implies$ The inverse of a Möbius transformation is again Möbius transformation. If correspond $z = -\frac{d}{c}$ to $w = \infty$ and $z = \infty$ to $w = \frac{a}{c}$ the Möbius transformation maps $\mathbb{C} \cup \{\infty\}$ to itself and it is one to one (namely, it is bijection from $\mathbb{C} \cup \{\infty\}$ to itself).
+
+\begin{proposition}
+Möbius transformations send lines and circles to lines and circles.
+\end{proposition}
+
+\begin{example}
+Find the Möbius transformation that sends $z_1 = 1 \to -1 = w_1$, $z_2 = 0 \to -i = w_2$, $z_3 = i \to 1 = w_3$.
+
+\textbf{Solution:} Let us plug the values of $z_i$ and $w_i$ and get:
+$-i = \frac{a+b}{c+d}$, $-i = \frac{b}{d}$, $1 = \frac{ai+b}{ci+d}$
+We have 3 equations with 4 variables. We compute a, b, c via d. The second equation gives:
+$-i = \frac{b}{d} \implies b = -id \implies \begin{cases} -ci-di = a-d \\ ci+d = ai-d \end{cases} \implies \begin{cases} -ci-di = a-d & (1) \\ ci+d = ai-d & (3) \end{cases} \implies a = (1-2i)d$
+(1) and (3) $\implies c = d$
+$\implies w = \frac{(1-2i)dz-d}{dz+d} = \frac{(1-2i)z-1}{z+1}$, $d \neq 0$
+\end{example}
+
+\begin{example}
+Find the image of the upper-half circle $D = \{z \in \mathbb{C}: |z| < 1, \Ima z > 0\}$ under the Möbius transformation $w = \frac{i-z}{1+z}$.
+
+\textbf{Solution:} First, let us see what is the image of the boundary of the upper half circle under this transformation.
+The boundary contains two parts: the interval AB and the half circle BCA: $\partial D = AB \cup BCA$
+First we find the image of AB.
+Since the Möbius transformation maps a line either to a line or to circle it suffices to find an image of any 3 points on the boundary, since line and circle both uniquely determined by 3 points. Choose: $z_1 = -1$, $z_2 = 0$, $z_3 = 1$.
+The direction of AB is from A to B, namely from $z_1$ to $z_3$, the direction on the w-plane will be from $w_1$ to $w_3$.
+For $z_1 = -1 \implies w_1 = \infty$; $z_2 = 0 \implies w_2 = i$; $z_3 = 1 \implies w_3 = 0$
+$\implies$ The interval AB is mapped to the upper half of the y-axis with direction from infinity to zero.
+
+Let us study the image of the upper half of the unit circle BCA. The images of A and B will be $w_1$ and $w_3$ respectively. Let us find the image of the point $C = z_4 = i$
+$C = z_4 = i \implies w_4 = \frac{1+i}{1+i} = 1$
+Namely, the points B, C, A on the circle are mapped to the points $w_1, w_3, w_4$ (respectively) that are (all) on the positive half of the real axis in direction from the origin to $\infty$.
+
+Conclusion: the boundary in the w-plane is the positive half of the v-axis and the positive half of the u-axis, thus D is mapped either to a first quadrant or to the plane without the first quadrant (since they both have the same boundary) To see to which one we need to understand where to the interior points of this upper half circle are mapped, since the interior points in the z-plane are mapped to interior points in the w-plane. Let us take some interior point.
+Take $z = \frac{1}{2}i \in D \implies w = \frac{1+\frac{1}{2}i}{1+\frac{1}{2}i} = \frac{(1+\frac{1}{2}i)(1-\frac{1}{2}i)}{(1+\frac{1}{2}i)(1-\frac{1}{2}i)} = \frac{1+\frac{1}{4}}{\frac{5}{4}} = \frac{3}{5} + i\frac{4}{5} \in$ I-st quadrant since $x,y > 0$
+$\implies$ the image = $\{w: 0 < \arg w < \frac{\pi}{2}\}$, namely the first quadrant of the w-plane.
+\end{example}
+
+\begin{example}
+Find the Möbius transformation sending $-1 \to i$, $0 \to 1$, $1 \to -i$.
+
+\textbf{Solution:} Let us plug the values to get:
+1) $i = \frac{-a+b}{-c+d}$
+2) $1 = \frac{b}{d}$
+3) $-i = \frac{a+b}{c+d}$
+From 2) $b=d$ (thus we can eliminate the other variables in the remaining equations)
+$\begin{cases} -ci+bi = -a+b \\ -ci-bi = a+b \end{cases} \implies \begin{cases} a = -bi \\ c = bi \end{cases} \implies w = \frac{-ibz+b}{ibz+b} = \frac{-iz+1}{iz+1} = \frac{z-i}{z+i}$
+
+Check: Under $w$: the real axis $\mathbb{R}$ is mapped to the unit circle ($\mathbb{R}_+$ to the lower half, $\mathbb{R}_-$ to the upper half). The upper half of the z-plane is mapped to the exterior of this circle (first quadrant - lower exterior, second quadrant - upper one).
+\end{example}
+
+Harder exercise: Prove: Given any 3 distinct points $z_1, z_2, z_3$ in the z-plane and any 3 points $w_1, w_2, w_3$, there exists a Möbius transformation sending $z_j \to w_j$; for each $j=1,2,3$. This transformation is unique if we specify an orientation for the curve containing the 3 given points (or for the curve containing the prescribed points, but not both).
+
+\section{Week 5: Lecture 13, Continued}
+
+\subsection{Complex Sequences, Continued}
+
+\begin{example}
+Let $z_n = (\frac{i}{n})^n$, $n \in \mathbb{N}$. Then:
+$z_0 = 1$, $z_1 = \frac{i}{1} = i$, $z_2 = \frac{i^2}{2^2} = -\frac{1}{4}$, $z_3 = \frac{i^3}{3^3} = -\frac{i}{27}$, $z_4 = \frac{i^4}{4^4} = \frac{1}{256}$, ...
+This sequence converges to 0: $\lim_{n\to\infty} z_n = 0$. Can be demonstrated by proving that $|z_n|$ decreases "to" 0 as $n$ tends to infinity.
+Check: By graphing the points $z_n$ check that the sequence $\{z_n\}$ "spirals" in toward the origin (0) in the z-plane.
+\end{example}
+\section{Week 9: Lectures 17+18, Continued}
+
+them. Usually we will represent the function as a sum or a product of two functions and then expand each into series in the domain of its absolute convergence. Let us see some examples.
+
+\begin{example}
+By definition: $e^{1/z} = \sum_{n=0}^\infty \frac{1}{n!}(\frac{1}{z})^n = \sum_{n=0}^\infty \frac{1}{n!}z^{-n}$ on $A = \{z \in \mathbb{C}: 0 < |z| < \infty\}$
+$\implies$ this is Laurent series by uniqueness. Let $f(z) = e^{z + \frac{1}{z}} = e^z e^{\frac{1}{z}}$
+$\implies e^{z + \frac{1}{z}} = (1 + z + \frac{z^2}{2!} + ...) (1 + \frac{1}{z} + \frac{1}{2!z^2} + \frac{1}{3!z^3} + ...)$
+After opening of the brackets and combining similar terms, we obtain the formula for the Laurent coefficients.
+$a_n = b_n = \sum_{k=0}^\infty \frac{1}{(n+k)!k!}$
+$\implies f(z) = e^{z + \frac{1}{z}} = \sum_{n=0}^\infty (\sum_{k=0}^\infty \frac{1}{(n+k)!k!})z^n + \sum_{n=1}^\infty (\sum_{k=0}^\infty \frac{1}{(n+k)!k!})z^{-n}$ on A.
+\end{example}
+
+\begin{example}
+What is the Laurent series of $f(z) = \frac{1}{(z-1)(z-2)}$ on the annulus $A = \{z \in \mathbb{C}: 1 < |z| < 2\}$?
+
+\textbf{Solution:} First, we write $f$ as a sum of 2 functions using a partial fraction expansion:
+(4) $\frac{1}{(z-1)(z-2)} = \frac{1}{z-2} - \frac{1}{z-1} = -\frac{1}{2} \cdot \frac{1}{1-\frac{z}{2}} - \frac{1}{z} \cdot \frac{1}{1-\frac{1}{z}} = -\frac{1}{2} \sum_{n=0}^\infty (\frac{z}{2})^n - \frac{1}{z} \sum_{n=0}^\infty (\frac{1}{z})^n$ = the Laurent series.
+
+Note: The first sum $\sum_{n=0}^\infty (\frac{z}{2})^n$ exists only if $|\frac{z}{2}| < 1 \iff |z| < 2$.
+The second sum $\sum_{n=0}^\infty z^{-n}$ exists only if $|\frac{1}{z}| < 1 \iff |z| > 1$.
+Thus, (4) is valid only on the annular region $1 < |z| < 2$.
+\end{example}
+
+\begin{example}
+Obtain the series expansion for $f(z) = \frac{1}{z^2 + 4}$ valid in the region $|z-2i| > 4$.
+
+The region here is a domain: the exterior of the circle centered at $(0, 2i)$ of radius 4.
+We want a series expansion about $z_0 = 2i$. To do this we make a substitution.
+Set $w = z-2i$ and look for the expansion in $w$, where $|w| > 4$. To make the series expansion easier we manipulate again $f(z)$ into a form similar to the series expansion for $\frac{1}{1-z}$. We get:
+$f(z) = \frac{1}{z^2+4} = \frac{1}{(z-2i)(z+2i)} = \frac{1}{w(w+4i)} = \frac{1}{4iw(1+\frac{w}{4i})} = \frac{1}{4iw(1-(-\frac{w}{4i}))}$
+Now we use standard geometric series and compute:
+$\frac{1}{4iw(1-(-\frac{w}{4i}))} = \frac{1}{4iw} \sum_{n=0}^\infty (-\frac{w}{4i})^n$ $|w| < 4$
+$\frac{1}{4iw(1-(-\frac{w}{4i}))} = \frac{1}{4iw} \sum_{n=0}^\infty (-\frac{4i}{w})^n$ $|w| > 4$
+\end{example}
+We require the expansion for $|w| > 4$:
+$f(z) = \frac{1}{w(w+4i)} = \frac{1}{4iw} \frac{1}{(1-(-\frac{w}{4i}))} = \frac{1}{4iw} \sum_{n=0}^\infty (-\frac{4i}{w})^n = \sum_{n=0}^\infty \frac{(-1)^n(4i)^n}{4iw^{n+1}} = \sum_{n=0}^\infty \frac{(-1)^n(4i)^{n-1}}{w^{n+1}} = \sum_{n=1}^\infty \frac{(-1)^{n-1}(4i)^{n-2}}{w^n}$
+Now we substitute back $z-2i = w$: $f(z) =  \sum_{n=1}^\infty \frac{(-1)^{n-1}4^{n-1}i^{n-2}}{(z-2i)^n}, |z-2i|>4$
+
+\section{Week 9: Lectures 17+18, Continued}
+\subsection{Mobius Transformations}
+Now we are going to study one of the important transformations, the simplest after the linear and the inverse transformations, the Möbius transformation. First, let us briefly go over linear transformations.
+
+\begin{definition}
+Function of the form $w = az + b$, $a, b \in \mathbb{C}$, $a \neq 0$, is called the \emph{linear function} (linear transformation).
+\end{definition}
+
+There are 3 important special cases of this transformation.
+\begin{enumerate}
+    \item \textbf{Translation}: $w = z + b$
+\end{enumerate}
+Since the addition of complex numbers obeys the rules of addition of vectors we get the point $w$ by moving the point $z$ in direction of the vector $b$ to the distance that equals to the length of $b$. Obviously, the whole domain $\Omega$ after application of $w$ is moved by vector $b$.
+
+\begin{example}
+For $w = z+1$: the whole domain is moved by 1 to the right parallel to x-axis.
+$w = z-2i$ - the whole domain is moved by 2 down parallel to y-axis.
+$w = z-1+2i$ - the whole domain is moved to the direction of the vector $-1+2i$ and by distance $\sqrt{5}$.
+\end{example}
+
+\begin{enumerate}
+    \setcounter{enumi}{1}
+    \item \textbf{Rotation}: $w = e^{i\alpha}z$, $\alpha \in \mathbb{R}$ (!) constant: $|w| = |z|$, $\arg w = \alpha + \arg z$. Namely, $z$ is moved to the point $w$ by rotation of the vector $z$ around the origin by angle $\alpha$.
+    \item \textbf{Expansion}: $w = r \cdot z$, $r > 0$: $|w| = r|z|$, $\arg w = \arg z$.
+\end{enumerate}
+The point $z$ goes to the point $w$ that is on the line connecting $z$ with the origin by distance multiplied by $r$.
+Contraction if $0 < r < 1$, Dilatation if $r > 1$.
+
+\begin{example}
+Points on the circle $|z| = 2$ under $w = 3z$ pass to the points on the circle $|w| = 6$.
+\end{example}
+
+The general case of a linear transformation $w = az + b$, where $a = re^{i\alpha}$, $r, \alpha \in \mathbb{R}$, is obtained by first rotation around origin by an angle $\alpha$, then expansion by $r$, and then translation by $b$.
+
+\begin{definition}
+A transformation of the form $w = \frac{az+b}{cz+d}$, $ad-bc \neq 0$, $a,b,c,d \in \mathbb{C}$ are constants, is called the \emph{Möbius transformation} (or Bilinear transformation, or Linear Fractional transformation).
+\end{definition}
+
+Derivative: $w' = \frac{ad-bc}{(cz+d)^2}$. The condition $ad-bc \neq 0$ guarantees that $w' \neq 0$. In case that $ad-bc = 0$ the function is constant.
+
+The inverse of $w$: $z = \frac{-dw+b}{cw-a}$: eliminate $z$ from $w$:
+$w(cz+d) = az+b \implies wcz + wd = az+b \implies z(wc-a) = b-wd \implies z = \frac{-dw+b}{cw-a}$
+$\implies$ The inverse of a Möbius transformation is again Möbius transformation. If correspond $z = -\frac{d}{c}$ to $w = \infty$ and $z = \infty$ to $w = \frac{a}{c}$ the Möbius transformation maps $\mathbb{C} \cup \{\infty\}$ to itself and it is one to one (namely, it is bijection from $\mathbb{C} \cup \{\infty\}$ to itself).
+
+\begin{proposition}
+Möbius transformations send lines and circles to lines and circles.
+\end{proposition}
+
+\begin{example}
+Find the Möbius transformation that sends $z_1 = 1 \to -1 = w_1$, $z_2 = 0 \to -i = w_2$, $z_3 = i \to 1 = w_3$.
+
+\textbf{Solution:} Let us plug the values of $z_i$ and $w_i$ and get:
+$-1 = \frac{a+b}{c+d}$, $-i = \frac{b}{d}$, $1 = \frac{ai+b}{ci+d}$
+We have 3 equations with 4 variables. We compute a, b, c via d. The second equation gives:
+$-i = \frac{b}{d} \implies b = -id \implies \begin{cases} -c-d = a+b & (1)\\ -ci = a+b & (2) \\ ci+d = ai+b & (3) \end{cases}  \implies a = (1-2i)d$
+(1) and (3) $\implies c = d$
+$\implies w = \frac{(1-2i)dz-d}{dz+d} = \frac{(1-2i)z-1}{z+1}$, $d \neq 0$
+\end{example}
+
+\begin{example}
+Find the image of the upper-half circle $D = \{z \in \mathbb{C}: |z| < 1, \Ima z > 0\}$ under the Möbius transformation $w = \frac{i-z}{1+z}$.
+
+\textbf{Solution:} First, let us see what is the image of the boundary of the upper half circle under this transformation.
+The boundary contains two parts: the interval AB and the half circle BCA: $\partial D = AB \cup BCA$
+First we find the image of AB.
+Since the Möbius transformation maps a line either to a line or to circle it suffices to find an image of any 3 points on the boundary, since line and circle both uniquely determined by 3 points. Choose: $z_1 = -1$, $z_2 = 0$, $z_3 = 1$.
+The direction of AB is from A to B, namely from $z_1$ to $z_3$, the direction on the w-plane will be from $w_1$ to $w_3$.
+For $z_1 = -1 \implies w_1 = \infty$; $z_2 = 0 \implies w_2 = i$; $z_3 = 1 \implies w_3 = 0$
+$\implies$ The interval AB is mapped to the upper half of the y-axis with direction from infinity to zero.
+
+Let us study the image of the upper half of the unit circle BCA. The images of A and B will be $w_1$ and $w_3$ respectively. Let us find the image of the point $C = z_4 = i$
+$C = z_4 = i \implies w_4 = \frac{i-i}{1+i} = 0$
+Namely, the points B, C, A on the circle are mapped to the points $w_2, w_4, w_1$ (respectively) that are (all) on the positive half of the real axis in direction from the origin to $\infty$.
+
+Conclusion: the boundary in the w-plane is the positive half of the v-axis and the positive half of the u-axis, thus D is mapped either to a first quadrant or to the plane without the first quadrant (since they both have the same boundary) To see to which one we need to understand where to the interior points of this upper half circle are mapped, since the interior points in the z-plane are mapped to interior points in the w-plane. Let us take some interior point.
+Take $z = \frac{1}{2}i \in D \implies w = \frac{i-\frac{1}{2}i}{1+\frac{1}{2}i} = \frac{\frac{1}{2}i}{\frac{2+i}{2}} = \frac{i}{2+i}\cdot\frac{2-i}{2-i} = \frac{2i-i^2}{5} = \frac{1+2i}{5} = \frac{1}{5} + i\frac{2}{5} \in$ I-st quadrant since $x,y > 0$
+$\implies$ the image = $\{w: 0 < \arg w < \frac{\pi}{2}\}$, namely the first quadrant of the w-plane.
+\end{example}
+
+\begin{example}
+Find the Möbius transformation sending $-1 \to i$, $0 \to 1$, $1 \to -i$.
+
+\textbf{Solution:} Let us plug the values to get:
+1) $i = \frac{-a+b}{-c+d}$
+2) $1 = \frac{b}{d}$
+3) $-i = \frac{a+b}{c+d}$
+From 2) $b=d$ (thus we can eliminate the other variables in the remaining equations)
+$\begin{cases} -ci+bi = -a+b \\ -ci-bi = a+b \end{cases} \implies \begin{cases} a = -bi \\ c = bi \end{cases} \implies w = \frac{-ibz+b}{ibz+b} = \frac{-iz+1}{iz+1} = \frac{1-iz}{1+iz}$
+
+Check: Under $w$: the real axis $\mathbb{R}$ is mapped to the unit circle ($\mathbb{R}_+$ to the lower half, $\mathbb{R}_-$ to the upper half). The upper half of the z-plane is mapped to the exterior of this circle (first quadrant - lower exterior, second quadrant - upper one).
+\end{example}
+
+Harder exercise: Prove: Given any 3 distinct points $z_1, z_2, z_3$ in the z-plane and any 3 points $w_1, w_2, w_3$, there exists a Möbius transformation sending $z_j \to w_j$; for each $j=1,2,3$. This transformation is unique if we specify an orientation for the curve containing the 3 given points (or for the curve containing the prescribed points, but not both).
+\end{document}
