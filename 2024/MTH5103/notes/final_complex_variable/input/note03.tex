@@ -43,6 +43,8 @@ We have proved:
 
 We extend the definition of limit to include the point at $\infty$:
 
+\subsection{Limits at infinity}
+
 \begin{definition}\label{definition:3.2}
     We say that $\lim_{z \to \infty} f(z) = w_0$ if for any (given) $\epsilon > 0$ there exists $R = R(\epsilon) > 0$ such that for any $|z| > R$, $|f(z) - w_0| < \epsilon$.
 \end{definition}
@@ -90,6 +92,8 @@ Our next subject is continuity of complex functions. First, we need several defi
 
 \section{Sets in $\mathbb{C}$}
 
+\subsection{Open sets, connectedness, and domains}
+
 \begin{definition}\label{definition:4.1}
      A subset $S \subseteq \mathbb{C}$ is open if for each $z_0 \in S$ there exists $r > 0$ such that the disc $\{z \in \mathbb{C} | |z - z_0| < r\} \subseteq S$ is a subset of $S$.
 \end{definition}
@@ -123,6 +127,8 @@ Our next subject is continuity of complex functions. First, we need several defi
     - it is a union of 2 non-empty disjoint open sets.
 \end{example}
 
+\subsection{Interior, boundary, and closed sets}
+
 \begin{definition} \label{definition:4.4} Let $S \subseteq \mathbb{C}$. $z_0 \in S$ is an interior point of $S$ if there exists $r > 0$ such that the disc $\{z \in \mathbb{C} | |z - z_0| < r\} \subseteq S$. $z_1 \in S$ is a boundary point of $S$ if every open disc around it, $\{z \in \mathbb{C} | |z - z_1| < r\}$ for any $r > 0$ contains points from $S$ and not from $S$ ($\mathbb{C} \setminus S$). The collection of boundary points of $S$ is called the boundary of $S$ and denoted by $\partial S$.
 \end{definition}
 
@@ -155,12 +161,17 @@ Let $S \subseteq \mathbb{C}$ be an open set. If we add to $S$ all its boundary p
     \end{enumerate}
 \end{example}
 
+\subsection{Neighborhoods}
+
 \begin{definition} \label{definition:4.6} A collection of all the points $z \in \mathbb{C}$ that are on the distance $\epsilon > 0$ from $z_0$ is called $\epsilon$-neighborhood of $z_0 \in \mathbb{C}$. For $\epsilon > 0, z_0 \in \mathbb{C}: \epsilon$-neighborhood of $z_0$ is the set $\{z \in \mathbb{C} | |z - z_0| < \epsilon\}$.
 \end{definition}
 
 Having all these definitions, now we can study the continuity of a complex function.
 
 \section{Continuity}
+
+\subsection{Definition and basic properties}
+
 \begin{definition}\label{definition:5.1} The function $f(z)$ is continuous at the point $z_0$ if it is defined at a neighborhood of $z_0$ (and at $z_0$) and $\lim_{z\to z_0} f(z) = f(z_0)$.
 Namely: $f$ is defined at $z_0$, at some $\epsilon$-neighborhood of $z_0$, the limit above exists and it is equal to the value of the function at the point $z_0$.
 The function $f(z)$ is continuous in some domain $S$ if it is continuous at every point $z \in S$.
@@ -225,6 +236,9 @@ In practice, one of the best ways of dealing with "$\infty$" in limits is to use
 We have studied the limits and the continuity of complex functions. Now we will study what does it mean for the complex function to be differentiable.
 
 \section{Differentiability}
+
+\subsection{Definition and examples}
+
 \begin{definition}\label{definition:6.1}
 Let $f(z)$ be defined in a neighborhood of a point $z_0 \in \mathbb{C}$. If the limit $\lim_{z \to z_0} \frac{f(z) - f(z_0)}{z - z_0}$ exists, then $f$ is differentiable at $z_0$ and $f'(z_0) = \lim_{z \to z_0} \frac{f(z) - f(z_0)}{z - z_0}$.
 \end{definition}
@@ -285,6 +299,8 @@ $\implies f(z) = \bar{z}$ is not differentiable at any $z \in \mathbb{C}$.
 % \ref{e}
 Now we observe how we can construct complicated differentiable functions from elementary ones. The following proposition is analogous to the real case.
 
+\subsection{Differentiation rules}
+
 \begin{proposition}\label{proposition:6.1} If $c \in \mathbb{C}$ is a constant and $f(z), g(z)$ are differentiable at $z$, then:
 \begin{enumerate}
     \item $c' = 0$
@@ -341,6 +357,8 @@ Next proposition provides a relation between the continuity and differentiabilit
 \end{remark}
 This leads to the following natural question:
 Q-n: What are the necessary and sufficient conditions for a complex function to be differentiable?
+
+\subsection{Cauchy-Riemann equations}
 
 We are going to state and partially prove these conditions.
 Recall: A real function $u(x,y)$ is differentiable at the point $(x_0, y_0)$ if both partial derivatives $\frac{\partial u}{\partial x}, \frac{\partial u}{\partial y}$ exist at $(x_0, y_0)$, and

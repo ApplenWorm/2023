@@ -35,6 +35,9 @@
 \lecture{19}{Logarithm in $\mathbb C$}
 
 \section{Function Ln $z$}
+
+\subsection{Logarithm branches and properties}
+
 \begin{definition}\label{definition:15.1}
      The natural logarithm of a complex number $z$ is a complex number $w$ such that $e^w = z$. Notation: $w = \text{Ln } z$.
         The logarithm of $r \in \mathbb{R}$ denote as usual $\ln r$.
@@ -209,6 +212,9 @@ In the same way:
 
 Now we introduce isolated singularities and discuss their classification. Then we define the residue of a function and relate calculation of residues of certain singularities to zeros of analytic functions.
 \section{Isolated Singularities}
+
+\subsection{Isolated singularities and definitions}
+
 \begin{definition}\label{definition:16.1} 
     If $f$ is analytic on a punctured disc $D' = \{z \in \mathbb{C}: 0 < |z - z_0| < r\}$ but it is not analytic at $z_0$ (or not defined at $z_0$), then $z_0$ is called an isolated singularity of $f$.
 \end{definition}
@@ -284,6 +290,8 @@ Therefore, since $\lim_{z \to z_0} \frac{1}{(z - z_0)^m} = \infty$ and $\lim_{z 
 2) If $z_0$ is an essential singularity, then $\lim_{z \to z_0} f(z)$ does not exist - highly non-obvious!
 
 In fact, more is true in the case of an essential singularity:
+
+\subsection{Picard's theorem}
 \begin{theorem}[The Great Picard Theorem]\label{theorem:great.picard}
     If an analytic function $f$ has an essential singularity at $z_0$, then on any punctured neighborhood of $z_0$, $f$ takes on all possible 
     values in $\mathbb{C}$ infinitely often with at most one exception.

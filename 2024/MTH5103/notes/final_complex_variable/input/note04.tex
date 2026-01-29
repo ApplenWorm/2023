@@ -39,6 +39,8 @@ We have studied the continuity and differentiability of complex functions. Our n
 
 Recall: If for any $z$ corresponds one value $f(z)$, then we say that $f$ is single-valued function.
 
+\subsection{Definitions and examples}
+
 \begin{definition}\label{definition:7.1} Single-valued function $f(z)$ is analytic at the 
     point $z_0$ if there exists $\epsilon$-neighborhood $D(z_0, \epsilon)$ of $z_0$ so that $f$ is differentiable at every $z \in D(z_0, \epsilon)$.
 \end{definition}
@@ -105,6 +107,8 @@ $(1 + i)^4 = (\sqrt{2})^4 (\cos(\frac{\pi}{4}) + i\sin(\frac{\pi}{4})) = -4$ De 
 \end{claim}
 Next proposition is analogous to propositions about the limits, continuity, and differentiability.
 
+\subsection{Properties of analytic functions}
+
 \begin{proposition}\label{proposition:7.1} If $f, g$ are analytic functions on a domain $\Omega$, then also $f + g$ and $f \cdot g$ are analytic on $\Omega$. If $g(z) \neq 0$ on $\Omega$, then $\frac{f}{g}$ is analytic on $\Omega$. The composition $(g \circ f)$ of two analytic functions on $\Omega$ is an analytic function on $\Omega$.
 
 \begin{proof} \emphi{EXERCISE} \end{proof}
@@ -154,6 +158,8 @@ Since $f'(z) = 0$ for all $z \in \Omega$ by CR equations $0 = f'(z) = \frac{\par
 Now we are going to study analyticity of multi-valued functions - here we will see the big difference between the complex and real functions.
 
 \section{Analyticity of multi-valued functions}
+
+\subsection{Branch points and branches}
 We have seen that analytic function is always continuous, thus multi-valued functions are not analytic as is. The question is: can we choose a branch of such function that is single-valued and analytic?
 
 \begin{definition}\label{definition:8.1} We say that on a domain $\Omega$ there is a single-valued 
@@ -337,6 +343,8 @@ $\implies f$ is differentiable and \[ (\sqrt[n]{z})' = \frac{1}{n(\sqrt[n]{z})^{
 In many problems in hydrodynamics, the elasticity theory and other fields there is often a need to recreate an analytic function from its real part. Now we will find the set of functions for which it is possible. Our subject is:
 
 \section{Harmonic functions.}
+
+\subsection{Definitions and basic results}
 
 \begin{definition}\label{definition:9.1} The real function $u(x,y)$ is called harmonic on a domain $\Omega$ if it is continuous on $\Omega$ with continuous partial derivatives of the first and second order 
     \[\{\frac{\partial u}{\partial x}, \frac{\partial u}{\partial y}, \frac{\partial^2 u}{\partial x^2}, \frac{\partial^2 u}{\partial y^2}, \frac{\partial^2 u}{\partial x \partial y}, \frac{\partial^2 u}{\partial y \partial x}\},\] and the following equation, called the Laplace equation, holds:

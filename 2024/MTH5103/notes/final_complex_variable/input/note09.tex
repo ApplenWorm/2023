@@ -34,6 +34,9 @@
 \lecture{25}{continuation of Integrals, i guess...}
 
 We have started to study the complex integration, formulated and proved Prop 17.3(\ref{proposition:17.3}) about contour integrals. We conclude the following useful corollary.
+
+\subsection{Antiderivatives and contour integrals}
+
 \begin{corollary}\label{corollary:17.4}
     Let $f$ be continuous on a domain D, with antiderivative F on D.
     
@@ -139,6 +142,8 @@ The estimate in Prop 17.2 for the size of an integral of a complex-valued functi
 Now that we have defined contour integrals and discussed some of their properties, we concentrate on one of the key theorems of complex analysis - Cauchy's Theorem.
 \section{Cauchy's Theorem}
 
+\subsection{Star-shaped and convex domains}
+
 \begin{definition} \label{definition:18.1} $U \subseteq \mathbb{C}$ is convex if for all $z_1, z_2 \in U$, the line segment $[z_1, z_2] = \{tz_2 + (1-t)z_1: 0 \leq t \leq 1\}$ (is contained in U).
     
 $U \subseteq \mathbb{C}$ is star-shaped about $w$ if for all $z \in U$, the line segment $[z, w] \subseteq U$.
@@ -197,6 +202,8 @@ Our goal now is to prove Cauchy's Theorem for star-shaped domains.
 
 We have proved Cauchy's Theorem for star-shaped domains up to: (*) $\int_{[w, z]} f(\xi) d\xi - \int_{[w, z_0]} f(\xi) d\xi = \int_{[z_0, z]} f(\xi) d\xi$, which is Cauchy's Theorem for a Triangle.
 Now we prove it.
+
+\subsection{Cauchy's Theorem for triangles}
 \begin{theorem}[Cauchy's Theorem for a triangle]\label{theorem:18.2}
     Let $f$ be analytic in a domain U containing a triangle T. Then: $\int_{\partial T} f(z) dz = 0$.
 \end{theorem}

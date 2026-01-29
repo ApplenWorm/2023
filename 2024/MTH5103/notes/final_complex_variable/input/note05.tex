@@ -37,6 +37,8 @@ We introduce complex sequences and series, discuss their convergence and use the
 
 \section{Complex sequences.}
 
+\subsection{Sequence limits}
+
 \begin{definition}\label{definition:10.1} A sequence $\{z_n\}_{n=0}^{\infty}, z_n \in \mathbb{C}$, has limit $z$ (as $n \to \infty$) if for every $\epsilon > 0$ there exists $N = N(\epsilon) \in \mathbb{N}$ such that for all $n > N$, $|z_n - z| < \epsilon$. Notation: $\lim_{n \to \infty} z_n = z$.
 \end{definition}
 If the limit does not exist (or $\infty$), we say that the sequence diverges.
@@ -84,6 +86,8 @@ If $\lim_{n \to \infty} w_n \neq 0$, then: $\lim_{n \to \infty} \frac{z_n}{w_n} 
 \end{proposition}
 
 \section{Complex (scalar) series.}
+
+\subsection{Series convergence}
 
 \begin{definition}\label{definition:11.1} 
     The complex (scalar) series $\sum_{n=1}^{\infty} z_n$ converges to the value $s \in \mathbb{C}$ if the sequence of partial sums $\{S_N\}_{N=0}^{\infty}, S_N = z_0 + z_1 + \dots + z_N$ converges to $s$. 
@@ -248,6 +252,8 @@ Now we state 3 very useful tests for convergence of complex series.
 \end{example}
 
 \section{Complex Power Series}
+
+\subsection{Power series basics}
 \begin{definition}\label{definition:12.1} 
     The series $\sum_{n=0}^{\infty} a_n(z-z_0)^n, a_n \in \mathbb{C}, n \in \mathbb{N}$, is called a power series centered at $z = z_0$ (about $z = z_0$).
 \end{definition}
