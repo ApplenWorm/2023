@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.24)  29 JAN 2026 02:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.24)  29 JAN 2026 12:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1114,16 +1114,7 @@ Package: xr-hyper 2024-01-20 v7.01h eXternal References (DPC)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/zref/zref.sty
 Package: zref 2023-09-14 v2.35 A new reference scheme for LaTeX (HO)
 ) (./main.aux
-(./input/note01.aux) (./input/note02.aux) (./input/note03.aux)
-(./input/note04.aux) (./input/note05.aux) (./input/note06.aux)
-(./input/note07.aux) (./input/note08.aux) (./input/note09.aux
-
-LaTeX Warning: Label `example:19.4' multiply defined.
-
-
-LaTeX Warning: Label `example:19.4@cref' multiply defined.
-
-) (./input/note10.aux) (./input/note11.aux))
+(./input/note01.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 169.
@@ -1241,2165 +1232,265 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./main.
-toc [2])
+toc)
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
 
-[3]
+[2]
 \openout2 = `input/note01.aux'.
 
  (./input/note01.tex
-Package zref Info: New property: anchor on input line 17.
-Package zref Info: New property: title on input line 17.
-
-
-Package zref-xr Warning: File `note01.aux' not found or empty,
-(zref-xr)                labels not imported on input line 18.
-
-
-Package zref-xr Warning: File `note02.aux' not found or empty,
-(zref-xr)                labels not imported on input line 19.
-
-
-Package zref-xr Warning: File `note03.aux' not found or empty,
-(zref-xr)                labels not imported on input line 20.
-
-
-Package zref-xr Warning: File `note04.aux' not found or empty,
-(zref-xr)                labels not imported on input line 21.
-
-
-Package zref-xr Warning: File `note05.aux' not found or empty,
-(zref-xr)                labels not imported on input line 22.
-
-
-Package zref-xr Warning: File `note06.aux' not found or empty,
-(zref-xr)                labels not imported on input line 23.
-
-
-Package zref-xr Warning: File `note07.aux' not found or empty,
-(zref-xr)                labels not imported on input line 24.
-
-
-Package zref-xr Warning: File `note08.aux' not found or empty,
-(zref-xr)                labels not imported on input line 25.
-
-
-Package zref-xr Warning: File `note09.aux' not found or empty,
-(zref-xr)                labels not imported on input line 26.
-
-
-Package zref-xr Warning: File `note10.aux' not found or empty,
-(zref-xr)                labels not imported on input line 27.
-
-
-Package zref-xr Warning: File `note11.aux' not found or empty,
-(zref-xr)                labels not imported on input line 29.
-
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 61.
-[4
+nput line 63.
+ [3
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 86.
+(mdframed)              on input line 88.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
-input line 86.
- [5]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 117.
-Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 117.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 131.
-Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
- line 131.
- [6]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 171.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 179.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 189.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 197.
- [7]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 240.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 255.
- [8
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
-) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.265 \end{example}
-                   ]
-<./input/graphs/note01/complex_plane.pdf, id=314, 147.70584pt x 116.6508pt>
-File: ./input/graphs/note01/complex_plane.pdf Graphic file (type pdf)
-<use ./input/graphs/note01/complex_plane.pdf>
-Package pdftex.def Info: ./input/graphs/note01/complex_plane.pdf  used on input
- line 282.
-(pdftex.def)             Requested size: 147.70547pt x 116.6505pt.
-<./input/graphs/note01/complex_conjugate.pdf, id=315, 126.59195pt x 184.03255pt
->
-File: ./input/graphs/note01/complex_conjugate.pdf Graphic file (type pdf)
-<use ./input/graphs/note01/complex_conjugate.pdf>
-Package pdftex.def Info: ./input/graphs/note01/complex_conjugate.pdf  used on i
-nput line 294.
-(pdftex.def)             Requested size: 126.59161pt x 184.03209pt.
- [9 <./input/graphs/note01/complex_plane.pdf>]
-<./input/graphs/note01/sum_complex.pdf, id=337, 151.57227pt x 112.90079pt>
-File: ./input/graphs/note01/sum_complex.pdf Graphic file (type pdf)
-<use ./input/graphs/note01/sum_complex.pdf>
-Package pdftex.def Info: ./input/graphs/note01/sum_complex.pdf  used on input l
-ine 301.
-(pdftex.def)             Requested size: 151.57188pt x 112.9005pt.
-<./input/graphs/note01/length_angle_complex.pdf, id=338, 112.3658pt x 112.90079
-pt>
-File: ./input/graphs/note01/length_angle_complex.pdf Graphic file (type pdf)
-<use ./input/graphs/note01/length_angle_complex.pdf>
-Package pdftex.def Info: ./input/graphs/note01/length_angle_complex.pdf  used o
-n input line 304.
-(pdftex.def)             Requested size: 112.36551pt x 112.9005pt.
-<./input/graphs/note01/coordinates_complex.pdf, id=339, 112.3658pt x 112.90079p
-t>
-File: ./input/graphs/note01/coordinates_complex.pdf Graphic file (type pdf)
-<use ./input/graphs/note01/coordinates_complex.pdf>
-Package pdftex.def Info: ./input/graphs/note01/coordinates_complex.pdf  used on
- input line 313.
-(pdftex.def)             Requested size: 112.36551pt x 112.9005pt.
- [10 <./input/graphs/note01/complex_conjugate.pdf> <./input/graphs/note01/sum_c
-omplex.pdf> <./input/graphs/note01/length_angle_complex.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 318.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 330.
-<./input/graphs/note01/circle_coord_cmplx.pdf, id=389, 155.04526pt x 157.8698pt
->
-File: ./input/graphs/note01/circle_coord_cmplx.pdf Graphic file (type pdf)
-<use ./input/graphs/note01/circle_coord_cmplx.pdf>
-Package pdftex.def Info: ./input/graphs/note01/circle_coord_cmplx.pdf  used on 
-input line 332.
-(pdftex.def)             Requested size: 155.04486pt x 157.8694pt.
-<./input/graphs/note01/filled_circle.pdf, id=390, 142.66399pt x 142.66399pt>
-File: ./input/graphs/note01/filled_circle.pdf Graphic file (type pdf)
-<use ./input/graphs/note01/filled_circle.pdf>
-Package pdftex.def Info: ./input/graphs/note01/filled_circle.pdf  used on input
- line 337.
-(pdftex.def)             Requested size: 142.66364pt x 142.66364pt.
- [11 <./input/graphs/note01/coordinates_complex.pdf> <./input/graphs/note01/cir
-cle_coord_cmplx.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 340.
-<./input/graphs/note01/hyperbola_cmplx.pdf, id=421, 428.97162pt x 310.1487pt>
-File: ./input/graphs/note01/hyperbola_cmplx.pdf Graphic file (type pdf)
-<use ./input/graphs/note01/hyperbola_cmplx.pdf>
-Package pdftex.def Info: ./input/graphs/note01/hyperbola_cmplx.pdf  used on inp
-ut line 345.
-(pdftex.def)             Requested size: 328.82706pt x 237.74095pt.
-<./input/graphs/note01/hyperbola2-cmplx.pdf, id=422, 228.02188pt x 228.02188pt>
-
-File: ./input/graphs/note01/hyperbola2-cmplx.pdf Graphic file (type pdf)
-<use ./input/graphs/note01/hyperbola2-cmplx.pdf>
-Package pdftex.def Info: ./input/graphs/note01/hyperbola2-cmplx.pdf  used on in
-put line 349.
-(pdftex.def)             Requested size: 228.02132pt x 228.02132pt.
- [12 <./input/graphs/note01/filled_circle.pdf> <./input/graphs/note01/hyperbola
-_cmplx.pdf>]
-<./input/graphs/note01/angle_complex.pdf, id=450, 140.8181pt x 143.64265pt>
-File: ./input/graphs/note01/angle_complex.pdf Graphic file (type pdf)
-<use ./input/graphs/note01/angle_complex.pdf>
-Package pdftex.def Info: ./input/graphs/note01/angle_complex.pdf  used on input
- line 369.
-(pdftex.def)             Requested size: 140.81775pt x 143.64229pt.
- [13 <./input/graphs/note01/hyperbola2-cmplx.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 380.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 397.
- [14 <./input/graphs/note01/angle_complex.pdf>]
-Package mdframed Info: Not enough space on this page on input line 400.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 403.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 421.
-Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inp
-ut line 442.
- [15]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 452.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 466.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 479.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 496.
-Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
-put line 496.
- [16]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 502.
-
-Overfull \hbox (11.6558pt too wide) in paragraph at lines 504--507
-[]\OT1/cmr/m/n/12 (-20) We need to com-pute the mod-u-lus and the ar-gu-ment of
- 1-i. $\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 (-20) 1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/
-m/it/12 i\OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 (-20) = [] =
- []
-
-<./input/graphs/note01/circle_square.pdf, id=527, 176.68811pt x 165.38086pt>
-File: ./input/graphs/note01/circle_square.pdf Graphic file (type pdf)
-<use ./input/graphs/note01/circle_square.pdf>
-Package pdftex.def Info: ./input/graphs/note01/circle_square.pdf  used on input
- line 520.
-(pdftex.def)             Requested size: 176.68767pt x 165.38045pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 524.
-<./input/graphs/note01/circle_square2.pdf, id=529, 155.04526pt x 157.8698pt>
-File: ./input/graphs/note01/circle_square2.pdf Graphic file (type pdf)
-<use ./input/graphs/note01/circle_square2.pdf>
-Package pdftex.def Info: ./input/graphs/note01/circle_square2.pdf  used on inpu
-t line 540.
-(pdftex.def)             Requested size: 224.37749pt x 228.48376pt.
-[17 <./input/graphs/note01/circle_square.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 549.
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 549.
- [18 <./input/graphs/note01/circle_square2.pdf>]) [19]
-\openout2 = `input/note02.aux'.
-
- (./input/note02.tex
-
-Package zref-xr Warning: File `note01.aux' not found or empty,
-(zref-xr)                labels not imported on input line 19.
-
-
-Package zref-xr Warning: File `note02.aux' not found or empty,
-(zref-xr)                labels not imported on input line 20.
-
-
-Package zref-xr Warning: File `note03.aux' not found or empty,
-(zref-xr)                labels not imported on input line 21.
-
-
-Package zref-xr Warning: File `note04.aux' not found or empty,
-(zref-xr)                labels not imported on input line 22.
-
-
-Package zref-xr Warning: File `note05.aux' not found or empty,
-(zref-xr)                labels not imported on input line 23.
-
-
-Package zref-xr Warning: File `note06.aux' not found or empty,
-(zref-xr)                labels not imported on input line 24.
-
-
-Package zref-xr Warning: File `note07.aux' not found or empty,
-(zref-xr)                labels not imported on input line 25.
-
-
-Package zref-xr Warning: File `note08.aux' not found or empty,
-(zref-xr)                labels not imported on input line 26.
-
-
-Package zref-xr Warning: File `note09.aux' not found or empty,
-(zref-xr)                labels not imported on input line 27.
-
-
-Package zref-xr Warning: File `note10.aux' not found or empty,
-(zref-xr)                labels not imported on input line 28.
-
-
-Package zref-xr Warning: File `note11.aux' not found or empty,
-(zref-xr)                labels not imported on input line 30.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 49.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 55.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 63.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 66.
-[20
-
-
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 71.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 7
-2.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 72.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 76.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 84.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 99.
- [21
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.115 \end{example}
-                   ]
+input line 88.
+ [4]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 119.
- [22]
+Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
+t line 119.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 142.
-<./input/graphs/note02/image_lin.pdf, id=612, 339.99722pt x 141.35309pt>
-File: ./input/graphs/note02/image_lin.pdf Graphic file (type pdf)
-<use ./input/graphs/note02/image_lin.pdf>
-Package pdftex.def Info: ./input/graphs/note02/image_lin.pdf  used on input lin
-e 146.
-(pdftex.def)             Requested size: 339.99638pt x 141.35274pt.
+(mdframed)              on input line 135.
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
+ line 135.
+ [5]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 149.
-<./input/graphs/note02/image_lin2.pdf, id=613, 345.68748pt x 128.54926pt>
-File: ./input/graphs/note02/image_lin2.pdf Graphic file (type pdf)
-<use ./input/graphs/note02/image_lin2.pdf>
-Package pdftex.def Info: ./input/graphs/note02/image_lin2.pdf  used on input li
-ne 160.
-(pdftex.def)             Requested size: 345.68663pt x 128.54893pt.
- [23 <./input/graphs/note02/image_lin.pdf> <./input/graphs/note02/image_lin2.pd
-f>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 168.
-<./input/graphs/note02/image_lin3.pdf, id=644, 374.54027pt x 98.67365pt>
-File: ./input/graphs/note02/image_lin3.pdf Graphic file (type pdf)
-<use ./input/graphs/note02/image_lin3.pdf>
-Package pdftex.def Info: ./input/graphs/note02/image_lin3.pdf  used on input li
-ne 172.
-(pdftex.def)             Requested size: 374.53934pt x 98.67339pt.
-<./input/graphs/note02/image_lin4.pdf, id=645, 374.13979pt x 99.07414pt>
-File: ./input/graphs/note02/image_lin4.pdf Graphic file (type pdf)
-<use ./input/graphs/note02/image_lin4.pdf>
-Package pdftex.def Info: ./input/graphs/note02/image_lin4.pdf  used on input li
-ne 179.
-(pdftex.def)             Requested size: 374.13885pt x 99.07388pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 181.
-Package hyperref Info: bookmark level for unknown claim defaults to 0 on input 
-line 181.
-<./input/graphs/note02/image_lin5.pdf, id=646, 366.27841pt x 114.31308pt>
-File: ./input/graphs/note02/image_lin5.pdf Graphic file (type pdf)
-<use ./input/graphs/note02/image_lin5.pdf>
-Package pdftex.def Info: ./input/graphs/note02/image_lin5.pdf  used on input li
-ne 183.
-(pdftex.def)             Requested size: 366.27751pt x 114.31279pt.
- [24 <./input/graphs/note02/image_lin3.pdf> <./input/graphs/note02/image_lin4.p
-df>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 190.
-<./input/graphs/note02/image_lin6.pdf, id=673, 399.73842pt x 167.51282pt>
-File: ./input/graphs/note02/image_lin6.pdf Graphic file (type pdf)
-<use ./input/graphs/note02/image_lin6.pdf>
-Package pdftex.def Info: ./input/graphs/note02/image_lin6.pdf  used on input li
-ne 193.
-(pdftex.def)             Requested size: 399.73744pt x 167.5124pt.
-<./input/graphs/note02/image_lin7.pdf, id=674, 394.05719pt x 195.41306pt>
-File: ./input/graphs/note02/image_lin7.pdf Graphic file (type pdf)
-<use ./input/graphs/note02/image_lin7.pdf>
-Package pdftex.def Info: ./input/graphs/note02/image_lin7.pdf  used on input li
-ne 206.
-(pdftex.def)             Requested size: 394.05621pt x 195.41257pt.
- [25 <./input/graphs/note02/image_lin5.pdf> <./input/graphs/note02/image_lin6.p
-df>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 212.
-<./input/graphs/note02/image_lin8.pdf, id=712, 351.77823pt x 176.24846pt>
-File: ./input/graphs/note02/image_lin8.pdf Graphic file (type pdf)
-<use ./input/graphs/note02/image_lin8.pdf>
-Package pdftex.def Info: ./input/graphs/note02/image_lin8.pdf  used on input li
-ne 217.
-(pdftex.def)             Requested size: 351.77736pt x 176.24802pt.
- [26 <./input/graphs/note02/image_lin7.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 222.
-<./input/graphs/note02/image_lin9.pdf, id=736, 239.60315pt x 125.99171pt>
-File: ./input/graphs/note02/image_lin9.pdf Graphic file (type pdf)
-<use ./input/graphs/note02/image_lin9.pdf>
-Package pdftex.def Info: ./input/graphs/note02/image_lin9.pdf  used on input li
-ne 231.
-(pdftex.def)             Requested size: 239.60255pt x 125.9914pt.
- [27 <./input/graphs/note02/image_lin8.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 241.
-<./input/graphs/note02/image_lin10.pdf, id=757, 386.9436pt x 199.68202pt>
-File: ./input/graphs/note02/image_lin10.pdf Graphic file (type pdf)
-<use ./input/graphs/note02/image_lin10.pdf>
-Package pdftex.def Info: ./input/graphs/note02/image_lin10.pdf  used on input l
-ine 258.
-(pdftex.def)             Requested size: 386.94264pt x 199.68152pt.
- [28 <./input/graphs/note02/image_lin9.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 262.
- [29 <./input/graphs/note02/image_lin10.pdf>]
-<./input/graphs/note02/image_lin11.pdf, id=817, 395.45642pt x 144.19772pt>
-File: ./input/graphs/note02/image_lin11.pdf Graphic file (type pdf)
-<use ./input/graphs/note02/image_lin11.pdf>
-Package pdftex.def Info: ./input/graphs/note02/image_lin11.pdf  used on input l
-ine 274.
-(pdftex.def)             Requested size: 395.45546pt x 144.19736pt.
-<./input/graphs/note02/image_lin12.pdf, id=818, 403.83873pt x 176.39702pt>
-File: ./input/graphs/note02/image_lin12.pdf Graphic file (type pdf)
-<use ./input/graphs/note02/image_lin12.pdf>
-Package pdftex.def Info: ./input/graphs/note02/image_lin12.pdf  used on input l
-ine 276.
-(pdftex.def)             Requested size: 403.83774pt x 176.39658pt.
- [30 <./input/graphs/note02/image_lin11.pdf> <./input/graphs/note02/image_lin12
-.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 290.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 302.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 308.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 322.
- [31]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 334.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 344.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 358.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 362.
- [32]
-Package mdframed Info: Not enough space on this page on input line 364.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 367.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 378.
-
-Overfull \hbox (8.27359pt too wide) detected at line 390
-[]
- []
-
-[33]) [34]
-\openout2 = `input/note03.aux'.
-
- (./input/note03.tex
-
-Package zref-xr Warning: File `note01.aux' not found or empty,
-(zref-xr)                labels not imported on input line 20.
-
-
-Package zref-xr Warning: File `note02.aux' not found or empty,
-(zref-xr)                labels not imported on input line 21.
-
-
-Package zref-xr Warning: File `note03.aux' not found or empty,
-(zref-xr)                labels not imported on input line 22.
-
-
-Package zref-xr Warning: File `note04.aux' not found or empty,
-(zref-xr)                labels not imported on input line 23.
-
-
-Package zref-xr Warning: File `note05.aux' not found or empty,
-(zref-xr)                labels not imported on input line 24.
-
-
-Package zref-xr Warning: File `note06.aux' not found or empty,
-(zref-xr)                labels not imported on input line 25.
-
-
-Package zref-xr Warning: File `note07.aux' not found or empty,
-(zref-xr)                labels not imported on input line 26.
-
-
-Package zref-xr Warning: File `note08.aux' not found or empty,
-(zref-xr)                labels not imported on input line 27.
-
-
-Package zref-xr Warning: File `note09.aux' not found or empty,
-(zref-xr)                labels not imported on input line 28.
-
-
-Package zref-xr Warning: File `note10.aux' not found or empty,
-(zref-xr)                labels not imported on input line 29.
-
-
-Package zref-xr Warning: File `note11.aux' not found or empty,
-(zref-xr)                labels not imported on input line 31.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 40.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 57.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 71.
-[35
-
-
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 91.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 91.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 102.
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last box will be empty
-(mdframed)                you have to change it manually
-(mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 105.
-
-Package mdframed Info: You first box width is to small
- mdframed fixed it
-(mdframed)              on input line 105.
-[36]
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last split box is empty
-(mdframed)                You have to change the settings on input line 105.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 109.
-<./input/graphs/note03/image_lin1.pdf, id=968, 168.67116pt x 80.46762pt>
-File: ./input/graphs/note03/image_lin1.pdf Graphic file (type pdf)
-<use ./input/graphs/note03/image_lin1.pdf>
-Package pdftex.def Info: ./input/graphs/note03/image_lin1.pdf  used on input li
-ne 119.
-(pdftex.def)             Requested size: 168.67073pt x 80.4674pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 140.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 143.
-<./input/graphs/note03/image_lin2.pdf, id=969, 125.99171pt x 125.99171pt>
-File: ./input/graphs/note03/image_lin2.pdf Graphic file (type pdf)
-<use ./input/graphs/note03/image_lin2.pdf>
-Package pdftex.def Info: ./input/graphs/note03/image_lin2.pdf  used on input li
-ne 148.
-(pdftex.def)             Requested size: 125.9914pt x 125.9914pt.
-[37 <./input/graphs/note03/image_lin1.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 169.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 174.
- [38 <./input/graphs/note03/image_lin2.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 178.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 184.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 200.
- [39]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 207.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 214.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 232.
- [40]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 246.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 258.
- [41]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 267.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 286.
- [42]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 307.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 312.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 315.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 325.
- [43]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 338.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 350.
- [44]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 361.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 369.
- [45]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 383.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 388.
- [46]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 424.
-) [47]
-\openout2 = `input/note04.aux'.
-
- (./input/note04.tex
-
-Package zref-xr Warning: File `note01.aux' not found or empty,
-(zref-xr)                labels not imported on input line 19.
-
-
-Package zref-xr Warning: File `note02.aux' not found or empty,
-(zref-xr)                labels not imported on input line 20.
-
-
-Package zref-xr Warning: File `note03.aux' not found or empty,
-(zref-xr)                labels not imported on input line 21.
-
-
-Package zref-xr Warning: File `note04.aux' not found or empty,
-(zref-xr)                labels not imported on input line 22.
-
-
-Package zref-xr Warning: File `note05.aux' not found or empty,
-(zref-xr)                labels not imported on input line 23.
-
-
-Package zref-xr Warning: File `note06.aux' not found or empty,
-(zref-xr)                labels not imported on input line 24.
-
-
-Package zref-xr Warning: File `note07.aux' not found or empty,
-(zref-xr)                labels not imported on input line 25.
-
-
-Package zref-xr Warning: File `note08.aux' not found or empty,
-(zref-xr)                labels not imported on input line 26.
-
-
-Package zref-xr Warning: File `note09.aux' not found or empty,
-(zref-xr)                labels not imported on input line 27.
-
-
-Package zref-xr Warning: File `note10.aux' not found or empty,
-(zref-xr)                labels not imported on input line 28.
-
-
-Package zref-xr Warning: File `note11.aux' not found or empty,
-(zref-xr)                labels not imported on input line 30.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 57.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 61.
-<./input/graphs/note04/image_graph1.pdf, id=1123, 478.35213pt x 137.82892pt>
-File: ./input/graphs/note04/image_graph1.pdf Graphic file (type pdf)
-<use ./input/graphs/note04/image_graph1.pdf>
-Package pdftex.def Info: ./input/graphs/note04/image_graph1.pdf  used on input 
-line 67.
-(pdftex.def)             Requested size: 448.75499pt x 129.3026pt.
-<./input/graphs/note04/img_graph2.pdf, id=1124, 144.06422pt x 183.82677pt>
-File: ./input/graphs/note04/img_graph2.pdf Graphic file (type pdf)
-<use ./input/graphs/note04/img_graph2.pdf>
-Package pdftex.def Info: ./input/graphs/note04/img_graph2.pdf  used on input li
-ne 69.
-(pdftex.def)             Requested size: 144.06386pt x 183.82631pt.
-<./input/graphs/note04/img_graph3.pdf, id=1125, 115.61092pt x 146.83858pt>
-File: ./input/graphs/note04/img_graph3.pdf Graphic file (type pdf)
-<use ./input/graphs/note04/img_graph3.pdf>
-Package pdftex.def Info: ./input/graphs/note04/img_graph3.pdf  used on input li
-ne 71.
-(pdftex.def)             Requested size: 115.61063pt x 146.83821pt.
-[48
-
-
-
-] [49 <./input/graphs/note04/image_graph1.pdf> <./input/graphs/note04/img_graph
-2.pdf> <./input/graphs/note04/img_graph3.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 86.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 98.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 108.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 112.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 120.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 124.
-<./input/graphs/note04/img_graph4.pdf, id=1258, 131.68295pt x 103.22966pt>
-File: ./input/graphs/note04/img_graph4.pdf Graphic file (type pdf)
-<use ./input/graphs/note04/img_graph4.pdf>
-Package pdftex.def Info: ./input/graphs/note04/img_graph4.pdf  used on input li
-ne 132.
-(pdftex.def)             Requested size: 131.68262pt x 103.22939pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 139.
- [50]
-<./input/graphs/note04/img_graph5.pdf, id=1273, 160.13527pt x 131.68295pt>
-File: ./input/graphs/note04/img_graph5.pdf Graphic file (type pdf)
-<use ./input/graphs/note04/img_graph5.pdf>
-Package pdftex.def Info: ./input/graphs/note04/img_graph5.pdf  used on input li
-ne 152.
-(pdftex.def)             Requested size: 160.13486pt x 131.68262pt.
- [51 <./input/graphs/note04/img_graph4.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 168.
-<./input/graphs/note04/img_graph6.pdf, id=1289, 201.38638pt x 151.767pt>
-File: ./input/graphs/note04/img_graph6.pdf Graphic file (type pdf)
-<use ./input/graphs/note04/img_graph6.pdf>
-Package pdftex.def Info: ./input/graphs/note04/img_graph6.pdf  used on input li
-ne 182.
-(pdftex.def)             Requested size: 201.38588pt x 151.76662pt.
- [52 <./input/graphs/note04/img_graph5.pdf>]
-<./input/graphs/note04/img_graph7.pdf, id=1309, 208.4046pt x 137.54085pt>
-File: ./input/graphs/note04/img_graph7.pdf Graphic file (type pdf)
-<use ./input/graphs/note04/img_graph7.pdf>
-Package pdftex.def Info: ./input/graphs/note04/img_graph7.pdf  used on input li
-ne 194.
-(pdftex.def)             Requested size: 208.40408pt x 137.5405pt.
- [53 <./input/graphs/note04/img_graph6.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 198.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 216.
-<./input/graphs/note04/img_graph8.pdf, id=1334, 165.9259pt x 109.2883pt>
-File: ./input/graphs/note04/img_graph8.pdf Graphic file (type pdf)
-<use ./input/graphs/note04/img_graph8.pdf>
-Package pdftex.def Info: ./input/graphs/note04/img_graph8.pdf  used on input li
-ne 229.
-(pdftex.def)             Requested size: 165.92549pt x 109.28802pt.
- [54 <./input/graphs/note04/img_graph7.pdf>]
-<./input/graphs/note04/img_graph9.pdf, id=1355, 165.9259pt x 137.7406pt>
-File: ./input/graphs/note04/img_graph9.pdf Graphic file (type pdf)
-<use ./input/graphs/note04/img_graph9.pdf>
-Package pdftex.def Info: ./input/graphs/note04/img_graph9.pdf  used on input li
-ne 237.
-(pdftex.def)             Requested size: 165.92549pt x 137.74025pt.
-
-[55 <./input/graphs/note04/img_graph8.pdf> <./input/graphs/note04/img_graph9.pd
-f>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 261.
-<./input/graphs/note04/img_graph10.pdf, id=1394, 165.9259pt x 123.51445pt>
-File: ./input/graphs/note04/img_graph10.pdf Graphic file (type pdf)
-<use ./input/graphs/note04/img_graph10.pdf>
-Package pdftex.def Info: ./input/graphs/note04/img_graph10.pdf  used on input l
-ine 271.
-(pdftex.def)             Requested size: 165.92549pt x 123.51413pt.
- [56 <./input/graphs/note04/img_graph10.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 304.
-<./input/graphs/note04/img_graph11.pdf, id=1414, 144.06422pt x 173.05151pt>
-File: ./input/graphs/note04/img_graph11.pdf Graphic file (type pdf)
-<use ./input/graphs/note04/img_graph11.pdf>
-Package pdftex.def Info: ./input/graphs/note04/img_graph11.pdf  used on input l
-ine 309.
-(pdftex.def)             Requested size: 144.06386pt x 173.05109pt.
-<./input/graphs/note04/img_graph12.pdf, id=1415, 109.0203pt x 109.2873pt>
-File: ./input/graphs/note04/img_graph12.pdf Graphic file (type pdf)
-<use ./input/graphs/note04/img_graph12.pdf>
-Package pdftex.def Info: ./input/graphs/note04/img_graph12.pdf  used on input l
-ine 317.
-(pdftex.def)             Requested size: 109.02002pt x 109.28702pt.
- [57 <./input/graphs/note04/img_graph11.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 322.
- [58 <./input/graphs/note04/img_graph12.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 346.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 355.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 368.
- [59]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 385.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 398.
- [60]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 403.
-) [61]
-\openout2 = `input/note05.aux'.
-
-
-(./input/note05.tex
-
-Package zref-xr Warning: File `note01.aux' not found or empty,
-(zref-xr)                labels not imported on input line 19.
-
-
-Package zref-xr Warning: File `note02.aux' not found or empty,
-(zref-xr)                labels not imported on input line 20.
-
-
-Package zref-xr Warning: File `note03.aux' not found or empty,
-(zref-xr)                labels not imported on input line 21.
-
-
-Package zref-xr Warning: File `note04.aux' not found or empty,
-(zref-xr)                labels not imported on input line 22.
-
-
-Package zref-xr Warning: File `note05.aux' not found or empty,
-(zref-xr)                labels not imported on input line 23.
-
-
-Package zref-xr Warning: File `note06.aux' not found or empty,
-(zref-xr)                labels not imported on input line 24.
-
-
-Package zref-xr Warning: File `note07.aux' not found or empty,
-(zref-xr)                labels not imported on input line 25.
-
-
-Package zref-xr Warning: File `note08.aux' not found or empty,
-(zref-xr)                labels not imported on input line 26.
-
-
-Package zref-xr Warning: File `note09.aux' not found or empty,
-(zref-xr)                labels not imported on input line 27.
-
-
-Package zref-xr Warning: File `note10.aux' not found or empty,
-(zref-xr)                labels not imported on input line 28.
-
-
-Package zref-xr Warning: File `note11.aux' not found or empty,
-(zref-xr)                labels not imported on input line 30.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 47.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 58.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 63.
-[62
-
-
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 66.
-<./input/graphs/note05/img_graph1.pdf, id=1502, 117.8252pt x 118.43547pt>
-File: ./input/graphs/note05/img_graph1.pdf Graphic file (type pdf)
-<use ./input/graphs/note05/img_graph1.pdf>
-Package pdftex.def Info: ./input/graphs/note05/img_graph1.pdf  used on input li
-ne 68.
-(pdftex.def)             Requested size: 117.82489pt x 118.43517pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 75.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 78.
- [63 <./input/graphs/note05/img_graph1.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 94.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 98.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 106.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 110.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 114.
- [64]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 130.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 141.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 144.
- [65]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 173.
- [66]
+(mdframed)              on input line 175.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 183.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 193.
- [67]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 224.
- [68]
+(mdframed)              on input line 201.
+Package mdframed Info: Not enough space on this page on input line 208.
+ [6]
+Package mdframed Info: Not enough space on this page on input line 208.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 244.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 256.
+ [7
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.256 \end{example}
+                   ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 259.
+<./input/graphs/note01/complex_plane.pdf, id=185, 147.70584pt x 116.6508pt>
+File: ./input/graphs/note01/complex_plane.pdf Graphic file (type pdf)
+<use ./input/graphs/note01/complex_plane.pdf>
+Package pdftex.def Info: ./input/graphs/note01/complex_plane.pdf  used on input
+ line 286.
+(pdftex.def)             Requested size: 147.70547pt x 116.6505pt.
+ [8]
+<./input/graphs/note01/complex_conjugate.pdf, id=193, 126.59195pt x 184.03255pt
+>
+File: ./input/graphs/note01/complex_conjugate.pdf Graphic file (type pdf)
+<use ./input/graphs/note01/complex_conjugate.pdf>
+Package pdftex.def Info: ./input/graphs/note01/complex_conjugate.pdf  used on i
+nput line 298.
+(pdftex.def)             Requested size: 126.59161pt x 184.03209pt.
+<./input/graphs/note01/sum_complex.pdf, id=194, 151.57227pt x 112.90079pt>
+File: ./input/graphs/note01/sum_complex.pdf Graphic file (type pdf)
+<use ./input/graphs/note01/sum_complex.pdf>
+Package pdftex.def Info: ./input/graphs/note01/sum_complex.pdf  used on input l
+ine 305.
+(pdftex.def)             Requested size: 151.57188pt x 112.9005pt.
+<./input/graphs/note01/length_angle_complex.pdf, id=195, 112.3658pt x 112.90079
+pt>
+File: ./input/graphs/note01/length_angle_complex.pdf Graphic file (type pdf)
+<use ./input/graphs/note01/length_angle_complex.pdf>
+Package pdftex.def Info: ./input/graphs/note01/length_angle_complex.pdf  used o
+n input line 308.
+(pdftex.def)             Requested size: 112.36551pt x 112.9005pt.
+ [9 <./input/graphs/note01/complex_plane.pdf> <./input/graphs/note01/complex_co
+njugate.pdf> <./input/graphs/note01/sum_complex.pdf>]
+<./input/graphs/note01/coordinates_complex.pdf, id=243, 112.3658pt x 112.90079p
+t>
+File: ./input/graphs/note01/coordinates_complex.pdf Graphic file (type pdf)
+<use ./input/graphs/note01/coordinates_complex.pdf>
+Package pdftex.def Info: ./input/graphs/note01/coordinates_complex.pdf  used on
+ input line 317.
+(pdftex.def)             Requested size: 112.36551pt x 112.9005pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 263.
+(mdframed)              on input line 322.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 276.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 283.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 288.
+(mdframed)              on input line 334.
+<./input/graphs/note01/circle_coord_cmplx.pdf, id=244, 155.04526pt x 157.8698pt
+>
+File: ./input/graphs/note01/circle_coord_cmplx.pdf Graphic file (type pdf)
+<use ./input/graphs/note01/circle_coord_cmplx.pdf>
+Package pdftex.def Info: ./input/graphs/note01/circle_coord_cmplx.pdf  used on 
+input line 336.
+(pdftex.def)             Requested size: 155.04486pt x 157.8694pt.
 
-[69]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 300.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 311.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 314.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 328.
- [70]
+[10 <./input/graphs/note01/length_angle_complex.pdf> <./input/graphs/note01/coo
+rdinates_complex.pdf>]
+<./input/graphs/note01/filled_circle.pdf, id=273, 142.66399pt x 142.66399pt>
+File: ./input/graphs/note01/filled_circle.pdf Graphic file (type pdf)
+<use ./input/graphs/note01/filled_circle.pdf>
+Package pdftex.def Info: ./input/graphs/note01/filled_circle.pdf  used on input
+ line 341.
+(pdftex.def)             Requested size: 142.66364pt x 142.66364pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 344.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 352.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 358.
- [71]) [72]
-\openout2 = `input/note06.aux'.
-
- (./input/note06.tex
-
-Package zref-xr Warning: File `note01.aux' not found or empty,
-(zref-xr)                labels not imported on input line 19.
-
-
-Package zref-xr Warning: File `note02.aux' not found or empty,
-(zref-xr)                labels not imported on input line 20.
-
-
-Package zref-xr Warning: File `note03.aux' not found or empty,
-(zref-xr)                labels not imported on input line 21.
-
-
-Package zref-xr Warning: File `note04.aux' not found or empty,
-(zref-xr)                labels not imported on input line 22.
-
-
-Package zref-xr Warning: File `note05.aux' not found or empty,
-(zref-xr)                labels not imported on input line 23.
-
-
-Package zref-xr Warning: File `note06.aux' not found or empty,
-(zref-xr)                labels not imported on input line 24.
-
-
-Package zref-xr Warning: File `note07.aux' not found or empty,
-(zref-xr)                labels not imported on input line 25.
-
-
-Package zref-xr Warning: File `note08.aux' not found or empty,
-(zref-xr)                labels not imported on input line 26.
-
-
-Package zref-xr Warning: File `note09.aux' not found or empty,
-(zref-xr)                labels not imported on input line 27.
-
-
-Package zref-xr Warning: File `note10.aux' not found or empty,
-(zref-xr)                labels not imported on input line 28.
-
-
-Package zref-xr Warning: File `note11.aux' not found or empty,
-(zref-xr)                labels not imported on input line 30.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 43.
-
-Overfull \hbox (7.8741pt too wide) in paragraph at lines 44--48
-[][]\OT1/cmr/m/n/12 (-20) De-ter-mine the con-ver-gence or di-ver-gence of: 1) 
-$[][] [][]$ 2) $[][] [][]$ 3) $[][] [][]$ 
- []
-
-
-Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 53.
-
-[73
-
-
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 74.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 86.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 96.
- [74]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 107.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 115.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 118.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 130.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 140.
- [75]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 144.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 165.
- [76]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 177.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 183.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 189.
- [77]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 200.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 211.
-<./input/graphs/note06/img_graph1.pdf, id=1714, 314.78001pt x 315.315pt>
-File: ./input/graphs/note06/img_graph1.pdf Graphic file (type pdf)
-<use ./input/graphs/note06/img_graph1.pdf>
-Package pdftex.def Info: ./input/graphs/note06/img_graph1.pdf  used on input li
-ne 218.
-(pdftex.def)             Requested size: 314.77924pt x 315.31422pt.
- [78] [79 <./input/graphs/note06/img_graph1.pdf>]
-<./input/graphs/note06/img_graph2.pdf, id=1743, 144.06422pt x 116.14592pt>
-File: ./input/graphs/note06/img_graph2.pdf Graphic file (type pdf)
-<use ./input/graphs/note06/img_graph2.pdf>
-Package pdftex.def Info: ./input/graphs/note06/img_graph2.pdf  used on input li
-ne 244.
-(pdftex.def)             Requested size: 144.06386pt x 116.14563pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 246.
-<./input/graphs/note06/img_graph3.pdf, id=1744, 103.22966pt x 74.77737pt>
-File: ./input/graphs/note06/img_graph3.pdf Graphic file (type pdf)
-<use ./input/graphs/note06/img_graph3.pdf>
-Package pdftex.def Info: ./input/graphs/note06/img_graph3.pdf  used on input li
-ne 248.
-(pdftex.def)             Requested size: 103.22939pt x 74.77718pt.
-<./input/graphs/note06/img_graph4.pdf, id=1745, 103.22966pt x 74.77737pt>
-File: ./input/graphs/note06/img_graph4.pdf Graphic file (type pdf)
-<use ./input/graphs/note06/img_graph4.pdf>
-Package pdftex.def Info: ./input/graphs/note06/img_graph4.pdf  used on input li
-ne 252.
-(pdftex.def)             Requested size: 103.22939pt x 74.77718pt.
-<./input/graphs/note06/img_graph5.pdf, id=1746, 137.4736pt x 139.25827pt>
-File: ./input/graphs/note06/img_graph5.pdf Graphic file (type pdf)
-<use ./input/graphs/note06/img_graph5.pdf>
-Package pdftex.def Info: ./input/graphs/note06/img_graph5.pdf  used on input li
-ne 256.
-(pdftex.def)             Requested size: 137.47325pt x 139.25792pt.
-
-[80 <./input/graphs/note06/img_graph2.pdf>]
-<./input/graphs/note06/img_graph6.pdf, id=1762, 151.69974pt x 109.2873pt>
-File: ./input/graphs/note06/img_graph6.pdf Graphic file (type pdf)
-<use ./input/graphs/note06/img_graph6.pdf>
-Package pdftex.def Info: ./input/graphs/note06/img_graph6.pdf  used on input li
-ne 262.
-(pdftex.def)             Requested size: 151.69936pt x 109.28702pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 267.
- [81 <./input/graphs/note06/img_graph3.pdf> <./input/graphs/note06/img_graph4.p
-df> <./input/graphs/note06/img_graph5.pdf> <./input/graphs/note06/img_graph6.pd
-f>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 282.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 284.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 294.
- [82]
-<./input/graphs/note06/img_graph7.pdf, id=1815, 120.43495pt x 93.28853pt>
-File: ./input/graphs/note06/img_graph7.pdf Graphic file (type pdf)
-<use ./input/graphs/note06/img_graph7.pdf>
-Package pdftex.def Info: ./input/graphs/note06/img_graph7.pdf  used on input li
-ne 301.
-(pdftex.def)             Requested size: 120.43465pt x 93.28828pt.
-<./input/graphs/note06/img_graph8.pdf, id=1816, 308.19441pt x 122.54181pt>
-File: ./input/graphs/note06/img_graph8.pdf Graphic file (type pdf)
-<use ./input/graphs/note06/img_graph8.pdf>
-Package pdftex.def Info: ./input/graphs/note06/img_graph8.pdf  used on input li
-ne 313.
-(pdftex.def)             Requested size: 308.19365pt x 122.5415pt.
-<./input/graphs/note06/img_graph9.pdf, id=1817, 349.4395pt x 93.28853pt>
-File: ./input/graphs/note06/img_graph9.pdf Graphic file (type pdf)
-<use ./input/graphs/note06/img_graph9.pdf>
-Package pdftex.def Info: ./input/graphs/note06/img_graph9.pdf  used on input li
-ne 319.
-(pdftex.def)             Requested size: 349.43864pt x 93.28828pt.
- [83 <./input/graphs/note06/img_graph7.pdf> <./input/graphs/note06/img_graph8.p
-df> <./input/graphs/note06/img_graph9.pdf>]
-<./input/graphs/note06/img_graph10.pdf, id=1862, 342.75351pt x 110.3603pt>
-File: ./input/graphs/note06/img_graph10.pdf Graphic file (type pdf)
-<use ./input/graphs/note06/img_graph10.pdf>
-Package pdftex.def Info: ./input/graphs/note06/img_graph10.pdf  used on input l
-ine 326.
-(pdftex.def)             Requested size: 342.75267pt x 110.36002pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 329.
-) [84 <./input/graphs/note06/img_graph10.pdf>] [85]
-\openout2 = `input/note07.aux'.
-
-
-(./input/note07.tex
-
-Package zref-xr Warning: File `note01.aux' not found or empty,
-(zref-xr)                labels not imported on input line 19.
-
-
-Package zref-xr Warning: File `note02.aux' not found or empty,
-(zref-xr)                labels not imported on input line 20.
-
-
-Package zref-xr Warning: File `note03.aux' not found or empty,
-(zref-xr)                labels not imported on input line 21.
-
-
-Package zref-xr Warning: File `note04.aux' not found or empty,
-(zref-xr)                labels not imported on input line 22.
-
-
-Package zref-xr Warning: File `note05.aux' not found or empty,
-(zref-xr)                labels not imported on input line 23.
-
-
-Package zref-xr Warning: File `note06.aux' not found or empty,
-(zref-xr)                labels not imported on input line 24.
-
-
-Package zref-xr Warning: File `note07.aux' not found or empty,
-(zref-xr)                labels not imported on input line 25.
-
-
-Package zref-xr Warning: File `note08.aux' not found or empty,
-(zref-xr)                labels not imported on input line 26.
-
-
-Package zref-xr Warning: File `note09.aux' not found or empty,
-(zref-xr)                labels not imported on input line 27.
-
-
-Package zref-xr Warning: File `note10.aux' not found or empty,
-(zref-xr)                labels not imported on input line 28.
-
-
-Package zref-xr Warning: File `note11.aux' not found or empty,
-(zref-xr)                labels not imported on input line 30.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 37.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 37.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 65.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 73.
-[86
-
-
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 86.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 100.
-<./input/graphs/note07/img_graph1.pdf, id=1903, 123.24644pt x 102.51399pt>
-File: ./input/graphs/note07/img_graph1.pdf Graphic file (type pdf)
-<use ./input/graphs/note07/img_graph1.pdf>
-Package pdftex.def Info: ./input/graphs/note07/img_graph1.pdf  used on input li
-ne 109.
-(pdftex.def)             Requested size: 123.24612pt x 102.51373pt.
- [87 <./input/graphs/note07/img_graph1.pdf>]
-<./input/graphs/note07/img_graph2.pdf, id=1927, 109.0203pt x 109.2873pt>
-File: ./input/graphs/note07/img_graph2.pdf Graphic file (type pdf)
-<use ./input/graphs/note07/img_graph2.pdf>
-Package pdftex.def Info: ./input/graphs/note07/img_graph2.pdf  used on input li
-ne 113.
-(pdftex.def)             Requested size: 109.02002pt x 109.28702pt.
-<./input/graphs/note07/img_graph3.pdf, id=1928, 137.58904pt x 95.06114pt>
-File: ./input/graphs/note07/img_graph3.pdf Graphic file (type pdf)
-<use ./input/graphs/note07/img_graph3.pdf>
-Package pdftex.def Info: ./input/graphs/note07/img_graph3.pdf  used on input li
-ne 123.
-(pdftex.def)             Requested size: 137.58868pt x 95.0609pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 129.
- [88 <./input/graphs/note07/img_graph2.pdf> <./input/graphs/note07/img_graph3.p
-df>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 144.
-<./input/graphs/note07/img_graph4.pdf, id=1953, 293.96826pt x 166.1929pt>
-File: ./input/graphs/note07/img_graph4.pdf Graphic file (type pdf)
-<use ./input/graphs/note07/img_graph4.pdf>
-Package pdftex.def Info: ./input/graphs/note07/img_graph4.pdf  used on input li
-ne 149.
-(pdftex.def)             Requested size: 293.96753pt x 166.19247pt.
- [89 <./input/graphs/note07/img_graph4.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 183.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 199.
- [90] [91]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 253.
- [92]
-Overfull \hbox (13.59354pt too wide) in paragraph at lines 281--283
-\OT1/cmr/m/n/12 (-20) Therefore, since $[][] [] = \OMS/cmsy/m/n/12 1$ \OT1/cmr/
-m/n/12 (-20) and $[][][\OML/cmm/m/it/12 b[] \OT1/cmr/m/n/12 (-20) + [] ] = \OML
-/cmm/m/it/12 b[]$\OT1/cmr/m/n/12 (-20) , we con-clude that $[][] \OML/cmm/m/it/
-12 f\OT1/cmr/m/n/12 (-20) (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 (-20) ) =
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 287.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 296.
-[93]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 317.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 329.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 340.
- [94]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 360.
-) [95]
-\openout2 = `input/note08.aux'.
-
- (./input/note08.tex
-
-Package zref-xr Warning: File `note01.aux' not found or empty,
-(zref-xr)                labels not imported on input line 19.
-
-
-Package zref-xr Warning: File `note02.aux' not found or empty,
-(zref-xr)                labels not imported on input line 20.
-
-
-Package zref-xr Warning: File `note03.aux' not found or empty,
-(zref-xr)                labels not imported on input line 21.
-
-
-Package zref-xr Warning: File `note04.aux' not found or empty,
-(zref-xr)                labels not imported on input line 22.
-
-
-Package zref-xr Warning: File `note05.aux' not found or empty,
-(zref-xr)                labels not imported on input line 23.
-
-
-Package zref-xr Warning: File `note06.aux' not found or empty,
-(zref-xr)                labels not imported on input line 24.
-
-
-Package zref-xr Warning: File `note07.aux' not found or empty,
-(zref-xr)                labels not imported on input line 25.
-
-
-Package zref-xr Warning: File `note08.aux' not found or empty,
-(zref-xr)                labels not imported on input line 26.
-
-
-Package zref-xr Warning: File `note09.aux' not found or empty,
-(zref-xr)                labels not imported on input line 27.
-
-
-Package zref-xr Warning: File `note10.aux' not found or empty,
-(zref-xr)                labels not imported on input line 28.
-
-
-Package zref-xr Warning: File `note11.aux' not found or empty,
-(zref-xr)                labels not imported on input line 30.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 39.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 52.
-[96
-
-
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 71.
- [97]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 91.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 101.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 104.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 110.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 128.
- [98]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 157.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 168.
- [99]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 181.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 191.
- [100]
-<./input/graphs/note08/img_graph1.pdf, id=2112, 222.83148pt x 137.78577pt>
-File: ./input/graphs/note08/img_graph1.pdf Graphic file (type pdf)
-<use ./input/graphs/note08/img_graph1.pdf>
-Package pdftex.def Info: ./input/graphs/note08/img_graph1.pdf  used on input li
-ne 214.
-(pdftex.def)             Requested size: 222.83093pt x 137.78542pt.
- [101 <./input/graphs/note08/img_graph1.pdf>]
-<./input/graphs/note08/img_graph2.pdf, id=2137, 104.72926pt x 76.8722pt>
-File: ./input/graphs/note08/img_graph2.pdf Graphic file (type pdf)
-<use ./input/graphs/note08/img_graph2.pdf>
-Package pdftex.def Info: ./input/graphs/note08/img_graph2.pdf  used on input li
-ne 227.
-(pdftex.def)             Requested size: 104.729pt x 76.872pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 236.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 241.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 250.
- [102 <./input/graphs/note08/img_graph2.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 257.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 264.
-<./input/graphs/note08/img_graph3.pdf, id=2168, 174.46179pt x 223.0985pt>
-File: ./input/graphs/note08/img_graph3.pdf Graphic file (type pdf)
-<use ./input/graphs/note08/img_graph3.pdf>
-Package pdftex.def Info: ./input/graphs/note08/img_graph3.pdf  used on input li
-ne 270.
-(pdftex.def)             Requested size: 174.46135pt x 223.09793pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 274.
- [103 <./input/graphs/note08/img_graph3.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 310.
-<./input/graphs/note08/img_graph4.pdf, id=2194, 113.85236pt x 81.51955pt>
-File: ./input/graphs/note08/img_graph4.pdf Graphic file (type pdf)
-<use ./input/graphs/note08/img_graph4.pdf>
-Package pdftex.def Info: ./input/graphs/note08/img_graph4.pdf  used on input li
-ne 315.
-(pdftex.def)             Requested size: 113.85207pt x 81.51933pt.
- [104 <./input/graphs/note08/img_graph4.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 329.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 342.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 350.
- [105]
-Overfull \hbox (4.42368pt too wide) in paragraph at lines 360--361
-[][]\OT1/cmr/bx/n/12 (-20) Definition 20.17. [][]\OT1/cmr/m/n/12 (-20) The con-
-tour in-te-gral of $\OML/cmm/m/it/12 f$ \OT1/cmr/m/n/12 (-20) along C is de-fin
-ed as $[][] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (-20) (\OML/cmm/m/it/12 z\OT1/cmr
-/m/n/12 (-20) )\OML/cmm/m/it/12 dz \OT1/cmr/m/n/12 (-20) = [][] \OML/cmm/m/it/1
-2 f\OT1/cmr/m/n/12 (-20) (\OML/cmm/m/it/12 ^^M\OT1/cmr/m/n/12 (-20) (\OML/cmm/m
-/it/12 t\OT1/cmr/m/n/12 (-20) ))\OML/cmm/m/it/12 ^^M[]\OT1/cmr/m/n/12 (-20) (\O
-ML/cmm/m/it/12 t\OT1/cmr/m/n/12 (-20) )\OML/cmm/m/it/12 dt$\OT1/cmr/m/n/12 (-20
-) . 
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 369.
-<./input/graphs/note08/img_graph5.pdf, id=2237, 123.24644pt x 166.1929pt>
-File: ./input/graphs/note08/img_graph5.pdf Graphic file (type pdf)
-<use ./input/graphs/note08/img_graph5.pdf>
-Package pdftex.def Info: ./input/graphs/note08/img_graph5.pdf  used on input li
-ne 371.
-(pdftex.def)             Requested size: 123.24612pt x 166.19247pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 379.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 386.
-[106 <./input/graphs/note08/img_graph5.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 400.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 423.
-<./input/graphs/note08/img_graph6.pdf, id=2262, 165.9259pt x 137.7406pt>
-File: ./input/graphs/note08/img_graph6.pdf Graphic file (type pdf)
-<use ./input/graphs/note08/img_graph6.pdf>
-Package pdftex.def Info: ./input/graphs/note08/img_graph6.pdf  used on input li
-ne 429.
-(pdftex.def)             Requested size: 165.92549pt x 137.74025pt.
- [107]) [108 <./input/graphs/note08/img_graph6.pdf>]
-\openout2 = `input/note09.aux'.
-
- (./input/note09.tex
-
-Package zref-xr Warning: File `note01.aux' not found or empty,
-(zref-xr)                labels not imported on input line 19.
-
-
-Package zref-xr Warning: File `note02.aux' not found or empty,
-(zref-xr)                labels not imported on input line 20.
-
-
-Package zref-xr Warning: File `note03.aux' not found or empty,
-(zref-xr)                labels not imported on input line 21.
-
-
-Package zref-xr Warning: File `note04.aux' not found or empty,
-(zref-xr)                labels not imported on input line 22.
-
-
-Package zref-xr Warning: File `note05.aux' not found or empty,
-(zref-xr)                labels not imported on input line 23.
-
-
-Package zref-xr Warning: File `note06.aux' not found or empty,
-(zref-xr)                labels not imported on input line 24.
-
-
-Package zref-xr Warning: File `note07.aux' not found or empty,
-(zref-xr)                labels not imported on input line 25.
-
-
-Package zref-xr Warning: File `note08.aux' not found or empty,
-(zref-xr)                labels not imported on input line 26.
-
-
-Package zref-xr Warning: File `note09.aux' not found or empty,
-(zref-xr)                labels not imported on input line 27.
-
-
-Package zref-xr Warning: File `note10.aux' not found or empty,
-(zref-xr)                labels not imported on input line 28.
-
-
-Package zref-xr Warning: File `note11.aux' not found or empty,
-(zref-xr)                labels not imported on input line 30.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 37.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 54.
-[109
-
-
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 72.
-<./input/graphs/note09/img_graph1.pdf, id=2305, 125.41856pt x 109.2873pt>
-File: ./input/graphs/note09/img_graph1.pdf Graphic file (type pdf)
-<use ./input/graphs/note09/img_graph1.pdf>
-Package pdftex.def Info: ./input/graphs/note09/img_graph1.pdf  used on input li
-ne 77.
-(pdftex.def)             Requested size: 125.41824pt x 109.28702pt.
- [110]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 90.
- [111 <./input/graphs/note09/img_graph1.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 109.
-<./input/graphs/note09/img_graph2.pdf, id=2339, 279.73708pt x 167.71057pt>
-File: ./input/graphs/note09/img_graph2.pdf Graphic file (type pdf)
-<use ./input/graphs/note09/img_graph2.pdf>
-Package pdftex.def Info: ./input/graphs/note09/img_graph2.pdf  used on input li
-ne 115.
-(pdftex.def)             Requested size: 279.73639pt x 167.71014pt.
- [112 <./input/graphs/note09/img_graph2.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 132.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 148.
-<./input/graphs/note09/img_graph3.pdf, id=2366, 105.3516pt x 105.3516pt>
-File: ./input/graphs/note09/img_graph3.pdf Graphic file (type pdf)
-<use ./input/graphs/note09/img_graph3.pdf>
-Package pdftex.def Info: ./input/graphs/note09/img_graph3.pdf  used on input li
-ne 150.
-(pdftex.def)             Requested size: 105.35132pt x 105.35132pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 157.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 161.
- [113 <./input/graphs/note09/img_graph3.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 174.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 200.
-<./input/graphs/note09/img_graph4.pdf, id=2389, 134.2094pt x 114.90529pt>
-File: ./input/graphs/note09/img_graph4.pdf Graphic file (type pdf)
-<use ./input/graphs/note09/img_graph4.pdf>
-Package pdftex.def Info: ./input/graphs/note09/img_graph4.pdf  used on input li
-ne 206.
-(pdftex.def)             Requested size: 134.20905pt x 114.905pt.
- [114 <./input/graphs/note09/img_graph4.pdf>]
-<./input/graphs/note09/img_graph5.pdf, id=2412, 132.48296pt x 111.39517pt>
-File: ./input/graphs/note09/img_graph5.pdf Graphic file (type pdf)
-<use ./input/graphs/note09/img_graph5.pdf>
-Package pdftex.def Info: ./input/graphs/note09/img_graph5.pdf  used on input li
-ne 210.
-(pdftex.def)             Requested size: 132.48262pt x 111.3949pt.
-<./input/graphs/note09/img_graph6.pdf, id=2413, 192.0485pt x 132.48296pt>
-File: ./input/graphs/note09/img_graph6.pdf Graphic file (type pdf)
-<use ./input/graphs/note09/img_graph6.pdf>
-Package pdftex.def Info: ./input/graphs/note09/img_graph6.pdf  used on input li
-ne 219.
-(pdftex.def)             Requested size: 192.04802pt x 132.48262pt.
- [115 <./input/graphs/note09/img_graph5.pdf> <./input/graphs/note09/img_graph6.
-pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 267.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 273.
-<./input/graphs/note09/img_graph7.pdf, id=2433, 165.9259pt x 137.7406pt>
-File: ./input/graphs/note09/img_graph7.pdf Graphic file (type pdf)
-<use ./input/graphs/note09/img_graph7.pdf>
-Package pdftex.def Info: ./input/graphs/note09/img_graph7.pdf  used on input li
-ne 281.
-(pdftex.def)             Requested size: 165.92549pt x 137.74025pt.
- [116]
-<./input/graphs/note09/img_graph8.pdf, id=2443, 194.37819pt x 166.1929pt>
-File: ./input/graphs/note09/img_graph8.pdf Graphic file (type pdf)
-<use ./input/graphs/note09/img_graph8.pdf>
-Package pdftex.def Info: ./input/graphs/note09/img_graph8.pdf  used on input li
-ne 288.
-(pdftex.def)             Requested size: 194.3777pt x 166.19247pt.
-<./input/graphs/note09/img_graph9.pdf, id=2444, 194.37819pt x 166.1929pt>
-File: ./input/graphs/note09/img_graph9.pdf Graphic file (type pdf)
-<use ./input/graphs/note09/img_graph9.pdf>
-Package pdftex.def Info: ./input/graphs/note09/img_graph9.pdf  used on input li
-ne 290.
-(pdftex.def)             Requested size: 194.3777pt x 166.19247pt.
- [117 <./input/graphs/note09/img_graph7.pdf> <./input/graphs/note09/img_graph8.
-pdf> <./input/graphs/note09/img_graph9.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 311.
-<./input/graphs/note09/img_graph10.pdf, id=2491, 151.69974pt x 129.50482pt>
-File: ./input/graphs/note09/img_graph10.pdf Graphic file (type pdf)
-<use ./input/graphs/note09/img_graph10.pdf>
-Package pdftex.def Info: ./input/graphs/note09/img_graph10.pdf  used on input l
-ine 319.
-(pdftex.def)             Requested size: 151.69936pt x 129.5045pt.
- [118 <./input/graphs/note09/img_graph10.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 331.
-<./input/graphs/note09/img_graph11.pdf, id=2516, 194.37819pt x 137.7406pt>
-File: ./input/graphs/note09/img_graph11.pdf Graphic file (type pdf)
-<use ./input/graphs/note09/img_graph11.pdf>
-Package pdftex.def Info: ./input/graphs/note09/img_graph11.pdf  used on input l
-ine 339.
-(pdftex.def)             Requested size: 194.3777pt x 137.74025pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 341.
-<./input/graphs/note09/img_graph12.pdf, id=2518, 251.2838pt x 251.55179pt>
-File: ./input/graphs/note09/img_graph12.pdf Graphic file (type pdf)
-<use ./input/graphs/note09/img_graph12.pdf>
-Package pdftex.def Info: ./input/graphs/note09/img_graph12.pdf  used on input l
-ine 348.
-(pdftex.def)             Requested size: 251.28317pt x 251.55116pt.
- [119 <./input/graphs/note09/img_graph11.pdf>]) [120 <./input/graphs/note09/img
-_graph12.pdf>]
-\openout2 = `input/note10.aux'.
-
-
-(./input/note10.tex
-
-Package zref-xr Warning: File `note01.aux' not found or empty,
-(zref-xr)                labels not imported on input line 19.
-
-
-Package zref-xr Warning: File `note02.aux' not found or empty,
-(zref-xr)                labels not imported on input line 20.
-
-
-Package zref-xr Warning: File `note03.aux' not found or empty,
-(zref-xr)                labels not imported on input line 21.
-
-
-Package zref-xr Warning: File `note04.aux' not found or empty,
-(zref-xr)                labels not imported on input line 22.
-
-
-Package zref-xr Warning: File `note05.aux' not found or empty,
-(zref-xr)                labels not imported on input line 23.
-
-
-Package zref-xr Warning: File `note06.aux' not found or empty,
-(zref-xr)                labels not imported on input line 24.
-
-
-Package zref-xr Warning: File `note07.aux' not found or empty,
-(zref-xr)                labels not imported on input line 25.
-
-
-Package zref-xr Warning: File `note08.aux' not found or empty,
-(zref-xr)                labels not imported on input line 26.
-
-
-Package zref-xr Warning: File `note09.aux' not found or empty,
-(zref-xr)                labels not imported on input line 27.
-
-
-Package zref-xr Warning: File `note10.aux' not found or empty,
-(zref-xr)                labels not imported on input line 28.
-
-
-Package zref-xr Warning: File `note11.aux' not found or empty,
-(zref-xr)                labels not imported on input line 30.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 40.
-<./input/graphs/note10/img_graph1.pdf, id=2562, 151.69974pt x 129.50482pt>
-File: ./input/graphs/note10/img_graph1.pdf Graphic file (type pdf)
-<use ./input/graphs/note10/img_graph1.pdf>
-Package pdftex.def Info: ./input/graphs/note10/img_graph1.pdf  used on input li
-ne 55.
-(pdftex.def)             Requested size: 151.69936pt x 129.5045pt.
-[121
-
-
-
- <./input/graphs/note10/img_graph1.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 71.
-<./input/graphs/note10/img_graph2.pdf, id=2586, 222.83148pt x 166.1929pt>
-File: ./input/graphs/note10/img_graph2.pdf Graphic file (type pdf)
-<use ./input/graphs/note10/img_graph2.pdf>
-Package pdftex.def Info: ./input/graphs/note10/img_graph2.pdf  used on input li
-ne 82.
-(pdftex.def)             Requested size: 222.83093pt x 166.19247pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 94.
- [122 <./input/graphs/note10/img_graph2.pdf>]
-<./input/graphs/note10/img_graph3.pdf, id=2613, 222.83148pt x 166.1929pt>
-File: ./input/graphs/note10/img_graph3.pdf Graphic file (type pdf)
-<use ./input/graphs/note10/img_graph3.pdf>
-Package pdftex.def Info: ./input/graphs/note10/img_graph3.pdf  used on input li
-ne 108.
-(pdftex.def)             Requested size: 222.83093pt x 166.19247pt.
-<./input/graphs/note10/img_graph4.pdf, id=2614, 251.2838pt x 265.77795pt>
-File: ./input/graphs/note10/img_graph4.pdf Graphic file (type pdf)
-<use ./input/graphs/note10/img_graph4.pdf>
-Package pdftex.def Info: ./input/graphs/note10/img_graph4.pdf  used on input li
-ne 113.
-(pdftex.def)             Requested size: 251.28317pt x 265.7773pt.
-<./input/graphs/note10/img_graph5.pdf, id=2615, 165.9259pt x 109.2873pt>
-File: ./input/graphs/note10/img_graph5.pdf Graphic file (type pdf)
-<use ./input/graphs/note10/img_graph5.pdf>
-Package pdftex.def Info: ./input/graphs/note10/img_graph5.pdf  used on input li
-ne 118.
-(pdftex.def)             Requested size: 165.92549pt x 109.28702pt.
- [123 <./input/graphs/note10/img_graph3.pdf> <./input/graphs/note10/img_graph4.
-pdf>]
-<./input/graphs/note10/img_graph6.pdf, id=2656, 336.6427pt x 336.9097pt>
-File: ./input/graphs/note10/img_graph6.pdf Graphic file (type pdf)
-<use ./input/graphs/note10/img_graph6.pdf>
-Package pdftex.def Info: ./input/graphs/note10/img_graph6.pdf  used on input li
-ne 128.
-(pdftex.def)             Requested size: 336.64188pt x 336.90887pt.
- [124 <./input/graphs/note10/img_graph5.pdf> <./input/graphs/note10/img_graph6.
-pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 147.
-<./input/graphs/note10/img_graph7.pdf, id=2694, 69.9413pt x 69.79776pt>
-File: ./input/graphs/note10/img_graph7.pdf Graphic file (type pdf)
-<use ./input/graphs/note10/img_graph7.pdf>
-Package pdftex.def Info: ./input/graphs/note10/img_graph7.pdf  used on input li
-ne 155.
-(pdftex.def)             Requested size: 69.94112pt x 69.79758pt.
- [125 <./input/graphs/note10/img_graph7.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 182.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 190.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 205.
- [126]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 232.
-<./input/graphs/note10/img_graph8.pdf, id=2729, 167.79889pt x 139.1358pt>
-File: ./input/graphs/note10/img_graph8.pdf Graphic file (type pdf)
-<use ./input/graphs/note10/img_graph8.pdf>
-Package pdftex.def Info: ./input/graphs/note10/img_graph8.pdf  used on input li
-ne 241.
-(pdftex.def)             Requested size: 167.79848pt x 139.13545pt.
-
-[127]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 261.
- [128 <./input/graphs/note10/img_graph8.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 290.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 310.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 319.
-
-Overfull \hbox (11.80272pt too wide) detected at line 326
-\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[] \OMS/cmsy/m/n/12 ^^@ \O
-T1/cmr/m/n/12 1) = \OML/cmm/m/it/12 z [] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 z [
-] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 z[] []
- []
-
-[129]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 336.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 354.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 373.
- [130]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 400.
- [131]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 420.
+<./input/graphs/note01/hyperbola_cmplx.pdf, id=274, 428.97162pt x 310.1487pt>
+File: ./input/graphs/note01/hyperbola_cmplx.pdf Graphic file (type pdf)
+<use ./input/graphs/note01/hyperbola_cmplx.pdf>
+Package pdftex.def Info: ./input/graphs/note01/hyperbola_cmplx.pdf  used on inp
+ut line 349.
+(pdftex.def)             Requested size: 328.82706pt x 237.74095pt.
+ [11 <./input/graphs/note01/circle_coord_cmplx.pdf> <./input/graphs/note01/fill
+ed_circle.pdf>]
+<./input/graphs/note01/hyperbola2-cmplx.pdf, id=301, 228.02188pt x 228.02188pt>
+
+File: ./input/graphs/note01/hyperbola2-cmplx.pdf Graphic file (type pdf)
+<use ./input/graphs/note01/hyperbola2-cmplx.pdf>
+Package pdftex.def Info: ./input/graphs/note01/hyperbola2-cmplx.pdf  used on in
+put line 353.
+(pdftex.def)             Requested size: 228.02132pt x 228.02132pt.
+ [12 <./input/graphs/note01/hyperbola_cmplx.pdf> <./input/graphs/note01/hyperbo
+la2-cmplx.pdf>]
+<./input/graphs/note01/angle_complex.pdf, id=334, 140.8181pt x 143.64265pt>
+File: ./input/graphs/note01/angle_complex.pdf Graphic file (type pdf)
+<use ./input/graphs/note01/angle_complex.pdf>
+Package pdftex.def Info: ./input/graphs/note01/angle_complex.pdf  used on input
+ line 373.
+(pdftex.def)             Requested size: 140.81775pt x 143.64229pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 384.
+ [13 <./input/graphs/note01/angle_complex.pdf>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 401.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 407.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 425.
+ [14]
+Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inp
+ut line 446.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 427.
-<./input/graphs/note10/img_graph9.pdf, id=2795, 257.87442pt x 148.62627pt>
-File: ./input/graphs/note10/img_graph9.pdf Graphic file (type pdf)
-<use ./input/graphs/note10/img_graph9.pdf>
-Package pdftex.def Info: ./input/graphs/note10/img_graph9.pdf  used on input li
-ne 430.
-(pdftex.def)             Requested size: 257.87378pt x 148.62589pt.
+(mdframed)              on input line 456.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 440.
- [132 <./input/graphs/note10/img_graph9.pdf>]) [133]
-\openout2 = `input/note11.aux'.
-
-
-(./input/note11.tex
-
-Package zref-xr Warning: File `note01.aux' not found or empty,
-(zref-xr)                labels not imported on input line 20.
-
-
-Package zref-xr Warning: File `note02.aux' not found or empty,
-(zref-xr)                labels not imported on input line 21.
-
-
-Package zref-xr Warning: File `note03.aux' not found or empty,
-(zref-xr)                labels not imported on input line 22.
-
-
-Package zref-xr Warning: File `note04.aux' not found or empty,
-(zref-xr)                labels not imported on input line 23.
-
-
-Package zref-xr Warning: File `note05.aux' not found or empty,
-(zref-xr)                labels not imported on input line 24.
-
-
-Package zref-xr Warning: File `note06.aux' not found or empty,
-(zref-xr)                labels not imported on input line 25.
-
-
-Package zref-xr Warning: File `note07.aux' not found or empty,
-(zref-xr)                labels not imported on input line 26.
-
-
-Package zref-xr Warning: File `note08.aux' not found or empty,
-(zref-xr)                labels not imported on input line 27.
-
-
-Package zref-xr Warning: File `note09.aux' not found or empty,
-(zref-xr)                labels not imported on input line 28.
-
-
-Package zref-xr Warning: File `note10.aux' not found or empty,
-(zref-xr)                labels not imported on input line 29.
-
-
-Package zref-xr Warning: File `note11.aux' not found or empty,
-(zref-xr)                labels not imported on input line 31.
-
+(mdframed)              on input line 470.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 43.
+(mdframed)              on input line 485.
+ [15]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 62.
+(mdframed)              on input line 502.
+Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
+put line 502.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 75.
-[134
+(mdframed)              on input line 508.
 
-
-
-] [135]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 154.
- [136]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 185.
- [137] [138]
-<./input/graphs/note11/img_graph1.pdf, id=2877, 224.56999pt x 131.43002pt>
-File: ./input/graphs/note11/img_graph1.pdf Graphic file (type pdf)
-<use ./input/graphs/note11/img_graph1.pdf>
-Package pdftex.def Info: ./input/graphs/note11/img_graph1.pdf  used on input li
-ne 267.
-(pdftex.def)             Requested size: 224.56943pt x 131.42969pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 288.
-Package mdframed Info: Not enough space on this page on input line 290.
- [139 <./input/graphs/note11/img_graph1.pdf>]
-Package mdframed Info: Not enough space on this page on input line 290.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 304.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 313.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 316.
-
-[140]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 346.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 351.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 359.
- [141]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 391.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 398.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 405.
- [142]
-Package mdframed Info: Not enough space on this page on input line 406.
-
-Overfull \hbox (1.94427pt too wide) in paragraph at lines 427--429
-[]$\OMS/cmsy/m/n/12 ) []\OT1/cmr/m/n/12 (-20) ([] \OML/cmm/m/it/12 ^^Yz; n\OT1/
-cmr/m/n/12 (-20) ) = []$ and thus, since $[]$ is an-a-lytic for ev-ery $\OML/cm
-m/m/it/12 z \OMS/cmsy/m/n/12 6\OT1/cmr/m/n/12 (-20) = 0$, $[] [] =
+Overfull \hbox (11.6558pt too wide) in paragraph at lines 510--513
+[]\OT1/cmr/m/n/12 (-20) We need to com-pute the mod-u-lus and the ar-gu-ment of
+ 1-i. $\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 (-20) 1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/
+m/it/12 i\OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 (-20) = [] =
  []
 
+<./input/graphs/note01/circle_square.pdf, id=394, 176.68811pt x 165.38086pt>
+File: ./input/graphs/note01/circle_square.pdf Graphic file (type pdf)
+<use ./input/graphs/note01/circle_square.pdf>
+Package pdftex.def Info: ./input/graphs/note01/circle_square.pdf  used on input
+ line 526.
+(pdftex.def)             Requested size: 176.68767pt x 165.38045pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 430.
-<./input/graphs/note11/img_graph2.pdf, id=2940, 248.127pt x 248.661pt>
-File: ./input/graphs/note11/img_graph2.pdf Graphic file (type pdf)
-<use ./input/graphs/note11/img_graph2.pdf>
-Package pdftex.def Info: ./input/graphs/note11/img_graph2.pdf  used on input li
-ne 452.
-(pdftex.def)             Requested size: 248.12637pt x 248.66039pt.
-[143]
+(mdframed)              on input line 530.
+<./input/graphs/note01/circle_square2.pdf, id=396, 155.04526pt x 157.8698pt>
+File: ./input/graphs/note01/circle_square2.pdf Graphic file (type pdf)
+<use ./input/graphs/note01/circle_square2.pdf>
+Package pdftex.def Info: ./input/graphs/note01/circle_square2.pdf  used on inpu
+t line 546.
+(pdftex.def)             Requested size: 224.37749pt x 228.48376pt.
+[16 <./input/graphs/note01/circle_square.pdf>]
+Package mdframed Info: Not enough space on this page on input line 551.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 459.
- [144 <./input/graphs/note11/img_graph2.pdf>] [145]) [146] (./main.aux
-(./input/note01.aux) (./input/note02.aux) (./input/note03.aux)
-(./input/note04.aux) (./input/note05.aux) (./input/note06.aux)
-(./input/note07.aux) (./input/note08.aux) (./input/note09.aux)
-(./input/note10.aux) (./input/note11.aux))
+(mdframed)              on input line 555.
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
+t line 555.
+ [17 <./input/graphs/note01/circle_square2.pdf>]) [18] (./main.aux (./input/not
+e01.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 328256B3DC0AD6809349D2168F977254;5690.
+(rerunfilecheck)             Checksum: B2D3E7601F10C6E57438393A1F4DFB2D;1522.
  ) 
 Here is how much of TeX's memory you used:
- 38323 strings out of 474228
- 784705 string characters out of 5746458
- 1953975 words of memory out of 5000000
- 58632 multiletter control sequences out of 15000+600000
- 588725 words of font info for 258 fonts, out of 8000000 for 9000
+ 35576 strings out of 474228
+ 720569 string characters out of 5746458
+ 1950975 words of memory out of 5000000
+ 56887 multiletter control sequences out of 15000+600000
+ 582056 words of font info for 194 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,16n,123p,1001b,1365s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,12n,123p,1001b,1203s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
-></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
-cal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loca
-l/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
-texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
-xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texl
-ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive
-/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/20
-23/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2023/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type
-1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/
-type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fo
-nts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/font
-s/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/
-type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (146 pages, 1301797 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
+/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
+ocal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
+al/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
+exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/tex
+live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
+e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
+023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/t
+exmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/tex
+mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf
+-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (18 pages, 400761 bytes).
 PDF statistics:
- 3301 PDF objects out of 3580 (max. 8388607)
- 2705 compressed objects within 28 object streams
- 959 named destinations out of 1000 (max. 500000)
- 55567 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 570 PDF objects out of 1000 (max. 8388607)
+ 439 compressed objects within 5 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 46313 words of extra memory for PDF output out of 51595 (max. 10000000)
 
