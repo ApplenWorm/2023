@@ -38,16 +38,16 @@ We have started to study the complex integration, formulated and proved Prop~\re
 \subsection{Antiderivatives and contour integrals}
 
 \begin{corollary}\label{corollary:17.4}
-    Let $f$ be continuous on a domain D, with antiderivative F on D.
+    Let $f$ be continuous on a domain $D$, with antiderivative $F$ on $D$.
     \begin{enumerate}
         \item If $C_1$ and $C_2$ are any two contours both starting at $z_0$ and both ending at $z_1$, then $\int_{C_1} f(z) dz = \int_{C_2} f(z) dz$.
-        \item If C is a closed contour in D, then $\int_C f(z) dz = 0$.
+        \item If $C$ is a closed contour in $D$, then $\int_C f(z) dz = 0$.
     \end{enumerate}
 \end{corollary}
 \begin{proof}
     \begin{enumerate}
         \item Immediate from Prop~\ref{proposition:17.3} 4)
-        \item If C is a closed contour, then we can write $C = C_1 - C_2$, where $C_1$ and $C_2$ have the same start point and the same end point. Then
+        \item If $C$ is a closed contour, then we can write $C = C_1 - C_2$, where $C_1$ and $C_2$ have the same start point and the same end point. Then
         \[  \int_C f(z) dz = \int_{C_1 - C_2} f(z) dz = \int_{C_1} f(z) dz + \int_{-C_2} f(z) dz = \int_{C_1} f(z) dz - \int_{C_2} f(z) dz = 0 \]
         Prop 17.3 1)
     \end{enumerate}
@@ -56,7 +56,7 @@ We have started to study the complex integration, formulated and proved Prop~\re
 Note: The condition that $f$ has antiderivative is necessary!
 
 \begin{example}\label{example:19.11} 
-    Compute $\int_C f(z) dz$ where $f(z) = \bar{z}$ and C connects 2 points $z_0 = 0, z_1 = 2 + 4i$
+    Compute $\int_C f(z) dz$ where $f(z) = \bar{z}$ and $C$ connects 2 points $z_0 = 0, z_1 = 2 + 4i$
     \begin{enumerate}
         \item by straight line segment
         \item by parabola (part of it) $y = x^2$
@@ -95,7 +95,7 @@ lower unit semicircle. Compute $\int_{C_1} \frac{1}{(z-4)^2} dz$.
 
 \begin{example} \label{example:19.13} Compute $\int_C \frac{dz}{(z-z_0)^n}$, where $C = \{z \in \mathbb{C}: |z-z_0| = R\}$ and $n$ is some integer.
 \begin{soln}
-         $C$ is a circle centered at $z_0$ of radius R. Parametrization of C: $|z-z_0| = R \implies (x-x_0)^2 + (y-y_0)^2 = R^2$. 
+         $C$ is a circle centered at $z_0$ of radius $R$. Parametrization of $C$: $|z-z_0| = R \implies (x-x_0)^2 + (y-y_0)^2 = R^2$. 
     Take $x-x_0 = R\cos t, y - y_0 = R\sin t, 0 \leq t \leq 2\pi$, then by Euler's formula $z - z_0 = R(\cos t + i\sin t) = Re^{it}, 0 \leq t \leq 2\pi \implies dz = iRe^{it} dt$.
 \end{soln}
 \end{example}
@@ -114,7 +114,7 @@ Consider two cases:
 
 \begin{example}\label{example:19.4} Compute $\int_C \frac{dz}{\sqrt{z}}$ where $C = \{f(x,y): x^2 + y^2 = 16, y \geq 0\}$, and the branch of $\sqrt{z}$ is such that $\sqrt{4} = -2$.
 \begin{soln}
-    Note: the contour is the upper half of the circle centered at 0 of radius 4.
+    Note: the contour is the upper half of the circle centered at $0$ of radius 4.
     
     Rewrite: $C = \{z \in \mathbb{C}: |z| = 4, \text{Im } z > 0\} \implies$ if $z \in \mathbb{C}$, then $z = 4e^{it}$ for $0 \leq t \leq \pi$.
     
@@ -134,8 +134,10 @@ Consider two cases:
 \end{soln}
 \end{example}
 
-The estimate in Prop 17.2 for the size of an integral of a complex-valued function of a real variable also has an important consequence for contour integrals.
-\begin{proposition}[ML Inequality]\label{proposition:17.5} Let C be a contour. If $|f(z)| \leq M$ for all $z \in C$ and Length (C) = L, then $|\int_C f(z) dz| \leq ML$.
+The estimate in Prop
+ %17.2
+~\ref{proposition:17.2} for the size of an integral of a complex-valued function of a real variable also has an important consequence for contour integrals.
+\begin{proposition}[ML Inequality]\label{proposition:17.5} Let $C$ be a contour. If $|f(z)| \leq M$ for all $z \in C$ and Length ($C$) = $L$, then $|\int_C f(z) dz| \leq ML$.
 \end{proposition}
 \begin{proof}
     $|\int_C f(z) dz| = |\int_a^b f(\gamma(t)) \gamma'(t) dt| \leq \int_a^b |f(\gamma(t))| |\gamma'(t)| dt$
@@ -147,7 +149,7 @@ Now that we have defined contour integrals and discussed some of their propertie
 
 \subsection{Star-shaped and convex domains}
 
-\begin{definition} \label{definition:18.1} $U \subseteq \mathbb{C}$ is convex if for all $z_1, z_2 \in U$, the line segment $[z_1, z_2] = \{tz_2 + (1-t)z_1: 0 \leq t \leq 1\}$ (is contained in U).
+\begin{definition} \label{definition:18.1} $U \subseteq \mathbb{C}$ is convex if for all $z_1, z_2 \in U$, the line segment $[z_1, z_2] = \{tz_2 + (1-t)z_1: 0 \leq t \leq 1\}$ (is contained in $U$).
     
 $U \subseteq \mathbb{C}$ is star-shaped about $w$ if for all $z \in U$, the line segment $[z, w] \subseteq U$.
 \end{definition}
@@ -168,18 +170,18 @@ $U \subseteq \mathbb{C}$ is star-shaped about $w$ if for all $z \in U$, the line
 Our goal now is to prove Cauchy's Theorem for star-shaped domains.
 \begin{theorem}[Cauchy's Theorem for star-shaped domains] \label{theorem:18.1}
     Let $f$ be a function which is analytic on an open star-shaped region $U \subseteq \mathbb{C}$. 
-    Then, for every closed contour C in U $\int_C f(z) dz = 0$.
+    Then, for every closed contour $C$ in $U$ $\int_C f(z) dz = 0$.
 \end{theorem}
 \begin{proof}
     
-    It will suffice to show that $f$ has an antiderivative F on U, since then by 
-    Cor~\ref{corollary:17.4} 2) we will conclude for a closed contour C that $\int_C f(z) dz = 0$.
+    It will suffice to show that $f$ has an antiderivative $F$ on $U$, since then by 
+    Cor~\ref{corollary:17.4} 2) we will conclude for a closed contour $C$ that $\int_C f(z) dz = 0$.
     
-    Define: $F(z) = \int_{[w, z]} f(\xi) d\xi$, where w is such that U is star-shaped 
+    Define: $F(z) = \int_{[w, z]} f(\xi) d\xi$, where $w$ is such that $U$ is star-shaped 
     about $w$, and $[w, z]$ is the straight line segment from $w$ to $z$.
     
     \begin{claim}
-                F is differentiable and $F'(z) = f(z)$.
+                $F$ is differentiable and $F'(z) = f(z)$.
     \end{claim}
         \begin{proof}[Proof of claim]
             Consider $\frac{F(z) - F(z_0)}{z - z_0} = \frac{1}{z-z_0} [\int_{[w, z]} f(\xi) d\xi - \int_{[w, z_0]} f(\xi) d\xi]$.
@@ -195,7 +197,7 @@ Our goal now is to prove Cauchy's Theorem for star-shaped domains.
             $\implies$ If $|z - z_0| < \delta$, then $|\int_{[z_0, z]} f(\xi) d\xi - \int_{[z_0, z]} f(z_0) d\xi| < \epsilon |z - z_0|$, 
             since $|\int_{[z_0, z]} f(\xi) d\xi - \int_{[z_0, z]} f(z_0) d\xi| \leq \epsilon |z - z_0|$.
             
-            Thus: $|\frac{F(z) - F(z_0)}{z - z_0} - f(z_0)| < \epsilon \implies$ F is differentiable at $z_0$, 
+            Thus: $|\frac{F(z) - F(z_0)}{z - z_0} - f(z_0)| < \epsilon \implies$ $F$ is differentiable at $z_0$, 
             with derivative $F'(z_0) = f(z_0) \implies$ 
         \end{proof}
     We proved Cauchy's Theorem up to (*). It remains to prove (*) which is Cauchy's Theorem for a Triangle.
@@ -208,14 +210,14 @@ Now we prove it.
 
 \subsection{Cauchy's Theorem for triangles}
 \begin{theorem}[Cauchy's Theorem for a triangle]\label{theorem:18.2}
-    Let $f$ be analytic in a domain U containing a triangle T. Then: $\int_{\partial T} f(z) dz = 0$.
+    Let $f$ be analytic in a domain $U$ containing a triangle $T$. Then: $\int_{\partial T} f(z) dz = 0$.
 \end{theorem}
 \begin{proof}
-    Let $\eta(T) = \int_{\partial T} f(z) dz$, denote the length of $\partial T$ by L.
+    Let $\eta(T) = \int_{\partial T} f(z) dz$, denote the length of $\partial T$ by $L$.
     
 	\includegraphics{img_graph4.pdf}
 	
-    Divide T into 4 triangles $T^{(j)}$ by bisecting the sides of T.
+    Divide $T$ into 4 triangles $T^{(j)}$ by bisecting the sides of $T$.
     
 	\includegraphics{img_graph5.pdf}
 
@@ -223,7 +225,7 @@ Now we prove it.
 we have: $\eta(T) = \sum_{j=1}^4 \eta(T^{(j)})$ \{the internal edges of each of the subtriangles $T^{(j)}$ will cancel out\}. 
 Each $T^{(j)}$ has a boundary with Length $(\partial T^{(j)}) = \frac{L}{2}$. At least one of the $T^{(j)}$ must satisfy $|\eta(T^{(j)})| \geq \frac{1}{4} |\eta(T)|$. Call this triangle $T_1$.
     
-    Divide $T_1$ into 4 triangles in the same way as T and conclude that one of these triangles, $T_2$, satisfies $|\eta(T_2)| \geq \frac{1}{4} |\eta(T_1)| \geq \frac{1}{4^2} |\eta(T)|$, 
+    Divide $T_1$ into 4 triangles in the same way as $T$ and conclude that one of these triangles, $T_2$, satisfies $|\eta(T_2)| \geq \frac{1}{4} |\eta(T_1)| \geq \frac{1}{4^2} |\eta(T)|$, 
 Length $(\partial T_2) = \frac{L}{4}$. 
 
 \includegraphics{img_graph6.pdf}
@@ -270,23 +272,23 @@ $\implies |\eta(T)| \leq \epsilon L^2$. Since $\epsilon > 0$ is arbitrary $\impl
 
 From the statement of Cauchy's Theorem for a star-shaped region, one can deduce the same result for more general regions comprised of star-shaped pieces.
 
-From Thm~\ref{theorem:18.1} follows: If a curve C can be expressed as $C = C_1 + C_2 + \dots + C_N$ where the region enclosed by each $C_j$ is star-shaped, then
+From Thm~\ref{theorem:18.1} follows: If a curve $C$ can be expressed as $C = C_1 + C_2 + \dots + C_N$ where the region enclosed by each $C_j$ is star-shaped, then
 $\int_C f(z) dz = \int_{C_1} f(z) dz + \int_{C_2} f(z) dz + \dots + \int_{C_N} f(z) dz = 0$.
 
 As a consequence one can prove:
 \begin{theorem}[Cauchy's Theorem]\label{theorem:18.3} 
-    If C is any simple, closed contour in $\mathbb{C}$ and $f$ is analytic 
-    everywhere on and inside C, then $\int_C f(z) dz = 0$.
+    If $C$ is any simple, closed contour in $\mathbb{C}$ and $f$ is analytic 
+    everywhere on and inside $C$, then $\int_C f(z) dz = 0$.
 \end{theorem}
 
 One of very useful corollaries of this theorem is the Deformation Principle.
 \begin{corollary}[Deformation Principle]\label{corollary:18.4.deformation}
     Let $C_1$ and $C_2$ be two simple, closed, positively oriented contours such that $C_1$ lies 
-    interior to $C_2$. If $f$ is analytic in a domain D that contains both $C_1$ and $C_2$ and the 
+    interior to $C_2$. If $f$ is analytic in a domain $D$ that contains both $C_1$ and $C_2$ and the 
     region between them, then $\int_{C_1} f(z) dz = \int_{C_2} f(z) dz$.
 \end{corollary}
 
-The picture that you should have in mind here is where D is a domain that contains both curves and the region between them: 
+The picture that you should have in mind here is where $D$ is a domain that contains both curves and the region between them: 
  
 \includegraphics{img_graph7.pdf}
 
@@ -318,12 +320,12 @@ The picture that you should have in mind here is where D is a domain that contai
 \end{proof}
 
 Now we can give an alternative proof to Ex~\ref{example:19.13}. It is an important tool for computations.
-\begin{corollary}\label{corollary:18.5} Let $z_0 \in \mathbb{C}$ be fixed. If C is a simple, closed, positively oriented 
-    contour such that $z_0$ lies interior to C, then $\int_C \frac{dz}{(z-z_0)^n} = \begin{cases} 2\pi i & n = 1 \\ 0 & n \neq 1, n \in \mathbb{Z} \end{cases}$.
+\begin{corollary}\label{corollary:18.5} Let $z_0 \in \mathbb{C}$ be fixed. If $C$ is a simple, closed, positively oriented 
+    contour such that $z_0$ lies interior to $C$, then $\int_C \frac{dz}{(z-z_0)^n} = \begin{cases} 2\pi i & n = 1 \\ 0 & n \neq 1, n \in \mathbb{Z} \end{cases}$.
 \end{corollary}
 \begin{proof}
-    Since $z_0$ lies interior to C, we can choose R so that the circle $C_R$ with center $z_0$ and radius R lies interior to C.
-        Hence, $f(z) = \frac{1}{(z-z_0)^n}$ is analytic in a domain D that contains both C and $C_R$ and the region 
+    Since $z_0$ lies interior to $C$, we can choose $R$ so that the circle $C_R$ with center $z_0$ and radius $R$ lies interior to $C$.
+        Hence, $f(z) = \frac{1}{(z-z_0)^n}$ is analytic in a domain $D$ that contains both $C$ and $C_R$ and the region 
         between them \{we excluded the only singularity of $f$ $z = z_0$, everywhere else $f$ is analytic\}.
 		
 		\includegraphics{img_graph10.pdf}
@@ -339,8 +341,8 @@ Now we can give an alternative proof to Ex~\ref{example:19.13}. It is an importa
 
 More generally, a similar proof to the one used for the Deformation Principle, gives
 \begin{corollary}\label{corollary:18.6}
-    If C is a simple, closed, positively oriented contour, and $C_1, C_2, \dots, C_n$ are simple, closed, positively 
-    oriented contours inside C with disjoint interiors, and $f$ is analytic in the region between C and $C_1, C_2, \dots, C_n$, 
+    If $C$ is a simple, closed, positively oriented contour, and $C_1, C_2, \dots, C_n$ are simple, closed, positively 
+    oriented contours inside $C$ with disjoint interiors, and $f$ is analytic in the region between $C$ and $C_1, C_2, \dots, C_n$, 
     then $\int_C f(z) dz = \int_{C_1} f(z) dz + \int_{C_2} f(z) dz + \dots + \int_{C_n} f(z) dz$.
 \end{corollary}
 
@@ -349,15 +351,15 @@ The picture to have in mind is:
 \includegraphics{img_graph11.pdf}
 
 \begin{example}\label{example:20.1}
-    Compute $\int_C \frac{z}{(z-4)^2} dz$, where C is the contour defined by traversing once the square with vertices $\pm 3i, 6 \pm 3i$ anticlockwise.
+    Compute $\int_C \frac{z}{(z-4)^2} dz$, where $C$ is the contour defined by traversing once the square with vertices $\pm 3i, 6 \pm 3i$ anticlockwise.
 \begin{soln}
     To compute this integral we apply the Deformation principle (\ref{corollary:18.4.deformation}) and
-    observe that $\int_C \frac{z dz}{(z-4)^2} = \int_{C'} \frac{z dz}{(z-4)^2}$, where C' is the circular 
+    observe that $\int_C \frac{z dz}{(z-4)^2} = \int_{C'} \frac{z dz}{(z-4)^2}$, where $C'$ is the circular 
     contour centered at 4 of radius 1. 
 	
 	\includegraphics{img_graph12.pdf}
 	
-    In particular, C' may be parametrized by the path $\gamma(t) = 4 + e^{2\pi i t}, 0 \leq t \leq 1$
+    In particular, $C'$ may be parametrized by the path $\gamma(t) = 4 + e^{2\pi i t}, 0 \leq t \leq 1$
     \begin{align*}
             \implies \int_{C'} \frac{z dz}{(z-4)^2} &= \int_0^1 \frac{4 + e^{2\pi i t}}{e^{4\pi i t}} 2\pi i e^{2\pi i t} dt \\
             &= 2\pi i \int_0^1 (4e^{-2\pi i t} + 1) dt = 2\pi i [-\frac{2}{\pi i}e^{-2\pi i t} + t]|_0^1 \\ 

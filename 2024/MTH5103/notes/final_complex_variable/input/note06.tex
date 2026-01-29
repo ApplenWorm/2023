@@ -251,11 +251,11 @@ the vector $b$ to the distance that equals to the length of $b$. Obviously, the 
 
 \includegraphics{img_graph2.pdf}
 
-\begin{example} \label{example:16.1} For $w = z + 1$: the whole domain is moved by 1 to the right parallel to x-axis. 
+\begin{example} \label{example:16.1} For $w = z + 1$: the whole domain is moved by 1 to the right parallel to $x$-axis. 
     
     \includegraphics{img_graph3.pdf}
 
-    For $w = z - 2i$ - the whole domain is moved by 2 down parallel to y-axis. 
+    For $w = z - 2i$ - the whole domain is moved by 2 down parallel to $y$-axis. 
 
     \includegraphics{img_graph4.pdf}
 
@@ -308,26 +308,26 @@ $\implies$ The inverse of a Möbius transformation is again Möbius transformati
 
     \includegraphics{img_graph7.pdf}
 
-The boundary contains two parts: the interval AB and the half circle BCA: $\partial D = AB \cup BCA$.
+The boundary contains two parts: the interval $AB$ and the half circle $BCA$: $\partial D = AB \cup BCA$.
 
-First we find the image of AB.
+First we find the image of $AB$.
 
-Since the Möbius transformation maps a line either to a line or to circle it suffices to find an image of any 3 points on the boundary, since line and circle both uniquely determined by 3 points. Choose: $z_1 = -1, z_2 = 0, z_3 = 1$. The direction of AB is from A to B, namely from $z_1$ to $z_3$, the direction on the w-plane will be from $w_1$ to $w_3$.
+Since the Möbius transformation maps a line either to a line or to circle it suffices to find an image of any 3 points on the boundary, since line and circle both uniquely determined by 3 points. Choose: $z_1 = -1, z_2 = 0, z_3 = 1$. The direction of $AB$ is from $A$ to $B$, namely from $z_1$ to $z_3$, the direction on the $w$-plane will be from $w_1$ to $w_3$.
 
 For $z_1 = -1 \to w_1 = \infty; z_2 = 0 \to w_2 = i; z_3 = 1 \to w_3 = 0$.
 
-$\implies$ The interval AB is mapped to the upper half of the v-axis with direction from infinity to zero.
+$\implies$ The interval $AB$ is mapped to the upper half of the $v$-axis with direction from infinity to zero.
 
 \includegraphics{img_graph8.pdf}
 
-Let us study the image of the upper half of the unit circle BCA. The images of A and B will be $w_1$ and $w_3$ respectively. Let us find the image of the point $C = z_4 = i \implies w_4 = \frac{i-i^2}{1+i} = \frac{1+i}{1+i} = 1$.
+Let us study the image of the upper half of the unit circle $BCA$. The images of $A$ and $B$ will be $w_1$ and $w_3$ respectively. Let us find the image of the point $C = z_4 = i \implies w_4 = \frac{i-i^2}{1+i} = \frac{1+i}{1+i} = 1$.
 
-Namely, the points B, C, A on the circle are mapped to the points $w_3, w_4, w_1$ (respectively) that are (all) on the positive half of the real axis in direction from the origin to $\infty$.
+Namely, the points $B$, $C$, $A$ on the circle are mapped to the points $w_3, w_4, w_1$ (respectively) that are (all) on the positive half of the real axis in direction from the origin to $\infty$.
 
 \includegraphics{img_graph9.pdf}
 
-Conclusion: the boundary in the w-plane is the positive half of the v-axis and the positive half of the u-axis, thus D is mapped either to a first quadrant or to the plane
-without the first quadrant (since they both have the same boundary). To see to which one we need to understand where to the interior points of this upper half circle are mapped, since the interior points in the z-plane are mapped to interior points in the w-plane. Let us take some interior point.
+Conclusion: the boundary in the $w$-plane is the positive half of the $v$-axis and the positive half of the $u$-axis, thus $D$ is mapped either to a first quadrant or to the plane
+without the first quadrant (since they both have the same boundary). To see to which one we need to understand where to the interior points of this upper half circle are mapped, since the interior points in the $z$-plane are mapped to interior points in the $w$-plane. Let us take some interior point.
 
 Take $z = \frac{1}{2}i \in D \implies w = \frac{i - \frac{1}{2}i^2}{1 + \frac{1}{2}i} = \frac{\frac{1}{2} + i}{\frac{1}{2}(2+i)} = \frac{(\frac{1}{2} + i)(1 - \frac{1}{2}i)}{5/4} = \frac{4}{5} + i\frac{3}{5} \in$ I-st quadrant since $x, y \geq 0 \implies$ the image = $\{w: 0 < \arg w < \frac{\pi}{2}\}$, namely the first quadrant of the w-plane.
 
@@ -357,7 +357,7 @@ c = bi
 \end{soln}
 \end{example}
 
-\checkthis{} Under $w$: the real axis $\mathbb{R}$ is mapped to the unit circle ($\mathbb{R}_+$ to the lower half, $\mathbb{R}_-$ to the upper half). The upper half of the z-plane is mapped to the exterior of this circle (first quadrant - lower exterior, second quadrant - upper one).
+\checkthis{} Under $w$: the real axis $\mathbb{R}$ is mapped to the unit circle ($\mathbb{R}_+$ to the lower half, $\mathbb{R}_-$ to the upper half). The upper half of the $z$-plane is mapped to the exterior of this circle (first quadrant - lower exterior, second quadrant - upper one).
 
 Harder exercise - Prove: Given any 3 distinct points $z_1, z_2, z_3$ in the z-plane and any 3 points $w_1, w_2, w_3$, there exists a Möbius transformation sending $z_j \to w_j$ for each $j = 1, 2, 3$. This transformation is unique if we specify an orientation for the curve containing the 3 given points (or for the curve containing the prescribed points, but not both).
 

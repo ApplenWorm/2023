@@ -229,7 +229,7 @@ partition the curve and $(\xi_{j-1}, \xi_j)$ is an arc, $|z_j - z_{j-1}|$ is a l
 \includegraphics{img_graph2.pdf}
 
 If this limit is independent of the curve and of the choice of a point for 
-the value $f(\xi_j)$, then this integral exists and it is called a path integral with respect to the path C. 
+the value $f(\xi_j)$, then this integral exists and it is called a path integral with respect to the path $C$. 
 To see this first we need to know more about curves and paths.
 
 \begin{definition}\label{definition:17.1} A path is a continuous map $\gamma: [a, b] \to \mathbb{C}$ ($t \to \gamma(t)$), $\gamma(t) = x(t) + iy(t))$ where $[a, b] \subset \mathbb{R}$ is a closed interval. The image of any path $\gamma$ in $\mathbb{C}$ is called a curve. We say that $\gamma$ is a parametrization of that curve.
@@ -245,9 +245,9 @@ Observe: $\gamma_1(0) = \gamma_1(1) = \gamma_2(0) = \gamma_2(2\pi) = 1$. $\gamma
 Straight line connecting $w$ and $w'$ (starting at $w$): $\gamma_3: [0, 1] \to \mathbb{C} \quad \gamma_3(t) = tw' + (1-t)w$.
 \end{example}
 
-\begin{definition} \label{definition:17.2} C is a simple curve if there exists a 
-    parametrization $\gamma$ of C which is injective (one to one): if $t_1 \neq t_2$, then $\gamma(t_1) \neq \gamma(t_2)$. 
-    C is a simple, closed curve if it is parametrized by $\gamma: [a, b] \to \mathbb{C}$ with $\gamma(a) = \gamma(b)$, but $\gamma(t_1) \neq \gamma(t_2)$ for all other $t_1, t_2 \in [a, b], t_1 \neq t_2$.
+\begin{definition} \label{definition:17.2} $C$ is a simple curve if there exists a 
+    parametrization $\gamma$ of $C$ which is injective (one to one): if $t_1 \neq t_2$, then $\gamma(t_1) \neq \gamma(t_2)$. 
+    $C$ is a simple, closed curve if it is parametrized by $\gamma: [a, b] \to \mathbb{C}$ with $\gamma(a) = \gamma(b)$, but $\gamma(t_1) \neq \gamma(t_2)$ for all other $t_1, t_2 \in [a, b], t_1 \neq t_2$.
 \end{definition}
 \begin{theorem}[Jordan's Theorem] \label{theorem:jordan}
     Every simple closed curve divides $\mathbb{C}$ into 2 regions - "inside" and "outside" the curve.
@@ -298,13 +298,13 @@ We can add paths in the following manner:
 \end{definition}
 
 \begin{definition} \label{definition:17.4} 
-    Let C be a curve parametrized by the path $\gamma: [a, b] \to \mathbb{C}$, $\gamma(t) = x(t) + iy(t)$ is 
+    Let $C$ be a curve parametrized by the path $\gamma: [a, b] \to \mathbb{C}$, $\gamma(t) = x(t) + iy(t)$ is 
     called differentiable if the real functions $x(t)$ and $y(t)$ are differentiable on $[a, b]$. 
-    If $\gamma$ is differentiable on $(a, b)$ and $\gamma'(t) \neq 0$ for $t \in (a, b)$, then C is called a smooth curve.
+    If $\gamma$ is differentiable on $(a, b)$ and $\gamma'(t) \neq 0$ for $t \in (a, b)$, then $C$ is called a smooth curve.
 \end{definition}
 
 \begin{definition} \label{definition:17.5} A contour is a piecewise-smooth curve: a finite union of smooth curves joined end-to-end. 
-    The length of a contour C is defined to be $L = \int_a^b |\gamma'(t)| dt$, where $\gamma: [a, b] \to \mathbb{C}$ is any smooth parametrization of C.
+    The length of a contour $C$ is defined to be $L = \int_a^b |\gamma'(t)| dt$, where $\gamma: [a, b] \to \mathbb{C}$ is any smooth parametrization of $C$.
 \end{definition}
 
 \checkthis{} The length is independent of parametrization!
@@ -356,10 +356,10 @@ The following proposition is a very useful estimate for the size of an integral 
 Our next subject is contour integrals, namely the integral of some function along some contour.
 
 \subsection{Contour Integrals}
-Let C be a contour and $f$ a continuous complex-valued function defined on C. Suppose that C is parametrized by the path $\gamma: [a, b] \to \mathbb{C}$.
+Let $C$ be a contour and $f$ a continuous complex-valued function defined on $C$. Suppose that $C$ is parametrized by the path $\gamma: [a, b] \to \mathbb{C}$.
 
 \begin{definition}\label{definition:17.7}
-    The contour integral of $f$ along C is defined as $\int_C f(z) dz = \int_a^b f(\gamma(t)) \gamma'(t) dt$.
+    The contour integral of $f$ along $C$ is defined as $\int_C f(z) dz = \int_a^b f(\gamma(t)) \gamma'(t) dt$.
 \end{definition}
 
 The basic idea is change of variables. Take $z = \gamma(t)$, 
@@ -368,7 +368,7 @@ But, of course, to make it rigorous one needs to show that the expression on the
 RHS gives the same value as the definition with sums \[ \lim_{n \to \infty} \sum_{j=1}^n f(z_j)(z_j - z_{j-1}) (|z_j - z_{j-1}| \to 0).\] 
 The definition of contour integral is much easier to use in practice. Let us see some examples.
 
-\begin{example}\label{example:19.8} Let C be a semicircle parametrized by the path $\gamma(\theta) = 2e^{i\theta}, -\frac{\pi}{2} \leq \theta \leq \frac{\pi}{2}$. Let $f(z) = \bar{z}$. Then:
+\begin{example}\label{example:19.8} Let $C$ be a semicircle parametrized by the path $\gamma(\theta) = 2e^{i\theta}, -\frac{\pi}{2} \leq \theta \leq \frac{\pi}{2}$. Let $f(z) = \bar{z}$. Then:
 
     \includegraphics{img_graph5.pdf}
 
@@ -378,7 +378,7 @@ The definition of contour integral is much easier to use in practice. Let us see
 \end{align*}
 \end{example}
 
-\begin{example}\label{example:19.9} Let C be the same contour as in Ex~\ref{example:19.8}, $f(z) = z^2$.
+\begin{example}\label{example:19.9} Let $C$ be the same contour as in Ex~\ref{example:19.8}, $f(z) = z^2$.
     \begin{align*}
  \int_C f(z) dz & = \int_{-\pi/2}^{\pi/2} (2e^{i\theta})^2 2ie^{i\theta} d\theta = \int_{-\pi/2}^{\pi/2} 8i e^{3i\theta} d\theta \\ 
  & = \frac{8i}{3i} e^{3i\theta} |_{-\pi/2}^{\pi/2} = \frac{8}{3} [e^{i\frac{3\pi}{2}} - e^{-i\frac{3\pi}{2}}] = \frac{8}{3} 2i \sin(\frac{3\pi}{2}) = -i\frac{16}{3}
@@ -386,8 +386,8 @@ The definition of contour integral is much easier to use in practice. Let us see
 \end{example}
 
 \begin{example} \label{example:19.10} 
-    Let $f(z) = z^2$, C - the straight line segment from $-2i$ to $2i \implies$
-    C is parametrized by the path $\gamma(t) = 2it + (-2i)(1-t) = -2i + 4it, 0 \leq t \leq 1$. Then:
+    Let $f(z) = z^2$, $C$ - the straight line segment from $-2i$ to $2i \implies$
+    $C$ is parametrized by the path $\gamma(t) = 2it + (-2i)(1-t) = -2i + 4it, 0 \leq t \leq 1$. Then:
 \begin{align*} 
     \int_C f(z) dz & = \int_0^1 f(\gamma(t)) \gamma'(t) dt \\ 
     & = \int_0^1 (-2i + 4it)^2 4i dt = 4i(-4t - \frac{16t^3}{3} + \frac{16t^2}{2})|_0^1 \\ 
@@ -400,33 +400,33 @@ contours that connect $2i$ to $-2i$ and obtained the same value, this is not a c
 
 Prop 17.1 + basic linearity properties of integration applied to $\int_C f(z) dz$ imply:
 \begin{proposition}\label{proposition:17.3}
-    Let $f, g$ be complex functions and $C, C_1, C_2$ contours.
+    Let $f, g$ be complex functions and $C$, $C_1$, $C_2$ contours.
     \begin{enumerate}
         \item $\int_{C_1 + C_2} f(z) dz = \int_{C_1} f(z) dz + \int_{C_2} f(z) dz$ and $\int_{-C} f(z) dz = -\int_C f(z) dz$
         \item $\int_C (f+g)(z) dz = \int_C f(z) dz + \int_C g(z) dz$
         \item For any $\alpha \in \mathbb{C}: \int_C \alpha f(z) dz = \alpha \int_C f(z) dz$
         \item If $f$ is continuous on a domain $D \subseteq \mathbb{C}$ and has 
-        antiderivative $F(z)$ on D, then $\int_C f(z) dz = F(z_1) - F(z_0)$, where $z_0$ and $z_1$ are the endpoints of C.
+        antiderivative $F(z)$ on $D$, then $\int_C f(z) dz = F(z_1) - F(z_0)$, where $z_0$ and $z_1$ are the endpoints of $C$.
     \end{enumerate}
     
 \end{proposition}
 \begin{proof}
     \begin{enumerate}
         \item 1), 2), 3) follow directly from Prop~\ref{proposition:17.1}.
-        \item If F is an antiderivative of $f$, then
+        \item If $F$ is an antiderivative of $f$, then
     
     \[ \frac{d}{dt} F(\gamma(t)) = F'(\gamma(t)) \gamma'(t) = f(\gamma(t)) \gamma'(t) \]
-    Here $\gamma: [a, b] \to \mathbb{C}$ is a parametrization of a contour C in D with $\gamma(a) = z_0$ and $\gamma(b) = z_1$. 
+    Here $\gamma: [a, b] \to \mathbb{C}$ is a parametrization of a contour $C$ in $D$ with $\gamma(a) = z_0$ and $\gamma(b) = z_1$. 
     Applying Prop~\ref{proposition:17.1} with $w(t) = f(\gamma(t))\gamma'(t)$ and $F(\gamma(t)) = W(t)$ yields the result.
     \end{enumerate}
     
 \end{proof}
 
 \begin{theorem}[Jordan Curve]
-    Let C be simple closed curve (Jordan curve) in $\mathbb{R}^2$. Then its 
+    Let $C$ be simple closed curve (Jordan curve) in $\mathbb{R}^2$. Then its 
     complement $\mathbb{R}^2 \setminus C$ consists of exactly two connected components. 
     One of these components is bounded (the interior) and the other is unbounded (the exterior), 
-    and the curve C is the boundary of each component.
+    and the curve $C$ is the boundary of each component.
 
     \includegraphics{img_graph6.pdf}
 
