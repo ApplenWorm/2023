@@ -65,12 +65,18 @@ Recall: $r = |z|, \varphi + 2\pi k = \arg z$, thus
 
 $\implies \text{Ln } z$ is defined for any $z \neq 0$ and it is multi-valued function (for different values of $k$ the function attains different values).
 
-\begin{example}\label{example:17.1} Compute: 1) $\text{Ln } i$ 2) $\text{Ln } (-4)$
+\begin{example}\label{example:17.1} 
+    Compute:
+    \begin{enumerate}
+        \item $\text{Ln } i$
+        \item $\text{Ln } (-4)$
+    \end{enumerate}
 
     \begin{soln}
-                        1) $\text{Ln } i = \ln |i| + i(\arg i + 2\pi k) = \ln 1 + i(\frac{\pi}{2} + 2\pi k) = i(\frac{\pi}{2} + 2\pi k)$.
-        
-        2) $\text{Ln } (-4) = \ln |-4| + i(\arg(-4) + 2\pi k) = \ln 4 + i(\pi + 2\pi k)$.
+        \begin{enumerate}
+            \item $\text{Ln } i = \ln |i| + i(\arg i + 2\pi k) = \ln 1 + i(\frac{\pi}{2} + 2\pi k) = i(\frac{\pi}{2} + 2\pi k)$.
+            \item $\text{Ln } (-4) = \ln |-4| + i(\arg(-4) + 2\pi k) = \ln 4 + i(\pi + 2\pi k)$.
+        \end{enumerate}
     \end{soln}
 \end{example}
 \begin{example} \label{example:17.2}
@@ -162,13 +168,11 @@ Now we define the main branch of the function $\text{Ln } z$.
 
 Having the logarithm, similarly to the way that we have defined the trigonometric and hyperbolic functions using the exponential function, we define the inverse of the trigonometric and hyperbolic functions as follows:
 \begin{definition}\label{definition:15.3}
-    
-    1) $\arcsin z$ is $w \in \mathbb{C}$ such that $\sin w = z$.
-
-    2) $\arccos z$ is $w \in \mathbb{C}$ such that $\cos w = z$.
-    
-    3) $\arctan z$ is $w \in \mathbb{C}$ such that $\tan w = z$.
-    
+    \begin{enumerate}
+        \item $\arcsin z$ is $w \in \mathbb{C}$ such that $\sin w = z$.
+        \item $\arccos z$ is $w \in \mathbb{C}$ such that $\cos w = z$.
+        \item $\arctan z$ is $w \in \mathbb{C}$ such that $\tan w = z$.
+    \end{enumerate}
     From 1): $z = \sin w$. By Euler's formula $z = \frac{e^{iw} - e^{-iw}}{2i}$.
 \end{definition}
 
@@ -184,17 +188,22 @@ In the same way:
 \end{exercise}
 
 \begin{example}\label{example:17.4} 
-    Compute: 1) $\arcsin 2$ 2) $\arcsin i$.
+    Compute:
+    \begin{enumerate}
+        \item $\arcsin 2$
+        \item $\arcsin i$
+    \end{enumerate}
 \begin{soln}
-1) $\arcsin 2 = -i\text{Ln}(2i \pm \sqrt{1-4}) = -i\text{Ln}((2 \pm \sqrt{3})i) = -i(\ln(2 \pm \sqrt{3}) + i(\frac{\pi}{2} + 2\pi k)) = \frac{\pi}{2} + 2\pi k - i\ln(2 \pm \sqrt{3})$. If, for example, $k = 1$, $\arcsin 2$ attains two values: $\arcsin 2 \approx \frac{5}{2}\pi \pm i \cdot 1.32$.
-    
-    2) $\arcsin i = -i\text{Ln}(-1 \pm \sqrt{2})$. Let us compute each of the logarithms:
+    \begin{enumerate}
+        \item $\arcsin 2 = -i\text{Ln}(2i \pm \sqrt{1-4}) = -i\text{Ln}((2 \pm \sqrt{3})i) = -i(\ln(2 \pm \sqrt{3}) + i(\frac{\pi}{2} + 2\pi k)) = \frac{\pi}{2} + 2\pi k - i\ln(2 \pm \sqrt{3})$. If, for example, $k = 1$, $\arcsin 2$ attains two values: $\arcsin 2 \approx \frac{5}{2}\pi \pm i \cdot 1.32$.
+        \item $\arcsin i = -i\text{Ln}(-1 \pm \sqrt{2})$. Let us compute each of the logarithms:
     \begin{align*}
         \text{Ln}(-1 + \sqrt{2}) &= \ln(\sqrt{2} - 1) + 2\pi k i \\
         \text{Ln}(-1 - \sqrt{2}) &= \ln(\sqrt{2} + 1) + (2k+1)\pi i
     \end{align*}
     $\implies \arcsin i = 2\pi k - i\ln(\sqrt{2} - 1), \quad k \in \mathbb{Z}$ ($k = 0, \pm 1, \pm 2, \dots$)
     $\arcsin i = \pi(2k+1) - i\ln(\sqrt{2} + 1), \quad k \in \mathbb{Z}$.
+    \end{enumerate}
 \end{soln}
 \end{example}
 
@@ -277,8 +286,8 @@ Therefore, for $z \neq z_0$ we have: $f(z) = \sum_{n=0}^{\infty} a_{n+2} (z - z_
 \end{proof}
 
 The other types of singularities can also be recognised by the behavior of $f$ near it.
-
-1) If $z_0$ is a pole, then $\lim_{z \to z_0} f(z) = \infty$.
+    \begin{enumerate}
+        \item If $z_0$ is a pole, then $\lim_{z \to z_0} f(z) = \infty$.
 
 If $z_0$ is a pole of order $m$, then using the Laurent series expansion we get
 \begin{align*}
@@ -287,7 +296,8 @@ If $z_0$ is a pole of order $m$, then using the Laurent series expansion we get
 \end{align*}
 Therefore, since $\lim_{z \to z_0} \frac{1}{(z - z_0)^m} = \infty$ and $\lim_{z \to z_0} [b_m + \dots] = b_m$, we conclude that $\lim_{z \to z_0} f(z) = \infty$.
 
-2) If $z_0$ is an essential singularity, then $\lim_{z \to z_0} f(z)$ does not exist - highly non-obvious!
+        \item If $z_0$ is an essential singularity, then $\lim_{z \to z_0} f(z)$ does not exist - highly non-obvious!
+    \end{enumerate}
 
 In fact, more is true in the case of an essential singularity:
 
@@ -354,15 +364,16 @@ By Prop 16.2(\ref{proposition:16.2}): $\text{Res}(f, 2) = \frac{\varphi(2)}{0!} 
 \end{example}
 
 \begin{soln}
-    1) Since $\lim_{z \to 3} \frac{(z-3)(z+3)}{z-3} = 6$ and $\lim_{z \to 3} (z-3) \cdot \frac{(z-3)(z+3)}{z-3} = 0$ by Prop 16.1 (\ref{proposition:16.1})$z = 3$ is a removable singularity. 
-    Define: $\tilde{f}(z) = \begin{cases} \frac{z^2 - 9}{z-3} & z \neq 3 \\ 6 & z = 3 \end{cases} \implies \tilde{f}(z)$ is entire (analytic on $\mathbb{C}$).
-    
-    2) We prove this in two ways:
-    
-    i) The Laurent series for $f$ in $0 < |z| < R$ is $f(z) = \frac{1}{z}(z - \frac{z^3}{3!} + \frac{z^5}{5!} - \dots) = 1 - \frac{z^2}{3!} + \frac{z^4}{5!} - \dots$ $\implies$ the 
-    principal part does not exist $\implies z = 0$ is a removable singularity.
-    
-    ii) $\lim_{z \to 0} z \cdot \frac{\sin z}{z} = \lim_{z \to 0} \sin z = 0 \implies$ by Prop 16.1 (\ref{proposition:16.1}) $z = 0$ is a removable singularity.
+    \begin{enumerate}
+        \item Since $\lim_{z \to 3} \frac{(z-3)(z+3)}{z-3} = 6$ and $\lim_{z \to 3} (z-3) \cdot \frac{(z-3)(z+3)}{z-3} = 0$ by Prop 16.1 (\ref{proposition:16.1})$z = 3$ is a removable singularity. 
+        Define: $\tilde{f}(z) = \begin{cases} \frac{z^2 - 9}{z-3} & z \neq 3 \\ 6 & z = 3 \end{cases} \implies \tilde{f}(z)$ is entire (analytic on $\mathbb{C}$).
+        \item We prove this in two ways:
+        \begin{enumerate}[label=\roman*)]
+            \item The Laurent series for $f$ in $0 < |z| < R$ is $f(z) = \frac{1}{z}(z - \frac{z^3}{3!} + \frac{z^5}{5!} - \dots) = 1 - \frac{z^2}{3!} + \frac{z^4}{5!} - \dots$ $\implies$ the 
+            principal part does not exist $\implies z = 0$ is a removable singularity.
+            \item $\lim_{z \to 0} z \cdot \frac{\sin z}{z} = \lim_{z \to 0} \sin z = 0 \implies$ by Prop 16.1 (\ref{proposition:16.1}) $z = 0$ is a removable singularity.
+        \end{enumerate}
+    \end{enumerate}
 \end{soln}
 
 \begin{example}\label{example:18.3} Classify the singularities of $f(z) = e^{\frac{1}{z}}$ and compute the residue of $f$ at $z = 0$.

@@ -39,36 +39,39 @@ We have started to study the complex integration, formulated and proved Prop 17.
 
 \begin{corollary}\label{corollary:17.4}
     Let $f$ be continuous on a domain D, with antiderivative F on D.
-    
-    1) If $C_1$ and $C_2$ are any two contours both starting at $z_0$ and both ending at $z_1$, then $\int_{C_1} f(z) dz = \int_{C_2} f(z) dz$.
-    
-    2) If C is a closed contour in D, then $\int_C f(z) dz = 0$.
+    \begin{enumerate}
+        \item If $C_1$ and $C_2$ are any two contours both starting at $z_0$ and both ending at $z_1$, then $\int_{C_1} f(z) dz = \int_{C_2} f(z) dz$.
+        \item If C is a closed contour in D, then $\int_C f(z) dz = 0$.
+    \end{enumerate}
 \end{corollary}
 \begin{proof}
-    1) Immediate from Prop 17.3 (\ref{proposition:17.3}) 4)
-    
-    2) If C is a closed contour, then we can write $C = C_1 - C_2$, where $C_1$ and $C_2$ have the same start point and the same end point. Then
-    \[  \int_C f(z) dz = \int_{C_1 - C_2} f(z) dz = \int_{C_1} f(z) dz + \int_{-C_2} f(z) dz = \int_{C_1} f(z) dz - \int_{C_2} f(z) dz = 0 \]
-    Prop 17.3 1)
+    \begin{enumerate}
+        \item Immediate from Prop 17.3 (\ref{proposition:17.3}) 4)
+        \item If C is a closed contour, then we can write $C = C_1 - C_2$, where $C_1$ and $C_2$ have the same start point and the same end point. Then
+        \[  \int_C f(z) dz = \int_{C_1 - C_2} f(z) dz = \int_{C_1} f(z) dz + \int_{-C_2} f(z) dz = \int_{C_1} f(z) dz - \int_{C_2} f(z) dz = 0 \]
+        Prop 17.3 1)
+    \end{enumerate}
     
 \end{proof}
 Note: The condition that $f$ has antiderivative is necessary!
 
 \begin{example}\label{example:19.11} 
     Compute $\int_C f(z) dz$ where $f(z) = \bar{z}$ and C connects 2 points $z_0 = 0, z_1 = 2 + 4i$
-
-1) by straight line segment
-2) by parabola (part of it) $y = x^2$
+    \begin{enumerate}
+        \item by straight line segment
+        \item by parabola (part of it) $y = x^2$
+    \end{enumerate}
 \begin{soln}
-    1) Straight line connecting 0 and $2 + 4i$ is parametrized by $\gamma(t) = (2+4i)t, 0 \leq t \leq 1$. 
-    Thus, \[\int_C f(z) dz = \int_0^1 \overline{f(\gamma(t))} \gamma'(t) dt = \int_0^1 (2+4i) dt = \int_0^1 20t dt = 10.\]
-    
-    2) Parametrization: $\gamma(t) = t + it^2, 0 \leq t \leq 2$, and 
-    \begin{align*}
-        \int_C f(z) dz &= \int_0^2 \overline{f(\gamma(t))} \gamma'(t) dt = \int_0^2 (t-it^2)(1+2it) dt \\ 
-        &= \int_0^2 (t-it^2)(1+2it) dt = \int_0^2 (t + it^2 + 2t^3) dt = 10 + i\frac{8}{3} (\neq 10).
-    \end{align*}
-    $\bar{z}$ does not have an antiderivative!
+    \begin{enumerate}
+        \item Straight line connecting 0 and $2 + 4i$ is parametrized by $\gamma(t) = (2+4i)t, 0 \leq t \leq 1$. 
+        Thus, \[\int_C f(z) dz = \int_0^1 \overline{f(\gamma(t))} \gamma'(t) dt = \int_0^1 (2+4i) dt = \int_0^1 20t dt = 10.\]
+        \item Parametrization: $\gamma(t) = t + it^2, 0 \leq t \leq 2$, and 
+        \begin{align*}
+            \int_C f(z) dz &= \int_0^2 \overline{f(\gamma(t))} \gamma'(t) dt = \int_0^2 (t-it^2)(1+2it) dt \\ 
+            &= \int_0^2 (t-it^2)(1+2it) dt = \int_0^2 (t + it^2 + 2t^3) dt = 10 + i\frac{8}{3} (\neq 10).
+        \end{align*}
+        $\bar{z}$ does not have an antiderivative!
+    \end{enumerate}
 \end{soln}
 \end{example}
 
@@ -242,28 +245,28 @@ $\implies |\eta(T)| \leq \epsilon L^2$. Since $\epsilon > 0$ is arbitrary $\impl
 \end{proof}
 (**) Existence of $z_0$: On each step of the process choose $z_n \in T_n$ (a point) and obtain an infinite sequence $\{z_n\}_{n=1}^\infty$. Then:
 
-1) $\{z_n\}$ is a Cauchy sequence, namely, for any $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that for any pair $n, m > N$, $|z_n - z_m| < \epsilon$.
-
-First, it is bounded. Set $\epsilon = 1$ and choose N such that for any $n, m \in \mathbb{N}$, $|z_n - z_m| < 1$ (using that $\{z_n\}$ is a Cauchy sequence).
-Namely: (*) $||z_n| - |z_m|| < |z_n - z_m| < 1$. Fix $m_0 \in \mathbb{N}$.
-From (*) for all $n > N$, $|z_{m_0}| - 1 < |z_n| < |z_{m_0}| + 1 \implies$ for 
-all $n \geq 1$, $\min\{|z_1|, \dots, |z_{m_0}-1|, |z_{m_0}|+1\} \leq |z_n| \leq \max\{|z_1|, \dots, |z_{m_0}-1|, |z_{m_0}|+1\}$ $\implies$ it is bounded.
-Now apply to $\{z_n\}$ Bolzano-Weierstrass Thm and obtain a converging subsequence $\{z_{n_k}\}, \lim_{k \to \infty} z_{n_k} = z_0$ (apply separately to Re $z_n$ and Im $z_n$).
-
-2) $\lim z_n = z_0$: Fix $\epsilon > 0$, choose $N_1$ s.t. $\forall n, m > N_1, |z_n - z_m| < \frac{\epsilon}{2}$ (Cauchy property).
-Choose $N_2$ so that $\forall n_k > N_2$ and such that $z_{n_k}$ belongs to the subsequence. 
-We have: $|z_0 - z_{n_k}| < \frac{\epsilon}{2}$ (use that $\lim_{k \to \infty} z_{n_k} = z_0$). 
-Set $N = \max(N_1, N_2)$ and fix $n_k > N$ such that $z_{n_k}$ belongs to the subsequence. 
-Then, for any $n > N$,
-\begin{align*}
-    |z_0 - z_n| = |z_0 - z_{n_k} + z_{n_k} - z_n| &\leq |z_{n_k} - z_0| + |z_n - z_{n_k}| < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon \\ 
-    &\implies \lim_{n \to \infty} z_n = z_0.
-\end{align*} 
-
-3) Let us show that $\{z_n\}$ is a Cauchy sequence: $z_1 \in T_1, z_2 \in T_2, \dots$ 
-Since the diameter of each triangle shrinks by a factor 2 (at each generation) and since 
-diam $(T_n) \leq$ Length $(\partial T_n)$ we get for sufficiently large $n: |z_n - z_m| <$ Length $(\partial T_n) < \frac{L}{2^n} < \epsilon \implies \{z_n\}$ is a 
-Cauchy sequence that converges to $z_0$.
+    \begin{enumerate}
+        \item $\{z_n\}$ is a Cauchy sequence, namely, for any $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that for any pair $n, m > N$, $|z_n - z_m| < \epsilon$.
+        
+        First, it is bounded. Set $\epsilon = 1$ and choose N such that for any $n, m \in \mathbb{N}$, $|z_n - z_m| < 1$ (using that $\{z_n\}$ is a Cauchy sequence).
+        Namely: (*) $||z_n| - |z_m|| < |z_n - z_m| < 1$. Fix $m_0 \in \mathbb{N}$.
+        From (*) for all $n > N$, $|z_{m_0}| - 1 < |z_n| < |z_{m_0}| + 1 \implies$ for 
+        all $n \geq 1$, $\min\{|z_1|, \dots, |z_{m_0}-1|, |z_{m_0}|+1\} \leq |z_n| \leq \max\{|z_1|, \dots, |z_{m_0}-1|, |z_{m_0}|+1\}$ $\implies$ it is bounded.
+        Now apply to $\{z_n\}$ Bolzano-Weierstrass Thm and obtain a converging subsequence $\{z_{n_k}\}, \lim_{k \to \infty} z_{n_k} = z_0$ (apply separately to Re $z_n$ and Im $z_n$).
+        \item $\lim z_n = z_0$: Fix $\epsilon > 0$, choose $N_1$ s.t. $\forall n, m > N_1, |z_n - z_m| < \frac{\epsilon}{2}$ (Cauchy property).
+        Choose $N_2$ so that $\forall n_k > N_2$ and such that $z_{n_k}$ belongs to the subsequence. 
+        We have: $|z_0 - z_{n_k}| < \frac{\epsilon}{2}$ (use that $\lim_{k \to \infty} z_{n_k} = z_0$). 
+        Set $N = \max(N_1, N_2)$ and fix $n_k > N$ such that $z_{n_k}$ belongs to the subsequence. 
+        Then, for any $n > N$,
+        \begin{align*}
+            |z_0 - z_n| = |z_0 - z_{n_k} + z_{n_k} - z_n| &\leq |z_{n_k} - z_0| + |z_n - z_{n_k}| < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon \\ 
+            &\implies \lim_{n \to \infty} z_n = z_0.
+        \end{align*} 
+        \item Let us show that $\{z_n\}$ is a Cauchy sequence: $z_1 \in T_1, z_2 \in T_2, \dots$ 
+        Since the diameter of each triangle shrinks by a factor 2 (at each generation) and since 
+        diam $(T_n) \leq$ Length $(\partial T_n)$ we get for sufficiently large $n: |z_n - z_m| <$ Length $(\partial T_n) < \frac{L}{2^n} < \epsilon \implies \{z_n\}$ is a 
+        Cauchy sequence that converges to $z_0$.
+    \end{enumerate}
 
 From the statement of Cauchy's Theorem for a star-shaped region, one can deduce the same result for more general regions comprised of star-shaped pieces.
 

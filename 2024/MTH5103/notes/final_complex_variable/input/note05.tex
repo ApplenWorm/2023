@@ -121,9 +121,10 @@ As expected there is an immediate relation between convergence or divergence of 
     \item $\sum_{n=0}^{\infty} z_n = S \iff \sum_{n=0}^{\infty} x_n = u$ and $\sum_{n=0}^{\infty} y_n = v$
 \end{enumerate}
 \begin{proof}
- 1) follows directly from Def 10.1(\ref{definition:10.1}) and the application of triangle inequality: $|x_n - x|, |y_n - y| \leq |z_n - z| \leq |x_n - x| + |y_n - y|$
-
-2) is proved by decomposing the complex sum into real and imaginary parts $\sum_{n=0}^{\infty} z_n = \sum_{n=0}^{\infty} x_n + i\sum_{n=0}^{\infty} y_n$ and a careful use of 1) [FINISH!]
+    \begin{enumerate}
+        \item follows directly from Def 10.1(\ref{definition:10.1}) and the application of triangle inequality: $|x_n - x|, |y_n - y| \leq |z_n - z| \leq |x_n - x| + |y_n - y|$
+        \item is proved by decomposing the complex sum into real and imaginary parts $\sum_{n=0}^{\infty} z_n = \sum_{n=0}^{\infty} x_n + i\sum_{n=0}^{\infty} y_n$ and a careful use of 1) [FINISH!]
+    \end{enumerate}
 \end{proof}
 \end{proposition}
 
@@ -317,14 +318,15 @@ A very useful formulae for computing the radius of convergence of power series:
     The power series with the radius of convergence $R$ on the circle $|z - z_0| = R$ (or $|z| = R$ if $z_0 = 0$) may converge or diverge or converge at some points and diverge at others.
 \end{remark}
 
-\begin{example}\label{example:14.2} 1) The geometric series $\sum_{n=0}^{\infty} z^n$ - the radius of convergence $R = 1$ and the series diverges at any point on the circle $|z| = 1$ (by the Test for Divergence).
-
-2) $\sum_{n=0}^{\infty} \frac{z^n}{n^2}$: The radius of convergence $R = 1$ [\verifythis]
-
-and the series converges (absolutely) for any $|z| \leq 1$.
-
-3) One can prove: the series $1 + z + \frac{z^2}{2} + \frac{z^3}{3} + \dots + \frac{z^n}{n} + \dots$ with the radius of convergence $R = 1$, diverges at $z = 1$ and converges at 
-all other points $|z| = 1$ (not absolutely!).
+\begin{example}\label{example:14.2} 
+    \begin{enumerate}
+        \item The geometric series $\sum_{n=0}^{\infty} z^n$ - the radius of convergence $R = 1$ and the series diverges at any point on the circle $|z| = 1$ (by the Test for Divergence).
+        \item $\sum_{n=0}^{\infty} \frac{z^n}{n^2}$: The radius of convergence $R = 1$ [\verifythis]
+        
+        and the series converges (absolutely) for any $|z| \leq 1$.
+        \item One can prove: the series $1 + z + \frac{z^2}{2} + \frac{z^3}{3} + \dots + \frac{z^n}{n} + \dots$ with the radius of convergence $R = 1$, diverges at $z = 1$ and converges at 
+        all other points $|z| = 1$ (not absolutely!).
+    \end{enumerate}
 \end{example}
 
 \begin{definition}\label{definition:12.3} The disc of convergence of the power series $\sum_{n=0}^{\infty} a_n (z - z_0)^n$ is given by $D = \{z \in \mathbb{C}: |z - z_0| < R\}$ and we 
@@ -332,10 +334,10 @@ all other points $|z| = 1$ (not absolutely!).
 \end{definition}
 
 \begin{proposition} \label{proposition:12.2} Suppose the power series $\sum_{n=0}^{\infty} a_n (z - z_0)^n$ has disc of convergence $D$. Then,
-
-1) $f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n$ is analytic on $D$ \{differentiable at every $z \in D$\}
-
-2) For all $z \in D$ the series $\sum_{n=0}^{\infty} na_n (z - z_0)^{n-1}$ is absolutely convergent and has sum $f'(z)$ (the derivative of $f$ at $z$).
+    \begin{enumerate}
+        \item $f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n$ is analytic on $D$ \{differentiable at every $z \in D$\}
+        \item For all $z \in D$ the series $\sum_{n=0}^{\infty} na_n (z - z_0)^{n-1}$ is absolutely convergent and has sum $f'(z)$ (the derivative of $f$ at $z$).
+    \end{enumerate}
 \end{proposition}
 
 Note: From Prop 12.2(\ref{proposition:12.2}): $f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n$ is differentiable arbitrarily many times at any $z$ in the disc of convergence 

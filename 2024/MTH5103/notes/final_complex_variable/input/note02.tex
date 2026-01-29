@@ -102,37 +102,48 @@ Let $z = r(\cos \theta + i\sin \theta)$ \{the polar form\}. Then, in a similar w
 
 \begin{example} \label{example:3.8}
      Write in the form (1) or (3)
-a) $f(z) = z^2$ b) $f(z) = \vert z\vert $ c) $f(z) = \text{Re } z$ d) $f(z) = z^n$ e) $f(z) = e^z$.
+    \begin{enumerate}[label=\alph*)]
+        \item $f(z) = z^2$
+        \item $f(z) = \vert z\vert $
+        \item $f(z) = \text{Re } z$
+        \item $f(z) = z^n$
+        \item $f(z) = e^z$
+    \end{enumerate}
 
-\begin{soln} a) Denote $z = x + iy$. Then $z^2 = (x + iy)^2 = (x^2 - y^2) + i2xy \implies \text{Re } z^2 = x^2 - y^2, \text{Im } z^2 = 2xy$, and $f(x, y) = (x^2 - y^2, 2xy)$.
-OR: $z = r(\cos \theta + i\sin \theta) \implies z^2 = r^2(\cos 2\theta + i\sin 2\theta)$, where $r = \vert z\vert $, thus $\text{Re } z^2 = r^2 \cos 2\theta, \text{Im } z^2 = r^2 \sin 2\theta$, and $f(r, \theta) = (r^2 \cos 2\theta, r^2 \sin 2\theta)$.
-
-b) $\vert z\vert  = \vert x + iy\vert  = \sqrt{x^2 + y^2} \implies f(x, y) = (\sqrt{x^2 + y^2}, 0) = \sqrt{x^2 + y^2} \to$ real function!
-
-c) $z = x + iy, \text{Re } z = x \implies f(x, y) = (x, 0) = x \to$ real function!
-$z = x + iy, \text{Im } z = y \implies$ for $f(z) = \text{Im } z: f(x, y) = (y, 0) = y \to$ real!
-
-d) Let $z = r(\cos \theta + i\sin \theta)$ \{$r = \vert z\vert $\}. Then, by De Moivre formula $z^n = r^n(\cos(n\theta) + i\sin(n\theta))$, and $f(r, \theta) = (r^n \cos(n\theta), r^n \sin(n\theta))$.
-
-e) Let $z = x + iy$. Then, by Euler's formula: $e^z = e^x(\cos y + i\sin y) \implies f(x, y) = (e^x \cos y, e^x \sin y)$.
+\begin{soln}
+    \begin{enumerate}[label=\alph*)]
+        \item Denote $z = x + iy$. Then $z^2 = (x + iy)^2 = (x^2 - y^2) + i2xy \implies \text{Re } z^2 = x^2 - y^2, \text{Im } z^2 = 2xy$, and $f(x, y) = (x^2 - y^2, 2xy)$.
+        
+        OR: $z = r(\cos \theta + i\sin \theta) \implies z^2 = r^2(\cos 2\theta + i\sin 2\theta)$, where $r = \vert z\vert $, thus $\text{Re } z^2 = r^2 \cos 2\theta, \text{Im } z^2 = r^2 \sin 2\theta$, and $f(r, \theta) = (r^2 \cos 2\theta, r^2 \sin 2\theta)$.
+        \item $\vert z\vert  = \vert x + iy\vert  = \sqrt{x^2 + y^2} \implies f(x, y) = (\sqrt{x^2 + y^2}, 0) = \sqrt{x^2 + y^2} \to$ real function!
+        \item $z = x + iy, \text{Re } z = x \implies f(x, y) = (x, 0) = x \to$ real function!
+        $z = x + iy, \text{Im } z = y \implies$ for $f(z) = \text{Im } z: f(x, y) = (y, 0) = y \to$ real!
+        \item Let $z = r(\cos \theta + i\sin \theta)$ \{$r = \vert z\vert $\}. Then, by De Moivre formula $z^n = r^n(\cos(n\theta) + i\sin(n\theta))$, and $f(r, \theta) = (r^n \cos(n\theta), r^n \sin(n\theta))$.
+        \item Let $z = x + iy$. Then, by Euler's formula: $e^z = e^x(\cos y + i\sin y) \implies f(x, y) = (e^x \cos y, e^x \sin y)$.
+    \end{enumerate}
 \end{soln}
 \end{example}
 We can also do the opposite: given a function of $x, y$ we can rewrite it in terms of $z$ and its conjugate:
 Recall: $\text{Re } z = \frac{1}{2}(z + \bar{z}), \text{Im } z = \frac{1}{2i}(z - \bar{z})$.
 
 \begin{example} \label{example:3.9} Rewrite in terms $z$ and $\bar{z}$:
-a) $f(x, y) = x^2 - y + i(x + y^2)$ b) $f(x, y) = x^2 - 1$.
+    \begin{enumerate}[label=\alph*)]
+        \item $f(x, y) = x^2 - y + i(x + y^2)$
+        \item $f(x, y) = x^2 - 1$
+    \end{enumerate}
 
-\begin{soln} a)
-\begin{align*}
-x^2 - y + i(x + y^2) &= \left(\frac{z + \bar{z}}{2}\right)^2 - \frac{z - \bar{z}}{2i} + i\left(\frac{z + \bar{z}}{2} + \left(\frac{z - \bar{z}}{2i}\right)^2\right) \\
-&= \frac{1}{4}(z^2 + 2z\bar{z} + \bar{z}^2) - \frac{1}{2i}(z - \bar{z}) + i\left(\frac{1}{2}(z + \bar{z}) + \frac{1}{4i^2}(z^2 - 2z\bar{z} + \bar{z}^2)\right) \\
-&= \frac{1}{4}(z^2 + 2z\bar{z} + \bar{z}^2) - \frac{1}{2i}(z - \bar{z}) + \frac{i}{2}(z + \bar{z}) - \frac{i}{4}(z^2 - 2z\bar{z} + \bar{z}^2) \\
-&= \frac{1}{4}(z^2 + 2z\bar{z} + \bar{z}^2) + \frac{i}{2}z - \frac{i}{2}\bar{z} + \frac{i}{2}z + \frac{i}{2}\bar{z} - \frac{i}{4}(z^2 - 2z\bar{z} + \bar{z}^2) \\
-&= \frac{1}{4}(z^2 + \bar{z}^2)(1 - i) + \frac{1}{2}z\bar{z}(1 + i) + iz
-\end{align*}
-
-b) $x^2 - 1 = \frac{1}{4}(z^2 + \bar{z}^2 + 2z\bar{z}) - 1 = \frac{1}{4}(z^2 + \bar{z}^2 + 2z\bar{z} - 4)$.
+\begin{soln}
+    \begin{enumerate}[label=\alph*)]
+        \item
+        \begin{align*}
+        x^2 - y + i(x + y^2) &= \left(\frac{z + \bar{z}}{2}\right)^2 - \frac{z - \bar{z}}{2i} + i\left(\frac{z + \bar{z}}{2} + \left(\frac{z - \bar{z}}{2i}\right)^2\right) \\
+        &= \frac{1}{4}(z^2 + 2z\bar{z} + \bar{z}^2) - \frac{1}{2i}(z - \bar{z}) + i\left(\frac{1}{2}(z + \bar{z}) + \frac{1}{4i^2}(z^2 - 2z\bar{z} + \bar{z}^2)\right) \\
+        &= \frac{1}{4}(z^2 + 2z\bar{z} + \bar{z}^2) - \frac{1}{2i}(z - \bar{z}) + \frac{i}{2}(z + \bar{z}) - \frac{i}{4}(z^2 - 2z\bar{z} + \bar{z}^2) \\
+        &= \frac{1}{4}(z^2 + 2z\bar{z} + \bar{z}^2) + \frac{i}{2}z - \frac{i}{2}\bar{z} + \frac{i}{2}z + \frac{i}{2}\bar{z} - \frac{i}{4}(z^2 - 2z\bar{z} + \bar{z}^2) \\
+        &= \frac{1}{4}(z^2 + \bar{z}^2)(1 - i) + \frac{1}{2}z\bar{z}(1 + i) + iz
+        \end{align*}
+        \item $x^2 - 1 = \frac{1}{4}(z^2 + \bar{z}^2 + 2z\bar{z}) - 1 = \frac{1}{4}(z^2 + \bar{z}^2 + 2z\bar{z} - 4)$.
+    \end{enumerate}
 \end{soln}
 
 \end{example}
@@ -243,35 +254,34 @@ EXERCISE: \begin{enumerate}
 
 \begin{example}
 Back to Ex 4.5.(\ref{example:4.5}) Let us study two images under $\frac{1}{z}$.
-a) Find the image of the line $z = t + i(1 - t)$ under $\frac{1}{z}$.
+    \begin{enumerate}[label=\alph*)]
+        \item Find the image of the line $z = t + i(1 - t)$ under $\frac{1}{z}$.
+        \item Determine how the horizontal lane $y = k$ is transformed under $w = \frac{1}{z}$.
+    \end{enumerate}
 
-\begin{soln} Denote: $w = u + iv, z = x + iy \implies x = t, y = (1 - t)$.
-\[w = u + iv = \frac{1}{x + iy} = \frac{x - iy}{x^2 + y^2} (\text{for } z \neq 0, w \neq 0) \iff u = \frac{x}{x^2 + y^2}, v = \frac{-y}{x^2 + y^2}\]
-Thus, plugging $x = t, y = 1 - t$, we obtain the following system:
-\begin{align*}
-& t = \frac{u}{u^2 + v^2} \\
-& 1 - t = \frac{-v}{u^2 + v^2} \implies \\
-& t(u^2 + v^2) = u \\
-& (1 - t)(u^2 + v^2) = -v
-\end{align*}
-$\implies u^2 + v^2 = u - v$ (we add the equations) $\implies u^2 - u + v^2 + v = 0 \implies (u - \frac{1}{2})^2 + (v + \frac{1}{2})^2 = \frac{1}{2}$ (complete the square in $u$ and in $v$).
-
-Namely, the map $w = \frac{1}{z}$ maps the line $z = t + i(1 - t)$ to the circle (in w-plane) centered at the point $(\frac{1}{2}, -\frac{1}{2})$ with radius $\frac{1}{\sqrt{2}}$.
-\end{soln}
-
-\includegraphics{image_lin10.pdf}
-
-\end{example}
-\begin{example}
-    
-b) Determine how the horizontal lane $y = k$ is transformed under $w = \frac{1}{z}$.
-
-\begin{soln} Substitute as before: $x = \frac{u}{u^2 + v^2}, y = \frac{-v}{u^2 + v^2}$. Plug $y = k$:
-\begin{align*}  
-                & k = \frac{-v}{u^2 + v^2} \iff ku^2 + kv^2 + v = 0 \iff (k \neq 0) u^2 + v^2 + \frac{v}{k} = 0\\ 
-                & \iff u^2 + (v + \frac{1}{2k})^2 = \frac{1}{4k^2} \text{ (complete the square in } v)
-\end{align*}
-Namely, the line is mapped onto a circle, center of which depends on the sign of $k$, and the radius is $\frac{1}{2\vert k\vert }$.
+\begin{soln}
+    \begin{enumerate}[label=\alph*)]
+        \item Denote: $w = u + iv, z = x + iy \implies x = t, y = (1 - t)$.
+        \[w = u + iv = \frac{1}{x + iy} = \frac{x - iy}{x^2 + y^2} (\text{for } z \neq 0, w \neq 0) \iff u = \frac{x}{x^2 + y^2}, v = \frac{-y}{x^2 + y^2}\]
+        Thus, plugging $x = t, y = 1 - t$, we obtain the following system:
+        \begin{align*}
+        & t = \frac{u}{u^2 + v^2} \\
+        & 1 - t = \frac{-v}{u^2 + v^2} \implies \\
+        & t(u^2 + v^2) = u \\
+        & (1 - t)(u^2 + v^2) = -v
+        \end{align*}
+        $\implies u^2 + v^2 = u - v$ (we add the equations) $\implies u^2 - u + v^2 + v = 0 \implies (u - \frac{1}{2})^2 + (v + \frac{1}{2})^2 = \frac{1}{2}$ (complete the square in $u$ and in $v$).
+        
+        Namely, the map $w = \frac{1}{z}$ maps the line $z = t + i(1 - t)$ to the circle (in w-plane) centered at the point $(\frac{1}{2}, -\frac{1}{2})$ with radius $\frac{1}{\sqrt{2}}$.
+        
+        \includegraphics{image_lin10.pdf}
+        \item Substitute as before: $x = \frac{u}{u^2 + v^2}, y = \frac{-v}{u^2 + v^2}$. Plug $y = k$:
+        \begin{align*}  
+                        & k = \frac{-v}{u^2 + v^2} \iff ku^2 + kv^2 + v = 0 \iff (k \neq 0) u^2 + v^2 + \frac{v}{k} = 0\\ 
+                        & \iff u^2 + (v + \frac{1}{2k})^2 = \frac{1}{4k^2} \text{ (complete the square in } v)
+        \end{align*}
+        Namely, the line is mapped onto a circle, center of which depends on the sign of $k$, and the radius is $\frac{1}{2\vert k\vert }$.
+    \end{enumerate}
 \end{soln}
 \end{example}
 
