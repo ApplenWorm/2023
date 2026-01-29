@@ -328,10 +328,10 @@ $z=(x,y)$ and $z_0=(x_0,y_0)$ is
 \[ \lvert z-z_0\rvert = \lvert (x-x_0)+i(y-y_0)\rvert = \sqrt{(x-x_0)^2+(y-y_0)^2} \]
 \end{example}
 
-The equations $\lvert z_1 \rvert =\sqrt{130}$, $\lvert z_2 \rvert =5$ describe the geometric place of all the points $z$ that are at distance $\sqrt{130}$ or 5 from the origin - namely, it is a circle. In general we have:
+The equations $\lvert z_1 \rvert =\sqrt{130}$, $\lvert z_2 \rvert =5$ describe the geometric place of all the points $z$ that are at distance $\sqrt{130}$ or $5$ from the origin - namely, it is a circle. In general we have:
 Circle with radius $R$ centered at $z_0$: $\lvert z-z_0\rvert = R$.
 \begin{example}
-$\lvert z+1+i\rvert = 2$: circle centered at $z_0 = -(1+i)$ of radius 2.
+$\lvert z+1+i\rvert = 2$: circle centered at $z_0 = -(1+i)$ of radius $2$.
 
 \includegraphics{circle_coord_cmplx.pdf}
 
@@ -343,7 +343,7 @@ The equation $\lvert z-z_0 \rvert <R$ describes all the points that lie inside t
 \begin{example}
  Find the geometric place of the points $z$ for which $\lvert z+2 \rvert - \lvert z-2\rvert = 1$
 \end{example}
-We are looking for the geometric place of all points $z$ such that the difference of distances from the point $z$ to two points $z=2$ and $z=-2$ is 1. Let us show that this is a hyperbola.
+We are looking for the geometric place of all points $z$ such that the difference of distances from the point $z$ to two points $z=2$ and $z=-2$ is $1$. Let us show that this is a hyperbola.
 Recall: hyperbola equation $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$ - hyperbola with vertices at $(a,0)$ and $(-a,0)$ with asymptotes at $y=\pm \frac{b}{a}x$.
 
 \includegraphics[width=0.7\textwidth]{hyperbola_cmplx.pdf}
@@ -372,7 +372,7 @@ An \emph{argument} of $z \neq 0$, denoted by $\arg z$, is an angle $\theta$ such
 
  \includegraphics{angle_complex.pdf}
  
- The argument is exactly the angle that the vector $z$ creates with the x-axis when measured following the positive (anti-clockwise) direction.
+ The argument is exactly the angle that the vector $z$ creates with the $x$-axis when measured following the positive (anti-clockwise) direction.
  As we said: the argument takes infinitely many values that differ one from another by a multiple of $2\pi$.
  So, now we have 3 ways to represent a complex number: as an ordered pair, an algebraic form $x+iy$, or via its modulus and an argument.
  Representation: $z=(x,y), z=x+iy$, or $x= \lvert z\rvert\cos\theta, y=\lvert z\rvert\sin\theta \implies z=\lvert z\rvert(\cos\theta + i\sin\theta)$ Polar form ($r,\theta$ - coordinates.)
@@ -383,9 +383,9 @@ It is more convenient to use the algebraic form to add complex numbers and it is
 \begin{example}
  Write the following numbers in polar form:
  \begin{enumerate}[label=(\alph*)]
-    \item -2+2i 
-    \item 2 
-    \item -i
+    \item $-2+2i$ 
+    \item $2$ 
+    \item $-i$
 \end{enumerate}
     \begin{soln}
 \begin{enumerate}[label=\alph*)]
@@ -572,4 +572,6 @@ $e^{i(\phi + \psi)} = e^{i\phi}e^{i\psi}$
 $\frac{1}{e^{i\theta}} = e^{-i\theta}$
 $(e^{i\theta})^n = e^{in\theta}$ for every $n\in\mathbb{Z}$.
 
-These facts are easily proved using theorem 1.1, but they are not obvious, since $e^{i\theta}$ means $1 + i\theta + \frac{(i\theta)^2}{2!} + ...$ and raising the real number $e$ to the purely imaginary power $i\theta$ is not well-defined at the moment.
+These facts are easily proved using theorem~\ref{theorem:1.1}, but they are not obvious, 
+since $e^{i\theta}$ means $1 + i\theta + \frac{(i\theta)^2}{2!} + ...$ and raising the real 
+number $e$ to the purely imaginary power $i\theta$ is not well-defined at the moment.
