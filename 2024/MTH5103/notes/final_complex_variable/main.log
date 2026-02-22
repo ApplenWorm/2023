@@ -1,28 +1,27 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.24)  29 JAN 2026 12:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.23)  22 FEB 2026 15:09
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-22>
-(/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
-(/usr/local/texlive/2023/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count187
-\c@section=\count188
-\c@subsection=\count189
-\c@subsubsection=\count190
-\c@paragraph=\count191
-\c@subparagraph=\count192
-\c@figure=\count193
-\c@table=\count194
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\bibindent=\dimen140
+\c@part=\count196
+\c@section=\count197
+\c@subsection=\count198
+\c@subsubsection=\count199
+\c@paragraph=\count266
+\c@subparagraph=\count267
+\c@figure=\count268
+\c@table=\count269
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
 )
 (./styles/evan.sty
 
@@ -30,78 +29,78 @@ LaTeX Warning: You have requested package `styles/evan',
                but the package provides `evan'.
 
 Package: evan 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip50
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
-\ex@=\dimen141
+\ex@=\dimen142
 ))
-(/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen142
+\pmbraise@=\dimen143
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count195
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count196
-\leftroot@=\count197
-LaTeX Info: Redefining \overline on input line 399.
-LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count198
-\DOTSCASE@=\count199
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box51
-\strutbox@=\box52
-LaTeX Info: Redefining \big on input line 722.
-LaTeX Info: Redefining \Big on input line 723.
-LaTeX Info: Redefining \bigg on input line 724.
-LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen143
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count266
-LaTeX Info: Redefining \bmod on input line 905.
-LaTeX Info: Redefining \pmod on input line 910.
-LaTeX Info: Redefining \smash on input line 940.
-LaTeX Info: Redefining \relbar on input line 970.
-LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count267
-\dotsspace@=\muskip16
-\c@parentequation=\count268
-\dspbrk@lvl=\count269
+\inf@bad=\count270
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count271
+\leftroot@=\count272
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count273
+\DOTSCASE@=\count274
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen144
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count275
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count276
+\dotsspace@=\muskip17
+\c@parentequation=\count277
+\dspbrk@lvl=\count278
 \tag@help=\toks18
-\row@=\count270
-\column@=\count271
-\maxfields@=\count272
+\row@=\count279
+\column@=\count280
+\maxfields@=\count281
 \andhelp@=\toks19
-\eqnshift@=\dimen144
-\alignsep@=\dimen145
-\tagshift@=\dimen146
-\tagwidth@=\dimen147
-\totwidth@=\dimen148
-\lineht@=\dimen149
+\eqnshift@=\dimen145
+\alignsep@=\dimen146
+\tagshift@=\dimen147
+\tagwidth@=\dimen148
+\totwidth@=\dimen149
+\lineht@=\dimen150
 \@envbody=\toks20
-\multlinegap=\skip51
-\multlinetaggap=\skip52
+\multlinegap=\skip52
+\multlinetaggap=\skip53
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -109,267 +108,265 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/yhmath/yhmath.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/yhmath/yhmath.sty
 Package: yhmath 2020/03/17 v1.6
 \symyhlargesymbols=\mathgroup6
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 29.
 LaTeX Font Info:    Redeclaring math accent \widehat on input line 30.
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/derivative/derivative.sty
-(/usr/local/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-01-22 L3 programming layer (loader) 
+(/usr/local/texlive/2024/texmf-dist/tex/latex/derivative/derivative.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count273
-\l__pdf_internal_box=\box53
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count282
+\l__pdf_internal_box=\box54
 ))
-(/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2023-10-10 L3 Experimental document command parser
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
-)
-Package: derivative 2023/11/04 v1.31 Nice and easy derivatives and differential
-s for LaTeX
-\l__deriv_gcd_counter_int=\count274
-\l__deriv_vmo_int=\count275
-\l__deriv_var_count_int=\count276
-\l__deriv_tmpa_int=\count277
-\l__deriv_tmpb_int=\count278
-\l__deriv_seq_pos_int=\count279
-\l__deriv_sort_max_int=\count280
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/asymptote/asymptote.sty
-Package: asymptote 2021/12/29 v1.37 Asymptote style file for LaTeX
+Package: derivative 2024/02/08 v1.4 Nice and easy derivatives and differentials
+ for LaTeX
+\l__deriv_gcd_counter_int=\count283
+\l__deriv_vmo_int=\count284
+\l__deriv_var_count_int=\count285
+\l__deriv_tmpa_int=\count286
+\l__deriv_tmpb_int=\count287
+\l__deriv_seq_pos_int=\count288
+\l__deriv_sort_max_int=\count289
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/asymptote/asymptote.sty
+Package: asymptote 2024/02/26 v1.38 Asymptote style file for LaTeX
 
 (./main.pre)
-\ASYbox=\box54
-\ASYdimen=\dimen150
-\c@asy=\count281
+\ASYbox=\box55
+\ASYdimen=\dimen151
+\c@asy=\count290
 \AsyStream=\write3
 \AsyPreStream=\write4
- (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks22
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
+Package graphics Info: Driver file: pdftex.def on input line 106.
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen151
-\Gin@req@width=\dimen152
+\Gin@req@height=\dimen152
+\Gin@req@width=\dimen153
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifpdf.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifxetex.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/catchfile/catchfile.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/catchfile/catchfile.sty
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 ))
 \openout4 = `main.pre'.
 
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
-Package xcolor Info: Model `RGB' extended on input line 1366.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/svgnam.def
-File: svgnam.def 2023/11/15 v3.01 Predefined colors according to SVG 1.1 (UK)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2024/09/29 v3.02 Predefined colors according to SVG 1.1 (UK)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
-Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen153
-\ar@mcellbox=\box55
-\extrarowheight=\dimen154
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen154
+\ar@mcellbox=\box56
+\extrarowheight=\dimen155
 \NC@list=\toks23
-\extratabsurround=\skip53
-\backup@length=\skip54
-\ar@cellbox=\box56
+\extratabsurround=\skip54
+\backup@length=\skip55
+\ar@cellbox=\box57
 )
 \everycr=\toks24
-\minrowclearance=\skip55
-\rownum=\count282
+\minrowclearance=\skip56
+\rownum=\count291
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 ))
-(/usr/local/texlive/2023/texmf-dist/tex/latex/hycolor/hycolor.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/auxhook/auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-(/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/refcount/refcount.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+(/usr/local/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (/usr/local/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count283
+\c@section@level=\count292
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count284
+(/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count293
 )
-\@linkdim=\dimen155
-\Hy@linkcounter=\count285
-\Hy@pagecounter=\count286
+(/usr/local/texlive/2024/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen156
+\Hy@linkcounter=\count294
+\Hy@pagecounter=\count295
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/intcalc/intcalc.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count287
+\Hy@SavedSpaceFactor=\count296
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 4062.
-Package hyperref Info: Option `pdfusetitle' set `true' on input line 4062.
-Package hyperref Info: Hyper figures OFF on input line 4179.
-Package hyperref Info: Link nesting OFF on input line 4184.
-Package hyperref Info: Hyper index ON on input line 4187.
-Package hyperref Info: Plain pages OFF on input line 4194.
-Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4040.
+Package hyperref Info: Option `pdfusetitle' set `true' on input line 4040.
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4446.
-\c@Hy@tempcnt=\count288
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count297
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
+(/usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4784.
-\XeTeXLinkMargin=\dimen156
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen157
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count289
-\Field@Width=\dimen157
-\Fld@charsize=\dimen158
-Package hyperref Info: Hyper figures OFF on input line 6063.
-Package hyperref Info: Link nesting OFF on input line 6068.
-Package hyperref Info: Hyper index ON on input line 6071.
-Package hyperref Info: backreferencing OFF on input line 6078.
-Package hyperref Info: Link coloring ON on input line 6081.
-Package hyperref Info: Link coloring with OCG OFF on input line 6088.
-Package hyperref Info: PDF/A mode OFF on input line 6093.
+\Fld@menulength=\count298
+\Field@Width=\dimen158
+\Fld@charsize=\dimen159
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring ON on input line 6060.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count290
-\c@Item=\count291
-\c@Hfootnote=\count292
+\Hy@abspage=\count299
+\c@Item=\count300
+\c@Hfootnote=\count301
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/base/atveryend-ltx.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count293
-\c@bookmark@seq@number=\count294
+\Fld@listcount=\count302
+\c@bookmark@seq@number=\count303
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
-\Hy@SectionHShift=\skip56
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/cleveref/cleveref.sty
+\Hy@SectionHShift=\skip57
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
 LaTeX Info: Redefining \cref on input line 2370.
@@ -387,447 +384,454 @@ e 7836.
 Package cleveref Info: include cross-reference names in hyperlinks on input lin
 e 7852.
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/amscls/amsthm.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks25
 \thm@bodyfont=\toks26
 \thm@headfont=\toks27
 \thm@notefont=\toks28
 \thm@headpunct=\toks29
-\thm@preskip=\skip57
-\thm@postskip=\skip58
-\thm@headsep=\skip59
+\thm@preskip=\skip58
+\thm@postskip=\skip59
+\thm@headsep=\skip60
 \dth@everypar=\toks30
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/thmtools.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/thmtools.sty
 Package: thmtools 2023/05/04 v0.76
 \thmt@toks=\toks31
-\c@thmt@dummyctr=\count295
+\c@thmt@dummyctr=\count304
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/thm-patch.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/thm-patch.sty
 Package: thm-patch 2023/05/04 v0.76
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/parseargs.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/parseargs.sty
 Package: parseargs 2023/05/04 v0.76
 \@parsespec=\toks32
 ))
-(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/thm-kv.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/thm-kv.sty
 Package: thm-kv 2023/05/04 v0.76
 Package thm-kv Info: Theorem names will be uppercased on input line 42.
 Package thm-kv Info: kvsetkeys patch (v1.16 or later) on input line 158.
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/thm-autoref.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/thm-autoref.sty
 Package: thm-autoref 2023/05/04 v0.76
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/aliasctr.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/aliasctr.sty
 Package: aliasctr 2023/05/04 v0.76
 ))
-(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/thm-listof.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/thm-listof.sty
 Package: thm-listof 2023/05/04 v0.76
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/thm-restate.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/thm-restate.sty
 Package: thm-restate 2023/05/04 v0.76
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
 Package: thm-amsthm 2023/05/04 v0.76
 \thmt@style@headstyle=\toks33
 ))
-(/usr/local/texlive/2023/texmf-dist/tex/latex/mdframed/mdframed.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/zref/zref-abspage.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-abspage.sty
 Package: zref-abspage 2023-09-14 v2.35 Module abspage for zref (HO)
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/zref/zref-base.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-base.sty
 Package: zref-base 2023-09-14 v2.35 Module base for zref (HO)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
 Package zref Info: New property list: main on input line 767.
 Package zref Info: New property: default on input line 768.
 Package zref Info: New property: page on input line 769.
 )
-\c@abspage=\count296
+\c@abspage=\count305
 Package zref Info: New property: abspage on input line 67.
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/needspace/needspace.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/needspace/needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
-\mdf@templength=\skip60
-\c@mdf@globalstyle@cnt=\count297
-\mdf@skipabove@length=\skip61
-\mdf@skipbelow@length=\skip62
-\mdf@leftmargin@length=\skip63
-\mdf@rightmargin@length=\skip64
-\mdf@innerleftmargin@length=\skip65
-\mdf@innerrightmargin@length=\skip66
-\mdf@innertopmargin@length=\skip67
-\mdf@innerbottommargin@length=\skip68
-\mdf@splittopskip@length=\skip69
-\mdf@splitbottomskip@length=\skip70
-\mdf@outermargin@length=\skip71
-\mdf@innermargin@length=\skip72
-\mdf@linewidth@length=\skip73
-\mdf@innerlinewidth@length=\skip74
-\mdf@middlelinewidth@length=\skip75
-\mdf@outerlinewidth@length=\skip76
-\mdf@roundcorner@length=\skip77
-\mdf@footenotedistance@length=\skip78
-\mdf@userdefinedwidth@length=\skip79
-\mdf@needspace@length=\skip80
-\mdf@frametitleaboveskip@length=\skip81
-\mdf@frametitlebelowskip@length=\skip82
-\mdf@frametitlerulewidth@length=\skip83
-\mdf@frametitleleftmargin@length=\skip84
-\mdf@frametitlerightmargin@length=\skip85
-\mdf@shadowsize@length=\skip86
-\mdf@extratopheight@length=\skip87
-\mdf@subtitleabovelinewidth@length=\skip88
-\mdf@subtitlebelowlinewidth@length=\skip89
-\mdf@subtitleaboveskip@length=\skip90
-\mdf@subtitlebelowskip@length=\skip91
-\mdf@subtitleinneraboveskip@length=\skip92
-\mdf@subtitleinnerbelowskip@length=\skip93
-\mdf@subsubtitleabovelinewidth@length=\skip94
-\mdf@subsubtitlebelowlinewidth@length=\skip95
-\mdf@subsubtitleaboveskip@length=\skip96
-\mdf@subsubtitlebelowskip@length=\skip97
-\mdf@subsubtitleinneraboveskip@length=\skip98
-\mdf@subsubtitleinnerbelowskip@length=\skip99
+\mdf@templength=\skip61
+\c@mdf@globalstyle@cnt=\count306
+\mdf@skipabove@length=\skip62
+\mdf@skipbelow@length=\skip63
+\mdf@leftmargin@length=\skip64
+\mdf@rightmargin@length=\skip65
+\mdf@innerleftmargin@length=\skip66
+\mdf@innerrightmargin@length=\skip67
+\mdf@innertopmargin@length=\skip68
+\mdf@innerbottommargin@length=\skip69
+\mdf@splittopskip@length=\skip70
+\mdf@splitbottomskip@length=\skip71
+\mdf@outermargin@length=\skip72
+\mdf@innermargin@length=\skip73
+\mdf@linewidth@length=\skip74
+\mdf@innerlinewidth@length=\skip75
+\mdf@middlelinewidth@length=\skip76
+\mdf@outerlinewidth@length=\skip77
+\mdf@roundcorner@length=\skip78
+\mdf@footenotedistance@length=\skip79
+\mdf@userdefinedwidth@length=\skip80
+\mdf@needspace@length=\skip81
+\mdf@frametitleaboveskip@length=\skip82
+\mdf@frametitlebelowskip@length=\skip83
+\mdf@frametitlerulewidth@length=\skip84
+\mdf@frametitleleftmargin@length=\skip85
+\mdf@frametitlerightmargin@length=\skip86
+\mdf@shadowsize@length=\skip87
+\mdf@extratopheight@length=\skip88
+\mdf@subtitleabovelinewidth@length=\skip89
+\mdf@subtitlebelowlinewidth@length=\skip90
+\mdf@subtitleaboveskip@length=\skip91
+\mdf@subtitlebelowskip@length=\skip92
+\mdf@subtitleinneraboveskip@length=\skip93
+\mdf@subtitleinnerbelowskip@length=\skip94
+\mdf@subsubtitleabovelinewidth@length=\skip95
+\mdf@subsubtitlebelowlinewidth@length=\skip96
+\mdf@subsubtitleaboveskip@length=\skip97
+\mdf@subsubtitlebelowskip@length=\skip98
+\mdf@subsubtitleinneraboveskip@length=\skip99
+\mdf@subsubtitleinnerbelowskip@length=\skip100
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
 \pgfutil@everybye=\toks34
-\pgfutil@tempdima=\dimen159
-\pgfutil@tempdimb=\dimen160
+\pgfutil@tempdima=\dimen160
+\pgfutil@tempdimb=\dimen161
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box57
-) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box58
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks35
 \pgfkeys@temptoks=\toks36
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfil
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfil
 tered.code.tex
 \pgfkeys@tmptoks=\toks37
 ))
-\pgf@x=\dimen161
-\pgf@y=\dimen162
-\pgf@xa=\dimen163
-\pgf@ya=\dimen164
-\pgf@xb=\dimen165
-\pgf@yb=\dimen166
-\pgf@xc=\dimen167
-\pgf@yc=\dimen168
-\pgf@xd=\dimen169
-\pgf@yd=\dimen170
+\pgf@x=\dimen162
+\pgf@y=\dimen163
+\pgf@xa=\dimen164
+\pgf@ya=\dimen165
+\pgf@xb=\dimen166
+\pgf@yb=\dimen167
+\pgf@xc=\dimen168
+\pgf@yc=\dimen169
+\pgf@xd=\dimen170
+\pgf@yd=\dimen171
 \w@pgf@writea=\write5
 \r@pgf@reada=\read2
-\c@pgf@counta=\count298
-\c@pgf@countb=\count299
-\c@pgf@countc=\count300
-\c@pgf@countd=\count301
+\c@pgf@counta=\count307
+\c@pgf@countb=\count308
+\c@pgf@countc=\count309
+\c@pgf@countd=\count310
 \t@pgf@toka=\toks38
 \t@pgf@tokb=\toks39
 \t@pgf@tokc=\toks40
-\pgf@sys@id@count=\count302
+\pgf@sys@id@count=\count311
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
 ef
 File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
 df.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 )))
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count303
-\pgfsyssoftpath@bigbuffer@items=\count304
+\pgfsyssoftpath@smallbuffer@items=\count312
+\pgfsyssoftpath@bigbuffer@items=\count313
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen171
-\pgfmath@count=\count305
-\pgfmath@box=\box58
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen172
+\pgfmath@count=\count314
+\pgfmath@box=\box59
 \pgfmath@toks=\toks41
 \pgfmath@stack@operand=\toks42
 \pgfmath@stack@operation=\toks43
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
 .code.tex)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
 nometric.code.tex)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
 m.code.tex)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
 rison.code.tex)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
 code.tex)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
 .code.tex)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
 code.tex)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count306
-)) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count315
+)) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen172
-\pgf@picmaxx=\dimen173
-\pgf@picminy=\dimen174
-\pgf@picmaxy=\dimen175
-\pgf@pathminx=\dimen176
-\pgf@pathmaxx=\dimen177
-\pgf@pathminy=\dimen178
-\pgf@pathmaxy=\dimen179
-\pgf@xx=\dimen180
-\pgf@xy=\dimen181
-\pgf@yx=\dimen182
-\pgf@yy=\dimen183
-\pgf@zx=\dimen184
-\pgf@zy=\dimen185
+\pgf@picminx=\dimen173
+\pgf@picmaxx=\dimen174
+\pgf@picminy=\dimen175
+\pgf@picmaxy=\dimen176
+\pgf@pathminx=\dimen177
+\pgf@pathmaxx=\dimen178
+\pgf@pathminy=\dimen179
+\pgf@pathmaxy=\dimen180
+\pgf@xx=\dimen181
+\pgf@xy=\dimen182
+\pgf@yx=\dimen183
+\pgf@yy=\dimen184
+\pgf@zx=\dimen185
+\pgf@zy=\dimen186
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen186
-\pgf@path@lasty=\dimen187
+\pgf@path@lastx=\dimen187
+\pgf@path@lasty=\dimen188
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen188
-\pgf@shorten@start@additional=\dimen189
+\pgf@shorten@end@additional=\dimen189
+\pgf@shorten@start@additional=\dimen190
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box59
-\pgf@hbox=\box60
-\pgf@layerbox@main=\box61
-\pgf@picture@serial@count=\count307
+\pgfpic=\box60
+\pgf@hbox=\box61
+\pgf@layerbox@main=\box62
+\pgf@picture@serial@count=\count316
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen190
+\pgflinewidth=\dimen191
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen191
-\pgf@pt@y=\dimen192
-\pgf@pt@temp=\dimen193
+\pgf@pt@x=\dimen192
+\pgf@pt@y=\dimen193
+\pgf@pt@temp=\dimen194
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
 ode.tex
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
 ssing.code.tex
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen194
+\pgfarrowsep=\dimen195
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen195
-\pgf@sys@shading@range@num=\count308
-\pgf@shadingcount=\count309
+\pgf@max=\dimen196
+\pgf@sys@shading@range@num=\count317
+\pgf@shadingcount=\count318
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
 code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box62
+\pgfexternal@startupbox=\box63
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
 de.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
 ncy.code.tex
 File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
 code.tex
 File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
 tex
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box63
+\pgfnodeparttextbox=\box64
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen196
-\pgf@nodesepend=\dimen197
+\pgf@nodesepstart=\dimen197
+\pgf@nodesepend=\dimen198
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 ))
-(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen198
-\pgffor@skip=\dimen199
+\pgffor@iter=\dimen199
+\pgffor@skip=\dimen256
 \pgffor@stack=\toks44
 \pgffor@toks=\toks45
 ))
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count310
-\pgfplotmarksize=\dimen256
+\pgf@plot@mark@count=\count319
+\pgfplotmarksize=\dimen257
 )
-\tikz@lastx=\dimen257
-\tikz@lasty=\dimen258
-\tikz@lastxsaved=\dimen259
-\tikz@lastysaved=\dimen260
-\tikz@lastmovetox=\dimen261
-\tikz@lastmovetoy=\dimen262
-\tikzleveldistance=\dimen263
-\tikzsiblingdistance=\dimen264
-\tikz@figbox=\box64
-\tikz@figbox@bg=\box65
-\tikz@tempbox=\box66
-\tikz@tempbox@bg=\box67
-\tikztreelevel=\count311
-\tikznumberofchildren=\count312
-\tikznumberofcurrentchild=\count313
-\tikz@fig@count=\count314
+\tikz@lastx=\dimen258
+\tikz@lasty=\dimen259
+\tikz@lastxsaved=\dimen260
+\tikz@lastysaved=\dimen261
+\tikz@lastmovetox=\dimen262
+\tikz@lastmovetoy=\dimen263
+\tikzleveldistance=\dimen264
+\tikzsiblingdistance=\dimen265
+\tikz@figbox=\box65
+\tikz@figbox@bg=\box66
+\tikz@tempbox=\box67
+\tikz@tempbox@bg=\box68
+\tikztreelevel=\count320
+\tikznumberofchildren=\count321
+\tikznumberofcurrentchild=\count322
+\tikz@fig@count=\count323
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count315
-\pgfmatrixcurrentcolumn=\count316
-\pgf@matrix@numberofcolumns=\count317
+\pgfmatrixcurrentrow=\count324
+\pgfmatrixcurrentcolumn=\count325
+\pgf@matrix@numberofcolumns=\count326
 )
-\tikz@expandcount=\count318
+\tikz@expandcount=\count327
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-(/usr/local/texlive/2023/texmf-dist/tex/latex/mdframed/md-frame-1.mdf
+(/usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/md-frame-1.mdf
 File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 )
-\mdf@frametitlebox=\box68
-\mdf@footnotebox=\box69
-\mdf@splitbox@one=\box70
-\mdf@splitbox@two=\box71
-\mdf@splitbox@save=\box72
-\mdfsplitboxwidth=\skip100
-\mdfsplitboxtotalwidth=\skip101
-\mdfsplitboxheight=\skip102
-\mdfsplitboxdepth=\skip103
-\mdfsplitboxtotalheight=\skip104
-\mdfframetitleboxwidth=\skip105
-\mdfframetitleboxtotalwidth=\skip106
-\mdfframetitleboxheight=\skip107
-\mdfframetitleboxdepth=\skip108
-\mdfframetitleboxtotalheight=\skip109
-\mdffootnoteboxwidth=\skip110
-\mdffootnoteboxtotalwidth=\skip111
-\mdffootnoteboxheight=\skip112
-\mdffootnoteboxdepth=\skip113
-\mdffootnoteboxtotalheight=\skip114
-\mdftotallinewidth=\skip115
-\mdfboundingboxwidth=\skip116
-\mdfboundingboxtotalwidth=\skip117
-\mdfboundingboxheight=\skip118
-\mdfboundingboxdepth=\skip119
-\mdfboundingboxtotalheight=\skip120
-\mdf@freevspace@length=\skip121
-\mdf@horizontalwidthofbox@length=\skip122
-\mdf@verticalmarginwhole@length=\skip123
-\mdf@horizontalspaceofbox=\skip124
-\mdfsubtitleheight=\skip125
-\mdfsubsubtitleheight=\skip126
-\c@mdfcountframes=\count319
+\mdf@frametitlebox=\box69
+\mdf@footnotebox=\box70
+\mdf@splitbox@one=\box71
+\mdf@splitbox@two=\box72
+\mdf@splitbox@save=\box73
+\mdfsplitboxwidth=\skip101
+\mdfsplitboxtotalwidth=\skip102
+\mdfsplitboxheight=\skip103
+\mdfsplitboxdepth=\skip104
+\mdfsplitboxtotalheight=\skip105
+\mdfframetitleboxwidth=\skip106
+\mdfframetitleboxtotalwidth=\skip107
+\mdfframetitleboxheight=\skip108
+\mdfframetitleboxdepth=\skip109
+\mdfframetitleboxtotalheight=\skip110
+\mdffootnoteboxwidth=\skip111
+\mdffootnoteboxtotalwidth=\skip112
+\mdffootnoteboxheight=\skip113
+\mdffootnoteboxdepth=\skip114
+\mdffootnoteboxtotalheight=\skip115
+\mdftotallinewidth=\skip116
+\mdfboundingboxwidth=\skip117
+\mdfboundingboxtotalwidth=\skip118
+\mdfboundingboxheight=\skip119
+\mdfboundingboxdepth=\skip120
+\mdfboundingboxtotalheight=\skip121
+\mdf@freevspace@length=\skip122
+\mdf@horizontalwidthofbox@length=\skip123
+\mdf@verticalmarginwhole@length=\skip124
+\mdf@horizontalspaceofbox=\skip125
+\mdfsubtitleheight=\skip126
+\mdfsubsubtitleheight=\skip127
+\c@mdfcountframes=\count328
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count320
-\c@mdf@env@i=\count321
-\c@mdf@env@ii=\count322
-\c@mdf@zref@counter=\count323
+\mdf@envdepth=\count329
+\c@mdf@env@i=\count330
+\c@mdf@env@ii=\count331
+\c@mdf@zref@counter=\count332
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryshadows.code.tex
 File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryfadings.code.tex
 File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings
 .code.tex
 File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/local/texlive/2023/texmf-dist/tex/latex/xpatch/xpatch.sty
+))) (/usr/local/texlive/2024/texmf-dist/tex/latex/xpatch/xpatch.sty
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 )
 Package thmtools Info: Key `mdframed' (with value `style=mdbluebox')
@@ -849,272 +853,285 @@ Package thmtools Info: Key `mdframed' (with value `style=mdblackbox')
 Package thmtools Info: Automatically pulling in `thmdef-mdframed' on input line
  519.
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/thmdef-mdframed.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/thmdef-mdframed.sty
 Package: thmdef-mdframed 2023/05/04 v0.76
 )
-\c@theorem=\count324
+\c@theorem=\count333
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count325
-\lst@gtempboxa=\box73
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count334
+\lst@gtempboxa=\box74
 \lst@token=\toks46
-\lst@length=\count326
-\lst@currlwidth=\dimen265
-\lst@column=\count327
-\lst@pos=\count328
-\lst@lostspace=\dimen266
-\lst@width=\dimen267
-\lst@newlines=\count329
-\lst@lineno=\count330
-\lst@maxwidth=\dimen268
+\lst@length=\count335
+\lst@currlwidth=\dimen266
+\lst@column=\count336
+\lst@pos=\count337
+\lst@lostspace=\dimen267
+\lst@width=\dimen268
+\lst@newlines=\count338
+\lst@lineno=\count339
+\lst@maxwidth=\dimen269
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count331
-\lst@skipnumbers=\count332
-\lst@framebox=\box74
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2023/02/27 1.9 listings configuration
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count340
+\lst@skipnumbers=\count341
+\lst@framebox=\box75
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
-Package: listings 2023/02/27 1.9 (Carsten Heinz)
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup7
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip127
-\enit@outerparindent=\dimen269
+(/usr/local/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip128
+\enit@outerparindent=\dimen270
 \enit@toks=\toks47
-\enit@inbox=\box75
-\enit@count@id=\count333
-\enitdp@description=\count334
+\enit@inbox=\box76
+\enit@count@id=\count342
+\enitdp@description=\count343
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/todonotes/todonotes.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/todonotes/todonotes.sty
 Package: todonotes 2024/01/05 v1.1.7 Todonotes source and documentation.
 Package: todonotes 2024/01/05
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks48
 \XKV@tempa@toks=\toks49
 )
-\XKV@depth=\count335
+\XKV@depth=\count344
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count336
-\calc@Bcount=\count337
-\calc@Adimen=\dimen270
-\calc@Bdimen=\dimen271
-\calc@Askip=\skip128
-\calc@Bskip=\skip129
+\calc@Acount=\count345
+\calc@Bcount=\count346
+\calc@Adimen=\dimen271
+\calc@Bdimen=\dimen272
+\calc@Askip=\skip129
+\calc@Bskip=\skip130
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count338
-\calc@Cskip=\skip130
+\calc@Ccount=\count347
+\calc@Cskip=\skip131
 )
-\c@@todonotes@numberoftodonotes=\count339
+\c@@todonotes@numberoftodonotes=\count348
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip131
-\multirow@cntb=\count340
-\multirow@dima=\skip132
-\bigstrutjot=\dimen272
+(/usr/local/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip132
+\multirow@cntb=\count349
+\multirow@dima=\skip133
+\bigstrutjot=\dimen273
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/ellipsis/ellipsis.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/ellipsis/ellipsis.sty
 Package: ellipsis 2020/05/22 v1.8 fixes spacing around ellipses (three dots)
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/tools/xspace.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 LaTeX Info: Redefining \textellipsis on input line 77.
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/epigraph/epigraph.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/epigraph/epigraph.sty
 Package: epigraph 2020/01/02 v1.5e typesetting epigraphs
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/nextpage/nextpage.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/nextpage/nextpage.sty
 Package: nextpage 2009/09/03 v1.1a additional page commands
 )
-\beforeepigraphskip=\skip133
-\afterepigraphskip=\skip134
-\epigraphwidth=\skip135
-\epigraphrule=\skip136
+\beforeepigraphskip=\skip134
+\afterepigraphskip=\skip135
+\epigraphwidth=\skip136
+\epigraphrule=\skip137
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+(/usr/local/texlive/2024/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/mathtools/mhsetup.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count341
-\l_MT_multwidth_dim=\dimen273
-\origjot=\skip137
-\l_MT_shortvdotswithinadjustabove_dim=\dimen274
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen275
-\l_MT_above_intertext_sep=\dimen276
-\l_MT_below_intertext_sep=\dimen277
-\l_MT_above_shortintertext_sep=\dimen278
-\l_MT_below_shortintertext_sep=\dimen279
-\xmathstrut@box=\box76
-\xmathstrut@dim=\dimen280
+\g_MT_multlinerow_int=\count350
+\l_MT_multwidth_dim=\dimen274
+\origjot=\skip138
+\l_MT_shortvdotswithinadjustabove_dim=\dimen275
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen276
+\l_MT_above_intertext_sep=\dimen277
+\l_MT_below_intertext_sep=\dimen278
+\l_MT_above_shortintertext_sep=\dimen279
+\l_MT_below_shortintertext_sep=\dimen280
+\xmathstrut@box=\box77
+\xmathstrut@dim=\dimen281
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2025/02/11 v3.2a Micro-typographical refinements (RS)
 \MT@toks=\toks50
-\MT@tempbox=\box77
-\MT@count=\count342
-LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
-LaTeX Info: Redefining \leftprotrusion on input line 1060.
+\MT@tempbox=\box78
+\MT@count=\count351
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
+LaTeX Info: Redefining \leftprotrusion on input line 1088.
 \MT@prot@toks=\toks51
-LaTeX Info: Redefining \rightprotrusion on input line 1078.
-LaTeX Info: Redefining \textls on input line 1368.
-\MT@outer@kern=\dimen281
-LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
-\MT@listname@count=\count343
+LaTeX Info: Redefining \rightprotrusion on input line 1107.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen282
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count352
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-File: microtype-pdftex.def 2023/03/13 v3.1a Definitions specific to pdftex (RS)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2025/02/11 v3.2a Definitions specific to pdftex (RS)
 
-LaTeX Info: Redefining \lsstyle on input line 902.
-LaTeX Info: Redefining \lslig on input line 902.
-\MT@outer@space=\skip138
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip139
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
-))
-(/usr/local/texlive/2023/texmf-dist/tex/generic/xstring/xstring.sty
-(/usr/local/texlive/2023/texmf-dist/tex/generic/xstring/xstring.tex
-\xs_counta=\count344
-\xs_countb=\count345
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2025/02/11 v3.2a microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xstring/xstring.tex
+\xs_counta=\count353
+\xs_countb=\count354
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen282
-\WF@size=\dimen283
-\c@WF@wrappedlines=\count346
-\WF@box=\box78
+(/usr/local/texlive/2024/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen283
+\WF@size=\dimen284
+\c@WF@wrappedlines=\count355
+\WF@box=\box79
 \WF@everypar=\toks52
 Package: wrapfig 2003/01/31  v 3.6
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/isodate/isodate.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/isodate/isodate.sty
 Package: isodate 2010/01/03 v2.30 Print dates with different formats (HH)
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/substr/substr.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count347
+\c@su@anzahl=\count356
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/isodate/english.idf
+(/usr/local/texlive/2024/texmf-dist/tex/latex/isodate/english.idf
 File: english.idf 2010/01/03 v2.30 Language definitions for isodate package (HH
 )
 
 Define commands for English date format
 )
-\c@iso@tmpmonth=\count348
-\c@iso@yeartwo=\count349
-\c@iso@slash=\count350
-\c@iso@minus=\count351
-\c@iso@dot=\count352
-\c@iso@@slash=\count353
-\c@iso@@minus=\count354
-\c@iso@@dot=\count355
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
+\c@iso@tmpmonth=\count357
+\c@iso@yeartwo=\count358
+\c@iso@slash=\count359
+\c@iso@minus=\count360
+\c@iso@dot=\count361
+\c@iso@@slash=\count362
+\c@iso@@minus=\count363
+\c@iso@@dot=\count364
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
 Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+(/usr/local/texlive/2024/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarymatrix.code.tex
 File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryquotes.code.tex
 File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen284
-\pgfarrowlength=\dimen285
-\pgfarrowwidth=\dimen286
-\pgfarrowlinewidth=\dimen287
+\pgfarrowinset=\dimen285
+\pgfarrowlength=\dimen286
+\pgfarrowwidth=\dimen287
+\pgfarrowlinewidth=\dimen288
 )))
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarydecorations.pathmorphing.code.tex
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarydecorations.code.tex
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
 s.code.tex
-\pgfdecoratedcompleteddistance=\dimen288
-\pgfdecoratedremainingdistance=\dimen289
-\pgfdecoratedinputsegmentcompleteddistance=\dimen290
-\pgfdecoratedinputsegmentremainingdistance=\dimen291
-\pgf@decorate@distancetomove=\dimen292
-\pgf@decorate@repeatstate=\count356
-\pgfdecorationsegmentamplitude=\dimen293
-\pgfdecorationsegmentlength=\dimen294
+\pgfdecoratedcompleteddistance=\dimen289
+\pgfdecoratedremainingdistance=\dimen290
+\pgfdecoratedinputsegmentcompleteddistance=\dimen291
+\pgfdecoratedinputsegmentremainingdistance=\dimen292
+\pgf@decorate@distancetomove=\dimen293
+\pgf@decorate@repeatstate=\count365
+\pgfdecorationsegmentamplitude=\dimen294
+\pgfdecorationsegmentlength=\dimen295
 )
-\tikz@lib@dec@box=\box79
+\tikz@lib@dec@box=\box80
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.pathmorphing.code.tex))
-\c@walki=\count357
-\c@walkii=\count358
-\c@walkiii=\count359
-\enitdp@walk=\count360
-\c@rubrici=\count361
-\c@rubricii=\count362
-\enitdp@rubric=\count363
+\c@walki=\count366
+\c@walkii=\count367
+\c@walkiii=\count368
+\enitdp@walk=\count369
+\c@rubrici=\count370
+\c@rubricii=\count371
+\enitdp@rubric=\count372
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+(/usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip139
-\f@nch@O@elh=\skip140
-\f@nch@O@erh=\skip141
-\f@nch@O@olh=\skip142
-\f@nch@O@orh=\skip143
-\f@nch@O@elf=\skip144
-\f@nch@O@erf=\skip145
-\f@nch@O@olf=\skip146
-\f@nch@O@orf=\skip147
+\f@nch@headwidth=\skip140
+\f@nch@offset@elh=\skip141
+\f@nch@offset@erh=\skip142
+\f@nch@offset@olh=\skip143
+\f@nch@offset@orh=\skip144
+\f@nch@offset@elf=\skip145
+\f@nch@offset@erf=\skip146
+\f@nch@offset@olf=\skip147
+\f@nch@offset@orf=\skip148
+\f@nch@height=\skip149
+\f@nch@footalignment=\skip150
+\f@nch@widthL=\skip151
+\f@nch@widthC=\skip152
+\f@nch@widthR=\skip153
+\@temptokenb=\toks53
 ))
-(/usr/local/texlive/2023/texmf-dist/tex/latex/tools/xr.sty
-Package: xr 2023-07-04 v5.06 eXternal References (DPC)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/xr.sty
+Package: xr 2024-04-10 v6.00 eXternal References (DPC)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/zref/zref-xr.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-xr.sty
 Package: zref-xr 2023-09-14 v2.35 Module xr for zref (HO)
 Package zref Info: New property: url on input line 58.
 Package zref Info: New property: urluse on input line 59.
 Package zref Info: New property: externaldocument on input line 60.
-\ZREF@xr@URL=\count364
+\ZREF@xr@URL=\count373
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/zref/zref-user.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-user.sty
 Package: zref-user 2023-09-14 v2.35 Module user for zref (HO)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/xr-hyper.sty
-Package: xr-hyper 2024-01-20 v7.01h eXternal References (DPC)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/xr-hyper.sty
+Package: xr-hyper 2024-11-05 v7.01l eXternal References (DPC)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/zref/zref.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref.sty
 Package: zref 2023-09-14 v2.35 A new reference scheme for LaTeX (HO)
 ) (./main.aux
-(./input/note01.aux))
+(./input/note01.aux) (./input/note02.aux) (./input/note03.aux)
+(./input/note04.aux) (./input/note05.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 169.
@@ -1136,25 +1153,25 @@ LaTeX Font Info:    ... okay on input line 169.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 169.
 LaTeX Font Info:    ... okay on input line 169.
 
-(/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count365
-\scratchdimen=\dimen295
-\scratchbox=\box80
-\nofMPsegments=\count366
-\nofMParguments=\count367
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count368
-\MPscratchDim=\dimen296
-\MPnumerator=\count369
-\makeMPintoPDFobject=\count370
-\everyMPtoPDFconversion=\toks54
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\scratchcounter=\count374
+\scratchdimen=\dimen296
+\scratchbox=\box81
+\nofMPsegments=\count375
+\nofMParguments=\count376
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count377
+\MPscratchDim=\dimen297
+\MPnumerator=\count378
+\makeMPintoPDFobject=\count379
+\everyMPtoPDFconversion=\toks55
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -1164,7 +1181,7 @@ Package hyperref Info: Link coloring ON on input line 169.
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
-\c@lstlisting=\count371
+\c@lstlisting=\count380
 
 
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
@@ -1179,6 +1196,7 @@ Package microtype Info: Applying patch `toc' on input line 169.
 Package microtype Info: Applying patch `eqnum' on input line 169.
 Package microtype Info: Applying patch `footnote' on input line 169.
 Package microtype Info: Applying patch `verbatim' on input line 169.
+LaTeX Info: Redefining \microtypesetup on input line 169.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1189,61 +1207,68 @@ LaTeX Info: Redefining \showhyphens on input line 169.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
 isodate: babel.sty, (n)german.sty have not been loaded
 LaTeX Font Info:    Trying to load font information for U+msa on input line 185
 .
-(/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msa.cfg
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 185
 .
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msb.cfg
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 
 185.
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/yhmath/OMXyhex.fd
+(/usr/local/texlive/2024/texmf-dist/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 18
 5.
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/jknapltx/ursfs.fd
+(/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./main.
-toc)
+
+[1
+
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
+al/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+(./main.toc
+
+[2])
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
 
-[2]
+
+[3]
 \openout2 = `input/note01.aux'.
 
  (./input/note01.tex
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
 nput line 63.
- [3
+
+
+[4
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
@@ -1255,7 +1280,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
 input line 88.
- [4]
+
+
+[5]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 119.
@@ -1266,7 +1293,9 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 135.
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
  line 135.
- [5]
+
+
+[6]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 175.
@@ -1280,7 +1309,9 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 201.
 Package mdframed Info: Not enough space on this page on input line 208.
- [6]
+
+
+[7]
 Package mdframed Info: Not enough space on this page on input line 208.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1288,9 +1319,11 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 256.
- [7
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
-) has been already used, duplicate ignored
+
+
+[8
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) 
+has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.256 \end{example}
@@ -1298,36 +1331,46 @@ l.256 \end{example}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 259.
-<./input/graphs/note01/complex_plane.pdf, id=185, 147.70584pt x 116.6508pt>
+<./input/graphs/note01/complex_plane.pdf, id=340, 147.70584pt x 116.6508pt>
 File: ./input/graphs/note01/complex_plane.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/complex_plane.pdf>
 Package pdftex.def Info: ./input/graphs/note01/complex_plane.pdf  used on input
  line 286.
 (pdftex.def)             Requested size: 147.70547pt x 116.6505pt.
- [8]
-<./input/graphs/note01/complex_conjugate.pdf, id=193, 126.59195pt x 184.03255pt
+
+
+[9]
+<./input/graphs/note01/complex_conjugate.pdf, id=348, 126.59195pt x 184.03255pt
 >
 File: ./input/graphs/note01/complex_conjugate.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/complex_conjugate.pdf>
 Package pdftex.def Info: ./input/graphs/note01/complex_conjugate.pdf  used on i
 nput line 298.
 (pdftex.def)             Requested size: 126.59161pt x 184.03209pt.
-<./input/graphs/note01/sum_complex.pdf, id=194, 151.57227pt x 112.90079pt>
+<./input/graphs/note01/sum_complex.pdf, id=349, 151.57227pt x 112.90079pt>
 File: ./input/graphs/note01/sum_complex.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/sum_complex.pdf>
 Package pdftex.def Info: ./input/graphs/note01/sum_complex.pdf  used on input l
 ine 305.
 (pdftex.def)             Requested size: 151.57188pt x 112.9005pt.
-<./input/graphs/note01/length_angle_complex.pdf, id=195, 112.3658pt x 112.90079
+<./input/graphs/note01/length_angle_complex.pdf, id=350, 112.3658pt x 112.90079
 pt>
 File: ./input/graphs/note01/length_angle_complex.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/length_angle_complex.pdf>
 Package pdftex.def Info: ./input/graphs/note01/length_angle_complex.pdf  used o
 n input line 308.
 (pdftex.def)             Requested size: 112.36551pt x 112.9005pt.
- [9 <./input/graphs/note01/complex_plane.pdf> <./input/graphs/note01/complex_co
+
+
+[10 <./input/graphs/note01/complex_plane.pdf> <./input/graphs/note01/complex_co
 njugate.pdf> <./input/graphs/note01/sum_complex.pdf>]
-<./input/graphs/note01/coordinates_complex.pdf, id=243, 112.3658pt x 112.90079p
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.312 \begin{definition}[Alternative]
+                                     
+<./input/graphs/note01/coordinates_complex.pdf, id=398, 112.3658pt x 112.90079p
 t>
 File: ./input/graphs/note01/coordinates_complex.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/coordinates_complex.pdf>
@@ -1340,7 +1383,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 334.
-<./input/graphs/note01/circle_coord_cmplx.pdf, id=244, 155.04526pt x 157.8698pt
+<./input/graphs/note01/circle_coord_cmplx.pdf, id=399, 155.04526pt x 157.8698pt
 >
 File: ./input/graphs/note01/circle_coord_cmplx.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/circle_coord_cmplx.pdf>
@@ -1348,9 +1391,10 @@ Package pdftex.def Info: ./input/graphs/note01/circle_coord_cmplx.pdf  used on
 input line 336.
 (pdftex.def)             Requested size: 155.04486pt x 157.8694pt.
 
-[10 <./input/graphs/note01/length_angle_complex.pdf> <./input/graphs/note01/coo
+
+[11 <./input/graphs/note01/length_angle_complex.pdf> <./input/graphs/note01/coo
 rdinates_complex.pdf>]
-<./input/graphs/note01/filled_circle.pdf, id=273, 142.66399pt x 142.66399pt>
+<./input/graphs/note01/filled_circle.pdf, id=427, 142.66399pt x 142.66399pt>
 File: ./input/graphs/note01/filled_circle.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/filled_circle.pdf>
 Package pdftex.def Info: ./input/graphs/note01/filled_circle.pdf  used on input
@@ -1359,24 +1403,28 @@ Package pdftex.def Info: ./input/graphs/note01/filled_circle.pdf  used on input
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 344.
-<./input/graphs/note01/hyperbola_cmplx.pdf, id=274, 428.97162pt x 310.1487pt>
+<./input/graphs/note01/hyperbola_cmplx.pdf, id=428, 428.97162pt x 310.1487pt>
 File: ./input/graphs/note01/hyperbola_cmplx.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/hyperbola_cmplx.pdf>
 Package pdftex.def Info: ./input/graphs/note01/hyperbola_cmplx.pdf  used on inp
 ut line 349.
 (pdftex.def)             Requested size: 328.82706pt x 237.74095pt.
- [11 <./input/graphs/note01/circle_coord_cmplx.pdf> <./input/graphs/note01/fill
-ed_circle.pdf>]
-<./input/graphs/note01/hyperbola2-cmplx.pdf, id=301, 228.02188pt x 228.02188pt>
+
+
+[12 <./input/graphs/note01/circle_coord_cmplx.pdf> <./input/graphs/note01/fille
+d_circle.pdf>]
+<./input/graphs/note01/hyperbola2-cmplx.pdf, id=454, 228.02188pt x 228.02188pt>
 
 File: ./input/graphs/note01/hyperbola2-cmplx.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/hyperbola2-cmplx.pdf>
 Package pdftex.def Info: ./input/graphs/note01/hyperbola2-cmplx.pdf  used on in
 put line 353.
 (pdftex.def)             Requested size: 228.02132pt x 228.02132pt.
- [12 <./input/graphs/note01/hyperbola_cmplx.pdf> <./input/graphs/note01/hyperbo
-la2-cmplx.pdf>]
-<./input/graphs/note01/angle_complex.pdf, id=334, 140.8181pt x 143.64265pt>
+
+
+[13 <./input/graphs/note01/hyperbola_cmplx.pdf> <./input/graphs/note01/hyperbol
+a2-cmplx.pdf>]
+<./input/graphs/note01/angle_complex.pdf, id=489, 140.8181pt x 143.64265pt>
 File: ./input/graphs/note01/angle_complex.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/angle_complex.pdf>
 Package pdftex.def Info: ./input/graphs/note01/angle_complex.pdf  used on input
@@ -1385,7 +1433,9 @@ Package pdftex.def Info: ./input/graphs/note01/angle_complex.pdf  used on input
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 384.
- [13 <./input/graphs/note01/angle_complex.pdf>]
+
+
+[14 <./input/graphs/note01/angle_complex.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 401.
@@ -1395,7 +1445,9 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 425.
- [14]
+
+
+[15]
 Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inp
 ut line 446.
 Package mdframed Info: mdframed detected package amsthm 
@@ -1404,10 +1456,43 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 470.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.12}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.470 D
+       efine $\frac{1}{z}$ geometrically.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 485.
- [15]
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.495 \begin{equation}
+                      \label{equation:244.1}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.495 \begin{equation}
+                      \label{equation:244.1}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.495 \begin{equation}
+                      \label{equation:244.1}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.495 \begin{equation}
+                      \label{equation:244.1}
+
+[16]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 502.
@@ -1423,7 +1508,7 @@ Overfull \hbox (11.6558pt too wide) in paragraph at lines 510--513
 m/it/12 i\OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 (-20) = [] =
  []
 
-<./input/graphs/note01/circle_square.pdf, id=394, 176.68811pt x 165.38086pt>
+<./input/graphs/note01/circle_square.pdf, id=547, 176.68811pt x 165.38086pt>
 File: ./input/graphs/note01/circle_square.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/circle_square.pdf>
 Package pdftex.def Info: ./input/graphs/note01/circle_square.pdf  used on input
@@ -1432,65 +1517,1534 @@ Package pdftex.def Info: ./input/graphs/note01/circle_square.pdf  used on input
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 530.
-<./input/graphs/note01/circle_square2.pdf, id=396, 155.04526pt x 157.8698pt>
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.17}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.530 C
+       ompute all the roots of $z = \sqrt[4]{-4}$.
+<./input/graphs/note01/circle_square2.pdf, id=549, 155.04526pt x 157.8698pt>
 File: ./input/graphs/note01/circle_square2.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/circle_square2.pdf>
 Package pdftex.def Info: ./input/graphs/note01/circle_square2.pdf  used on inpu
 t line 546.
 (pdftex.def)             Requested size: 224.37749pt x 228.48376pt.
-[16 <./input/graphs/note01/circle_square.pdf>]
+
+
+[17 <./input/graphs/note01/circle_square.pdf>]
 Package mdframed Info: Not enough space on this page on input line 551.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 555.
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
 t line 555.
- [17 <./input/graphs/note01/circle_square2.pdf>]) [18] (./main.aux (./input/not
-e01.aux))
+
+
+[18 <./input/graphs/note01/circle_square2.pdf>])
+
+[19]
+\openout2 = `input/note02.aux'.
+
+ (./input/note02.tex
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.44 \begin{definition}\label
+                             {definition:2.1}
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.48 \begin{definition} \label
+                              {definition:2.2}
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 51.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.3}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.51 \begin{example} \label
+                           {example:3.1}
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 57.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.4}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.57 \begin{example}\label
+                          {example:3.2}
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 65.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 68.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.6}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.68 \begin{example} \label
+                           {example:3.4}
+
+[20
+
+
+
+]
+Package mdframed Info: Not enough space on this page on input line 70.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 73.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.7}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.73 \begin{example}\label
+                          {example:3.5}
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 7
+4.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 78.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 88.
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.90 \begin{equation}
+                      \cos z = \frac{1}{2}(e^{iz} + e^{-iz}), \quad \sin z =...
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.90 \begin{equation}
+                      \cos z = \frac{1}{2}(e^{iz} + e^{-iz}), \quad \sin z =...
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.90 \begin{equation}
+                      \cos z = \frac{1}{2}(e^{iz} + e^{-iz}), \quad \sin z =...
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.90 \begin{equation}
+                      \cos z = \frac{1}{2}(e^{iz} + e^{-iz}), \quad \sin z =...
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.92 \begin{equation}
+                      \cosh z = \frac{1}{2}(e^z + e^{-z}), \quad \sinh z = \...
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.92 \begin{equation}
+                      \cosh z = \frac{1}{2}(e^z + e^{-z}), \quad \sinh z = \...
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.92 \begin{equation}
+                      \cosh z = \frac{1}{2}(e^z + e^{-z}), \quad \sinh z = \...
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.92 \begin{equation}
+                      \cosh z = \frac{1}{2}(e^z + e^{-z}), \quad \sinh z = \...
+
+
+[21]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 103.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 129.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.11}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.129 \begin{example} \label
+                            {example:3.9} Rewrite in terms $z$ and $\bar{z}$:
+Overfull \hbox (27.95155pt too wide) detected at line 144
+[]
+ []
+
+Package mdframed Info: You first box width is to small
+ mdframed fixed it
+(mdframed)              on input line 149.
+
+
+[22]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 157.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.12}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.157 \begin{example} \label
+                            {example:4.1}
+<./input/graphs/note02/image_lin.pdf, id=639, 339.99722pt x 141.35309pt>
+File: ./input/graphs/note02/image_lin.pdf Graphic file (type pdf)
+<use ./input/graphs/note02/image_lin.pdf>
+Package pdftex.def Info: ./input/graphs/note02/image_lin.pdf  used on input lin
+e 161.
+(pdftex.def)             Requested size: 339.99638pt x 141.35274pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 164.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.13}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.164 \begin{example} \label
+                            {example:4.2} What is the image of the ray $\arg...
+
+
+[23 <./input/graphs/note02/image_lin.pdf>]
+Package mdframed Info: Not enough space on this page on input line 170.
+<./input/graphs/note02/image_lin2.pdf, id=656, 345.68748pt x 128.54926pt>
+File: ./input/graphs/note02/image_lin2.pdf Graphic file (type pdf)
+<use ./input/graphs/note02/image_lin2.pdf>
+Package pdftex.def Info: ./input/graphs/note02/image_lin2.pdf  used on input li
+ne 175.
+(pdftex.def)             Requested size: 345.68663pt x 128.54893pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 183.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.14}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.183 \begin{example} \label
+                            {example:4.3} First, we determine what is the im...
+<./input/graphs/note02/image_lin3.pdf, id=657, 374.54027pt x 98.67365pt>
+File: ./input/graphs/note02/image_lin3.pdf Graphic file (type pdf)
+<use ./input/graphs/note02/image_lin3.pdf>
+Package pdftex.def Info: ./input/graphs/note02/image_lin3.pdf  used on input li
+ne 187.
+(pdftex.def)             Requested size: 374.53934pt x 98.67339pt.
+
+
+[24 <./input/graphs/note02/image_lin2.pdf> <./input/graphs/note02/image_lin3.pd
+f>]
+<./input/graphs/note02/image_lin4.pdf, id=686, 374.13979pt x 99.07414pt>
+File: ./input/graphs/note02/image_lin4.pdf Graphic file (type pdf)
+<use ./input/graphs/note02/image_lin4.pdf>
+Package pdftex.def Info: ./input/graphs/note02/image_lin4.pdf  used on input li
+ne 194.
+(pdftex.def)             Requested size: 374.13885pt x 99.07388pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 196.
+Package hyperref Info: bookmark level for unknown claim defaults to 0 on input 
+line 196.
+<./input/graphs/note02/image_lin5.pdf, id=687, 366.27841pt x 114.31308pt>
+File: ./input/graphs/note02/image_lin5.pdf Graphic file (type pdf)
+<use ./input/graphs/note02/image_lin5.pdf>
+Package pdftex.def Info: ./input/graphs/note02/image_lin5.pdf  used on input li
+ne 198.
+(pdftex.def)             Requested size: 366.27751pt x 114.31279pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 205.
+<./input/graphs/note02/image_lin6.pdf, id=688, 399.73842pt x 167.51282pt>
+File: ./input/graphs/note02/image_lin6.pdf Graphic file (type pdf)
+<use ./input/graphs/note02/image_lin6.pdf>
+Package pdftex.def Info: ./input/graphs/note02/image_lin6.pdf  used on input li
+ne 208.
+(pdftex.def)             Requested size: 399.73744pt x 167.5124pt.
+
+
+[25 <./input/graphs/note02/image_lin4.pdf> <./input/graphs/note02/image_lin5.pd
+f> <./input/graphs/note02/image_lin6.pdf>]
+<./input/graphs/note02/image_lin7.pdf, id=738, 394.05719pt x 195.41306pt>
+File: ./input/graphs/note02/image_lin7.pdf Graphic file (type pdf)
+<use ./input/graphs/note02/image_lin7.pdf>
+Package pdftex.def Info: ./input/graphs/note02/image_lin7.pdf  used on input li
+ne 221.
+(pdftex.def)             Requested size: 394.05621pt x 195.41257pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 227.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.17}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.227 \begin{example}\label
+                           {example:4.4} Determine which regions (if any) of...
+<./input/graphs/note02/image_lin8.pdf, id=739, 351.77823pt x 176.24846pt>
+File: ./input/graphs/note02/image_lin8.pdf Graphic file (type pdf)
+<use ./input/graphs/note02/image_lin8.pdf>
+Package pdftex.def Info: ./input/graphs/note02/image_lin8.pdf  used on input li
+ne 232.
+(pdftex.def)             Requested size: 351.77736pt x 176.24802pt.
+
+
+[26 <./input/graphs/note02/image_lin7.pdf>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 237.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.18}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.237 \begin{example} \label
+                            {example:4.5}
+<./input/graphs/note02/image_lin9.pdf, id=763, 239.60315pt x 125.99171pt>
+File: ./input/graphs/note02/image_lin9.pdf Graphic file (type pdf)
+<use ./input/graphs/note02/image_lin9.pdf>
+Package pdftex.def Info: ./input/graphs/note02/image_lin9.pdf  used on input li
+ne 246.
+(pdftex.def)             Requested size: 239.60255pt x 125.9914pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 256.
+<./input/graphs/note02/image_lin10.pdf, id=765, 386.9436pt x 199.68202pt>
+File: ./input/graphs/note02/image_lin10.pdf Graphic file (type pdf)
+<use ./input/graphs/note02/image_lin10.pdf>
+Package pdftex.def Info: ./input/graphs/note02/image_lin10.pdf  used on input l
+ine 277.
+(pdftex.def)             Requested size: 386.94264pt x 199.68152pt.
+
+
+[27 <./input/graphs/note02/image_lin8.pdf> <./input/graphs/note02/image_lin9.pd
+f>]
+Package mdframed Info: Not enough space on this page on input line 286.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 286.
+
+
+[28 <./input/graphs/note02/image_lin10.pdf>]
+<./input/graphs/note02/image_lin11.pdf, id=840, 395.45642pt x 144.19772pt>
+File: ./input/graphs/note02/image_lin11.pdf Graphic file (type pdf)
+<use ./input/graphs/note02/image_lin11.pdf>
+Package pdftex.def Info: ./input/graphs/note02/image_lin11.pdf  used on input l
+ine 288.
+(pdftex.def)             Requested size: 395.45546pt x 144.19736pt.
+<./input/graphs/note02/image_lin12.pdf, id=841, 403.83873pt x 176.39702pt>
+File: ./input/graphs/note02/image_lin12.pdf Graphic file (type pdf)
+<use ./input/graphs/note02/image_lin12.pdf>
+Package pdftex.def Info: ./input/graphs/note02/image_lin12.pdf  used on input l
+ine 290.
+(pdftex.def)             Requested size: 403.83774pt x 176.39658pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.303 \begin{definition}\label
+                              {definition:3.1}
+
+[29 <./input/graphs/note02/image_lin11.pdf> <./input/graphs/note02/image_lin12.
+pdf>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 309.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.2}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.309 L
+       et $f(z) = \frac{\bar{z}}{2}$. Claim: for any $z_0$, $\lim_{z \to z_0...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 336.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.3}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.336 \begin{example}\label
+                           {example:5.2}
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 342.
+
+
+[30]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 368.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 378.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.6}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.378 \begin{example}\label
+                           {example:5.3}
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 392.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.7}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.392 E
+       x~\ref{example:5.3} shows that the different paths need not be the re...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 396.
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 398.
+
+
+
+[31]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 401.
+
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.9
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.401 \begin{proposition} \label
+                                {proposition:3.1} If $\lim_{z \to z_0} f(z) ...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 412.
+
+Overfull \hbox (8.27359pt too wide) detected at line 424
+[]
+ []
+
+
+
+[32])
+
+[33]
+\openout2 = `input/note03.aux'.
+
+ (./input/note03.tex
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 40.
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.13
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.51 \begin{definition}\label
+                             {definition:3.3}
+pdfTeX warning (ext4): destination with the same identifier (name{definition.14
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.55 \begin{definition}\label
+                             {definition:3.4}
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 59.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 73.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.16}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.73 \begin{example} \label
+                           {example:5.6}
+Package mdframed Info: Not enough space on this page on input line 75.
+
+
+[34
+
+
+
+]
+Package mdframed Info: Not enough space on this page on input line 75.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 93.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 93.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.97 \begin{definition}\label
+                             {definition:4.1}
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.101 \begin{definition} \label
+                               {definition:4.2}
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 106.
+
+
+[35]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.112 \begin{definition} \label
+                               {definition:4.3} A connected open subset $R \...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 115.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.5}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.115 \begin{example}\label
+                           {example:6.1}
+<./input/graphs/note03/image_lin1.pdf, id=977, 168.67116pt x 80.46762pt>
+File: ./input/graphs/note03/image_lin1.pdf Graphic file (type pdf)
+<use ./input/graphs/note03/image_lin1.pdf>
+Package pdftex.def Info: ./input/graphs/note03/image_lin1.pdf  used on input li
+ne 123.
+(pdftex.def)             Requested size: 168.67073pt x 80.4674pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.6}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.131 \begin{definition} \label
+                               {definition:4.4} Let $S \subseteq \mathbb{C}$...
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.8}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.140 \begin{definition}\label
+                              {definition:4.5}
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 147.
+
+pdfTeX warning (ext4): destination with the same identifier (name{remark.9}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.147     T
+           here exist sets that are neither open nor closed!
+
+[36 <./input/graphs/note03/image_lin1.pdf>]
+Package mdframed Info: Not enough space on this page on input line 148.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 150.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.10}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.150 \begin{example}\label
+                           {example:6.2}
+<./input/graphs/note03/image_lin2.pdf, id=999, 125.99171pt x 125.99171pt>
+File: ./input/graphs/note03/image_lin2.pdf Graphic file (type pdf)
+<use ./input/graphs/note03/image_lin2.pdf>
+Package pdftex.def Info: ./input/graphs/note03/image_lin2.pdf  used on input li
+ne 155.
+(pdftex.def)             Requested size: 125.9914pt x 125.9914pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.11
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.165 \begin{definition} \label
+                               {definition:4.6} A collection of all the poin...
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.174 \begin{definition}\label
+                              {definition:5.1} The function $f(z)$ is contin...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 181.
+
+
+[37 <./input/graphs/note03/image_lin2.pdf>]
+Package mdframed Info: Not enough space on this page on input line 182.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 186.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 190.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.4}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.190 \begin{example}\label
+                           {example:7.1}
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 198.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.5}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.198 \begin{example}\label
+                           {example:7.2} Prove that $z^n, n \in \mathbb{N}$ ...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 214.
+
+
+[38]
+Package mdframed Info: Not enough space on this page on input line 215.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 221.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.7}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.221 \begin{example}\label
+                           {example:7.3}
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 228.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.8}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.228 \begin{example}\label
+                           {example:7.4}
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.243 \begin{definition}\label
+                              {definition:6.1}
+
+[39]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 249.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.2}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.249 \begin{example}\label
+                           {example:8.1} Using Def 6.1 compute the derivativ...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 267.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.3}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.267 \begin{example}\label
+                           {example:8.2} 8.2 Prove that for any $n \in \math...
+
+
+[40]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 279.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.4}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.279 \begin{example} \label
+                            {example:8.3}  Compute the derivative of $f(z) =...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 288.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.5}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.288 \begin{example}\label
+                           {example:8.4} 8.4 Compute the derivative of $f(z)...
+
+
+[41]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 309.
+
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.6
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.309 \begin{proposition}\label
+                               {proposition:6.1} If $c \in \mathbb{C}$ is a ...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 330.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 335.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 338.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.10}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.338 \begin{example}8
+                      .5 Compute the derivative of $f(z) = \frac{z^3 - 5z + ...
+
+
+[42]
+Package mdframed Info: Not enough space on this page on input line 345.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 348.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 361.
+
+
+[43]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 375.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 386.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.14}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.386 \begin{example}\label
+                           {example:8.6} 8.6 Let $z = x+iy, f(z) = \sqrt{|xy...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 394.
+
+pdfTeX warning (ext4): destination with the same identifier (name{claim.15}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.394 \begin{claim} $
+                     f'(0)$ does not exist.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 403.
+
+
+[44]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 408.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 413.
+
+
+[45]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 449.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.18}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.449 W
+       here \[f(x,y) = x^3 - 3xy^2 + i(3x^2y - y^3)\] is differentiable?)
+
+[46]
+\openout2 = `input/note04.aux'.
+
+ (./input/note04.tex
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.44 \begin{definition}\label
+                             {definition:7.1} Single-valued function $f(z)$ ...
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.51 \begin{definition}\label
+                             {definition:7.2} A function that is analytic fo...
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.53 \begin{definition}\label
+                             {definition:7.3} Single-valued function is anal...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 59.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.4}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.59 \begin{example}\label
+                          {example:9.1}
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 63.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.5}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.63 \begin{example}\label
+                          {example:9.2}
+<./input/graphs/note04/image_graph1.pdf, id=1120, 478.35213pt x 137.82892pt>
+File: ./input/graphs/note04/image_graph1.pdf Graphic file (type pdf)
+<use ./input/graphs/note04/image_graph1.pdf>
+Package pdftex.def Info: ./input/graphs/note04/image_graph1.pdf  used on input 
+line 69.
+(pdftex.def)             Requested size: 448.75499pt x 129.3026pt.
+<./input/graphs/note04/img_graph2.pdf, id=1121, 144.06422pt x 183.82677pt>
+File: ./input/graphs/note04/img_graph2.pdf Graphic file (type pdf)
+<use ./input/graphs/note04/img_graph2.pdf>
+Package pdftex.def Info: ./input/graphs/note04/img_graph2.pdf  used on input li
+ne 71.
+(pdftex.def)             Requested size: 144.06386pt x 183.82631pt.
+<./input/graphs/note04/img_graph3.pdf, id=1122, 115.61092pt x 146.83858pt>
+File: ./input/graphs/note04/img_graph3.pdf Graphic file (type pdf)
+<use ./input/graphs/note04/img_graph3.pdf>
+Package pdftex.def Info: ./input/graphs/note04/img_graph3.pdf  used on input li
+ne 73.
+(pdftex.def)             Requested size: 115.61063pt x 146.83821pt.
+
+
+[47
+
+
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 88.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.6}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.88 \begin{example}\label
+                          {example:9.4}
+
+[48 <./input/graphs/note04/image_graph1.pdf> <./input/graphs/note04/img_graph2.
+pdf> <./input/graphs/note04/img_graph3.pdf>]
+Package mdframed Info: Not enough space on this page on input line 98.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 100.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 112.
+
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.8
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.112 \begin{proposition}\label
+                               {proposition:7.1} If $f, g$ are analytic func...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 116.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.9}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.116 \begin{example}\label
+                           {example:9.5}
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 124.
+
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.1
+0}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.124 \begin{proposition} \label
+                                {proposition:7.2}
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 128.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 129.
+<./input/graphs/note04/img_graph4.pdf, id=1250, 131.68295pt x 103.22966pt>
+File: ./input/graphs/note04/img_graph4.pdf Graphic file (type pdf)
+<use ./input/graphs/note04/img_graph4.pdf>
+Package pdftex.def Info: ./input/graphs/note04/img_graph4.pdf  used on input li
+ne 136.
+(pdftex.def)             Requested size: 131.68262pt x 103.22939pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 143.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 153.
+
+
+[49]
+<./input/graphs/note04/img_graph5.pdf, id=1263, 160.13527pt x 131.68295pt>
+File: ./input/graphs/note04/img_graph5.pdf Graphic file (type pdf)
+<use ./input/graphs/note04/img_graph5.pdf>
+Package pdftex.def Info: ./input/graphs/note04/img_graph5.pdf  used on input li
+ne 156.
+(pdftex.def)             Requested size: 160.13486pt x 131.68262pt.
+
+
+[50 <./input/graphs/note04/img_graph4.pdf> <./input/graphs/note04/img_graph5.pd
+f>]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.165 \begin{definition}\label
+                              {definition:8.1} We say that on a domain $\Ome...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 174.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.2}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.174 \begin{example}\label
+                           {example:10.1}
+<./input/graphs/note04/img_graph6.pdf, id=1290, 201.38638pt x 151.767pt>
+File: ./input/graphs/note04/img_graph6.pdf Graphic file (type pdf)
+<use ./input/graphs/note04/img_graph6.pdf>
+Package pdftex.def Info: ./input/graphs/note04/img_graph6.pdf  used on input li
+ne 188.
+(pdftex.def)             Requested size: 201.38588pt x 151.76662pt.
+
+
+[51]
+<./input/graphs/note04/img_graph7.pdf, id=1297, 208.4046pt x 137.54085pt>
+File: ./input/graphs/note04/img_graph7.pdf Graphic file (type pdf)
+<use ./input/graphs/note04/img_graph7.pdf>
+Package pdftex.def Info: ./input/graphs/note04/img_graph7.pdf  used on input li
+ne 200.
+(pdftex.def)             Requested size: 208.40408pt x 137.5405pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 204.
+
+
+[52 <./input/graphs/note04/img_graph6.pdf> <./input/graphs/note04/img_graph7.pd
+f>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 222.
+<./input/graphs/note04/img_graph8.pdf, id=1331, 165.9259pt x 109.2883pt>
+File: ./input/graphs/note04/img_graph8.pdf Graphic file (type pdf)
+<use ./input/graphs/note04/img_graph8.pdf>
+Package pdftex.def Info: ./input/graphs/note04/img_graph8.pdf  used on input li
+ne 235.
+(pdftex.def)             Requested size: 165.92549pt x 109.28802pt.
+<./input/graphs/note04/img_graph9.pdf, id=1332, 165.9259pt x 137.7406pt>
+File: ./input/graphs/note04/img_graph9.pdf Graphic file (type pdf)
+<use ./input/graphs/note04/img_graph9.pdf>
+Package pdftex.def Info: ./input/graphs/note04/img_graph9.pdf  used on input li
+ne 243.
+(pdftex.def)             Requested size: 165.92549pt x 137.74025pt.
+
+
+[53 <./input/graphs/note04/img_graph8.pdf>]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.256 \begin{definition}\label
+                              {definition:8.2} The point \( z_0 \) is called...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 267.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.6}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.267 \begin{example} C
+                       onsider \( w = \sqrt[n]{z - z_0} \). Take \( z - z_0 ...
+<./input/graphs/note04/img_graph10.pdf, id=1356, 165.9259pt x 123.51445pt>
+File: ./input/graphs/note04/img_graph10.pdf Graphic file (type pdf)
+<use ./input/graphs/note04/img_graph10.pdf>
+Package pdftex.def Info: ./input/graphs/note04/img_graph10.pdf  used on input l
+ine 277.
+(pdftex.def)             Requested size: 165.92549pt x 123.51413pt.
+
+
+[54 <./input/graphs/note04/img_graph9.pdf>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 310.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.7}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.310 \begin{example}\label
+                           {example:10.3} Find the branch points of the func...
+<./input/graphs/note04/img_graph11.pdf, id=1380, 144.06422pt x 173.05151pt>
+File: ./input/graphs/note04/img_graph11.pdf Graphic file (type pdf)
+<use ./input/graphs/note04/img_graph11.pdf>
+Package pdftex.def Info: ./input/graphs/note04/img_graph11.pdf  used on input l
+ine 315.
+(pdftex.def)             Requested size: 144.06386pt x 173.05109pt.
+
+
+[55 <./input/graphs/note04/img_graph10.pdf>]
+<./input/graphs/note04/img_graph12.pdf, id=1400, 109.0203pt x 109.2873pt>
+File: ./input/graphs/note04/img_graph12.pdf Graphic file (type pdf)
+<use ./input/graphs/note04/img_graph12.pdf>
+Package pdftex.def Info: ./input/graphs/note04/img_graph12.pdf  used on input l
+ine 323.
+(pdftex.def)             Requested size: 109.02002pt x 109.28702pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.8}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.325 \begin{definition}\label
+                              {definition:8.3} Single-valued branch is calle...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 328.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.9}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.328 \begin{example}\label
+                           {example:10.4} Prove that $w = \sqrt[n]{z}$ is an...
+
+
+[56 <./input/graphs/note04/img_graph11.pdf> <./input/graphs/note04/img_graph12.
+pdf>]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.349 \begin{definition}\label
+                              {definition:9.1} The real function $u(x,y)$ is...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 354.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.2}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.354 \begin{example}\label
+                           {example:11.1} The function $u(x,y) = x^2 - y^2$ ...
+
+
+[57]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 363.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.3}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.363 \begin{example}\label
+                           {example:11.2} The function $u(x,y) = e^x y$ is \...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 376.
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.391 \begin{definition}\label
+                              {definition:9.2} If $u(x,y)$ and $v(x,y)$ are ...
+
+
+[58]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 393.
+
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.6
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.393 \begin{proposition}\label
+                               {proposition:9.2} The function $f(z) = u(x,y)...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 406.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 411.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.8}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.411 \begin{example}\label
+                           {example:11.3} Find an analytic function $f(z) = ...
+
+
+[59])
+
+[60]
+\openout2 = `input/note05.aux'.
+
+ (./input/note05.tex
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.42 \begin{definition}\label
+                             {definition:10.1} A sequence $\{z_n\}_{n=0}^{\i...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 49.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 60.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.3}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.60 \begin{example}\label
+                          {example:12.1} Let $z_n = (\frac{i}{2})^n, n \in \...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 65.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.4}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.65 \begin{example}\label
+                          {example:12.2} Let $z_n = (2i)^n: z_0 = 1, z_1 = 2...
+Package mdframed Info: Not enough space on this page on input line 66.
+
+
+[61
+
+
+
+]
+Package mdframed Info: Not enough space on this page on input line 66.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 68.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.5}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.68 \begin{example}\label
+                          {example:12.3} Let $z_n = (i)^n: z_0 = 1, z_1 = i,...
+<./input/graphs/note05/img_graph1.pdf, id=1475, 117.8252pt x 118.43547pt>
+File: ./input/graphs/note05/img_graph1.pdf Graphic file (type pdf)
+<use ./input/graphs/note05/img_graph1.pdf>
+Package pdftex.def Info: ./input/graphs/note05/img_graph1.pdf  used on input li
+ne 70.
+(pdftex.def)             Requested size: 117.82489pt x 118.43517pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 77.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.6}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.77 \begin{example}\label
+                          {example:12.4} $\lim_{n \to \infty} (1 + \frac{i}{...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 80.
+
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.7
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.80 \begin{proposition} \zlabel
+                                {proposition:10.1}
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.92 \begin{definition}\label
+                             {definition:11.1}
+
+[62 <./input/graphs/note05/img_graph1.pdf>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 98.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 102.
+
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.3
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.102 \begin{proposition}\label
+                               {proposition:11.1} If $\sum_{n=0}^{\infty} z_...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 110.
+
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.4
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.110 \begin{proposition}[Test for Divergence]
+                                              \label{proposition:11.2} (Test...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 114.
+
+pdfTeX warning (ext4): destination with the same identifier (name{remark.5}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.114 T
+       he converse of Prop~\ref{proposition:11.2} is false: $\lim_{n \to \in...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 118.
+
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.6
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.118 \begin{proposition}\label
+                               {proposition:11.3} Let $\{z_n\}_{n=0}^{\infty...
+
+
+[63]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 135.
+
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.7
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.135 \begin{proposition} \label
+                                {proposition:11.4} Suppose that $\sum_{n=0}^...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 146.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.8}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.146 \begin{example} \label
+                            {example:13.1} (Key example - Geometric series)
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 149.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 151.
+
+
+[64]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.10
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.174 \begin{definition}\label
+                              {definition:11.2} The series $\sum_{n=0}^{\inf...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 178.
+
+pdfTeX warning (ext4): destination with the same identifier (name{remark.11}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.178 N
+       ote: (The Geometric series) For $|z| < 1$, $\sum_{n=0}^{\infty} |z|^n...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 188.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 198.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 220.
+
+
+[65]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 229.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.14}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.229 \begin{example}\label
+                           {example:13.2} Check the convergence of the follo...
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 253.
+
+
+[66]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.258 \begin{definition}\label
+                              {definition:12.1}
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 266.
+
+pdfTeX warning (ext4): destination with the same identifier (name{remark.2}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.266 F
+       rom Def~\ref{definition:12.1} every power series $\sum_{n=0}^{\infty}...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 270.
+
+
+[67]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 283.
+
+pdfTeX warning (ext4): destination with the same identifier (name{corollary.4})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.283 \begin{corollary}\label
+                             {corollary:12.1}
+pdfTeX warning (ext4): destination with the same identifier (name{definition.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.287 \begin{definition}\label
+                              {definition:12,2} If the series $\sum_{n=0}^{\...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 290.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.6}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.290 ...{example}[ \ref{example:13.1}(continued)]
+                                                   \label{example:13.1contin...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 295.
+
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.7
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.295 \begin{proposition}\label
+                               {proposition:12.1} Given a power series $\sum...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 307.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.8}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.307 \begin{example}\label
+                           {example:14.1} Find the radius of convergence of ...
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 315.
+
+
+[68]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 318.
+
+pdfTeX warning (ext4): destination with the same identifier (name{remark.9}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.318     T
+           he power series with the radius of convergence $R$ on the circle ...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 321.
+
+pdfTeX warning (ext4): destination with the same identifier (name{example.10}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.321 \begin{example}\label
+                           {example:14.2}
+pdfTeX warning (ext4): destination with the same identifier (name{definition.11
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.332 \begin{definition}\label
+                              {definition:12.3} The disc of convergence of t...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 336.
+
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.1
+2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.336 \begin{proposition} \label
+                                {proposition:12.2} Suppose the power series ...
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.13
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.346 \begin{definition} \label
+                               {definition:12.4} For any $z \in \mathbb{C}$ ...
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 352.
+Package mdframed Info: Not enough space on this page on input line 359.
+
+
+[69]
+Package mdframed Info: Not enough space on this page on input line 359.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 360.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 366.
+
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.1
+6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.366 \begin{proposition} \label
+                                {proposition:12.4} For any $z_1, z_2 \in \ma...
+)
+
+[70] (./main.aux (./input/note01.aux) (./input/note02.aux) (./input/note03.aux)
+(./input/note04.aux) (./input/note05.aux))
  ***********
-LaTeX2e <2023-11-01> patch level 1
+LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B2D3E7601F10C6E57438393A1F4DFB2D;1522.
+(rerunfilecheck)             Checksum: 5BA2FB2CCDED73E92454E96BBF00E6A5;6917.
  ) 
 Here is how much of TeX's memory you used:
- 35576 strings out of 474228
- 720569 string characters out of 5746458
- 1950975 words of memory out of 5000000
- 56887 multiletter control sequences out of 15000+600000
- 582056 words of font info for 194 fonts, out of 8000000 for 9000
+ 37268 strings out of 473201
+ 757283 string characters out of 5716126
+ 1181023 words of memory out of 5000000
+ 59115 multiletter control sequences out of 15000+600000
+ 587658 words of font info for 240 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,12n,123p,1001b,1203s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
-ocal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
-al/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
-/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
-exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/tex
-live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
-e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
-023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf
--dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/t
-exmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf
--dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (18 pages, 400761 bytes).
+ 119i,14n,123p,1001b,1358s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
+cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loca
+l/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
+xlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texl
+ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive
+/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/20
+24/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2024/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2024/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2024/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2024/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/typ
+e1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts
+/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (70 pages, 828000 bytes).
 PDF statistics:
- 570 PDF objects out of 1000 (max. 8388607)
- 439 compressed objects within 5 object streams
- 138 named destinations out of 1000 (max. 500000)
- 46313 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1817 PDF objects out of 2073 (max. 8388607)
+ 1483 compressed objects within 15 object streams
+ 488 named destinations out of 1000 (max. 500000)
+ 50784 words of extra memory for PDF output out of 51595 (max. 10000000)
 
