@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{hyperref}
+\usepackage{thmtools}
+\usepackage{cleveref}
+
+\declaretheorem[name=Theorem,numberwithin=section]{theorem}
+\declaretheorem[name=Definition,sibling=theorem]{definition}
+
+\begin{document}
+\section{First}
+\begin{theorem}\label{thm1} A \end{theorem}
+\begin{definition}\label{def1} B \end{definition}
+
+\section{Second}
+\begin{theorem}\label{thm2} C \end{theorem}
+\begin{definition}\label{def2} D \end{definition}
+
+\end{document}

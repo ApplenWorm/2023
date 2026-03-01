@@ -357,6 +357,17 @@
     \fi
     \date{\today}
   \fi
+  %%fakesection Load amsthm early for correct hyperref anchors
+  \ifevanthm
+    \usepackage{amsthm}
+    \usepackage{thmtools}
+  \else
+    \ifevanmdthm
+      \usepackage{amsthm}
+      \usepackage{thmtools}
+    \fi
+  \fi
+
   %%fakesection Hyperref
   \ifevanpkg
     \PassOptionsToPackage{svgnames,dvipsnames,table}{xcolor}
@@ -391,17 +402,7 @@
   \fi
 
   %%fakesection New theorem styles
-  \ifevanthm
-    \usepackage{amsthm}
-    \usepackage{thmtools}
-  \fi
   \ifevanmdthm
-    \ifevanthm
-      %% theorem packages loaded already
-    \else
-      \usepackage{amsthm}
-      \usepackage{thmtools}
-    \fi
     \usepackage[framemethod=TikZ]{mdframed}
     \usetikzlibrary{shadows}
     % https://tex.stackexchange.com/a/292090/76888
@@ -610,8 +611,13 @@
       \Crefname{problem}{Problem}{Problems}
       \Crefname{ques}{Question}{Questions}
     \fi
-  \fi
 
+    \ifevansecthm
+      \@for\myenv:={theorem,lemma,proposition,corollary,assume,algorithm,claim,example,remark,answer,conjecture,definition,exercise,fact,problem,ques}\do{%
+        \expandafter\xdef\csname theH\myenv\endcsname{\noexpand\thesection.\noexpand\arabic{\myenv}}%
+      }
+    \fi
+  \fi
   %%fakesection Fancy section and chapter heads
   \ifevancolorsec
     \@ifundefined{KOMAClassName}{}{
