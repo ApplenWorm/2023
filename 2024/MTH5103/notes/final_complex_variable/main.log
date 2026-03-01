@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.23)  1 MAR 2026 22:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.23)  1 MAR 2026 22:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1254,12 +1254,6 @@ n input line 308.
 
 [11 <./input/graphs/note01/complex_plane.pdf> <./input/graphs/note01/complex_co
 njugate.pdf> <./input/graphs/note01/sum_complex.pdf>]
-pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.312 \begin{definition}[Alternative]
-                                     
 <./input/graphs/note01/coordinates_complex.pdf, id=483, 112.3658pt x 112.90079p
 t>
 File: ./input/graphs/note01/coordinates_complex.pdf Graphic file (type pdf)
@@ -1284,7 +1278,7 @@ input line 336.
 
 [12 <./input/graphs/note01/length_angle_complex.pdf> <./input/graphs/note01/coo
 rdinates_complex.pdf>]
-<./input/graphs/note01/filled_circle.pdf, id=512, 142.66399pt x 142.66399pt>
+<./input/graphs/note01/filled_circle.pdf, id=513, 142.66399pt x 142.66399pt>
 File: ./input/graphs/note01/filled_circle.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/filled_circle.pdf>
 Package pdftex.def Info: ./input/graphs/note01/filled_circle.pdf  used on input
@@ -1293,7 +1287,7 @@ Package pdftex.def Info: ./input/graphs/note01/filled_circle.pdf  used on input
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 344.
-<./input/graphs/note01/hyperbola_cmplx.pdf, id=513, 428.97162pt x 310.1487pt>
+<./input/graphs/note01/hyperbola_cmplx.pdf, id=514, 428.97162pt x 310.1487pt>
 File: ./input/graphs/note01/hyperbola_cmplx.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/hyperbola_cmplx.pdf>
 Package pdftex.def Info: ./input/graphs/note01/hyperbola_cmplx.pdf  used on inp
@@ -1303,7 +1297,7 @@ ut line 349.
 
 [13 <./input/graphs/note01/circle_coord_cmplx.pdf> <./input/graphs/note01/fille
 d_circle.pdf>]
-<./input/graphs/note01/hyperbola2-cmplx.pdf, id=540, 228.02188pt x 228.02188pt>
+<./input/graphs/note01/hyperbola2-cmplx.pdf, id=541, 228.02188pt x 228.02188pt>
 
 File: ./input/graphs/note01/hyperbola2-cmplx.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/hyperbola2-cmplx.pdf>
@@ -1314,7 +1308,7 @@ put line 353.
 
 [14 <./input/graphs/note01/hyperbola_cmplx.pdf> <./input/graphs/note01/hyperbol
 a2-cmplx.pdf>]
-<./input/graphs/note01/angle_complex.pdf, id=573, 140.8181pt x 143.64265pt>
+<./input/graphs/note01/angle_complex.pdf, id=574, 140.8181pt x 143.64265pt>
 File: ./input/graphs/note01/angle_complex.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/angle_complex.pdf>
 Package pdftex.def Info: ./input/graphs/note01/angle_complex.pdf  used on input
@@ -1346,13 +1340,6 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 470.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.12}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.470 D
-       efine $\frac{1}{z}$ geometrically.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 485.
@@ -1398,7 +1385,7 @@ Overfull \hbox (11.6558pt too wide) in paragraph at lines 510--513
 m/it/12 i\OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 (-20) = [] =
  []
 
-<./input/graphs/note01/circle_square.pdf, id=632, 176.68811pt x 165.38086pt>
+<./input/graphs/note01/circle_square.pdf, id=634, 176.68811pt x 165.38086pt>
 File: ./input/graphs/note01/circle_square.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/circle_square.pdf>
 Package pdftex.def Info: ./input/graphs/note01/circle_square.pdf  used on input
@@ -1407,14 +1394,7 @@ Package pdftex.def Info: ./input/graphs/note01/circle_square.pdf  used on input
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 530.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.17}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.530 C
-       ompute all the roots of $z = \sqrt[4]{-4}$.
-<./input/graphs/note01/circle_square2.pdf, id=634, 155.04526pt x 157.8698pt>
+<./input/graphs/note01/circle_square2.pdf, id=636, 155.04526pt x 157.8698pt>
 File: ./input/graphs/note01/circle_square2.pdf Graphic file (type pdf)
 <use ./input/graphs/note01/circle_square2.pdf>
 Package pdftex.def Info: ./input/graphs/note01/circle_square2.pdf  used on inpu
@@ -1437,38 +1417,12 @@ t line 555.
 \openout2 = `input/note02.aux'.
 
 (./input/note02.tex
-pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.44 \begin{definition}\label
-                             {definition:2.1}
-pdfTeX warning (ext4): destination with the same identifier (name{definition.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.48 \begin{definition} \label
-                              {definition:2.2}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 51.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.51 \begin{example} \label
-                           {example:3.1}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 57.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.4}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.57 \begin{example}\label
-                          {example:3.2}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 65.
@@ -1476,12 +1430,6 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 68.
 
-pdfTeX warning (ext4): destination with the same identifier (name{example.6}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.68 \begin{example} \label
-                           {example:3.4}
 
 [21
 
@@ -1492,13 +1440,6 @@ Package mdframed Info: Not enough space on this page on input line 70.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 73.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.7}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.73 \begin{example}\label
-                          {example:3.5}
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 7
 4.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd
@@ -1578,12 +1519,6 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 129.
 
-pdfTeX warning (ext4): destination with the same identifier (name{example.11}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.129 \begin{example} \label
-                            {example:3.9} Rewrite in terms $z$ and $\bar{z}$:
 Overfull \hbox (27.95155pt too wide) detected at line 144
 []
  []
@@ -1597,14 +1532,7 @@ Package mdframed Info: You first box width is to small
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 157.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.12}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.157 \begin{example} \label
-                            {example:4.1}
-<./input/graphs/note02/image_lin.pdf, id=723, 339.99722pt x 141.35309pt>
+<./input/graphs/note02/image_lin.pdf, id=734, 339.99722pt x 141.35309pt>
 File: ./input/graphs/note02/image_lin.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin.pdf  used on input lin
@@ -1614,17 +1542,10 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 164.
 
-pdfTeX warning (ext4): destination with the same identifier (name{example.13}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.164 \begin{example} \label
-                            {example:4.2} What is the image of the ray $\arg...
-
 
 [24 <./input/graphs/note02/image_lin.pdf>]
 Package mdframed Info: Not enough space on this page on input line 170.
-<./input/graphs/note02/image_lin2.pdf, id=741, 345.68748pt x 128.54926pt>
+<./input/graphs/note02/image_lin2.pdf, id=752, 345.68748pt x 128.54926pt>
 File: ./input/graphs/note02/image_lin2.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin2.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin2.pdf  used on input li
@@ -1633,14 +1554,7 @@ ne 175.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 183.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.14}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.183 \begin{example} \label
-                            {example:4.3} First, we determine what is the im...
-<./input/graphs/note02/image_lin3.pdf, id=742, 374.54027pt x 98.67365pt>
+<./input/graphs/note02/image_lin3.pdf, id=753, 374.54027pt x 98.67365pt>
 File: ./input/graphs/note02/image_lin3.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin3.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin3.pdf  used on input li
@@ -1650,7 +1564,7 @@ ne 187.
 
 [25 <./input/graphs/note02/image_lin2.pdf> <./input/graphs/note02/image_lin3.pd
 f>]
-<./input/graphs/note02/image_lin4.pdf, id=772, 374.13979pt x 99.07414pt>
+<./input/graphs/note02/image_lin4.pdf, id=785, 374.13979pt x 99.07414pt>
 File: ./input/graphs/note02/image_lin4.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin4.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin4.pdf  used on input li
@@ -1661,7 +1575,7 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 196.
 Package hyperref Info: bookmark level for unknown claim defaults to 0 on input 
 line 196.
-<./input/graphs/note02/image_lin5.pdf, id=773, 366.27841pt x 114.31308pt>
+<./input/graphs/note02/image_lin5.pdf, id=786, 366.27841pt x 114.31308pt>
 File: ./input/graphs/note02/image_lin5.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin5.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin5.pdf  used on input li
@@ -1670,7 +1584,7 @@ ne 198.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 205.
-<./input/graphs/note02/image_lin6.pdf, id=774, 399.73842pt x 167.51282pt>
+<./input/graphs/note02/image_lin6.pdf, id=787, 399.73842pt x 167.51282pt>
 File: ./input/graphs/note02/image_lin6.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin6.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin6.pdf  used on input li
@@ -1680,7 +1594,7 @@ ne 208.
 
 [26 <./input/graphs/note02/image_lin4.pdf> <./input/graphs/note02/image_lin5.pd
 f> <./input/graphs/note02/image_lin6.pdf>]
-<./input/graphs/note02/image_lin7.pdf, id=822, 394.05719pt x 195.41306pt>
+<./input/graphs/note02/image_lin7.pdf, id=835, 394.05719pt x 195.41306pt>
 File: ./input/graphs/note02/image_lin7.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin7.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin7.pdf  used on input li
@@ -1689,14 +1603,7 @@ ne 221.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 227.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.17}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.227 \begin{example}\label
-                           {example:4.4} Determine which regions (if any) of...
-<./input/graphs/note02/image_lin8.pdf, id=823, 351.77823pt x 176.24846pt>
+<./input/graphs/note02/image_lin8.pdf, id=836, 351.77823pt x 176.24846pt>
 File: ./input/graphs/note02/image_lin8.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin8.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin8.pdf  used on input li
@@ -1708,14 +1615,7 @@ ne 232.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 237.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.18}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.237 \begin{example} \label
-                            {example:4.5}
-<./input/graphs/note02/image_lin9.pdf, id=847, 239.60315pt x 125.99171pt>
+<./input/graphs/note02/image_lin9.pdf, id=862, 239.60315pt x 125.99171pt>
 File: ./input/graphs/note02/image_lin9.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin9.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin9.pdf  used on input li
@@ -1724,7 +1624,7 @@ ne 246.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 256.
-<./input/graphs/note02/image_lin10.pdf, id=849, 386.9436pt x 199.68202pt>
+<./input/graphs/note02/image_lin10.pdf, id=864, 386.9436pt x 199.68202pt>
 File: ./input/graphs/note02/image_lin10.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin10.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin10.pdf  used on input l
@@ -1741,48 +1641,28 @@ Package mdframed Info: Box was splittet wrong
 
 
 [29 <./input/graphs/note02/image_lin10.pdf>]
-<./input/graphs/note02/image_lin11.pdf, id=925, 395.45642pt x 144.19772pt>
+<./input/graphs/note02/image_lin11.pdf, id=940, 395.45642pt x 144.19772pt>
 File: ./input/graphs/note02/image_lin11.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin11.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin11.pdf  used on input l
 ine 288.
 (pdftex.def)             Requested size: 395.45546pt x 144.19736pt.
-<./input/graphs/note02/image_lin12.pdf, id=926, 403.83873pt x 176.39702pt>
+<./input/graphs/note02/image_lin12.pdf, id=941, 403.83873pt x 176.39702pt>
 File: ./input/graphs/note02/image_lin12.pdf Graphic file (type pdf)
 <use ./input/graphs/note02/image_lin12.pdf>
 Package pdftex.def Info: ./input/graphs/note02/image_lin12.pdf  used on input l
 ine 290.
 (pdftex.def)             Requested size: 403.83774pt x 176.39658pt.
 
-pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.303 \begin{definition}\label
-                              {definition:3.1}
 
 [30 <./input/graphs/note02/image_lin11.pdf> <./input/graphs/note02/image_lin12.
 pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 309.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.309 L
-       et $f(z) = \frac{\bar{z}}{2}$. Claim: for any $z_0$, $\lim_{z \to z_0...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 336.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.336 \begin{example}\label
-                           {example:5.2}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 342.
@@ -1795,23 +1675,9 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 378.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.6}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.378 \begin{example}\label
-                           {example:5.3}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 392.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.7}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.392 E
-       x~\ref{example:5.3} shows that the different paths need not be the re...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 396.
@@ -1828,13 +1694,6 @@ Package mdframed Warning: You got a bad break
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 401.
-
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.9
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.401 \begin{proposition} \label
-                                {proposition:3.1} If $\lim_{z \to z_0} f(z) ...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 412.
@@ -1854,32 +1713,12 @@ Overfull \hbox (8.27359pt too wide) detected at line 424
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 40.
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.13
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.51 \begin{definition}\label
-                             {definition:3.3}
-pdfTeX warning (ext4): destination with the same identifier (name{definition.14
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.55 \begin{definition}\label
-                             {definition:3.4}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 59.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 73.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.16}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.73 \begin{example} \label
-                           {example:5.6}
 Package mdframed Info: Not enough space on this page on input line 75.
 
 
@@ -1897,104 +1736,37 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 93.
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.97 \begin{definition}\label
-                             {definition:4.1}
-pdfTeX warning (ext4): destination with the same identifier (name{definition.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.101 \begin{definition} \label
-                               {definition:4.2}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 106.
 
 
 [36]
-pdfTeX warning (ext4): destination with the same identifier (name{definition.4}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.112 \begin{definition} \label
-                               {definition:4.3} A connected open subset $R \...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 115.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.5}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.115 \begin{example}\label
-                           {example:6.1}
-<./input/graphs/note03/image_lin1.pdf, id=1061, 168.67116pt x 80.46762pt>
+<./input/graphs/note03/image_lin1.pdf, id=1087, 168.67116pt x 80.46762pt>
 File: ./input/graphs/note03/image_lin1.pdf Graphic file (type pdf)
 <use ./input/graphs/note03/image_lin1.pdf>
 Package pdftex.def Info: ./input/graphs/note03/image_lin1.pdf  used on input li
 ne 123.
 (pdftex.def)             Requested size: 168.67073pt x 80.4674pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.6}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.131 \begin{definition} \label
-                               {definition:4.4} Let $S \subseteq \mathbb{C}$...
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.8}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.140 \begin{definition}\label
-                              {definition:4.5}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 147.
 
-pdfTeX warning (ext4): destination with the same identifier (name{remark.9}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.147     T
-           here exist sets that are neither open nor closed!
 
 [37 <./input/graphs/note03/image_lin1.pdf>]
 Package mdframed Info: Not enough space on this page on input line 148.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 150.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.10}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.150 \begin{example}\label
-                           {example:6.2}
-<./input/graphs/note03/image_lin2.pdf, id=1084, 125.99171pt x 125.99171pt>
+<./input/graphs/note03/image_lin2.pdf, id=1115, 125.99171pt x 125.99171pt>
 File: ./input/graphs/note03/image_lin2.pdf Graphic file (type pdf)
 <use ./input/graphs/note03/image_lin2.pdf>
 Package pdftex.def Info: ./input/graphs/note03/image_lin2.pdf  used on input li
 ne 155.
 (pdftex.def)             Requested size: 125.9914pt x 125.9914pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.11
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.165 \begin{definition} \label
-                               {definition:4.6} A collection of all the poin...
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.174 \begin{definition}\label
-                              {definition:5.1} The function $f(z)$ is contin...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 181.
@@ -2008,23 +1780,9 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 190.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.4}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.190 \begin{example}\label
-                           {example:7.1}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 198.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.5}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.198 \begin{example}\label
-                           {example:7.2} Prove that $z^n, n \in \mathbb{N}$ ...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 214.
@@ -2035,87 +1793,33 @@ Package mdframed Info: Not enough space on this page on input line 215.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 221.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.7}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.221 \begin{example}\label
-                           {example:7.3}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 228.
 
-pdfTeX warning (ext4): destination with the same identifier (name{example.8}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.228 \begin{example}\label
-                           {example:7.4}
-pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.243 \begin{definition}\label
-                              {definition:6.1}
 
 [40]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 249.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.249 \begin{example}\label
-                           {example:8.1} Using Def 6.1 compute the derivativ...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 267.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.267 \begin{example}\label
-                           {example:8.2} 8.2 Prove that for any $n \in \math...
 
 
 [41]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 279.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.4}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.279 \begin{example} \label
-                            {example:8.3}  Compute the derivative of $f(z) =...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 288.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.5}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.288 \begin{example}\label
-                           {example:8.4} 8.4 Compute the derivative of $f(z)...
 
 
 [42]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 309.
-
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.6
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.309 \begin{proposition}\label
-                               {proposition:6.1} If $c \in \mathbb{C}$ is a ...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 330.
@@ -2125,13 +1829,6 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 338.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.10}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.338 \begin{example}8
-                      .5 Compute the derivative of $f(z) = \frac{z^3 - 5z + ...
 
 
 [43]
@@ -2151,23 +1848,9 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 386.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.14}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.386 \begin{example}\label
-                           {example:8.6} 8.6 Let $z = x+iy, f(z) = \sqrt{|xy...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 394.
-
-pdfTeX warning (ext4): destination with the same identifier (name{claim.15}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.394 \begin{claim} $
-                     f'(0)$ does not exist.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 403.
@@ -2186,71 +1869,31 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 449.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.18}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.449 W
-       here \[f(x,y) = x^3 - 3xy^2 + i(3x^2y - y^3)\] is differentiable?)
+)
 
 [47]
 \openout2 = `input/note04.aux'.
 
 (./input/note04.tex
-pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.44 \begin{definition}\label
-                             {definition:7.1} Single-valued function $f(z)$ ...
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.51 \begin{definition}\label
-                             {definition:7.2} A function that is analytic fo...
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.3}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.53 \begin{definition}\label
-                             {definition:7.3} Single-valued function is anal...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 59.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.4}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.59 \begin{example}\label
-                          {example:9.1}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 63.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.5}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.63 \begin{example}\label
-                          {example:9.2}
-<./input/graphs/note04/image_graph1.pdf, id=1204, 478.35213pt x 137.82892pt>
+<./input/graphs/note04/image_graph1.pdf, id=1253, 478.35213pt x 137.82892pt>
 File: ./input/graphs/note04/image_graph1.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/image_graph1.pdf>
 Package pdftex.def Info: ./input/graphs/note04/image_graph1.pdf  used on input 
 line 69.
 (pdftex.def)             Requested size: 448.75499pt x 129.3026pt.
-<./input/graphs/note04/img_graph2.pdf, id=1205, 144.06422pt x 183.82677pt>
+<./input/graphs/note04/img_graph2.pdf, id=1254, 144.06422pt x 183.82677pt>
 File: ./input/graphs/note04/img_graph2.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph2.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph2.pdf  used on input li
 ne 71.
 (pdftex.def)             Requested size: 144.06386pt x 183.82631pt.
-<./input/graphs/note04/img_graph3.pdf, id=1206, 115.61092pt x 146.83858pt>
+<./input/graphs/note04/img_graph3.pdf, id=1255, 115.61092pt x 146.83858pt>
 File: ./input/graphs/note04/img_graph3.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph3.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph3.pdf  used on input li
@@ -2267,12 +1910,6 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 88.
 
-pdfTeX warning (ext4): destination with the same identifier (name{example.6}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.88 \begin{example}\label
-                          {example:9.4}
 
 [49 <./input/graphs/note04/image_graph1.pdf> <./input/graphs/note04/img_graph2.
 pdf> <./input/graphs/note04/img_graph3.pdf>]
@@ -2283,39 +1920,18 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 112.
-
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.8
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.112 \begin{proposition}\label
-                               {proposition:7.1} If $f, g$ are analytic func...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 116.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.9}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.116 \begin{example}\label
-                           {example:9.5}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 124.
-
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.1
-0}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.124 \begin{proposition} \label
-                                {proposition:7.2}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 128.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 129.
-<./input/graphs/note04/img_graph4.pdf, id=1335, 131.68295pt x 103.22966pt>
+<./input/graphs/note04/img_graph4.pdf, id=1389, 131.68295pt x 103.22966pt>
 File: ./input/graphs/note04/img_graph4.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph4.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph4.pdf  used on input li
@@ -2329,7 +1945,7 @@ Package mdframed Info: mdframed inside a box
 
 
 [50]
-<./input/graphs/note04/img_graph5.pdf, id=1347, 160.13527pt x 131.68295pt>
+<./input/graphs/note04/img_graph5.pdf, id=1405, 160.13527pt x 131.68295pt>
 File: ./input/graphs/note04/img_graph5.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph5.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph5.pdf  used on input li
@@ -2339,23 +1955,10 @@ ne 156.
 
 [51 <./input/graphs/note04/img_graph4.pdf> <./input/graphs/note04/img_graph5.pd
 f>]
-pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.165 \begin{definition}\label
-                              {definition:8.1} We say that on a domain $\Ome...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 174.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.174 \begin{example}\label
-                           {example:10.1}
-<./input/graphs/note04/img_graph6.pdf, id=1375, 201.38638pt x 151.767pt>
+<./input/graphs/note04/img_graph6.pdf, id=1432, 201.38638pt x 151.767pt>
 File: ./input/graphs/note04/img_graph6.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph6.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph6.pdf  used on input li
@@ -2364,7 +1967,7 @@ ne 188.
 
 
 [52]
-<./input/graphs/note04/img_graph7.pdf, id=1382, 208.4046pt x 137.54085pt>
+<./input/graphs/note04/img_graph7.pdf, id=1441, 208.4046pt x 137.54085pt>
 File: ./input/graphs/note04/img_graph7.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph7.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph7.pdf  used on input li
@@ -2380,13 +1983,13 @@ f>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 222.
-<./input/graphs/note04/img_graph8.pdf, id=1416, 165.9259pt x 109.2883pt>
+<./input/graphs/note04/img_graph8.pdf, id=1476, 165.9259pt x 109.2883pt>
 File: ./input/graphs/note04/img_graph8.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph8.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph8.pdf  used on input li
 ne 235.
 (pdftex.def)             Requested size: 165.92549pt x 109.28802pt.
-<./input/graphs/note04/img_graph9.pdf, id=1417, 165.9259pt x 137.7406pt>
+<./input/graphs/note04/img_graph9.pdf, id=1477, 165.9259pt x 137.7406pt>
 File: ./input/graphs/note04/img_graph9.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph9.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph9.pdf  used on input li
@@ -2395,23 +1998,10 @@ ne 243.
 
 
 [54 <./input/graphs/note04/img_graph8.pdf>]
-pdfTeX warning (ext4): destination with the same identifier (name{definition.5}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.256 \begin{definition}\label
-                              {definition:8.2} The point \( z_0 \) is called...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 267.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.6}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.267 \begin{example} C
-                       onsider \( w = \sqrt[n]{z - z_0} \). Take \( z - z_0 ...
-<./input/graphs/note04/img_graph10.pdf, id=1440, 165.9259pt x 123.51445pt>
+<./input/graphs/note04/img_graph10.pdf, id=1500, 165.9259pt x 123.51445pt>
 File: ./input/graphs/note04/img_graph10.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph10.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph10.pdf  used on input l
@@ -2423,14 +2013,7 @@ ine 277.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 310.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.7}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.310 \begin{example}\label
-                           {example:10.3} Find the branch points of the func...
-<./input/graphs/note04/img_graph11.pdf, id=1465, 144.06422pt x 173.05151pt>
+<./input/graphs/note04/img_graph11.pdf, id=1527, 144.06422pt x 173.05151pt>
 File: ./input/graphs/note04/img_graph11.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph11.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph11.pdf  used on input l
@@ -2439,98 +2022,43 @@ ine 315.
 
 
 [56 <./input/graphs/note04/img_graph10.pdf>]
-<./input/graphs/note04/img_graph12.pdf, id=1484, 109.0203pt x 109.2873pt>
+<./input/graphs/note04/img_graph12.pdf, id=1547, 109.0203pt x 109.2873pt>
 File: ./input/graphs/note04/img_graph12.pdf Graphic file (type pdf)
 <use ./input/graphs/note04/img_graph12.pdf>
 Package pdftex.def Info: ./input/graphs/note04/img_graph12.pdf  used on input l
 ine 323.
 (pdftex.def)             Requested size: 109.02002pt x 109.28702pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.8}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.325 \begin{definition}\label
-                              {definition:8.3} Single-valued branch is calle...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 328.
 
-pdfTeX warning (ext4): destination with the same identifier (name{example.9}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.328 \begin{example}\label
-                           {example:10.4} Prove that $w = \sqrt[n]{z}$ is an...
-
 
 [57 <./input/graphs/note04/img_graph11.pdf> <./input/graphs/note04/img_graph12.
 pdf>]
-pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.349 \begin{definition}\label
-                              {definition:9.1} The real function $u(x,y)$ is...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 354.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.354 \begin{example}\label
-                           {example:11.1} The function $u(x,y) = x^2 - y^2$ ...
 
 
 [58]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 363.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.363 \begin{example}\label
-                           {example:11.2} The function $u(x,y) = e^x y$ is \...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 376.
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.5}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.391 \begin{definition}\label
-                              {definition:9.2} If $u(x,y)$ and $v(x,y)$ are ...
 
 
 [59]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 393.
-
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.6
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.393 \begin{proposition}\label
-                               {proposition:9.2} The function $f(z) = u(x,y)...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 406.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 411.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.8}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.411 \begin{example}\label
-                           {example:11.3} Find an analytic function $f(z) = ...
 
 
 [60])
@@ -2539,35 +2067,15 @@ l.411 \begin{example}\label
 \openout2 = `input/note05.aux'.
 
 (./input/note05.tex
-pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.42 \begin{definition}\label
-                             {definition:10.1} A sequence $\{z_n\}_{n=0}^{\i...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 49.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 60.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.60 \begin{example}\label
-                          {example:12.1} Let $z_n = (\frac{i}{2})^n, n \in \...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 65.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.4}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.65 \begin{example}\label
-                          {example:12.2} Let $z_n = (2i)^n: z_0 = 1, z_1 = 2...
 Package mdframed Info: Not enough space on this page on input line 66.
 
 
@@ -2580,14 +2088,7 @@ Package mdframed Info: Not enough space on this page on input line 66.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 68.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.5}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.68 \begin{example}\label
-                          {example:12.3} Let $z_n = (i)^n: z_0 = 1, z_1 = i,...
-<./input/graphs/note05/img_graph1.pdf, id=1559, 117.8252pt x 118.43547pt>
+<./input/graphs/note05/img_graph1.pdf, id=1632, 117.8252pt x 118.43547pt>
 File: ./input/graphs/note05/img_graph1.pdf Graphic file (type pdf)
 <use ./input/graphs/note05/img_graph1.pdf>
 Package pdftex.def Info: ./input/graphs/note05/img_graph1.pdf  used on input li
@@ -2596,29 +2097,10 @@ ne 70.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 77.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.6}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.77 \begin{example}\label
-                          {example:12.4} $\lim_{n \to \infty} (1 + \frac{i}{...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 80.
 
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.7
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.80 \begin{proposition} \zlabel
-                                {proposition:10.1}
-pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.92 \begin{definition}\label
-                             {definition:11.1}
 
 [63 <./input/graphs/note05/img_graph1.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
@@ -2627,66 +2109,24 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 102.
-
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.3
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.102 \begin{proposition}\label
-                               {proposition:11.1} If $\sum_{n=0}^{\infty} z_...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 110.
-
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.4
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.110 \begin{proposition}[Test for Divergence]
-                                              \label{proposition:11.2} (Test...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 114.
-
-pdfTeX warning (ext4): destination with the same identifier (name{remark.5}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.114 T
-       he converse of Prop~\ref{proposition:11.2} is false: $\lim_{n \to \in...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 118.
-
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.6
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.118 \begin{proposition}\label
-                               {proposition:11.3} Let $\{z_n\}_{n=0}^{\infty...
 
 
 [64]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 135.
-
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.7
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.135 \begin{proposition} \label
-                                {proposition:11.4} Suppose that $\sum_{n=0}^...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 146.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.8}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.146 \begin{example} \label
-                            {example:13.1} (Key example - Geometric series)
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 149.
@@ -2695,22 +2135,9 @@ Package mdframed Info: mdframed inside a box
 
 
 [65]
-pdfTeX warning (ext4): destination with the same identifier (name{definition.10
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.174 \begin{definition}\label
-                              {definition:11.2} The series $\sum_{n=0}^{\inf...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 178.
-
-pdfTeX warning (ext4): destination with the same identifier (name{remark.11}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.178 N
-       ote: (The Geometric series) For $|z| < 1$, $\sum_{n=0}^{\infty} |z|^n...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 188.
@@ -2726,35 +2153,15 @@ Package mdframed Info: Box was splittet wrong
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 229.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.14}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.229 \begin{example}\label
-                           {example:13.2} Check the convergence of the follo...
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 253.
 
 
 [67]
-pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.258 \begin{definition}\label
-                              {definition:12.1}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 266.
-
-pdfTeX warning (ext4): destination with the same identifier (name{remark.2}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.266 F
-       rom Def~\ref{definition:12.1} every power series $\sum_{n=0}^{\infty}...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 270.
@@ -2764,49 +2171,15 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 283.
-
-pdfTeX warning (ext4): destination with the same identifier (name{corollary.4})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.283 \begin{corollary}\label
-                             {corollary:12.1}
-pdfTeX warning (ext4): destination with the same identifier (name{definition.5}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.287 \begin{definition}\label
-                              {definition:12,2} If the series $\sum_{n=0}^{\...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 290.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.6}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.290 ...{example}[ \ref{example:13.1}(continued)]
-                                                   \label{example:13.1contin...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 295.
-
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.7
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.295 \begin{proposition}\label
-                               {proposition:12.1} Given a power series $\sum...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 307.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.8}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.307 \begin{example}\label
-                           {example:14.1} Find the radius of convergence of ...
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 315.
@@ -2816,46 +2189,12 @@ Package mdframed Info: Box was splittet wrong
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 318.
-
-pdfTeX warning (ext4): destination with the same identifier (name{remark.9}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.318     T
-           he power series with the radius of convergence $R$ on the circle ...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 321.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.10}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.321 \begin{example}\label
-                           {example:14.2}
-pdfTeX warning (ext4): destination with the same identifier (name{definition.11
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.332 \begin{definition}\label
-                              {definition:12.3} The disc of convergence of t...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 336.
-
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.1
-2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.336 \begin{proposition} \label
-                                {proposition:12.2} Suppose the power series ...
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.13
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.346 \begin{definition} \label
-                               {definition:12.4} For any $z \in \mathbb{C}$ ...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 352.
@@ -2870,13 +2209,6 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 366.
-
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.1
-6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.366 \begin{proposition} \label
-                                {proposition:12.4} For any $z_1, z_2 \in \ma...
 )
 
 [71]
@@ -2900,23 +2232,10 @@ Package enumitem Warning: Negative labelwidth. This does not make much
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 78.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.78 \begin{example}\label
-                          {example:15.2} For what values of $z$ does the pow...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 90.
 
-pdfTeX warning (ext4): destination with the same identifier (name{example.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.90 \begin{example}\label
-                          {example:15.3}
 
 [73]
 Package mdframed Info: mdframed detected package amsthm 
@@ -2925,88 +2244,34 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 111.
-
-pdfTeX warning (ext4): destination with the same identifier (name{remark.5}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.111     F
-           or $a = 0$ the series is called the Maclaurin series.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 119.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 122.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.7}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.122 \begin{example}\label
-                           {example:15.4}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 134.
 
-pdfTeX warning (ext4): destination with the same identifier (name{example.8}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.134 \begin{example}\label
-                           {example:15.5}
 
 [74]
 Package mdframed Info: Not enough space on this page on input line 140.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 144.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.9}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.144 \begin{example}\label
-                           {example:15.6} We have seen: $e^z = \sum_{n=0}^{\...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 148.
 
-pdfTeX warning (ext4): destination with the same identifier (name{example.10}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.148 \begin{example}\label
-                           {example:15.7}
 
 [75]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 171.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.1}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.171 \begin{example}\label
-                           {example:15.8} let $f(z) = \frac{1}{1-z}$. We hav...
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.178 \begin{definition}\label
-                              {definition:13.1} Let $A$ be an annulus center...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 183.
-
-pdfTeX warning (ext4): destination with the same identifier (name{theorem.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.183 \begin{theorem}[Laurent series]
-                                     \label{theorem:13.2}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 189.
@@ -3014,37 +2279,16 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 195.
 
-pdfTeX warning (ext4): destination with the same identifier (name{example.5}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.195 \begin{example}\label
-                           {example:15.9} By definition: $e^{z + \frac{1}{z}...
-
 
 [76]
 Package mdframed Info: Not enough space on this page on input line 204.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 206.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.6}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.206 \begin{example}\label
-                           {example:15.10} What is the laurent series of $f(...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 217.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.7}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.217 \begin{example} \label
-                            {example:15.11} Obtain the series expansion for ...
-<./input/graphs/note06/img_graph1.pdf, id=1740, 314.78001pt x 315.315pt>
+<./input/graphs/note06/img_graph1.pdf, id=1850, 314.78001pt x 315.315pt>
 File: ./input/graphs/note06/img_graph1.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph1.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph1.pdf  used on input li
@@ -3055,13 +2299,7 @@ ne 224.
 [77]
 
 [78 <./input/graphs/note06/img_graph1.pdf>]
-pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.245 \begin{definition} \label
-                               {definition:14.1} Function of the form $w = a...
-<./input/graphs/note06/img_graph2.pdf, id=1765, 144.06422pt x 116.14592pt>
+<./input/graphs/note06/img_graph2.pdf, id=1878, 144.06422pt x 116.14592pt>
 File: ./input/graphs/note06/img_graph2.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph2.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph2.pdf  used on input li
@@ -3070,26 +2308,19 @@ ne 252.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 254.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.254 \begin{example} \label
-                            {example:16.1} For $w = z + 1$: the whole domain...
-<./input/graphs/note06/img_graph3.pdf, id=1766, 103.22966pt x 74.77737pt>
+<./input/graphs/note06/img_graph3.pdf, id=1879, 103.22966pt x 74.77737pt>
 File: ./input/graphs/note06/img_graph3.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph3.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph3.pdf  used on input li
 ne 256.
 (pdftex.def)             Requested size: 103.22939pt x 74.77718pt.
-<./input/graphs/note06/img_graph4.pdf, id=1767, 103.22966pt x 74.77737pt>
+<./input/graphs/note06/img_graph4.pdf, id=1880, 103.22966pt x 74.77737pt>
 File: ./input/graphs/note06/img_graph4.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph4.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph4.pdf  used on input li
 ne 260.
 (pdftex.def)             Requested size: 103.22939pt x 74.77718pt.
-<./input/graphs/note06/img_graph5.pdf, id=1768, 137.4736pt x 139.25827pt>
+<./input/graphs/note06/img_graph5.pdf, id=1881, 137.4736pt x 139.25827pt>
 File: ./input/graphs/note06/img_graph5.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph5.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph5.pdf  used on input li
@@ -3099,7 +2330,7 @@ ne 264.
 
 [79 <./input/graphs/note06/img_graph2.pdf> <./input/graphs/note06/img_graph3.pd
 f> <./input/graphs/note06/img_graph4.pdf>]
-<./input/graphs/note06/img_graph6.pdf, id=1795, 151.69974pt x 109.2873pt>
+<./input/graphs/note06/img_graph6.pdf, id=1910, 151.69974pt x 109.2873pt>
 File: ./input/graphs/note06/img_graph6.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph6.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph6.pdf  used on input li
@@ -3108,30 +2339,9 @@ ne 270.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 275.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.275 \begin{example} \label
-                            {example:16.2} Points on the circle $|z| = 2$ un...
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.4}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.281 \begin{definition}\label
-                              {definition:14.2} A transformation of the form...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 290.
-
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.5
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.290 \begin{proposition} \label
-                                {proposition:14.1} Möbius transformations s...
 
 
 [80 <./input/graphs/note06/img_graph5.pdf> <./input/graphs/note06/img_graph6.pd
@@ -3140,24 +2350,10 @@ Package mdframed Info: Not enough space on this page on input line 291.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 292.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.6}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.292 \begin{example}\label
-                           {example:16.3}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 302.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.7}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.302 \begin{example}\label
-                           {example:16.4} Find the image of the upper-half c...
-<./input/graphs/note06/img_graph7.pdf, id=1824, 120.43495pt x 93.28853pt>
+<./input/graphs/note06/img_graph7.pdf, id=1942, 120.43495pt x 93.28853pt>
 File: ./input/graphs/note06/img_graph7.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph7.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph7.pdf  used on input li
@@ -3166,19 +2362,19 @@ ne 309.
 
 
 [81 <./input/graphs/note06/img_graph7.pdf>]
-<./input/graphs/note06/img_graph8.pdf, id=1846, 308.19441pt x 122.54181pt>
+<./input/graphs/note06/img_graph8.pdf, id=1966, 308.19441pt x 122.54181pt>
 File: ./input/graphs/note06/img_graph8.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph8.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph8.pdf  used on input li
 ne 321.
 (pdftex.def)             Requested size: 308.19365pt x 122.5415pt.
-<./input/graphs/note06/img_graph9.pdf, id=1847, 349.4395pt x 93.28853pt>
+<./input/graphs/note06/img_graph9.pdf, id=1967, 349.4395pt x 93.28853pt>
 File: ./input/graphs/note06/img_graph9.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph9.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph9.pdf  used on input li
 ne 327.
 (pdftex.def)             Requested size: 349.43864pt x 93.28828pt.
-<./input/graphs/note06/img_graph10.pdf, id=1848, 342.75351pt x 110.3603pt>
+<./input/graphs/note06/img_graph10.pdf, id=1968, 342.75351pt x 110.3603pt>
 File: ./input/graphs/note06/img_graph10.pdf Graphic file (type pdf)
 <use ./input/graphs/note06/img_graph10.pdf>
 Package pdftex.def Info: ./input/graphs/note06/img_graph10.pdf  used on input l
@@ -3187,13 +2383,6 @@ ine 334.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 337.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.8}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.337 \begin{example} \label
-                            {example:16.5} Find the Möbius transformation s...
 
 
 [82 <./input/graphs/note06/img_graph8.pdf> <./input/graphs/note06/img_graph9.pd
@@ -3213,33 +2402,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 37.
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.41 \begin{definition}\label
-                             {definition:15.1}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 68.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.68 \begin{example}\label
-                          {example:17.1}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 82.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.82 \begin{example} \label
-                           {example:17.2}
 Package mdframed Info: Not enough space on this page on input line 93.
 
 
@@ -3252,24 +2420,10 @@ Package mdframed Info: Not enough space on this page on input line 93.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 95.
-
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.4
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.95 \begin{proposition}\label
-                              {proposition:15.1} For any $z_1, z_2 \in \math...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 109.
-
-pdfTeX warning (ext4): destination with the same identifier (name{remark.5}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.109     I
-           f $z_1 = r_1 e^{i\varphi_1}, z_2 = r_2 e^{i\varphi_2}$, then 1) c...
-<./input/graphs/note07/img_graph1.pdf, id=1915, 123.24644pt x 102.51399pt>
+<./input/graphs/note07/img_graph1.pdf, id=2038, 123.24644pt x 102.51399pt>
 File: ./input/graphs/note07/img_graph1.pdf Graphic file (type pdf)
 <use ./input/graphs/note07/img_graph1.pdf>
 Package pdftex.def Info: ./input/graphs/note07/img_graph1.pdf  used on input li
@@ -3278,13 +2432,13 @@ ne 118.
 
 
 [85 <./input/graphs/note07/img_graph1.pdf>]
-<./input/graphs/note07/img_graph2.pdf, id=1937, 109.0203pt x 109.2873pt>
+<./input/graphs/note07/img_graph2.pdf, id=2064, 109.0203pt x 109.2873pt>
 File: ./input/graphs/note07/img_graph2.pdf Graphic file (type pdf)
 <use ./input/graphs/note07/img_graph2.pdf>
 Package pdftex.def Info: ./input/graphs/note07/img_graph2.pdf  used on input li
 ne 122.
 (pdftex.def)             Requested size: 109.02002pt x 109.28702pt.
-<./input/graphs/note07/img_graph3.pdf, id=1938, 137.58904pt x 95.06114pt>
+<./input/graphs/note07/img_graph3.pdf, id=2065, 137.58904pt x 95.06114pt>
 File: ./input/graphs/note07/img_graph3.pdf Graphic file (type pdf)
 <use ./input/graphs/note07/img_graph3.pdf>
 Package pdftex.def Info: ./input/graphs/note07/img_graph3.pdf  used on input li
@@ -3294,13 +2448,6 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 138.
 
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.6
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.138 \begin{proposition}\label
-                               {proposition:15.2} Every branch of the functi...
-
 
 [86 <./input/graphs/note07/img_graph2.pdf> <./input/graphs/note07/img_graph3.pd
 f>]
@@ -3308,147 +2455,56 @@ Package mdframed Info: Not enough space on this page on input line 151.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 153.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.7}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.153 \begin{example} \label
-                            {example:17.3} Study the function $w = \text{Ln}...
-<./input/graphs/note07/img_graph4.pdf, id=1962, 293.96826pt x 166.1929pt>
+<./input/graphs/note07/img_graph4.pdf, id=2089, 293.96826pt x 166.1929pt>
 File: ./input/graphs/note07/img_graph4.pdf Graphic file (type pdf)
 <use ./input/graphs/note07/img_graph4.pdf>
 Package pdftex.def Info: ./input/graphs/note07/img_graph4.pdf  used on input li
 ne 158.
 (pdftex.def)             Requested size: 293.96753pt x 166.19247pt.
 
-pdfTeX warning (ext4): destination with the same identifier (name{definition.8}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.165 \begin{definition}\label
-                              {definition:15.2}
 
 [87 <./input/graphs/note07/img_graph4.pdf>]
-pdfTeX warning (ext4): destination with the same identifier (name{exercise.10})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.186      $
-            \arccos z = -i\text{Ln}(z \pm i\sqrt{1 - z^2})$
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 190.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.11}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.190 \begin{example}\label
-                           {example:17.4}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 211.
 
-pdfTeX warning (ext4): destination with the same identifier (name{remark.12}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.211     I
-           n a domains where the corresponding branches of the square root a...
-
 
 [88]
-pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.227 \begin{definition}\label
-                              {definition:16.1}
 
 [89]
-pdfTeX warning (ext4): destination with the same identifier (name{definition.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.262 \begin{definition}\label
-                              {definition:16.2}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 268.
 
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.3
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.268 \begin{proposition}\label
-                               {proposition:16.1}
 
 [90]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 305.
-
-pdfTeX warning (ext4): destination with the same identifier (name{theorem.4}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.305 \begin{theorem}[The Great Picard Theorem]
-                                               \label{theorem:great.picard}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 314.
 
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.5
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.314 \begin{proposition}\label
-                               {proposition:16.2}
 
 [91]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 335.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.6}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.335 \begin{example}\label
-                           {example:18.1} Let $f(z) = \frac{1}{(z-1)(z-2)}$....
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 347.
-
-pdfTeX warning (ext4): destination with the same identifier (name{claim.7}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.347     C
-           laim: $z = 1, z = 2$ are simple poles.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 358.
 
-pdfTeX warning (ext4): destination with the same identifier (name{example.8}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.358 \begin{example}\label
-                           {example:18.2} Prove:
 
 [92]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 379.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.9}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.379 \begin{example}\label
-                           {example:18.3} Classify the singularities of $f(z...
 )
 
 [93]
@@ -3458,23 +2514,9 @@ l.379 \begin{example}\label
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 39.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.10}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.39 \begin{example} \label
-                           {example:18.4} What type of singularity does $f(z...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 52.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.11}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.52 \begin{example} \label
-                           {example:18.5} Find all the singularities and det...
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 69.
@@ -3488,40 +2530,12 @@ Package mdframed Info: Box was splittet wrong
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 71.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.12}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.71 \begin{example} \label
-                           {example:18.6} Compute the residue of $f(z) = \fr...
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.13
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.86 \begin{definition}\label
-                             {definition:16.3} A point $z = z_0$ is called a...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 91.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.14}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.91 \begin{example}\label
-                          {example:18.7} For the function $f(z) = (z-3)^2(z+...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 101.
-
-pdfTeX warning (ext4): destination with the same identifier (name{remark.15}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.101     T
-           o find all the zeros of $f(z)$ we need to solve the equation $f(z...
 Package mdframed Info: Not enough space on this page on input line 102.
 
 
@@ -3530,33 +2544,12 @@ Package mdframed Info: Not enough space on this page on input line 102.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 104.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.16}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.104 \begin{example} \label
-                            {example:18.8} The function $f(z) = e^z$ does no...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 110.
-
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.1
-7}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.110 \begin{proposition}\label
-                               {proposition:16.3}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 128.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.18}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.128 \begin{example}\label
-                           {example:18.9} What is the order of the zero $z_0...
 
 
 [96]
@@ -3580,25 +2573,18 @@ Package mdframed Info: mdframed detected package amsthm
 
 
 [98]
-<./input/graphs/note08/img_graph1.pdf, id=2113, 222.83148pt x 137.78577pt>
+<./input/graphs/note08/img_graph1.pdf, id=2263, 222.83148pt x 137.78577pt>
 File: ./input/graphs/note08/img_graph1.pdf Graphic file (type pdf)
 <use ./input/graphs/note08/img_graph1.pdf>
 Package pdftex.def Info: ./input/graphs/note08/img_graph1.pdf  used on input li
 ne 216.
 (pdftex.def)             Requested size: 222.83093pt x 137.78542pt.
-<./input/graphs/note08/img_graph2.pdf, id=2114, 104.72926pt x 76.8722pt>
+<./input/graphs/note08/img_graph2.pdf, id=2264, 104.72926pt x 76.8722pt>
 File: ./input/graphs/note08/img_graph2.pdf Graphic file (type pdf)
 <use ./input/graphs/note08/img_graph2.pdf>
 Package pdftex.def Info: ./input/graphs/note08/img_graph2.pdf  used on input li
 ne 229.
 (pdftex.def)             Requested size: 104.729pt x 76.872pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.235 \begin{definition}\label
-                              {definition:17.1} A path is a continuous map $...
 
 
 [99 <./input/graphs/note08/img_graph1.pdf> <./input/graphs/note08/img_graph2.pd
@@ -3606,55 +2592,20 @@ f>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 238.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.238 \begin{example} \label
-                            {example:19.1} Define and compare 2 paths: $\gam...
 Package mdframed Info: Not enough space on this page on input line 241.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 243.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.243 \begin{example} \label
-                            {example:19.2} Another useful example is the str...
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.4}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.248 \begin{definition} \label
-                               {definition:17.2} $C$ is a simple curve if th...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 252.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 259.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.6}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.259 \begin{example} \label
-                            {example:19.3} Write down $-\gamma$, where $\gam...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 266.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.7}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.266 \begin{example}\label
-                           {example:19.4} Write in the form $z(t) = x(t) + i...
-<./input/graphs/note08/img_graph3.pdf, id=2156, 174.46179pt x 223.0985pt>
+<./input/graphs/note08/img_graph3.pdf, id=2308, 174.46179pt x 223.0985pt>
 File: ./input/graphs/note08/img_graph3.pdf Graphic file (type pdf)
 <use ./input/graphs/note08/img_graph3.pdf>
 Package pdftex.def Info: ./input/graphs/note08/img_graph3.pdf  used on input li
@@ -3667,57 +2618,17 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 276.
 
-pdfTeX warning (ext4): destination with the same identifier (name{example.8}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.276 \begin{example} \label
-                            {example:19.5} Write parametrization $z(t) = x(t...
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.9}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.292 \begin{definition} \label
-                               {definition:17.3}
-pdfTeX warning (ext4): destination with the same identifier (name{definition.10
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.300 \begin{definition} \label
-                               {definition:17.4}
-pdfTeX warning (ext4): destination with the same identifier (name{definition.11
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.306 \begin{definition} \label
-                               {definition:17.5} A contour is a piecewise-sm...
-
 
 [101 <./input/graphs/note08/img_graph3.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 312.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.12}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.312 \begin{example} \label
-                            {example:19.6}
-<./input/graphs/note08/img_graph4.pdf, id=2189, 113.85236pt x 81.51955pt>
+<./input/graphs/note08/img_graph4.pdf, id=2350, 113.85236pt x 81.51955pt>
 File: ./input/graphs/note08/img_graph4.pdf Graphic file (type pdf)
 <use ./input/graphs/note08/img_graph4.pdf>
 Package pdftex.def Info: ./input/graphs/note08/img_graph4.pdf  used on input li
 ne 317.
 (pdftex.def)             Requested size: 113.85207pt x 81.51933pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.13
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.323 \begin{definition}\label
-                              {definition:17.6}
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 331.
@@ -3725,12 +2636,6 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 344.
 
-pdfTeX warning (ext4): destination with the same identifier (name{example.15}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.344 \begin{example} \label
-                            {example:19.7} Compute $\int_0^{\pi/4} e^{it} dt$.
 
 [102 <./input/graphs/note08/img_graph4.pdf>]
 Package mdframed Info: Not enough space on this page on input line 349.
@@ -3738,18 +2643,6 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 352.
 
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.1
-6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.352 \begin{proposition}\label
-                               {proposition:17.2}
-pdfTeX warning (ext4): destination with the same identifier (name{definition.17
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.361 \begin{definition}\label
-                              {definition:17.7}
 Overfull \hbox (5.3769pt too wide) in paragraph at lines 362--363
 [][]\OT1/cmr/bx/n/12 (-20) Definition 20.17. [][]\OT1/cmr/m/n/12 (-20) The con-
 tour in-te-gral of $\OML/cmm/m/it/12 f$ \OT1/cmr/m/n/12 (-20) along $\OML/cmm/m
@@ -3764,14 +2657,7 @@ mm/m/it/12 ^^M[]\OT1/cmr/m/n/12 (-20) (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 (-20)
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 371.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.18}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.371 \begin{example}\label
-                           {example:19.8} Let $C$ be a semicircle parametriz...
-<./input/graphs/note08/img_graph5.pdf, id=2213, 123.24644pt x 166.1929pt>
+<./input/graphs/note08/img_graph5.pdf, id=2375, 123.24644pt x 166.1929pt>
 File: ./input/graphs/note08/img_graph5.pdf Graphic file (type pdf)
 <use ./input/graphs/note08/img_graph5.pdf>
 Package pdftex.def Info: ./input/graphs/note08/img_graph5.pdf  used on input li
@@ -3783,13 +2669,6 @@ ne 373.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 381.
-
-pdfTeX warning (ext4): destination with the same identifier (name{example.19}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.381 \begin{example}\label
-                           {example:19.9} Let $C$ be the same contour as in ...
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 388.
@@ -3797,19 +2676,13 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 402.
 
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.2
-1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.402 \begin{proposition}\label
-                               {proposition:17.3}
 
 [104 <./input/graphs/note08/img_graph5.pdf>]
 Package mdframed Info: Not enough space on this page on input line 412.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 425.
-<./input/graphs/note08/img_graph6.pdf, id=2246, 165.9259pt x 137.7406pt>
+<./input/graphs/note08/img_graph6.pdf, id=2414, 165.9259pt x 137.7406pt>
 File: ./input/graphs/note08/img_graph6.pdf Graphic file (type pdf)
 <use ./input/graphs/note08/img_graph6.pdf>
 Package pdftex.def Info: ./input/graphs/note08/img_graph6.pdf  used on input li
@@ -3828,10 +2701,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B3D3118A6A13CBDE730650F71D00340F;9803.
  ) 
 Here is how much of TeX's memory you used:
- 38040 strings out of 473201
- 775667 string characters out of 5716126
- 1192981 words of memory out of 5000000
- 59640 multiletter control sequences out of 15000+600000
+ 38208 strings out of 473201
+ 778081 string characters out of 5716126
+ 1193694 words of memory out of 5000000
+ 59641 multiletter control sequences out of 15000+600000
  588326 words of font info for 250 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  119i,15n,123p,1001b,1358s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3869,10 +2742,10 @@ e1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type
 type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2024/texmf-dist/fonts/ty
 pe1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type
 1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (105 pages, 1054672 bytes).
+Output written on main.pdf (105 pages, 1059995 bytes).
 PDF statistics:
- 2532 PDF objects out of 2984 (max. 8388607)
- 2084 compressed objects within 21 object streams
- 695 named destinations out of 1000 (max. 500000)
+ 2733 PDF objects out of 2984 (max. 8388607)
+ 2283 compressed objects within 23 object streams
+ 862 named destinations out of 1000 (max. 500000)
  51524 words of extra memory for PDF output out of 51595 (max. 10000000)
 
