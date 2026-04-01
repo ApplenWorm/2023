@@ -52,3 +52,19 @@
 \contentsline {section}{\numberline {20}Complex integration.}{99}{section.20}%
 \contentsline {subsection}{\numberline {20.1}Paths and curves}{99}{subsection.20.1}%
 \contentsline {subsection}{\numberline {20.2}Contour Integrals}{103}{subsection.20.2}%
+\contentsline {subsection}{\numberline {20.3}Antiderivatives and contour integrals}{106}{subsection.20.3}%
+\contentsline {section}{\numberline {21}Cauchy's Theorem}{109}{section.21}%
+\contentsline {subsection}{\numberline {21.1}Star-shaped and convex domains}{109}{subsection.21.1}%
+\contentsline {subsection}{\numberline {21.2}Cauchy's Theorem for triangles}{111}{subsection.21.2}%
+\contentsline {subsection}{\numberline {21.3}The Cauchy Integral Formula}{117}{subsection.21.3}%
+\contentsline {section}{\numberline {22}Residue Theorem}{123}{section.22}%
+\contentsline {subsection}{\numberline {22.1}Residues and singularities}{123}{subsection.22.1}%
+\contentsline {section}{\numberline {23}Implications of Cuachy's Theorems}{127}{section.23}%
+\contentsline {subsection}{\numberline {23.1}Gauss's Mean Value Theorem}{127}{subsection.23.1}%
+\contentsline {subsection}{\numberline {23.2}Maximum Modulus Principle}{128}{subsection.23.2}%
+\contentsline {subsection}{\numberline {23.3}Cauchy's Estimate}{130}{subsection.23.3}%
+\contentsline {subsection}{\numberline {23.4}Liouville's Theorem}{130}{subsection.23.4}%
+\contentsline {subsection}{\numberline {23.5}Fundamental Theorem of Algebra}{131}{subsection.23.5}%
+\contentsline {section}{\numberline {24}Applications of Contour Integration to Real Integrals}{132}{section.24}%
+\contentsline {subsection}{\numberline {24.1}Trigonometric integrals via residues}{132}{subsection.24.1}%
+\contentsline {subsection}{\numberline {24.2}Sum of Infinite Rational Functions}{134}{subsection.24.2}%
