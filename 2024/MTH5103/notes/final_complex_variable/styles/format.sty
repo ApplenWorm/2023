@@ -1,0 +1,40 @@
+% lecturenotes.sty
+% Custom package for lecture notes in LaTeX
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{lecturenotes}[2023/10/10 Custom package for lecture notes]
+
+% Required packages
+\RequirePackage{amsthm}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{xcolor}
+
+% Define theorem environments
+% \newtheorem{theorem}{Theorem}[section]
+% \newtheorem{lemma}[theorem]{Lemma}
+% \newtheorem{corollary}[theorem]{Corollary}
+% \newtheorem{example}[theorem]{Example}
+% \newtheorem{definition}[theorem]{Definition}
+
+% Define proof environment
+\renewcommand{\proofname}{\textbf{Proof}}
+
+% Define a custom command for "Check this on your own"
+\newcommand{\checkthis}[1]{\vspace{5pt}\noindent\textcolor{blue}{\textbf{Check:}} #1\vspace{5pt}}
+
+% Define commands for weeks and lectures
+\newcommand{\week}[1]{\section*{Week #1}}
+\newcommand{\lecture}[2]{\subsection*{Lecture #1: #2}}
+
+% Additional formatting for theorems, lemmas, etc.
+\theoremstyle{plain}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+
+% Customize the appearance of theorems, lemmas, etc.
+\newcommand{\theoremstylebold}{\theoremstyle{plain}\newtheorem{theoremB}{Theorem}[section]}
+\theoremstylebold
+
+% End of package
+\endinput

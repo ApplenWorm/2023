@@ -1,0 +1,37 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usetikzlibrary{patterns}
+\usetikzlibrary{angles, quotes}
+
+\begin{document}
+\begin{tikzpicture}[scale=1]
+
+  % First coordinate system (z-plane)
+  \begin{scope}[shift={(0,0)}]
+    \draw[->] (-2.5,0) -- (3,0) node[right] {$x$};
+    \draw[->] (0,-1.5) -- (0,1.5) node[above] {$y$};
+  
+    % Line
+    % \draw[red, thick] (0,0) -- (1.5, {1.5*tan(pi/3 r)});
+  
+    \draw[->, red, very thick] (-2.5,0) -- (3,0);
+  
+  \end{scope}
+
+  % Arrow between coordinate systems
+  \draw[->, thick] (4,1) -- (6,1);
+  \node[above] at (5, 1.25) {$z^2$};
+
+
+  % Second coordinate system (w-plane)
+  \begin{scope}[shift={(8,0)}]
+    \draw[->] (-1.7,0) -- (2.2,0) node[right] {$u$};
+    \draw[->,] (0,-1.5) -- (0,1.5) node[above] {$v$};
+
+    % Line segment in the w-plane
+    \draw[->, red, very thick] (0,0) -- (2.2,0);
+  \end{scope}
+
+\end{tikzpicture}
+\end{document}

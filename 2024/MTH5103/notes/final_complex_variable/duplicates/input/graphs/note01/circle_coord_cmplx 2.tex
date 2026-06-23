@@ -1,0 +1,26 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{amsmath}
+
+\begin{document}
+\begin{tikzpicture}[scale=1]
+
+  % Axes with labels for the center
+  \draw[->] (-3.5,0) -- (1.5,0) node[right] {$x$};
+  \draw[->] (0,-3.5) -- (0,1.5) node[above] {$iy$};
+
+  % Center coordinates
+  \coordinate (center) at (-1,-1);
+
+  % Circle (centered at -1, -i)
+  \draw (center) circle (2cm);
+
+  % Center point
+  \draw[fill=black] (center) circle (1pt) node[above right] {$z_0$};
+
+  % Projections onto axes (dashed lines)
+  \draw[dashed] (center) -- (-1,0) node[midway, above] {} node[above] {$-1$};
+  \draw[dashed] (center) -- (0,-1) node[midway, right] {} node[right] {$-i$};
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,70 @@
+\contentsline {section}{\numberline {1}Introduction}{5}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Motivation}{5}{subsection.1.1}%
+\contentsline {section}{\numberline {2}The Field of Complex Numbers}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Basic definitions and algebra}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Complex conjugate and division}{7}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Geometric Representation of Complex Numbers}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Modulus and Argument. Polar Form}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Roots and Euler's formula}{17}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Functions of a Complex Variable}{21}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Basic definitions and examples}{21}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Real and polar representations}{22}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Transformations of the Complex plane}{24}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Limits}{31}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Definition and properties of limits}{31}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Limits at infinity}{35}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Sets in $\mathbb {C}$}{36}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Open sets, connectedness, and domains}{36}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Interior, boundary, and closed sets}{37}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Neighborhoods}{38}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Continuity}{38}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Definition and basic properties}{38}{subsection.7.1}%
+\contentsline {section}{\numberline {8}Differentiability}{41}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Definition and examples}{41}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Differentiation rules}{43}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Cauchy-Riemann equations}{44}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Single-valued analytic functions.}{48}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Definitions and examples}{48}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Properties of analytic functions}{50}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Analyticity of multi-valued functions}{52}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Branch points and branches}{52}{subsection.10.1}%
+\contentsline {section}{\numberline {11}Harmonic functions.}{58}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Definitions and basic results}{58}{subsection.11.1}%
+\contentsline {section}{\numberline {12}Complex sequences.}{62}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Sequence limits}{62}{subsection.12.1}%
+\contentsline {section}{\numberline {13}Complex (scalar) series.}{64}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Series convergence}{64}{subsection.13.1}%
+\contentsline {section}{\numberline {14}Complex Power Series}{68}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Power series basics}{68}{subsection.14.1}%
+\contentsline {section}{\numberline {15}Taylor and Laurent series}{72}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Taylor series}{72}{subsection.15.1}%
+\contentsline {section}{\numberline {16}Laurent series}{76}{section.16}%
+\contentsline {subsection}{\numberline {16.1}Laurent series definition and theorem}{76}{subsection.16.1}%
+\contentsline {section}{\numberline {17}Transformations and Mob(rph)eus}{79}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Linear and M\"obius transformations}{79}{subsection.17.1}%
+\contentsline {section}{\numberline {18}Function Ln $z$}{84}{section.18}%
+\contentsline {subsection}{\numberline {18.1}Logarithm branches and properties}{84}{subsection.18.1}%
+\contentsline {section}{\numberline {19}Isolated Singularities}{89}{section.19}%
+\contentsline {subsection}{\numberline {19.1}Isolated singularities and definitions}{89}{subsection.19.1}%
+\contentsline {subsection}{\numberline {19.2}Three types of isolated singularities.}{89}{subsection.19.2}%
+\contentsline {subsection}{\numberline {19.3}Picard's theorem}{91}{subsection.19.3}%
+\contentsline {subsection}{\numberline {19.4}Zeros and Poles}{95}{subsection.19.4}%
+\contentsline {section}{\numberline {20}Complex integration.}{99}{section.20}%
+\contentsline {subsection}{\numberline {20.1}Paths and curves}{99}{subsection.20.1}%
+\contentsline {subsection}{\numberline {20.2}Contour Integrals}{103}{subsection.20.2}%
+\contentsline {subsection}{\numberline {20.3}Antiderivatives and contour integrals}{106}{subsection.20.3}%
+\contentsline {section}{\numberline {21}Cauchy's Theorem}{109}{section.21}%
+\contentsline {subsection}{\numberline {21.1}Star-shaped and convex domains}{109}{subsection.21.1}%
+\contentsline {subsection}{\numberline {21.2}Cauchy's Theorem for triangles}{111}{subsection.21.2}%
+\contentsline {subsection}{\numberline {21.3}The Cauchy Integral Formula}{117}{subsection.21.3}%
+\contentsline {section}{\numberline {22}Residue Theorem}{123}{section.22}%
+\contentsline {subsection}{\numberline {22.1}Residues and singularities}{123}{subsection.22.1}%
+\contentsline {section}{\numberline {23}Implications of Cuachy's Theorems}{127}{section.23}%
+\contentsline {subsection}{\numberline {23.1}Gauss's Mean Value Theorem}{127}{subsection.23.1}%
+\contentsline {subsection}{\numberline {23.2}Maximum Modulus Principle}{128}{subsection.23.2}%
+\contentsline {subsection}{\numberline {23.3}Cauchy's Estimate}{130}{subsection.23.3}%
+\contentsline {subsection}{\numberline {23.4}Liouville's Theorem}{130}{subsection.23.4}%
+\contentsline {subsection}{\numberline {23.5}Fundamental Theorem of Algebra}{131}{subsection.23.5}%
+\contentsline {section}{\numberline {24}Applications of Contour Integration to Real Integrals}{132}{section.24}%
+\contentsline {subsection}{\numberline {24.1}Trigonometric integrals via residues}{132}{subsection.24.1}%
+\contentsline {subsection}{\numberline {24.2}Sum of Infinite Rational Functions}{134}{subsection.24.2}%

@@ -1,0 +1,42 @@
+\documentclass[tikz, border=3mm]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, calc} % Added calc for label positioning
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Latex, % Set default arrow tip style
+    axis/.style={->, thick}, % Style for axes
+    pathstyle/.style={red, thick}, % Style for the arc path
+    labelstyle/.style={red}, % Style for labels
+    tick/.style={thick} % Style for tick marks
+]
+
+    % Define radius and key points
+   \def\radius{4}
+   \coordinate (L) at (-\radius, 0); % Left point on x-axis
+   \coordinate (R) at (\radius, 0);  % Right point on x-axis
+   \coordinate (T) at (0, \radius);  % Top point on y-axis
+
+    % Axes (adjust limits)
+    \draw[axis] (-4.5, 0) -- (4.5, 0) node[below] {$x$};
+    \draw[axis] (0, -0.5) -- (0, 4.5) node[left] {$y$};
+
+    % Draw the red semi-circular arc (from L to R, counter-clockwise)
+    \draw[pathstyle] (L) arc (180:0:\radius);
+
+    % Ticks at intersection points
+    \draw[tick] (L) ++(0,-2pt) -- ++(0,4pt); % Vertical tick at x=-4
+    \draw[tick] (R) ++(0,-2pt) -- ++(0,4pt); % Vertical tick at x=4
+    \draw[tick] (T) ++(-2pt,0) -- ++(4pt,0); % Horizontal tick at y=4
+
+    % Labels for the ticks
+    \node[labelstyle, below=2pt] at (L) {$-4$};
+    \node[labelstyle, below=2pt] at (R) {$4$};
+    \node[labelstyle, left=2pt] at (T) {$4$}; % Label on y-axis
+
+    % Label for the curve C
+    % Position relative to top point T, shifted right and down
+    \node[labelstyle, font=\large] at ($(T)+(1.5,-0.5)$) {C};
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,40 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{decorations.markings}
+
+\begin{document}
+\begin{tikzpicture}[
+  decoration={
+    markings,
+    mark=at position 1 with {\arrow{>}}
+  }
+]
+
+  % Define the Fibonacci sequence (up to a certain term)
+  \def\fib{0,1,1,2,3,5,8,13,21,34,55} % Add more terms if needed
+
+  % Initial position and angle
+  \coordinate (start) at (0,0);
+  \pgfmathsetmacro{\currentangle}{0}
+
+  % Loop through the Fibonacci sequence
+  \foreach \i [remember=\i as \lastfib (initially 0)] in \fib {
+    \ifnum\i>0 % Skip the first term (0)
+      % Calculate the radius based on the current Fibonacci number
+      \pgfmathsetmacro{\radius}{\i * 0.2} % Adjust 0.2 for scaling
+
+      % Draw the arc
+      \draw[postaction={decorate}] (start) arc (\currentangle:\currentangle+90:\radius);
+
+      % Update the starting point for the next arc
+      \pgfmathsetmacro{\newx}{cos(\currentangle+90)*\radius + x("start")}
+      \pgfmathsetmacro{\newy}{sin(\currentangle+90)*\radius + y("start")}
+      \coordinate (start) at (\newx,\newy);
+
+      % Update the angle for the next arc
+      \pgfmathsetmacro{\currentangle}{\currentangle + 90}
+    \fi
+  }
+
+\end{tikzpicture}
+\end{document}

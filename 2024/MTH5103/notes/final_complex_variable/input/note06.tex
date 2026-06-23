@@ -1,0 +1,363 @@
+%\usepackage{xr}
+
+% \externaldocument{note01}
+% \externaldocument{note02}
+% \externaldocument{note03}
+% \externaldocument{note04}
+% \externaldocument{note05}
+% \externaldocument{note06}
+% \externaldocument{note07}
+% \externaldocument{note08}
+% \externaldocument{note09}
+% \externaldocument{note10}
+% \externaldocument{note11}
+
+\graphicspath{{./input/graphs/note06/}}
+
+
+% \zexternaldocument{note01}
+% \zexternaldocument{note02}
+% \zexternaldocument{note03}
+% \zexternaldocument{note04}
+% \zexternaldocument{note05}
+% \zexternaldocument{note06}
+% \zexternaldocument{note07}
+% \zexternaldocument{note08}
+% \zexternaldocument{note09}
+% \zexternaldocument{note10}
+% \zexternaldocument{note11}
+% \externaldocument{note12}
+
+
+
+\week{6}
+% \section*{Week 6. Lecture 16.}
+\lecture{16}{Taylor and Laurent series}
+\section{Taylor and Laurent series}
+
+\subsection{Taylor series}
+We investigate complex Taylor series and the generalizations of power series to include negative powers, called Laurent series.
+
+We are also going to discuss the relationship between these series and analytic functions. Let us start with some motivation. To motivate use of Taylor and Laurent series, we shall first present some examples related to the power series. Recall that:
+
+The Geometric series: for $|z| < 1$ $\sum_{n=0}^{\infty} z^n = \frac{1}{1-z}$ (converges absolutely).
+
+\begin{example}\label{example:15.1} 
+    Determine the convergence or divergence of:
+    \begin{enumerate}
+        \item $\sum_{n=0}^{\infty} \left(\frac{4+i}{6}\right)^n$
+        \item $\sum_{n=2}^{\infty} \left(\frac{4+i}{56}\right)^n$
+        \item $\sum_{n=0}^{\infty} \left(\frac{4+i}{3}\right)^n$
+    \end{enumerate}
+
+Each of these series is a geometric series, so the convergence will be determined by whether the modulus of the general term is smaller or greater than 1.
+
+\begin{soln}
+
+\begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
+    \item  $|z| = \left|\frac{4+i}{6}\right| = \frac{\sqrt{4^2 + 1^2}}{6} = \frac{\sqrt{17}}{6} < \frac{\sqrt{36}}{6} = \frac{6}{6} = 1 \implies$ converges absolutely to: 
+    \[\sum_{n=0}^{\infty} \left(\frac{4+i}{6}\right)^n = \frac{1}{1 - \frac{4+i}{6}} = \frac{6}{2-i} = \frac{12}{5} + i\frac{6}{5}.\]
+
+    \noindent For the next series we may argue in the same manner to conclude the absolute convergence, but 
+    \item The sum starts at $n=2$! We use the following observation to determine the value of the sum. For $|z| < 1: \sum_{n=k}^{\infty} z^n = \sum_{n=0}^{\infty} z^n - \sum_{n=0}^{k-1} z^n = \frac{1}{1-z} - (1 + z + z^2 + \dots + z^{k-1})$.
+    $\implies$ the series converges to:
+    \begin{align*} 
+        \sum_{n=2}^{\infty} \left(\frac{4+i}{56}\right)^n & = \sum_{n=0}^{\infty} \left(\frac{4+i}{56}\right)^n - \sum_{n=0}^{1} \left(\frac{4+i}{56}\right)^n = \frac{1}{1 - \frac{4+i}{56}} - 1 - \frac{4+i}{56} \\ 
+        & = \frac{56}{52-i} - 1 - \frac{4+i}{56} = \frac{207}{2705} + i\left(\frac{56}{2705} - \frac{1}{56}\right) 
+    \end{align*}
+    \noindent Finally, in the last example we have 
+    \item $|z| = \left|\frac{4+i}{3}\right| = \frac{\sqrt{17}}{3} > 1 \implies$ the series diverges.
+\end{enumerate}
+\end{soln}
+\end{example}
+
+We have also studied Power series centered at $z_0$: $\sum_{n=0}^{\infty} a_n(z-z_0)^n, a_n \in \mathbb{C}$.
+
+Now we can adjust the previous example to include a variable $z \in \mathbb{C}$, making the geometric series above into power series.
+
+\begin{example}\label{example:15.2} For what values of $z$ does the power series $\sum_{n=0}^{\infty} \left(\frac{4+i}{6}\right)^n (z-3)^n$ converge?
+    \begin{soln}
+         In this case we are studying a power series centered at $z_0 = 3$. We can apply the Ratio Test and obtain:
+        \[  \lim_{n \to \infty} \left| \frac{a_{n+1}(z-z_0)^{n+1}}{a_n(z-z_0)^n} \right| = \lim_{n \to \infty} \left| \frac{(\frac{4+i}{6})^{n+1}(z-3)^{n+1}}{(\frac{4+i}{6})^n (z-3)^n} \right| = \frac{\sqrt{17}}{6}|z-3| = L \]
+        By Ratio Test: the series converges absolutely if $L < 1$ (diverges if $L > 1$) $\implies$ converges absolutely if $|z-3| < \frac{6}{\sqrt{17}}$.
+        
+        The radius of convergence of this power series is given by $R = \lim_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right| = \frac{6}{\sqrt{17}}$.
+    \end{soln}
+\end{example}
+
+Another type of question we may encounter is one in which we are asked to determine the power series of a given function.
+
+\begin{example}\label{example:15.3} 
+    Find the power series expansion of the function $f(z) = \frac{1}{2z-3}$ about the point $z_0 = 0$ and determine the radius of convergence.
+\begin{soln}
+        Observe that $f$ can be written in the form of a convergent geometric series as follows:
+    \[ \frac{1}{2z-3} = -\frac{1}{3} \cdot \frac{1}{1 - \frac{2z}{3}} = -\frac{1}{3} \sum_{n=0}^{\infty} \left(\frac{2z}{3}\right)^n = -\sum_{n=0}^{\infty} \frac{2^n}{3^{n+1}}z^n \]
+    The series expansion is valid only if $\left|\frac{2z}{3}\right| < 1 \implies$ the radius of convergence of this series is $R = \frac{3}{2}$.
+\end{soln}
+\end{example}
+
+Some natural questions to pose at this point are: What happens if we asked to find the power series representation of a function $f$ that cannot be expressed as a geometric series? Is there a general method by which we can find the power series representation of an arbitrary function? How do we even know that a function admits a power series representation? Now we will partially answer these questions.
+\begin{theorem}[Taylor series]\label{theorem:13.1}
+    Let $f(z)$ be an analytic function on a domain $\Omega$, let $z = a \in \Omega$ be some point in $\Omega$. Assume that a circle $C$ of radius $r$ centered at $z = a$ is contained in $\Omega$.
+\end{theorem}
+
+Then, there exists a unique power series with radius of convergence at least $r$ that converges to $f(z)$:
+\[ f(z) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(z-a)^n, \quad \left| \frac{f^{(n)}(a)}{n!} \right| \leq \frac{M}{r^n}, \text{where} \]
+$M$ is the maximum of $|f(z)|$ on the circle $|z-a| = r$:
+\[ M = \max_{|z-a|=r} |f(z)| \]
+The series on the right is called the Taylor series for $f$ at $a$.
+
+\begin{remark}
+    For $a = 0$ the series is called the Maclaurin series.
+\end{remark}
+
+Namely, $f$ is differentiable arbitrarily many times at $a$ and this is a unique representation of $f$ as power series on $C$.
+
+Note: we conclude that if $f$ is once differentiable, then can be written as power series, then we can deduce: By (Prop~\ref{proposition:12.2}): $f'(z) = \sum_{n=1}^{\infty} \frac{f^{(n)}(a)}{(n-1)!}(z-a)^{n-1}, f''(z) = \sum_{n=2}^{\infty} \frac{f^{(n)}(a)}{(n-2)!}(z-a)^{n-2}$, and so on for all $z \in \mathbb{C}$.
+
+\begin{remark}
+    This is very different from the real case! In the real case a function can be differentiable once, but not twice:
+\end{remark}
+
+\begin{example}\label{example:15.4}
+\[
+ f(x) = \begin{cases}
+x^2 & x \geq 0 \\
+-x^2 & x \leq 0
+\end{cases} 
+\]
+At $x = 0$ $f$ is differentiable once, but not twice: $f'(x) = \begin{cases} 2x & x \geq 0 \\ -2x & x \leq 0 \end{cases} \implies f'(0) = 0$, $f''(x) = \begin{cases} 2 & x \geq 0 \\ -2 & x \leq 0 \end{cases} \implies f''(0)$ does not exist!
+\end{example}
+
+Moreover, a real everywhere differentiable function need not be equal to its Taylor series!
+
+\begin{example}\label{example:15.5}
+    \[ f(x) = \begin{cases}
+e^{-1/x} & x > 0 \\
+0 & x \leq 0
+\end{cases} \]
+For all $n \geq 0$, $f^{(n)}(0) = 0 \implies$ its Taylor series must be: $0 + 0 \cdot x + 0 \cdot \frac{x^2}{2!} + \dots = 0$. But $f$ itself is not equal to its Taylor series.
+\end{example}
+
+Now let us see a couple of examples of Taylor series.
+
+\begin{example}\label{example:15.6} We have seen: $e^z = \sum_{n=0}^{\infty} \frac{z^n}{n!}$ converges absolutely for all $z \in \mathbb{C} \implies$ the radius of convergence $R = \infty \implies e^z$ is
+differentiable at all $z \in \mathbb{C}$ ($\implies$ entire) and $(e^z)' = e^z$ (Prop 12.3). $\sum_{n=0}^{\infty} \frac{z^n}{n!}$ is Maclaurin series for $e^z$, namely Taylor series about $z_0 = 0$. By Thm~\ref{theorem:13.1} it is a unique representation of $e^z$ (about $z_0 = 0$) as power series.
+\end{example}
+
+\begin{example}\label{example:15.7}
+Let $f(z) = \frac{1}{2z-3}$. What is the power series of $f$ about $z_0 = 2$?
+\begin{soln}
+    We need to find a Taylor series expansion of the form $\sum_{n=0}^{\infty} a_n (z-2)^n$. We could use the formula for the coefficients in Thm~\ref{theorem:13.1} to find this representation. Having the representation it is easy to find the radius of convergence. However, we do it differently - we represent this series as geometric series.
+    
+    Rewrite $f(z)$ as geometric series (about $z_0 = 2$!):
+    \begin{align*}
+        f(z) = \frac{1}{2z-3} = \frac{1}{2} \cdot \frac{1}{z - \frac{3}{2}} & = \frac{1}{2} \cdot \frac{1}{(z-2) + \frac{1}{2}} = \frac{1}{2((z-2) + \frac{1}{2})} = \frac{1}{1 - (-2(z-2))} \\
+        & = \sum_{n=0}^{\infty} (-2(z-2))^n = \sum_{n=0}^{\infty} (-2)^n (z-2)^n 
+    \end{align*}
+    This series is absolutely convergent for $z$ satisfying $|2(z-2)| < 1 \iff |z-2| < \frac{1}{2} \implies R = \frac{1}{2}$. Thus, the function $f(z)$ is represented by this series on the disc of convergence given by $D = \{z \in \mathbb{C}: |z-2| < \frac{1}{2}\}$.
+\end{soln}
+\end{example}
+
+Note: $f(z) = \frac{1}{2z-3}$ is undefined at $z = \frac{3}{2} \implies$ the series and the function only agree up to, but not including $\partial D$ - the boundary of the disc $D: \{z \in \mathbb{C}: |z-2| = \frac{1}{2}\}$.
+
+% \section*{Lectures 17 + 18.}
+\lecture{17+18}{Continuation and Laurent}
+Our next subject is another series. We have seen that the Taylor series exists for functions that are analytic (holomorphic) on discs. But analytic functions on certain other types of regions also may have series representations.
+
+\section{Laurent series}
+
+\subsection{Laurent series definition and theorem}
+\begin{example}\label{example:15.8} let $f(z) = \frac{1}{1-z}$. We have a power series for $|z| < 1$: $f(z) = \sum_{n=0}^{\infty} z^n$ (geometric series). What can we do for $|z| > 1$?
+
+In this case $|\frac{1}{z}| < 1$, so we can try to form a series in $\frac{1}{z}$:
+\[ \frac{1}{1-z} = \frac{1}{z} \cdot \frac{1}{\frac{1}{z} - 1} = -\frac{1}{z} \cdot \frac{1}{1 - \frac{1}{z}} = -\frac{1}{z} \sum_{n=0}^{\infty} \left(\frac{1}{z}\right)^n = \sum_{n=0}^{\infty} -\left(\frac{1}{z}\right)^{n+1} = \sum_{n=1}^{\infty} -z^{-n} \]
+This series is absolutely convergent for all $|z| > 1$, but divergent for all $|z| < 1$.
+\end{example}
+
+\begin{definition}\label{definition:13.1} Let $A$ be an annulus centered at $z = z_0$ with inner radius $R_1$, outer radius $R_2$, $0 \leq R_1 < R_2 \leq \infty: A = \{z \in \mathbb{C}: R_1 < |z - z_0| < R_2\}$. A series given by $\sum_{n=0}^{\infty} a_n (z - z_0)^n + \sum_{n=1}^{\infty} b_n (z - z_0)^{-n}, a_n, b_n \in \mathbb{C}$ converging to $f(z)$ at every $z \in A$ is called the Laurent series for $f$ on A.
+\end{definition}
+
+Note: $\sum_{n=0}^{\infty} a_n (z - z_0)^n$ converges for all $|z - z_0| < R_2$ and $\sum_{n=1}^{\infty} b_n (z - z_0)^{-n}$ converges for all $|z - z_0| > R_1$. Therefore, we see that this series is an analytic function in its annulus of convergence. Now the question is whether any analytic function on some annulus can be represented as a Laurent series. The answer is yes:
+
+\begin{theorem}[Laurent series]\label{theorem:13.2}
+ If $f(z)$ is analytic on the annulus $A$ centered at $z_0: R_1 < |z - z_0| < R_2$, then $f(z)$ has a *unique* Laurent series expansion converging absolutely to $f(z)$ at every $z \in A$:
+    \[ f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n + \sum_{n=1}^{\infty} b_n (z - z_0)^{-n}, \quad a_n, b_n \in \mathbb{C} \quad \forall n. \]
+\end{theorem}
+
+\begin{remark}
+    We sometimes write $\sum_{n=-\infty}^{\infty} a_n (z - z_0)^n$ to denote the Laurent series, however: be careful to remember that this denotes the sum of *two* series.
+\end{remark}
+
+There exist formulae for the coefficients, but we will not use
+them. Usually we will represent the function as a sum or a product of two functions and then expand each into series in the domain of its absolute convergence. Let us see some examples.
+
+\begin{example}\label{example:15.9} By definition: $e^{z + \frac{1}{z}} = \sum_{n=0}^{\infty} \frac{1}{n!} z^n$ on $A = \{z \in \mathbb{C}: 0 < |z| < \infty\}$.
+$\implies$ this is Laurent series by uniqueness. Let 
+\[ f(z) = e^z + \frac{1}{z} = e^z e^{\frac{1}{z}} = \left(1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \dots \right)\left(1 + \frac{1}{z} + \frac{1}{2!} \cdot \frac{1}{z^2} + \frac{1}{3!} \cdot \frac{1}{z^3} + \dots \right).\]
+
+After opening of the brackets and combining similar terms, we obtain the formula for the Laurent coefficients
+\begin{align*}
+    & a_n = b_n = \frac{1}{n!} + \frac{1}{(n+1)!} + \frac{1}{(n+2)!2!} + \dots = \sum_{k=0}^{\infty} \frac{1}{(n+k)!k!} \\
+    & \implies f(z) = e^{z + \frac{1}{z}} = \sum_{n=0}^{\infty} \frac{1}{n!} z^n + \sum_{k=0}^{\infty} \sum_{n=1}^{\infty} \frac{1}{(n+k)!k!} z^{-n} \text{ on A.} 
+\end{align*}
+\end{example}
+
+\begin{example}\label{example:15.10} What is the laurent series of $f(z) = \frac{1}{(z-1)(z-2)}$ on the annulus $A = \{z \in \mathbb{C}: 1 < |z| < 2\}$?
+
+First, we write $f$ a sum of 2 functions using a partial fraction expansion:
+\[
+ \frac{1}{(z-1)(z-2)} = \frac{1}{z-2} - \frac{1}{z-1} = \frac{-1}{2(\frac{z}{2} - 1)} - \frac{1}{z(1-\frac{1}{z})} = -\frac{1}{2} \sum_{n=0}^{\infty} \left(\frac{z}{2}\right)^n - \sum_{n=1}^{\infty} z^{-n} 
+\]
+- the Laurent series.
+\end{example}
+
+Note: The first sum $\sum_{n=0}^{\infty} \left(\frac{z}{2}\right)^n$ exists only if $|\frac{z}{2}| < 1 \iff |z| < 2$. The second sum $\sum_{n=1}^{\infty} z^{-n}$ exists only $|\frac{1}{z}| < 1 \iff |z| > 1$. Thus, (*) is valid only on the annular region $1 < |z| < 2$.
+
+\begin{example} \label{example:15.11} Obtain the series expansion for $f(z) = \frac{1}{z^2 + 4}$ valid in the region $|z - 2i| > 4$.
+
+\end{example}
+    \begin{soln}
+        
+        The region here is a domain: the exterior of the circle centered at $(0, 2i)$ of radius 4.
+
+        \includegraphics{img_graph1.pdf}
+
+We want a series expansion about $z_0 = 2i$. To do this we make a substitution $w = z - 2i$ and look for the expansion in $w$, where $|w| > 4$. To make the series expansion easier we manipulate again $f(z)$ into a form similar to the series expansion for $\frac{1}{1-z}$. 
+We get:
+\[ f(z) = \frac{1}{4iw(1 - \frac{i w}{4})} \] 
+Now we use standard geometric series and compute: \[ \frac{1}{4iw(1 - \frac{iw}{4})} = \begin{cases}
+\frac{1}{4iw} \sum_{n=0}^{\infty} \left(\frac{iw}{4}\right)^n & |w| < 4 \\
+-\frac{1}{4iw} \sum_{n=1}^{\infty} \left(\frac{4}{iw}\right)^n & |w| > 4
+\end{cases} 
+\]
+
+We require the expansion for $|w| > 4$:
+\[ f(z) = -\sum_{n=1}^{\infty} \frac{4^{n-1}}{(iw)^{n+1}} = -\sum_{n=2}^{\infty} \frac{4^{n-2}}{(iw)^n} \]
+Now we substitute back $z - 2i = w$: $f(z) = -\sum_{n=2}^{\infty} \frac{4^{n-2}}{(i(z-2i))^n}, |z-2i| > 4$.
+\end{soln}
+
+\section{Transformations and Mob(rph)eus}
+
+\subsection{Linear and M\"obius transformations}
+Now we are going to study one of the important transformations, the simplest after the linear and the inverse transformations, the Möbius transformation. First, let us briefly go over linear transformations.
+
+\begin{definition} \label{definition:14.1} Function of the form $w = az + b, a,b \in \mathbb{C}, a \neq 0$, is called the linear function (linear transformation).
+\end{definition}
+There are 3 important special cases of this transformation.
+
+I. Translation: $w = z + b$. Since the addition of complex numbers obeys the rules of addition of vectors we get the point $w$ by moving the point $z$ in direction of 
+the vector $b$ to the distance that equals to the length of $b$. Obviously, the whole domain $\Omega$ after application of $w$ is moved by vector $b$.
+
+\includegraphics{img_graph2.pdf}
+
+\begin{example} \label{example:16.1} For $w = z + 1$: the whole domain is moved by 1 to the right parallel to $x$-axis. 
+    
+    \includegraphics{img_graph3.pdf}
+
+    For $w = z - 2i$ - the whole domain is moved by 2 down parallel to $y$-axis. 
+
+    \includegraphics{img_graph4.pdf}
+
+    For $w = z - 1 + 2i$ - the whole domain is moved to the direction of the vector $-1 + 2i$ and by distance $\sqrt{5}$.
+
+    \includegraphics{img_graph5.pdf}
+\end{example}
+
+II. Rotation: $w = e^{i\alpha}z, \alpha \in \mathbb{R}$ (!) constant: $|w| = |z|, \arg w = \alpha + \arg z$. Namely, $z$ is moved to the point $w$ by rotation of the vector $z$ around the origin 
+by angle $\alpha$.
+
+\includegraphics{img_graph6.pdf}
+
+III. Expansion: $w = r \cdot z, r > 0: |w| = r|z|, \arg w = \arg z$. The point $z$ goes to the point $w$ that is on the line connecting $z$ with the origin by distance multiplied by $r$. 
+Contraction if $0 < r < 1$, Dilation if $r > 1$.
+
+\begin{example} \label{example:16.2} Points on the circle $|z| = 2$ under $w = 3z$ pass to
+the points on the circle $|w| = 6$.
+
+\end{example}
+The general case of a linear transformation $w = az + b$, where $a = re^{i\alpha}, r, \alpha \in \mathbb{R}$, is obtained by first rotation around origin by an angle $\alpha$, then expansion by $r$, and then translation by $b$.
+
+\begin{definition}\label{definition:14.2} A transformation of the form $w = \frac{az+b}{cz+d}, ad-bc \neq 0, a,b,c,d \in \mathbb{C}$ are constants, is called the Möbius transformation (or Bilinear transformation, or Linear fractional transformation).
+\end{definition}
+
+Derivative: $w' = \frac{ad-bc}{(cz+d)^2}$. The condition $ad-bc \neq 0$ guarantees that $w' \neq 0$. In case that $ad-bc = 0$ the function is constant.
+
+The inverse of $w$: $z = \frac{-dw+b}{cw-a}$: eliminate $z$ from $w$: $w(cz+d) = az+b \iff wcz + wd = az + b \iff z(wc-a) = b - wd \implies z = \frac{-dw+b}{cw-a}$.
+
+$\implies$ The inverse of a Möbius transformation is again Möbius transformation. If correspond $z = -\frac{d}{c}$ to $w = \infty$ and $z = \infty$ to $w = \frac{a}{c} \implies$ the Möbius transformation maps $\mathbb{C} \cup \{\infty\}$ to itself and it is one to one (namely, it is bijection from $\mathbb{C} \cup \{\infty\}$ to itself).
+
+\begin{proposition} \label{proposition:14.1} Möbius transformations send lines and circles to lines and circles.
+\end{proposition}
+\begin{example}\label{example:16.3}
+     Find the Möbius transformation that sends $z_1 = 1 \to -i = w_1, z_2 = 0 \to -1 = w_2, z_3 = i \to 1 = w_3$.
+\begin{soln}
+    Let us plug the values of $z_i$ and $w_i$ and get:
+    \[  -i = \frac{a+b}{c+d} \qquad -1 = \frac{b}{d} \qquad 1 = \frac{ai+b}{ci+d} \]
+    We have 3 equations with 4 variables. We compute a,b,c via d. The second equation gives: $-1 = \frac{b}{d} \iff b = -d \implies$
+    \[ \implies w = \frac{(1-2i)dz - d}{dz + d} \, \overset{1) \text{ and } 3)}{=} \, \frac{(1-2i)z - 1}{z + 1}, \quad d \neq 0 \]
+\end{soln}
+\end{example}
+
+\begin{example}\label{example:16.4} Find the image of the upper-half circle $D = \{z \in \mathbb{C}: |z| < 1, \text{Im } z > 0\}$ under the Möbius transformation $w = \frac{i-iz}{1+z}$.
+
+\end{example}
+\begin{soln}
+    
+     First, let us see what is the image of the boundary of the upper half circle under this transformation.
+
+    \includegraphics{img_graph7.pdf}
+
+The boundary contains two parts: the interval $AB$ and the half circle $BCA$: $\partial D = AB \cup BCA$.
+
+First we find the image of $AB$.
+
+Since the Möbius transformation maps a line either to a line or to circle it suffices to find an image of any 3 points on the boundary, since line and circle both uniquely determined by 3 points. Choose: $z_1 = -1, z_2 = 0, z_3 = 1$. The direction of $AB$ is from $A$ to $B$, namely from $z_1$ to $z_3$, the direction on the $w$-plane will be from $w_1$ to $w_3$.
+
+For $z_1 = -1 \to w_1 = \infty; z_2 = 0 \to w_2 = i; z_3 = 1 \to w_3 = 0$.
+
+$\implies$ The interval $AB$ is mapped to the upper half of the $v$-axis with direction from infinity to zero.
+
+\includegraphics{img_graph8.pdf}
+
+Let us study the image of the upper half of the unit circle $BCA$. The images of $A$ and $B$ will be $w_1$ and $w_3$ respectively. Let us find the image of the point $C = z_4 = i \implies w_4 = \frac{i-i^2}{1+i} = \frac{1+i}{1+i} = 1$.
+
+Namely, the points $B$, $C$, $A$ on the circle are mapped to the points $w_3, w_4, w_1$ (respectively) that are (all) on the positive half of the real axis in direction from the origin to $\infty$.
+
+\includegraphics{img_graph9.pdf}
+
+Conclusion: the boundary in the $w$-plane is the positive half of the $v$-axis and the positive half of the $u$-axis, thus $D$ is mapped either to a first quadrant or to the plane
+without the first quadrant (since they both have the same boundary). To see to which one we need to understand where to the interior points of this upper half circle are mapped, since the interior points in the $z$-plane are mapped to interior points in the $w$-plane. Let us take some interior point.
+
+Take $z = \frac{1}{2}i \in D \implies w = \frac{i - \frac{1}{2}i^2}{1 + \frac{1}{2}i} = \frac{\frac{1}{2} + i}{\frac{1}{2}(2+i)} = \frac{(\frac{1}{2} + i)(1 - \frac{1}{2}i)}{5/4} = \frac{4}{5} + i\frac{3}{5} \in$ I-st quadrant since $x, y \geq 0 \implies$ the image = $\{w: 0 < \arg w < \frac{\pi}{2}\}$, namely the first quadrant of the w-plane.
+
+\includegraphics{img_graph10.pdf}
+\end{soln}
+
+\begin{example} \label{example:16.5} Find the Möbius transformation sending $-1 \to i, 0 \to 1, i \to -i$.
+    \begin{soln}
+         Let us plug the values to get:
+\begin{enumerate}
+    \item $i = \frac{a+b}{c+d}$
+    \item $1 = \frac{b}{d}$
+    \item $-i = \frac{ai+b}{ci+d}$
+\end{enumerate}
+
+From 2) $b = d$ (thus we can eliminate the other variables in the remaining equations).
+\[ \begin{cases}
+-ci + bi = -a + b \\
+-ci - bi = a + b
+\end{cases}
+\implies
+\begin{cases}
+a = -bi \\
+c = bi
+\end{cases}
+\implies w = \frac{-ibz + b}{ibz + b} = \frac{z+i}{-z+i} \]
+\end{soln}
+\end{example}
+
+\checkthis{} Under $w$: the real axis $\mathbb{R}$ is mapped to the unit circle ($\mathbb{R}_+$ to the lower half, $\mathbb{R}_-$ to the upper half). The upper half of the $z$-plane is mapped to the exterior of this circle (first quadrant - lower exterior, second quadrant - upper one).
+
+Harder exercise - Prove: Given any 3 distinct points $z_1, z_2, z_3$ in the z-plane and any 3 points $w_1, w_2, w_3$, there exists a Möbius transformation sending $z_j \to w_j$ for each $j = 1, 2, 3$. This transformation is unique if we specify an orientation for the curve containing the 3 given points (or for the curve containing the prescribed points, but not both).
+

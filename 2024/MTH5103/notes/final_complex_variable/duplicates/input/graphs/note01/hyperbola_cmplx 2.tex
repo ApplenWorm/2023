@@ -1,0 +1,30 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{amsmath}
+
+\begin{document}
+\begin{tikzpicture}[scale=1]
+
+  % Axes
+  \draw[->] (-5,0) -- (5,0);
+  \draw[->] (0,-4) -- (0,4);
+
+  % Define 'a' and 'b'
+  \def\a{2}
+  \def\b{1.5}
+
+  % Asymptotes (longer)
+  \draw[blue!70] (-4.5,-4.5*\b/\a) -- (4.5,4.5*\b/\a) node[above right] {$\frac{b}{a}x$};
+  \draw[blue!70] (-4.5,4.5*\b/\a) -- (4.5,-4.5*\b/\a);
+  \node[blue!70] at (-4, 3.5) {$-\frac{b}{a}x$}; % Label at top left
+
+  % Hyperbola (shorter branches)
+  \draw[red, thick, domain=-2:2, samples=100] plot ({\a*cosh(\x)}, {\b*sinh(\x)});
+  \draw[red, thick, domain=-2:2, samples=100] plot ({-\a*cosh(\x)}, {\b*sinh(\x)});
+
+  % Points (a,0) and (-a,0)
+  \draw[fill=black] (\a,0) circle (1pt) node[below] {$(a,0)$};
+  \draw[fill=black] (-\a,0) circle (1pt) node[below] {$(-a,0)$};
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,1326 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.23)  3 MAR 2025 19:27
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex
+(/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:2: Undefined control sequence.
+l.2 \section
+            *{Week 9. Lecture 22.}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:2: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \section*
+             {Week 9. Lecture 22.}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no * in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 2--3
+[]
+ []
+
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:4: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 I
+     n this lecture we are going to see more examples of classification of s...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 4--5
+[]
+ []
+
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:6: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \textbf{Ex 18.4:}
+                      What type of singularity does $f(z) = \frac{e^z - 1}{z...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no W in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 6.
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no ? in font nullfont!
+
+Overfull \hbox (33.62492pt too wide) in paragraph at lines 6--7
+[]\OT1/cmr/bx/n/10 Ex
+ []
+
+
+Overfull \hbox (23.63876pt too wide) in paragraph at lines 6--7
+\OT1/cmr/bx/n/10 18.4:
+ []
+
+
+Overfull \hbox (29.39587pt too wide) in paragraph at lines 6--7
+\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (20.55873pt too wide) in paragraph at lines 6--7
+[]$
+ []
+
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:8: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 S
+     ol: The Laurent series of $f(z)$ about $z=0$ is given by:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 8--9
+[]
+ []
+
+
+Overfull \hbox (18.84036pt too wide) in paragraph at lines 8--9
+\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (15.64581pt too wide) in paragraph at lines 8--9
+\OML/cmm/m/it/10 z \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 8--9
+\OT1/cmr/m/n/10 0$
+ []
+
+
+Overfull \hbox (328.57504pt too wide) detected at line 9
+\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z\OT1/cmr/m/n/10 ) = [] [] = [] [] = 1 + [] + [] + []
+ []
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Undefined control sequence.
+l.10 ...art of the Laurent series is $= 0 \implies
+                                                  $ it is a removable singul...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing } inserted.
+<inserted text> 
+                }
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I'm guessing that you meant to end an alignment here.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Misplaced \cr.
+<inserted text> \cr 
+                    
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10: Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.10 ...Define $\tilde{f}(z) = \begin{cases} \frac
+                                                  {e^z - 1}{z} & z \neq 0 \\...
+(That makes 100 errors; please try again.) 
+Here is how much of TeX's memory you used:
+ 21 strings out of 473201
+ 633 string characters out of 5716126
+ 393988 words of memory out of 5000000
+ 23370 multiletter control sequences out of 15000+600000
+ 559145 words of font info for 37 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 18i,8n,20p,367b,66s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+/home/jonzoda/Documents/school/2024/MTH5103/notes/final_complex_variable/input/note08.tex:10:  ==> Fatal error occurred, no output PDF file produced!

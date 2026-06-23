@@ -1,0 +1,371 @@
+%\usepackage{xr}
+
+% \externaldocument{note01}
+% \externaldocument{note02}
+% \externaldocument{note03}
+% \externaldocument{note04}
+% \externaldocument{note05}
+% \externaldocument{note06}
+% \externaldocument{note07}
+% \externaldocument{note08}
+% \externaldocument{note09}
+% \externaldocument{note10}
+% \externaldocument{note11}
+
+\graphicspath{{./input/graphs/note09/}}
+
+
+% \zexternaldocument{note01}
+% \zexternaldocument{note02}
+% \zexternaldocument{note03}
+% \zexternaldocument{note04}
+% \zexternaldocument{note05}
+% \zexternaldocument{note06}
+% \zexternaldocument{note07}
+% \zexternaldocument{note08}
+% \zexternaldocument{note09}
+% \zexternaldocument{note10}
+% \zexternaldocument{note11}
+% \externaldocument{note12}
+
+
+
+\week{10}
+\lecture{25}{continuation of Integrals, i guess...}
+
+We have started to study the complex integration, formulated and proved Prop~\ref{proposition:17.3} about contour integrals. We conclude the following useful corollary.
+
+\subsection{Antiderivatives and contour integrals}
+
+\begin{corollary}\label{corollary:17.4}
+    Let $f$ be continuous on a domain $D$, with antiderivative $F$ on $D$.
+    \begin{enumerate}
+        \item If $C_1$ and $C_2$ are any two contours both starting at $z_0$ and both ending at $z_1$, then $\int_{C_1} f(z) dz = \int_{C_2} f(z) dz$.
+        \item If $C$ is a closed contour in $D$, then $\int_C f(z) dz = 0$.
+    \end{enumerate}
+\end{corollary}
+\begin{proof}
+    \begin{enumerate}
+        \item Immediate from Prop~\ref{proposition:17.3} 4)
+        \item If $C$ is a closed contour, then we can write $C = C_1 - C_2$, where $C_1$ and $C_2$ have the same start point and the same end point. Then
+        \[  \int_C f(z) dz = \int_{C_1 - C_2} f(z) dz = \int_{C_1} f(z) dz + \int_{-C_2} f(z) dz = \int_{C_1} f(z) dz - \int_{C_2} f(z) dz = 0 \]
+        Prop 17.3 1)
+    \end{enumerate}
+    
+\end{proof}
+Note: The condition that $f$ has antiderivative is necessary!
+
+\begin{example}\label{example:19.11} 
+    Compute $\int_C f(z) dz$ where $f(z) = \bar{z}$ and $C$ connects 2 points $z_0 = 0, z_1 = 2 + 4i$
+    \begin{enumerate}
+        \item by straight line segment
+        \item by parabola (part of it) $y = x^2$
+    \end{enumerate}
+\begin{soln}
+    \begin{enumerate}
+        \item Straight line connecting 0 and $2 + 4i$ is parametrized by $\gamma(t) = (2+4i)t, 0 \leq t \leq 1$. 
+        Thus, \[\int_C f(z) dz = \int_0^1 \overline{f(\gamma(t))} \gamma'(t) dt = \int_0^1 (2+4i) dt = \int_0^1 20t dt = 10.\]
+        \item Parametrization: $\gamma(t) = t + it^2, 0 \leq t \leq 2$, and 
+        \begin{align*}
+            \int_C f(z) dz &= \int_0^2 \overline{f(\gamma(t))} \gamma'(t) dt = \int_0^2 (t-it^2)(1+2it) dt \\ 
+            &= \int_0^2 (t-it^2)(1+2it) dt = \int_0^2 (t + it^2 + 2t^3) dt = 10 + i\frac{8}{3} (\neq 10).
+        \end{align*}
+        $\bar{z}$ does not have an antiderivative!
+    \end{enumerate}
+\end{soln}
+\end{example}
+
+\begin{example}\label{example:19.12} 
+    Let $C_1$ be the contour from $-1$ to $1$ along the upper unit semicircle and $C_2$ the contour from $-1$ to $1$ along the 
+lower unit semicircle. Compute $\int_{C_1} \frac{1}{(z-4)^2} dz$.
+\begin{soln}
+
+\includegraphics{img_graph1.pdf}
+
+    \emphi{Note:} $\int_{C_1 - C_2} \frac{1}{(z-4)^2} dz = 0$. This is an analytic function on the unit circle, the only singularity is a 
+    pole of order 2 at $z = 4$ - outside the unit circle, with antiderivative $-\frac{1}{z-4}$.
+    
+    $\implies$ By Cor~\ref{corollary:17.4} 2): 
+    \[ \int_{C_1-C_2}^{} \frac{1}{(z-4)^2} dz = 0.\]
+    
+    $C_1 - C_2$ is a closed contour; the unit circle.
+    \[ \implies \int_{C_1} \frac{dz}{(z-4)^2} = \int_{C_2} \frac{dz}{(z-4)^2} = -\frac{1}{z-4}|_{-1}^1 = \frac{1}{-3} - \frac{1}{-5} = \frac{2}{15} .\]
+\end{soln}
+\end{example}
+
+\begin{example} \label{example:19.13} Compute $\int_C \frac{dz}{(z-z_0)^n}$, where $C = \{z \in \mathbb{C}: |z-z_0| = R\}$ and $n$ is some integer.
+\begin{soln}
+         $C$ is a circle centered at $z_0$ of radius $R$. Parametrization of $C$: $|z-z_0| = R \implies (x-x_0)^2 + (y-y_0)^2 = R^2$. 
+    Take $x-x_0 = R\cos t, y - y_0 = R\sin t, 0 \leq t \leq 2\pi$, then by Euler's formula $z - z_0 = R(\cos t + i\sin t) = Re^{it}, 0 \leq t \leq 2\pi \implies dz = iRe^{it} dt$.
+\end{soln}
+\end{example}
+
+By Def~\ref{definition:17.7} (of the contour integral) 
+\[ \int_C \frac{dz}{(z-z_0)^n} = \int_0^{2\pi} \frac{iRe^{it}}{R^n e^{int}} dt = \frac{i}{R^{n-1}} \int_0^{2\pi} e^{i(1-n)t} dt.\]
+
+Consider two cases:
+\begin{align*}
+     n &= 1: &\int_C \frac{dz}{z-z_0} &= i \int_0^{2\pi} dt = 2\pi i \\
+     n &\neq 1: &\int_C \frac{dz}{(z-z_0)^n} &= \frac{i}{R^{n-1}} \int_0^{2\pi} e^{i(1-n)t} dt \\
+     &&&= \frac{i}{(1-n)R^{n-1}} e^{i(1-n)t} |_0^{2\pi} \\
+      &&&= \frac{1}{(1-n)R^{n-1}} [e^{i(1-n)2\pi} - 1] = 0\\
+\end{align*}
+\{$e^{2\pi ki} = 1 \quad \forall k \in \mathbb{Z}$\}.
+
+\begin{example}\label{example:19.14} Compute $\int_C \frac{dz}{\sqrt{z}}$ where $C = \{f(x,y): x^2 + y^2 = 16, y \geq 0\}$, and the branch of $\sqrt{z}$ is such that $\sqrt{4} = -2$.
+\begin{soln}
+    Note: the contour is the upper half of the circle centered at $0$ of radius $4$.
+    
+    Rewrite: $C = \{z \in \mathbb{C}: |z| = 4, \text{Im } z > 0\} \implies$ if $z \in \mathbb{C}$, then $z = 4e^{it}$ for $0 \leq t \leq \pi$.
+    
+	\includegraphics{img_graph2.pdf}
+	
+    $\sqrt{z}$ attains $2$ values: $w_1 = \sqrt{4e^{it}} = 2e^{i\frac{t}{2}}$ and $w_2 = \sqrt{4e^{it}} = 2e^{i(\frac{t}{2} + \pi)}$.
+    
+    If $t = 0: w_1 = \sqrt{4} = 2e^0 = 2$ and $w_2 = \sqrt{4} = 2e^{i\pi} = -2 \implies$ the given branch is $w_2$.
+    Now we compute: 
+    \[\sqrt{z} = 2e^{i(\frac{t}{2} + \pi)}, dz = 4ie^{it} dt\]
+    \begin{align*}
+      \implies \int_C \frac{dz}{\sqrt{z}} & = \int_0^\pi \frac{4ie^{it}}{2e^{i(\frac{t}{2} + \pi)}} dt \\
+     & = 2i \int_0^\pi e^{i(\frac{t}{2} - \pi)} dt = 4e^{i(\frac{t}{2} - \pi)}|_0^\pi \\
+     & = 4(e^{-i\frac{\pi}{2}} - e^{-i\pi}) = 4(-i + 1)
+    \end{align*}
+    \[ \{\because e^{-i\frac{\pi}{2}} = \cos \frac{\pi}{2} - i\sin \frac{\pi}{2} = -i\}.\]
+\end{soln}
+\end{example}
+
+The estimate in Prop
+ %17.2
+~\ref{proposition:17.2} for the size of an integral of a complex-valued function of a real variable also has an important consequence for contour integrals.
+\begin{proposition}[ML Inequality]\label{proposition:17.5} Let $C$ be a contour. If $|f(z)| \leq M$ for all $z \in C$ and Length ($C$) = $L$, then $|\int_C f(z) dz| \leq ML$.
+\end{proposition}
+\begin{proof}
+    $|\int_C f(z) dz| = |\int_a^b f(\gamma(t)) \gamma'(t) dt| \leq \int_a^b |f(\gamma(t))| |\gamma'(t)| dt$
+    $\leq M \int_a^b |\gamma'(t)| dt \overset{\text{Def 17.5}}{=} ML$.
+\end{proof}
+
+Now that we have defined contour integrals and discussed some of their properties, we concentrate on one of the key theorems of complex analysis - Cauchy's Theorem.
+\section{Cauchy's Theorem}
+
+\subsection{Star-shaped and convex domains}
+
+\begin{definition} \label{definition:18.1} $U \subseteq \mathbb{C}$ is convex if for all $z_1, z_2 \in U$, the line segment $[z_1, z_2] = \{tz_2 + (1-t)z_1: 0 \leq t \leq 1\}$ (is contained in $U$).
+    
+$U \subseteq \mathbb{C}$ is star-shaped about $w$ if for all $z \in U$, the line segment $[z, w] \subseteq U$.
+\end{definition}
+
+\begin{remark}
+    Any convex set is star-shaped, but not every star-shaped set is convex: look at 
+
+	\includegraphics{img_graph3.pdf}
+	
+	- it is star-shaped about $w$ (in the center),
+    but it is not convex - the line segment connecting any two neighboring corners is not contained in this set.
+\end{remark}
+
+\begin{remark}
+    Set is convex if and only if it is star-shaped with respect to any point in that set. Note: star-shaped set is always path-connected, thus it is always connected.
+\end{remark}
+
+Our goal now is to prove Cauchy's Theorem for star-shaped domains.
+\begin{theorem}[Cauchy's Theorem for star-shaped domains] \label{theorem:18.1}
+    Let $f$ be a function which is analytic on an open star-shaped region $U \subseteq \mathbb{C}$. 
+    Then, for every closed contour $C$ in $U$ $\int_C f(z) dz = 0$.
+\end{theorem}
+\begin{proof}
+    
+    It will suffice to show that $f$ has an antiderivative $F$ on $U$, since then by 
+    Cor~\ref{corollary:17.4} 2) we will conclude for a closed contour $C$ that $\int_C f(z) dz = 0$.
+    
+    Define: $F(z) = \int_{[w, z]} f(\xi) d\xi$, where $w$ is such that $U$ is star-shaped 
+    about $w$, and $[w, z]$ is the straight line segment from $w$ to $z$.
+    
+    \begin{claim}
+                $F$ is differentiable and $F'(z) = f(z)$.
+    \end{claim}
+        \begin{proof}[Proof of claim]
+            Consider $\frac{F(z) - F(z_0)}{z - z_0} = \frac{1}{z-z_0} [\int_{[w, z]} f(\xi) d\xi - \int_{[w, z_0]} f(\xi) d\xi]$.
+            Suppose we could show that (*) 
+            \begin{equation}\label{equation:cauchy_theorem_for_triangle}
+            \int_{[w, z]} f(\xi) d\xi - \int_{[w, z_0]} f(\xi) d\xi = \int_{[z_0, z]} f(\xi) d\xi. \tag{*}
+            \end{equation}
+            
+            Then, by (\ref{equation:cauchy_theorem_for_triangle}): $\frac{F(z) - F(z_0)}{z - z_0} = \frac{1}{z-z_0} \int_{[z_0, z]} f(\xi) d\xi$.
+            
+            $f$ is analytic on $U \implies$ by Prop~\ref{proposition:6.5} $f$ is continuous on $U \implies$ for every $\epsilon > 0$ there 
+            exists $\delta > 0$ s.t. if $|z - z_0| < \delta$, then $|f(z) - f(z_0)| < \epsilon$.
+            $\implies$ If $|z - z_0| < \delta$, then $|\int_{[z_0, z]} f(\xi) d\xi - \int_{[z_0, z]} f(z_0) d\xi| < \epsilon |z - z_0|$, 
+            since $|\int_{[z_0, z]} f(\xi) d\xi - \int_{[z_0, z]} f(z_0) d\xi| \leq \epsilon |z - z_0|$.
+            
+            Thus: $|\frac{F(z) - F(z_0)}{z - z_0} - f(z_0)| < \epsilon \implies$ $F$ is differentiable at $z_0$, 
+            with derivative $F'(z_0) = f(z_0) \implies$ 
+        \end{proof}
+    We proved Cauchy's Theorem up to (*). It remains to prove (*) which is Cauchy's Theorem for a Triangle.
+\end{proof}
+
+\lecture{26+27}{Cauchy theorem for a Triangle, and other stuff...}
+
+We have proved Cauchy's Theorem for star-shaped domains up to: (*) $\int_{[w, z]} f(\xi) d\xi - \int_{[w, z_0]} f(\xi) d\xi = \int_{[z_0, z]} f(\xi) d\xi$, which is Cauchy's Theorem for a Triangle.
+Now we prove it.
+
+\subsection{Cauchy's Theorem for triangles}
+\begin{theorem}[Cauchy's Theorem for a triangle]\label{theorem:18.2}
+    Let $f$ be analytic in a domain $U$ containing a triangle $T$. Then: $\int_{\partial T} f(z) dz = 0$.
+\end{theorem}
+\begin{proof}
+    Let $\eta(T) = \int_{\partial T} f(z) dz$, denote the length of $\partial T$ by $L$.
+    
+	\includegraphics{img_graph4.pdf}
+	
+    Divide $T$ into 4 triangles $T^{(j)}$ by bisecting the sides of $T$.
+    
+	\includegraphics{img_graph5.pdf}
+
+    By orienting each of the boundaries $\partial T^{(j)}$ of the subtriangles anticlockwise, 
+we have: $\eta(T) = \sum_{j=1}^4 \eta(T^{(j)})$ \{the internal edges of each of the subtriangles $T^{(j)}$ will cancel out\}. 
+Each $T^{(j)}$ has a boundary with Length $(\partial T^{(j)}) = \frac{L}{2}$. At least one of the $T^{(j)}$ must satisfy $|\eta(T^{(j)})| \geq \frac{1}{4} |\eta(T)|$. Call this triangle $T_1$.
+    
+    Divide $T_1$ into 4 triangles in the same way as $T$ and conclude that one of these triangles, $T_2$, satisfies $|\eta(T_2)| \geq \frac{1}{4} |\eta(T_1)| \geq \frac{1}{4^2} |\eta(T)|$, 
+Length $(\partial T_2) = \frac{L}{4}$. 
+
+\includegraphics{img_graph6.pdf}
+
+Repeating this procedure, we construct a sequence of 
+triangles $T_1 \supset T_2 \supset T_3 \supset \dots \supset T_n \supset \dots$ with $|\eta(T_n)| \geq \frac{1}{4^n} |\eta(T)|$ and Length $(\partial T_n) = \frac{L}{2^n}$. 
+Let $z_0$ be the point of intersection $\bigcap_{n=1}^\infty T_n$ \{exists and unique by Cantor Lemma or (**)\}. 
+Since $f$ is differentiable at $z_0$, given any $\epsilon > 0$ there exists $\delta > 0$ such that for $|z - z_0| < \delta$ we have $|f(z) - f(z_0) - f'(z_0)(z-z_0)| < \epsilon |z - z_0|$.
+
+Take $n$ such that $\frac{L}{2^n} < \delta$. Then $\epsilon |z - z_0| < \frac{L\epsilon}{2^n}$ for every $z \in \partial T_n$, so 
+$|\int_{\partial T_n} [f(z) - f(z_0) - f'(z_0)(z-z_0)] dz| \leq \frac{L\epsilon}{2^n} \cdot \frac{L}{2^n} = \frac{L^2}{4^n} \epsilon$.
+
+However: $\int_{\partial T_n} [f(z_0) + f'(z_0)(z-z_0)] dz = 0$, since $f(z_0) + f'(z_0)(z-z_0)$ has antiderivative $z f(z_0) + f'(z_0)(\frac{z^2}{2} - z z_0)$ and $\partial T_n$ is a closed 
+curve (Cor~\ref{corollary:17.4}). Hence: $|\eta(T_n)| = |\int_{\partial T_n} f(z) dz| \leq (\frac{L^2}{4^n}) \epsilon$.
+
+On the other hand we KNOW that $|\eta(T_n)| \geq \frac{1}{4^n} |\eta(T)|$
+$\implies |\eta(T)| \leq \epsilon L^2$. Since $\epsilon > 0$ is arbitrary $\implies \eta(T) = 0$.
+
+\end{proof}
+(**) Existence of $z_0$: On each step of the process choose $z_n \in T_n$ (a point) and obtain an infinite sequence $\{z_n\}_{n=1}^\infty$. Then:
+
+    \begin{enumerate}
+        \item $\{z_n\}$ is a Cauchy sequence, namely, for any $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that for any pair $n, m > N$, $|z_n - z_m| < \epsilon$.
+        
+        First, it is bounded. Set $\epsilon = 1$ and choose N such that for any $n, m \in \mathbb{N}$, $|z_n - z_m| < 1$ (using that $\{z_n\}$ is a Cauchy sequence).
+        Namely: (*) $||z_n| - |z_m|| < |z_n - z_m| < 1$. Fix $m_0 \in \mathbb{N}$.
+        From (*) for all $n > N$, $|z_{m_0}| - 1 < |z_n| < |z_{m_0}| + 1 \implies$ for 
+        all $n \geq 1$, $\min\{|z_1|, \dots, |z_{m_0}-1|, |z_{m_0}|+1\} \leq |z_n| \leq \max\{|z_1|, \dots, |z_{m_0}-1|, |z_{m_0}|+1\}$ $\implies$ it is bounded.
+        Now apply to $\{z_n\}$ Bolzano-Weierstrass Thm and obtain a converging subsequence $\{z_{n_k}\}, \lim_{k \to \infty} z_{n_k} = z_0$ (apply separately to Re $z_n$ and Im $z_n$).
+        \item $\lim z_n = z_0$: Fix $\epsilon > 0$, choose $N_1$ s.t. $\forall n, m > N_1, |z_n - z_m| < \frac{\epsilon}{2}$ (Cauchy property).
+        Choose $N_2$ so that $\forall n_k > N_2$ and such that $z_{n_k}$ belongs to the subsequence. 
+        We have: $|z_0 - z_{n_k}| < \frac{\epsilon}{2}$ (use that $\lim_{k \to \infty} z_{n_k} = z_0$). 
+        Set $N = \max(N_1, N_2)$ and fix $n_k > N$ such that $z_{n_k}$ belongs to the subsequence. 
+        Then, for any $n > N$,
+        \begin{align*}
+            |z_0 - z_n| = |z_0 - z_{n_k} + z_{n_k} - z_n| &\leq |z_{n_k} - z_0| + |z_n - z_{n_k}| < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon \\ 
+            &\implies \lim_{n \to \infty} z_n = z_0.
+        \end{align*} 
+        \item Let us show that $\{z_n\}$ is a Cauchy sequence: $z_1 \in T_1, z_2 \in T_2, \dots$ 
+        Since the diameter of each triangle shrinks by a factor 2 (at each generation) and since 
+        diam $(T_n) \leq$ Length $(\partial T_n)$ we get for sufficiently large $n: |z_n - z_m| <$ Length $(\partial T_n) < \frac{L}{2^n} < \epsilon \implies \{z_n\}$ is a 
+        Cauchy sequence that converges to $z_0$.
+    \end{enumerate}
+
+From the statement of Cauchy's Theorem for a star-shaped region, one can deduce the same result for more general regions comprised of star-shaped pieces.
+
+From Thm~\ref{theorem:18.1} follows: If a curve $C$ can be expressed as $C = C_1 + C_2 + \dots + C_N$ where the region enclosed by each $C_j$ is star-shaped, then
+$\int_C f(z) dz = \int_{C_1} f(z) dz + \int_{C_2} f(z) dz + \dots + \int_{C_N} f(z) dz = 0$.
+
+As a consequence one can prove:
+\begin{theorem}[Cauchy's Theorem]\label{theorem:18.3} 
+    If $C$ is any simple, closed contour in $\mathbb{C}$ and $f$ is analytic 
+    everywhere on and inside $C$, then $\int_C f(z) dz = 0$.
+\end{theorem}
+
+One of very useful corollaries of this theorem is the Deformation Principle.
+\begin{corollary}[Deformation Principle]\label{corollary:18.4.deformation}
+    Let $C_1$ and $C_2$ be two simple, closed, positively oriented contours such that $C_1$ lies 
+    interior to $C_2$. If $f$ is analytic in a domain $D$ that contains both $C_1$ and $C_2$ and the 
+    region between them, then $\int_{C_1} f(z) dz = \int_{C_2} f(z) dz$.
+\end{corollary}
+
+The picture that you should have in mind here is where $D$ is a domain that contains both curves and the region between them: 
+ 
+\includegraphics{img_graph7.pdf}
+
+\begin{proof}
+    The main idea of the proof is to divide the region between $C_1$ and $C_2$ by "cuts" into star-shaped regions.
+    Construct 2 disjoint contours (or cuts) $L_1$ and $L_2$ that join $C_1$ and $C_2$. The contour $C_1$ is 
+    cut into 2 contours $C_1^*$ and $C_1^{**}$ and the contour $C_2$ is cut into $C_2^*$ and $C_2^{**}$.
+    
+	\includegraphics{img_graph8.pdf}
+	
+	\includegraphics{img_graph9.pdf}
+	
+    Now form 2 new contours: $K_1 = -C_1^* + L_1 + C_2^* - L_2$ \{-$L_2, -C_1^*$ since we have changed the orientation\}, $K_2 = -C_1^{**} + L_2 + C_2^{**} - L_1$.
+    
+    $K_{1,2}$ - new contours, $D_{1,2}$ - new domains.
+    
+    Now we can apply Thm~\ref{theorem:18.3} (Cauchy's Thm) 
+    to the contours $K_1$ and $K_2$ and obtain: $\int_{K_1} f(z) dz = 0 \quad \int_{K_2} f(z) dz = 0$.
+    
+    Adding contours (to reconstruct the original one) gives us: 
+    \[ K_1 + K_2 = -C_1^* + L_1 + C_2^* - L_2 - C_1^{**} + L_2 + C_2^{**} - L_1 = C_2^* + C_2^{**} - (C_1^* + C_1^{**}) = C_2 - C_1.\]
+    \begin{align*}
+                \implies 0 = \int_{K_1} f(z) dz + \int_{K_2} f(z) dz &= \int_{K_1 + K_2} f(z) dz = \int_{C_2 - C_1} f(z) dz \\ 
+                &= \int_{C_2} f(z) dz - \int_{C_1} f(z) dz.
+            \end{align*}
+            % \]
+    
+    Namely: $\int_{C_2} f(z) dz = \int_{C_1} f(z) dz$.
+\end{proof}
+
+Now we can give an alternative proof to Ex~\ref{example:19.13}. It is an important tool for computations.
+\begin{corollary}\label{corollary:18.5} Let $z_0 \in \mathbb{C}$ be fixed. If $C$ is a simple, closed, positively oriented 
+    contour such that $z_0$ lies interior to $C$, then $\int_C \frac{dz}{(z-z_0)^n} = \begin{cases} 2\pi i & n = 1 \\ 0 & n \neq 1, n \in \mathbb{Z} \end{cases}$.
+\end{corollary}
+\begin{proof}
+    Since $z_0$ lies interior to $C$, we can choose $R$ so that the circle $C_R$ with center $z_0$ and radius $R$ lies interior to $C$.
+        Hence, $f(z) = \frac{1}{(z-z_0)^n}$ is analytic in a domain $D$ that contains both $C$ and $C_R$ and the region 
+        between them \{we excluded the only singularity of $f$ $z = z_0$, everywhere else $f$ is analytic\}.
+		
+		\includegraphics{img_graph10.pdf}
+    
+    As in Ex~\ref{example:19.13}: let $C_R$ be parametrized by: $z(\theta) = z_0 + Re^{i\theta}, 0 \leq \theta \leq 2\pi$, $dz(\theta) = iRe^{i\theta} d\theta$.
+    
+    The deformation principle implies that 
+    \begin{align*}
+                \int_C \frac{dz}{(z-z_0)^n} &= \int_{C_R} \frac{f(z) dz}{(z-z_0)^n} = \int_0^{2\pi} \frac{iRe^{i\theta}}{R^n e^{in\theta}} d\theta = \frac{i}{R^{n-1}} \int_0^{2\pi} e^{i(1-n)\theta} d\theta \\
+                &= \begin{cases} i \int_0^{2\pi} d\theta = 2\pi i & n = 1 \\ \frac{1}{(1-n)R^{n-1}} e^{i(1-n)\theta} |_0^{2\pi} = \frac{1}{(1-n)R^{n-1}} - \frac{1}{(1-n)R^{n-1}} = 0 & n \neq 1 \end{cases}.
+    \end{align*}
+\end{proof}
+
+More generally, a similar proof to the one used for the Deformation Principle, gives
+\begin{corollary}\label{corollary:18.6}
+    If $C$ is a simple, closed, positively oriented contour, and $C_1, C_2, \dots, C_n$ are simple, closed, positively 
+    oriented contours inside $C$ with disjoint interiors, and $f$ is analytic in the region between $C$ and $C_1, C_2, \dots, C_n$, 
+    then $\int_C f(z) dz = \int_{C_1} f(z) dz + \int_{C_2} f(z) dz + \dots + \int_{C_n} f(z) dz$.
+\end{corollary}
+
+The picture to have in mind is:
+
+\includegraphics{img_graph11.pdf}
+
+\begin{example}\label{example:20.1}
+    Compute $\int_C \frac{z}{(z-4)^2} dz$, where $C$ is the contour defined by traversing once the square with vertices $\pm 3i, 6 \pm 3i$ anticlockwise.
+\begin{soln}
+    To compute this integral we apply the Deformation principle (\ref{corollary:18.4.deformation}) and
+    observe that $\int_C \frac{z dz}{(z-4)^2} = \int_{C'} \frac{z dz}{(z-4)^2}$, where $C'$ is the circular 
+    contour centered at 4 of radius 1. 
+	
+	\includegraphics{img_graph12.pdf}
+	
+    In particular, $C'$ may be parametrized by the path $\gamma(t) = 4 + e^{2\pi i t}, 0 \leq t \leq 1$
+    \begin{align*}
+            \implies \int_{C'} \frac{z dz}{(z-4)^2} &= \int_0^1 \frac{4 + e^{2\pi i t}}{e^{4\pi i t}} 2\pi i e^{2\pi i t} dt \\
+            &= 2\pi i \int_0^1 (4e^{-2\pi i t} + 1) dt = 2\pi i [-\frac{2}{\pi i}e^{-2\pi i t} + t]|_0^1 \\ 
+            &= [-4e^{-2\pi i t} + 2\pi i t]|_0^1 = -4 + 2\pi i - (-4 + 0) = 2\pi i.
+    \end{align*}
+    
+\end{soln}
+\end{example}
+

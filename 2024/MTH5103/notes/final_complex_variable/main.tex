@@ -1,0 +1,251 @@
+%%--------------------------------------------------------
+%% example.tex
+%%
+%%--------------------------------------------------------
+\documentclass[12pt]{article}
+% \input{prefix}%
+\usepackage{xr-hyper}
+\usepackage[sexy]{styles/evan}
+% \usepackage{fontspec}
+% \usepackage{emoji}
+\usepackage{xcolor}
+\usepackage{xr}
+\usepackage{zref-xr}
+\usepackage{graphicx}
+\usepackage{zref-user}
+\usepackage{zref}
+
+
+% % #### for labeling and referencing START
+% \zexternaldocument{input/note01}
+% \zexternaldocument{input/note02}
+% \zexternaldocument{input/note03}
+% \zexternaldocument{input/note04}
+% \zexternaldocument{input/note05}
+% \zexternaldocument{input/note06}
+% \zexternaldocument{input/note07}
+% \zexternaldocument{input/note08}
+% \zexternaldocument{input/note09}
+% \zexternaldocument{input/note10}
+% \zexternaldocument{input/note11}
+% \zexternaldocument{input/note12}
+% \zexternaldocument{input/note13}
+% \zexternaldocument{input/note14}
+% % \externaldocument{input/note15}
+% % \externaldocument{input/note01}
+
+% ############### END
+
+% #### for labeling and referencing START
+% \externaldocument{input/note01}
+% \externaldocument{input/note02}
+% \externaldocument{input/note03}
+% \externaldocument{input/note04}
+% \externaldocument{input/note05}
+% \externaldocument{input/note06}
+% \externaldocument{input/note07}
+% \externaldocument{input/note08}
+% \externaldocument{input/note09}
+% \externaldocument{input/note10}
+% \externaldocument{input/note11}
+% \externaldocument{input/note12}
+% \externaldocument{input/note13}
+% \externaldocument{input/note14}
+% \externaldocument{input/note15}
+% \externaldocument{input/note01}
+
+% ############### END
+
+
+\newcommand{\verifythis}{\textbf{\textcolor{red}{Check!}}}
+
+\providecommand{\BibLatexMode}[1]{}
+\providecommand{\BibTexMode}[1]{}
+
+\ifx\UseBibLatex\undefined%
+  \renewcommand{\BibLatexMode}[1]{}
+  \renewcommand{\BibTexMode}[1]{#1}
+\else
+  \renewcommand{\BibLatexMode}[1]{#1}
+  \renewcommand{\BibTexMode}[1]{}
+\fi
+
+%%%
+
+
+%%%
+
+
+%%%%
+
+\newcommand{\checkthis}[1]{\vspace{5pt}
+\noindent\textcolor{blue}{\textbf{Check:}} #1\vspace{5pt}}
+
+\newcommand{\week}[1]{\section*{Week #1}}
+\newcommand{\lecture}[2]{\subsection*{Lecture #1: #2}}
+%%%%
+
+% \newtheorem{theorem}{Theorem}[section]
+
+
+%%
+
+\providecommand{\emphind}[1]{}%
+\renewcommand{\emphind}[1]{\emph{#1}\index{#1}}
+
+\definecolor{blue25emph}{rgb}{0, 0, 11}
+
+\providecommand{\emphic}[2]{}
+\renewcommand{\emphic}[2]{\textcolor{blue25emph}{%
+\textbf{\emph{#1}}}\index{#2}}
+
+\providecommand{\emphi}[1]{}%
+\renewcommand{\emphi}[1]{\emphic{#1}{#1}}
+
+\definecolor{almostblack}{rgb}{0, 0, 0.3}
+
+\providecommand{\emphw}[1]{}%
+\renewcommand{\emphw}[1]{{\textcolor{almostblack}{\emph{#1}}}}%
+
+\providecommand{\emphOnly}[1]{}%
+\renewcommand{\emphOnly}[1]{\emph{\textcolor{blue!25}{\textbf{#1}}}}
+%%
+
+\newcommand{\HLink}[2]{\hyperref[#2]{#1~\ref*{#2}}}
+\newcommand{\HLinkSuffix}[3]{\hyperref[#2]{#1\ref*{#2}{#3}}}
+
+\newcommand{\figlab}[1]{\label{fig:#1}}
+\newcommand{\figref}[1]{\HLink{Figure}{fig:#1}}
+
+\newcommand{\thmlab}[1]{{\label{theo:#1}}}
+\newcommand{\thmref}[1]{\HLink{Theorem}{theo:#1}}
+
+\newcommand{\remlab}[1]{\label{rem:#1}}
+\newcommand{\remref}[1]{\HLink{Remark}{rem:#1}}%
+
+\newcommand{\corlab}[1]{\label{cor:#1}}
+\newcommand{\corref}[1]{\HLink{Corollary}{cor:#1}}%
+
+\providecommand{\deflab}[1]{}
+\renewcommand{\deflab}[1]{\label{def:#1}}
+\newcommand{\defref}[1]{\HLink{Definition}{def:#1}}
+
+\newcommand{\lemlab}[1]{\label{lemma:#1}}
+\newcommand{\lemref}[1]{\HLink{Lemma}{lemma:#1}}%
+
+\providecommand{\eqlab}[1]{}%
+\renewcommand{\eqlab}[1]{\label{equation:#1}}
+\newcommand{\Eqref}[1]{\HLinkSuffix{Eq.~(}{equation:#1}{)}}
+
+
+\newcommand{\MiraThanks}[1]{%
+\thanks{%
+      School of Mathematical Sciences; %
+      Queen Mary, University of London; %
+      Mile End Road; %
+      London, E14NS, UK; %
+      \href{m.shamis@qmul.ac.uk}{m.shamis@qmul.ac.uk}; %
+      \url{https://www.qmul.ac.uk/maths/profiles/shamiss.html}. %
+   #1%
+   }%
+}
+
+
+% Bib latex stuff
+\BibLatexMode{%
+\usepackage[bibencoding=utf8,style=alphabetic,backend=biber]{biblatex}%
+\usepackage{my_biblatex}%
+}
+
+
+% \graphicspath{./input/graphs/note01}
+
+
+\BibLatexMode{%
+   \bibliography{template}
+}
+
+\begin{document}
+
+\title{Notes on Complex Variables MTH 5103 2024-2025}
+
+\author{%
+   Emom M.%
+   %
+   \and%
+   %
+   Dr Mira Shamis%
+   \MiraThanks{\emph{ASK HER IF YOU HAVE ANY QUESTIONS!!!}}
+}
+
+\date{\today}
+
+\maketitle
+
+\begin{abstract}
+    These lecture notes provide a thorough and systematic introduction to the theory of complex variables, corresponding to the material covered in the MTH5103 module. The notes begin by establishing the foundational properties and geometry of complex numbers before transitioning to the rigorous calculus of complex-valued functions.
+
+    Central to this module is the study of analytic (holomorphic) functions, characterized by the Cauchy-Riemann equations. We explore the profound consequences of complex differentiability through the lens of complex integration, highlighting Cauchy's Integral Theorem and Cauchy's Integral Formula. These pivotal results reveal the remarkable rigidity of analytic functions, illustrating how local differentiability dictates global behavior.
+
+    Furthermore, the notes delve into the representation of complex functions using Taylor and Laurent series, which naturally leads to the classification of isolated singularities. The module culminates in the Residue Theorem, a powerful analytical tool. We demonstrate its utility not only within the complex domain but also in elegantly solving challenging problems in real analysis, such as evaluating intricate real-valued definite integrals and computing the exact sums of infinite convergent real series. Designed to build both theoretical understanding and computational proficiency, these notes serve as a complete guide to mastering the core principles of complex analysis.
+
+   \emph{Remark:}
+   One of the most annoying things about \LaTeX, and there are a lot,
+   is how hard it is to just start writing math papers. This is an
+   empty template intended to enable one to just start writing a
+   paper. It uses my personal style, but might be useful for other people. It uses BibLatex by default. Search \texttt{DELETE} in the file to know which portion to delete when you start writing.
+   %%% DELETE END
+   \end{abstract}
+\newpage
+\tableofcontents
+% \week{1}
+% \lecture{1}{Date}
+\include{input/note01} % Week 1
+\include{input/note02} % Week 2
+\include{input/note03} % Week 3
+\include{input/note04} % Week 4
+\include{input/note05} % Week 5
+\include{input/note06} % Week 6
+\include{input/note07} % Week 8
+\include{input/note08} % Week 9
+\include{input/note09} % Week 10
+\include{input/note10} % Week 11
+\include{input/note11} % Week 12
+
+%\include{input/note12}
+%\include{input/note13}
+%\include{input/note14}
+%\include{input/note15}
+
+
+% \input{input/note02}
+% \input{input/note03}
+% \input{input/note04}
+% \input{input/note05}
+% \input{input/note06}
+% \input{input/note07}
+% \input{input/note08}
+% \input{input/note09}
+% \input{input/note10}
+% \input{input/note11}
+% \input{input/note12}
+% \input{input/note13}
+% \input{input/note14}
+
+
+%-------------------------------------------------------------------------
+
+% \BibTexMode{%
+%    \bibliographystyle{alpha}
+%    \bibliography{template}
+% }%
+% \BibLatexMode{\printbibliography}
+
+\end{document}
+
+
+%--------------------------------------------------------
+%
+% x.tex - end of file
+%--------------------------------------------------------
+

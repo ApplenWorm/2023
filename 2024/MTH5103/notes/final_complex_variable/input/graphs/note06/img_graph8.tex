@@ -1,0 +1,59 @@
+\documentclass[tikz, border=3mm]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, decorations.markings, positioning}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Latex, % Set default arrow tip style
+    axis/.style={->, thick}, % Style for axes
+    path/.style={red, thick}, % Style for the paths
+    arrow/.style={decoration={markings, mark=at position #1 with {\arrow{>}}}, postaction={decorate}}, % Style for arrows on path
+    arrow_rev/.style={decoration={markings, mark=at position #1 with {\arrow{<}}}, postaction={decorate}}, % Style for reversed arrows on path
+    labelstyle/.style={red}, % Style for labels
+    tick/.style={thick} % Style for ticks
+]
+
+    % --- Left Plot (z-plane) ---
+    \begin{scope}
+        % Axes
+        \draw[axis] (-2, 0) -- (2, 0) node[below] {$x$};
+        \draw[axis] (0, -1) -- (0, 1) node[left] {$y$};
+
+        % Define points A and B
+        \coordinate (A) at (-1, 0);
+        \coordinate (B) at (1, 0);
+
+        % Draw path A -> B with arrow
+        \draw[path, arrow=0.5] (A) -- (B);
+
+        % Ticks and Labels for A and B
+        \draw[tick] (A) +(0, 2pt) -- +(0, -2pt);
+        \node[labelstyle, below=2pt of A] {A};
+
+        \draw[tick] (B) +(0, 2pt) -- +(0, -2pt);
+        \node[labelstyle, below=2pt of B] {B};
+    \end{scope}
+
+    % --- Transformation Arrow ---
+    \draw[->, thick] (2.5, 0.5) -- (4.5, 0.5) node[midway, above] {$w$};
+
+    % --- Right Plot (w-plane) ---
+    \begin{scope}[shift={(6,0)}] % Shift the second plot to the right
+        % Axes
+        \draw[axis] (-1, 0) -- (2, 0) node[below] {$u$};
+        \draw[axis] (0, -1) -- (0, 2.5) node[left] {$v$};
+
+        % Define vertical path points
+        \coordinate (O) at (0, 0);
+        \coordinate (Top) at (0, 2); % Adjust height as needed
+
+        % Draw vertical path with multiple downward arrows
+        \draw[path,
+            arrow_rev=0.2, % Arrow near bottom pointing down (< means towards start)
+            arrow_rev=0.5, % Arrow in middle pointing down
+            arrow_rev=0.8  % Arrow near top pointing down
+        ] (O) -- (Top);
+    \end{scope}
+
+\end{tikzpicture}
+\end{document}

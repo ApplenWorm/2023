@@ -1,0 +1,69 @@
+\documentclass[tikz, border=2mm]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath} % For \frac
+\usepackage{amssymb} % For \mathbb
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1.5] % Adjust scale as needed
+
+% Z-plane
+\begin{scope}
+    \draw[->] (-1,0) -- (2,0) node[right] {$x$};
+    \draw[->] (0,-1) -- (0,2) node[above] {$y$};
+
+    % Line (approximating the one shown, passing near (1,0) and (0,1))
+    \draw[red, thick] (1.5, -0.5) -- (-0.5, 1.5);
+
+    % Labels for intercepts (approximate positions from image)
+    \node[red] at (1, -0.2) {$1$};
+    \node[red] at (-0.2, 1) {$i$};
+\end{scope}
+
+% Transformation arrow
+\draw[->] (2.7, 0.8) -- (3.9, 0.8) node[midway, above] {$\frac{1}{z}$};
+
+% W-plane
+\begin{scope}[shift={(5.5,0)}]
+    \draw[->] (-0.7,0) -- (2,0) node[right] {$u$};
+    \draw[->] (0,-2.1) -- (0,1.7) node[above] {$v$};
+
+    % Define center and radius based on the drawing
+    \def\cx{0.5}
+    \def\cy{-0.5}
+    \def\radius{1/sqrt(2)} % Approx radius based on circle passing through origin
+
+    % Circle centered as shown
+    \draw[red, thick] (\cx, \cy) circle (\radius);
+
+    % Center point
+    \fill[red] (\cx, \cy) circle (1pt);
+
+    % Labels for center coordinates
+    \node[red, above] at (\cx, -0.2) {$\frac{1}{2}$};
+    \node[red, left] at (-0.2, \cy) {$-\frac{i}{2}$};
+
+    % Radius arrow (pointing roughly right-ish from center)
+    % End point slightly adjusted to match image appearance
+    \coordinate (ArrowEnd) at ({\cx + \radius*0.9}, {\cy + \radius*0.1});
+    \draw[red, thick, ->] (\cx, \cy) -- (ArrowEnd);
+
+    % Label for radius length (placed near the arrow)
+    \node[red] at ({\cx + \radius*0.5}, {\cy - 0.2}) {$\frac{1}{\sqrt{2}}$};
+    
+     % --- Add Ticks and Labels to W-plane axes ---
+    % u-axis ticks
+    \draw (\cx, 2pt) -- (\cx, -2pt) node[below] {}; % Tick at u=1/2 (label already there)
+    \draw (1, 2pt) -- (1, -2pt) node[below] {$1$}; % Tick at u=1
+
+    % v-axis ticks
+    \draw (2pt, \cy) -- (-2pt, \cy) node[left] {}; % Tick at v=1/2 (label already there)
+  %  \draw (2pt, 1) -- (-2pt, 1) node[left] {$1$}; % Tick at v=1
+    \draw (2pt, -1) -- (-2pt, -1) node[left] {$-1$}; % Tick at v=-1 (optional, based on axis range)
+    % --- End Ticks ---
+
+\end{scope}
+
+\end{tikzpicture}
+
+\end{document}

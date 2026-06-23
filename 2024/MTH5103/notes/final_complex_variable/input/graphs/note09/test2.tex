@@ -1,0 +1,105 @@
+\documentclass[tikz, border=3mm]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{
+    arrows.meta,         % For arrow tips
+    decorations.markings,% For placing arrows along paths
+    calc,                % For coordinate calculations
+    positioning          % For label positioning
+}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Latex, % Set default arrow tip style
+    axis/.style={->, thick}, % Style for axes
+    curve/.style={thick},    % Base style for curves
+    line/.style={thick},     % Base style for lines
+    cutstyle/.style={black, thick}, % Style for cut lines L1/L2
+    % Style for placing an arrow in the middle of a path segment
+    midarrow/.style={
+        decoration={markings, mark=at position 0.5 with {\arrow{Latex[length=2mm]}}},
+        postaction={decorate}
+    },
+     midarrowL/.style={
+        decoration={markings, mark=at position 0.2 with {\arrowreversed{Latex}}},
+        postaction={decorate}
+    }
+]
+
+    % Axes
+    \draw[axis] (-0.5, 0) -- (5.5, 0) node[below] {$x$};
+    \draw[axis] (0, -0.5) -- (0, 4.5) node[left] {$y$};
+
+    % Define coordinates for curve endpoints
+    % Upper Cut Level
+    \coordinate (A1) at (0.5, 0.55); % Start of Blue Curve / Left end of L2 Cut
+    \coordinate (A)  at (1.5, 0.55); % Start of Red Curve / Right end of L2 Cut
+    % Lower Cut Level
+    \coordinate (B1) at (3.5, 0.5); % End of Blue Curve / Left end of L1 Cut
+    \coordinate (B)  at (4.5, 0.5); % End of Red Curve / Right end of L1 Cut
+
+    % Draw Horizontal "Cut" Lines L1 and L2
+    \draw[cutstyle, midarrow] (A1) -- (A); % Line from A1 to A at y=1.5
+    \node[below=2pt of A1] {$L_2$};
+
+    \draw[cutstyle, midarrow] (B1) -- (B); % Line from B1 to B at y=0.5
+    \node[below=2pt of B1] {$L_1$};
+
+    % Draw Red Curve (from A to B)
+    % Using Bezier curve with control points estimated from image
+    % Controls pull curve above the horizontal lines
+   % \draw[curve, red] (A1) .. controls (1.8, 2.2) and (0.95, 4.15) and (1.2, 2.93) and (1.41,2.42) and (1.63, 2.47) and (2.16, 2.91) and (2.46, 4.22) and (2.54, 4.22) and (2.71,3.98) and (3.0, 4.44) and (4.08, 3.33) and (4.19, 2.14) and (3.2, 1.5) .. (B);
+    
+    % Place arrow at position 0.5 (midway along path length)
+            % Use \arrowreversed{>} to point against the path direction (clockwise)
+    \draw [red, thick, midarrowL] plot [smooth] coordinates {
+   (0.5, 0.55)
+   (0.95, 3.15)   
+	(1.2, 2.93)
+(1.41, 2.42)
+(1.63, 2.47)
+ (1.8, 2.2)
+(2.16, 2.91)
+(2.46, 3.22)
+(2.54, 3.22)
+(2.71, 2.98)
+(3.0, 3.44)
+(4.08, 3.33)
+(4.19, 2.14)
+(3.2, 1.5)
+(4.5, 0.5)};
+
+    % Draw Blue Curve (from A1 to B1)
+    % Using Bezier curve with control points estimated from image
+    % Controls keep curve between the horizontal lines
+   % \draw[curve, blue] (A) .. controls (1.0, 1.0) and (2.0, 1.0) .. (B1);
+    
+    
+    \draw [blue, thick, midarrow] plot [smooth] coordinates {
+    (1.5, 0.55)
+    (1.5, 1.21)
+(1.89, 0.7)
+(1.91, 0.77)
+(1.93, 1.23)
+(2.7, 1.57)
+(2.8, 0.81)
+(2.89, 1.12)
+(3.02, 0.68)
+(3.07, 0.87)
+(3.13, 1.02)
+(3.28, 0.67)    
+(3.5, 0.5)    	    } ;
+
+\node[black] (D1) at (1.5,1.5) {$D_1$};
+
+\node[red] (C2) at (2,2) {$C_2^\star$};
+
+\node[blue] (C1) at (2,0.6) {$C_1^\star$};
+
+    % Optional: Add dots at the points if desired
+    % \fill (A) circle (1.5pt);
+    % \fill (B) circle (1.5pt);
+    % \fill (A1) circle (1.5pt);
+    % \fill (B1) circle (1.5pt);
+
+\end{tikzpicture}
+\end{document}

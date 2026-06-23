@@ -1,0 +1,57 @@
+\documentclass[tikz, border=2mm]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath} % For \frac
+\usepackage{amssymb} % For symbols if needed
+\usetikzlibrary{math} % For math functions like abs()
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1.2] % Adjust scale as needed
+
+% Define k (must be non-zero, using a positive value for visualization)
+\def\k{1}
+
+% Z-plane
+\begin{scope}
+    \draw[->] (-2,0) -- (2,0) node[right] {$x$};
+    \draw[->] (0,-1) -- (0,2) node[above] {$y$};
+
+    % Horizontal line y=k
+    \draw[red, thick] (-2,\k) -- (2,\k);
+    \node[red, above left] at (-1,\k) {$y=k$};
+\end{scope}
+
+% Transformation arrow
+\draw[->] (2.5, 0.5) -- (4.5, 0.5) node[midway, above] {$\frac{1}{z}$};
+
+% W-plane
+\begin{scope}[shift={(6,0)}]
+    \draw[->] (-1.5,0) -- (1.5,0) node[right] {$u$};
+    \draw[->] (0,-1.5) -- (0,1) node[above] {$v$};
+
+    % Calculate center y and radius using pgfmath
+    \tikzmath{
+        \cy = -1/(2*\k);
+        \radius = 1/(2*abs(\k)); % Use abs() for generality
+    }
+
+    % Circle centered at (0, cy) with radius r
+    \draw[red, thick] (0, \cy) circle (\radius);
+
+    % Center point
+    \fill[red] (0, \cy) circle (1pt);
+
+    % Radius arrow (pointing up-left as in image, angle approx 135 deg)
+    \coordinate (CircPoint) at ({0 + \radius*cos(135)}, {\cy + \radius*sin(199)});
+    \draw[red, thick, ->] (0, \cy) -- (CircPoint);
+
+    % Radius label (position adjusted near the arrow)
+    \node[red] at (-0.3, \cy+0.15) {$\frac{1}{2|k|}$};
+
+    % Center label text (position adjusted to the right of the circle)
+    \node[red, anchor=west, xshift=0.3cm] at (\radius, \cy) {center = $\left(0, -\frac{1}{2k}\right)$};
+\end{scope}
+
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,36 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usetikzlibrary{decorations.markings}
+
+\begin{document}
+\begin{tikzpicture}[scale=1]
+
+  % Axes
+  \draw[->] (-1.5,0) -- (3,0) node[right] {$x$};
+  \draw[->] (0,-1.5) -- (0,3) node[above] {$iy$};
+
+  % Vector a + ib
+  \draw[->, red, thick] (0,0) -- (2,1.5) node[above right] {$a + ib$};
+
+  % Archimedean spiral for the angle
+  \draw[
+    decoration={markings, mark=at position 0.99 with {\arrow{>}}},
+    postaction={decorate},
+    blue
+  ]
+  plot[
+    domain=0:360+36.87, % Angle in degrees (adjust as needed)
+    samples=100,
+    smooth
+  ]
+  ({0.15*(\x/360)*cos(\x)}, {0.15*(\x/360)*sin(\x)});
+
+  % Label for the angle (placed manually)
+  \node at (0.4,0.2) {$\theta$};
+
+    % Circle (optional)
+  \draw[blue] (0,0) circle (0.7cm);
+
+\end{tikzpicture}
+\end{document}
